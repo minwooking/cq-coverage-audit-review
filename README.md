@@ -1,5 +1,11 @@
 # Auditing an LLM Judge for Competency Question Coverage: Verbatim Quotes Are Not Support: replication package
 
+> **Review-site notes (added on GitHub Pages after packaging; data files unchanged).**
+> **AH** = the first author's labels, as defined in the manuscript (LLM-assisted, revised by the first author).
+> **Dwell** = the server's save time minus the page-load time of each label (median 9.3 s). A few long values (e.g. 3,482 s, 424.6 s) mean the labeling page stayed open before the save; they are kept as recorded.
+> This README differs from the packaged copy only by this note; `index.html` and `.nojekyll` were added for the site.
+
+
 Version 1.0.0, built 2026-11-01 (`cq-coverage-access2026-20261101.zip`).
 Archive DOI: to be assigned by Zenodo (this line and `CITATION.cff` are updated when the package is rebuilt with the reserved DOI).
 
