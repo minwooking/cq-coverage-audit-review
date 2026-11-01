@@ -1,0 +1,351 @@
+{
+ "post_hoc": true,
+ "seed": 20260913,
+ "S_sim": 2000,
+ "B_inner": 1000,
+ "n_clusters": 33,
+ "plug_in_definition": "33 clusters drawn with replacement from the 33 observed; registered CI computed on the draw",
+ "G1": {
+  "n33_level97.5": {
+   "max_events_allowed": -1,
+   "cp_upper_at_zero_events": 0.10576281007457927,
+   "passable": false
+  },
+  "n33_level95": {
+   "max_events_allowed": 0,
+   "cp_upper_at_zero_events": 0.08678118929147494,
+   "passable": true
+  },
+  "n36_level97.5": {
+   "max_events_allowed": 0,
+   "cp_upper_at_zero_events": 0.09739375591449193,
+   "passable": true
+  },
+  "n36_level95": {
+   "max_events_allowed": 0,
+   "cp_upper_at_zero_events": 0.07984650951989439,
+   "passable": true
+  },
+  "exact_pass_probability": {
+   "n33_level97.5": {
+    "observed_AH_4_of_33": 0.0,
+    "observed_second_rater_8_of_33": 0.0,
+    "p_0.005": 0.0,
+    "p_0.01": 0.0,
+    "p_0.02": 0.0,
+    "p_0.05": 0.0
+   },
+   "n33_level95": {
+    "observed_AH_4_of_33": 0.014066106933740857,
+    "observed_second_rater_8_of_33": 0.00010496880914030108,
+    "p_0.005": 0.8475428503023453,
+    "p_0.01": 0.7177305325982751,
+    "p_0.02": 0.5134054775281948,
+    "p_0.05": 0.18402591023557607
+   },
+   "n36_level97.5": {
+    "observed_AH_4_of_33": 0.009546102401619665,
+    "observed_second_rater_8_of_33": 4.5639247650532935e-05,
+    "p_0.005": 0.8348931673187265,
+    "p_0.01": 0.6964132180495737,
+    "p_0.02": 0.48321312820571677,
+    "p_0.05": 0.15777921478822704
+   },
+   "n36_level95": {
+    "observed_AH_4_of_33": 0.009546102401619665,
+    "observed_second_rater_8_of_33": 4.5639247650532935e-05,
+    "p_0.005": 0.8348931673187265,
+    "p_0.01": 0.6964132180495737,
+    "p_0.02": 0.48321312820571677,
+    "p_0.05": 0.15777921478822704
+   }
+  },
+  "plug_in_mc_AH": {
+   "mc_P_pass_level97.5": 0.0,
+   "mc_P_pass_level95": 0.01415,
+   "mc_mean_event_clusters": 4.002,
+   "observed_event_clusters": 4,
+   "exact_P_zero_events_in_33_draws": 0.014066106933740849
+  },
+  "plug_in_mc_second_rater": {
+   "mc_P_pass_level97.5": 0.0,
+   "mc_P_pass_level95": 0.0001,
+   "mc_mean_event_clusters": 8.00017,
+   "observed_event_clusters": 8,
+   "exact_P_zero_events_in_33_draws": 0.00010496880914030103
+  }
+ },
+ "G5": {
+  "rule": "MAE CI upper limit <= 0.50",
+  "worlds": [
+   {
+    "q": 0.0,
+    "true_MAE": 0.7925531914893617,
+    "n_valid_sims": 2000,
+    "P_pass": 0.0,
+    "mean_upper": 0.9434271272646133,
+    "mean_est": 0.7928335207130115
+   },
+   {
+    "q": 0.25,
+    "true_MAE": 0.6569148936170213,
+    "n_valid_sims": 2000,
+    "P_pass": 0.0,
+    "mean_upper": 0.8005172881473428,
+    "mean_est": 0.6574893746487517
+   },
+   {
+    "q": 0.5,
+    "true_MAE": 0.5212765957446809,
+    "n_valid_sims": 2000,
+    "P_pass": 0.014,
+    "mean_upper": 0.6567670576328163,
+    "mean_est": 0.5207237254382581
+   },
+   {
+    "q": 0.75,
+    "true_MAE": 0.38563829787234044,
+    "n_valid_sims": 2000,
+    "P_pass": 0.402,
+    "mean_upper": 0.5178262020079413,
+    "mean_est": 0.38511536365981125
+   },
+   {
+    "q": 0.85,
+    "true_MAE": 0.3313829787234042,
+    "n_valid_sims": 2000,
+    "P_pass": 0.696,
+    "mean_upper": 0.4655662463862425,
+    "mean_est": 0.332293906235617
+   },
+   {
+    "q": 0.9,
+    "true_MAE": 0.30425531914893617,
+    "n_valid_sims": 2000,
+    "P_pass": 0.81,
+    "mean_upper": 0.43970178665298354,
+    "mean_est": 0.3058262555273778
+   },
+   {
+    "q": 1.0,
+    "true_MAE": 0.25,
+    "n_valid_sims": 2000,
+    "P_pass": 0.952,
+    "mean_upper": 0.3888592091195995,
+    "mean_est": 0.2525684850106395
+   }
+  ]
+ },
+ "G4": {
+  "rule": "falsified if QWK CI upper limit < 0.60; cannot pass",
+  "worlds": [
+   {
+    "q": 0.0,
+    "true_QWK": 0.5002334145961929,
+    "n_valid_sims": 2000,
+    "P_falsified": 0.266,
+    "mean_upper": 0.6350082506311503,
+    "mean_est": 0.4902112951934779,
+    "P_pass": 0.0
+   },
+   {
+    "q": 0.25,
+    "true_QWK": 0.6056127363991279,
+    "n_valid_sims": 2000,
+    "P_falsified": 0.0165,
+    "mean_upper": 0.7084452609103622,
+    "mean_est": 0.5989679006971462,
+    "P_pass": 0.0
+   },
+   {
+    "q": 0.5,
+    "true_QWK": 0.7063519611246095,
+    "n_valid_sims": 2000,
+    "P_falsified": 0.0,
+    "mean_upper": 0.7771124674555104,
+    "mean_est": 0.6999915100341016,
+    "P_pass": 0.0
+   },
+   {
+    "q": 0.75,
+    "true_QWK": 0.8027509582261899,
+    "n_valid_sims": 2000,
+    "P_falsified": 0.0,
+    "mean_upper": 0.8469935036672657,
+    "mean_est": 0.7998868423736547,
+    "P_pass": 0.0
+   },
+   {
+    "q": 0.85,
+    "true_QWK": 0.8401575863694525,
+    "n_valid_sims": 2000,
+    "P_falsified": 0.0,
+    "mean_upper": 0.8744520599743679,
+    "mean_est": 0.8375028409153991,
+    "P_pass": 0.0
+   },
+   {
+    "q": 0.9,
+    "true_QWK": 0.8586222422332284,
+    "n_valid_sims": 2000,
+    "P_falsified": 0.0,
+    "mean_upper": 0.8892286410203422,
+    "mean_est": 0.8568822666501282,
+    "P_pass": 0.0
+   },
+   {
+    "q": 1.0,
+    "true_QWK": 0.8950843030159107,
+    "n_valid_sims": 2000,
+    "P_falsified": 0.0,
+    "mean_upper": 0.9192859800146626,
+    "mean_est": 0.8941543299189767,
+    "P_pass": 0.0
+   }
+  ]
+ },
+ "G2_analogue": {
+  "rule": "QWK CI lower limit >= 0.70 on a random 72-cell sample",
+  "worlds": [
+   {
+    "q": 0.0,
+    "true_QWK": 0.727874276261373,
+    "true_MAE": 0.2872340425531915,
+    "n_valid_sims": 2000,
+    "P_pass": 0.0465,
+    "mean_lower": 0.5260559814508492,
+    "mean_est": 0.7152809570210471
+   },
+   {
+    "q": 0.25,
+    "true_QWK": 0.8015681544028951,
+    "true_MAE": 0.2154255319148936,
+    "n_valid_sims": 2000,
+    "P_pass": 0.266,
+    "mean_lower": 0.6293428858082288,
+    "mean_est": 0.7924630660629151
+   },
+   {
+    "q": 0.5,
+    "true_QWK": 0.871283255086072,
+    "true_MAE": 0.14361702127659576,
+    "n_valid_sims": 2000,
+    "P_pass": 0.6725,
+    "mean_lower": 0.7290858061827137,
+    "mean_est": 0.865874411892247
+   },
+   {
+    "q": 0.75,
+    "true_QWK": 0.9373333333333334,
+    "true_MAE": 0.07180851063829788,
+    "n_valid_sims": 2000,
+    "P_pass": 0.927,
+    "mean_lower": 0.8374671672787022,
+    "mean_est": 0.9346582618063127
+   },
+   {
+    "q": 0.85,
+    "true_QWK": 0.9627912237050441,
+    "true_MAE": 0.04308510638297873,
+    "n_valid_sims": 2000,
+    "P_pass": 0.9685,
+    "mean_lower": 0.8832496084234003,
+    "mean_est": 0.9605637175188361
+   },
+   {
+    "q": 0.9,
+    "true_QWK": 0.9753225322532253,
+    "true_MAE": 0.028723404255319145,
+    "n_valid_sims": 2000,
+    "P_pass": 0.982,
+    "mean_lower": 0.9118474804230252,
+    "mean_est": 0.9737832596171375
+   },
+   {
+    "q": 1.0,
+    "true_QWK": 1.0,
+    "true_MAE": 0.0,
+    "n_valid_sims": 2000,
+    "P_pass": 1.0,
+    "mean_lower": 1.0,
+    "mean_est": 1.0
+   }
+  ],
+  "assumption": "washout cells = a random 72 of the 188 primary cells; the two passes = AH R and the second rater's R (different raters; the registered G2 is same-rater and was NOT run)"
+ },
+ "G6_A_to_B_resolved": {
+  "rule": "L1* A->B 95% BCa CI excludes 0 (necessary part of G6; K>=6 and a second-judge direction are further requirements)",
+  "n_pairs": 23,
+  "observed_delta": 0.4782608695652174,
+  "observed_sd": 1.473078570310593,
+  "worlds": [
+   {
+    "true_delta": 0.0,
+    "P_ci_excludes_0": 0.0605,
+    "n_valid_sims": 2000
+   },
+   {
+    "true_delta": 0.25,
+    "P_ci_excludes_0": 0.1345,
+    "n_valid_sims": 2000
+   },
+   {
+    "true_delta": 0.478,
+    "P_ci_excludes_0": 0.3425,
+    "n_valid_sims": 2000
+   },
+   {
+    "true_delta": 0.675,
+    "P_ci_excludes_0": 0.648,
+    "n_valid_sims": 2000
+   },
+   {
+    "true_delta": 0.784,
+    "P_ci_excludes_0": 0.793,
+    "n_valid_sims": 2000
+   },
+   {
+    "true_delta": 1.0,
+    "P_ci_excludes_0": 0.9375,
+    "n_valid_sims": 2000
+   }
+  ]
+ },
+ "G3_judge_side_analogue": {
+  "rule": ">= 22 of 24 ablated cells judged unsupported",
+  "observed_J_le1": 21,
+  "n": 24,
+  "exact_P_pass_at_observed_rate": 0.4081728480717366,
+  "exact_P_pass_at_p": {
+   "p_0.8": 0.114517387209589,
+   "p_0.875": 0.4081728480717366,
+   "p_0.9": 0.5642737269512095,
+   "p_0.95": 0.8840554116406607,
+   "p_0.98": 0.9881722767886211
+  },
+  "p_needed_for_80pct_pass": 0.9354,
+  "note": "judge-side analogue (J<=1); the registered G3 uses the evaluator's A, not computable (8 of 24 ablated cells labelled). Cells treated as independent although the 24 cover 20 questions."
+ },
+ "G7": {
+  "rule": "< 3% of 188 primary cells with dwell < 20 s",
+  "observed": "171/188",
+  "observed_share": 0.9095744680851063,
+  "cells_allowed": 5,
+  "exact_P_pass_at_observed_rate": 1.1613213006572799e-182,
+  "note": "process metric of the labelling sitting, not a property of the judge; binomial is a formality"
+ },
+ "G8": {
+  "rule": "falsification-only external spot check; not run",
+  "simulated": false
+ },
+ "summary": {
+  "G1": "cannot pass at 33 clusters at the 97.5% decision level (0-event upper limit 10.58%); at 95% only with zero events",
+  "G2": "not run; analogue shows the pass probability for a human-human-like second pass (see G2_analogue.worlds)",
+  "G3": "judge-side analogue only (see G3_judge_side_analogue)",
+  "G4": "cannot pass by rule; P_falsified given in G4.worlds",
+  "G5": "see G5.worlds (P_pass at the observed truth and under agreement mixtures)",
+  "G6": "see G6_A_to_B_resolved.worlds (upper bound)",
+  "G7": "see G7",
+  "G8": "not run"
+ }
+}

@@ -1,0 +1,1069 @@
+{
+  "full_source": "luna cells_length (full: A) + luna_full_r35 (full: B-F)",
+  "pooled_sensitivity": {
+    "variants": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "distribution": {
+      "full": {
+        "n": 121,
+        "counts": {
+          "0": 0,
+          "1": 18,
+          "2": 16,
+          "3": 87
+        },
+        "mean": 2.5702479338842976,
+        "coverage_j_ge2": 0.8512396694214877
+      },
+      "limited": {
+        "n": 122,
+        "counts": {
+          "0": 44,
+          "1": 64,
+          "2": 5,
+          "3": 9
+        },
+        "mean": 0.8278688524590164,
+        "coverage_j_ge2": 0.11475409836065574
+      },
+      "subgraph": {
+        "n": 117,
+        "counts": {
+          "0": 6,
+          "1": 46,
+          "2": 9,
+          "3": 56
+        },
+        "mean": 1.982905982905983,
+        "coverage_j_ge2": 0.5555555555555556
+      }
+    },
+    "contrasts": [
+      {
+        "contrast": "full-limited",
+        "n_pairs": 121,
+        "mean_diff": 1.743801652892562,
+        "exact_agreement": 0.15702479338842976,
+        "qwk": 0.05039400407645778,
+        "n_clusters": 33,
+        "interval": {
+          "cluster_mean_diff": 1.7146464646464648,
+          "ci95": [
+            1.4386501445912743,
+            1.9343434343434345
+          ],
+          "ci90": [
+            1.4848484848484849,
+            1.9015151515151516
+          ],
+          "method": "BCa cluster bootstrap",
+          "resamples": 10000,
+          "seed": 20260913
+        }
+      },
+      {
+        "contrast": "full-subgraph",
+        "n_pairs": 116,
+        "mean_diff": 0.6120689655172413,
+        "exact_agreement": 0.5431034482758621,
+        "qwk": 0.21753048780487805,
+        "n_clusters": 32,
+        "interval": {
+          "cluster_mean_diff": 0.6796875,
+          "ci95": [
+            0.421875,
+            0.9791666666666666
+          ],
+          "ci90": [
+            0.46354166666666663,
+            0.9296875
+          ],
+          "method": "BCa cluster bootstrap",
+          "resamples": 10000,
+          "seed": 20260913
+        }
+      },
+      {
+        "contrast": "limited-subgraph",
+        "n_pairs": 117,
+        "mean_diff": -1.1538461538461537,
+        "exact_agreement": 0.3333333333333333,
+        "qwk": 0.05883324290533376,
+        "n_clusters": 32,
+        "interval": {
+          "cluster_mean_diff": -1.0911458333333333,
+          "ci95": [
+            -1.3932291666666665,
+            -0.7916666666666666
+          ],
+          "ci90": [
+            -1.3463541666666665,
+            -0.8411458333333333
+          ],
+          "method": "BCa cluster bootstrap",
+          "resamples": 10000,
+          "seed": 20260913
+        }
+      }
+    ],
+    "separation": [
+      {
+        "reduced_condition": "subgraph",
+        "n_pairs": 116,
+        "n_full_J_ge2": 101,
+        "judge_error_candidate": 6,
+        "information_deficit": 34,
+        "reduced_up_grounding_present": 4,
+        "reduced_up_grounding_absent": 0,
+        "no_grounding_flag": 0
+      },
+      {
+        "reduced_condition": "limited",
+        "n_pairs": 121,
+        "n_full_J_ge2": 103,
+        "judge_error_candidate": 20,
+        "information_deficit": 69,
+        "reduced_up_grounding_present": 0,
+        "reduced_up_grounding_absent": 0,
+        "no_grounding_flag": 0
+      }
+    ]
+  },
+  "per_variant": {
+    "A": {
+      "distribution": {
+        "full": {
+          "n": 23,
+          "counts": {
+            "0": 0,
+            "1": 4,
+            "2": 0,
+            "3": 19
+          },
+          "mean": 2.652173913043478,
+          "coverage_j_ge2": 0.8260869565217391
+        },
+        "limited": {
+          "n": 23,
+          "counts": {
+            "0": 6,
+            "1": 10,
+            "2": 0,
+            "3": 7
+          },
+          "mean": 1.3478260869565217,
+          "coverage_j_ge2": 0.30434782608695654
+        },
+        "subgraph": {
+          "n": 22,
+          "counts": {
+            "0": 3,
+            "1": 4,
+            "2": 0,
+            "3": 15
+          },
+          "mean": 2.227272727272727,
+          "coverage_j_ge2": 0.6818181818181818
+        }
+      },
+      "contrasts": [
+        {
+          "contrast": "full-limited",
+          "n_pairs": 23,
+          "mean_diff": 1.3043478260869565,
+          "exact_agreement": 0.34782608695652173,
+          "qwk": 0.21019771071800208,
+          "n_clusters": 23,
+          "interval": {
+            "cluster_mean_diff": 1.3043478260869565,
+            "ci95": [
+              0.8695652173913043,
+              1.7391304347826086
+            ],
+            "ci90": [
+              0.9130434782608695,
+              1.6521739130434783
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        },
+        {
+          "contrast": "full-subgraph",
+          "n_pairs": 22,
+          "mean_diff": 0.4090909090909091,
+          "exact_agreement": 0.8636363636363636,
+          "qwk": 0.42105263157894735,
+          "n_clusters": 22,
+          "interval": {
+            "cluster_mean_diff": 0.4090909090909091,
+            "ci95": [
+              0.13636363636363635,
+              0.9545454545454546
+            ],
+            "ci90": [
+              0.13636363636363635,
+              0.8181818181818182
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        },
+        {
+          "contrast": "limited-subgraph",
+          "n_pairs": 22,
+          "mean_diff": -0.8636363636363636,
+          "exact_agreement": 0.3181818181818182,
+          "qwk": 0.1598119858989424,
+          "n_clusters": 22,
+          "interval": {
+            "cluster_mean_diff": -0.8636363636363636,
+            "ci95": [
+              -1.4545454545454546,
+              -0.18181818181818182
+            ],
+            "ci90": [
+              -1.3636363636363635,
+              -0.3181818181818182
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        }
+      ]
+    },
+    "B": {
+      "distribution": {
+        "full": {
+          "n": 33,
+          "counts": {
+            "0": 0,
+            "1": 4,
+            "2": 8,
+            "3": 21
+          },
+          "mean": 2.515151515151515,
+          "coverage_j_ge2": 0.8787878787878788
+        },
+        "limited": {
+          "n": 33,
+          "counts": {
+            "0": 12,
+            "1": 18,
+            "2": 2,
+            "3": 1
+          },
+          "mean": 0.7575757575757576,
+          "coverage_j_ge2": 0.09090909090909091
+        },
+        "subgraph": {
+          "n": 32,
+          "counts": {
+            "0": 0,
+            "1": 13,
+            "2": 5,
+            "3": 14
+          },
+          "mean": 2.03125,
+          "coverage_j_ge2": 0.59375
+        }
+      },
+      "contrasts": [
+        {
+          "contrast": "full-limited",
+          "n_pairs": 33,
+          "mean_diff": 1.7575757575757576,
+          "exact_agreement": 0.12121212121212122,
+          "qwk": 0.01670428893905196,
+          "n_clusters": 33,
+          "interval": {
+            "cluster_mean_diff": 1.7575757575757576,
+            "ci95": [
+              1.4242424242424243,
+              2.0606060606060606
+            ],
+            "ci90": [
+              1.4545454545454546,
+              2.0303030303030303
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        },
+        {
+          "contrast": "full-subgraph",
+          "n_pairs": 32,
+          "mean_diff": 0.53125,
+          "exact_agreement": 0.4375,
+          "qwk": 0.09774436090225569,
+          "n_clusters": 32,
+          "interval": {
+            "cluster_mean_diff": 0.53125,
+            "ci95": [
+              0.15625,
+              0.875
+            ],
+            "ci90": [
+              0.21875,
+              0.84375
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        },
+        {
+          "contrast": "limited-subgraph",
+          "n_pairs": 32,
+          "mean_diff": -1.28125,
+          "exact_agreement": 0.3125,
+          "qwk": -0.015706806282722585,
+          "n_clusters": 32,
+          "interval": {
+            "cluster_mean_diff": -1.28125,
+            "ci95": [
+              -1.6875,
+              -0.875
+            ],
+            "ci90": [
+              -1.625,
+              -0.9375
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        }
+      ]
+    },
+    "C": {
+      "distribution": {
+        "full": {
+          "n": 32,
+          "counts": {
+            "0": 0,
+            "1": 5,
+            "2": 4,
+            "3": 23
+          },
+          "mean": 2.5625,
+          "coverage_j_ge2": 0.84375
+        },
+        "limited": {
+          "n": 33,
+          "counts": {
+            "0": 13,
+            "1": 18,
+            "2": 2,
+            "3": 0
+          },
+          "mean": 0.6666666666666666,
+          "coverage_j_ge2": 0.06060606060606061
+        },
+        "subgraph": {
+          "n": 31,
+          "counts": {
+            "0": 1,
+            "1": 14,
+            "2": 4,
+            "3": 12
+          },
+          "mean": 1.8709677419354838,
+          "coverage_j_ge2": 0.5161290322580645
+        }
+      },
+      "contrasts": [
+        {
+          "contrast": "full-limited",
+          "n_pairs": 32,
+          "mean_diff": 1.90625,
+          "exact_agreement": 0.09375,
+          "qwk": 0.002579535683576939,
+          "n_clusters": 32,
+          "interval": {
+            "cluster_mean_diff": 1.90625,
+            "ci95": [
+              1.5625,
+              2.21875
+            ],
+            "ci90": [
+              1.5976475558832188,
+              2.15625
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        },
+        {
+          "contrast": "full-subgraph",
+          "n_pairs": 30,
+          "mean_diff": 0.7,
+          "exact_agreement": 0.43333333333333335,
+          "qwk": 0.1979522184300342,
+          "n_clusters": 30,
+          "interval": {
+            "cluster_mean_diff": 0.7,
+            "ci95": [
+              0.3333333333333333,
+              1.0666666666666667
+            ],
+            "ci90": [
+              0.4,
+              1.0
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        },
+        {
+          "contrast": "limited-subgraph",
+          "n_pairs": 31,
+          "mean_diff": -1.1935483870967742,
+          "exact_agreement": 0.2903225806451613,
+          "qwk": 0.016813144822315662,
+          "n_clusters": 31,
+          "interval": {
+            "cluster_mean_diff": -1.1935483870967742,
+            "ci95": [
+              -1.6129032258064515,
+              -0.8064516129032258
+            ],
+            "ci90": [
+              -1.5161290322580645,
+              -0.8709677419354839
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        }
+      ]
+    },
+    "D": {
+      "distribution": {
+        "full": {
+          "n": 33,
+          "counts": {
+            "0": 0,
+            "1": 5,
+            "2": 4,
+            "3": 24
+          },
+          "mean": 2.5757575757575757,
+          "coverage_j_ge2": 0.8484848484848485
+        },
+        "limited": {
+          "n": 33,
+          "counts": {
+            "0": 13,
+            "1": 18,
+            "2": 1,
+            "3": 1
+          },
+          "mean": 0.696969696969697,
+          "coverage_j_ge2": 0.06060606060606061
+        },
+        "subgraph": {
+          "n": 32,
+          "counts": {
+            "0": 2,
+            "1": 15,
+            "2": 0,
+            "3": 15
+          },
+          "mean": 1.875,
+          "coverage_j_ge2": 0.46875
+        }
+      },
+      "contrasts": [
+        {
+          "contrast": "full-limited",
+          "n_pairs": 33,
+          "mean_diff": 1.878787878787879,
+          "exact_agreement": 0.12121212121212122,
+          "qwk": 0.023510336441021518,
+          "n_clusters": 33,
+          "interval": {
+            "cluster_mean_diff": 1.878787878787879,
+            "ci95": [
+              1.5151515151515151,
+              2.1818181818181817
+            ],
+            "ci90": [
+              1.5757575757575757,
+              2.121212121212121
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        },
+        {
+          "contrast": "full-subgraph",
+          "n_pairs": 32,
+          "mean_diff": 0.75,
+          "exact_agreement": 0.53125,
+          "qwk": 0.18309859154929575,
+          "n_clusters": 32,
+          "interval": {
+            "cluster_mean_diff": 0.75,
+            "ci95": [
+              0.375,
+              1.15625
+            ],
+            "ci90": [
+              0.4375,
+              1.09375
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        },
+        {
+          "contrast": "limited-subgraph",
+          "n_pairs": 32,
+          "mean_diff": -1.1875,
+          "exact_agreement": 0.40625,
+          "qwk": 0.01538461538461533,
+          "n_clusters": 32,
+          "interval": {
+            "cluster_mean_diff": -1.1875,
+            "ci95": [
+              -1.625,
+              -0.75
+            ],
+            "ci90": [
+              -1.5625,
+              -0.8125
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        }
+      ]
+    },
+    "E": {
+      "distribution": {
+        "full": {
+          "n": 21,
+          "counts": {
+            "0": 0,
+            "1": 4,
+            "2": 2,
+            "3": 15
+          },
+          "mean": 2.5238095238095237,
+          "coverage_j_ge2": 0.8095238095238095
+        },
+        "limited": {
+          "n": 33,
+          "counts": {
+            "0": 20,
+            "1": 10,
+            "2": 2,
+            "3": 1
+          },
+          "mean": 0.5151515151515151,
+          "coverage_j_ge2": 0.09090909090909091
+        },
+        "subgraph": {
+          "n": 32,
+          "counts": {
+            "0": 1,
+            "1": 14,
+            "2": 4,
+            "3": 13
+          },
+          "mean": 1.90625,
+          "coverage_j_ge2": 0.53125
+        }
+      },
+      "contrasts": [
+        {
+          "contrast": "full-limited",
+          "n_pairs": 21,
+          "mean_diff": 2.0,
+          "exact_agreement": 0.14285714285714285,
+          "qwk": -0.050000000000000044,
+          "n_clusters": 21,
+          "interval": {
+            "cluster_mean_diff": 2.0,
+            "ci95": [
+              1.380952380952381,
+              2.4285714285714284
+            ],
+            "ci90": [
+              1.4761904761904763,
+              2.380952380952381
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        },
+        {
+          "contrast": "full-subgraph",
+          "n_pairs": 21,
+          "mean_diff": 0.5238095238095238,
+          "exact_agreement": 0.47619047619047616,
+          "qwk": 0.21621621621621623,
+          "n_clusters": 21,
+          "interval": {
+            "cluster_mean_diff": 0.5238095238095238,
+            "ci95": [
+              0.047619047619047616,
+              0.9523809523809523
+            ],
+            "ci90": [
+              0.14285714285714285,
+              0.9047619047619048
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        },
+        {
+          "contrast": "limited-subgraph",
+          "n_pairs": 32,
+          "mean_diff": -1.40625,
+          "exact_agreement": 0.15625,
+          "qwk": -0.044642857142857206,
+          "n_clusters": 32,
+          "interval": {
+            "cluster_mean_diff": -1.40625,
+            "ci95": [
+              -1.84375,
+              -0.9375
+            ],
+            "ci90": [
+              -1.78125,
+              -1.03125
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        }
+      ]
+    },
+    "F": {
+      "distribution": {
+        "full": {
+          "n": 0,
+          "counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          },
+          "mean": null,
+          "coverage_j_ge2": null
+        },
+        "limited": {
+          "n": 33,
+          "counts": {
+            "0": 17,
+            "1": 14,
+            "2": 1,
+            "3": 1
+          },
+          "mean": 0.5757575757575758,
+          "coverage_j_ge2": 0.06060606060606061
+        },
+        "subgraph": {
+          "n": 30,
+          "counts": {
+            "0": 3,
+            "1": 12,
+            "2": 4,
+            "3": 11
+          },
+          "mean": 1.7666666666666666,
+          "coverage_j_ge2": 0.5
+        }
+      },
+      "contrasts": [
+        {
+          "contrast": "full-limited",
+          "n_pairs": 0,
+          "mean_diff": null,
+          "qwk": null,
+          "exact_agreement": null,
+          "interval": null
+        },
+        {
+          "contrast": "full-subgraph",
+          "n_pairs": 0,
+          "mean_diff": null,
+          "qwk": null,
+          "exact_agreement": null,
+          "interval": null
+        },
+        {
+          "contrast": "limited-subgraph",
+          "n_pairs": 30,
+          "mean_diff": -1.2333333333333334,
+          "exact_agreement": 0.4,
+          "qwk": -0.005767844268204758,
+          "n_clusters": 30,
+          "interval": {
+            "cluster_mean_diff": -1.2333333333333334,
+            "ci95": [
+              -1.7,
+              -0.8
+            ],
+            "ci90": [
+              -1.6333333333333333,
+              -0.8666666666666667
+            ],
+            "method": "BCa cluster bootstrap",
+            "resamples": 10000,
+            "seed": 20260913
+          }
+        }
+      ]
+    }
+  },
+  "seed": 20260913,
+  "resamples": 10000,
+  "distribution": {
+    "full": {
+      "n": 142,
+      "counts": {
+        "0": 0,
+        "1": 22,
+        "2": 18,
+        "3": 102
+      },
+      "mean": 2.563380281690141,
+      "coverage_j_ge2": 0.8450704225352113
+    },
+    "limited": {
+      "n": 188,
+      "counts": {
+        "0": 81,
+        "1": 88,
+        "2": 8,
+        "3": 11
+      },
+      "mean": 0.7287234042553191,
+      "coverage_j_ge2": 0.10106382978723404
+    },
+    "subgraph": {
+      "n": 179,
+      "counts": {
+        "0": 10,
+        "1": 72,
+        "2": 17,
+        "3": 80
+      },
+      "mean": 1.9329608938547487,
+      "coverage_j_ge2": 0.5418994413407822
+    }
+  },
+  "distribution_by_variant": {
+    "full": {
+      "A": {
+        "n": 23,
+        "counts": {
+          "0": 0,
+          "1": 4,
+          "2": 0,
+          "3": 19
+        },
+        "mean": 2.652173913043478,
+        "coverage_j_ge2": 0.8260869565217391
+      },
+      "B": {
+        "n": 33,
+        "counts": {
+          "0": 0,
+          "1": 4,
+          "2": 8,
+          "3": 21
+        },
+        "mean": 2.515151515151515,
+        "coverage_j_ge2": 0.8787878787878788
+      },
+      "C": {
+        "n": 32,
+        "counts": {
+          "0": 0,
+          "1": 5,
+          "2": 4,
+          "3": 23
+        },
+        "mean": 2.5625,
+        "coverage_j_ge2": 0.84375
+      },
+      "D": {
+        "n": 33,
+        "counts": {
+          "0": 0,
+          "1": 5,
+          "2": 4,
+          "3": 24
+        },
+        "mean": 2.5757575757575757,
+        "coverage_j_ge2": 0.8484848484848485
+      },
+      "E": {
+        "n": 21,
+        "counts": {
+          "0": 0,
+          "1": 4,
+          "2": 2,
+          "3": 15
+        },
+        "mean": 2.5238095238095237,
+        "coverage_j_ge2": 0.8095238095238095
+      }
+    },
+    "limited": {
+      "A": {
+        "n": 23,
+        "counts": {
+          "0": 6,
+          "1": 10,
+          "2": 0,
+          "3": 7
+        },
+        "mean": 1.3478260869565217,
+        "coverage_j_ge2": 0.30434782608695654
+      },
+      "B": {
+        "n": 33,
+        "counts": {
+          "0": 12,
+          "1": 18,
+          "2": 2,
+          "3": 1
+        },
+        "mean": 0.7575757575757576,
+        "coverage_j_ge2": 0.09090909090909091
+      },
+      "C": {
+        "n": 33,
+        "counts": {
+          "0": 13,
+          "1": 18,
+          "2": 2,
+          "3": 0
+        },
+        "mean": 0.6666666666666666,
+        "coverage_j_ge2": 0.06060606060606061
+      },
+      "D": {
+        "n": 33,
+        "counts": {
+          "0": 13,
+          "1": 18,
+          "2": 1,
+          "3": 1
+        },
+        "mean": 0.696969696969697,
+        "coverage_j_ge2": 0.06060606060606061
+      },
+      "E": {
+        "n": 33,
+        "counts": {
+          "0": 20,
+          "1": 10,
+          "2": 2,
+          "3": 1
+        },
+        "mean": 0.5151515151515151,
+        "coverage_j_ge2": 0.09090909090909091
+      },
+      "F": {
+        "n": 33,
+        "counts": {
+          "0": 17,
+          "1": 14,
+          "2": 1,
+          "3": 1
+        },
+        "mean": 0.5757575757575758,
+        "coverage_j_ge2": 0.06060606060606061
+      }
+    },
+    "subgraph": {
+      "A": {
+        "n": 22,
+        "counts": {
+          "0": 3,
+          "1": 4,
+          "2": 0,
+          "3": 15
+        },
+        "mean": 2.227272727272727,
+        "coverage_j_ge2": 0.6818181818181818
+      },
+      "B": {
+        "n": 32,
+        "counts": {
+          "0": 0,
+          "1": 13,
+          "2": 5,
+          "3": 14
+        },
+        "mean": 2.03125,
+        "coverage_j_ge2": 0.59375
+      },
+      "C": {
+        "n": 31,
+        "counts": {
+          "0": 1,
+          "1": 14,
+          "2": 4,
+          "3": 12
+        },
+        "mean": 1.8709677419354838,
+        "coverage_j_ge2": 0.5161290322580645
+      },
+      "D": {
+        "n": 32,
+        "counts": {
+          "0": 2,
+          "1": 15,
+          "2": 0,
+          "3": 15
+        },
+        "mean": 1.875,
+        "coverage_j_ge2": 0.46875
+      },
+      "E": {
+        "n": 32,
+        "counts": {
+          "0": 1,
+          "1": 14,
+          "2": 4,
+          "3": 13
+        },
+        "mean": 1.90625,
+        "coverage_j_ge2": 0.53125
+      },
+      "F": {
+        "n": 30,
+        "counts": {
+          "0": 3,
+          "1": 12,
+          "2": 4,
+          "3": 11
+        },
+        "mean": 1.7666666666666666,
+        "coverage_j_ge2": 0.5
+      }
+    }
+  },
+  "invalid_records": {
+    "subgraph": 3,
+    "full": 1
+  },
+  "not_applicable_inputs": {
+    "subgraph": 6
+  },
+  "contrasts": [
+    {
+      "contrast": "full-limited",
+      "n_pairs": 142,
+      "mean_diff": 1.7816901408450705,
+      "exact_agreement": 0.15492957746478872,
+      "qwk": 0.03343759141333458,
+      "n_clusters": 33,
+      "interval": {
+        "cluster_mean_diff": 1.72979797979798,
+        "ci95": [
+          1.4237743339026627,
+          1.9696969696969697
+        ],
+        "ci90": [
+          1.474747474747475,
+          1.9343434343434343
+        ],
+        "method": "BCa cluster bootstrap",
+        "resamples": 10000,
+        "seed": 20260913
+      }
+    },
+    {
+      "contrast": "full-subgraph",
+      "n_pairs": 137,
+      "mean_diff": 0.5985401459854015,
+      "exact_agreement": 0.5328467153284672,
+      "qwk": 0.21727313068560017,
+      "n_clusters": 32,
+      "interval": {
+        "cluster_mean_diff": 0.634375,
+        "ci95": [
+          0.37864583333333335,
+          0.9323597939217593
+        ],
+        "ci90": [
+          0.4192708333333333,
+          0.8848958333333333
+        ],
+        "method": "BCa cluster bootstrap",
+        "resamples": 10000,
+        "seed": 20260913
+      }
+    },
+    {
+      "contrast": "limited-subgraph",
+      "n_pairs": 179,
+      "mean_diff": -1.2122905027932962,
+      "exact_agreement": 0.3128491620111732,
+      "qwk": 0.03383521252314292,
+      "n_clusters": 32,
+      "interval": {
+        "cluster_mean_diff": -1.1619791666666668,
+        "ci95": [
+          -1.4870839828247366,
+          -0.8339845863183825
+        ],
+        "ci90": [
+          -1.4359374999999999,
+          -0.8897775129827779
+        ],
+        "method": "BCa cluster bootstrap",
+        "resamples": 10000,
+        "seed": 20260913
+      }
+    }
+  ],
+  "separation": [
+    {
+      "reduced_condition": "subgraph",
+      "n_pairs": 137,
+      "n_full_J_ge2": 118,
+      "judge_error_candidate": 6,
+      "information_deficit": 40,
+      "reduced_up_grounding_present": 5,
+      "reduced_up_grounding_absent": 0,
+      "no_grounding_flag": 0
+    },
+    {
+      "reduced_condition": "limited",
+      "n_pairs": 142,
+      "n_full_J_ge2": 120,
+      "judge_error_candidate": 22,
+      "information_deficit": 83,
+      "reduced_up_grounding_present": 0,
+      "reduced_up_grounding_absent": 1,
+      "no_grounding_flag": 0
+    }
+  ]
+}

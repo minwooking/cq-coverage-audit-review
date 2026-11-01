@@ -1,0 +1,5 @@
+- 2026-10-14 13:47:43 scripts written; old-code replication of B byte-identical (0 LLM calls); next: addendum 21 commit+tag
+- 13:47:43 addendum 21 committed+tagged access2026-addendum21-freeze
+- 13:47:49 B' built (output_mfg/r34_bprime), stats in graph_stats.json
+- 13:59:31 scoring ko running slowly (~2 calls/min, <internal-proxy> latency ~80s/call); en bank queued after
+- 14:54:33 ko bank scored (170 calls, 761,604 tokens); en bank running

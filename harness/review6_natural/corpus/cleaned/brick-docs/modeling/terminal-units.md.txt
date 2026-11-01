@@ -1,0 +1,12 @@
+# Terminal Units
+
+This page uses Brick and RealEstateCore concepts together, which is a new feature in Brick v1.4
+
+This page provides a brief annotated reference model for how to approach modeling terminal units in Brick, along with their points and their relationship to zones and spaces.
+
+The bldg:VAV1 entity models the RVAV unit itself, along with its associated data streams (bldg:sat1, bldg:saf1, and bldg:sp1) and which zone it is connected to (bldg:zone1).
+Each of the data streams is a representation of the BMS point; the ref:hasExternalReference relationship connects each Point to the corresponding BACnet object.
+
+The bldg:zone1 entity is a representation of the HVAC zone; it contains a single room which is a personal office.
+This office contains a piece of Sensor_Equipment, which is a physical sensing apparatus.
+It also has a Sensor entity associated with it, which represents the data source containing temperature data from the sensing apparatus.

@@ -1,0 +1,34 @@
+{
+ "glm": {
+  "records": 939,
+  "valid": 939,
+  "invalid": 0,
+  "prompt_tokens": 9840393,
+  "completion_tokens": 118524,
+  "model": "zai-org/GLM-4.7-Flash"
+ },
+ "gptoss": {
+  "records": 939,
+  "valid": 938,
+  "invalid": 1,
+  "prompt_tokens": 9908421,
+  "completion_tokens": 140582,
+  "model": "openai/gpt-oss-20b"
+ },
+ "q38": {
+  "records": 939,
+  "valid": 939,
+  "invalid": 0,
+  "prompt_tokens": 10175553,
+  "completion_tokens": 147901,
+  "model": "Qwen/Qwen3.8-Flash-Next"
+ },
+ "q80": {
+  "records": 939,
+  "valid": 939,
+  "invalid": 0,
+  "prompt_tokens": 10107999,
+  "completion_tokens": 126639,
+  "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8"
+ }
+}

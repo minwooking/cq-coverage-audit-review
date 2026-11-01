@@ -1,0 +1,26 @@
+[
+ {
+  "file": "brick/Brick.ttl",
+  "url": "https://github.com/BrickSchema/Brick/releases/download/v1.4.4/Brick.ttl",
+  "http": "200",
+  "bytes": 1749633,
+  "sha256": "b65720b7b9b64c646745c689777e6138c0d59ce0088df0aeb78fbd444d04d8e7",
+  "retrieved_utc": "2026-10-22T02:45:00Z"
+ },
+ {
+  "file": "dcat-ap-3.0.1/dcat-ap-SHACL.ttl",
+  "url": "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/3.0.1/releases/3.0.1/shacl/dcat-ap-SHACL.ttl",
+  "http": "200",
+  "bytes": 155471,
+  "sha256": "990d3e42721de6a4be8cc338a7171559f195e62dea89c0b56531356b78cc026f",
+  "retrieved_utc": "2026-10-22T02:45:01Z"
+ },
+ {
+  "file": "dcat-ap-3.0.1/ranges.ttl",
+  "url": "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/3.0.1/releases/3.0.1/shacl/ranges.ttl",
+  "http": "200",
+  "bytes": 80322,
+  "sha256": "a6eed0fae8d0f5ca977fe2098ca12081ac60b0efe1ddce802d5c08e49505ebcc",
+  "retrieved_utc": "2026-10-22T02:45:01Z"
+ }
+]

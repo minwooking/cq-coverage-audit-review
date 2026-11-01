@@ -1,0 +1,42 @@
+# Inference and Reasoning
+
+Inference is the process by which implied information is discovered and made explicit in a model. Informally, you can think of this process as automatically adding additional metadata to your Brick model.
+
+The Brick ontology definition includes a set of formal axioms that outline what information can be implied by the statements in a particular Brick model. These axioms are interpreted by a piece of software called a reasoner, which derives all implied information and adds it to the Brick model. The process of performing inference is sometimes referred to as reasoning.
+
+Brick uses the OWL 2 RL profile, described in this W3C document. This section of the W3C documentation provides first-order definitions of the OWL 2 RL axioms, which may be helpful in understanding the specific reasoning mechanisms at hand. Reading and understanding these documents are not necessary to effective use of Brick.
+
+## Brick Inference Results
+
+Applying inference to a Brick model can automatically add a great deal of information that would otherwise need to be manually added. This includes, but is not limited to:
+
+- Superclasses: for Brick entities that are instances of Brick classes, reasoning will also attach the superclasses to the instance
+- Inverse relationships: reasoning will automatically add the "inverse" Brick relationships where needed (e.g. brick:feeds is the reverse of brick:isFedBy)
+- Tags: reasoning will add tags to Brick entities which are instances of Brick classes
+
+While using a reasoner is not strictly necessary for effective use of Brick, it does fill in a substantial amount of information that makes Brick easier to use and a more consistent experience.
+
+### Example: Superclasses
+
+Before reasoning:
+
+After reasoning:
+
+### Example: Tags
+
+Before reasoning:
+
+After reasoning:
+
+### Example: Inverse Relationships
+
+Before reasoning:
+
+After reasoning:
+
+## Performing Inference
+
+Coming soon!
+
+Resources:
+- brickschema package support

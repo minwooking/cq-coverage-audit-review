@@ -1,0 +1,299 @@
+{
+ "source": {
+  "audit_jsonl_sha256": "49db64047d2fe0e9f006f6758afea00e3b8b37b2f5e1f06b7b18076a9c4bf1c8",
+  "session_log_sha256": "6ba9f8a6c251683200a35fc1d5d80dc19767614711b39e2e1226022612e30c3f",
+  "reads": "ts, first_opened_ts, elapsed_s and session_id of each audit save record, the cell_id prefix (control vs primary) and the session log's start/end lines; no label, draft field, note or span is used",
+  "writes": "aggregates only; no cell id, session id, label, note or span"
+ },
+ "method": {
+  "elapsed_s_formula": "elapsed_s = round(t_save - t_open, 1). t_save is time.time() on the server, read inside Store.save (label_assist.py @ f855e62, L383). t_open is datetime.fromisoformat(first_opened).timestamp(), where first_opened is the string new Date().toISOString() that the rater's browser took when the row page loaded (L704) and posted with the save (L787): the client clock. A negative result is stored as null (L400-401); a non-empty first_opened that does not parse also gives null, with no fallback to the previous-save interval (L391-397). With d = client clock - server clock, elapsed_s = dwell - d: a client clock ahead of the server shrinks dwell (null once d exceeds the dwell), one behind it inflates dwell. The audit ts is the server wall clock at audit write, truncated to whole seconds (now_iso, L130 and L416); first_opened_ts is the raw client string. The server never records when a row was served.",
+  "delta": "delta = ts(k) - ts(k-1) for consecutive saves of one session, ordered by (ts, file order). The next row page loads right after a save, so delta = dwell + page-load latency (+-1 s from the whole-second ts): a server-clock upper bound on dwell. The first save of a session has no delta. Sub-second variant: delta_p = t(k) - t(k-1) with t = first_opened + elapsed_s, which is the server save time because the client clock cancels (resolution 0.1 s, the rounding of elapsed_s).",
+  "skew_estimator": "s = first_opened(k) - t(k-1): the client's page-load stamp of row k minus the server's save time of the previous row, t as above. s = d + tau with d = client clock - server clock and tau >= 0 the latency from the previous save to the page script of the next row, so a constant skew d shifts every s by d. D = delta - elapsed_s equals s up to the whole-second ts quantization. client_lead_upper_bound_s = min(s) + 0.05 s (d <= s - tau <= s, plus the rounding of elapsed_s).",
+  "g7_total_dwell_rule": "a cell's total dwell is the sum of elapsed_s over all its saves (analyze_holdout._g7, condition c); it is fast when under 20 s; G7 needs fewer than 3% fast primary cells (PREREG L349)",
+  "bootstrap": {
+   "statistic": "median",
+   "resamples": 10000,
+   "seed": 20261009,
+   "draw": "int(random.Random(seed).random() * n) for each of n draws with replacement; a fresh generator per interval",
+   "interval": "percentile: sorted resampled medians at index B*25//1000 and B*975//1000"
+  },
+  "wilson": "Wilson score interval, z = 1.959963984540054",
+  "quantiles": "linear interpolation between order statistics (numpy default)"
+ },
+ "population": {
+  "n_audit_records": 204,
+  "n_save_records": 200,
+  "n_session_event_records": 4,
+  "n_primary_cells": 188,
+  "n_control_cells": 12,
+  "n_cells_saved_more_than_once": 0,
+  "n_sessions_with_saves": 2
+ },
+ "formula_check": {
+  "quantity": "ts - (first_opened + elapsed_s); expected in [-1.05, +0.15] s: ts is the server clock truncated to whole seconds and written a few ms after the save time, elapsed_s is rounded to 0.1 s",
+  "n": 200,
+  "min_s": -1.029,
+  "max_s": 0.026,
+  "n_outside_expected_range": 0
+ },
+ "sessions": {
+  "S6": {
+   "log_index": 6,
+   "n_saves": 60,
+   "n_saves_in_session_log": 60,
+   "n_primary_saves": 48,
+   "n_control_saves": 12,
+   "n_without_predecessor": 1,
+   "delta_minus_elapsed": {
+    "n": 59,
+    "median_s": 0.1,
+    "q1_s": -0.3,
+    "q3_s": 0.45,
+    "min_s": -0.9,
+    "max_s": 5799.8,
+    "n_within_minus1_to_plus2_s": 57,
+    "n_below_minus1_s": 0,
+    "n_above_5_s": 2
+   },
+   "skew_estimator": {
+    "n": 59,
+    "median_s": 0.14,
+    "q1_s": 0.096,
+    "q3_s": 0.1785,
+    "min_s": -0.062,
+    "max_s": 5798.818,
+    "n_negative": 5,
+    "client_lead_upper_bound_s": -0.012,
+    "median_ci95_s": [
+     0.116,
+     0.156
+    ],
+    "theil_sen_slope_s_per_h": -0.3490125673249551,
+    "span_h": 0.4216666666666667
+   },
+   "skew_estimator_excluding_idle_gaps": {
+    "n": 57,
+    "median_s": 0.14,
+    "q1_s": 0.095,
+    "q3_s": 0.172,
+    "min_s": -0.062,
+    "max_s": 0.679,
+    "n_negative": 5,
+    "client_lead_upper_bound_s": -0.012,
+    "median_ci95_s": [
+     0.115,
+     0.155
+    ],
+    "theil_sen_slope_s_per_h": -0.25485494926574104,
+    "span_h": 0.3283333333333333
+   },
+   "idle_gap_rows": {
+    "threshold_s": 5.0,
+    "n": 2,
+    "n_with_elapsed_under_20s": 0
+   }
+  },
+  "S7": {
+   "log_index": 7,
+   "n_saves": 140,
+   "n_saves_in_session_log": 140,
+   "n_primary_saves": 140,
+   "n_control_saves": 0,
+   "n_without_predecessor": 1,
+   "delta_minus_elapsed": {
+    "n": 139,
+    "median_s": 0.2,
+    "q1_s": -0.1,
+    "q3_s": 0.5,
+    "min_s": -0.6,
+    "max_s": 1.4,
+    "n_within_minus1_to_plus2_s": 139,
+    "n_below_minus1_s": 0,
+    "n_above_5_s": 0
+   },
+   "skew_estimator": {
+    "n": 139,
+    "median_s": 0.228,
+    "q1_s": 0.1795,
+    "q3_s": 0.2705,
+    "min_s": 0.022,
+    "max_s": 0.647,
+    "n_negative": 0,
+    "client_lead_upper_bound_s": 0.072,
+    "median_ci95_s": [
+     0.21,
+     0.239
+    ],
+    "theil_sen_slope_s_per_h": 0.015384615384615385,
+    "span_h": 1.5697222222222222
+   },
+   "skew_estimator_excluding_idle_gaps": {
+    "n": 139,
+    "median_s": 0.228,
+    "q1_s": 0.1795,
+    "q3_s": 0.2705,
+    "min_s": 0.022,
+    "max_s": 0.647,
+    "n_negative": 0,
+    "client_lead_upper_bound_s": 0.072,
+    "median_ci95_s": [
+     0.21,
+     0.239
+    ],
+    "theil_sen_slope_s_per_h": 0.015384615384615385,
+    "span_h": 1.5697222222222222
+   },
+   "idle_gap_rows": {
+    "threshold_s": 5.0,
+    "n": 0,
+    "n_with_elapsed_under_20s": 0
+   }
+  }
+ },
+ "elapsed_s_null_or_negative": {
+  "n_saves": 200,
+  "n_null": 0,
+  "n_negative": 0,
+  "n_invalid": 0,
+  "n_null_or_negative": 0,
+  "n_zero": 0,
+  "min_elapsed_s": 6.3,
+  "n_null_with_first_opened_ts_present": 0,
+  "n_first_opened_ts_missing": 0,
+  "n_first_opened_ts_unparsable": 0
+ },
+ "delta_upper_bound_check": {
+  "n_saves_with_delta_and_elapsed": 198,
+  "n_elapsed_exceeds_delta_plus_1s": 0,
+  "reading": "0 means every row page loaded after the previous save, so delta bounds the dwell from above"
+ },
+ "g7_under_20s": {
+  "registered_basis_elapsed_s": {
+   "n_primary_cells": 188,
+   "n_with_value": 188,
+   "n_without_value": 0,
+   "n_under_20s": 171,
+   "share_under_20s": 0.9095744680851063,
+   "share_under_20s_wilson95": [
+    0.8599699243147287,
+    0.9427762648911044
+   ],
+   "share_bounds_all_primary_cells": [
+    0.9095744680851063,
+    0.9095744680851063
+   ],
+   "criterion_met": false,
+   "median_s": 9.3,
+   "q1_s": 7.675,
+   "q3_s": 11.525,
+   "min_s": 6.3,
+   "max_s": 3482.0,
+   "median_ci95_s": [
+    8.8,
+    9.8
+   ],
+   "nearest_to_threshold_s": {
+    "largest_under_20s": 17.9,
+    "smallest_at_or_over_20s": 20.4
+   }
+  },
+  "delta_basis_whole_second": {
+   "n_primary_cells": 188,
+   "n_with_value": 187,
+   "n_without_value": 1,
+   "n_under_20s": 171,
+   "share_under_20s": 0.9144385026737968,
+   "share_under_20s_wilson95": [
+    0.8655437441824191,
+    0.9466487477311482
+   ],
+   "share_bounds_all_primary_cells": [
+    0.9095744680851063,
+    0.9148936170212766
+   ],
+   "criterion_met": false,
+   "median_s": 9.0,
+   "q1_s": 8.0,
+   "q3_s": 12.0,
+   "min_s": 6.0,
+   "max_s": 6118.0,
+   "median_ci95_s": [
+    9.0,
+    10.0
+   ],
+   "n_unmatched_primary_cells_elapsed_at_or_over_20s": 1
+  },
+  "delta_basis_sub_second": {
+   "n_primary_cells": 188,
+   "n_with_value": 187,
+   "n_without_value": 1,
+   "n_under_20s": 171,
+   "share_under_20s": 0.9144385026737968,
+   "share_under_20s_wilson95": [
+    0.8655437441824191,
+    0.9466487477311482
+   ],
+   "share_bounds_all_primary_cells": [
+    0.9095744680851063,
+    0.9148936170212766
+   ],
+   "criterion_met": false,
+   "median_s": 9.44,
+   "q1_s": 7.8625,
+   "q3_s": 11.6795,
+   "min_s": 6.528,
+   "max_s": 6117.018,
+   "median_ci95_s": [
+    9.065,
+    9.969
+   ],
+   "n_unmatched_primary_cells_elapsed_at_or_over_20s": 1
+  },
+  "cells_crossing_20s": {
+   "whole_second": {
+    "n_cells_compared": 187,
+    "under_20s_on_both": 171,
+    "under_20s_registered_only": 0,
+    "under_20s_delta_only": 0,
+    "over_20s_on_both": 16,
+    "n_crossing_20s": 0
+   },
+   "sub_second": {
+    "n_cells_compared": 187,
+    "under_20s_on_both": 171,
+    "under_20s_registered_only": 0,
+    "under_20s_delta_only": 0,
+    "over_20s_on_both": 16,
+    "n_crossing_20s": 0
+   }
+  }
+ },
+ "break_even_client_lead": {
+  "n_primary_cells": 188,
+  "max_cells_under_20s_allowed": 5,
+  "limiting_rank": 6,
+  "limiting_elapsed_s": 6.8,
+  "lead_s": 13.2,
+  "already_met": false,
+  "meaning": "uniform amount (s) added to every elapsed_s, i.e. a client clock ahead of the server by this much, for fewer than 3% of primary cells to stay under 20 s"
+ },
+ "checks": {
+  "audit_sessions_all_in_session_log": true,
+  "saves_per_session_equal_session_log_saved": true,
+  "ts_nondecreasing_in_file_order": true,
+  "every_save_has_parsable_first_opened_ts": true,
+  "no_cell_saved_twice": true,
+  "ts_consistent_with_first_opened_plus_elapsed": true,
+  "elapsed_never_exceeds_delta_plus_1s": true
+ },
+ "caveats": [
+  "delta bounds a row's dwell from above only if the row page loaded after the previous save; delta_upper_bound_check counts the saves with elapsed_s > delta + 1 s.",
+  "Whole-second delta has +-1 s quantization (the audit ts is truncated to seconds). The sub-second delta and the skew estimator carry the 0.1 s rounding of elapsed_s.",
+  "A client clock behind the server inflates elapsed_s, the direction that would flatter G7; only a client clock ahead of the server could make the dwell look too short, and client_lead_upper_bound_s bounds that lead.",
+  "Idle-gap rows (s above 5 s: the next row loaded more than 5 s after the previous save) are not skew. They stay in the all-rows statistics and are left out of the excluding_idle_gaps variants.",
+  "Bootstrap intervals are percentile intervals over rows treated as independent; within-session correlation is ignored, so they are descriptive.",
+  "Every cell was saved once, so a cell's total dwell (the registered G7 basis, the sum of elapsed_s over its saves) equals that save's value; the script stops if a cell has more than one save.",
+  "A primary cell with no within-session predecessor has no delta: it is left out of the delta-basis share (n_with_value) and counted in share_bounds_all_primary_cells.",
+  "The check validates the timing measurement only. It says nothing about rater effort, and the labels are AH (AI-drafted, human-revised); see annotation_locked/LOCK_2026-10-09.md."
+ ]
+}

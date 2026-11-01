@@ -1,0 +1,26 @@
+# B2 freeze: files to add explicitly (no git add -A). Paths are relative to the repository root.
+# AI-generated list; review before use. Run from the repository root.
+# screen_b2_sheet_filled.csv is included: b1's identical-to-blank screen_b1_r2_sheet_filled.csv is committed the same way (SHA256SUMS_b1_freeze.txt) and SCREEN_b2_RESULT.md points to it.
+paper/access2026/bank/eqv2_2026-10/B2_FREEZE_FILELIST.txt
+paper/access2026/bank/eqv2_2026-10/BANK_FREEZE_b2.md
+paper/access2026/bank/eqv2_2026-10/BANK_PROVENANCE_b2.md
+paper/access2026/bank/eqv2_2026-10/BLIND_AUDIT_b2.md
+paper/access2026/bank/eqv2_2026-10/SCREEN_b2_RESULT.md
+paper/access2026/bank/eqv2_2026-10/SHA256SUMS_b2_freeze.txt
+paper/access2026/bank/eqv2_2026-10/b1_as_extra.jsonl
+paper/access2026/bank/eqv2_2026-10/cq_bank_brick_eqv2_b2.csv
+paper/access2026/bank/eqv2_2026-10/dedup_log_b2.csv
+paper/access2026/bank/eqv2_2026-10/dedup_log_b2_rawdraft.csv
+paper/access2026/bank/eqv2_2026-10/draft_b2.jsonl
+paper/access2026/bank/eqv2_2026-10/logs_b2/DEVIATIONS_b2.md
+paper/access2026/bank/eqv2_2026-10/logs_b2_frozen/DEVIATIONS_b2.md
+paper/access2026/bank/eqv2_2026-10/logs_b2_frozen/TRANSFORM_b2.md
+paper/access2026/bank/eqv2_2026-10/logs_b2_frozen/blind_open_log_b1.jsonl
+paper/access2026/bank/eqv2_2026-10/logs_b2_frozen/blind_open_log_b2.jsonl
+paper/access2026/bank/eqv2_2026-10/logs_b2_frozen/draft_calls_b2.jsonl
+paper/access2026/bank/eqv2_2026-10/screen_b2.csv
+paper/access2026/bank/eqv2_2026-10/screen_b2_sample.csv
+paper/access2026/bank/eqv2_2026-10/screen_b2_sheet.csv
+paper/access2026/bank/eqv2_2026-10/screen_b2_sheet_filled.csv
+paper/access2026/bank/eqv2_2026-10/validate_report_b2.json
+paper/access2026/bank/eqv2_2026-10/validated_b2.jsonl

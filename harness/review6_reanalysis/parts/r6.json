@@ -1,0 +1,246 @@
+{
+ "seed": 20260913,
+ "B": 10000,
+ "post_hoc": true,
+ "n_cells": 48,
+ "n_clusters": 28,
+ "cells_by_variant": {
+  "A": 3,
+  "B": 9,
+  "C": 13,
+  "D": 7,
+  "E": 10,
+  "F": 6
+ },
+ "paired_questions_matrix": {
+  "A-B": 0,
+  "A-C": 2,
+  "A-D": 0,
+  "A-E": 1,
+  "A-F": 0,
+  "B-C": 3,
+  "B-D": 4,
+  "B-E": 4,
+  "B-F": 0,
+  "C-D": 2,
+  "C-E": 5,
+  "C-F": 3,
+  "D-E": 3,
+  "D-F": 0,
+  "E-F": 2
+ },
+ "A_B_paired_questions": 0,
+ "A_cqs": [
+  "CQB02",
+  "CQB09",
+  "CQB26"
+ ],
+ "B_cqs": [
+  "CQB01",
+  "CQB05",
+  "CQB13",
+  "CQB18",
+  "CQB19",
+  "CQB27",
+  "CQB29",
+  "CQB32",
+  "CQB33"
+ ],
+ "A_vs_same_question_graph_cells": {
+  "Gemini J (registered)": {
+   "pairs": [
+    {
+     "question": "CQB02",
+     "graph_variant": "C",
+     "J_A": 3,
+     "J_graph": 3,
+     "diff_graph_minus_A": 0
+    },
+    {
+     "question": "CQB26",
+     "graph_variant": "C",
+     "J_A": 0,
+     "J_graph": 0,
+     "diff_graph_minus_A": 0
+    },
+    {
+     "question": "CQB26",
+     "graph_variant": "E",
+     "J_A": 0,
+     "J_graph": 1,
+     "diff_graph_minus_A": 1
+    }
+   ],
+   "n_pairs": 3,
+   "n_distinct_questions": 2,
+   "mean_diff": 0.3333333333333333,
+   "direction": "graph>A"
+  },
+  "gpt-5.6-luna": {
+   "pairs": [
+    {
+     "question": "CQB02",
+     "graph_variant": "C",
+     "J_A": 3,
+     "J_graph": 3,
+     "diff_graph_minus_A": 0
+    },
+    {
+     "question": "CQB26",
+     "graph_variant": "C",
+     "J_A": 1,
+     "J_graph": 3,
+     "diff_graph_minus_A": 2
+    },
+    {
+     "question": "CQB26",
+     "graph_variant": "E",
+     "J_A": 1,
+     "J_graph": 3,
+     "diff_graph_minus_A": 2
+    }
+   ],
+   "n_pairs": 3,
+   "n_distinct_questions": 2,
+   "mean_diff": 1.3333333333333333,
+   "direction": "graph>A"
+  },
+  "claude-sonnet-5-5": {
+   "pairs": [
+    {
+     "question": "CQB02",
+     "graph_variant": "C",
+     "J_A": 2,
+     "J_graph": 3,
+     "diff_graph_minus_A": 1
+    },
+    {
+     "question": "CQB26",
+     "graph_variant": "C",
+     "J_A": 0,
+     "J_graph": 1,
+     "diff_graph_minus_A": 1
+    },
+    {
+     "question": "CQB26",
+     "graph_variant": "E",
+     "J_A": 0,
+     "J_graph": 1,
+     "diff_graph_minus_A": 1
+    }
+   ],
+   "n_pairs": 3,
+   "n_distinct_questions": 2,
+   "mean_diff": 1.0,
+   "direction": "graph>A"
+  }
+ },
+ "pooled_graph_minus_A_unpaired": {
+  "Gemini J (registered)": {
+   "est": 0.6222222222222222,
+   "lo": -1.2397435685517313,
+   "hi": 1.9029324310922264,
+   "lo90": -1.0681818181818181,
+   "hi90": 1.75,
+   "n_clusters": 28,
+   "B": 10000,
+   "seed": 20260913,
+   "n_undefined_resamples": 421,
+   "mean_J_A_cells": 1.3333333333333333,
+   "mean_J_graph_cells_B_to_F": 1.9555555555555555,
+   "n_A_cells": 3,
+   "n_graph_cells": 45,
+   "direction": "graph>A",
+   "ci95_excludes_0": false
+  },
+  "gpt-5.6-luna": {
+   "est": 0.1333333333333333,
+   "lo": -0.6923076923076925,
+   "hi": 1.6445385086920887,
+   "lo90": -0.641025641025641,
+   "hi90": 1.5555555555555554,
+   "n_clusters": 28,
+   "B": 10000,
+   "seed": 20260913,
+   "n_undefined_resamples": 421,
+   "mean_J_A_cells": 2.3333333333333335,
+   "mean_J_graph_cells_B_to_F": 2.466666666666667,
+   "n_A_cells": 3,
+   "n_graph_cells": 45,
+   "direction": "graph>A",
+   "ci95_excludes_0": false
+  },
+  "claude-sonnet-5-5": {
+   "est": 0.15555555555555545,
+   "lo": -1.1739966186256323,
+   "hi": 1.9317047187103298,
+   "lo90": -1.0403428396314978,
+   "hi90": 1.8319664602983703,
+   "n_clusters": 28,
+   "B": 10000,
+   "seed": 20260913,
+   "n_undefined_resamples": 421,
+   "mean_J_A_cells": 1.6666666666666667,
+   "mean_J_graph_cells_B_to_F": 1.8222222222222222,
+   "n_A_cells": 3,
+   "n_graph_cells": 45,
+   "direction": "graph>A",
+   "ci95_excludes_0": false
+  }
+ },
+ "direction_agreement_pooled": {
+  "directions": {
+   "Gemini J (registered)": "graph>A",
+   "gpt-5.6-luna": "graph>A",
+   "claude-sonnet-5-5": "graph>A"
+  },
+  "all_same": true
+ },
+ "variant_means_J": {
+  "Gemini J (registered)": {
+   "A": 1.3333333333333333,
+   "B": 2.2222222222222223,
+   "C": 1.7692307692307692,
+   "D": 2.4285714285714284,
+   "E": 1.7,
+   "F": 1.8333333333333333
+  },
+  "gpt-5.6-luna": {
+   "A": 2.3333333333333335,
+   "B": 2.4444444444444446,
+   "C": 2.4615384615384617,
+   "D": 2.4285714285714284,
+   "E": 2.6,
+   "F": 2.3333333333333335
+  },
+  "claude-sonnet-5-5": {
+   "A": 1.6666666666666667,
+   "B": 1.5555555555555556,
+   "C": 1.6923076923076923,
+   "D": 2.0,
+   "E": 2.0,
+   "F": 2.0
+  }
+ },
+ "panel_J_marginals": {
+  "Gemini J (registered)": [
+   14,
+   2,
+   6,
+   26
+  ],
+  "gpt-5.6-luna": [
+   0,
+   9,
+   8,
+   31
+  ],
+  "claude-sonnet-5-5": [
+   1,
+   21,
+   12,
+   14
+  ]
+ },
+ "pointer": "The A->B contrast across judge families is in parts/r4.json (Gemini and luna, three input conditions, 23 question pairs); sonnet scored the 48-cell panel only."
+}

@@ -1,0 +1,116 @@
+{
+ "corpus_file": "corpus/natural_corpus.json",
+ "corpus_sha256": "b4ce971fc00bab8cfb979aa8010876b872c0af554c345b1f54828e5ace97ea13",
+ "top_level_chunks": 70,
+ "atomic_chunks": 859,
+ "atomic_chars_total": 319329,
+ "atomic_len": {
+  "mean": 371.7,
+  "median": 289,
+  "p90": 787,
+  "max": 1363,
+  "min": 42
+ },
+ "reference_pipeline_sample_len": {
+  "mean": 389,
+  "median": 315,
+  "p90": 692
+ },
+ "by_group": {
+  "brick-docs": {
+   "files": 25,
+   "cleaned_chars": 79355,
+   "atomic_chunks": 237
+  },
+  "brick-v1.4.4": {
+   "files": 6,
+   "cleaned_chars": 15789,
+   "atomic_chunks": 50
+  },
+  "brick-website": {
+   "files": 23,
+   "cleaned_chars": 87178,
+   "atomic_chunks": 255
+  },
+  "paper-brickllm2025": {
+   "files": 1,
+   "cleaned_chars": 33885,
+   "atomic_chunks": 59
+  },
+  "paper-fierro2020": {
+   "files": 1,
+   "cleaned_chars": 89008,
+   "atomic_chunks": 170
+  },
+  "py-brickschema": {
+   "files": 14,
+   "cleaned_chars": 24593,
+   "atomic_chunks": 88
+  }
+ },
+ "files_included": 70,
+ "files_dropped": [
+  {
+   "group": "brick-docs",
+   "path": "brick/designpatterns.md",
+   "prose_chars": 0
+  },
+  {
+   "group": "brick-docs",
+   "path": "lifecycle/validation.md",
+   "prose_chars": 97
+  },
+  {
+   "group": "brick-docs",
+   "path": "metadata/overview.md",
+   "prose_chars": 121
+  },
+  {
+   "group": "brick-v1.4.4",
+   "path": "examples/simple_apartment/README.md",
+   "prose_chars": 59
+  },
+  {
+   "group": "brick-v1.4.4",
+   "path": "extensions/README.md",
+   "prose_chars": 116
+  },
+  {
+   "group": "brick-website",
+   "path": "ontologyPages/nightly.md",
+   "prose_chars": 46
+  },
+  {
+   "group": "brick-website",
+   "path": "usageDetails/timeseries.md",
+   "prose_chars": 40
+  },
+  {
+   "group": "brick-website",
+   "path": "webpages/grants-and-awards.md",
+   "prose_chars": 176
+  }
+ ],
+ "code_blocks_removed": 194,
+ "code_chars_removed": 78207,
+ "papers_not_fetched": [
+  {
+   "group": "paper-vizbrick2022",
+   "url": "https://osti.gov/servlets/purl/1997805",
+   "title": "VizBrick: A GUI-based Interactive Tool for Authoring Semantic Metadata for Building Datasets (CEUR-WS)",
+   "error": "RuntimeError(\"fetch failed https://osti.gov/servlets/purl/1997805: URLError(TimeoutError('timed out'))\")"
+  },
+  {
+   "group": "paper-buildsys2024-llm",
+   "url": "https://eta-publications.lbl.gov/sites/default/files/2025-04/large_language_models.pdf",
+   "title": "Large Language Models for the Creation and Use of Semantic Ontologies in Buildings (BuildSys 2024)",
+   "error": "RuntimeError(\"fetch failed https://eta-publications.lbl.gov/sites/default/files/2025-04/large_language_models.pdf: <HTTPError 403: 'Forbidden'>\")"
+  }
+ ],
+ "rules": {
+  "merge_under": 120,
+  "split_over": 1000,
+  "drop_under": 40,
+  "min_prose_chars": 200
+ }
+}

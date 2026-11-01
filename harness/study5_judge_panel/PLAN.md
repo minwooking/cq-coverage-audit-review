@@ -1,0 +1,54 @@
+# PREREG addendum 36 (exploratory, post hoc) -- a wider judge panel for the A -> B contrast, and the full pipeline F on the three W3C domains
+
+> AI-generated draft; the author must review it before it is relied on. Date: 2026-10-20. Post hoc: written after addenda 34 and 35 and with knowledge of their results. This file is committed alone, before any model call of this addendum (a read-only listing of the served model ids and a directory listing of the containers were made to name the judges below; no completion was requested). `main.tex`, `main_ko.tex` and `supplement.tex` are not touched. All code named here is AI-generated and must be reviewed and tested by a person before reuse; none of it is to be applied to a production system. Before this file or any output is shared outside the team, check that no confidential company information, host name, address, port, key or personal data is in it.
+
+## 36.1 Question and status
+
+Studies 3 and 4 found that the A -> B judge-score contrast depends on the judge: GLM-4.7-Flash resolves B > A on the Brick pool (58 clusters, +0.414, 95% BCa excludes 0) and on the three new W3C domains pooled, while gpt-oss-20b finds no difference (Brick pool -0.132, equivalent). With two judges one cannot tell which is the outlier. The author approved (a) widening the judge panel on the same cells and (b) building the full pipeline (variant F) on the new domains. **Exploratory, judge-score only, no human labels, no confirmatory hypothesis. Results are reported whatever they show; no selection; no threshold, margin, seed or rule is changed after any score is seen.**
+
+## 36.2 Cells
+
+* **A/B cells (reused views, byte-identical prompts).** Every A/B cell of (i) Study 3's Brick pool = the four Brick-graph banks of addendum 34 A1 (holdout, paraphrases, v2 extras, expansion; eligible-in-both clusters 22 / 21 / 10 / 26, pooled over source questions to 58 clusters) and (ii) Study 4's three domains (DCAT, SOSA/SSN, PROV) that already has both a GLM and a gpt-oss score. Prompt = the stored job of the original study (system `run_holdout.RUBRIC`, user `ARTIFACT:\n{view}\n\nQUESTION: {question}`); the stored `prompt_sha256` is re-verified. The existing GLM / gpt-oss scores are reused, not re-requested.
+* **F cells (Step 2, below).** For each new domain, variant F built by the paper's pipeline, packaged and viewed exactly like A and B in addendum 35 (question-only sub-graph of the variant's graph, hop 2), and eligible under the paper's strict rule on the full rendering of F. F cells are scored by **all** judges including GLM and gpt-oss (new calls for those two).
+* A cell is "scored by a judge" when at least one of its 3 repeats is valid; cell J = mean of valid repeats (as in addenda 34-35).
+
+## 36.3 Judges (each its own analysis; every judge: temperature 0, 3 repeats, the scorer of addendum 26 unchanged: `json_object`, max_tokens 1024 and two retries at 4096, thinking-minimal switch, nothing imputed, seed 20260913)
+
+| id | model | route | family relative to the extractor | counts toward the interpretation rule |
+|---|---|---|---|---|
+| `glm` | GLM-4.7-Flash | a shared server, existing scores + F cells | independent | yes |
+| `gptoss` | gpt-oss-20b | a shared server, existing scores + F cells | independent | yes |
+| `q38` | Qwen3.8-Flash-Next (`Qwen/Qwen3.8-Flash-Next`) | <internal-host>, container `<container>`, request-only via SSH tunnel | Qwen lineage (the extractor's-family contrast judge of addendum 27); **counted as independent by the brief, flagged here** | yes (as instructed), plus a labelled sensitivity count without it |
+| `q80` | Qwen3-Next-80B-A3B-Instruct-FP8 | <internal-host>, container `<container>`, request-only | **same model id as the extractor** (a different deployment, see 35.5) | **no** (reported, clearly labelled same family) |
+| gateway | probed read-only, see 36.4 | local <internal-proxy> gateway | independent | yes if it answers |
+
+Servers are shared; nothing is started, stopped or reconfigured; GPUs are not touched beyond sending requests; no key, host or port is written to any committed file. The key for the Qwen endpoints is the pipeline's committed default and is passed through the environment only. `q38` and `q80` receive `chat_template_kwargs.enable_thinking=false` (the same switch as GLM). Workers: from a probe, at most 3 per endpoint, halved on any burst of errors; resumable JSONL; tunnels closed at the end.
+
+## 36.4 Gateway probe (read-only first)
+
+1. `GET /v1/models` through the route used by `harness/run_second_judge.py` (the local <internal-proxy> proxy) -- no key printed. Already seen before this commit: the registered holdout judge `gemini-3.6-flash` is **not listed** (recorded "no route", skipped). Listed: `gpt-5.6-luna` (known 402 since 2026-10-17), `anthropic/claude-haiku-5-5`, `anthropic/claude-sonnet-5-5`, others.
+2. One 1-call probe each, in this order, for `gpt-5.6-luna`, `anthropic/claude-haiku-5-5`, `anthropic/claude-sonnet-5-5`; first with the registered request form, with `response_format` omitted and then `temperature` omitted if the gateway rejects them (the documented <internal-proxy> adapter behaviour; each omission recorded). Any model answering HTTP 200 with a parseable score becomes a gateway judge; otherwise "no route" is recorded and the model skipped. **At most one Claude model is used** (the first of haiku-5-5, sonnet-5-5 that answers) to respect the <internal-proxy> batch quota rule.
+3. Quota rule for gateway judges: workers <= 3; a hard budget of **9,000,000 prompt tokens per gateway judge** (counted from response `usage`); pass order = repeat 1 over all cells, then repeat 2, then 3; stop that judge on 3 consecutive HTTP 402/429 or on the budget. An incomplete judge is reported with the repeats it has (labelled), never imputed.
+
+## 36.5 Step 2 -- variant F on DCAT, SOSA/SSN and PROV
+
+* Extractor = the paper's: `Qwen/Qwen3-Next-80B-A3B-Instruct-FP8` on <internal-host>, the same deployment and configuration as Study 4's A/B builds (`harness/study4_domains/build.sh`: timeout 900, 4 pipeline workers, `run_pipeline.py` token-usage wrapper, repository HEAD source), **continuing from each domain's existing `work/` directory** (the B-side files `triples.json`, `ontology.ttl` etc. are the inputs of the C-F stages). Command sequence = the remaining steps of `harness/variants/build_domain.sh`: `build-c`, `refine-d`, `build-d`, `select-standards`, `build-e`, `build-f`, each with `--cq <file>`.
+* **Pipeline-side question file.** The Brick F build used one fixed file, `eval/competency_questions.json` (the 16 Ontology-101 development questions); no tool generated a Brick-specific file, and `build_domain.sh` refuses any file under a bank path because bank questions in construction would leak the scored questions into F. The brief's condition ("if F needs a per-domain question file, generate it from the frozen bank with the same tool the Brick build used") is therefore met by **using the same fixed file as the Brick build** for all three domains. **The frozen banks are not given to construction.** Recorded as a deviation from the brief's wording, for that reason. Consequence for reading: as for Brick, the pipeline-side questions are not about the target domain; F's gain over B (if any) cannot come from the bank's own questions.
+* Any stage failure is recorded; the stages are resumable; `build-f` output is accepted only if `ontology_F.ttl` exists. If a domain's F cannot be built, it is reported as not built; nothing is imputed.
+* F views and eligibility: `harness/study4_domains/prepare.py` logic extended to variant F (new code in this folder; the study 4 folder is not edited). The bank is used only for the strict eligibility test; subgraphs use the question text only (make_inputs leak guard).
+
+## 36.6 Analysis (fixed before any new score)
+
+Per judge, scope and contrast, the paper's rule, the same code path as addenda 34-35 (`study3_expanded_ab/analyze.contrast`): mean J per cell; per cluster d = J(second variant) - J(first); question-clustered paired BCa bootstrap (seed 20260913, B = 10,000), 95% for "resolved", 90% for the +-0.50 equivalence reading; exact sign test and Wilcoxon (zeros dropped) reported; decision: 95% BCa excludes 0 -> **resolved** (direction named); else 90% BCa inside (-0.50, +0.50) -> **equivalent**; else **unresolved**. Fewer than 10 clusters -> underpowered, not interpreted.
+
+**Scopes** (A -> B): the four Brick banks separately; **Brick pool** (58 clusters, clusters = source questions, per-cluster mean over banks as in addendum 34 A1); DCAT; SOSA/SSN; PROV; **new domains pooled** (clusters qualified `<domain>:<cq>`, clustered by question within domain). **F contrasts** (A -> F and B -> F): per domain and pooled, over clusters eligible in both variants and scored by that judge.
+
+**Panel summary (pre-fixed).** (a) for each scope, the number of judges (independent-family set, same-family set and all, stated separately) with decision resolved B > A, resolved A > B, equivalent, unresolved; (b) a **per-cell panel-mean J** = mean of all valid (judge, repeat) scores of the cell over all judges that scored it (variant "without same-family `q80`" also given), with its own A -> B contrast by the same code, labelled as a **descriptive aggregate, not a judge**, and not entering the decision count; (c) **pairwise judge agreement**: quadratic-weighted kappa on the shared cells, using the per-cell median-low of repeats as the integer score (labelled), for every judge pair, on A/B cells, and separately on F cells.
+
+**Interpretation rule (pre-fixed).** If at least 3 of the independent-family judges (`glm`, `gptoss`, `q38`, plus any gateway judge; `q80` excluded) resolve B > A on the pooled Brick set **or** on the pooled new domains, the text may say "a majority of judge families resolved B > A"; otherwise it must say "judge-dependent". The number of independent judges that answered decides the denominator; "3 of 3" and "3 of 5" both satisfy the rule, and the denominator is stated next to it. Sensitivity (labelled, does not change the rule): the same count without `q38`.
+
+## 36.7 Order of work, outputs, commits
+
+1. This file, committed alone.
+2. Code (job assembly, panel scorer wrapper, F packaging, `analyze.py`, tests) committed before results. Raw judge records, `results.json`, `REPORT_auto.md`, `tables.tex` (appendix rows: judge x scope -> n, delta [CI], decision; panel summary; F contrasts) committed last. `PROGRESS.md` gets a line with an ETA per stage. Deviations go to `DEVIATIONS.md`.
+3. Only explicit paths are staged; `index.lock` is retried. Reserved files (`site_key*`, `labeling_sheet_key*`, `human_labels_export*`, `views_for_raters.zip`, `.env`) are not opened. Corpus text, graphs and views of SOSA/SSN and PROV are not committed (document licence, 35.2); DCAT artifacts may be. SSH tunnels are closed at the end.

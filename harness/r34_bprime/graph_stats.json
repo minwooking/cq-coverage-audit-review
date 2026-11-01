@@ -1,0 +1,42 @@
+{
+ "B": {
+  "triples": 365,
+  "nodes": 38,
+  "top": [
+   [
+    "x",
+    197
+   ],
+   [
+    "p_x",
+    55
+   ],
+   [
+    "Concept",
+    20
+   ]
+  ],
+  "ct_x_present": true,
+  "subClassOf": 7
+ },
+ "Bp": {
+  "triples": 1124,
+  "nodes": 216,
+  "top": [
+   [
+    "Concept",
+    146
+   ],
+   [
+    "scheme",
+    140
+   ],
+   [
+    "NamedIndividual",
+    133
+   ]
+  ],
+  "ct_x_present": false,
+  "subClassOf": 7
+ }
+}

@@ -1,0 +1,330 @@
+{
+ "seed": 20260913,
+ "B": 10000,
+ "post_hoc": true,
+ "valid_counts": {
+  "gemini_primary": 188,
+  "luna_limited": 188,
+  "luna_subgraph": 179,
+  "luna_full": 188,
+  "luna_invalid_records_skipped": {
+   "limited": 0,
+   "subgraph": 3,
+   "full": 2
+  }
+ },
+ "per_judge_question_set": {
+  "Gemini J (registered)": {
+   "est": 0.5652173913043478,
+   "lo": 0.043478260869565216,
+   "hi": 1.1304347826086956,
+   "lo90": 0.13043478260869565,
+   "hi90": 1.0434782608695652,
+   "n_clusters": 23,
+   "B": 10000,
+   "seed": 20260913,
+   "n_pairs": 23,
+   "n_up": 10,
+   "n_down": 6,
+   "n_tie": 7,
+   "sd_diff": 1.342524316912724,
+   "wilcoxon_p": 0.04412135564363152,
+   "signflip": {
+    "p_two_sided": 0.078643798828125,
+    "p_one_sided_in_observed_direction": 0.0393218994140625,
+    "sum_diff": 13,
+    "n_nonzero": 16,
+    "exact": true,
+    "max_abs_sum": 25
+   },
+   "mean_A_on_set": 1.7391304347826086,
+   "mean_B_on_set": 2.3043478260869565,
+   "share_Jge2_A": 0.5652173913043478,
+   "share_Jge2_B": 0.8695652173913043,
+   "direction": "B>A",
+   "ci95_excludes_0": true,
+   "n_questions": 23
+  },
+  "luna full": {
+   "est": -0.043478260869565216,
+   "lo": -0.21739130434782608,
+   "hi": 0.2608695652173913,
+   "lo90": -0.17391304347826086,
+   "hi90": 0.17391304347826086,
+   "n_clusters": 23,
+   "B": 10000,
+   "seed": 20260913,
+   "n_pairs": 23,
+   "n_up": 1,
+   "n_down": 3,
+   "n_tie": 19,
+   "sd_diff": 0.5623215571155333,
+   "wilcoxon_p": 1.0,
+   "signflip": {
+    "p_two_sided": 1.0,
+    "p_one_sided_in_observed_direction": 0.5,
+    "sum_diff": -1,
+    "n_nonzero": 4,
+    "exact": true,
+    "max_abs_sum": 5
+   },
+   "mean_A_on_set": 2.652173913043478,
+   "mean_B_on_set": 2.608695652173913,
+   "share_Jge2_A": 0.8260869565217391,
+   "share_Jge2_B": 0.8695652173913043,
+   "direction": "B<A",
+   "ci95_excludes_0": false,
+   "n_questions": 23
+  },
+  "luna limited (60k chars)": {
+   "est": -0.6521739130434783,
+   "lo": -1.2608695652173914,
+   "hi": -0.043478260869565216,
+   "lo90": -1.173913043478261,
+   "hi90": -0.17391304347826086,
+   "n_clusters": 23,
+   "B": 10000,
+   "seed": 20260913,
+   "n_pairs": 23,
+   "n_up": 3,
+   "n_down": 10,
+   "n_tie": 10,
+   "sd_diff": 1.495711920858301,
+   "wilcoxon_p": 0.06298828125,
+   "signflip": {
+    "p_two_sided": 0.06689453125,
+    "p_one_sided_in_observed_direction": 0.033447265625,
+    "sum_diff": -15,
+    "n_nonzero": 13,
+    "exact": true,
+    "max_abs_sum": 25
+   },
+   "mean_A_on_set": 1.3478260869565217,
+   "mean_B_on_set": 0.6956521739130435,
+   "share_Jge2_A": 0.30434782608695654,
+   "share_Jge2_B": 0.08695652173913043,
+   "direction": "B<A",
+   "ci95_excludes_0": true,
+   "n_questions": 23
+  },
+  "luna subgraph": {
+   "est": 0.09090909090909091,
+   "lo": -0.5,
+   "hi": 0.6818181818181818,
+   "lo90": -0.4090909090909091,
+   "hi90": 0.5909090909090909,
+   "n_clusters": 22,
+   "B": 10000,
+   "seed": 20260913,
+   "n_pairs": 22,
+   "n_up": 6,
+   "n_down": 6,
+   "n_tie": 10,
+   "sd_diff": 1.4444999434337429,
+   "wilcoxon_p": 0.7470703125,
+   "signflip": {
+    "p_two_sided": 0.8837890625,
+    "p_one_sided_in_observed_direction": 0.44189453125,
+    "sum_diff": 2,
+    "n_nonzero": 12,
+    "exact": true,
+    "max_abs_sum": 22
+   },
+   "mean_A_on_set": 2.227272727272727,
+   "mean_B_on_set": 2.3181818181818183,
+   "share_Jge2_A": 0.6818181818181818,
+   "share_Jge2_B": 0.7272727272727273,
+   "direction": "B>A",
+   "ci95_excludes_0": false,
+   "n_questions": 22
+  }
+ },
+ "strict_common_set": {
+  "n_questions": 22,
+  "questions_not_common": {
+   "Gemini J (registered)": [
+    "CQB27"
+   ],
+   "luna full": [
+    "CQB27"
+   ],
+   "luna limited (60k chars)": [
+    "CQB27"
+   ]
+  },
+  "contrasts": {
+   "Gemini J (registered)": {
+    "est": 0.45454545454545453,
+    "lo": 0.0,
+    "hi": 1.0,
+    "lo90": 0.045454545454545456,
+    "hi90": 0.9090909090909091,
+    "n_clusters": 22,
+    "B": 10000,
+    "seed": 20260913,
+    "n_pairs": 22,
+    "n_up": 9,
+    "n_down": 6,
+    "n_tie": 7,
+    "sd_diff": 1.262170191802038,
+    "wilcoxon_p": 0.07941062599894226,
+    "signflip": {
+     "p_two_sided": 0.146240234375,
+     "p_one_sided_in_observed_direction": 0.0731201171875,
+     "sum_diff": 10,
+     "n_nonzero": 15,
+     "exact": true,
+     "max_abs_sum": 22
+    },
+    "mean_A_on_set": 1.8181818181818181,
+    "mean_B_on_set": 2.272727272727273,
+    "share_Jge2_A": 0.5909090909090909,
+    "share_Jge2_B": 0.8636363636363636,
+    "direction": "B>A",
+    "ci95_excludes_0": false,
+    "n_questions": 22
+   },
+   "luna full": {
+    "est": -0.045454545454545456,
+    "lo": -0.22727272727272727,
+    "hi": 0.2727272727272727,
+    "lo90": -0.18181818181818182,
+    "hi90": 0.22727272727272727,
+    "n_clusters": 22,
+    "B": 10000,
+    "seed": 20260913,
+    "n_pairs": 22,
+    "n_up": 1,
+    "n_down": 3,
+    "n_tie": 18,
+    "sd_diff": 0.5754727023663515,
+    "wilcoxon_p": 1.0,
+    "signflip": {
+     "p_two_sided": 1.0,
+     "p_one_sided_in_observed_direction": 0.5,
+     "sum_diff": -1,
+     "n_nonzero": 4,
+     "exact": true,
+     "max_abs_sum": 5
+    },
+    "mean_A_on_set": 2.6363636363636362,
+    "mean_B_on_set": 2.590909090909091,
+    "share_Jge2_A": 0.8181818181818182,
+    "share_Jge2_B": 0.8636363636363636,
+    "direction": "B<A",
+    "ci95_excludes_0": false,
+    "n_questions": 22
+   },
+   "luna limited (60k chars)": {
+    "est": -0.6363636363636364,
+    "lo": -1.2727272727272727,
+    "hi": 0.0,
+    "lo90": -1.1818181818181819,
+    "hi90": -0.13636363636363635,
+    "n_clusters": 22,
+    "B": 10000,
+    "seed": 20260913,
+    "n_pairs": 22,
+    "n_up": 3,
+    "n_down": 9,
+    "n_tie": 10,
+    "sd_diff": 1.5289415743128765,
+    "wilcoxon_p": 0.0830078125,
+    "signflip": {
+     "p_two_sided": 0.087890625,
+     "p_one_sided_in_observed_direction": 0.0439453125,
+     "sum_diff": -14,
+     "n_nonzero": 12,
+     "exact": true,
+     "max_abs_sum": 24
+    },
+    "mean_A_on_set": 1.3636363636363635,
+    "mean_B_on_set": 0.7272727272727273,
+    "share_Jge2_A": 0.3181818181818182,
+    "share_Jge2_B": 0.09090909090909091,
+    "direction": "B<A",
+    "ci95_excludes_0": false,
+    "n_questions": 22
+   },
+   "luna subgraph": {
+    "est": 0.09090909090909091,
+    "lo": -0.5,
+    "hi": 0.6818181818181818,
+    "lo90": -0.4090909090909091,
+    "hi90": 0.5909090909090909,
+    "n_clusters": 22,
+    "B": 10000,
+    "seed": 20260913,
+    "n_pairs": 22,
+    "n_up": 6,
+    "n_down": 6,
+    "n_tie": 10,
+    "sd_diff": 1.4444999434337429,
+    "wilcoxon_p": 0.7470703125,
+    "signflip": {
+     "p_two_sided": 0.8837890625,
+     "p_one_sided_in_observed_direction": 0.44189453125,
+     "sum_diff": 2,
+     "n_nonzero": 12,
+     "exact": true,
+     "max_abs_sum": 22
+    },
+    "mean_A_on_set": 2.227272727272727,
+    "mean_B_on_set": 2.3181818181818183,
+    "share_Jge2_A": 0.6818181818181818,
+    "share_Jge2_B": 0.7272727272727273,
+    "direction": "B>A",
+    "ci95_excludes_0": false,
+    "n_questions": 22
+   }
+  }
+ },
+ "direction_agreement_per_judge_question_set": {
+  "directions": {
+   "Gemini J (registered)": "B>A",
+   "luna full": "B<A",
+   "luna limited (60k chars)": "B<A",
+   "luna subgraph": "B>A"
+  },
+  "all_same_direction": false,
+  "n_judge_conditions_B_gt_A": 2,
+  "n_judge_conditions_ci95_excludes_0": 2
+ },
+ "direction_agreement_strict_common_contrasts": {
+  "directions": {
+   "Gemini J (registered)": "B>A",
+   "luna full": "B<A",
+   "luna limited (60k chars)": "B<A",
+   "luna subgraph": "B>A"
+  },
+  "all_same_direction": false,
+  "n_judge_conditions_B_gt_A": 2,
+  "n_judge_conditions_ci95_excludes_0": 0
+ },
+ "cell_level_vs_gemini_descriptive": {
+  "luna full": {
+   "n_cells": 188,
+   "mean_gemini": 1.9627659574468086,
+   "mean_luna": 2.526595744680851,
+   "mean_luna_minus_gemini": 0.5638297872340425,
+   "exact_agreement": 0.526595744680851,
+   "QWK": 0.5036389099341093
+  },
+  "luna limited (60k chars)": {
+   "n_cells": 188,
+   "mean_gemini": 1.9627659574468086,
+   "mean_luna": 0.7287234042553191,
+   "mean_luna_minus_gemini": -1.2340425531914894,
+   "exact_agreement": 0.15425531914893617,
+   "QWK": -0.05127150279593473
+  },
+  "luna subgraph": {
+   "n_cells": 179,
+   "mean_gemini": 2.0335195530726256,
+   "mean_luna": 1.9329608938547487,
+   "mean_luna_minus_gemini": -0.1005586592178771,
+   "exact_agreement": 0.3407821229050279,
+   "QWK": 0.23278864184302162
+  }
+ }
+}

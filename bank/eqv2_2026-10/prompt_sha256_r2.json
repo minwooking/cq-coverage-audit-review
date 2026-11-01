@@ -1,0 +1,7 @@
+{
+ "ai_generated_draft": true,
+ "amendment": "47.A1",
+ "note": "Single prompt revision after the CP-1 rejection of b1 (addendum 47, 47.3). frame_summary.json is committed and not rewritten; this file is where the revised template's hash is pinned. Changed text: the relations frames (the {owner} placeholder is filled with the shape owner, not the property term) and instances frame 2 (plural-safe 'example(s)'). All other category frames and the system prompt are byte-identical to the previous template. See harness/study29_eqv2_ab/AMENDMENT_47A1.md.",
+ "previous_sha256": "baf4e1fe6367e387b5fb443d873e850275fe53563d67e8f0c4ccd20dbaa3987f",
+ "prompt_sha256": "a20414e1bfd2e5c354066696d13b4e76229a1ea2b3714347de2ec56ac9008b84"
+}

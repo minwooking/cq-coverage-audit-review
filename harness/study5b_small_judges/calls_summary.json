@@ -1,0 +1,29 @@
+{
+ "q38_27b": {
+  "records": 1431,
+  "valid": 1431,
+  "invalid": 0,
+  "context_skip": 0,
+  "prompt_tokens": 10322649,
+  "completion_tokens": 93636,
+  "model": "Qwen/Qwen3.8-27B"
+ },
+ "q35_9b": {
+  "records": 1431,
+  "valid": 1426,
+  "invalid": 5,
+  "context_skip": 0,
+  "prompt_tokens": 10322649,
+  "completion_tokens": 172546,
+  "model": "Qwen/Qwen3.5-9B"
+ },
+ "q35_4b": {
+  "records": 1431,
+  "valid": 1428,
+  "invalid": 3,
+  "context_skip": 0,
+  "prompt_tokens": 10322649,
+  "completion_tokens": 142719,
+  "model": "Qwen/Qwen3.5-4B"
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "judge_status_luna_402": {
+  "subgraph": {
+   "records": 3,
+   "valid": 0,
+   "failed_by_http_status": {
+    "402": 3
+   }
+  },
+  "full": {
+   "records": 0,
+   "valid": 0,
+   "failed_by_http_status": {}
+  },
+  "estimated_input_tokens": {
+   "subgraph_72_calls": 495727,
+   "full_72_calls": 11966590,
+   "budget": 6000000,
+   "full_view_within_budget": false
+  }
+ },
+ "reference_template_luna_subgraph": {
+  "n_paired_template": 22,
+  "template_A_to_B": {
+   "mean_diff_J": 0.09090909090909091,
+   "ci95_J": [
+    -0.5,
+    0.6818181818181818
+   ],
+   "mean_diff_coverage_points": 3.0303030303030307,
+   "coverage_A": 74.24242424242424,
+   "coverage_B": 77.27272727272728
+  }
+ }
+}

@@ -1,0 +1,3014 @@
+{
+ "summary": {
+  "holdout": {
+   "clusters_glm": 22,
+   "clusters_gptoss": 22,
+   "clusters_used": 22
+  },
+  "paraphrases": {
+   "clusters_glm": 21,
+   "clusters_gptoss": 21,
+   "clusters_used": 21
+  },
+  "v2_extras": {
+   "clusters_glm": 10,
+   "clusters_gptoss": 10,
+   "clusters_used": 10
+  },
+  "expansion": {
+   "clusters_glm": 26,
+   "clusters_gptoss": 26,
+   "clusters_used": 26
+  },
+  "dcat": {
+   "questions_with_an_A_or_B_cell_scored_by_both_judges": 33,
+   "questions_with_both_A_and_B": 21
+  },
+  "ssn": {
+   "questions_with_an_A_or_B_cell_scored_by_both_judges": 42,
+   "questions_with_both_A_and_B": 41
+  },
+  "prov": {
+   "questions_with_an_A_or_B_cell_scored_by_both_judges": 40,
+   "questions_with_both_A_and_B": 37
+  }
+ },
+ "cells": [
+  {
+   "panel_id": "holdout|primary:A:CQB01",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB01",
+   "cluster": "CQB01"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB01",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB01",
+   "cluster": "CQB01"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB02",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB02",
+   "cluster": "CQB02"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB02",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB02",
+   "cluster": "CQB02"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB03",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB03",
+   "cluster": "CQB03"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB03",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB03",
+   "cluster": "CQB03"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB04",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB04",
+   "cluster": "CQB04"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB04",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB04",
+   "cluster": "CQB04"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB05",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB05",
+   "cluster": "CQB05"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB05",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB05",
+   "cluster": "CQB05"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB06",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB06",
+   "cluster": "CQB06"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB06",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB06",
+   "cluster": "CQB06"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB07",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB07",
+   "cluster": "CQB07"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB07",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB07",
+   "cluster": "CQB07"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB08",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB08",
+   "cluster": "CQB08"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB08",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB08",
+   "cluster": "CQB08"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB09",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB09",
+   "cluster": "CQB09"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB09",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB09",
+   "cluster": "CQB09"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB10",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB10",
+   "cluster": "CQB10"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB10",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB10",
+   "cluster": "CQB10"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB11",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB11",
+   "cluster": "CQB11"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB11",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB11",
+   "cluster": "CQB11"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB12",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB12",
+   "cluster": "CQB12"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB12",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB12",
+   "cluster": "CQB12"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB16",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB16",
+   "cluster": "CQB16"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB16",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB16",
+   "cluster": "CQB16"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB17",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB17",
+   "cluster": "CQB17"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB17",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB17",
+   "cluster": "CQB17"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB21",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB21",
+   "cluster": "CQB21"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB21",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB21",
+   "cluster": "CQB21"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB25",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB25",
+   "cluster": "CQB25"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB25",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB25",
+   "cluster": "CQB25"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB26",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB26",
+   "cluster": "CQB26"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB26",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB26",
+   "cluster": "CQB26"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB28",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB28",
+   "cluster": "CQB28"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB28",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB28",
+   "cluster": "CQB28"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB29",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB29",
+   "cluster": "CQB29"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB29",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB29",
+   "cluster": "CQB29"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB30",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB30",
+   "cluster": "CQB30"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB30",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB30",
+   "cluster": "CQB30"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB31",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB31",
+   "cluster": "CQB31"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB31",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB31",
+   "cluster": "CQB31"
+  },
+  {
+   "panel_id": "holdout|primary:A:CQB34",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB34",
+   "cluster": "CQB34"
+  },
+  {
+   "panel_id": "holdout|primary:B:CQB34",
+   "scope": "holdout",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB34",
+   "cluster": "CQB34"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB01",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB01",
+   "cluster": "CQB01"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB01",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB01",
+   "cluster": "CQB01"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB02",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB02",
+   "cluster": "CQB02"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB02",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB02",
+   "cluster": "CQB02"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB03",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB03",
+   "cluster": "CQB03"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB03",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB03",
+   "cluster": "CQB03"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB04",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB04",
+   "cluster": "CQB04"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB04",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB04",
+   "cluster": "CQB04"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB05",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB05",
+   "cluster": "CQB05"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB05",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB05",
+   "cluster": "CQB05"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB06",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB06",
+   "cluster": "CQB06"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB06",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB06",
+   "cluster": "CQB06"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB07",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB07",
+   "cluster": "CQB07"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB07",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB07",
+   "cluster": "CQB07"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB08",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB08",
+   "cluster": "CQB08"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB08",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB08",
+   "cluster": "CQB08"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB09",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB09",
+   "cluster": "CQB09"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB09",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB09",
+   "cluster": "CQB09"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB10",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB10",
+   "cluster": "CQB10"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB10",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB10",
+   "cluster": "CQB10"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB11",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB11",
+   "cluster": "CQB11"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB11",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB11",
+   "cluster": "CQB11"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB12",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB12",
+   "cluster": "CQB12"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB12",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB12",
+   "cluster": "CQB12"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB17",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB17",
+   "cluster": "CQB17"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB17",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB17",
+   "cluster": "CQB17"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB21",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB21",
+   "cluster": "CQB21"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB21",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB21",
+   "cluster": "CQB21"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB25",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB25",
+   "cluster": "CQB25"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB25",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB25",
+   "cluster": "CQB25"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB26",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB26",
+   "cluster": "CQB26"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB26",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB26",
+   "cluster": "CQB26"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB28",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB28",
+   "cluster": "CQB28"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB28",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB28",
+   "cluster": "CQB28"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB29",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB29",
+   "cluster": "CQB29"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB29",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB29",
+   "cluster": "CQB29"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB30",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB30",
+   "cluster": "CQB30"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB30",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB30",
+   "cluster": "CQB30"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB31",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB31",
+   "cluster": "CQB31"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB31",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB31",
+   "cluster": "CQB31"
+  },
+  {
+   "panel_id": "paraphrases|para:A:CQB34",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB34",
+   "cluster": "CQB34"
+  },
+  {
+   "panel_id": "paraphrases|para:B:CQB34",
+   "scope": "paraphrases",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB34",
+   "cluster": "CQB34"
+  },
+  {
+   "panel_id": "v2_extras|v2x:A:CQB37",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB37",
+   "cluster": "CQB37"
+  },
+  {
+   "panel_id": "v2_extras|v2x:B:CQB37",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB37",
+   "cluster": "CQB37"
+  },
+  {
+   "panel_id": "v2_extras|v2x:A:CQB38",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB38",
+   "cluster": "CQB38"
+  },
+  {
+   "panel_id": "v2_extras|v2x:B:CQB38",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB38",
+   "cluster": "CQB38"
+  },
+  {
+   "panel_id": "v2_extras|v2x:A:CQB40",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB40",
+   "cluster": "CQB40"
+  },
+  {
+   "panel_id": "v2_extras|v2x:B:CQB40",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB40",
+   "cluster": "CQB40"
+  },
+  {
+   "panel_id": "v2_extras|v2x:A:CQB41",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB41",
+   "cluster": "CQB41"
+  },
+  {
+   "panel_id": "v2_extras|v2x:B:CQB41",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB41",
+   "cluster": "CQB41"
+  },
+  {
+   "panel_id": "v2_extras|v2x:A:CQB42",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB42",
+   "cluster": "CQB42"
+  },
+  {
+   "panel_id": "v2_extras|v2x:B:CQB42",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB42",
+   "cluster": "CQB42"
+  },
+  {
+   "panel_id": "v2_extras|v2x:A:CQB43",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB43",
+   "cluster": "CQB43"
+  },
+  {
+   "panel_id": "v2_extras|v2x:B:CQB43",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB43",
+   "cluster": "CQB43"
+  },
+  {
+   "panel_id": "v2_extras|v2x:A:CQB53",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB53",
+   "cluster": "CQB53"
+  },
+  {
+   "panel_id": "v2_extras|v2x:B:CQB53",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB53",
+   "cluster": "CQB53"
+  },
+  {
+   "panel_id": "v2_extras|v2x:A:CQB54",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB54",
+   "cluster": "CQB54"
+  },
+  {
+   "panel_id": "v2_extras|v2x:B:CQB54",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB54",
+   "cluster": "CQB54"
+  },
+  {
+   "panel_id": "v2_extras|v2x:A:CQB57",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB57",
+   "cluster": "CQB57"
+  },
+  {
+   "panel_id": "v2_extras|v2x:B:CQB57",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB57",
+   "cluster": "CQB57"
+  },
+  {
+   "panel_id": "v2_extras|v2x:A:CQB58",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQB58",
+   "cluster": "CQB58"
+  },
+  {
+   "panel_id": "v2_extras|v2x:B:CQB58",
+   "scope": "v2_extras",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQB58",
+   "cluster": "CQB58"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX05",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX05",
+   "cluster": "CQX05"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX05",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX05",
+   "cluster": "CQX05"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX07",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX07",
+   "cluster": "CQX07"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX07",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX07",
+   "cluster": "CQX07"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX12",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX12",
+   "cluster": "CQX12"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX12",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX12",
+   "cluster": "CQX12"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX13",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX13",
+   "cluster": "CQX13"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX13",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX13",
+   "cluster": "CQX13"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX14",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX14",
+   "cluster": "CQX14"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX14",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX14",
+   "cluster": "CQX14"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX15",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX15",
+   "cluster": "CQX15"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX15",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX15",
+   "cluster": "CQX15"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX16",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX16",
+   "cluster": "CQX16"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX16",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX16",
+   "cluster": "CQX16"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX19",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX19",
+   "cluster": "CQX19"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX19",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX19",
+   "cluster": "CQX19"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX20",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX20",
+   "cluster": "CQX20"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX20",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX20",
+   "cluster": "CQX20"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX21",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX21",
+   "cluster": "CQX21"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX21",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX21",
+   "cluster": "CQX21"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX23",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX23",
+   "cluster": "CQX23"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX23",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX23",
+   "cluster": "CQX23"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX28",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX28",
+   "cluster": "CQX28"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX28",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX28",
+   "cluster": "CQX28"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX33",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX33",
+   "cluster": "CQX33"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX33",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX33",
+   "cluster": "CQX33"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX35",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX35",
+   "cluster": "CQX35"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX35",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX35",
+   "cluster": "CQX35"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX37",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX37",
+   "cluster": "CQX37"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX37",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX37",
+   "cluster": "CQX37"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX38",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX38",
+   "cluster": "CQX38"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX38",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX38",
+   "cluster": "CQX38"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX40",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX40",
+   "cluster": "CQX40"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX40",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX40",
+   "cluster": "CQX40"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX43",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX43",
+   "cluster": "CQX43"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX43",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX43",
+   "cluster": "CQX43"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX47",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX47",
+   "cluster": "CQX47"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX47",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX47",
+   "cluster": "CQX47"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX57",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX57",
+   "cluster": "CQX57"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX57",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX57",
+   "cluster": "CQX57"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX61",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX61",
+   "cluster": "CQX61"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX61",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX61",
+   "cluster": "CQX61"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX63",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX63",
+   "cluster": "CQX63"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX63",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX63",
+   "cluster": "CQX63"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX65",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX65",
+   "cluster": "CQX65"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX65",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX65",
+   "cluster": "CQX65"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX76",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX76",
+   "cluster": "CQX76"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX76",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX76",
+   "cluster": "CQX76"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX78",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX78",
+   "cluster": "CQX78"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX78",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX78",
+   "cluster": "CQX78"
+  },
+  {
+   "panel_id": "expansion|primary:A:CQX83",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "A",
+   "cq_id": "CQX83",
+   "cluster": "CQX83"
+  },
+  {
+   "panel_id": "expansion|primary:B:CQX83",
+   "scope": "expansion",
+   "domain": "brick",
+   "variant": "B",
+   "cq_id": "CQX83",
+   "cluster": "CQX83"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD01",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD01",
+   "cluster": "dcat:CQD01"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD01",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD01",
+   "cluster": "dcat:CQD01"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD02",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD02",
+   "cluster": "dcat:CQD02"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD02",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD02",
+   "cluster": "dcat:CQD02"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD03",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD03",
+   "cluster": "dcat:CQD03"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD03",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD03",
+   "cluster": "dcat:CQD03"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD04",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD04",
+   "cluster": "dcat:CQD04"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD04",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD04",
+   "cluster": "dcat:CQD04"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD05",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD05",
+   "cluster": "dcat:CQD05"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD06",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD06",
+   "cluster": "dcat:CQD06"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD06",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD06",
+   "cluster": "dcat:CQD06"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD07",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD07",
+   "cluster": "dcat:CQD07"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD07",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD07",
+   "cluster": "dcat:CQD07"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD08",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD08",
+   "cluster": "dcat:CQD08"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD08",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD08",
+   "cluster": "dcat:CQD08"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD09",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD09",
+   "cluster": "dcat:CQD09"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD10",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD10",
+   "cluster": "dcat:CQD10"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD10",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD10",
+   "cluster": "dcat:CQD10"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD11",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD11",
+   "cluster": "dcat:CQD11"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD11",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD11",
+   "cluster": "dcat:CQD11"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD12",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD12",
+   "cluster": "dcat:CQD12"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD12",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD12",
+   "cluster": "dcat:CQD12"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD13",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD13",
+   "cluster": "dcat:CQD13"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD13",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD13",
+   "cluster": "dcat:CQD13"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD15",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD15",
+   "cluster": "dcat:CQD15"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD15",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD15",
+   "cluster": "dcat:CQD15"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD17",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD17",
+   "cluster": "dcat:CQD17"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD18",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD18",
+   "cluster": "dcat:CQD18"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD25",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD25",
+   "cluster": "dcat:CQD25"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD26",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD26",
+   "cluster": "dcat:CQD26"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD26",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD26",
+   "cluster": "dcat:CQD26"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD27",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD27",
+   "cluster": "dcat:CQD27"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD27",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD27",
+   "cluster": "dcat:CQD27"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD28",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD28",
+   "cluster": "dcat:CQD28"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD28",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD28",
+   "cluster": "dcat:CQD28"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD29",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD29",
+   "cluster": "dcat:CQD29"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD29",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD29",
+   "cluster": "dcat:CQD29"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD30",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD30",
+   "cluster": "dcat:CQD30"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD31",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD31",
+   "cluster": "dcat:CQD31"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD32",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD32",
+   "cluster": "dcat:CQD32"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD32",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD32",
+   "cluster": "dcat:CQD32"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD34",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD34",
+   "cluster": "dcat:CQD34"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD34",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD34",
+   "cluster": "dcat:CQD34"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD35",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD35",
+   "cluster": "dcat:CQD35"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD35",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD35",
+   "cluster": "dcat:CQD35"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD36",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD36",
+   "cluster": "dcat:CQD36"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD37",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD37",
+   "cluster": "dcat:CQD37"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD38",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD38",
+   "cluster": "dcat:CQD38"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD39",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD39",
+   "cluster": "dcat:CQD39"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD39",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD39",
+   "cluster": "dcat:CQD39"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD40",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD40",
+   "cluster": "dcat:CQD40"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD41",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD41",
+   "cluster": "dcat:CQD41"
+  },
+  {
+   "panel_id": "dcat|primary:B:CQD41",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "B",
+   "cq_id": "CQD41",
+   "cluster": "dcat:CQD41"
+  },
+  {
+   "panel_id": "dcat|primary:A:CQD42",
+   "scope": "dcat",
+   "domain": "dcat",
+   "variant": "A",
+   "cq_id": "CQD42",
+   "cluster": "dcat:CQD42"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS01",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS01",
+   "cluster": "ssn:CQS01"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS01",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS01",
+   "cluster": "ssn:CQS01"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS02",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS02",
+   "cluster": "ssn:CQS02"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS02",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS02",
+   "cluster": "ssn:CQS02"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS03",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS03",
+   "cluster": "ssn:CQS03"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS03",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS03",
+   "cluster": "ssn:CQS03"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS04",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS04",
+   "cluster": "ssn:CQS04"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS04",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS04",
+   "cluster": "ssn:CQS04"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS05",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS05",
+   "cluster": "ssn:CQS05"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS05",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS05",
+   "cluster": "ssn:CQS05"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS06",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS06",
+   "cluster": "ssn:CQS06"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS06",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS06",
+   "cluster": "ssn:CQS06"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS07",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS07",
+   "cluster": "ssn:CQS07"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS07",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS07",
+   "cluster": "ssn:CQS07"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS08",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS08",
+   "cluster": "ssn:CQS08"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS08",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS08",
+   "cluster": "ssn:CQS08"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS09",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS09",
+   "cluster": "ssn:CQS09"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS09",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS09",
+   "cluster": "ssn:CQS09"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS10",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS10",
+   "cluster": "ssn:CQS10"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS10",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS10",
+   "cluster": "ssn:CQS10"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS11",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS11",
+   "cluster": "ssn:CQS11"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS11",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS11",
+   "cluster": "ssn:CQS11"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS12",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS12",
+   "cluster": "ssn:CQS12"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS12",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS12",
+   "cluster": "ssn:CQS12"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS13",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS13",
+   "cluster": "ssn:CQS13"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS13",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS13",
+   "cluster": "ssn:CQS13"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS14",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS14",
+   "cluster": "ssn:CQS14"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS14",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS14",
+   "cluster": "ssn:CQS14"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS15",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS15",
+   "cluster": "ssn:CQS15"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS15",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS15",
+   "cluster": "ssn:CQS15"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS16",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS16",
+   "cluster": "ssn:CQS16"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS16",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS16",
+   "cluster": "ssn:CQS16"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS17",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS17",
+   "cluster": "ssn:CQS17"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS17",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS17",
+   "cluster": "ssn:CQS17"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS18",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS18",
+   "cluster": "ssn:CQS18"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS18",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS18",
+   "cluster": "ssn:CQS18"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS19",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS19",
+   "cluster": "ssn:CQS19"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS19",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS19",
+   "cluster": "ssn:CQS19"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS20",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS20",
+   "cluster": "ssn:CQS20"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS21",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS21",
+   "cluster": "ssn:CQS21"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS21",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS21",
+   "cluster": "ssn:CQS21"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS22",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS22",
+   "cluster": "ssn:CQS22"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS22",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS22",
+   "cluster": "ssn:CQS22"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS23",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS23",
+   "cluster": "ssn:CQS23"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS23",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS23",
+   "cluster": "ssn:CQS23"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS24",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS24",
+   "cluster": "ssn:CQS24"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS24",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS24",
+   "cluster": "ssn:CQS24"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS25",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS25",
+   "cluster": "ssn:CQS25"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS25",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS25",
+   "cluster": "ssn:CQS25"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS26",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS26",
+   "cluster": "ssn:CQS26"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS26",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS26",
+   "cluster": "ssn:CQS26"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS27",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS27",
+   "cluster": "ssn:CQS27"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS27",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS27",
+   "cluster": "ssn:CQS27"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS28",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS28",
+   "cluster": "ssn:CQS28"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS28",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS28",
+   "cluster": "ssn:CQS28"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS29",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS29",
+   "cluster": "ssn:CQS29"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS29",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS29",
+   "cluster": "ssn:CQS29"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS30",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS30",
+   "cluster": "ssn:CQS30"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS30",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS30",
+   "cluster": "ssn:CQS30"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS31",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS31",
+   "cluster": "ssn:CQS31"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS31",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS31",
+   "cluster": "ssn:CQS31"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS32",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS32",
+   "cluster": "ssn:CQS32"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS32",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS32",
+   "cluster": "ssn:CQS32"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS33",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS33",
+   "cluster": "ssn:CQS33"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS33",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS33",
+   "cluster": "ssn:CQS33"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS34",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS34",
+   "cluster": "ssn:CQS34"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS34",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS34",
+   "cluster": "ssn:CQS34"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS35",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS35",
+   "cluster": "ssn:CQS35"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS35",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS35",
+   "cluster": "ssn:CQS35"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS36",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS36",
+   "cluster": "ssn:CQS36"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS36",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS36",
+   "cluster": "ssn:CQS36"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS37",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS37",
+   "cluster": "ssn:CQS37"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS37",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS37",
+   "cluster": "ssn:CQS37"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS38",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS38",
+   "cluster": "ssn:CQS38"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS38",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS38",
+   "cluster": "ssn:CQS38"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS39",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS39",
+   "cluster": "ssn:CQS39"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS39",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS39",
+   "cluster": "ssn:CQS39"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS40",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS40",
+   "cluster": "ssn:CQS40"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS40",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS40",
+   "cluster": "ssn:CQS40"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS41",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS41",
+   "cluster": "ssn:CQS41"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS41",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS41",
+   "cluster": "ssn:CQS41"
+  },
+  {
+   "panel_id": "ssn|primary:A:CQS42",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "A",
+   "cq_id": "CQS42",
+   "cluster": "ssn:CQS42"
+  },
+  {
+   "panel_id": "ssn|primary:B:CQS42",
+   "scope": "ssn",
+   "domain": "ssn",
+   "variant": "B",
+   "cq_id": "CQS42",
+   "cluster": "ssn:CQS42"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP01",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP01",
+   "cluster": "prov:CQP01"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP01",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP01",
+   "cluster": "prov:CQP01"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP02",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP02",
+   "cluster": "prov:CQP02"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP02",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP02",
+   "cluster": "prov:CQP02"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP03",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP03",
+   "cluster": "prov:CQP03"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP03",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP03",
+   "cluster": "prov:CQP03"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP04",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP04",
+   "cluster": "prov:CQP04"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP04",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP04",
+   "cluster": "prov:CQP04"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP05",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP05",
+   "cluster": "prov:CQP05"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP05",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP05",
+   "cluster": "prov:CQP05"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP06",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP06",
+   "cluster": "prov:CQP06"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP06",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP06",
+   "cluster": "prov:CQP06"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP07",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP07",
+   "cluster": "prov:CQP07"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP07",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP07",
+   "cluster": "prov:CQP07"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP08",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP08",
+   "cluster": "prov:CQP08"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP08",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP08",
+   "cluster": "prov:CQP08"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP09",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP09",
+   "cluster": "prov:CQP09"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP09",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP09",
+   "cluster": "prov:CQP09"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP10",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP10",
+   "cluster": "prov:CQP10"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP10",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP10",
+   "cluster": "prov:CQP10"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP11",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP11",
+   "cluster": "prov:CQP11"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP11",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP11",
+   "cluster": "prov:CQP11"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP12",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP12",
+   "cluster": "prov:CQP12"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP12",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP12",
+   "cluster": "prov:CQP12"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP13",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP13",
+   "cluster": "prov:CQP13"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP13",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP13",
+   "cluster": "prov:CQP13"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP14",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP14",
+   "cluster": "prov:CQP14"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP14",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP14",
+   "cluster": "prov:CQP14"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP15",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP15",
+   "cluster": "prov:CQP15"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP15",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP15",
+   "cluster": "prov:CQP15"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP16",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP16",
+   "cluster": "prov:CQP16"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP16",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP16",
+   "cluster": "prov:CQP16"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP17",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP17",
+   "cluster": "prov:CQP17"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP17",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP17",
+   "cluster": "prov:CQP17"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP18",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP18",
+   "cluster": "prov:CQP18"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP18",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP18",
+   "cluster": "prov:CQP18"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP19",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP19",
+   "cluster": "prov:CQP19"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP20",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP20",
+   "cluster": "prov:CQP20"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP20",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP20",
+   "cluster": "prov:CQP20"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP21",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP21",
+   "cluster": "prov:CQP21"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP22",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP22",
+   "cluster": "prov:CQP22"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP23",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP23",
+   "cluster": "prov:CQP23"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP23",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP23",
+   "cluster": "prov:CQP23"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP24",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP24",
+   "cluster": "prov:CQP24"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP24",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP24",
+   "cluster": "prov:CQP24"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP25",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP25",
+   "cluster": "prov:CQP25"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP25",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP25",
+   "cluster": "prov:CQP25"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP26",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP26",
+   "cluster": "prov:CQP26"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP26",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP26",
+   "cluster": "prov:CQP26"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP27",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP27",
+   "cluster": "prov:CQP27"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP27",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP27",
+   "cluster": "prov:CQP27"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP28",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP28",
+   "cluster": "prov:CQP28"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP28",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP28",
+   "cluster": "prov:CQP28"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP29",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP29",
+   "cluster": "prov:CQP29"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP29",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP29",
+   "cluster": "prov:CQP29"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP30",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP30",
+   "cluster": "prov:CQP30"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP30",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP30",
+   "cluster": "prov:CQP30"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP31",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP31",
+   "cluster": "prov:CQP31"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP31",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP31",
+   "cluster": "prov:CQP31"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP32",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP32",
+   "cluster": "prov:CQP32"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP32",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP32",
+   "cluster": "prov:CQP32"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP33",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP33",
+   "cluster": "prov:CQP33"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP33",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP33",
+   "cluster": "prov:CQP33"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP34",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP34",
+   "cluster": "prov:CQP34"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP34",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP34",
+   "cluster": "prov:CQP34"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP35",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP35",
+   "cluster": "prov:CQP35"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP35",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP35",
+   "cluster": "prov:CQP35"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP36",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP36",
+   "cluster": "prov:CQP36"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP36",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP36",
+   "cluster": "prov:CQP36"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP37",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP37",
+   "cluster": "prov:CQP37"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP37",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP37",
+   "cluster": "prov:CQP37"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP39",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP39",
+   "cluster": "prov:CQP39"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP39",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP39",
+   "cluster": "prov:CQP39"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP40",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP40",
+   "cluster": "prov:CQP40"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP40",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP40",
+   "cluster": "prov:CQP40"
+  },
+  {
+   "panel_id": "prov|primary:A:CQP41",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "A",
+   "cq_id": "CQP41",
+   "cluster": "prov:CQP41"
+  },
+  {
+   "panel_id": "prov|primary:B:CQP41",
+   "scope": "prov",
+   "domain": "prov",
+   "variant": "B",
+   "cq_id": "CQP41",
+   "cluster": "prov:CQP41"
+  }
+ ]
+}

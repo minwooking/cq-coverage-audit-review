@@ -1,0 +1,22 @@
+PREFIX brick: <https://brickschema.org/schema/Brick#>
+PREFIX rec: <https://w3id.org/rec#>
+PREFIX ref: <https://brickschema.org/schema/Brick/ref#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+
+ASK {
+  {
+    SELECT (COUNT(DISTINCT ?c) AS ?n) WHERE { ?c rdfs:subClassOf brick:Valve }
+  }
+  FILTER(?n = 15)
+  FILTER EXISTS { brick:Bypass_Valve rdfs:subClassOf brick:Valve }
+  FILTER EXISTS { brick:Check_Valve rdfs:subClassOf brick:Valve }
+  FILTER EXISTS { brick:Gas_Valve rdfs:subClassOf brick:Valve }
+  FILTER EXISTS { brick:Isolation_Valve rdfs:subClassOf brick:Valve }
+  FILTER EXISTS { brick:Mixing_Valve rdfs:subClassOf brick:Valve }
+  FILTER EXISTS { brick:Pressure_Relief_Valve rdfs:subClassOf brick:Valve }
+  FILTER EXISTS { brick:Water_Valve rdfs:subClassOf brick:Valve }
+}

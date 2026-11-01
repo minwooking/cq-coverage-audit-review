@@ -1,0 +1,5196 @@
+@prefix ct: <http://example.org/chunktograph#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://example.org/chunktograph> a owl:Ontology .
+
+ct:agent a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_use ct:aggregate-information-answer-user-query,
+        ct:aggregate-information-input-datum-application ;
+    dct:source "c0-a12" ;
+    skos:broader ct:section_shared-understanding-through-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "agent" .
+
+ct:alsace a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_kind ct:france ;
+    dct:source "c11-a163" ;
+    skos:broader ct:section_naming-convention-for-hierarchical-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "alsace" .
+
+ct:alsace-region a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_kind ct:french-region ;
+    dct:source "c11-a163" ;
+    skos:broader ct:section_naming-convention-for-hierarchical-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "alsace region" .
+
+ct:analyze-ontology a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-analysis-and-chimaera-tools ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "analyze ontology" .
+
+ct:anatomical-organ a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_class ct:like-talk-john-1st-leave-rib ;
+    dct:source "c11-a154" ;
+    skos:broader ct:section_rib-classification-specific-classes-vs-general-class-with-slots ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "anatomical organ" .
+
+ct:application a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_analyze ct:inventory-list-wine-cellar ;
+    ct:p_answer ct:query-waiter-customer ;
+    ct:p_create ct:wine-suggestion-menu-day ;
+    ct:p_suggest ct:wine-category-expand-particular-wine-purchase-upcoming-menu-cookbook ;
+    dct:source "c0-a18" ;
+    skos:broader ct:section_wine-and-food-ontology-for-restaurant-applications ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "application" .
+
+ct:application-knowledge-base a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_infer ct:value-inverse-relation ;
+    dct:source "c11-a172" ;
+    skos:broader ct:section_inverse-slots-and-redundancy-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "application knowledge base" .
+
+ct:approach a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_allow ct:look-term-determine-immediately-term-class-slot,
+        ct:user-fill-wine-case-winery ;
+    dct:source "c11-a172",
+        "c11-a187" ;
+    skos:broader ct:section_inverse-slots-and-redundancy-in-ontologies,
+        ct:section_using-prefixes-and-suffixes-to-distinguish-classes-and-slots ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "approach" .
+
+ct:appropriate-wine-combination-refer-shrimp-dish a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_refer ct:prawn-dish ;
+    dct:source "c6-a104" ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "appropriate wine combination refer shrimp dish" .
+
+ct:body-wine a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_is-a ct:single-cardinality-slot ;
+    dct:source "c0-a76" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "body wine" .
+
+ct:bordeaux-wine-glass-read-document a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_instance ct:class-bordeaux-wine ;
+    dct:source "c0-a26" ;
+    skos:broader ct:section_classes-and-instances-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "bordeaux wine glass read document" .
+
+ct:c-te-chalonnaise-wine a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:cheap-burgundy-wine-region-south-c-te-d-or ;
+    dct:source "c10-a124" ;
+    skos:broader ct:section_redundancy-and-justification-in-subclass-creation ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "côte chalonnaise wine" .
+
+ct:ch-teau-lafite-rothschild-pauillac-wine a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_has ct:body ;
+    ct:p_produce ct:ch-teau-lafite-rothschild-winery ;
+    dct:source "c0-a28" ;
+    skos:broader ct:section_slots-as-properties-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "château lafite rothschild pauillac wine" .
+
+ct:chardonnay a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_direct-subclass ct:white-wine,
+        ct:wine ;
+    ct:p_kind ct:white-wine ;
+    ct:p_subclass ct:white-wine,
+        ct:wine ;
+    dct:source "c2-a91",
+        "c2-a92",
+        "c4-a100",
+        "c4-a101" ;
+    skos:broader ct:section_examples-of-is-a-kind-of-relations,
+        ct:section_transitivity-and-direct-indirect-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "chardonnay" .
+
+ct:chateau-morgon-beaujolais a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_body ct:light ;
+    ct:p_color "red" ;
+    ct:p_flavor "delicate" ;
+    ct:p_grape "gamay" ;
+    ct:p_instance ct:beaujolais ;
+    ct:p_maker ct:chateau-morgon ;
+    ct:p_region ct:beaujolais ;
+    ct:p_sugar "dry" ;
+    ct:p_tannin-level "low" ;
+    dct:source "c0-a85" ;
+    skos:broader ct:section_instance-definition-chateau-morgon-beaujolais ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "chateau morgon beaujolais" .
+
+ct:chateaux-morgon-beaujolais a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_has ct:delicate-flavor,
+        ct:light-body,
+        ct:low-tannin-level,
+        ct:red-color ;
+    ct:p_is ct:dry-wine ;
+    ct:p_is-from ct:beaujolais-region ;
+    ct:p_produce ct:chateau-morgon-winery,
+        ct:gamay-grape ;
+    dct:source "c0-a86" ;
+    skos:broader ct:section_figure-5-visual-representation-of-chateau-morgon-beaujolais-instance ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "chateaux morgon beaujolais" .
+
+ct:chimaera a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_perform ct:check-logical-correctness-ontology,
+        ct:diagnostic-common-ontology-design-error ;
+    ct:p_provide ct:diagnostic-tool ;
+    dct:source "c11-a195" ;
+    skos:broader ct:section_ontology-analysis-and-chimaera-tools ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "chimaera" .
+
+ct:class-hierarchy a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_frame-based-ontology-description ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class hierarchy" .
+
+ct:class-individual-belong a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_frame-based-ontology-description ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class individual belong" .
+
+ct:class-name a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-naming-conventions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class name" .
+
+ct:class-structure-relation-class-ontology a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_different ct:structure-similar-domain-object-orient-program ;
+    dct:source "c0-a22" ;
+    skos:broader ct:section_ontology-vs-object-oriented-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class structure relation class ontology" .
+
+ct:classic-tutorial a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_develop ct:example ;
+    dct:source "c0-a20" ;
+    skos:broader ct:section_guide-methodology-and-ontology-basis ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "classic tutorial" .
+
+ct:color a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "color" .
+
+ct:color-wine a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_important "wine knowledge base" ;
+    ct:p_is ct:paramount-description-wine ;
+    dct:source "c11-a147",
+        "c11-a153" ;
+    skos:broader ct:section_classes-vs-property-values-wine-color-example,
+        ct:section_exceptions-to-slot-value-conventions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "color wine" .
+
+ct:combination-development-process a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_is ct:combination-approach ;
+    dct:source "c0-a59" ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "combination development process" .
+
+ct:common-modeling-mistake a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_include ct:singular-plural-version-concept-hierarchy ;
+    dct:source "c3-a96" ;
+    skos:broader ct:section_singular-vs-plural-class-hierarchy-error ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "common modeling mistake" .
+
+ct:common-practice a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_add ct:has-suffix-of-slot-name ;
+    dct:source "c11-a187" ;
+    skos:broader ct:section_using-prefixes-and-suffixes-to-distinguish-classes-and-slots ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "common practice" .
+
+ct:complex-issue-define-class-hierarchy-property-class-instance a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_no-single-correct-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "complex issue define class hierarchy property class instance" .
+
+ct:computer-agent a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_extract-aggregate ct:information-different-site ;
+    dct:source "c0-a12" ;
+    skos:broader ct:section_shared-understanding-through-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "computer agent" .
+
+ct:convenience a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_default-slot-values-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "convenience" .
+
+ct:cote-d-or a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_subclass ct:burgundy ;
+    dct:source "c10-a127" ;
+    skos:broader ct:section_hierarchical-organization-of-wine-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "cote d'or" .
+
+ct:cote-d-or-region a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_instance ct:bourgogne-region ;
+    ct:p_is-a ct:bourgogne-region ;
+    dct:source "c11-a161",
+        "c11-a162" ;
+    skos:broader ct:section_abstract-classes-for-wine-regions,
+        ct:section_wine-region-hierarchy-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "cote d'or region" .
+
+ct:default-value a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_change-model-way ct:model ;
+    ct:p_convenience "convenience" ;
+    ct:p_enforce-new-restriction-model ct:new-restriction-model ;
+    dct:source "c11-a174" ;
+    skos:broader ct:section_default-slot-values-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "default value" .
+
+ct:defense-advanced-research-project-agency-darpa a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_develop ct:darpa-agent-markup-language-daml ;
+    dct:source "c0-a4" ;
+    skos:broader ct:section_darpa-agent-markup-language-daml ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "defense advanced research project agency darpa" .
+
+ct:define-naming-convention-concept-ontology a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_help ct:avoid-common-modeling-mistake ;
+    ct:p_make ct:ontology-easy-understand ;
+    dct:source "c11-a176" ;
+    skos:broader ct:section_importance-of-naming-conventions-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "define naming convention concept ontology" .
+
+ct:delicate a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_instance-definition-chateau-morgon-beaujolais ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "delicate" .
+
+ct:develop-ontology a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_akin ct:define-set-datum-structure-program-use ;
+    ct:p_include-arrange-class ct:taxonomic-subclass-superclass-hierarchy ;
+    ct:p_include-define-class ct:ontology ;
+    ct:p_include-define-slot ct:describe-allow-value-slot ;
+    ct:p_include-fill-value ct:slot-instance ;
+    dct:source "c0-a17",
+        "c0-a30" ;
+    skos:broader ct:section_ontologies-as-data-foundations,
+        ct:section_steps-in-ontology-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "develop ontology" .
+
+ct:development-process a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_involve ct:specialization-concept ;
+    ct:p_start ct:definition-general-concept-domain,
+        ct:definition-specific-class ;
+    dct:source "c0-a57",
+        "c0-a58" ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "development process" .
+
+ct:different-web-site a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_contain ct:medical-information ;
+    ct:p_provide ct:medical-e-commerce-service ;
+    dct:source "c0-a12" ;
+    skos:broader ct:section_shared-understanding-through-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "different web site" .
+
+ct:domain-independent-application a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_use ct:ontology-knowledge-basis-build-ontology-datum ;
+    dct:source "c0-a17" ;
+    skos:broader ct:section_ontologies-as-data-foundations ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "domain independent application" .
+
+ct:dry a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_instance-definition-chateau-morgon-beaujolais ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "dry" .
+
+ct:duineveld-colleague a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_describe-compare ct:number-ontology-development-environment ;
+    dct:source "c11-a192" ;
+    skos:broader ct:section_ontology-development-environments ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "duineveld colleague" .
+
+ct:electronic-form a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_step-2-reuse-existing-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "electronic form" .
+
+ct:enable-reuse-domain-knowledge a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_was ct:drive-force-recent-surge-ontology-research ;
+    dct:source "c0-a13" ;
+    skos:broader ct:section_reuse-of-domain-knowledge-in-ontology-research ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "enable reuse domain knowledge" .
+
+ct:enumerate-slot a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_type "symbol" ;
+    dct:source "c0-a77" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "enumerate slot" .
+
+ct:explicit-specification-domain-knowledge a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_useful "new user learn term domain mean" ;
+    dct:source "c0-a14" ;
+    skos:broader ct:section_explicit-domain-assumptions-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "explicit specification domain knowledge" .
+
+ct:extrinsic-property a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_include ct:wine-area-come ;
+    dct:source "c0-a72" ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "extrinsic property" .
+
+ct:figure-2 a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_show ct:class-hierarchy-wine-ontology,
+        ct:possible-breakdown-different-level-generality ;
+    dct:source "c0-a60",
+        "c0-a64" ;
+    skos:broader ct:section_wine-class-hierarchy-in-figure-2,
+        ct:section_wine-taxonomy-levels-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "figure 2" .
+
+ct:flavor a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_value "strong moderate delicate" ;
+    dct:source "c0-a77" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range,
+        ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "flavor" .
+
+ct:float a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "float" .
+
+ct:frame-base-system a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_allow-specification-default-value-slot ct:default-value-slot ;
+    dct:source "c11-a174" ;
+    skos:broader ct:section_default-slot-values-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "frame base system" .
+
+ct:g-mez-p-rez a ct:Class_instance,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_present ct:alternative-ontology-development-methodology ;
+    dct:source "c11-a193" ;
+    skos:broader ct:section_scope-of-ontology-development-guide ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "gómez pérez" .
+
+ct:gamay a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_instance-definition-chateau-morgon-beaujolais ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "gamay" .
+
+ct:grape-slot-wine a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_has ct:minimum-cardinality-1 ;
+    dct:source "c0-a76" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "grape slot wine" .
+
+ct:group-researcher a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_develop ct:ontology-detail ;
+    dct:source "c0-a13" ;
+    skos:broader ct:section_reuse-of-domain-knowledge-in-ontology-research ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "group researcher" .
+
+ct:guide a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_describe ct:ontology-development-methodology-declarative-frame-base-system ;
+    dct:source "c11-a196" ;
+    skos:broader ct:section_no-single-correct-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "guide" .
+
+ct:hard-cod-assumption-world-programming-language-code a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_make-assumption-hard-change ct:particular-programming-expertise ;
+    dct:source "c0-a14" ;
+    skos:broader ct:section_explicit-domain-assumptions-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "hard cod assumption world programming language code" .
+
+ct:important-thing-remember a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_is ct:single-correct-ontology-domain ;
+    dct:source "c11-a196" ;
+    skos:broader ct:section_no-single-correct-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "important thing remember" .
+
+ct:individual-bottle-wine a ct:Class_instance,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_may-become ct:individual-instance-knowledge-base ;
+    dct:source "c11-a159" ;
+    skos:broader ct:section_wine-bottles-and-vintages-as-individuals-in-inventory-systems ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "individual bottle wine" .
+
+ct:individual-organ-exist-people a ct:Class_instance,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_represent ct:individual-ontology ;
+    dct:source "c11-a154" ;
+    skos:broader ct:section_rib-classification-specific-classes-vs-general-class-with-slots ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "individual organ exist people" .
+
+ct:instance-class-pauillac a ct:Class_instance,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_slot-maker ct:instance-class-winery ;
+    dct:source "c0-a29" ;
+    skos:broader ct:section_class-relationships-wine-pauillac-and-winery ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "instance class pauillac" .
+
+ct:instance-class-wine a ct:Class_instance,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_slot-maker ct:instance-class-winery ;
+    dct:source "c0-a29" ;
+    skos:broader ct:section_class-relationships-wine-pauillac-and-winery ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "instance class wine" .
+
+ct:instance-port-class a ct:Class_instance,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_instance ct:dessert-wine-class,
+        ct:red-wine-class ;
+    dct:source "c11-a132" ;
+    skos:broader ct:section_inheritance-of-slots-from-multiple-parents ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "instance port class" .
+
+ct:instance-single a ct:Class_instance,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "instance single" .
+
+ct:intermediate-category-red-wine-white-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_reflect ct:conceptual-model-domain-wine-people ;
+    dct:source "c10-a127" ;
+    skos:broader ct:section_hierarchical-organization-of-wine-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "intermediate category red wine white wine" .
+
+ct:intrinsic-property a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_include ct:flavor-wine ;
+    dct:source "c0-a72" ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "intrinsic property" .
+
+ct:jetliner a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_kind ct:aircraft ;
+    dct:source "c2-a93" ;
+    skos:broader ct:section_examples-of-is-a-kind-of-relations ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "jetliner" .
+
+ct:knowledge-acquisition-perspective a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_is ct:convenient ;
+    dct:source "c11-a172" ;
+    skos:broader ct:section_inverse-slots-and-redundancy-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "knowledge acquisition perspective" .
+
+ct:knowledge-acquisition-system a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_automatically-fill ct:value-inverse-relation ;
+    dct:source "c11-a172" ;
+    skos:broader ct:section_inverse-slots-and-redundancy-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "knowledge acquisition system" .
+
+ct:knowledge-base-methodology a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_suggest ct:prefix-suffix-convention-name ;
+    dct:source "c11-a187" ;
+    skos:broader ct:section_using-prefixes-and-suffixes-to-distinguish-classes-and-slots ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "knowledge base methodology" .
+
+ct:knowledge-representation-system a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_allow ct:multiple-inheritance-class-hierarchy ;
+    dct:source "c11-a130" ;
+    skos:broader ct:section_multiple-inheritance-in-class-hierarchies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "knowledge representation system" .
+
+ct:list-class-define-range-domain-slot a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_include ct:class-subclass ;
+    dct:source "c0-a80" ;
+    skos:broader ct:section_optimizing-slot-domain-and-range-by-removing-redundant-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "list class define range domain slot" .
+
+ct:low a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_instance-definition-chateau-morgon-beaujolais ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "low" .
+
+ct:majority-wine-go-discuss a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:bodied-wine ;
+    dct:source "c11-a175" ;
+    skos:broader ct:section_default-vs-fixed-slot-values ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "majority wine go discuss" .
+
+ct:make-explicit-domain-assumption-underlie-implementation a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_make-possible-change-assumption-easily ct:knowledge-domain-change ;
+    dct:source "c0-a14" ;
+    skos:broader ct:section_explicit-domain-assumptions-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "make explicit domain assumption underlie implementation" .
+
+ct:maker a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_call ct:inverse-relation ;
+    dct:source "c11-a172" ;
+    skos:broader ct:section_inverse-slots-and-redundancy-in-ontologies,
+        ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "maker" .
+
+ct:maker-slot-wine-class a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_inverse ct:produce-slot-winery-class ;
+    dct:source "c11-a173" ;
+    skos:broader ct:section_automatic-inverse-slot-updates ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "maker slot wine class" .
+
+ct:margaux a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:specific-class-hierarchy ;
+    dct:source "c0-a60" ;
+    skos:broader ct:section_wine-taxonomy-levels-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "margaux" .
+
+ct:maximum-cardinality-grape-slot-single-varietal-wine a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_is ct:1 ;
+    dct:source "c0-a76" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "maximum cardinality grape slot single varietal wine" .
+
+ct:maximum-cardinality-m a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_mean ct:slot-m-value ;
+    dct:source "c0-a76" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "maximum cardinality m" .
+
+ct:maximum-cardinality-set-0 a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_indicate ct:slot-value-particular-subclass ;
+    dct:source "c0-a76" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "maximum cardinality set 0" .
+
+ct:meat a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_kind ct:food ;
+    dct:source "c2-a94" ;
+    skos:broader ct:section_examples-of-is-a-kind-of-relations ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "meat" .
+
+ct:medicine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_produce ct:large-standardized-structured-vocabulary-snome,
+        ct:semantic-network-unified-medical-language-system ;
+    dct:source "c0-a5" ;
+    skos:broader ct:section_standardized-ontologies-in-medicine-and-other-fields ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "medicine" .
+
+ct:medoc a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_is ct:common-superclass-pauillac-margaux-wine,
+        ct:subclass-bordeaux ;
+    ct:p_subclass ct:bordeaux ;
+    dct:source "c0-a58",
+        "c10-a127" ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development,
+        ct:section_hierarchical-organization-of-wine-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "medoc" .
+
+ct:minimum-cardinality-n a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_mean ct:slot-n-value ;
+    dct:source "c0-a76" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "minimum cardinality n" .
+
+ct:model-different-domain a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_need-represent ct:notion-time ;
+    dct:source "c0-a13" ;
+    skos:broader ct:section_reuse-of-domain-knowledge-in-ontology-research ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "model different domain" .
+
+ct:name a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_slot ct:value-type-string ;
+    ct:p_slot-value-type "string" ;
+    dct:source "c0-a75",
+        "c0-a76",
+        "c0-a77",
+        "c0-a78" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range,
+        ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "name" .
+
+ct:name-direct-subclass-class a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_include-include ct:superclass ;
+    dct:source "c11-a190" ;
+    skos:broader ct:section_consistent-subclass-naming-convention ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "name direct subclass class" .
+
+ct:nbol-single a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "nbol single" .
+
+ct:new-class-new-property a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_model-concept ct:domain-expert-commonly-distinction ;
+    dct:source "c11-a142" ;
+    skos:broader ct:section_modeling-expert-distinctions-without-property-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "new class new property" .
+
+ct:new-user-learn-term-domain-mean a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_explicit-domain-assumptions-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "new user learn term domain mean" .
+
+ct:number-color-location a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:slot-value ;
+    ct:p_cause ct:creation-new-class ;
+    dct:source "c11-a153" ;
+    skos:broader ct:section_exceptions-to-slot-value-conventions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "number color location" .
+
+ct:object-orient-programming a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_center-primarily ct:method-class ;
+    dct:source "c0-a22" ;
+    skos:broader ct:section_ontology-vs-object-oriented-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "object orient programming" .
+
+ct:one-root a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_uniform-generality-of-siblings ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "one root" .
+
+ct:ontolingua-tutorial-farquhar-1997 a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_discuss ct:formal-aspect-knowledge-modeling ;
+    dct:source "c11-a194" ;
+    skos:broader ct:section_ontolingua-tutorial-on-knowledge-modeling ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontolingua tutorial farquhar 1997" .
+
+ct:ontology-design a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_is ct:creative-process ;
+    dct:source "c11-a196" ;
+    skos:broader ct:section_no-single-correct-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology design" .
+
+ct:ontology-design-different-people a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_would-be ct:the-same ;
+    dct:source "c11-a196" ;
+    skos:broader ct:section_no-single-correct-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology design different people" .
+
+ct:ontology-design-idea-guide a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_originate ct:literature-object-orient-design ;
+    dct:source "c0-a22" ;
+    skos:broader ct:section_ontology-vs-object-oriented-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology design idea guide" .
+
+ct:ontology-designer a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_make-design-decision-base ct:structural-property-class ;
+    dct:source "c0-a22" ;
+    skos:broader ct:section_ontology-vs-object-oriented-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology designer" .
+
+ct:ontology-set-individual-instance-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_constitute ct:knowledge-base ;
+    dct:source "c0-a25" ;
+    skos:broader ct:section_definition-of-an-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology set individual instance class" .
+
+ct:ontology-web a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_range ct:categorization-product-sale-feature-amazon-com,
+        ct:large-taxonomy-categorize-web-site-yahoo ;
+    dct:source "c0-a2" ;
+    skos:broader ct:section_ontologies-on-the-world-wide-web ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology web" .
+
+ct:ontology-wine-food a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_represent ct:food-wine ;
+    dct:source "c0-a43" ;
+    skos:broader ct:section_domain-scope-example-wine-and-food-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology wine food" .
+
+ct:others a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_reuse ct:domain ;
+    dct:source "c0-a13" ;
+    skos:broader ct:section_reuse-of-domain-knowledge-in-ontology-research ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "others" .
+
+ct:p_add a owl:ObjectProperty ;
+    rdfs:label "add" .
+
+ct:p_additional-slot a owl:ObjectProperty ;
+    rdfs:label "additional slot" .
+
+ct:p_address a owl:DatatypeProperty ;
+    rdfs:label "address" .
+
+ct:p_affect a owl:ObjectProperty ;
+    rdfs:label "affect" .
+
+ct:p_akin a owl:ObjectProperty ;
+    rdfs:label "akin" .
+
+ct:p_allow a owl:ObjectProperty ;
+    rdfs:label "allow" .
+
+ct:p_allow-class a owl:ObjectProperty ;
+    rdfs:label "allow class" .
+
+ct:p_allow-specification-default-value-slot a owl:ObjectProperty ;
+    rdfs:label "allow specification default value slot" .
+
+ct:p_allow-user-specify a owl:ObjectProperty ;
+    rdfs:label "allow user specify" .
+
+ct:p_allow-value a owl:ObjectProperty ;
+    rdfs:label "allow value" .
+
+ct:p_analyze a owl:ObjectProperty ;
+    rdfs:label "analyze" .
+
+ct:p_answer a owl:ObjectProperty ;
+    rdfs:label "answer" .
+
+ct:p_apply a owl:ObjectProperty ;
+    rdfs:label "apply" .
+
+ct:p_are a owl:ObjectProperty ;
+    rdfs:label "are" .
+
+ct:p_are-made-from a owl:ObjectProperty ;
+    rdfs:label "are made from" .
+
+ct:p_attach a owl:ObjectProperty ;
+    rdfs:label "attach" .
+
+ct:p_automatically-fill a owl:ObjectProperty ;
+    rdfs:label "automatically fill" .
+
+ct:p_available a owl:DatatypeProperty ;
+    rdfs:label "available" .
+
+ct:p_become a owl:ObjectProperty ;
+    rdfs:label "become" .
+
+ct:p_begin-press-grape a owl:ObjectProperty ;
+    rdfs:label "begin press grape" .
+
+ct:p_body a owl:ObjectProperty ;
+    rdfs:label "body" .
+
+ct:p_break a owl:ObjectProperty ;
+    rdfs:label "break" .
+
+ct:p_build a owl:ObjectProperty ;
+    rdfs:label "build" .
+
+ct:p_call a owl:ObjectProperty ;
+    rdfs:label "call" .
+
+ct:p_can-be a owl:ObjectProperty ;
+    rdfs:label "can be" .
+
+ct:p_can-be-used-as a owl:ObjectProperty ;
+    rdfs:label "can be used as" .
+
+ct:p_can-have a owl:ObjectProperty ;
+    rdfs:label "can have" .
+
+ct:p_capitalize a owl:DatatypeProperty ;
+    rdfs:label "capitalize" .
+
+ct:p_cardinality a owl:DatatypeProperty ;
+    rdfs:label "cardinality" .
+
+ct:p_categorize a owl:ObjectProperty ;
+    rdfs:label "categorize" .
+
+ct:p_cause a owl:ObjectProperty ;
+    rdfs:label "cause" .
+
+ct:p_center-primarily a owl:ObjectProperty ;
+    rdfs:label "center primarily" .
+
+ct:p_change a owl:ObjectProperty ;
+    rdfs:label "change" .
+
+ct:p_change-model-way a owl:ObjectProperty ;
+    rdfs:label "change model way" .
+
+ct:p_change-value-value a owl:ObjectProperty ;
+    rdfs:label "change value value" .
+
+ct:p_class a owl:ObjectProperty ;
+    rdfs:label "class" .
+
+ct:p_classify a owl:ObjectProperty ;
+    rdfs:label "classify" .
+
+ct:p_collection a owl:ObjectProperty ;
+    rdfs:label "collection" .
+
+ct:p_color a owl:DatatypeProperty ;
+    rdfs:label "color" .
+
+ct:p_combine-effort-develop a owl:ObjectProperty ;
+    rdfs:label "combine effort develop" .
+
+ct:p_constitute a owl:ObjectProperty ;
+    rdfs:label "constitute" .
+
+ct:p_contain a owl:ObjectProperty ;
+    rdfs:label "contain" .
+
+ct:p_contrast a owl:ObjectProperty ;
+    rdfs:label "contrast" .
+
+ct:p_convenience a owl:DatatypeProperty ;
+    rdfs:label "convenience" .
+
+ct:p_create a owl:ObjectProperty ;
+    rdfs:label "create" .
+
+ct:p_declare a owl:ObjectProperty ;
+    rdfs:label "declare" .
+
+ct:p_define a owl:ObjectProperty ;
+    rdfs:label "define" .
+
+ct:p_define-value-default-value-slot a owl:DatatypeProperty ;
+    rdfs:label "define value default value slot" .
+
+ct:p_depend a owl:ObjectProperty ;
+    rdfs:label "depend" .
+
+ct:p_describe a owl:ObjectProperty ;
+    rdfs:label "describe" .
+
+ct:p_describe-compare a owl:ObjectProperty ;
+    rdfs:label "describe compare" .
+
+ct:p_describe-ontology-declaratively a owl:ObjectProperty ;
+    rdfs:label "describe ontology declaratively" .
+
+ct:p_develop a owl:ObjectProperty ;
+    rdfs:label "develop" .
+
+ct:p_different a owl:ObjectProperty ;
+    rdfs:label "different" .
+
+ct:p_different-level a owl:DatatypeProperty ;
+    rdfs:label "different level" .
+
+ct:p_direct-subclass a owl:ObjectProperty ;
+    rdfs:label "direct subclass" .
+
+ct:p_discuss a owl:ObjectProperty ;
+    rdfs:label "discuss" .
+
+ct:p_disjoint a owl:ObjectProperty ;
+    rdfs:label "disjoint" .
+
+ct:p_distinguish a owl:ObjectProperty ;
+    rdfs:label "distinguish" .
+
+ct:p_distribute a owl:ObjectProperty ;
+    rdfs:label "distribute" .
+
+ct:p_divide a owl:ObjectProperty ;
+    rdfs:label "divide" .
+
+ct:p_domain a owl:ObjectProperty ;
+    rdfs:label "domain" .
+
+ct:p_emphasize a owl:ObjectProperty ;
+    rdfs:label "emphasize" .
+
+ct:p_enable a owl:ObjectProperty ;
+    rdfs:label "enable" .
+
+ct:p_enforce-new-restriction-model a owl:ObjectProperty ;
+    rdfs:label "enforce new restriction model" .
+
+ct:p_extend a owl:ObjectProperty ;
+    rdfs:label "extend" .
+
+ct:p_extract-aggregate a owl:ObjectProperty ;
+    rdfs:label "extract aggregate" .
+
+ct:p_feed a owl:ObjectProperty ;
+    rdfs:label "feed" .
+
+ct:p_fill a owl:ObjectProperty ;
+    rdfs:label "fill" .
+
+ct:p_fill-default-value-automatically a owl:DatatypeProperty ;
+    rdfs:label "fill default value automatically" .
+
+ct:p_flavor a owl:DatatypeProperty ;
+    rdfs:label "flavor" .
+
+ct:p_focus a owl:ObjectProperty ;
+    rdfs:label "focus" .
+
+ct:p_generalize a owl:ObjectProperty ;
+    rdfs:label "generalize" .
+
+ct:p_generate a owl:ObjectProperty ;
+    rdfs:label "generate" .
+
+ct:p_grape a owl:DatatypeProperty ;
+    rdfs:label "grape" .
+
+ct:p_has a owl:ObjectProperty ;
+    rdfs:label "has" .
+
+ct:p_have a owl:ObjectProperty ;
+    rdfs:label "have" .
+
+ct:p_have-become a owl:ObjectProperty ;
+    rdfs:label "have become" .
+
+ct:p_have-used a owl:ObjectProperty ;
+    rdfs:label "have used" .
+
+ct:p_help a owl:ObjectProperty ;
+    rdfs:label "help" .
+
+ct:p_implement a owl:ObjectProperty ;
+    rdfs:label "implement" .
+
+ct:p_import a owl:ObjectProperty ;
+    rdfs:label "import" .
+
+ct:p_important a owl:DatatypeProperty ;
+    rdfs:label "important" .
+
+ct:p_include a owl:ObjectProperty ;
+    rdfs:label "include" .
+
+ct:p_include-arrange-class a owl:ObjectProperty ;
+    rdfs:label "include arrange class" .
+
+ct:p_include-define-class a owl:ObjectProperty ;
+    rdfs:label "include define class" .
+
+ct:p_include-define-slot a owl:ObjectProperty ;
+    rdfs:label "include define slot" .
+
+ct:p_include-fill-value a owl:ObjectProperty ;
+    rdfs:label "include fill value" .
+
+ct:p_include-include a owl:ObjectProperty ;
+    rdfs:label "include include" .
+
+ct:p_indicate a owl:ObjectProperty ;
+    rdfs:label "indicate" .
+
+ct:p_infer a owl:ObjectProperty ;
+    rdfs:label "infer" .
+
+ct:p_inherit a owl:ObjectProperty ;
+    rdfs:label "inherit" .
+
+ct:p_inherit-slot-class a owl:ObjectProperty ;
+    rdfs:label "inherit slot class" .
+
+ct:p_inherit-slot-facet a owl:ObjectProperty ;
+    rdfs:label "inherit slot facet" .
+
+ct:p_instance a owl:ObjectProperty ;
+    rdfs:label "instance" .
+
+ct:p_instance-b a owl:ObjectProperty ;
+    rdfs:label "instance b" .
+
+ct:p_instance-class a owl:ObjectProperty ;
+    rdfs:label "instance class" .
+
+ct:p_integrate a owl:ObjectProperty ;
+    rdfs:label "integrate" .
+
+ct:p_introduce a owl:ObjectProperty ;
+    rdfs:label "introduce" .
+
+ct:p_inverse a owl:ObjectProperty ;
+    rdfs:label "inverse" .
+
+ct:p_involve a owl:ObjectProperty ;
+    rdfs:label "involve" .
+
+ct:p_is a owl:ObjectProperty ;
+    rdfs:label "is" .
+
+ct:p_is-a a owl:ObjectProperty ;
+    rdfs:label "is a" .
+
+ct:p_is-from a owl:ObjectProperty ;
+    rdfs:label "is from" .
+
+ct:p_is-used-for a owl:ObjectProperty ;
+    rdfs:label "is used for" .
+
+ct:p_kind a owl:ObjectProperty ;
+    rdfs:label "kind" .
+
+ct:p_level-generality a owl:DatatypeProperty ;
+    rdfs:label "level generality" .
+
+ct:p_like-reflect a owl:ObjectProperty ;
+    rdfs:label "like reflect" .
+
+ct:p_list a owl:ObjectProperty ;
+    rdfs:label "list" .
+
+ct:p_loosely-base a owl:ObjectProperty ;
+    rdfs:label "loosely base" .
+
+ct:p_make a owl:ObjectProperty ;
+    rdfs:label "make" .
+
+ct:p_make-assumption-hard-change a owl:ObjectProperty ;
+    rdfs:label "make assumption hard change" .
+
+ct:p_make-design-decision-base a owl:ObjectProperty ;
+    rdfs:label "make design decision base" .
+
+ct:p_make-possible-change-assumption-easily a owl:ObjectProperty ;
+    rdfs:label "make possible change assumption easily" .
+
+ct:p_maker a owl:ObjectProperty ;
+    rdfs:label "maker" .
+
+ct:p_may-become a owl:ObjectProperty ;
+    rdfs:label "may become" .
+
+ct:p_may-go-well-with a owl:ObjectProperty ;
+    rdfs:label "may go well with" .
+
+ct:p_mean a owl:ObjectProperty ;
+    rdfs:label "mean" .
+
+ct:p_model-concept a owl:ObjectProperty ;
+    rdfs:label "model concept" .
+
+ct:p_multiple-cardinality-slot a owl:DatatypeProperty ;
+    rdfs:label "multiple cardinality slot" .
+
+ct:p_necessarily a owl:DatatypeProperty ;
+    rdfs:label "necessarily" .
+
+ct:p_need-adhere a owl:ObjectProperty ;
+    rdfs:label "need adhere" .
+
+ct:p_need-define a owl:ObjectProperty ;
+    rdfs:label "need define" .
+
+ct:p_need-represent a owl:ObjectProperty ;
+    rdfs:label "need represent" .
+
+ct:p_originate a owl:ObjectProperty ;
+    rdfs:label "originate" .
+
+ct:p_pair a owl:ObjectProperty ;
+    rdfs:label "pair" .
+
+ct:p_perform a owl:ObjectProperty ;
+    rdfs:label "perform" .
+
+ct:p_plan-use a owl:ObjectProperty ;
+    rdfs:label "plan use" .
+
+ct:p_present a owl:ObjectProperty ;
+    rdfs:label "present" .
+
+ct:p_produce a owl:ObjectProperty ;
+    rdfs:label "produce" .
+
+ct:p_provide a owl:ObjectProperty ;
+    rdfs:label "provide" .
+
+ct:p_range a owl:ObjectProperty ;
+    rdfs:label "range" .
+
+ct:p_refer a owl:ObjectProperty ;
+    rdfs:label "refer" .
+
+ct:p_reflect a owl:ObjectProperty ;
+    rdfs:label "reflect" .
+
+ct:p_region a owl:ObjectProperty ;
+    rdfs:label "region" .
+
+ct:p_relate a owl:ObjectProperty ;
+    rdfs:label "relate" .
+
+ct:p_rename a owl:ObjectProperty ;
+    rdfs:label "rename" .
+
+ct:p_represent a owl:ObjectProperty ;
+    rdfs:label "represent" .
+
+ct:p_represent-concept-kind a owl:ObjectProperty ;
+    rdfs:label "represent concept kind" .
+
+ct:p_represent-value a owl:ObjectProperty ;
+    rdfs:label "represent value" .
+
+ct:p_requirement a owl:DatatypeProperty ;
+    rdfs:label "requirement" .
+
+ct:p_reuse a owl:ObjectProperty ;
+    rdfs:label "reuse" .
+
+ct:p_share a owl:ObjectProperty ;
+    rdfs:label "share" .
+
+ct:p_share-publish a owl:ObjectProperty ;
+    rdfs:label "share publish" .
+
+ct:p_should-be a owl:DatatypeProperty ;
+    rdfs:label "should be" .
+
+ct:p_should-not-have a owl:ObjectProperty ;
+    rdfs:label "should not have" .
+
+ct:p_show a owl:ObjectProperty ;
+    rdfs:label "show" .
+
+ct:p_signify a owl:ObjectProperty ;
+    rdfs:label "signify" .
+
+ct:p_similar a owl:DatatypeProperty ;
+    rdfs:label "similar" .
+
+ct:p_single-cardinality-slot a owl:DatatypeProperty ;
+    rdfs:label "single cardinality slot" .
+
+ct:p_slot a owl:ObjectProperty ;
+    rdfs:label "slot" .
+
+ct:p_slot-maker a owl:ObjectProperty ;
+    rdfs:label "slot maker" .
+
+ct:p_slot-produce a owl:ObjectProperty ;
+    rdfs:label "slot produce" .
+
+ct:p_slot-value-type a owl:DatatypeProperty ;
+    rdfs:label "slot value type" .
+
+ct:p_specialize a owl:ObjectProperty ;
+    rdfs:label "specialize" .
+
+ct:p_start a owl:ObjectProperty ;
+    rdfs:label "start" .
+
+ct:p_start-define a owl:ObjectProperty ;
+    rdfs:label "start define" .
+
+ct:p_state-explicitly a owl:DatatypeProperty ;
+    rdfs:label "state explicitly" .
+
+ct:p_subclass a owl:ObjectProperty ;
+    rdfs:label "subclass" .
+
+ct:p_subclass-b a owl:ObjectProperty ;
+    rdfs:label "subclass b" .
+
+ct:p_sugar a owl:DatatypeProperty ;
+    rdfs:label "sugar" .
+
+ct:p_sugar-value a owl:DatatypeProperty ;
+    rdfs:label "sugar value" .
+
+ct:p_suggest a owl:ObjectProperty ;
+    rdfs:label "suggest" .
+
+ct:p_superclass a owl:ObjectProperty ;
+    rdfs:label "superclass" .
+
+ct:p_take-away a owl:ObjectProperty ;
+    rdfs:label "take away" .
+
+ct:p_tannin-level a owl:DatatypeProperty ;
+    rdfs:label "tannin level" .
+
+ct:p_tell a owl:ObjectProperty ;
+    rdfs:label "tell" .
+
+ct:p_type a owl:DatatypeProperty ;
+    rdfs:label "type" .
+
+ct:p_use a owl:ObjectProperty ;
+    rdfs:label "use" .
+
+ct:p_use-ontology a owl:ObjectProperty ;
+    rdfs:label "use ontology" .
+
+ct:p_used a owl:ObjectProperty ;
+    rdfs:label "used" .
+
+ct:p_useful a owl:DatatypeProperty ;
+    rdfs:label "useful" .
+
+ct:p_value a owl:DatatypeProperty ;
+    rdfs:label "value" .
+
+ct:p_value-type a owl:DatatypeProperty ;
+    rdfs:label "value type" .
+
+ct:p_view a owl:ObjectProperty ;
+    rdfs:label "view" .
+
+ct:p_want-generate a owl:ObjectProperty ;
+    rdfs:label "want generate" .
+
+ct:p_was a owl:ObjectProperty ;
+    rdfs:label "was" .
+
+ct:p_were a owl:ObjectProperty ;
+    rdfs:label "were" .
+
+ct:p_would-be a owl:ObjectProperty ;
+    rdfs:label "would be" .
+
+ct:paper a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_develop ct:ontology-wine-food-appropriate-combination-wine-meal ;
+    dct:source "c0-a18" ;
+    skos:broader ct:section_wine-and-food-ontology-for-restaurant-applications ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "paper" .
+
+ct:part a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_can-be ct:physical-abstract-part ;
+    dct:source "c0-a72" ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "part" .
+
+ct:particular-slot-value a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_instance-class ct:instance-class ;
+    dct:source "c11-a174" ;
+    skos:broader ct:section_default-slot-values-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "particular slot value" .
+
+ct:pauillac a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:specific-class-hierarchy ;
+    dct:source "c0-a60" ;
+    skos:broader ct:section_wine-taxonomy-levels-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "pauillac" .
+
+ct:pinot-noir-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_subclass ct:red-wine-class ;
+    dct:source "c0-a63" ;
+    skos:broader ct:section_hierarchical-organization-via-subclass-inheritance ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "pinot noir class" .
+
+ct:pinot-noir-wine a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_may-go-well-with ct:seafood ;
+    ct:p_necessarily "red wine" ;
+    dct:source "c0-a63",
+        "c11-a138" ;
+    skos:broader ct:section_hierarchical-organization-via-subclass-inheritance,
+        ct:section_unique-properties-of-specific-wine-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "pinot noir wine" .
+
+ct:port a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_has ct:dessert-wine-superclass,
+        ct:red-wine-superclass ;
+    dct:source "c11-a131" ;
+    skos:broader ct:section_defining-port-wine-with-multiple-superclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "port" .
+
+ct:port-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_inherit-slot-facet ct:parent ;
+    dct:source "c11-a132" ;
+    skos:broader ct:section_inheritance-of-slots-from-multiple-parents ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "port class" .
+
+ct:port-wine a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_is ct:dessert-wine,
+        ct:red-wine ;
+    dct:source "c11-a131" ;
+    skos:broader ct:section_defining-port-wine-with-multiple-superclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "port wine" .
+
+ct:potential-application-ontology-designer-understanding-view-domain a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_affect ct:ontology-design-choice ;
+    dct:source "c11-a196" ;
+    skos:broader ct:section_no-single-correct-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "potential application ontology designer understanding view domain" .
+
+ct:price-wine a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_value-type "float" ;
+    dct:source "c0-a77" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "price wine" .
+
+ct:problem-solve-method a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_use ct:ontology-knowledge-basis-build-ontology-datum ;
+    dct:source "c0-a17" ;
+    skos:broader ct:section_ontologies-as-data-foundations ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "problem solve method" .
+
+ct:programmer a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_make-design-decision-base ct:operational-property-class ;
+    dct:source "c0-a22" ;
+    skos:broader ct:section_ontology-vs-object-oriented-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "programmer" .
+
+ct:property a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:slot ;
+    ct:p_describe ct:feature-attribute-concept,
+        ct:wine-general ;
+    dct:source "c0-a25",
+        "c11-a136" ;
+    skos:broader ct:section_definition-of-an-ontology,
+        ct:section_unique-properties-of-specific-wine-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "property" .
+
+ct:prot-g-2000-frame-base-system a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_describe-ontology-declaratively ct:ontology ;
+    ct:p_state-explicitly "class hierarchy",
+        "class individual belong" ;
+    dct:source "c0-a21" ;
+    skos:broader ct:section_frame-based-ontology-description ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "protégé-2000 frame base system" .
+
+ct:range-slot a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_contain ct:wine-class-red-wine-class ;
+    dct:source "c0-a80" ;
+    skos:broader ct:section_optimizing-slot-domain-and-range-by-removing-redundant-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "range slot" .
+
+ct:red-wine-white-wine-red-white a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_consistent-subclass-naming-convention ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red wine white wine red white" .
+
+ct:red-zinfandel a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_classify ct:subclass-red-wine ;
+    dct:source "c5-a103" ;
+    skos:broader ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red zinfandel" .
+
+ct:region-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:abstract ;
+    dct:source "c11-a162" ;
+    skos:broader ct:section_abstract-classes-for-wine-regions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "region class" .
+
+ct:relationship-individual a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_include ct:grape-wine,
+        ct:maker-wine-relationship-wine-winery ;
+    dct:source "c0-a72" ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "relationship individual" .
+
+ct:requirement-book-outline a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-hierarchy-as-book-outline ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "requirement book outline" .
+
+ct:requirement-class-hierarchy a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_similar "requirement book outline" ;
+    dct:source "c9-a115" ;
+    skos:broader ct:section_class-hierarchy-as-book-outline ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "requirement class hierarchy" .
+
+ct:researcher a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_emphasize ct:ontology-analysis,
+        ct:ontology-development ;
+    dct:source "c11-a195" ;
+    skos:broader ct:section_ontology-analysis-and-chimaera-tools ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "researcher" .
+
+ct:restriction-slot a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:facet ;
+    dct:source "c0-a25" ;
+    skos:broader ct:section_definition-of-an-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "restriction slot" .
+
+ct:reuse-exist-ontology a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_requirement "system need interact application commit particular ontology control vocabulary" ;
+    dct:source "c0-a53" ;
+    skos:broader ct:section_step-2-reuse-existing-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "reuse exist ontology" .
+
+ct:rise a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "rise" .
+
+ct:ros-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:general-level-concept ;
+    dct:source "c0-a60" ;
+    skos:broader ct:section_wine-taxonomy-levels-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "rosé wine" .
+
+ct:rule a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_similar "typeset rule bulleted list bullet point" ;
+    dct:source "c10-a122" ;
+    skos:broader ct:section_analogy-to-typesetting-rules ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "rule" .
+
+ct:s a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_allow-value ct:delicate-moderate-strong,
+        ct:medium-light,
+        ct:red-rise-white ;
+    ct:p_cardinality "instance",
+        "string",
+        "symbol",
+        "symbol single" ;
+    ct:p_class ct:wine-grape ;
+    ct:p_type "body",
+        "color",
+        "flavor",
+        "grape",
+        "name" ;
+    dct:source "c0-a65",
+        "c0-a66",
+        "c0-a67",
+        "c0-a68",
+        "c0-a69",
+        "c0-a70",
+        "c0-a71" ;
+    skos:broader ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "s" .
+
+ct:s-maker a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_cardinality "instance single" ;
+    ct:p_class ct:winery ;
+    ct:p_type "maker" ;
+    dct:source "c0-a65",
+        "c0-a66",
+        "c0-a67",
+        "c0-a68",
+        "c0-a69",
+        "c0-a70",
+        "c0-a71" ;
+    skos:broader ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "s maker" .
+
+ct:section-4 a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_contain ct:detailed-discussion-thing-look-define-class-hierarchy ;
+    dct:source "c0-a64" ;
+    skos:broader ct:section_wine-class-hierarchy-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "section 4" .
+
+ct:separate-domain-knowledge-operational-knowledge a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_is ct:common-use-ontology ;
+    dct:source "c0-a15" ;
+    skos:broader ct:section_separating-domain-and-operational-knowledge-with-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "separate domain knowledge operational knowledge" .
+
+ct:share-common-understanding-structure-information-people-software-agent a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_is ct:common-goal-develop-ontology ;
+    dct:source "c0-a12" ;
+    skos:broader ct:section_shared-understanding-through-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "share common understanding structure information people software agent" .
+
+ct:sibling-class-hierarchy a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_share ct:direct-parent-class ;
+    dct:source "c8-a109" ;
+    skos:broader ct:section_siblings-in-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "sibling class hierarchy" .
+
+ct:sibling-hierarchy a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_level-generality "one root" ;
+    dct:source "c9-a112" ;
+    skos:broader ct:section_uniform-generality-of-siblings ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "sibling hierarchy" .
+
+ct:single-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_kind ct:wine ;
+    dct:source "c3-a98" ;
+    skos:broader ct:section_singular-vs-plural-class-hierarchy-error ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "single wine" .
+
+ct:slot-cardinality a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_define ct:value-slot ;
+    dct:source "c0-a76" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "slot cardinality" .
+
+ct:slot-class-wine a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_inherit ct:subclass-wine ;
+    dct:source "c0-a73" ;
+    skos:broader ct:section_inheritance-of-slots-in-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "slot class wine" .
+
+ct:slot-produce-class-winery a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_instance ct:class-wine ;
+    dct:source "c0-a77" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "slot produce class winery" .
+
+ct:slot-sugar a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_value "sweet dessert wine class" ;
+    dct:source "c11-a175" ;
+    skos:broader ct:section_default-vs-fixed-slot-values ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "slot sugar" .
+
+ct:software-agent a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_use ct:ontology-knowledge-basis-build-ontology-datum ;
+    dct:source "c0-a17" ;
+    skos:broader ct:section_ontologies-as-data-foundations ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "software agent" .
+
+ct:specific-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:leaf-hierarchy ;
+    dct:source "c0-a58" ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "specific class" .
+
+ct:specific-vintage-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_is ct:instance-knowledge-base ;
+    dct:source "c11-a159" ;
+    skos:broader ct:section_wine-bottles-and-vintages-as-individuals-in-inventory-systems ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "specific vintage wine" .
+
+ct:specific-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:instance-class ;
+    dct:source "c0-a26" ;
+    skos:broader ct:section_classes-and-instances-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "specific wine" .
+
+ct:specify-class-disjoint a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_enable ct:system-validate-ontology-well ;
+    dct:source "c11-a171" ;
+    skos:broader ct:section_disjoint-classes-and-ontology-validation ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "specify class disjoint" .
+
+ct:sterling-merlot a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_produce ct:sterle-vineyard-winery ;
+    dct:source "c11-a173" ;
+    skos:broader ct:section_automatic-inverse-slot-updates ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "sterling merlot" .
+
+ct:sterling-vineyard-merlot a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_instance ct:knowledge-base ;
+    ct:p_is ct:class-contain-instance-vintage ;
+    dct:source "c11-a158",
+        "c11-a159" ;
+    skos:broader ct:section_wine-bottles-and-vintages-as-individuals-in-inventory-systems,
+        ct:section_wine-types-as-individuals-in-pairing-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "sterling vineyard merlot" .
+
+ct:store-information a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_is ct:redundant ;
+    dct:source "c11-a172" ;
+    skos:broader ct:section_inverse-slots-and-redundancy-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "store information" .
+
+ct:string a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range,
+        ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "string" .
+
+ct:strong-moderate-delicate a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "strong moderate delicate" .
+
+ct:subclass-instance-dessert-wine-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_have ct:sweet-value-slot-sugar ;
+    dct:source "c11-a175" ;
+    skos:broader ct:section_default-vs-fixed-slot-values ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "subclass instance dessert wine class" .
+
+ct:subclass-name a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_should-be "red wine white wine red white" ;
+    dct:source "c11-a190" ;
+    skos:broader ct:section_consistent-subclass-naming-convention ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "subclass name" .
+
+ct:subclass-wine-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_represent ct:red-white-wine ;
+    dct:source "c11-a190" ;
+    skos:broader ct:section_consistent-subclass-naming-convention ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "subclass wine class" .
+
+ct:sugar a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_allow-value ct:dry-sweet-dry ;
+    ct:p_cardinality "nbol single" ;
+    ct:p_type "sugar" ;
+    dct:source "c0-a65",
+        "c0-a66",
+        "c0-a67",
+        "c0-a68",
+        "c0-a69",
+        "c0-a70",
+        "c0-a71" ;
+    skos:broader ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "sugar" .
+
+ct:sweet a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_unique-properties-of-specific-wine-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "sweet" .
+
+ct:sweet-dessert-wine-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_default-vs-fixed-slot-values ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "sweet dessert wine class" .
+
+ct:symbol a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range,
+        ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "symbol" .
+
+ct:symbol-single a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "symbol single" .
+
+ct:synonyms a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:different-name-concept-term ;
+    ct:p_list ct:class-documentation ;
+    dct:source "c6-a105" ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "synonyms" .
+
+ct:synonyms-concept a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_represent ct:different-class ;
+    dct:source "c6-a105" ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "synonyms concept" .
+
+ct:system a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_add ct:newly-create-instance-wine-class-produce-slot-correspond-winery-instance ;
+    ct:p_allow ct:associate-list-synonyms-translation-presentation-name-class ;
+    ct:p_distinguish ct:single-cardinality-multiple-cardinality ;
+    ct:p_fill-default-value-automatically "default value" ;
+    ct:p_indicate ct:modeling-error ;
+    dct:source "c0-a76",
+        "c11-a171",
+        "c11-a173",
+        "c11-a174",
+        "c6-a105" ;
+    skos:broader ct:section_automatic-inverse-slot-updates,
+        ct:section_class-vs-name-synonyms-do-not-create-different-classes,
+        ct:section_default-slot-values-in-ontologies,
+        ct:section_disjoint-classes-and-ontology-validation,
+        ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "system" .
+
+ct:system-need-interact-application-commit-particular-ontology-control-vocabulary a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_step-2-reuse-existing-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "system need interact application commit particular ontology control vocabulary" .
+
+ct:tannin a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_unique-properties-of-specific-wine-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "tannin" .
+
+ct:tannin-level-slot a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_attach ct:class-represent-red-wine ;
+    ct:p_inherit ct:class-represent-red-wine ;
+    dct:source "c0-a73",
+        "c0-a83" ;
+    skos:broader ct:section_inheritance-of-slots-in-subclasses,
+        ct:section_slot-attachment-and-domain-generalization-rules ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "tannin level slot" .
+
+ct:term a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_represent ct:objective-reality-world ;
+    dct:source "c6-a104" ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "term" .
+
+ct:there a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:library-reusable-ontology-web-literature,
+        ct:number-publicly-available-commercial-ontology ;
+    ct:p_is ct:class-name-shrimp-prawn ;
+    dct:source "c0-a53",
+        "c6-a105" ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes,
+        ct:section_step-2-reuse-existing-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "there" .
+
+ct:tool a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_available "analyze ontology" ;
+    dct:source "c11-a195" ;
+    skos:broader ct:section_ontology-analysis-and-chimaera-tools ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "tool" .
+
+ct:typeset-rule-bulleted-list-bullet-point a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_analogy-to-typesetting-rules ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "typeset rule bulleted list bullet point" .
+
+ct:united-nations-development-program-dun-bradstreet a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_combine-effort-develop ct:unspsc-ontology ;
+    dct:source "c0-a6" ;
+    skos:broader ct:section_general-purpose-ontology-unspsc ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "united nations development program dun bradstreet" .
+
+ct:uschold a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_present ct:alternative-ontology-development-methodology ;
+    dct:source "c11-a193" ;
+    skos:broader ct:section_scope-of-ontology-development-guide ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "uschold" .
+
+ct:value a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_change ct:subclass-instance-class ;
+    dct:source "c11-a175" ;
+    skos:broader ct:section_default-vs-fixed-slot-values ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "value" .
+
+ct:we a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_address "complex issue define class hierarchy property class instance" ;
+    ct:p_apply ct:algorithm-configure-order-pc ;
+    ct:p_attach ct:slot-general-class-red-wine ;
+    ct:p_build ct:experience-prot-g-2000-ontolingua-chimaera ;
+    ct:p_can-have ct:default-value-body-wine ;
+    ct:p_capitalize "class name" ;
+    ct:p_change-value-value ct:value-facet-allow ;
+    ct:p_create ct:class-shrimp,
+        ct:separate-class-white-wine,
+        ct:subclass-burgundy-class-cote-d-or-cote-chalonnaise ;
+    ct:p_declare ct:red-wine-white-wine-class-disjoint ;
+    ct:p_define ct:salient-concept ;
+    ct:p_define-value-default-value-slot "default value slot" ;
+    ct:p_describe ct:task-configure-product-component-accord-required-specification ;
+    ct:p_develop ct:ontology-pc-component-characteristic ;
+    ct:p_extend ct:unspsc-ontology-describe-domain-interest ;
+    ct:p_feed ct:elevator-component-ontology ;
+    ct:p_generalize ct:them ;
+    ct:p_generate ct:figure,
+        ct:number-middle-level-concept ;
+    ct:p_have-used ct:prot-g-2000 ;
+    ct:p_implement ct:program-configuration-independent-product-component ;
+    ct:p_import ct:initial-version-wine-ontology ;
+    ct:p_include ct:knowledge,
+        ct:property-wine-food ;
+    ct:p_integrate ct:exist-ontology-describe-portion-large-domain ;
+    ct:p_introduce ct:red-wine-white-wine-rise-wine ;
+    ct:p_like-reflect ct:expert-view-domain-ontology ;
+    ct:p_list ct:step-ontology-development-process ;
+    ct:p_need-adhere ct:it ;
+    ct:p_need-define ct:naming-convention-class-slot ;
+    ct:p_plan-use ct:ontology ;
+    ct:p_relate ct:middle-level-concept-medoc ;
+    ct:p_rename ct:prawn ;
+    ct:p_represent ct:salient-property-class-item-ontology ;
+    ct:p_reuse ct:general-ontology-unspsc-ontology ;
+    ct:p_should-not-have ct:class-call-shrimp-class-call-prawn-possibly-class-call-crevette ;
+    ct:p_specialize ct:them ;
+    ct:p_start ct:create-class-general-concept-wine-food,
+        ct:level-concept-wine,
+        ct:slot-name,
+        ct:specific-concept-margaux ;
+    ct:p_start-define ct:class-pauillac-margaux-wine ;
+    ct:p_use ct:algorithm-configure-elevator,
+        ct:daml-ontology-library,
+        ct:ontolingua-ontology-library,
+        ct:prot-g-2000,
+        ct:tannin-level-describe-white-wine,
+        ct:typewriter-font ;
+    ct:p_use-ontology ct:facilitate-communication-domain-expert-domain-expert-knowledge-base-system ;
+    ct:p_want-generate ct:regional-wine-class-france ;
+    dct:source "c0-a13",
+        "c0-a15",
+        "c0-a19",
+        "c0-a32",
+        "c0-a43",
+        "c0-a53",
+        "c0-a57",
+        "c0-a58",
+        "c0-a59",
+        "c0-a83",
+        "c10-a124",
+        "c11-a142",
+        "c11-a143",
+        "c11-a147",
+        "c11-a166",
+        "c11-a171",
+        "c11-a174",
+        "c11-a175",
+        "c11-a176",
+        "c11-a191",
+        "c11-a196",
+        "c11-a199",
+        "c11-a200",
+        "c6-a104",
+        "c6-a105" ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development,
+        ct:section_avoid-over-subclassing-based-on-minor-restrictions,
+        ct:section_class-vs-name-synonyms-do-not-create-different-classes,
+        ct:section_classes-vs-property-values-wine-color-example,
+        ct:section_default-slot-values-in-ontologies,
+        ct:section_default-vs-fixed-slot-values,
+        ct:section_disjoint-classes-and-ontology-validation,
+        ct:section_domain-scope-example-wine-and-food-ontology,
+        ct:section_guide-methodology-and-ontology-basis,
+        ct:section_importance-of-naming-conventions-in-ontologies,
+        ct:section_modeling-expert-distinctions-without-property-changes,
+        ct:section_no-single-correct-ontology,
+        ct:section_ontology-development-environments,
+        ct:section_ontology-naming-conventions,
+        ct:section_ontology-source-and-visualization-tool,
+        ct:section_principle-of-minimal-ontology-design,
+        ct:section_redundancy-and-justification-in-subclass-creation,
+        ct:section_reuse-of-domain-knowledge-in-ontology-research,
+        ct:section_separating-domain-and-operational-knowledge-with-ontologies,
+        ct:section_slot-attachment-and-domain-generalization-rules,
+        ct:section_step-2-reuse-existing-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "we" .
+
+ct:web-site a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_share-publish ct:underlying-ontology-term-use ;
+    dct:source "c0-a12" ;
+    skos:broader ct:section_shared-understanding-through-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "web site" .
+
+ct:white-zinfandel a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_classify ct:subclass-rose-wine ;
+    ct:p_color "rise" ;
+    dct:source "c5-a103" ;
+    skos:broader ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "white zinfandel" .
+
+ct:wine-body a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine body" .
+
+ct:wine-book a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_tell ct:size-grape ;
+    dct:source "c11-a166" ;
+    skos:broader ct:section_principle-of-minimal-ontology-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine book" .
+
+ct:wine-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_collection ct:specific-wine-produce-specific-winery ;
+    ct:p_slot ct:color-body-flavor-sugar ;
+    ct:p_specialize ct:create-subclass-white-wine-red-wine-ros-wine ;
+    dct:source "c0-a57",
+        "c0-a72",
+        "c11-a158" ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development,
+        ct:section_defining-class-slots-and-property-types,
+        ct:section_wine-types-as-individuals-in-pairing-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine class" .
+
+ct:wine-food-example a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_loosely-base ct:example-knowledge-base-present-paper-describe-classic ;
+    dct:source "c0-a20" ;
+    skos:broader ct:section_guide-methodology-and-ontology-basis ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine food example" .
+
+ct:wine-knowledge-base a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_classes-vs-property-values-wine-color-example ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine knowledge base" .
+
+ct:wine-maker a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_begin-press-grape ct:grape ;
+    ct:p_take-away ct:color-produce-aspect-grape ;
+    dct:source "c5-a103" ;
+    skos:broader ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine maker" .
+
+ct:wine-ontology a ct:Class_ontology,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_class ct:red-merlot-white-merlot ;
+    dct:source "c11-a149" ;
+    skos:broader ct:section_detailed-wine-ontology-red-and-white-merlot-as-separate-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine ontology" .
+
+ct:wine-produce-particular-winery a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_fill ct:multiple-cardinality-slot-produce-winery-class ;
+    dct:source "c0-a76" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine produce particular winery" .
+
+ct:wine-region a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_define ct:class ;
+    dct:source "c11-a162" ;
+    skos:broader ct:section_abstract-classes-for-wine-regions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine region" .
+
+ct:wine-sparkle a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_represent-value ct:boolean-slot ;
+    dct:source "c0-a77" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine sparkle" .
+
+ct:winery-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_slot ct:location ;
+    dct:source "c0-a72" ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "winery class" .
+
+ct:www-consortium-w3c a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_develop ct:resource-description-framework ;
+    dct:source "c0-a3" ;
+    skos:broader ct:section_w3c-s-resource-description-framework-rdf ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "www consortium w3c" .
+
+ct:zinfandel-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_break ct:white-zinfandel-red-zinfandel ;
+    dct:source "c5-a103" ;
+    skos:broader ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "zinfandel class" .
+
+ct:zinfandel-wines a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_define ct:subclass-red-wine-class ;
+    ct:p_were ct:red ;
+    dct:source "c5-a102" ;
+    skos:broader ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "zinfandel wines" .
+
+ct:1 a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "1" .
+
+ct:abstract a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_signify ct:class-direct-instance ;
+    dct:source "c11-a162" ;
+    skos:broader ct:section_abstract-classes-for-wine-regions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "abstract" .
+
+ct:aggregate-information-answer-user-query a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_shared-understanding-through-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "aggregate information answer user query" .
+
+ct:aggregate-information-input-datum-application a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_shared-understanding-through-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "aggregate information input datum application" .
+
+ct:aircraft a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_examples-of-is-a-kind-of-relations ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "aircraft" .
+
+ct:algorithm-configure-elevator a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_separating-domain-and-operational-knowledge-with-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "algorithm configure elevator" .
+
+ct:algorithm-configure-order-pc a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_separating-domain-and-operational-knowledge-with-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "algorithm configure order pc" .
+
+ct:application-suggest-good-combination-wine-food a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_domain-scope-example-wine-and-food-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "application suggest good combination wine food" .
+
+ct:associate-list-synonyms-translation-presentation-name-class a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "associate list synonyms translation presentation name class" .
+
+ct:avoid-common-modeling-mistake a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_importance-of-naming-conventions-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "avoid common modeling mistake" .
+
+ct:bad-combination a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_domain-scope-example-wine-and-food-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "bad combination" .
+
+ct:basis-application-suite-restaurant-manage-tool a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-and-food-ontology-for-restaurant-applications ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "basis application suite restaurant manage tool" .
+
+ct:beaujolais-region a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_figure-5-visual-representation-of-chateau-morgon-beaujolais-instance ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "beaujolais region" .
+
+ct:binary-predicate a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_include ct:flavor-object,
+        ct:flavor-object-strong ;
+    dct:source "c0-a72" ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "binary predicate" .
+
+ct:bodied-wine a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_default-vs-fixed-slot-values ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "bodied wine" .
+
+ct:body a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_single-cardinality-slot "wine body" ;
+    dct:source "c0-a75" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range,
+        ct:section_slots-as-properties-in-ontologies,
+        ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "body" .
+
+ct:boolean-slot a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "boolean slot" .
+
+ct:bordeaux a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_hierarchical-organization-of-wine-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "bordeaux" .
+
+ct:burgundy a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_hierarchical-organization-of-wine-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "burgundy" .
+
+ct:c-te-d-or-wine a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:red-burgundy-wine ;
+    dct:source "c10-a123" ;
+    skos:broader ct:section_redundancy-and-justification-in-subclass-creation ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "côte d'or wine" .
+
+ct:categorization-product-sale-feature-amazon-com a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontologies-on-the-world-wide-web ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "categorization product sale feature amazon.com" .
+
+ct:ch-teau-lafite-rothschild-winery a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slots-as-properties-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "château lafite rothschild winery" .
+
+ct:chateau-morgon a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_instance-definition-chateau-morgon-beaujolais ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "chateau morgon" .
+
+ct:chateau-morgon-winery a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_figure-5-visual-representation-of-chateau-morgon-beaujolais-instance ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "chateau morgon winery" .
+
+ct:cheap-burgundy-wine-region-south-c-te-d-or a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_redundancy-and-justification-in-subclass-creation ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "cheap burgundy wine region south côte d'or" .
+
+ct:check-logical-correctness-ontology a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-analysis-and-chimaera-tools ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "check logical correctness ontology" .
+
+ct:choose-different-terminology a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "choose different terminology" .
+
+ct:class-abstract a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_abstract-classes-for-wine-regions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class abstract" .
+
+ct:class-b a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_represent-concept-kind ct:a ;
+    dct:source "c0-a63" ;
+    skos:broader ct:section_hierarchical-organization-via-subclass-inheritance ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class b" .
+
+ct:class-bordeaux-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_classes-and-instances-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class bordeaux wine" .
+
+ct:class-call-shrimp-class-call-prawn-possibly-class-call-crevette a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class call shrimp class call prawn possibly class call crevette" .
+
+ct:class-contain-instance-vintage a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-bottles-and-vintages-as-individuals-in-inventory-systems ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class contain instance vintage" .
+
+ct:class-direct-instance a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_abstract-classes-for-wine-regions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class direct instance" .
+
+ct:class-documentation a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class documentation" .
+
+ct:class-hierarchy-wine-ontology a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-class-hierarchy-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class hierarchy wine ontology" .
+
+ct:class-name-shrimp-prawn a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class name shrimp prawn" .
+
+ct:class-pauillac-margaux-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class pauillac margaux wine" .
+
+ct:class-shrimp a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class shrimp" .
+
+ct:class-subclass a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_optimizing-slot-domain-and-range-by-removing-redundant-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class subclass" .
+
+ct:class-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_divide ct:red-white-ros-wine,
+        ct:sparkling-non-sparkling-wine ;
+    ct:p_represent ct:wine ;
+    dct:source "c0-a26",
+        "c0-a27",
+        "c11-a185" ;
+    skos:broader ct:section_class-hierarchies-and-subclasses,
+        ct:section_classes-and-instances-in-ontologies,
+        ct:section_singular-vs-plural-class-names,
+        ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class wine" .
+
+ct:classic-knowledge-representation-system a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-source-and-visualization-tool ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "classic knowledge representation system" .
+
+ct:collection-object a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_singular-vs-plural-class-names ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "collection object" .
+
+ct:color-body-flavor-sugar a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "color body flavor sugar" .
+
+ct:color-produce-aspect-grape a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "color produce aspect grape" .
+
+ct:combination-approach a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "combination approach" .
+
+ct:common-goal-develop-ontology a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_shared-understanding-through-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "common goal develop ontology" .
+
+ct:common-superclass-pauillac-margaux-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "common superclass pauillac margaux wine" .
+
+ct:common-use-ontology a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_separating-domain-and-operational-knowledge-with-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "common use ontology" .
+
+ct:common-vocabulary-researcher-need-share-information-domain a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_definition-and-purpose-of-an-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "common vocabulary researcher need share information domain" .
+
+ct:common-world-wide-web a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontologies-on-the-world-wide-web ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "common world wide web" .
+
+ct:concept a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:class ;
+    dct:source "c0-a25" ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes,
+        ct:section_definition-of-an-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "concept" .
+
+ct:concept-describe-different-type-wine a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_domain-scope-example-wine-and-food-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "concept describe different type wine" .
+
+ct:concept-describe-main-food-type a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_domain-scope-example-wine-and-food-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "concept describe main food type" .
+
+ct:concept-manage-inventory-winery a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_domain-scope-example-wine-and-food-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "concept manage inventory winery" .
+
+ct:conceptual-model-domain-wine-people a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_hierarchical-organization-of-wine-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "conceptual model domain wine people" .
+
+ct:convenient a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_inverse-slots-and-redundancy-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "convenient" .
+
+ct:create-class-general-concept-wine-food a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "create class general concept wine food" .
+
+ct:create-subclass-white-wine-red-wine-ros-wine a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "create subclass white wine red wine rosé wine" .
+
+ct:creation-new-class a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_exceptions-to-slot-value-conventions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "creation new class" .
+
+ct:creative-process a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_no-single-correct-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "creative process" .
+
+ct:daml-ontology-library a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_step-2-reuse-existing-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "daml ontology library" .
+
+ct:darpa-agent-markup-language-daml a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_darpa-agent-markup-language-daml ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "darpa agent markup language daml" .
+
+ct:default-value-body-wine a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_default-vs-fixed-slot-values ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "default value body wine" .
+
+ct:default-value-slot a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_default-slot-values-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "default value slot" .
+
+ct:define-set-datum-structure-program-use a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontologies-as-data-foundations ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "define set datum structure program use" .
+
+ct:definition-general-concept-domain a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "definition general concept domain" .
+
+ct:definition-specific-class a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "definition specific class" .
+
+ct:delicate-flavor a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_figure-5-visual-representation-of-chateau-morgon-beaujolais-instance ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "delicate flavor" .
+
+ct:delicate-moderate-strong a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "delicate moderate strong" .
+
+ct:describe-allow-value-slot a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_steps-in-ontology-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "describe allow value slot" .
+
+ct:designing-class-relation-object-orient-programming a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-vs-object-oriented-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "designing class relation object orient programming" .
+
+ct:dessert-wine a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_disjoint ct:white-wine ;
+    ct:p_sugar-value "sweet" ;
+    dct:source "c11-a137",
+        "c11-a170" ;
+    skos:broader ct:section_defining-port-wine-with-multiple-superclasses,
+        ct:section_disjoint-classes-in-ontologies,
+        ct:section_unique-properties-of-specific-wine-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "dessert wine" .
+
+ct:dessert-wine-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_inheritance-of-slots-from-multiple-parents ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "dessert wine class" .
+
+ct:dessert-wine-superclass a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_defining-port-wine-with-multiple-superclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "dessert wine superclass" .
+
+ct:detailed-discussion-thing-look-define-class-hierarchy a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-class-hierarchy-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "detailed discussion thing look define class hierarchy" .
+
+ct:diagnostic-common-ontology-design-error a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-analysis-and-chimaera-tools ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "diagnostic common ontology design error" .
+
+ct:diagnostic-tool a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-analysis-and-chimaera-tools ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "diagnostic tool" .
+
+ct:different-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "different class" .
+
+ct:different-food a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_classes-vs-property-values-wine-color-example ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "different food" .
+
+ct:different-name-concept-term a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "different name concept term" .
+
+ct:different-property a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_classes-vs-property-values-wine-color-example ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "different property" .
+
+ct:different-wine a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_detailed-wine-ontology-red-and-white-merlot-as-separate-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "different wine" .
+
+ct:direct-parent-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_siblings-in-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "direct parent class" .
+
+ct:domain a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_reuse-of-domain-knowledge-in-ontology-research ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "domain" .
+
+ct:domain-expert-commonly-distinction a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_modeling-expert-distinctions-without-property-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "domain expert commonly distinction" .
+
+ct:drive-force-recent-surge-ontology-research a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_reuse-of-domain-knowledge-in-ontology-research ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "drive force recent surge ontology research" .
+
+ct:dry-sweet-dry a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "dry sweet dry" .
+
+ct:dry-wine a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_figure-5-visual-representation-of-chateau-morgon-beaujolais-instance ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "dry wine" .
+
+ct:elevator-component-ontology a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_separating-domain-and-operational-knowledge-with-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "elevator component ontology" .
+
+ct:employee-restaurant a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_domain-scope-example-wine-and-food-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "employee restaurant" .
+
+ct:example a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_guide-methodology-and-ontology-basis ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "example" .
+
+ct:example-knowledge-base-present-paper-describe-classic a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_guide-methodology-and-ontology-basis ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "example knowledge base present paper describe classic" .
+
+ct:exist-ontology-describe-portion-large-domain a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_reuse-of-domain-knowledge-in-ontology-research ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "exist ontology describe portion large domain" .
+
+ct:experience-prot-g-2000-ontolingua-chimaera a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_guide-methodology-and-ontology-basis ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "experience protégé-2000 ontolingua chimaera" .
+
+ct:expert-view-domain-ontology a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_modeling-expert-distinctions-without-property-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "expert view domain ontology" .
+
+ct:facet a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:role-restriction ;
+    dct:source "c0-a25" ;
+    skos:broader ct:section_definition-of-an-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "facet" .
+
+ct:facet-describe-value-type-allow-value-number-value-cardinality-feature-value-slot a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "facet describe value type allow value number value cardinality feature value slot" .
+
+ct:facilitate-communication-domain-expert-domain-expert-knowledge-base-system a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_modeling-expert-distinctions-without-property-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "facilitate communication domain expert domain expert knowledge base system" .
+
+ct:feature-attribute-concept a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_definition-of-an-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "feature attribute concept" .
+
+ct:figure a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-source-and-visualization-tool ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "figure" .
+
+ct:flavor-object a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "flavor object" .
+
+ct:flavor-object-strong a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "flavor object strong" .
+
+ct:flavor-wine a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "flavor wine" .
+
+ct:food a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_examples-of-is-a-kind-of-relations ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "food" .
+
+ct:food-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_domain-scope-example-wine-and-food-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "food wine" .
+
+ct:formal-aspect-knowledge-modeling a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontolingua-tutorial-on-knowledge-modeling ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "formal aspect knowledge modeling" .
+
+ct:formal-explicit-description-concept-domain-discourse a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_definition-of-an-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "formal explicit description concept domain discourse" .
+
+ct:france a ct:Class_instance,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_naming-convention-for-hierarchical-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "france" .
+
+ct:french-region a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_naming-convention-for-hierarchical-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "french region" .
+
+ct:french-region-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-region-hierarchy-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "french region class" .
+
+ct:gamay-grape a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_figure-5-visual-representation-of-chateau-morgon-beaujolais-instance ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "gamay grape" .
+
+ct:general-concept a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-taxonomy-levels-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "general concept" .
+
+ct:general-ontology-unspsc-ontology a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_reuse-of-domain-knowledge-in-ontology-research ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "general ontology unspsc ontology" .
+
+ct:grape-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "grape wine" .
+
+ct:has-suffix-of-slot-name a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_using-prefixes-and-suffixes-to-distinguish-classes-and-slots ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "has- suffix -of slot name" .
+
+ct:individual-instance-knowledge-base a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-bottles-and-vintages-as-individuals-in-inventory-systems ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "individual instance knowledge base" .
+
+ct:individual-ontology a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_rib-classification-specific-classes-vs-general-class-with-slots ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "individual ontology" .
+
+ct:information-different-site a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_shared-understanding-through-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "information different site" .
+
+ct:initial-version-wine-ontology a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_import ct:ontolingua-ontology-library ;
+    dct:source "c11-a200" ;
+    skos:broader ct:section_ontology-source-and-visualization-tool ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "initial version wine ontology" .
+
+ct:instance a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_instance ct:b ;
+    ct:p_instance-b ct:instance-b ;
+    dct:source "c2-a90",
+        "c7-a107" ;
+    skos:broader ct:section_avoiding-cycles-in-class-hierarchies,
+        ct:section_is-a-relation-in-class-hierarchies,
+        ct:section_slot-facets-cardinality-value-type-domain-and-range,
+        ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "instance" .
+
+ct:instance-b a ct:Class_instance,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_instance ct:a,
+        ct:instance ;
+    dct:source "c0-a63",
+        "c7-a107" ;
+    skos:broader ct:section_avoiding-cycles-in-class-hierarchies,
+        ct:section_hierarchical-organization-via-subclass-inheritance ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "instance b" .
+
+ct:instance-knowledge-base a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-bottles-and-vintages-as-individuals-in-inventory-systems ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "instance knowledge base" .
+
+ct:inventory-list-wine-cellar a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-and-food-ontology-for-restaurant-applications ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "inventory list wine cellar" .
+
+ct:it a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_inherit ct:tannin-level-slot-red-wine-class,
+        ct:value-color-slot-red-wine-class,
+        ct:value-sweet-slot-sugar-dessert-wine-class ;
+    dct:source "c11-a133" ;
+    skos:broader ct:section_importance-of-naming-conventions-in-ontologies,
+        ct:section_inherited-slot-values-in-port-wine-class ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "it" .
+
+ct:iterative-process a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_fundamental-rules-of-ontology-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "iterative process" .
+
+ct:knowledge a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_principle-of-minimal-ontology-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "knowledge" .
+
+ct:knowledge-domain-change a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_explicit-domain-assumptions-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "knowledge domain change" .
+
+ct:large-standardized-structured-vocabulary-snome a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_standardized-ontologies-in-medicine-and-other-fields ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "large standardized structured vocabulary snome" .
+
+ct:large-taxonomy-categorize-web-site-yahoo a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontologies-on-the-world-wide-web ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "large taxonomy categorize web site yahoo" .
+
+ct:leaf-hierarchy a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "leaf hierarchy" .
+
+ct:level-concept-wine a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "level concept wine" .
+
+ct:library-reusable-ontology-web-literature a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_step-2-reuse-existing-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "library reusable ontology web literature" .
+
+ct:light a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_instance-definition-chateau-morgon-beaujolais ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "light" .
+
+ct:light-body a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_figure-5-visual-representation-of-chateau-morgon-beaujolais-instance ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "light body" .
+
+ct:like-talk-john-1st-leave-rib a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_rib-classification-specific-classes-vs-general-class-with-slots ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "like talk john 1st leave rib" .
+
+ct:literature-object-orient-design a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-vs-object-oriented-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "literature object orient design" .
+
+ct:location a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "location" .
+
+ct:look-term-determine-immediately-term-class-slot a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_using-prefixes-and-suffixes-to-distinguish-classes-and-slots ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "look term determine immediately term class slot" .
+
+ct:low-tannin-level a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_figure-5-visual-representation-of-chateau-morgon-beaujolais-instance ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "low tannin level" .
+
+ct:machine-interpretable-definition-basic-concept-domain a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_definition-and-purpose-of-an-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "machine interpretable definition basic concept domain" .
+
+ct:maker-wine-relationship-wine-winery a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "maker wine relationship wine winery" .
+
+ct:maker-winery a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_using-prefixes-and-suffixes-to-distinguish-classes-and-slots ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "maker winery" .
+
+ct:mark-musen-group-stanford-medical-informatic a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_acknowledgment-of-prot-g-2000-developers ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "mark musen group stanford medical informatic" .
+
+ct:medical-e-commerce-service a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_shared-understanding-through-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "medical e commerce service" .
+
+ct:medical-information a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_shared-understanding-through-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "medical information" .
+
+ct:medium-light a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "medium light" .
+
+ct:method-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-vs-object-oriented-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "method class" .
+
+ct:middle-level-concept-medoc a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "middle level concept medoc" .
+
+ct:minimum-cardinality-1 a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "minimum cardinality 1" .
+
+ct:model a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_default-slot-values-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "model" .
+
+ct:modeling-error a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_disjoint-classes-and-ontology-validation ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "modeling error" .
+
+ct:multiple-cardinality-slot-produce-winery-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "multiple cardinality slot produce winery class" .
+
+ct:multiple-inheritance-class-hierarchy a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_multiple-inheritance-in-class-hierarchies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "multiple inheritance class hierarchy" .
+
+ct:naming-convention-class-slot a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_importance-of-naming-conventions-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "naming convention class slot" .
+
+ct:new-restriction-model a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_default-slot-values-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "new restriction model" .
+
+ct:newly-create-instance-wine-class-produce-slot-correspond-winery-instance a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_automatic-inverse-slot-updates ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "newly create instance wine class produce slot correspond winery instance" .
+
+ct:notable-exception a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_exceptions-to-slot-value-conventions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "notable exception" .
+
+ct:notion-good-combination-wine-food a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_domain-scope-example-wine-and-food-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "notion good combination wine food" .
+
+ct:notion-time a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_reuse-of-domain-knowledge-in-ontology-research ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "notion time" .
+
+ct:number-middle-level-concept a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "number middle level concept" .
+
+ct:number-ontology-development-environment a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-development-environments ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "number ontology development environment" .
+
+ct:number-publicly-available-commercial-ontology a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_step-2-reuse-existing-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "number publicly available commercial ontology" .
+
+ct:objective-reality-world a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "objective reality world" .
+
+ct:ontology-analysis a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-analysis-and-chimaera-tools ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology analysis" .
+
+ct:ontology-design-choice a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_no-single-correct-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology design choice" .
+
+ct:ontology-detail a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_reuse-of-domain-knowledge-in-ontology-research ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology detail" .
+
+ct:ontology-development a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_different ct:designing-class-relation-object-orient-programming ;
+    ct:p_is ct:iterative-process ;
+    dct:source "c0-a22",
+        "c0-a35" ;
+    skos:broader ct:section_fundamental-rules-of-ontology-design,
+        ct:section_ontology-analysis-and-chimaera-tools,
+        ct:section_ontology-vs-object-oriented-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology development" .
+
+ct:ontology-development-methodology-declarative-frame-base-system a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_no-single-correct-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology development methodology declarative frame base system" .
+
+ct:ontology-easy-understand a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_importance-of-naming-conventions-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology easy understand" .
+
+ct:ontology-pc-component-characteristic a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_separating-domain-and-operational-knowledge-with-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology pc component characteristic" .
+
+ct:ontology-wine-food-appropriate-combination-wine-meal a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-and-food-ontology-for-restaurant-applications ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology wine food appropriate combination wine meal" .
+
+ct:operational-property-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-vs-object-oriented-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "operational property class" .
+
+ct:paramount-description-wine a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_exceptions-to-slot-value-conventions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "paramount description wine" .
+
+ct:parent a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_inheritance-of-slots-from-multiple-parents ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "parent" .
+
+ct:particular-programming-expertise a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_explicit-domain-assumptions-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "particular programming expertise" .
+
+ct:physical-abstract-part a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "physical abstract part" .
+
+ct:possible-breakdown-different-level-generality a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-taxonomy-levels-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "possible breakdown different level generality" .
+
+ct:possible-property-distinction-class-hierarchy a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_principle-of-minimal-ontology-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "possible property distinction class hierarchy" .
+
+ct:prawn a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "prawn" .
+
+ct:prawn-dish a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "prawn dish" .
+
+ct:prefix-suffix-convention-name a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_using-prefixes-and-suffixes-to-distinguish-classes-and-slots ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "prefix suffix convention name" .
+
+ct:produce-slot-winery-class a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_automatic-inverse-slot-updates ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "produce slot winery class" .
+
+ct:program-configuration-independent-product-component a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_separating-domain-and-operational-knowledge-with-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "program configuration independent product component" .
+
+ct:property-wine-food a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_principle-of-minimal-ontology-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "property wine food" .
+
+ct:query-waiter-customer a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-and-food-ontology-for-restaurant-applications ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "query waiter customer" .
+
+ct:red a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_instance-definition-chateau-morgon-beaujolais,
+        ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red" .
+
+ct:red-burgundy-wine a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:c-te-d-or-wine ;
+    dct:source "c10-a123" ;
+    skos:broader ct:section_redundancy-and-justification-in-subclass-creation ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red burgundy wine" .
+
+ct:red-color a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_figure-5-visual-representation-of-chateau-morgon-beaujolais-instance ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red color" .
+
+ct:red-merlot-white-merlot a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:different-wine ;
+    ct:p_are-made-from ct:grape ;
+    dct:source "c11-a149" ;
+    skos:broader ct:section_detailed-wine-ontology-red-and-white-merlot-as-separate-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red merlot white merlot" .
+
+ct:red-rise-white a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red rise white" .
+
+ct:red-white-ros-wine a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-hierarchies-and-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red white rosé wine" .
+
+ct:red-white-wine a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_consistent-subclass-naming-convention ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red white wine" .
+
+ct:red-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_additional-slot ct:tannin-level ;
+    ct:p_are ct:general-level-concept ;
+    ct:p_different-level "tannin" ;
+    ct:p_disjoint ct:white-wine ;
+    ct:p_has ct:different-property ;
+    ct:p_have ct:tannin-level-property ;
+    ct:p_is ct:subclass-wine ;
+    ct:p_pair ct:different-food ;
+    dct:source "c0-a60",
+        "c0-a73",
+        "c0-a80",
+        "c0-a83",
+        "c11-a136",
+        "c11-a147",
+        "c11-a170" ;
+    skos:broader ct:section_classes-vs-property-values-wine-color-example,
+        ct:section_defining-port-wine-with-multiple-superclasses,
+        ct:section_disjoint-classes-in-ontologies,
+        ct:section_hierarchical-organization-via-subclass-inheritance,
+        ct:section_inheritance-of-slots-in-subclasses,
+        ct:section_optimizing-slot-domain-and-range-by-removing-redundant-subclasses,
+        ct:section_slot-attachment-and-domain-generalization-rules,
+        ct:section_unique-properties-of-specific-wine-subclasses,
+        ct:section_wine-taxonomy-levels-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red wine" .
+
+ct:red-wine-superclass a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_defining-port-wine-with-multiple-superclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red wine superclass" .
+
+ct:red-wine-white-wine-class-disjoint a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_disjoint-classes-and-ontology-validation ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red wine white wine class disjoint" .
+
+ct:red-wine-white-wine-rise-wine a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_avoid-over-subclassing-based-on-minor-restrictions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red wine white wine rise wine" .
+
+ct:redundant a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_inverse-slots-and-redundancy-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "redundant" .
+
+ct:regional-wine-class-france a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "regional wine class france" .
+
+ct:relation a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_definition-and-purpose-of-an-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "relation" .
+
+ct:resource-description-framework a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_w3c-s-resource-description-framework-rdf ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "resource description framework" .
+
+ct:role-property a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_definition-of-an-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "role property" .
+
+ct:role-restriction a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_definition-of-an-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "role restriction" .
+
+ct:salient-concept a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "salient concept" .
+
+ct:salient-property-class-item-ontology a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_principle-of-minimal-ontology-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "salient property class item ontology" .
+
+ct:seafood a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_unique-properties-of-specific-wine-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "seafood" .
+
+ct:semantic-network-unified-medical-language-system a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_standardized-ontologies-in-medicine-and-other-fields ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "semantic network unified medical language system" .
+
+ct:separate-class-white-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_classes-vs-property-values-wine-color-example ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "separate class white wine" .
+
+ct:single-cardinality-multiple-cardinality a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "single cardinality multiple cardinality" .
+
+ct:single-cardinality-slot a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "single cardinality slot" .
+
+ct:single-correct-ontology-domain a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_no-single-correct-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "single correct ontology domain" .
+
+ct:singular-plural-version-concept-hierarchy a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_singular-vs-plural-class-hierarchy-error ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "singular plural version concept hierarchy" .
+
+ct:size-grape a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_principle-of-minimal-ontology-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "size grape" .
+
+ct:slot a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:role-property ;
+    ct:p_become ct:maker-winery ;
+    ct:p_can-have ct:facet-describe-value-type-allow-value-number-value-cardinality-feature-value-slot ;
+    dct:source "c0-a25",
+        "c0-a76",
+        "c11-a187" ;
+    skos:broader ct:section_definition-of-an-ontology,
+        ct:section_slot-facets-cardinality-value-type-domain-and-range,
+        ct:section_using-prefixes-and-suffixes-to-distinguish-classes-and-slots ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "slot" .
+
+ct:slot-general-class-red-wine a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-attachment-and-domain-generalization-rules ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "slot general class red wine" .
+
+ct:slot-instance a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_steps-in-ontology-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "slot instance" .
+
+ct:slot-m-value a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "slot m value" .
+
+ct:slot-n-value a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "slot n value" .
+
+ct:slot-name a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-naming-conventions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "slot name" .
+
+ct:slot-value a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_exceptions-to-slot-value-conventions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "slot value" .
+
+ct:slot-value-particular-subclass a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "slot value particular subclass" .
+
+ct:sparkling-non-sparkling-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-hierarchies-and-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "sparkling non sparkling wine" .
+
+ct:specialization-concept a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "specialization concept" .
+
+ct:specific-concept-margaux a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "specific concept margaux" .
+
+ct:specific-wine-produce-specific-winery a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-types-as-individuals-in-pairing-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "specific wine produce specific winery" .
+
+ct:step-ontology-development-process a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_no-single-correct-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "step ontology development process" .
+
+ct:sterle-vineyard-winery a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_automatic-inverse-slot-updates ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "sterle vineyard winery" .
+
+ct:structural-property-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-vs-object-oriented-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "structural property class" .
+
+ct:structure-similar-domain-object-orient-program a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-vs-object-oriented-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "structure similar domain object orient program" .
+
+ct:subclass-bordeaux a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "subclass bordeaux" .
+
+ct:subclass-burgundy-class-cote-d-or-cote-chalonnaise a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_redundancy-and-justification-in-subclass-creation ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "subclass burgundy class cote d'or cote chalonnaise" .
+
+ct:subclass-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_inherit-slot-class ct:class ;
+    dct:source "c0-a73" ;
+    skos:broader ct:section_inheritance-of-slots-in-subclasses,
+        ct:section_multiple-inheritance-in-class-hierarchies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "subclass class" .
+
+ct:subclass-instance-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_default-vs-fixed-slot-values ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "subclass instance class" .
+
+ct:subclass-red-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "subclass red wine" .
+
+ct:subclass-red-wine-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "subclass red wine class" .
+
+ct:subclass-represent-concept-specific-superclass a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-hierarchies-and-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "subclass represent concept specific superclass" .
+
+ct:subclass-rose-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "subclass rose wine" .
+
+ct:superclass a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_consistent-subclass-naming-convention ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "superclass" .
+
+ct:sweet-value-slot-sugar a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_default-vs-fixed-slot-values ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "sweet value slot sugar" .
+
+ct:syrah-red-burgundy-cabernet-sauvignon a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "syrah red burgundy cabernet sauvignon" .
+
+ct:system-validate-ontology-well a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_disjoint-classes-and-ontology-validation ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "system validate ontology well" .
+
+ct:tannin-level a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_inheritance-of-slots-in-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "tannin level" .
+
+ct:tannin-level-describe-white-wine a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-attachment-and-domain-generalization-rules ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "tannin level describe white wine" .
+
+ct:tannin-level-property a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-attachment-and-domain-generalization-rules ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "tannin level property" .
+
+ct:tannin-level-slot-red-wine-class a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_inherited-slot-values-in-port-wine-class ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "tannin level slot red wine class" .
+
+ct:task-configure-product-component-accord-required-specification a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_separating-domain-and-operational-knowledge-with-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "task configure product component accord required specification" .
+
+ct:taxonomic-subclass-superclass-hierarchy a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_steps-in-ontology-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "taxonomic subclass superclass hierarchy" .
+
+ct:terminology-product-service a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_general-purpose-ontology-unspsc ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "terminology product service" .
+
+ct:the-same a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_no-single-correct-ontology ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "the same" .
+
+ct:typewriter-font a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontology-naming-conventions ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "typewriter font" .
+
+ct:unary-predicate a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_contrast ct:binary-predicate ;
+    dct:source "c0-a72" ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "unary predicate" .
+
+ct:underlying-ontology-term-use a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_shared-understanding-through-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "underlying ontology term use" .
+
+ct:unspsc-ontology a ct:Class_ontology,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_provide ct:terminology-product-service ;
+    dct:source "c0-a6" ;
+    skos:broader ct:section_general-purpose-ontology-unspsc ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "unspsc ontology" .
+
+ct:unspsc-ontology-describe-domain-interest a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_reuse-of-domain-knowledge-in-ontology-research ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "unspsc ontology describe domain interest" .
+
+ct:user-fill-wine-case-winery a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_inverse-slots-and-redundancy-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "user fill wine case winery" .
+
+ct:value-color-slot-red-wine-class a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_inherited-slot-values-in-port-wine-class ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "value color slot red wine class" .
+
+ct:value-facet-allow a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_default-slot-values-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "value facet allow" .
+
+ct:value-sweet-slot-sugar-dessert-wine-class a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_inherited-slot-values-in-port-wine-class ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "value sweet slot sugar dessert wine class" .
+
+ct:value-type-instance-wine-allow-class a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "value type instance wine allow class" .
+
+ct:value-type-string a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "value type string" .
+
+ct:version-publish-brachman-colleague a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_distribute ct:classic-knowledge-representation-system ;
+    dct:source "c11-a200" ;
+    skos:broader ct:section_ontology-source-and-visualization-tool ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "version publish brachman colleague" .
+
+ct:white-zinfandel-red-zinfandel a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "white zinfandel red zinfandel" .
+
+ct:wine-area-come a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_defining-class-slots-and-property-types ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine area come" .
+
+ct:wine-category-expand-particular-wine-purchase-upcoming-menu-cookbook a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-and-food-ontology-for-restaurant-applications ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine category expand particular wine purchase upcoming menu cookbook" .
+
+ct:wine-class-red-wine-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_optimizing-slot-domain-and-range-by-removing-redundant-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine class red wine class" .
+
+ct:wine-general a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_unique-properties-of-specific-wine-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine general" .
+
+ct:wine-grape a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine grape" .
+
+ct:wine-instance-class-wine-subclass a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-relationships-wine-pauillac-and-winery ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine instance class wine subclass" .
+
+ct:wine-suggestion-menu-day a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-and-food-ontology-for-restaurant-applications ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine suggestion menu day" .
+
+ct:winery a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_domain ct:produce ;
+    dct:source "c0-a78" ;
+    skos:broader ct:section_slot-facets-cardinality-value-type-domain-and-range,
+        ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "winery" .
+
+ct:word-denote-concept a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "word denote concept" .
+
+ct:Class_ontology a owl:Class ;
+    rdfs:label "Ontology" ;
+    rdfs:subClassOf skos:Concept .
+
+ct:alternative-ontology-development-methodology a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_scope-of-ontology-development-guide ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "alternative ontology development methodology" .
+
+ct:beaujolais a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_instance-definition-chateau-morgon-beaujolais ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "beaujolais" .
+
+ct:bourgogne-region a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_class ct:class ;
+    ct:p_instance ct:french-region-class ;
+    dct:source "c11-a161",
+        "c11-a162" ;
+    skos:broader ct:section_abstract-classes-for-wine-regions,
+        ct:section_wine-region-hierarchy-design ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "bourgogne region" .
+
+ct:class-represent-red-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_inheritance-of-slots-in-subclasses,
+        ct:section_slot-attachment-and-domain-generalization-rules ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class represent red wine" .
+
+ct:concept-domain a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_class-vs-name-synonyms-do-not-create-different-classes,
+        ct:section_classes-and-instances-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "concept domain" .
+
+ct:grape a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_detailed-wine-ontology-red-and-white-merlot-as-separate-classes,
+        ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes,
+        ct:section_template-slots-for-the-wine-class-in-figure-3 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "grape" .
+
+ct:instance-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_classes-and-instances-in-ontologies,
+        ct:section_default-slot-values-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "instance class" .
+
+ct:instance-class-winery a ct:Class_instance,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_slot-produce ct:wine-instance-class-wine-subclass ;
+    dct:source "c0-a29" ;
+    skos:broader ct:section_class-relationships-wine-pauillac-and-winery ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "instance class winery" .
+
+ct:inverse-relation a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_inverse-slots-and-redundancy-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "inverse relation" .
+
+ct:knowledge-base a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_definition-of-an-ontology,
+        ct:section_wine-types-as-individuals-in-pairing-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "knowledge base" .
+
+ct:ontolingua-ontology-library a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_used ct:version-publish-brachman-colleague ;
+    dct:source "c11-a200" ;
+    skos:broader ct:section_ontology-source-and-visualization-tool,
+        ct:section_step-2-reuse-existing-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontolingua ontology library" .
+
+ct:produce a ct:Class_process,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_allow-class ct:wine ;
+    ct:p_call ct:inverse-relation ;
+    ct:p_multiple-cardinality-slot "wine produce particular winery" ;
+    ct:p_slot ct:value-type-instance-wine-allow-class ;
+    ct:p_slot-value-type "instance" ;
+    dct:source "c0-a75",
+        "c0-a76",
+        "c0-a77",
+        "c0-a78",
+        "c11-a172" ;
+    skos:broader ct:section_inverse-slots-and-redundancy-in-ontologies,
+        ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "produce" .
+
+ct:prot-g-2000 a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_allow-user-specify ct:class-abstract ;
+    ct:p_develop ct:mark-musen-group-stanford-medical-informatic ;
+    dct:source "c11-a162",
+        "c11-a198" ;
+    skos:broader ct:section_abstract-classes-for-wine-regions,
+        ct:section_acknowledgment-of-prot-g-2000-developers,
+        ct:section_guide-methodology-and-ontology-basis,
+        ct:section_ontology-development-environments ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "protégé-2000" .
+
+ct:red-wine-class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_categorize ct:syrah-red-burgundy-cabernet-sauvignon ;
+    dct:source "c0-a57" ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development,
+        ct:section_hierarchical-organization-via-subclass-inheritance,
+        ct:section_inheritance-of-slots-from-multiple-parents ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "red wine class" .
+
+ct:section_acknowledgment-of-prot-g-2000-developers a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Acknowledgment of Protégé-2000 Developers" .
+
+ct:section_analogy-to-typesetting-rules a skos:Concept ;
+    skos:broader ct:section_analyzing-siblings-in-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Analogy to Typesetting Rules" .
+
+ct:section_avoid-over-subclassing-based-on-minor-restrictions a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Avoid Over-Subclassing Based on Minor Restrictions" .
+
+ct:section_class-hierarchy-as-book-outline a skos:Concept ;
+    skos:broader ct:section_analyzing-siblings-in-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Class Hierarchy as Book Outline" .
+
+ct:section_darpa-agent-markup-language-daml a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "DARPA Agent Markup Language (DAML)" .
+
+ct:section_fundamental-rules-of-ontology-design a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Fundamental Rules of Ontology Design" .
+
+ct:section_ontolingua-tutorial-on-knowledge-modeling a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Ontolingua Tutorial on Knowledge Modeling" .
+
+ct:section_siblings-in-class-hierarchy a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Siblings in Class Hierarchy" .
+
+ct:section_uniform-generality-of-siblings a skos:Concept ;
+    skos:broader ct:section_analyzing-siblings-in-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Uniform Generality of Siblings" .
+
+ct:section_w3c-s-resource-description-framework-rdf a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "W3C's Resource Description Framework (RDF)" .
+
+ct:specific-class-hierarchy a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-taxonomy-levels-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "specific class hierarchy" .
+
+ct:subclass-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_inheritance-of-slots-in-subclasses,
+        ct:section_optimizing-slot-domain-and-range-by-removing-redundant-subclasses ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "subclass wine" .
+
+ct:them a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_approaches-to-class-hierarchy-development ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "them" .
+
+ct:value-inverse-relation a ct:Class_relation,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_inverse-slots-and-redundancy-in-ontologies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "value inverse relation" .
+
+ct:value-slot a ct:Class_property,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_depend ct:value-slot ;
+    dct:source "c11-a172" ;
+    skos:broader ct:section_inverse-slots-and-redundancy-in-ontologies,
+        ct:section_slot-facets-cardinality-value-type-domain-and-range ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "value slot" .
+
+ct:a a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_subclass-b ct:b ;
+    dct:source "c7-a107" ;
+    skos:broader ct:section_avoiding-cycles-in-class-hierarchies,
+        ct:section_hierarchical-organization-via-subclass-inheritance ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "a" .
+
+ct:b a ct:Class_example,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_subclass ct:a ;
+    dct:source "c7-a107" ;
+    skos:broader ct:section_avoiding-cycles-in-class-hierarchies,
+        ct:section_is-a-relation-in-class-hierarchies ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "b" .
+
+ct:general-level-concept a ct:Class_concept,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_wine-taxonomy-levels-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "general level concept" .
+
+ct:ontology-knowledge-basis-build-ontology-datum a ct:Class_artifact,
+        owl:NamedIndividual,
+        skos:Concept ;
+    skos:broader ct:section_ontologies-as-data-foundations ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology knowledge basis build ontology datum" .
+
+ct:section_disjoint-classes-in-ontologies a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Disjoint Classes in Ontologies" .
+
+ct:section_general-purpose-ontology-unspsc a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "General-Purpose Ontology: UNSPSC" .
+
+ct:section_is-a-relation-in-class-hierarchies a skos:Concept ;
+    skos:broader ct:section_ensuring-that-the-class-hierarchy-is-correct ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Is-a Relation in Class Hierarchies" .
+
+ct:section_scope-of-ontology-development-guide a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Scope of Ontology Development Guide" .
+
+ct:section_slots-as-properties-in-ontologies a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Slots as Properties in Ontologies" .
+
+ct:section_standardized-ontologies-in-medicine-and-other-fields a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Standardized Ontologies in Medicine and Other Fields" .
+
+ct:section_transitivity-and-direct-indirect-subclasses a skos:Concept ;
+    skos:broader ct:section_ensuring-that-the-class-hierarchy-is-correct ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Transitivity and Direct/Indirect Subclasses" .
+
+ct:section_wine-region-hierarchy-design a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Wine Region Hierarchy Design" .
+
+ct:class a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_can-be ct:subclass-class ;
+    ct:p_change ct:choose-different-terminology ;
+    ct:p_describe ct:concept-domain ;
+    ct:p_focus ct:ontology ;
+    ct:p_represent ct:collection-object,
+        ct:concept,
+        ct:concept-domain,
+        ct:word-denote-concept ;
+    ct:p_subclass ct:b,
+        ct:subclass-represent-concept-specific-superclass ;
+    ct:p_superclass ct:class-b ;
+    ct:p_view ct:unary-predicate ;
+    dct:source "c0-a26",
+        "c0-a27",
+        "c0-a63",
+        "c0-a72",
+        "c11-a130",
+        "c11-a185",
+        "c2-a90",
+        "c6-a104" ;
+    skos:broader ct:section_abstract-classes-for-wine-regions,
+        ct:section_class-hierarchies-and-subclasses,
+        ct:section_class-vs-name-synonyms-do-not-create-different-classes,
+        ct:section_classes-and-instances-in-ontologies,
+        ct:section_defining-class-slots-and-property-types,
+        ct:section_definition-of-an-ontology,
+        ct:section_hierarchical-organization-via-subclass-inheritance,
+        ct:section_inheritance-of-slots-in-subclasses,
+        ct:section_is-a-relation-in-class-hierarchies,
+        ct:section_multiple-inheritance-in-class-hierarchies,
+        ct:section_singular-vs-plural-class-names ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "class" .
+
+ct:ontology a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_available "electronic form" ;
+    ct:p_can-be-used-as ct:basis-application-suite-restaurant-manage-tool ;
+    ct:p_contain ct:possible-property-distinction-class-hierarchy ;
+    ct:p_define ct:common-vocabulary-researcher-need-share-information-domain ;
+    ct:p_have-become ct:common-world-wide-web ;
+    ct:p_include ct:bad-combination,
+        ct:concept-describe-different-type-wine,
+        ct:concept-describe-main-food-type,
+        ct:concept-manage-inventory-winery,
+        ct:employee-restaurant,
+        ct:machine-interpretable-definition-basic-concept-domain,
+        ct:notion-good-combination-wine-food,
+        ct:relation ;
+    ct:p_is ct:formal-explicit-description-concept-domain-discourse ;
+    ct:p_is-used-for ct:application-suggest-good-combination-wine-food ;
+    dct:source "c0-a18",
+        "c0-a2",
+        "c0-a25",
+        "c0-a43",
+        "c0-a53",
+        "c0-a7",
+        "c11-a166" ;
+    skos:broader ct:section_classes-and-instances-in-ontologies,
+        ct:section_definition-and-purpose-of-an-ontology,
+        ct:section_definition-of-an-ontology,
+        ct:section_domain-scope-example-wine-and-food-ontology,
+        ct:section_frame-based-ontology-description,
+        ct:section_ontologies-on-the-world-wide-web,
+        ct:section_principle-of-minimal-ontology-design,
+        ct:section_step-2-reuse-existing-ontologies,
+        ct:section_steps-in-ontology-development,
+        ct:section_wine-and-food-ontology-for-restaurant-applications ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "ontology" .
+
+ct:section_avoiding-cycles-in-class-hierarchies a skos:Concept ;
+    skos:broader ct:section_ensuring-that-the-class-hierarchy-is-correct ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Avoiding Cycles in Class Hierarchies" .
+
+ct:section_class-relationships-wine-pauillac-and-winery a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Class Relationships: Wine, Pauillac, and Winery" .
+
+ct:section_definition-and-purpose-of-an-ontology a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Definition and Purpose of an Ontology" .
+
+ct:section_detailed-wine-ontology-red-and-white-merlot-as-separate-classes a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Detailed Wine Ontology: Red and White Merlot as Separate Classes" .
+
+ct:section_frame-based-ontology-description a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Frame-Based Ontology Description" .
+
+ct:section_inherited-slot-values-in-port-wine-class a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Inherited Slot Values in Port Wine Class" .
+
+ct:section_multiple-inheritance-in-class-hierarchies a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Multiple Inheritance in Class Hierarchies" .
+
+ct:section_naming-convention-for-hierarchical-classes a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Naming Convention for Hierarchical Classes" .
+
+ct:section_ontology-development-environments a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Ontology Development Environments" .
+
+ct:section_ontology-naming-conventions a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Ontology Naming Conventions" .
+
+ct:section_rib-classification-specific-classes-vs-general-class-with-slots a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Rib Classification: Specific Classes vs. General Class with Slots" .
+
+ct:section_singular-vs-plural-class-hierarchy-error a skos:Concept ;
+    skos:broader ct:section_ensuring-that-the-class-hierarchy-is-correct ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Singular vs. Plural Class Hierarchy Error" .
+
+ct:section_singular-vs-plural-class-names a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Singular vs. Plural Class Names" .
+
+ct:section_wine-class-hierarchy-in-figure-2 a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Wine Class Hierarchy in Figure 2" .
+
+ct:section_wine-types-as-individuals-in-pairing-ontologies a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Wine Types as Individuals in Pairing Ontologies" .
+
+ct:section_analyzing-siblings-in-a-class-hierarchy a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Analyzing siblings in a class hierarchy" .
+
+ct:section_class-hierarchies-and-subclasses a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Class Hierarchies and Subclasses" .
+
+ct:section_inheritance-of-slots-from-multiple-parents a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Inheritance of Slots from Multiple Parents" .
+
+ct:section_modeling-expert-distinctions-without-property-changes a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Modeling Expert Distinctions Without Property Changes" .
+
+ct:section_ontologies-on-the-world-wide-web a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Ontologies on the World Wide Web" .
+
+ct:section_steps-in-ontology-development a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Steps in Ontology Development" .
+
+ct:white-wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_are ct:general-level-concept ;
+    ct:p_subclass ct:wine ;
+    dct:source "c0-a60",
+        "c4-a100" ;
+    skos:broader ct:section_disjoint-classes-in-ontologies,
+        ct:section_examples-of-is-a-kind-of-relations,
+        ct:section_transitivity-and-direct-indirect-subclasses,
+        ct:section_wine-taxonomy-levels-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "white wine" .
+
+ct:section_automatic-inverse-slot-updates a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Automatic Inverse Slot Updates" .
+
+ct:section_consistent-subclass-naming-convention a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Consistent Subclass Naming Convention" .
+
+ct:section_defining-port-wine-with-multiple-superclasses a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Defining Port Wine with Multiple Superclasses" .
+
+ct:section_disjoint-classes-and-ontology-validation a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Disjoint Classes and Ontology Validation" .
+
+ct:section_examples-of-is-a-kind-of-relations a skos:Concept ;
+    skos:broader ct:section_ensuring-that-the-class-hierarchy-is-correct ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Examples of Is-a (Kind-of) Relations" .
+
+ct:section_explicit-domain-assumptions-in-ontologies a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Explicit Domain Assumptions in Ontologies" .
+
+ct:section_hierarchical-organization-of-wine-classes a skos:Concept ;
+    skos:broader ct:section_analyzing-siblings-in-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Hierarchical Organization of Wine Classes" .
+
+ct:section_importance-of-naming-conventions-in-ontologies a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Importance of Naming Conventions in Ontologies" .
+
+ct:section_ontologies-as-data-foundations a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Ontologies as Data Foundations" .
+
+ct:section_ontology-source-and-visualization-tool a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Ontology Source and Visualization Tool" .
+
+ct:section_optimizing-slot-domain-and-range-by-removing-redundant-subclasses a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Optimizing Slot Domain and Range by Removing Redundant Subclasses" .
+
+ct:section_redundancy-and-justification-in-subclass-creation a skos:Concept ;
+    skos:broader ct:section_analyzing-siblings-in-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Redundancy and Justification in Subclass Creation" .
+
+ct:section_wine-bottles-and-vintages-as-individuals-in-inventory-systems a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Wine Bottles and Vintages as Individuals in Inventory Systems" .
+
+ct:wine a ct:Class_class,
+        owl:NamedIndividual,
+        skos:Concept ;
+    ct:p_is ct:general-concept,
+        ct:notable-exception ;
+    ct:p_range ct:produce ;
+    dct:source "c0-a60",
+        "c0-a78",
+        "c11-a153" ;
+    skos:broader ct:section_classes-and-instances-in-ontologies,
+        ct:section_exceptions-to-slot-value-conventions,
+        ct:section_singular-vs-plural-class-hierarchy-error,
+        ct:section_singular-vs-plural-class-names,
+        ct:section_slot-facets-cardinality-value-type-domain-and-range,
+        ct:section_transitivity-and-direct-indirect-subclasses,
+        ct:section_wine-taxonomy-levels-in-figure-2 ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "wine" .
+
+ct:section_classes-vs-property-values-wine-color-example a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Classes vs. Property Values: Wine Color Example" .
+
+ct:section_ensuring-that-the-class-hierarchy-is-correct a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Ensuring that the class hierarchy is correct" .
+
+ct:section_exceptions-to-slot-value-conventions a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Exceptions to Slot Value Conventions" .
+
+ct:section_guide-methodology-and-ontology-basis a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Guide Methodology and Ontology Basis" .
+
+ct:section_slot-attachment-and-domain-generalization-rules a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Slot Attachment and Domain Generalization Rules" .
+
+ct:section_hierarchical-organization-via-subclass-inheritance a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Hierarchical Organization via Subclass Inheritance" .
+
+ct:section_inheritance-of-slots-in-subclasses a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Inheritance of Slots in Subclasses" .
+
+ct:section_principle-of-minimal-ontology-design a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Principle of Minimal Ontology Design" .
+
+ct:section_unique-properties-of-specific-wine-subclasses a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Unique Properties of Specific Wine Subclasses" .
+
+ct:section_using-prefixes-and-suffixes-to-distinguish-classes-and-slots a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Using Prefixes and Suffixes to Distinguish Classes and Slots" .
+
+ct:section_abstract-classes-for-wine-regions a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Abstract Classes for Wine Regions" .
+
+ct:section_classes-and-instances-in-ontologies a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Classes and Instances in Ontologies" .
+
+ct:section_figure-5-visual-representation-of-chateau-morgon-beaujolais-instance a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Figure 5: Visual Representation of Chateau-Morgon-Beaujolais Instance" .
+
+ct:section_instance-definition-chateau-morgon-beaujolais a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Instance Definition: Chateau-Morgon-Beaujolais" .
+
+ct:section_ontology-analysis-and-chimaera-tools a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Ontology Analysis and Chimaera Tools" .
+
+ct:section_separating-domain-and-operational-knowledge-with-ontologies a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Separating Domain and Operational Knowledge with Ontologies" .
+
+ct:section_wine-and-food-ontology-for-restaurant-applications a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Wine and Food Ontology for Restaurant Applications" .
+
+ct:Class_instance a owl:Class ;
+    rdfs:label "Instance" ;
+    rdfs:subClassOf skos:Concept .
+
+ct:section_default-vs-fixed-slot-values a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Default vs. Fixed Slot Values" .
+
+ct:section_step-2-reuse-existing-ontologies a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Step 2: Reuse Existing Ontologies" .
+
+ct:section_default-slot-values-in-ontologies a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Default Slot Values in Ontologies" .
+
+ct:section_domain-scope-example-wine-and-food-ontology a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Domain Scope Example: Wine and Food Ontology" .
+
+ct:section_wine-taxonomy-levels-in-figure-2 a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Wine Taxonomy Levels in Figure 2" .
+
+ct:section_ontology-vs-object-oriented-design a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Ontology vs. Object-Oriented Design" .
+
+ct:section_reuse-of-domain-knowledge-in-ontology-research a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Reuse of Domain Knowledge in Ontology Research" .
+
+ct:section_shared-understanding-through-ontologies a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Shared Understanding Through Ontologies" .
+
+ct:section_definition-of-an-ontology a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Definition of an Ontology" .
+
+ct:section_inverse-slots-and-redundancy-in-ontologies a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Inverse Slots and Redundancy in Ontologies" .
+
+ct:section_no-single-correct-ontology a skos:Concept ;
+    skos:broader ct:section_defining-classes-and-a-class-hierarchy ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "No Single Correct Ontology" .
+
+ct:section_reclassification-of-zinfandel-wines-due-to-winemaking-changes a skos:Concept ;
+    skos:broader ct:section_ensuring-that-the-class-hierarchy-is-correct ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Reclassification of Zinfandel Wines Due to Winemaking Changes" .
+
+ct:section_defining-class-slots-and-property-types a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Defining Class Slots and Property Types" .
+
+ct:section_template-slots-for-the-wine-class-in-figure-3 a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Template Slots for the Wine Class in Figure 3" .
+
+ct:section_class-vs-name-synonyms-do-not-create-different-classes a skos:Concept ;
+    skos:broader ct:section_ensuring-that-the-class-hierarchy-is-correct ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Class vs. Name: Synonyms Do Not Create Different Classes" .
+
+ct:Class_relation a owl:Class ;
+    rdfs:label "Relation" ;
+    rdfs:subClassOf skos:Concept .
+
+ct:section_approaches-to-class-hierarchy-development a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Approaches to Class Hierarchy Development" .
+
+ct:section_defining-classes-and-a-class-hierarchy a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Defining classes and a class hierarchy" .
+
+ct:section_slot-facets-cardinality-value-type-domain-and-range a skos:Concept ;
+    skos:inScheme ct:scheme ;
+    skos:prefLabel "Slot Facets: Cardinality, Value Type, Domain, and Range" .
+
+ct:Class_example a owl:Class ;
+    rdfs:label "Example" ;
+    rdfs:subClassOf skos:Concept .
+
+ct:Class_process a owl:Class ;
+    rdfs:label "Process" ;
+    rdfs:subClassOf skos:Concept .
+
+ct:Class_concept a owl:Class ;
+    rdfs:label "Concept" ;
+    rdfs:subClassOf skos:Concept .
+
+ct:Class_artifact a owl:Class ;
+    rdfs:label "Artifact" ;
+    rdfs:subClassOf skos:Concept .
+
+ct:Class_property a owl:Class ;
+    rdfs:label "Property" ;
+    rdfs:subClassOf skos:Concept .
+
+ct:Class_class a owl:Class ;
+    rdfs:label "Class" ;
+    rdfs:subClassOf skos:Concept .
+
+ct:scheme a skos:ConceptScheme .
+

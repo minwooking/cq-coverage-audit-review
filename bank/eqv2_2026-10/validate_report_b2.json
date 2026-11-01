@@ -1,0 +1,2441 @@
+{
+ "anchor_route": "import",
+ "n_in": 504,
+ "n_kept": 456,
+ "n_dropped": 251,
+ "dropped_records": [
+  {
+   "cq_id": "CQE509",
+   "term": "brick:Domestic_Hot_Water_Differential_Pressure_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "V5 longest common substring >= 40"
+   ],
+   "replaced_by": "CQE509"
+  },
+  {
+   "cq_id": "CQE507",
+   "term": "brick:Leaving_Condenser_Water_Temperature_Sensor",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE507"
+  },
+  {
+   "cq_id": "CQE510",
+   "term": "brick:Occupied_Heating_Supply_Air_Flow_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE510"
+  },
+  {
+   "cq_id": "CQE512",
+   "term": "rec:WirelessAccessPoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE512"
+  },
+  {
+   "cq_id": "CQE506",
+   "term": "brick:Core_Temperature_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "V5 longest common substring >= 40",
+    "V5 token jaccard 0.56 > 0.50"
+   ],
+   "replaced_by": "CQE506"
+  },
+  {
+   "cq_id": "CQE513",
+   "term": "brick:Environment_Box",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE513"
+  },
+  {
+   "cq_id": "CQE518",
+   "term": "brick:Jet_Nozzle_Air_Diffuser",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE518"
+  },
+  {
+   "cq_id": "CQE522",
+   "term": "rec:ITRack",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE522"
+  },
+  {
+   "cq_id": "CQE521",
+   "term": "brick:Electrical_Room",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE521"
+  },
+  {
+   "cq_id": "CQE524",
+   "term": "brick:Condenser_Water_Loop",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE524"
+  },
+  {
+   "cq_id": "CQE534",
+   "term": "brick:Zone_Air_Heating_Temperature_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE534"
+  },
+  {
+   "cq_id": "CQE536",
+   "term": "ref:hasIfcProjectReference",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE536"
+  },
+  {
+   "cq_id": "CQE537",
+   "term": "brick:Entering_Water_Temperature_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE537"
+  },
+  {
+   "cq_id": "CQE542",
+   "term": "brick:Duct_Fan_Coil_Unit",
+   "category": "concept_definition",
+   "reasons": [
+    "V5 token jaccard 0.53 > 0.50"
+   ],
+   "replaced_by": "CQE542"
+  },
+  {
+   "cq_id": "CQE547",
+   "term": "brick:Discharge_Air_Flow_Sensor",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE547"
+  },
+  {
+   "cq_id": "CQE553",
+   "term": "rec:OccupancySensorEquipment",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE553"
+  },
+  {
+   "cq_id": "CQE555",
+   "term": "brick:Min_Unoccupied_Heating_Discharge_Air_Flow_Setpoint_Limit",
+   "category": "concept_definition",
+   "reasons": [
+    "V5 longest common substring >= 40"
+   ],
+   "replaced_by": "CQE555"
+  },
+  {
+   "cq_id": "CQE554",
+   "term": "brick:Water_Alarm",
+   "category": "concept_definition",
+   "reasons": [
+    "D2",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE554"
+  },
+  {
+   "cq_id": "CQE559",
+   "term": "brick:Discharge_Air_Static_Pressure_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE559"
+  },
+  {
+   "cq_id": "CQE560",
+   "term": "brick:operationalStage",
+   "category": "concept_definition",
+   "reasons": [
+    "D2",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE560"
+  },
+  {
+   "cq_id": "CQE562",
+   "term": "brick:Exhaust_Air_Static_Pressure_Sensor",
+   "category": "concept_definition",
+   "reasons": [
+    "V5 token jaccard 0.59 > 0.50"
+   ],
+   "replaced_by": "CQE562"
+  },
+  {
+   "cq_id": "CQE565",
+   "term": "brick:Leaving_High_Temperature_Hot_Water_Temperature_Sensor",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE565"
+  },
+  {
+   "cq_id": "CQE568",
+   "term": "brick:Entering_Condenser_Water_Temperature_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE568"
+  },
+  {
+   "cq_id": "CQE570",
+   "term": "brick:Max_Occupied_Heating_Supply_Air_Flow_Setpoint_Limit",
+   "category": "concept_definition",
+   "reasons": [
+    "V5 longest common substring >= 40",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE570"
+  },
+  {
+   "cq_id": "CQE575",
+   "term": "brick:Return_Fan",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE575"
+  },
+  {
+   "cq_id": "CQE578",
+   "term": "brick:electricalFlow",
+   "category": "concept_definition",
+   "reasons": [
+    "D2",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE578"
+  },
+  {
+   "cq_id": "CQE580",
+   "term": "brick:Broadcast_Room",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE580"
+  },
+  {
+   "cq_id": "CQE582",
+   "term": "brick:Occupied_Mode_Status",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE582"
+  },
+  {
+   "cq_id": "CQE579",
+   "term": "brick:Max_Chilled_Water_Differential_Pressure_Setpoint_Limit",
+   "category": "concept_definition",
+   "reasons": [
+    "V5 longest common substring >= 40"
+   ],
+   "replaced_by": "CQE579"
+  },
+  {
+   "cq_id": "CQE585",
+   "term": "brick:Plumbing_Room",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE585"
+  },
+  {
+   "cq_id": "CQE589",
+   "term": "brick:Frequency_Command",
+   "category": "concept_definition",
+   "reasons": [
+    "D2",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE589"
+  },
+  {
+   "cq_id": "CQE591",
+   "term": "brick:Reception",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE591"
+  },
+  {
+   "cq_id": "CQE592",
+   "term": "brick:Concession",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE592"
+  },
+  {
+   "cq_id": "CQE595",
+   "term": "brick:Cooling_Zone_Air_Temperature_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE595"
+  },
+  {
+   "cq_id": "CQE598",
+   "term": "brick:Ventilation_Air_Flow_Ratio_Limit",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE598"
+  },
+  {
+   "cq_id": "CQE605",
+   "term": "brick:Differential_Pressure_Sensor",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE605"
+  },
+  {
+   "cq_id": "CQE604",
+   "term": "brick:ratedMaximumVoltageInput",
+   "category": "concept_definition",
+   "reasons": [
+    "D2",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE604"
+  },
+  {
+   "cq_id": "CQE609",
+   "term": "brick:Air_Temperature_Sensor",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE609"
+  },
+  {
+   "cq_id": "CQE610",
+   "term": "brick:Heating_Supply_Air_Temperature_Deadband_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "V5 longest common substring >= 40"
+   ],
+   "replaced_by": "CQE610"
+  },
+  {
+   "cq_id": "CQE612",
+   "term": "brick:Cooling_Coil",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE612"
+  },
+  {
+   "cq_id": "CQE611",
+   "term": "brick:Wing",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE611"
+  },
+  {
+   "cq_id": "CQE617",
+   "term": "brick:Override_Command",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE617"
+  },
+  {
+   "cq_id": "CQE618",
+   "term": "brick:Max_Temperature_Setpoint_Limit",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE618"
+  },
+  {
+   "cq_id": "CQE621",
+   "term": "brick:Discharge_Air_Temperature_Deadband_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE621"
+  },
+  {
+   "cq_id": "CQE631",
+   "term": "brick:Occupied_Cooling_Zone_Air_Temperature_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE631"
+  },
+  {
+   "cq_id": "CQE634",
+   "term": "brick:Air_Flow_Loss_Alarm",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE634"
+  },
+  {
+   "cq_id": "CQE633",
+   "term": "brick:Unit_Failure_Alarm",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE633"
+  },
+  {
+   "cq_id": "CQE639",
+   "term": "brick:Reheat_Command",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE639"
+  },
+  {
+   "cq_id": "CQE641",
+   "term": "brick:Leaving_Chilled_Water_Temperature_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE641"
+  },
+  {
+   "cq_id": "CQE647",
+   "term": "brick:Preheat_Demand_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "V5 token jaccard 0.53 > 0.50"
+   ],
+   "replaced_by": "CQE647"
+  },
+  {
+   "cq_id": "CQE648",
+   "term": "brick:Temperature_Alarm",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE648"
+  },
+  {
+   "cq_id": "CQE654",
+   "term": "brick:ratedModuleConversionEfficiency",
+   "category": "concept_definition",
+   "reasons": [
+    "D2",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE654"
+  },
+  {
+   "cq_id": "CQE657",
+   "term": "brick:electricalComplexPower",
+   "category": "concept_definition",
+   "reasons": [
+    "D2",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE657"
+  },
+  {
+   "cq_id": "CQE658",
+   "term": "brick:ratedMaximumCurrentOutput",
+   "category": "concept_definition",
+   "reasons": [
+    "D2",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE658"
+  },
+  {
+   "cq_id": "CQE659",
+   "term": "brick:HVAC_Zone",
+   "category": "concept_definition",
+   "reasons": [
+    "D2",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE659"
+  },
+  {
+   "cq_id": "CQE664",
+   "term": "brick:Flow_Sensor",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE664"
+  },
+  {
+   "cq_id": "CQE667",
+   "term": "brick:Auditorium",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE667"
+  },
+  {
+   "cq_id": "CQE666",
+   "term": "brick:Entering_Chilled_Water_Flow_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "V5 longest common substring >= 40",
+    "V5 token jaccard 0.62 > 0.50"
+   ],
+   "replaced_by": "CQE666"
+  },
+  {
+   "cq_id": "CQE669",
+   "term": "brick:Team_Room",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE669"
+  },
+  {
+   "cq_id": "CQE671",
+   "term": "brick:Entering_Chilled_Water_Temperature_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "V5 token jaccard 0.62 > 0.50",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE671"
+  },
+  {
+   "cq_id": "CQE676",
+   "term": "brick:Pre_Filter_Status",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE676"
+  },
+  {
+   "cq_id": "CQE677",
+   "term": "brick:Embedded_Temperature_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D2",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE677"
+  },
+  {
+   "cq_id": "CQE684",
+   "term": "brick:Cooling_Demand_Sensor",
+   "category": "concept_definition",
+   "reasons": [
+    "D2",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE684"
+  },
+  {
+   "cq_id": "CQE685",
+   "term": "brick:Exhaust_Air_Stack_Flow_Sensor",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE685"
+  },
+  {
+   "cq_id": "CQE680",
+   "term": "brick:Cubicle",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE680"
+  },
+  {
+   "cq_id": "CQE687",
+   "term": "brick:Leaving_Water",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE687"
+  },
+  {
+   "cq_id": "CQE691",
+   "term": "brick:Booster_Fan",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE691"
+  },
+  {
+   "cq_id": "CQE695",
+   "term": "brick:Breakroom",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE695"
+  },
+  {
+   "cq_id": "CQE696",
+   "term": "brick:Chilled_Water_Gauge_Pressure_Sensor",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE696"
+  },
+  {
+   "cq_id": "CQE698",
+   "term": "brick:Enable_Command",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE698"
+  },
+  {
+   "cq_id": "CQE700",
+   "term": "brick:Disable_Fixed_Enthalpy_Command",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE700"
+  },
+  {
+   "cq_id": "CQE702",
+   "term": "brick:Space_Heater",
+   "category": "concept_definition",
+   "reasons": [
+    "D2",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE702"
+  },
+  {
+   "cq_id": "CQE706",
+   "term": "rec:ModbusController",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE706"
+  },
+  {
+   "cq_id": "CQE703",
+   "term": "brick:Freezer",
+   "category": "concept_definition",
+   "reasons": [
+    "D3"
+   ],
+   "replaced_by": "CQE703"
+  },
+  {
+   "cq_id": "CQE707",
+   "term": "brick:Discharge_Air_Temperature_Cooling_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE707"
+  },
+  {
+   "cq_id": "CQE709",
+   "term": "brick:Domestic_Hot_Water_Valve",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE709"
+  },
+  {
+   "cq_id": "CQE708",
+   "term": "brick:ratedCurrentInput",
+   "category": "concept_definition",
+   "reasons": [
+    "D2",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE708"
+  },
+  {
+   "cq_id": "CQE713",
+   "term": "brick:Max_Air_Flow_Setpoint_Limit",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE713"
+  },
+  {
+   "cq_id": "CQE712",
+   "term": "brick:Discharge_Air_Flow_Reset_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE712"
+  },
+  {
+   "cq_id": "CQE718",
+   "term": "brick:Break_Room",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE718"
+  },
+  {
+   "cq_id": "CQE720",
+   "term": "brick:Mixed_Air_Humidity_Setpoint",
+   "category": "concept_definition",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE720"
+  },
+  {
+   "cq_id": "CQE722",
+   "term": "brick:Hot_Water_Baseboard_Radiator",
+   "category": "concept_definition",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE722"
+  },
+  {
+   "cq_id": "CQE725",
+   "term": "brick:Water_Valve",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE725"
+  },
+  {
+   "cq_id": "CQE726",
+   "term": "brick:Sports_Service_Room",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE726"
+  },
+  {
+   "cq_id": "CQE721",
+   "term": "brick:Tunnel",
+   "category": "concept_definition",
+   "reasons": [
+    "D3"
+   ],
+   "replaced_by": "CQE721"
+  },
+  {
+   "cq_id": "CQE727",
+   "term": "rec:OccupancySensorEquipment",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE727"
+  },
+  {
+   "cq_id": "CQE729",
+   "term": "brick:Return_Air_Temperature_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.55 > 0.50",
+    "D4"
+   ],
+   "replaced_by": "CQE729"
+  },
+  {
+   "cq_id": "CQE733",
+   "term": "brick:Cooling_Discharge_Air_Flow_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE733"
+  },
+  {
+   "cq_id": "CQE734",
+   "term": "brick:Discharge_Air_Velocity_Pressure_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.58 > 0.50"
+   ],
+   "replaced_by": "CQE734"
+  },
+  {
+   "cq_id": "CQE736",
+   "term": "brick:Unoccupied_Cooling_Temperature_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.55 > 0.50"
+   ],
+   "replaced_by": "CQE736"
+  },
+  {
+   "cq_id": "CQE737",
+   "term": "brick:Domestic_Hot_Water_System_Enable_Command",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.62 > 0.50"
+   ],
+   "replaced_by": "CQE737"
+  },
+  {
+   "cq_id": "CQE739",
+   "term": "brick:Vibration_Sensor_Equipment",
+   "category": "taxonomy",
+   "reasons": [
+    "D3"
+   ],
+   "replaced_by": "CQE739"
+  },
+  {
+   "cq_id": "CQE738",
+   "term": "brick:Boiler",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE738"
+  },
+  {
+   "cq_id": "CQE742",
+   "term": "brick:Reception",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE742"
+  },
+  {
+   "cq_id": "CQE744",
+   "term": "brick:Floor",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE744"
+  },
+  {
+   "cq_id": "CQE750",
+   "term": "brick:Leak_Detector_Equipment",
+   "category": "taxonomy",
+   "reasons": [
+    "D3"
+   ],
+   "replaced_by": "CQE750"
+  },
+  {
+   "cq_id": "CQE751",
+   "term": "brick:Bypass_Damper",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE751"
+  },
+  {
+   "cq_id": "CQE749",
+   "term": "brick:Occupied_Cooling_Temperature_Deadband_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.54 > 0.50"
+   ],
+   "replaced_by": "CQE749"
+  },
+  {
+   "cq_id": "CQE756",
+   "term": "brick:Exhaust_Air_Stack_Flow_Proportional_Band_Parameter",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.64 > 0.50"
+   ],
+   "replaced_by": "CQE756"
+  },
+  {
+   "cq_id": "CQE760",
+   "term": "brick:Min_Static_Pressure_Setpoint_Limit",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.62 > 0.50"
+   ],
+   "replaced_by": "CQE760"
+  },
+  {
+   "cq_id": "CQE763",
+   "term": "brick:Entering_Water_Temperature_Alarm",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.55 > 0.50"
+   ],
+   "replaced_by": "CQE763"
+  },
+  {
+   "cq_id": "CQE766",
+   "term": "brick:Filter_Differential_Pressure_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE766"
+  },
+  {
+   "cq_id": "CQE765",
+   "term": "brick:Fire_Alarm_Pull_Station",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE765"
+  },
+  {
+   "cq_id": "CQE767",
+   "term": "brick:Mixed_Air_Humidity_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE767"
+  },
+  {
+   "cq_id": "CQE768",
+   "term": "rec:Sauna",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE768"
+  },
+  {
+   "cq_id": "CQE773",
+   "term": "brick:Air_Temperature_Setpoint_Limit",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE773"
+  },
+  {
+   "cq_id": "CQE774",
+   "term": "brick:Switch",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE774"
+  },
+  {
+   "cq_id": "CQE778",
+   "term": "brick:Discharge_Air_Static_Pressure_Proportional_Band_Parameter",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 longest common substring >= 40",
+    "V5 token jaccard 0.57 > 0.50"
+   ],
+   "replaced_by": "CQE778"
+  },
+  {
+   "cq_id": "CQE781",
+   "term": "rec:Laboratory",
+   "category": "taxonomy",
+   "reasons": [
+    "D3"
+   ],
+   "replaced_by": "CQE781"
+  },
+  {
+   "cq_id": "CQE779",
+   "term": "brick:Hot_Water_Valve",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE779"
+  },
+  {
+   "cq_id": "CQE785",
+   "term": "brick:Leaving_Hot_Water_Temperature_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE785"
+  },
+  {
+   "cq_id": "CQE784",
+   "term": "brick:Discharge_Air_Differential_Pressure_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.58 > 0.50",
+    "D4"
+   ],
+   "replaced_by": "CQE784"
+  },
+  {
+   "cq_id": "CQE788",
+   "term": "brick:Effective_Target_Zone_Air_Temperature_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.64 > 0.50",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE788"
+  },
+  {
+   "cq_id": "CQE790",
+   "term": "rec:SensorEquipment",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE790"
+  },
+  {
+   "cq_id": "CQE791",
+   "term": "rec:Door",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE791"
+  },
+  {
+   "cq_id": "CQE792",
+   "term": "brick:Discharge_Air_Flow_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE792"
+  },
+  {
+   "cq_id": "CQE795",
+   "term": "brick:Lighting_Zone",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE795"
+  },
+  {
+   "cq_id": "CQE796",
+   "term": "brick:Natural_Gas_Usage_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE796"
+  },
+  {
+   "cq_id": "CQE797",
+   "term": "brick:High_Outside_Air_Lockout_Temperature_Differential_Parameter",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 longest common substring >= 40",
+    "V5 token jaccard 0.64 > 0.50"
+   ],
+   "replaced_by": "CQE797"
+  },
+  {
+   "cq_id": "CQE798",
+   "term": "brick:Occupied_Heating_Discharge_Air_Flow_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.60 > 0.50"
+   ],
+   "replaced_by": "CQE798"
+  },
+  {
+   "cq_id": "CQE802",
+   "term": "brick:Break_Room",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE802"
+  },
+  {
+   "cq_id": "CQE801",
+   "term": "brick:Max_Supply_Air_Static_Pressure_Setpoint_Limit",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.53 > 0.50"
+   ],
+   "replaced_by": "CQE801"
+  },
+  {
+   "cq_id": "CQE803",
+   "term": "brick:Switch_Status",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE803"
+  },
+  {
+   "cq_id": "CQE805",
+   "term": "brick:Enable_Differential_Temperature_Command",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE805"
+  },
+  {
+   "cq_id": "CQE806",
+   "term": "brick:Cooling_Supply_Air_Temperature_Integral_Time_Parameter",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.57 > 0.50"
+   ],
+   "replaced_by": "CQE806"
+  },
+  {
+   "cq_id": "CQE809",
+   "term": "brick:Chilled_Water_Discharge_Temperature_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.62 > 0.50",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE809"
+  },
+  {
+   "cq_id": "CQE810",
+   "term": "brick:Horizontal_Fan_Coil_Unit",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.55 > 0.50"
+   ],
+   "replaced_by": "CQE810"
+  },
+  {
+   "cq_id": "CQE812",
+   "term": "rec:RestingRoom",
+   "category": "taxonomy",
+   "reasons": [
+    "D3"
+   ],
+   "replaced_by": "CQE812"
+  },
+  {
+   "cq_id": "CQE813",
+   "term": "brick:MDF",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE813"
+  },
+  {
+   "cq_id": "CQE816",
+   "term": "brick:Hot_Water_Differential_Pressure_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.58 > 0.50",
+    "D4"
+   ],
+   "replaced_by": "CQE816"
+  },
+  {
+   "cq_id": "CQE815",
+   "term": "brick:Substance",
+   "category": "taxonomy",
+   "reasons": [
+    "V4 ASK not true on snapshot",
+    "D4"
+   ],
+   "replaced_by": "CQE815"
+  },
+  {
+   "cq_id": "CQE820",
+   "term": "brick:Daylight_Sensor_Equipment",
+   "category": "taxonomy",
+   "reasons": [
+    "D3"
+   ],
+   "replaced_by": "CQE820"
+  },
+  {
+   "cq_id": "CQE821",
+   "term": "brick:Standby_Fan",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE821"
+  },
+  {
+   "cq_id": "CQE825",
+   "term": "brick:Unoccupied_Cooling_Mode_Status",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.58 > 0.50"
+   ],
+   "replaced_by": "CQE825"
+  },
+  {
+   "cq_id": "CQE824",
+   "term": "brick:Condenser_Water_Flow_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.55 > 0.50"
+   ],
+   "replaced_by": "CQE824"
+  },
+  {
+   "cq_id": "CQE826",
+   "term": "rec:FloorLamp",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE826"
+  },
+  {
+   "cq_id": "CQE827",
+   "term": "brick:Zone_CO2_Level_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.55 > 0.50",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE827"
+  },
+  {
+   "cq_id": "CQE829",
+   "term": "rec:RetailRoom",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE829"
+  },
+  {
+   "cq_id": "CQE831",
+   "term": "brick:Ethernet_Switch",
+   "category": "taxonomy",
+   "reasons": [
+    "D3"
+   ],
+   "replaced_by": "CQE831"
+  },
+  {
+   "cq_id": "CQE832",
+   "term": "brick:Methane_Level_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE832"
+  },
+  {
+   "cq_id": "CQE830",
+   "term": "brick:Cooling_Discharge_Air_Temperature_Integral_Time_Parameter",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.57 > 0.50"
+   ],
+   "replaced_by": "CQE830"
+  },
+  {
+   "cq_id": "CQE836",
+   "term": "brick:Variable_Air_Volume_Box_With_Reheat",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.54 > 0.50"
+   ],
+   "replaced_by": "CQE836"
+  },
+  {
+   "cq_id": "CQE837",
+   "term": "brick:Low_Outside_Air_Temperature_Enable_Differential_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 longest common substring >= 40",
+    "V5 token jaccard 0.64 > 0.50"
+   ],
+   "replaced_by": "CQE837"
+  },
+  {
+   "cq_id": "CQE840",
+   "term": "brick:Entrance",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE840"
+  },
+  {
+   "cq_id": "CQE843",
+   "term": "brick:Leaving_Medium_Temperature_Hot_Water_Temperature_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE843"
+  },
+  {
+   "cq_id": "CQE847",
+   "term": "brick:Standby_Glycool_Unit_On_Off_Status",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.62 > 0.50"
+   ],
+   "replaced_by": "CQE847"
+  },
+  {
+   "cq_id": "CQE844",
+   "term": "brick:Fire_Sprinkler_Water_Storage_Tank",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE844"
+  },
+  {
+   "cq_id": "CQE845",
+   "term": "brick:Condenser_Water_Pump",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE845"
+  },
+  {
+   "cq_id": "CQE846",
+   "term": "brick:Control_Room",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE846"
+  },
+  {
+   "cq_id": "CQE848",
+   "term": "brick:Hot_Water_Return_Temperature_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.58 > 0.50"
+   ],
+   "replaced_by": "CQE848"
+  },
+  {
+   "cq_id": "CQE850",
+   "term": "brick:Relationship",
+   "category": "taxonomy",
+   "reasons": [
+    "V4 ASK not true on snapshot"
+   ],
+   "replaced_by": "CQE850"
+  },
+  {
+   "cq_id": "CQE852",
+   "term": "brick:Entering_Condenser_Water_Temperature_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE852"
+  },
+  {
+   "cq_id": "CQE853",
+   "term": "rec:CableRoom",
+   "category": "taxonomy",
+   "reasons": [
+    "D3"
+   ],
+   "replaced_by": "CQE853"
+  },
+  {
+   "cq_id": "CQE854",
+   "term": "brick:Min_Outside_Air_Flow_Setpoint_Limit",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.62 > 0.50"
+   ],
+   "replaced_by": "CQE854"
+  },
+  {
+   "cq_id": "CQE857",
+   "term": "brick:Damper",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE857"
+  },
+  {
+   "cq_id": "CQE858",
+   "term": "brick:Availability_Status",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE858"
+  },
+  {
+   "cq_id": "CQE859",
+   "term": "brick:Pressurization_Fan",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE859"
+  },
+  {
+   "cq_id": "CQE861",
+   "term": "brick:Water_Pump",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE861"
+  },
+  {
+   "cq_id": "CQE860",
+   "term": "brick:Leaving_Hot_Water_Flow_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE860"
+  },
+  {
+   "cq_id": "CQE866",
+   "term": "brick:Lighting",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE866"
+  },
+  {
+   "cq_id": "CQE867",
+   "term": "brick:Effective_Cooling_Zone_Air_Temperature_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.64 > 0.50"
+   ],
+   "replaced_by": "CQE867"
+  },
+  {
+   "cq_id": "CQE871",
+   "term": "brick:Humidifier",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE871"
+  },
+  {
+   "cq_id": "CQE872",
+   "term": "brick:Filter_Water_Differential_Pressure_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.62 > 0.50"
+   ],
+   "replaced_by": "CQE872"
+  },
+  {
+   "cq_id": "CQE878",
+   "term": "brick:Generator_Room",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE878"
+  },
+  {
+   "cq_id": "CQE880",
+   "term": "brick:Exhaust_Air_Flow_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE880"
+  },
+  {
+   "cq_id": "CQE879",
+   "term": "brick:Entering_Domestic_Hot_Water_Temperature_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.64 > 0.50"
+   ],
+   "replaced_by": "CQE879"
+  },
+  {
+   "cq_id": "CQE881",
+   "term": "brick:Min_Air_Flow_Setpoint_Limit",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE881"
+  },
+  {
+   "cq_id": "CQE884",
+   "term": "brick:Air_Pressure_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE884"
+  },
+  {
+   "cq_id": "CQE887",
+   "term": "brick:Common_Space",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE887"
+  },
+  {
+   "cq_id": "CQE892",
+   "term": "brick:Induction_Unit",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE892"
+  },
+  {
+   "cq_id": "CQE893",
+   "term": "rec:Server",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE893"
+  },
+  {
+   "cq_id": "CQE891",
+   "term": "brick:Open_Close_Status",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE891"
+  },
+  {
+   "cq_id": "CQE894",
+   "term": "brick:Discharge_Water_Temperature_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE894"
+  },
+  {
+   "cq_id": "CQE896",
+   "term": "brick:Temperature_Step_Parameter",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.55 > 0.50"
+   ],
+   "replaced_by": "CQE896"
+  },
+  {
+   "cq_id": "CQE897",
+   "term": "brick:Supply_Air_Temperature_High_Reset_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.60 > 0.50"
+   ],
+   "replaced_by": "CQE897"
+  },
+  {
+   "cq_id": "CQE899",
+   "term": "brick:Low_Return_Air_Temperature_Alarm",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE899"
+  },
+  {
+   "cq_id": "CQE902",
+   "term": "brick:Emergency_Alarm",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE902"
+  },
+  {
+   "cq_id": "CQE903",
+   "term": "brick:Electrical_Energy_Usage_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.55 > 0.50"
+   ],
+   "replaced_by": "CQE903"
+  },
+  {
+   "cq_id": "CQE900",
+   "term": "brick:Occupied_Return_Air_Temperature_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.62 > 0.50"
+   ],
+   "replaced_by": "CQE900"
+  },
+  {
+   "cq_id": "CQE906",
+   "term": "brick:Dedicated_Outdoor_Air_System_Unit",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE906"
+  },
+  {
+   "cq_id": "CQE907",
+   "term": "rec:FoodHandlingRoom",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE907"
+  },
+  {
+   "cq_id": "CQE909",
+   "term": "rec:Toilet",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE909"
+  },
+  {
+   "cq_id": "CQE914",
+   "term": "brick:Tint_Command",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE914"
+  },
+  {
+   "cq_id": "CQE910",
+   "term": "brick:Leaving_Condenser_Water_Temperature_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.58 > 0.50",
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE910"
+  },
+  {
+   "cq_id": "CQE915",
+   "term": "brick:Discharge_Air_Temperature_Heating_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE915"
+  },
+  {
+   "cq_id": "CQE917",
+   "term": "rec:OutdoorSpace",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE917"
+  },
+  {
+   "cq_id": "CQE919",
+   "term": "brick:Server",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4"
+   ],
+   "replaced_by": "CQE919"
+  },
+  {
+   "cq_id": "CQE920",
+   "term": "brick:Exhaust_Air_Static_Pressure_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE920"
+  },
+  {
+   "cq_id": "CQE924",
+   "term": "brick:Hot_Water_Discharge_Flow_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.62 > 0.50",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE924"
+  },
+  {
+   "cq_id": "CQE922",
+   "term": "brick:Disable_Command",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE922"
+  },
+  {
+   "cq_id": "CQE923",
+   "term": "brick:Leaving_Medium_Temperature_Hot_Water_Temperature_Low_Reset_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 longest common substring >= 40"
+   ],
+   "replaced_by": "CQE923"
+  },
+  {
+   "cq_id": "CQE927",
+   "term": "brick:Chilled_Water_Return_Temperature_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.62 > 0.50"
+   ],
+   "replaced_by": "CQE927"
+  },
+  {
+   "cq_id": "CQE929",
+   "term": "brick:Medium_Temperature_Hot_Water_Differential_Pressure_Load_Shed_Status",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 longest common substring >= 40",
+    "V5 token jaccard 0.58 > 0.50"
+   ],
+   "replaced_by": "CQE929"
+  },
+  {
+   "cq_id": "CQE932",
+   "term": "brick:CRAC",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4"
+   ],
+   "replaced_by": "CQE932"
+  },
+  {
+   "cq_id": "CQE931",
+   "term": "brick:Average_Exhaust_Air_Static_Pressure_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.62 > 0.50"
+   ],
+   "replaced_by": "CQE931"
+  },
+  {
+   "cq_id": "CQE935",
+   "term": "brick:Max_Water_Temperature_Setpoint",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.55 > 0.50"
+   ],
+   "replaced_by": "CQE935"
+  },
+  {
+   "cq_id": "CQE934",
+   "term": "brick:Mail_Room",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": "CQE934"
+  },
+  {
+   "cq_id": "CQE937",
+   "term": "brick:Damper_Position_Sensor",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE937"
+  },
+  {
+   "cq_id": "CQE940",
+   "term": "brick:Heat_Pump_Air_Source_Condensing_Unit",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.54 > 0.50"
+   ],
+   "replaced_by": "CQE940"
+  },
+  {
+   "cq_id": "CQE938",
+   "term": "brick:Leaving_Water_Differential_Pressure_Integral_Time_Parameter",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 longest common substring >= 40",
+    "V5 token jaccard 0.57 > 0.50"
+   ],
+   "replaced_by": "CQE938"
+  },
+  {
+   "cq_id": "CQE941",
+   "term": "brick:Min_Discharge_Air_Temperature_Setpoint_Limit",
+   "category": "taxonomy",
+   "reasons": [
+    "V5 token jaccard 0.53 > 0.50",
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE941"
+  },
+  {
+   "cq_id": "CQE939",
+   "term": "brick:Min_Cooling_Supply_Air_Flow_Setpoint_Limit",
+   "category": "taxonomy",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": "CQE939"
+  },
+  {
+   "cq_id": "CQE942",
+   "term": "brick:Freeze_Status",
+   "category": "taxonomy",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": "CQE942"
+  },
+  {
+   "cq_id": "CQE944",
+   "term": "brick:Ablutions_Room",
+   "category": "methodology",
+   "reasons": [
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE945",
+   "term": "brick:Conference_Room",
+   "category": "methodology",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE946",
+   "term": "brick:Supply_Water_Flow_Setpoint",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE949",
+   "term": "brick:Hot_Water_Supply_Flow_Sensor",
+   "category": "methodology",
+   "reasons": [
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE953",
+   "term": "brick:Atrium",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE954",
+   "term": "brick:Velocity_Pressure",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE956",
+   "term": "brick:Temperature",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE957",
+   "term": "brick:Chilled_Water_Discharge_Flow_Setpoint",
+   "category": "methodology",
+   "reasons": [
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE958",
+   "term": "brick:Hot_Water_Return_Flow_Sensor",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE960",
+   "term": "brick:Prayer_Room",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE963",
+   "term": "brick:Heat_Sensor",
+   "category": "methodology",
+   "reasons": [
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE964",
+   "term": "brick:Chilled_Water_Discharge_Flow_Sensor",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE965",
+   "term": "brick:Speed_Status",
+   "category": "methodology",
+   "reasons": [
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE966",
+   "term": "brick:Restroom",
+   "category": "methodology",
+   "reasons": [
+    "D3"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE967",
+   "term": "brick:Return_Condenser_Water_Temperature_Sensor",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE968",
+   "term": "brick:Supply_Chilled_Water_Temperature_Setpoint",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE969",
+   "term": "rec:Gateway",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE971",
+   "term": "brick:Entrance",
+   "category": "methodology",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE972",
+   "term": "brick:Return_Condenser_Water_Flow_Sensor",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE974",
+   "term": "brick:Hospitality_Box",
+   "category": "methodology",
+   "reasons": [
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE977",
+   "term": "brick:Frequency",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE976",
+   "term": "brick:Control_Room",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE978",
+   "term": "brick:Unoccupied_Zone_Air_Temperature_Setpoint",
+   "category": "methodology",
+   "reasons": [
+    "V5 longest common substring >= 40",
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE981",
+   "term": "brick:Private_Office",
+   "category": "methodology",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE980",
+   "term": "brick:Medium_Temperature_Hot_Water_Supply_Temperature_Sensor",
+   "category": "methodology",
+   "reasons": [
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE982",
+   "term": "brick:Media_Hot_Desk",
+   "category": "methodology",
+   "reasons": [
+    "D3",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE979",
+   "term": "brick:Discharge_Condenser_Water_Temperature_Setpoint",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE984",
+   "term": "brick:Radiance",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE986",
+   "term": "brick:Chilled_Water_Return_Temperature_Sensor",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE987",
+   "term": "brick:Transformer_Room",
+   "category": "methodology",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE989",
+   "term": "rec:EthernetPort",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE988",
+   "term": "brick:Domestic_Hot_Water_Supply_Temperature_Setpoint",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE990",
+   "term": "brick:Discharge_Water",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE991",
+   "term": "brick:Trace_Heat_Sensor",
+   "category": "methodology",
+   "reasons": [
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE993",
+   "term": "brick:Energy_Zone",
+   "category": "methodology",
+   "reasons": [
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE994",
+   "term": "brick:Massage_Room",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE995",
+   "term": "brick:Laboratory",
+   "category": "methodology",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE996",
+   "term": "brick:Chilled_Water_Return_Flow_Sensor",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE992",
+   "term": "brick:Return_Hot_Water_Temperature_Setpoint",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE997",
+   "term": "brick:Hot_Water_Return_Temperature_Sensor",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE1000",
+   "term": "brick:Lighting_Zone",
+   "category": "methodology",
+   "reasons": [
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE998",
+   "term": "brick:Medium_Temperature_Hot_Water_Discharge_Temperature_Sensor",
+   "category": "methodology",
+   "reasons": [
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE1001",
+   "term": "rec:NetworkSecurityEquipment",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE1003",
+   "term": "rec:PeopleCountSensorEquipment",
+   "category": "methodology",
+   "reasons": [
+    "D4"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE1004",
+   "term": "brick:Exhaust_Fan_Enable_Command",
+   "category": "methodology",
+   "reasons": [
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE1005",
+   "term": "brick:Elevator_Shaft",
+   "category": "methodology",
+   "reasons": [
+    "D3",
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE1007",
+   "term": "brick:Supply_Condenser_Water",
+   "category": "methodology",
+   "reasons": [
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  },
+  {
+   "cq_id": "CQE1008",
+   "term": "brick:Differential_Discharge_Return_Water_Temperature_Sensor",
+   "category": "methodology",
+   "reasons": [
+    "D4",
+    "D5"
+   ],
+   "replaced_by": null
+  }
+ ],
+ "still_short_by": {
+  "methodology": 48
+ }
+}

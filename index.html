@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CQ Coverage Audit - Review Snapshot</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;max-width:1100px;margin:0 auto;padding:1rem 16px;color:#222;background:#fff}
+@media (prefers-color-scheme:dark){body{color:#ddd;background:#161616}a{color:#8ab4ff}.hl{background:#4a3d00!important}th{background:#2a2a2a!important}}
+code{background:rgba(127,127,127,.2);padding:0 .25em;word-break:break-all}
+.w{overflow-x:auto} table{border-collapse:collapse;font-size:13px}
+td,th{border:1px solid #9995;padding:2px 6px;text-align:left;vertical-align:top} th{background:#eee}
+.hl{background:#fff3b0;font-weight:600}
+</style></head><body>
+<h1>Review snapshot: Competency Question Coverage audit</h1>
+<p><strong>Auditing an LLM Judge for Competency Question Coverage</strong></p>
+<p>Review snapshot built from manuscript source commit 623cd47; package SHA-256 <code>1c50fde37ae6f7a554e58d200c985394a5ca7b3cadab6883a7c4b264c5064fdb</code>.</p>
+<h2>Files</h2>
+<ul>
+<li><a href="README.md">README.md</a> (package description, layout, how to rerun)</li>
+<li><a href="harness/real_run/results_human_pass/unsealed_2026-10-09/per_cell.json">per_cell.json</a>: AH labels (A) with dwell time per primary cell</li>
+<li><a href="annotation/second_pass_2026-10-13/v3/labels_v3.csv">labels_v3.csv</a>: second-rater labels</li>
+<li><a href="harness/real_run/cells.jsonl">cells.jsonl</a>: judge scores and quoted spans (224 judged cells)</li>
+<li><a href="bank/">bank/</a>: competency question banks (directory listing is not generated on this host; see <a href="bank/cq_bank_brick_v2.csv">cq_bank_brick_v2.csv</a> and <a href="bank/CQ_BANK_BRICK.md">CQ_BANK_BRICK.md</a>)</li>
+</ul>
+<p>The blind labeling site in <code>annotation/</code> is a later instrument for outside raters and needs a backend, so it is not functional on this static host.</p>
+<h2>Primary cells (188)</h2>
+<p>J = judge score. AH = author-held label A (0/1) with dwell seconds. 2nd = second-rater label S. Span = judge quoted span, truncated. The highlighted row is CQB04 variant A (Table 1 in the paper).</p>
+<div class="w"><table>
+<thead><tr><th>cell id</th><th>question</th><th>variant</th><th>J</th><th>AH label (dwell)</th><th>2nd rater</th><th>span</th></tr></thead>
+<tbody>
+<tr><td>primary:A:CQB01</td><td>CQB01</td><td>A</td><td>3</td><td>1 (9.1 s)</td><td>1</td><td>http://example.org/chunktograph#Sensor | Sensor &lt; http://example.org/chunktograph#Point :: A Sensor is an input point...</td></tr>
+<tr><td>primary:B:CQB01</td><td>CQB01</td><td>B</td><td>2</td><td>1 (10.4 s)</td><td>0</td><td>IND http://example.org/chunktograph#sensor | sensor a http://example.org/chunktograph#Class_class,skos:Concept {http:...</td></tr>
+<tr><td>primary:C:CQB01</td><td>CQB01</td><td>C</td><td>3</td><td>1 (8.9 s)</td><td>0</td><td>IND http://example.org/chunktograph#sensor | sensor a http://example.org/chunktograph#Class_artifact,skos:Concept {ht...</td></tr>
+<tr><td>primary:D:CQB01</td><td>CQB01</td><td>D</td><td>3</td><td>1 (6.7 s)</td><td>0</td><td>http://example.org/chunktograph#sensor | sensor a http://example.org/chunktograph#Class_artifact,skos:Concept {http:/...</td></tr>
+<tr><td>primary:E:CQB01</td><td>CQB01</td><td>E</td><td>3</td><td>1 (30.4 s)</td><td>0</td><td>IND http://example.org/chunktograph#sensor | sensor a http://example.org/chunktograph#Class_artifact,skos:Concept :: ...</td></tr>
+<tr><td>primary:F:CQB01</td><td>CQB01</td><td>F</td><td>2</td><td>1 (10.3 s)</td><td>0</td><td>IND http://example.org/chunktograph#sensor | sensor a http://example.org/chunktograph#Class_artifact,skos:Concept :: ...</td></tr>
+<tr><td>primary:A:CQB02</td><td>CQB02</td><td>A</td><td>3</td><td>1 (16.2 s)</td><td>1</td><td>http://example.org/chunktograph#Meter | Meter &lt; http://example.org/chunktograph#Equipment</td></tr>
+<tr><td>primary:B:CQB02</td><td>CQB02</td><td>B</td><td>3</td><td>1 (7.7 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-meter | brick meter a http://example.org/chunktograph#Class_artifact,skos:C...</td></tr>
+<tr><td>primary:C:CQB02</td><td>CQB02</td><td>C</td><td>3</td><td>1 (9 s)</td><td>1</td><td>http://example.org/chunktograph#brick-meter | brick meter a http://example.org/chunktograph#Class_artifact,skos:Conce...</td></tr>
+<tr><td>primary:D:CQB02</td><td>CQB02</td><td>D</td><td>3</td><td>1 (7.5 s)</td><td>1</td><td>http://example.org/chunktograph#brick-meter | brick meter a http://example.org/chunktograph#Class_artifact,skos:Conce...</td></tr>
+<tr><td>primary:E:CQB02</td><td>CQB02</td><td>E</td><td>3</td><td>1 (3482 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-meter | http://example.org/chunktograph#meter a http://example.org/chunktog...</td></tr>
+<tr><td>primary:F:CQB02</td><td>CQB02</td><td>F</td><td>3</td><td>1 (6.9 s)</td><td>1</td><td>http://example.org/chunktograph#brick-meter | http://example.org/chunktograph#meter a http://example.org/chunktograph...</td></tr>
+<tr><td>primary:A:CQB03</td><td>CQB03</td><td>A</td><td>1</td><td>1 (7.8 s)</td><td>1</td><td>http://example.org/chunktograph#Asset | Asset &lt; rdfs:Resource :: Something which is placed inside of a building, but ...</td></tr>
+<tr><td>primary:B:CQB03</td><td>CQB03</td><td>B</td><td>3</td><td>0 (6.9 s)</td><td>0</td><td>http://example.org/chunktograph#rec-asset | rec asset a http://example.org/chunktograph#Class_class,skos:Concept {htt...</td></tr>
+<tr><td>primary:C:CQB03</td><td>CQB03</td><td>C</td><td>3</td><td>0 (7.5 s)</td><td>0</td><td>IND http://example.org/chunktograph#rec-asset | rec asset a http://example.org/chunktograph#Class_artifact,skos:Conce...</td></tr>
+<tr><td>primary:D:CQB03</td><td>CQB03</td><td>D</td><td>3</td><td>0 (22 s)</td><td>0</td><td>IND http://example.org/chunktograph#rec-asset | rec asset a http://example.org/chunktograph#Class_class,skos:Concept ...</td></tr>
+<tr><td>primary:E:CQB03</td><td>CQB03</td><td>E</td><td>1</td><td>0 (8.3 s)</td><td>0</td><td>IND http://example.org/chunktograph#rec-asset | http://example.org/chunktograph#asset a http://example.org/chunktogra...</td></tr>
+<tr><td>primary:F:CQB03</td><td>CQB03</td><td>F</td><td>2</td><td>0 (9.8 s)</td><td>0</td><td>IND http://example.org/chunktograph#rec-asset | http://example.org/chunktograph#asset a http://example.org/chunktogra...</td></tr>
+<tr class="hl"><td>primary:A:CQB04</td><td>CQB04</td><td>A</td><td>3</td><td>0 (12.9 s)</td><td>0</td><td>http://example.org/chunktograph#Zone | Zone &lt; http://example.org/chunktograph#Architecture,http://example.org/chunkto...</td></tr>
+<tr><td>primary:B:CQB04</td><td>CQB04</td><td>B</td><td>3</td><td>1 (318.2 s)</td><td>1</td><td>http://example.org/chunktograph#brick-zone | brick zone a http://example.org/chunktograph#Class_class,skos:Concept {h...</td></tr>
+<tr><td>primary:C:CQB04</td><td>CQB04</td><td>C</td><td>3</td><td>1 (7.7 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-zone | brick zone a http://example.org/chunktograph#Class_class,skos:Concep...</td></tr>
+<tr><td>primary:D:CQB04</td><td>CQB04</td><td>D</td><td>2</td><td>1 (10.8 s)</td><td>1</td><td>http://example.org/chunktograph#brick-zone | brick zone a http://example.org/chunktograph#Class_class,skos:Concept {h...</td></tr>
+<tr><td>primary:E:CQB04</td><td>CQB04</td><td>E</td><td>3</td><td>1 (7.5 s)</td><td>1</td><td>http://example.org/chunktograph#brick-zone | http://example.org/chunktograph#zone a http://example.org/chunktograph#C...</td></tr>
+<tr><td>primary:F:CQB04</td><td>CQB04</td><td>F</td><td>3</td><td>1 (8.5 s)</td><td>1</td><td>occupy-space-occupy-space-similar-occupancy-category-occupant-density-zone-air-distribution-effectiveness-zone-primar...</td></tr>
+<tr><td>primary:A:CQB05</td><td>CQB05</td><td>A</td><td>2</td><td>1 (8.1 s)</td><td>1</td><td>http://example.org/chunktograph#Campus | Campus &lt; http://example.org/chunktograph#Collection :: A campus represents a...</td></tr>
+<tr><td>primary:B:CQB05</td><td>CQB05</td><td>B</td><td>3</td><td>1 (12 s)</td><td>1</td><td>IND http://example.org/chunktograph#rec-campus | rec campus a http://example.org/chunktograph#Class_class,skos:Concep...</td></tr>
+<tr><td>primary:C:CQB05</td><td>CQB05</td><td>C</td><td>3</td><td>1 (7.1 s)</td><td>1</td><td>IND http://example.org/chunktograph#rec-campus | rec campus a http://example.org/chunktograph#Class_artifact,skos:Con...</td></tr>
+<tr><td>primary:D:CQB05</td><td>CQB05</td><td>D</td><td>3</td><td>1 (6.8 s)</td><td>1</td><td>IND http://example.org/chunktograph#rec-campus | rec campus a http://example.org/chunktograph#Class_artifact,skos:Con...</td></tr>
+<tr><td>primary:E:CQB05</td><td>CQB05</td><td>E</td><td>3</td><td>1 (7.5 s)</td><td>1</td><td>IND http://example.org/chunktograph#rec-campus | http://example.org/chunktograph#campus a http://example.org/chunktog...</td></tr>
+<tr><td>primary:F:CQB05</td><td>CQB05</td><td>F</td><td>3</td><td>1 (10.1 s)</td><td>1</td><td>IND http://example.org/chunktograph#rec-campus | http://example.org/chunktograph#campus a http://example.org/chunktog...</td></tr>
+<tr><td>primary:A:CQB06</td><td>CQB06</td><td>A</td><td>0</td><td>0 (9.7 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:B:CQB06</td><td>CQB06</td><td>B</td><td>3</td><td>1 (7.6 s)</td><td>1</td><td>http://example.org/chunktograph#georeference-create-relationship-local-coordinate-system-geographic-coordinate-system</td></tr>
+<tr><td>primary:C:CQB06</td><td>CQB06</td><td>C</td><td>3</td><td>1 (6.5 s)</td><td>1</td><td>http://example.org/chunktograph#rec-georeference | rec georeference a http://example.org/chunktograph#Class_process,s...</td></tr>
+<tr><td>primary:D:CQB06</td><td>CQB06</td><td>D</td><td>3</td><td>1 (9.8 s)</td><td>1</td><td>http://example.org/chunktograph#georeference-create-relationship-local-coordinate-system-geographic-coordinate-system</td></tr>
+<tr><td>primary:E:CQB06</td><td>CQB06</td><td>E</td><td>3</td><td>1 (8.1 s)</td><td>1</td><td>http://example.org/chunktograph#georeference-create-relationship-local-coordinate-system-geographic-coordinate-system</td></tr>
+<tr><td>primary:F:CQB06</td><td>CQB06</td><td>F</td><td>3</td><td>1 (6.3 s)</td><td>1</td><td>http://example.org/chunktograph#georeference-create-relationship-local-coordinate-system-geographic-coordinate-system</td></tr>
+<tr><td>primary:A:CQB07</td><td>CQB07</td><td>A</td><td>3</td><td>1 (9.1 s)</td><td>1</td><td>http://example.org/chunktograph#Sensor | Sensor &lt; http://example.org/chunktograph#Point</td></tr>
+<tr><td>primary:B:CQB07</td><td>CQB07</td><td>B</td><td>3</td><td>1 (10.5 s)</td><td>1</td><td>http://example.org/chunktograph#p_subclass=http://example.org/chunktograph#brick-point</td></tr>
+<tr><td>primary:C:CQB07</td><td>CQB07</td><td>C</td><td>3</td><td>1 (8.6 s)</td><td>1</td><td>http://example.org/chunktograph#brick-sensor | brick sensor a http://example.org/chunktograph#Class_artifact,skos:Con...</td></tr>
+<tr><td>primary:D:CQB07</td><td>CQB07</td><td>D</td><td>3</td><td>1 (14.4 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-sensor | brick sensor a http://example.org/chunktograph#Class_property,skos...</td></tr>
+<tr><td>primary:E:CQB07</td><td>CQB07</td><td>E</td><td>3</td><td>1 (9.9 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-sensor | http://example.org/chunktograph#sensor a http://example.org/chunkt...</td></tr>
+<tr><td>primary:F:CQB07</td><td>CQB07</td><td>F</td><td>3</td><td>1 (8.3 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-sensor | http://example.org/chunktograph#sensor a http://example.org/chunkt...</td></tr>
+<tr><td>primary:A:CQB08</td><td>CQB08</td><td>A</td><td>3</td><td>1 (20.4 s)</td><td>1</td><td>http://example.org/chunktograph#Alarm | Alarm &lt; http://example.org/chunktograph#Point http://example.org/chunktograph...</td></tr>
+<tr><td>primary:B:CQB08</td><td>CQB08</td><td>B</td><td>2</td><td>1 (10.5 s)</td><td>1</td><td>http://example.org/chunktograph#brick-command | brick command a http://example.org/chunktograph#Class_concept,skos:Co...</td></tr>
+<tr><td>primary:C:CQB08</td><td>CQB08</td><td>C</td><td>3</td><td>1 (12 s)</td><td>1</td><td>http://example.org/chunktograph#brick-command | brick command a http://example.org/chunktograph#Class_relation,skos:C...</td></tr>
+<tr><td>primary:D:CQB08</td><td>CQB08</td><td>D</td><td>2</td><td>1 (7.4 s)</td><td>1</td><td>http://example.org/chunktograph#brick-command | brick command a http://example.org/chunktograph#Class_command,skos:Co...</td></tr>
+<tr><td>primary:E:CQB08</td><td>CQB08</td><td>E</td><td>3</td><td>1 (7.4 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-command | http://example.org/chunktograph#command a http://example.org/chun...</td></tr>
+<tr><td>primary:F:CQB08</td><td>CQB08</td><td>F</td><td>2</td><td>1 (9.3 s)</td><td>1</td><td>http://example.org/chunktograph#brick-command | http://example.org/chunktograph#command a http://example.org/chunktog...</td></tr>
+<tr><td>primary:A:CQB09</td><td>CQB09</td><td>A</td><td>1</td><td>1 (16.6 s)</td><td>1</td><td>http://example.org/chunktograph#Equipment | Equipment &lt; http://example.org/chunktograph#Asset,http://example.org/chun...</td></tr>
+<tr><td>primary:B:CQB09</td><td>CQB09</td><td>B</td><td>3</td><td>1 (7.5 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-equipment | brick equipment a http://example.org/chunktograph#Class_class,s...</td></tr>
+<tr><td>primary:C:CQB09</td><td>CQB09</td><td>C</td><td>2</td><td>1 (12.9 s)</td><td>1</td><td>http://example.org/chunktograph#brick-equipment | brick equipment a http://example.org/chunktograph#Class_class,skos:...</td></tr>
+<tr><td>primary:D:CQB09</td><td>CQB09</td><td>D</td><td>3</td><td>1 (13.3 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-equipment | brick equipment a http://example.org/chunktograph#Class_class,s...</td></tr>
+<tr><td>primary:E:CQB09</td><td>CQB09</td><td>E</td><td>3</td><td>1 (11 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-equipment | brick equipment a http://example.org/chunktograph#Class_class,s...</td></tr>
+<tr><td>primary:F:CQB09</td><td>CQB09</td><td>F</td><td>2</td><td>1 (10.3 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-equipment | brick equipment a http://example.org/chunktograph#Class_class,s...</td></tr>
+<tr><td>primary:A:CQB10</td><td>CQB10</td><td>A</td><td>3</td><td>1 (125.1 s)</td><td>1</td><td>http://example.org/chunktograph#Building | Building &lt; http://example.org/chunktograph#Architecture,http://example.org...</td></tr>
+<tr><td>primary:B:CQB10</td><td>CQB10</td><td>B</td><td>3</td><td>1 (8.4 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-building | brick building a http://example.org/chunktograph#Class_class,sko...</td></tr>
+<tr><td>primary:C:CQB10</td><td>CQB10</td><td>C</td><td>3</td><td>1 (9.5 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-building | brick building a http://example.org/chunktograph#Class_artifact,...</td></tr>
+<tr><td>primary:D:CQB10</td><td>CQB10</td><td>D</td><td>3</td><td>1 (10.5 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-building | brick building a http://example.org/chunktograph#Class_artifact,...</td></tr>
+<tr><td>primary:E:CQB10</td><td>CQB10</td><td>E</td><td>3</td><td>1 (7.6 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-building | http://example.org/chunktograph#build a http://example.org/chunk...</td></tr>
+<tr><td>primary:F:CQB10</td><td>CQB10</td><td>F</td><td>3</td><td>1 (8.3 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-building | http://example.org/chunktograph#build a http://example.org/chunk...</td></tr>
+<tr><td>primary:A:CQB11</td><td>CQB11</td><td>A</td><td>0</td><td>0 (8.6 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:B:CQB11</td><td>CQB11</td><td>B</td><td>0</td><td>0 (11.9 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:C:CQB11</td><td>CQB11</td><td>C</td><td>0</td><td>0 (9.5 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:D:CQB11</td><td>CQB11</td><td>D</td><td>0</td><td>0 (8.1 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:E:CQB11</td><td>CQB11</td><td>E</td><td>0</td><td>0 (14.6 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:F:CQB11</td><td>CQB11</td><td>F</td><td>0</td><td>0 (8.4 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:A:CQB12</td><td>CQB12</td><td>A</td><td>3</td><td>1 (10.4 s)</td><td>1</td><td>http://example.org/chunktograph#Building | Building &lt; http://example.org/chunktograph#Architecture,http://example.org...</td></tr>
+<tr><td>primary:B:CQB12</td><td>CQB12</td><td>B</td><td>2</td><td>1 (10.8 s)</td><td>1</td><td>http://example.org/chunktograph#brick-building | brick building a http://example.org/chunktograph#Class_class,skos:Co...</td></tr>
+<tr><td>primary:C:CQB12</td><td>CQB12</td><td>C</td><td>2</td><td>1 (8.1 s)</td><td>1</td><td>http://example.org/chunktograph#brick-building | brick building ... http://example.org/chunktograph#p_subclass=http:/...</td></tr>
+<tr><td>primary:D:CQB12</td><td>CQB12</td><td>D</td><td>2</td><td>1 (9.3 s)</td><td>1</td><td>http://example.org/chunktograph#brick-building | brick building ... http://example.org/chunktograph#p_subclass=http:/...</td></tr>
+<tr><td>primary:E:CQB12</td><td>CQB12</td><td>E</td><td>2</td><td>1 (13.6 s)</td><td>1</td><td>http://example.org/chunktograph#brick-building | http://example.org/chunktograph#build a http://example.org/chunktogr...</td></tr>
+<tr><td>primary:F:CQB12</td><td>CQB12</td><td>F</td><td>3</td><td>1 (12.4 s)</td><td>1</td><td>http://example.org/chunktograph#brick-building ... skos:broader=http://example.org/chunktograph#brick-location http:/...</td></tr>
+<tr><td>primary:B:CQB13</td><td>CQB13</td><td>B</td><td>3</td><td>1 (6.8 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-ispointof | brick ispointof a http://example.org/chunktograph#Class_relatio...</td></tr>
+<tr><td>primary:C:CQB13</td><td>CQB13</td><td>C</td><td>3</td><td>1 (7.5 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-ispointof | brick ispointof a http://example.org/chunktograph#Class_relatio...</td></tr>
+<tr><td>primary:D:CQB13</td><td>CQB13</td><td>D</td><td>3</td><td>1 (11.3 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haspoint</td></tr>
+<tr><td>primary:E:CQB13</td><td>CQB13</td><td>E</td><td>3</td><td>1 (7 s)</td><td>1</td><td>http://example.org/chunktograph#brick-ispointof</td></tr>
+<tr><td>primary:F:CQB13</td><td>CQB13</td><td>F</td><td>3</td><td>1 (8.3 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-ispointof | brick ispointof a http://example.org/chunktograph#Class_relatio...</td></tr>
+<tr><td>primary:B:CQB14</td><td>CQB14</td><td>B</td><td>2</td><td>1 (7.6 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haslocation | brick haslocation a http://example.org/chunktograph#Class_relatio...</td></tr>
+<tr><td>primary:C:CQB14</td><td>CQB14</td><td>C</td><td>2</td><td>1 (7.4 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haslocation | brick haslocation a http://example.org/chunktograph#Class_relatio...</td></tr>
+<tr><td>primary:D:CQB14</td><td>CQB14</td><td>D</td><td>2</td><td>1 (7.3 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haslocation | brick haslocation a http://example.org/chunktograph#Class_relatio...</td></tr>
+<tr><td>primary:E:CQB14</td><td>CQB14</td><td>E</td><td>3</td><td>1 (12 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haslocation | brick haslocation a http://example.org/chunktograph#Class_relatio...</td></tr>
+<tr><td>primary:F:CQB14</td><td>CQB14</td><td>F</td><td>3</td><td>1 (8 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haslocation | brick haslocation a http://example.org/chunktograph#Class_relatio...</td></tr>
+<tr><td>primary:A:CQB16</td><td>CQB16</td><td>A</td><td>3</td><td>1 (7.5 s)</td><td>1</td><td>http://example.org/chunktograph#brick_hasPart inv:http://example.org/chunktograph#brick_isPartOf</td></tr>
+<tr><td>primary:B:CQB16</td><td>CQB16</td><td>B</td><td>3</td><td>1 (9.9 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haspart | brick haspart a http://example.org/chunktograph#Class_relation,skos:C...</td></tr>
+<tr><td>primary:C:CQB16</td><td>CQB16</td><td>C</td><td>3</td><td>1 (6.9 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haspart | brick haspart a http://example.org/chunktograph#Class_relation,skos:C...</td></tr>
+<tr><td>primary:D:CQB16</td><td>CQB16</td><td>D</td><td>3</td><td>1 (8.8 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haspart | brick haspart a http://example.org/chunktograph#Class_relation,skos:C...</td></tr>
+<tr><td>primary:E:CQB16</td><td>CQB16</td><td>E</td><td>3</td><td>1 (9.3 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haspart | brick haspart a http://example.org/chunktograph#Class_relation,skos:C...</td></tr>
+<tr><td>primary:F:CQB16</td><td>CQB16</td><td>F</td><td>3</td><td>1 (8 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-haspart | brick haspart a http://example.org/chunktograph#Class_relation,sk...</td></tr>
+<tr><td>primary:A:CQB17</td><td>CQB17</td><td>A</td><td>3</td><td>1 (10.6 s)</td><td>1</td><td>OP http://example.org/chunktograph#locatedIn</td></tr>
+<tr><td>primary:B:CQB17</td><td>CQB17</td><td>B</td><td>2</td><td>1 (424.6 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haslocation | brick haslocation a http://example.org/chunktograph#Class_relatio...</td></tr>
+<tr><td>primary:C:CQB17</td><td>CQB17</td><td>C</td><td>3</td><td>1 (9.1 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haslocation | brick haslocation a http://example.org/chunktograph#Class_relatio...</td></tr>
+<tr><td>primary:D:CQB17</td><td>CQB17</td><td>D</td><td>2</td><td>1 (6.6 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haslocation | brick haslocation a http://example.org/chunktograph#Class_relatio...</td></tr>
+<tr><td>primary:E:CQB17</td><td>CQB17</td><td>E</td><td>0</td><td>1 (8.8 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:F:CQB17</td><td>CQB17</td><td>F</td><td>3</td><td>1 (7.3 s)</td><td>1</td><td>http://example.org/chunktograph#brick-haslocation</td></tr>
+<tr><td>primary:B:CQB18</td><td>CQB18</td><td>B</td><td>3</td><td>1 (7.3 s)</td><td>0</td><td>http://example.org/chunktograph#brick-hasassociatedtag | brick hasassociatedtag a http://example.org/chunktograph#Cla...</td></tr>
+<tr><td>primary:C:CQB18</td><td>CQB18</td><td>C</td><td>3</td><td>1 (9.9 s)</td><td>0</td><td>IND http://example.org/chunktograph#brick-isassociatedwith | brick isassociatedwith a http://example.org/chunktograph...</td></tr>
+<tr><td>primary:D:CQB18</td><td>CQB18</td><td>D</td><td>3</td><td>1 (6.8 s)</td><td>0</td><td>http://example.org/chunktograph#brick-hasassociatedtag | brick hasassociatedtag a http://example.org/chunktograph#Cla...</td></tr>
+<tr><td>primary:E:CQB18</td><td>CQB18</td><td>E</td><td>2</td><td>1 (11.3 s)</td><td>0</td><td>IND http://example.org/chunktograph#brick-isassociatedwith | brick isassociatedwith a http://example.org/chunktograph...</td></tr>
+<tr><td>primary:F:CQB18</td><td>CQB18</td><td>F</td><td>3</td><td>1 (6.5 s)</td><td>0</td><td>http://example.org/chunktograph#brick-hasassociatedtag | brick hasassociatedtag a http://example.org/chunktograph#Cla...</td></tr>
+<tr><td>primary:B:CQB19</td><td>CQB19</td><td>B</td><td>3</td><td>1 (9.6 s)</td><td>1</td><td>http://example.org/chunktograph#brick-hasunit | brick hasunit</td></tr>
+<tr><td>primary:C:CQB19</td><td>CQB19</td><td>C</td><td>3</td><td>1 (9.3 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-hasunit | brick hasunit a http://example.org/chunktograph#Class_relation,sk...</td></tr>
+<tr><td>primary:D:CQB19</td><td>CQB19</td><td>D</td><td>3</td><td>1 (7.1 s)</td><td>1</td><td>http://example.org/chunktograph#brick-hasunit | brick hasunit a http://example.org/chunktograph#Class_relation,skos:C...</td></tr>
+<tr><td>primary:E:CQB19</td><td>CQB19</td><td>E</td><td>3</td><td>1 (10.1 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-hasunit | brick hasunit a http://example.org/chunktograph#Class_relation,sk...</td></tr>
+<tr><td>primary:F:CQB19</td><td>CQB19</td><td>F</td><td>3</td><td>1 (7.5 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-hasunit | brick hasunit a http://example.org/chunktograph#Class_relation,sk...</td></tr>
+<tr><td>primary:B:CQB20</td><td>CQB20</td><td>B</td><td>0</td><td>1 (25.1 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:C:CQB20</td><td>CQB20</td><td>C</td><td>3</td><td>1 (10.8 s)</td><td>0</td><td>http://example.org/chunktograph#brick-lastknownvalue | brick lastknownvalue a http://example.org/chunktograph#Class_p...</td></tr>
+<tr><td>primary:D:CQB20</td><td>CQB20</td><td>D</td><td>0</td><td>1 (7 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:E:CQB20</td><td>CQB20</td><td>E</td><td>0</td><td>1 (22 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:F:CQB20</td><td>CQB20</td><td>F</td><td>0</td><td>1 (8.2 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:A:CQB21</td><td>CQB21</td><td>A</td><td>2</td><td>1 (10.2 s)</td><td>0</td><td>OP http://example.org/chunktograph#brick_grossArea</td></tr>
+<tr><td>primary:B:CQB21</td><td>CQB21</td><td>B</td><td>3</td><td>1 (17.9 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-grossarea | brick grossarea a http://example.org/chunktograph#Class_propert...</td></tr>
+<tr><td>primary:C:CQB21</td><td>CQB21</td><td>C</td><td>3</td><td>1 (41.3 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-grossarea | brick grossarea a http://example.org/chunktograph#Class_propert...</td></tr>
+<tr><td>primary:D:CQB21</td><td>CQB21</td><td>D</td><td>3</td><td>1 (6.9 s)</td><td>1</td><td>http://example.org/chunktograph#brick-grossarea</td></tr>
+<tr><td>primary:E:CQB21</td><td>CQB21</td><td>E</td><td>3</td><td>1 (269.5 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-grossarea | brick grossarea a http://example.org/chunktograph#Class_propert...</td></tr>
+<tr><td>primary:F:CQB21</td><td>CQB21</td><td>F</td><td>3</td><td>1 (7.7 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-grossarea | brick grossarea a http://example.org/chunktograph#Class_propert...</td></tr>
+<tr><td>primary:B:CQB24</td><td>CQB24</td><td>B</td><td>2</td><td>1 (7.5 s)</td><td>1</td><td>IND http://example.org/chunktograph#brick-hasquantity | brick hasquantity a http://example.org/chunktograph#Class_rel...</td></tr>
+<tr><td>primary:C:CQB24</td><td>CQB24</td><td>C</td><td>2</td><td>1 (6.8 s)</td><td>1</td><td>http://example.org/chunktograph#brick-hasquantity | brick hasquantity a http://example.org/chunktograph#Class_relatio...</td></tr>
+<tr><td>primary:D:CQB24</td><td>CQB24</td><td>D</td><td>0</td><td>1 (6.9 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:E:CQB24</td><td>CQB24</td><td>E</td><td>0</td><td>1 (7.8 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:F:CQB24</td><td>CQB24</td><td>F</td><td>0</td><td>1 (9.7 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:A:CQB25</td><td>CQB25</td><td>A</td><td>3</td><td>1 (10.8 s)</td><td>1</td><td>http://example.org/chunktograph#BuildingElement | Building element &lt; rdfs:Resource :: A part that constitutes a piece...</td></tr>
+<tr><td>primary:B:CQB25</td><td>CQB25</td><td>B</td><td>2</td><td>0 (10 s)</td><td>0</td><td>IND http://example.org/chunktograph#rec-buildingelement | rec buildingelement a http://example.org/chunktograph#Class...</td></tr>
+<tr><td>primary:C:CQB25</td><td>CQB25</td><td>C</td><td>2</td><td>0 (96.3 s)</td><td>0</td><td>http://example.org/chunktograph#rec-buildingelement | rec buildingelement a http://example.org/chunktograph#Class_art...</td></tr>
+<tr><td>primary:D:CQB25</td><td>CQB25</td><td>D</td><td>0</td><td>0 (13.7 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:E:CQB25</td><td>CQB25</td><td>E</td><td>2</td><td>0 (8.1 s)</td><td>0</td><td>IND http://example.org/chunktograph#rec-buildingelement | http://example.org/chunktograph#building-element a http://e...</td></tr>
+<tr><td>primary:F:CQB25</td><td>CQB25</td><td>F</td><td>2</td><td>0 (9.8 s)</td><td>0</td><td>IND http://example.org/chunktograph#rec-buildingelement | http://example.org/chunktograph#building-element a http://e...</td></tr>
+<tr><td>primary:A:CQB26</td><td>CQB26</td><td>A</td><td>0</td><td>0 (11 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:B:CQB26</td><td>CQB26</td><td>B</td><td>1</td><td>0 (118.7 s)</td><td>0</td><td>IND http://example.org/chunktograph#rec-event | rec event a http://example.org/chunktograph#Class_concept,skos:Concep...</td></tr>
+<tr><td>primary:C:CQB26</td><td>CQB26</td><td>C</td><td>0</td><td>0 (11.2 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:D:CQB26</td><td>CQB26</td><td>D</td><td>0</td><td>0 (107.7 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:E:CQB26</td><td>CQB26</td><td>E</td><td>1</td><td>0 (7.2 s)</td><td>0</td><td>IND http://example.org/chunktograph#rec-event | http://example.org/chunktograph#event a http://example.org/chunktogra...</td></tr>
+<tr><td>primary:F:CQB26</td><td>CQB26</td><td>F</td><td>0</td><td>0 (8.8 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:A:CQB27</td><td>CQB27</td><td>A</td><td>0</td><td>0 (13.3 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:B:CQB27</td><td>CQB27</td><td>B</td><td>3</td><td>1 (13.4 s)</td><td>1</td><td>IND http://example.org/chunktograph#rec-pointevent | rec pointevent a http://example.org/chunktograph#Class_process,s...</td></tr>
+<tr><td>primary:C:CQB27</td><td>CQB27</td><td>C</td><td>2</td><td>1 (8 s)</td><td>1</td><td>IND http://example.org/chunktograph#rec-pointevent | rec pointevent a http://example.org/chunktograph#Class_process,s...</td></tr>
+<tr><td>primary:D:CQB27</td><td>CQB27</td><td>D</td><td>3</td><td>1 (8.1 s)</td><td>1</td><td>IND http://example.org/chunktograph#rec-pointevent | rec pointevent a http://example.org/chunktograph#Class_process,s...</td></tr>
+<tr><td>primary:E:CQB27</td><td>CQB27</td><td>E</td><td>3</td><td>1 (7.9 s)</td><td>1</td><td>http://example.org/chunktograph#rec-pointevent | http://example.org/chunktograph#point-event a http://example.org/chu...</td></tr>
+<tr><td>primary:F:CQB27</td><td>CQB27</td><td>F</td><td>3</td><td>1 (8.2 s)</td><td>1</td><td>http://example.org/chunktograph#rec-pointevent | http://example.org/chunktograph#point-event a http://example.org/chu...</td></tr>
+<tr><td>primary:A:CQB28</td><td>CQB28</td><td>A</td><td>0</td><td>0 (12.8 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:B:CQB28</td><td>CQB28</td><td>B</td><td>0</td><td>0 (8 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:C:CQB28</td><td>CQB28</td><td>C</td><td>0</td><td>0 (7.3 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:D:CQB28</td><td>CQB28</td><td>D</td><td>0</td><td>0 (208.7 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:E:CQB28</td><td>CQB28</td><td>E</td><td>0</td><td>0 (9.2 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:F:CQB28</td><td>CQB28</td><td>F</td><td>1</td><td>0 (12.8 s)</td><td>0</td><td>IND http://example.org/chunktograph#brick-organization | http://example.org/chunktograph#organization a http://exampl...</td></tr>
+<tr><td>primary:A:CQB29</td><td>CQB29</td><td>A</td><td>1</td><td>1 (15.1 s)</td><td>0</td><td>http://example.org/chunktograph#Architecture | Architecture &lt; http://example.org/chunktograph#Space :: A designed/lan...</td></tr>
+<tr><td>primary:B:CQB29</td><td>CQB29</td><td>B</td><td>3</td><td>1 (17.4 s)</td><td>0</td><td>http://example.org/chunktograph#contiguous-physical-world-contain-contain-sub-space</td></tr>
+<tr><td>primary:C:CQB29</td><td>CQB29</td><td>C</td><td>3</td><td>1 (51.2 s)</td><td>0</td><td>IND http://example.org/chunktograph#rec-space | rec space a http://example.org/chunktograph#Class_class,skos:Concept ...</td></tr>
+<tr><td>primary:D:CQB29</td><td>CQB29</td><td>D</td><td>3</td><td>1 (11.6 s)</td><td>0</td><td>contiguous physical world contain sub space</td></tr>
+<tr><td>primary:E:CQB29</td><td>CQB29</td><td>E</td><td>3</td><td>1 (9.9 s)</td><td>0</td><td>contiguous physical world contain sub space</td></tr>
+<tr><td>primary:F:CQB29</td><td>CQB29</td><td>F</td><td>3</td><td>1 (7.1 s)</td><td>0</td><td>contiguous physical world contain sub space</td></tr>
+<tr><td>primary:A:CQB30</td><td>CQB30</td><td>A</td><td>0</td><td>1 (11.2 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:B:CQB30</td><td>CQB30</td><td>B</td><td>2</td><td>1 (9 s)</td><td>1</td><td>http://example.org/chunktograph#portfolio | portfolio a http://example.org/chunktograph#Class_artifact,skos:Concept {...</td></tr>
+<tr><td>primary:C:CQB30</td><td>CQB30</td><td>C</td><td>3</td><td>1 (8 s)</td><td>1</td><td>http://example.org/chunktograph#portfolio | portfolio a http://example.org/chunktograph#Class_class,skos:Concept {htt...</td></tr>
+<tr><td>primary:D:CQB30</td><td>CQB30</td><td>D</td><td>2</td><td>1 (7.3 s)</td><td>1</td><td>http://example.org/chunktograph#portfolio | portfolio a http://example.org/chunktograph#Class_class,skos:Concept {htt...</td></tr>
+<tr><td>primary:E:CQB30</td><td>CQB30</td><td>E</td><td>3</td><td>1 (9.3 s)</td><td>1</td><td>http://example.org/chunktograph#portfolio | portfolio a http://example.org/chunktograph#Class_class,skos:Concept {htt...</td></tr>
+<tr><td>primary:F:CQB30</td><td>CQB30</td><td>F</td><td>3</td><td>1 (9.3 s)</td><td>1</td><td>http://example.org/chunktograph#portfolio | portfolio a http://example.org/chunktograph#Class_artifact,skos:Concept {...</td></tr>
+<tr><td>primary:A:CQB31</td><td>CQB31</td><td>A</td><td>3</td><td>1 (11.4 s)</td><td>1</td><td>http://example.org/chunktograph#ArchitectureArea | Architecture area &lt; http://example.org/chunktograph#Information ::...</td></tr>
+<tr><td>primary:B:CQB31</td><td>CQB31</td><td>B</td><td>2</td><td>0 (8.9 s)</td><td>1</td><td>http://example.org/chunktograph#describe-business-relevant-area-measurement-typically-associate-architected-space</td></tr>
+<tr><td>primary:C:CQB31</td><td>CQB31</td><td>C</td><td>2</td><td>0 (8.3 s)</td><td>1</td><td>http://example.org/chunktograph#rec-architecturearea | rec architecturearea a http://example.org/chunktograph#Class_e...</td></tr>
+<tr><td>primary:D:CQB31</td><td>CQB31</td><td>D</td><td>2</td><td>0 (9.9 s)</td><td>1</td><td>http://example.org/chunktograph#rec-architecturearea | rec architecturearea a http://example.org/chunktograph#Class_e...</td></tr>
+<tr><td>primary:E:CQB31</td><td>CQB31</td><td>E</td><td>3</td><td>0 (7.6 s)</td><td>1</td><td>http://example.org/chunktograph#describe-business-relevant-area-measurement-typically-associate-architected-space</td></tr>
+<tr><td>primary:F:CQB31</td><td>CQB31</td><td>F</td><td>2</td><td>0 (13.6 s)</td><td>1</td><td>http://example.org/chunktograph#rec-architecturearea | http://example.org/chunktograph#architecture-area a http://exa...</td></tr>
+<tr><td>primary:B:CQB32</td><td>CQB32</td><td>B</td><td>0</td><td>0 (16.6 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:C:CQB32</td><td>CQB32</td><td>C</td><td>0</td><td>0 (7 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:D:CQB32</td><td>CQB32</td><td>D</td><td>0</td><td>0 (57.3 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:E:CQB32</td><td>CQB32</td><td>E</td><td>1</td><td>0 (13.3 s)</td><td>0</td><td>http://example.org/chunktograph#p_likely-deprecate-future-release-brick dom:http://example.org/chunktograph#Class_art...</td></tr>
+<tr><td>primary:F:CQB32</td><td>CQB32</td><td>F</td><td>1</td><td>0 (7.4 s)</td><td>0</td><td>http://example.org/chunktograph#p_likely-deprecate-future-release-brick</td></tr>
+<tr><td>primary:B:CQB33</td><td>CQB33</td><td>B</td><td>0</td><td>0 (9.8 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:C:CQB33</td><td>CQB33</td><td>C</td><td>0</td><td>0 (11.9 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:D:CQB33</td><td>CQB33</td><td>D</td><td>0</td><td>0 (9.1 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:E:CQB33</td><td>CQB33</td><td>E</td><td>0</td><td>0 (9.6 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:F:CQB33</td><td>CQB33</td><td>F</td><td>0</td><td>0 (8 s)</td><td>0</td><td></td></tr>
+<tr><td>primary:A:CQB34</td><td>CQB34</td><td>A</td><td>0</td><td>1 (12 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:B:CQB34</td><td>CQB34</td><td>B</td><td>2</td><td>1 (9 s)</td><td>1</td><td>http://example.org/chunktograph#rec-collection | collection a http://example.org/chunktograph#Class_concept,skos:Conc...</td></tr>
+<tr><td>primary:C:CQB34</td><td>CQB34</td><td>C</td><td>0</td><td>0 (10.3 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:D:CQB34</td><td>CQB34</td><td>D</td><td>0</td><td>0 (11.5 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:E:CQB34</td><td>CQB34</td><td>E</td><td>0</td><td>0 (11.7 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:F:CQB34</td><td>CQB34</td><td>F</td><td>0</td><td>0 (7.8 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:B:CQB35</td><td>CQB35</td><td>B</td><td>0</td><td>1 (7.7 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:C:CQB35</td><td>CQB35</td><td>C</td><td>0</td><td>1 (10.4 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:D:CQB35</td><td>CQB35</td><td>D</td><td>0</td><td>1 (10 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:E:CQB35</td><td>CQB35</td><td>E</td><td>0</td><td>1 (7.3 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:F:CQB35</td><td>CQB35</td><td>F</td><td>0</td><td>1 (14.1 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:B:CQB36</td><td>CQB36</td><td>B</td><td>2</td><td>1 (7.1 s)</td><td>1</td><td>http://example.org/chunktograph#http-data-ashrae-org-standard223-externalreference | http://data.ashrae.org/standard2...</td></tr>
+<tr><td>primary:C:CQB36</td><td>CQB36</td><td>C</td><td>0</td><td>1 (14.1 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:D:CQB36</td><td>CQB36</td><td>D</td><td>0</td><td>1 (6.9 s)</td><td>1</td><td></td></tr>
+<tr><td>primary:E:CQB36</td><td>CQB36</td><td>E</td><td>3</td><td>1 (7.6 s)</td><td>1</td><td>http://example.org/chunktograph#ref-hasexternalreference | ref hasexternalreference a http://example.org/chunktograph...</td></tr>
+<tr><td>primary:F:CQB36</td><td>CQB36</td><td>F</td><td>3</td><td>1 (9.5 s)</td><td>1</td><td>http://example.org/chunktograph#ref-hasexternalreference</td></tr>
+</tbody></table></div>
+</body></html>

@@ -1,0 +1,649 @@
+{
+  "primary_endpoint": "Layer-1 coverage on adjudicated L1*",
+  "coverage_pct": {
+    "A": 53.62318840579711,
+    "B": 60.60606060606061,
+    "C": 57.57575757575758,
+    "D": 51.515151515151516,
+    "E": 60.60606060606061,
+    "F": 61.61616161616161
+  },
+  "contrasts": {
+    "A->B": {
+      "delta": 0.43478260869565216,
+      "ci_lo": -0.13043478260869565,
+      "ci_hi": 1.0434782608695652,
+      "n_clusters": 23,
+      "n_questions": 23,
+      "resamples": 10000,
+      "seed": 20260913,
+      "unit": "semantic cluster",
+      "method": "BCa",
+      "bca_ties": "midrank",
+      "strata_key": null,
+      "strata_sizes": {
+        "all": 23
+      },
+      "estimator": "pooled mean of per-question differences, clusters resampled",
+      "equivalence_interval": {
+        "level": 0.9,
+        "ci_lo": -0.043478260869565216,
+        "ci_hi": 0.9130434782608695,
+        "margin": 0.3,
+        "basis": "TOST at alpha=.05 per side = the 90% two-sided interval (main.tex L2205-2206: t_{0.95,35}*SD/sqrt(36)); PREREG.md L306/L591-593 name the TOST interval without a level"
+      },
+      "wilcoxon": {
+        "p": 0.13235554607246858,
+        "n_nonzero": 15,
+        "w_plus": 86.0,
+        "w_minus": 34.0,
+        "sign": 1
+      },
+      "rank_test": {
+        "test": "Wilcoxon signed-rank, zeros dropped, two-sided, on the per-question differences over the paired CQs (the variants' CQ intersection)",
+        "p": 0.13235554607246858,
+        "n_nonzero": 15,
+        "n_questions": 23,
+        "w_plus": 86.0,
+        "w_minus": 34.0,
+        "direction": 1,
+        "agrees_in_sign_with_delta": true,
+        "registered_in_prereg": false,
+        "applied_to_decision": false,
+        "source": "main.tex (Three decisions paragraph and decision table); PREREG.md registers no rank-test or sign-agreement rule"
+      },
+      "decision": "unresolved",
+      "decision_if_manuscript_rule": "unresolved",
+      "p_holm": 0.26471109214493715
+    }
+  },
+  "gates": {
+    "G1_silent_over_credit": {
+      "status": "fail",
+      "value": 0.4225893177117019,
+      "threshold": 0.1,
+      "reason": "Clopper-Pearson upper bound does not meet 10%",
+      "estimand": "pi = Pr[J >= 2 AND A == 0]",
+      "events": 8,
+      "n_clusters": 33,
+      "n_cells": 188,
+      "pi_hat_is_a_lower_bound": 0.24242424242424243,
+      "upper_bound_one_sided": 0.4225893177117019,
+      "confidence_level": 0.975,
+      "confidence_level_one_sided": 0.975,
+      "method": "Clopper-Pearson (bootstrap is prohibited for this quantity)",
+      "g1_achievable_at_registered_n": {
+        "diagnostic_only": true,
+        "achievable": false,
+        "n_clusters": 33,
+        "alpha_one_sided": 0.025,
+        "threshold": 0.1,
+        "min_achievable_upper_bound": 0.10576281007457927,
+        "max_events_that_pass": null,
+        "min_clusters_for_zero_event_pass": 36,
+        "note": "Registered G1 decision above is unchanged. Even with 0 events the one-sided Clopper-Pearson bound exceeds the threshold at this n: G1 is unpassable by construction."
+      },
+      "upper_bound_both_levels": {
+        "level_status": "UNRESOLVED",
+        "note": "PREREG L564 (sec.4) specifies one-sided 97.5%; the sec.2 G1 table/prose wording uses 95%; L387-390 flags the mismatch as unresolved. Both bounds are shown; only the level named in decision_uses decides G1.",
+        "decision_uses": "one-sided 0.975 (g1_alpha=0.025)",
+        "events": 8,
+        "n_clusters": 33,
+        "threshold": 0.1,
+        "one_sided_97_5": {
+          "alpha": 0.025,
+          "upper_bound": 0.4225893177117019,
+          "meets_threshold": false,
+          "decides_g1": true
+        },
+        "one_sided_95": {
+          "alpha": 0.05,
+          "upper_bound": 0.3950714750490788,
+          "meets_threshold": false,
+          "decides_g1": false
+        }
+      }
+    },
+    "G2_intra_rater_qwk": {
+      "status": "not_computable",
+      "value": null,
+      "threshold": 0.7,
+      "reason": "washout rater_L1 scores and a clustered CI are required"
+    },
+    "G3_negative_control": {
+      "status": "not_computable",
+      "value": null,
+      "threshold": 0.9166666666666666,
+      "reason": "analysis rule: ablated_control and preserved_control rows are excluded from every human-label-based statistic, and their label values are not read unless --controls-valid asserts that they are valid; registered G3 needs the evaluator's A on all 24 ablated cells and >= 22/24 unsupported; ablated_control rows in the run: 24, with a label cell: 0, unlabeled: 24",
+      "reasons": [
+        "analysis rule: ablated_control and preserved_control rows are excluded from every human-label-based statistic, and their label values are not read unless --controls-valid asserts that they are valid",
+        "registered G3 needs the evaluator's A on all 24 ablated cells and >= 22/24 unsupported; ablated_control rows in the run: 24, with a label cell: 0, unlabeled: 24",
+        "preserved_control rows in the run: 12, with a label cell: 0, unlabeled: 12",
+        "all control rows: 36 in the run, 0 with a label cell, 36 unlabeled (counted by presence; no value was read)"
+      ],
+      "counted_by": "presence of a label cell, never by value",
+      "counts": {
+        "ablated_control": {
+          "n_in_run": 24,
+          "n_rows_in_label_csv": 0,
+          "n_absent_from_label_csv": 24,
+          "n_labeled_by_presence": 0,
+          "n_unlabeled": 24
+        },
+        "preserved_control": {
+          "n_in_run": 12,
+          "n_rows_in_label_csv": 0,
+          "n_absent_from_label_csv": 12,
+          "n_labeled_by_presence": 0,
+          "n_unlabeled": 12
+        },
+        "all_controls": {
+          "n_in_run": 36,
+          "n_labeled_by_presence": 0,
+          "n_unlabeled": 36
+        }
+      },
+      "registered_n_ablated": 24,
+      "registered_min_unsupported": 22
+    },
+    "G4_human_judge_qwk": {
+      "status": "fail",
+      "value": 0.5967829694699137,
+      "threshold": 0.6,
+      "reason": "G4 human-judge QWK falsification condition observed",
+      "falsification_only": true,
+      "qwk": 0.376242827734221,
+      "ci_lo": 0.09637884146149002,
+      "ci_hi": 0.5967829694699137,
+      "ci_level": 0.95,
+      "n_cells": 188,
+      "n_clusters": 33,
+      "resamples": 10000,
+      "seed": 20260913,
+      "bca_ties": "midrank",
+      "strata_key": null,
+      "judge_field": "J",
+      "human_field": "rater_L1",
+      "method": "CQ-cluster BCa bootstrap of the pooled QWK (cluster_bootstrap_stat); a cell-level bootstrap is not used",
+      "confusion": {
+        "rows": "J (judge)",
+        "cols": "rater_L1 (human)",
+        "levels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "counts": [
+          [
+            0,
+            29,
+            0,
+            18
+          ],
+          [
+            0,
+            7,
+            0,
+            2
+          ],
+          [
+            0,
+            9,
+            0,
+            27
+          ],
+          [
+            0,
+            17,
+            0,
+            79
+          ]
+        ],
+        "n_cells": 188
+      },
+      "registered_text": "PREREG L346: human-judge QWK, falsification-only -- FAIL if the CI upper bound is < 0.60, and the gate can never pass (L353-359); on failure the judge is declared uncalibrated and quantitative conclusions are restricted to the ASK-oracle track (L606); the CI is a CQ-cluster BCa, never a cell-level bootstrap (L569-572)",
+      "consequence_if_failed": "judge declared uncalibrated; quantitative conclusions restricted to the ASK-oracle track (PREREG L606)"
+    },
+    "G5_mae_judge_human": {
+      "status": "fail",
+      "value": 0.8351063829787234,
+      "threshold": 0.5,
+      "reason": "MAE=0.835106; BCa upper CI=1.12847",
+      "ci_lo": 0.6105263157894737,
+      "ci_hi": 1.128474696586495,
+      "n_cells": 188,
+      "n_clusters": 33,
+      "resamples": 10000,
+      "seed": 20260913,
+      "bca_ties": "midrank",
+      "strata_key": null,
+      "judge_field": "J",
+      "human_field": "rater_L1",
+      "estimator": "pooled mean of |J - rater_L1| over cells",
+      "method": "CQ-cluster BCa bootstrap of the pooled mean (cluster_bootstrap_stat)"
+    },
+    "G6_consistency": {
+      "status": "not_computable",
+      "value": {
+        "a_to_b_consistent": false,
+        "non_qwen_direction_agrees": null,
+        "fragility": {
+          "k": 0,
+          "n_cq": 23,
+          "initial_delta": 0.43478260869565216,
+          "initial_ci_lo": -0.13043478260869565,
+          "criterion": "A->B BCa CI includes zero",
+          "n_moved_cq_ids": 0
+        }
+      },
+      "threshold": {
+        "fragility_K": 6,
+        "a_to_b": "consistent",
+        "non_qwen_direction": "agrees"
+      },
+      "reason": "non-Qwen judge scores are absent or incomplete; G6 cannot pass"
+    },
+    "G7_audit_trail": {
+      "status": "not_computable",
+      "value": null,
+      "threshold": {
+        "before_boundary_share": 1.0,
+        "primary_saves_after_boundary": 0,
+        "csv_audit_mismatches": 0,
+        "elapsed_under_20s_share_lt": 0.03
+      },
+      "reason": "--label-audit is required: G7 is computed from the labeling audit trail (PREREG L349), never from judge-run telemetry"
+    },
+    "G8_external_spotcheck": {
+      "status": "not_computable",
+      "value": null,
+      "threshold": "mean signed-difference CI includes 0",
+      "reason": "G8 external spotcheck has no registered diagnostic result; not_falsified is not claimed",
+      "falsification_only": true
+    }
+  },
+  "label_source": "human",
+  "SIMULATED": false,
+  "bootstrap": {
+    "method": "BCa cluster bootstrap (one helper: cluster_bootstrap_stat)",
+    "resamples": 10000,
+    "seed": 20260913,
+    "registered_seed": 20260913,
+    "seed_is_registered": true,
+    "resample_unit": "semantic cluster (cluster_id)",
+    "strata_key": null,
+    "bca_ties": "midrank",
+    "resolved_ci_level": 0.95,
+    "equivalence_ci_level": 0.9,
+    "registered_scheme": true,
+    "note": "PREREG sec.4 registers BCa, 10,000 resamples, a pre-registered seed and the semantic cluster as the unit; it does not register stratification by category. strata_key=null is the registered scheme. bca_ties=midrank is the scipy BCa convention; strict is the former z0 rule, kept only as a sensitivity switch."
+  },
+  "analysis_population": {
+    "rule": "primary cells only (cell_kind == 'primary'); ablated_control and preserved_control rows never enter Coverage, contrasts, pi-hat, G1, G2, G5, G6, G7 or fragility",
+    "n_primary_cells": 188,
+    "n_primary_clusters": 33,
+    "n_cells_by_variant": {
+      "A": 23,
+      "B": 33,
+      "C": 33,
+      "D": 33,
+      "E": 33,
+      "F": 33
+    },
+    "control_cells_in_analyse_input": {},
+    "cluster_id_equals_cq_id": true,
+    "control_rows_in_label_join": {
+      "ablated_control": {
+        "n_in_run": 24,
+        "n_rows_in_label_csv": 0,
+        "n_absent_from_label_csv": 24,
+        "n_labeled_by_presence": 0,
+        "n_unlabeled": 24
+      },
+      "preserved_control": {
+        "n_in_run": 12,
+        "n_rows_in_label_csv": 0,
+        "n_absent_from_label_csv": 12,
+        "n_labeled_by_presence": 0,
+        "n_unlabeled": 12
+      }
+    },
+    "registered_design": {
+      "conforms": true,
+      "expected_primary_cells": 188,
+      "observed_primary_cells": 188,
+      "n_missing": 0,
+      "n_unexpected": 0,
+      "n_duplicate_cells": 0,
+      "by_variant": {
+        "A": {
+          "expected": 23,
+          "observed": 23,
+          "n_missing": 0,
+          "n_unexpected": 0
+        },
+        "B": {
+          "expected": 33,
+          "observed": 33,
+          "n_missing": 0,
+          "n_unexpected": 0
+        },
+        "C": {
+          "expected": 33,
+          "observed": 33,
+          "n_missing": 0,
+          "n_unexpected": 0
+        },
+        "D": {
+          "expected": 33,
+          "observed": 33,
+          "n_missing": 0,
+          "n_unexpected": 0
+        },
+        "E": {
+          "expected": 33,
+          "observed": 33,
+          "n_missing": 0,
+          "n_unexpected": 0
+        },
+        "F": {
+          "expected": 33,
+          "observed": 33,
+          "n_missing": 0,
+          "n_unexpected": 0
+        }
+      },
+      "source": "PREREG sec.6-2 L789-795: Q_A = Q minus 13 documented corpus-rare CQs (23 left); Q_B..F = Q minus 3 of them (33 left); 23 + 5*33 = 188 primary cells (the CQ lists are in PREREG, not repeated here)"
+    }
+  },
+  "label_coverage": {
+    "source_csv": "annotation/second_pass_2026-10-13/v2/labels_for_analysis_v2.csv",
+    "source": "human",
+    "simulated": false,
+    "mode": "complete",
+    "total_cells": 188,
+    "total_run_cells": 224,
+    "labeled_cells": 188,
+    "unlabeled_cells": 0,
+    "coverage_fraction": 1.0,
+    "coverage_denominator": {
+      "n_cells": 188,
+      "max_points": 564,
+      "formula": "sum(L1_star) / (labeled_cells * 3) * 100"
+    },
+    "controls_excluded_from_scored": true,
+    "control_values_read": false,
+    "control_cells": {
+      "ablated_control": {
+        "n_in_run": 24,
+        "n_rows_in_label_csv": 0,
+        "n_absent_from_label_csv": 24,
+        "n_labeled_by_presence": 0,
+        "n_unlabeled": 24
+      },
+      "preserved_control": {
+        "n_in_run": 12,
+        "n_rows_in_label_csv": 0,
+        "n_absent_from_label_csv": 12,
+        "n_labeled_by_presence": 0,
+        "n_unlabeled": 12
+      }
+    }
+  },
+  "coverage_detail": {
+    "A": {
+      "coverage_pct": 53.62318840579711,
+      "n_cells": 23,
+      "n_clusters": 23,
+      "ci_lo_pct": 36.231884057971016,
+      "ci_hi_pct": 71.01449275362319,
+      "ci_method": "BCa cluster bootstrap",
+      "strata_key": null,
+      "strata_sizes": {
+        "all": 23
+      }
+    },
+    "B": {
+      "coverage_pct": 60.60606060606061,
+      "n_cells": 33,
+      "n_clusters": 33,
+      "ci_lo_pct": 47.474747474747474,
+      "ci_hi_pct": 72.72727272727273,
+      "ci_method": "BCa cluster bootstrap",
+      "strata_key": null,
+      "strata_sizes": {
+        "all": 33
+      }
+    },
+    "C": {
+      "coverage_pct": 57.57575757575758,
+      "n_cells": 33,
+      "n_clusters": 33,
+      "ci_lo_pct": 43.43434343434344,
+      "ci_hi_pct": 71.71717171717171,
+      "ci_method": "BCa cluster bootstrap",
+      "strata_key": null,
+      "strata_sizes": {
+        "all": 33
+      }
+    },
+    "D": {
+      "coverage_pct": 51.515151515151516,
+      "n_cells": 33,
+      "n_clusters": 33,
+      "ci_lo_pct": 36.36363636363637,
+      "ci_hi_pct": 65.65656565656566,
+      "ci_method": "BCa cluster bootstrap",
+      "strata_key": null,
+      "strata_sizes": {
+        "all": 33
+      }
+    },
+    "E": {
+      "coverage_pct": 60.60606060606061,
+      "n_cells": 33,
+      "n_clusters": 33,
+      "ci_lo_pct": 45.45454545454545,
+      "ci_hi_pct": 74.74747474747475,
+      "ci_method": "BCa cluster bootstrap",
+      "strata_key": null,
+      "strata_sizes": {
+        "all": 33
+      }
+    },
+    "F": {
+      "coverage_pct": 61.61616161616161,
+      "n_cells": 33,
+      "n_clusters": 33,
+      "ci_lo_pct": 46.464646464646464,
+      "ci_hi_pct": 74.74747474747475,
+      "ci_method": "BCa cluster bootstrap",
+      "strata_key": null,
+      "strata_sizes": {
+        "all": 33
+      }
+    }
+  },
+  "contrasts_family": {
+    "registered_m": 2,
+    "rule": "Holm over the registered family of m=2 (A->B, B->B'). A member that is not computable stays in the family, so a lone computable contrast is adjusted by m=2: p_holm = min(1, 2p).",
+    "members": {
+      "A->B": {
+        "status": "computed",
+        "p": 0.13235554607246858,
+        "p_holm": 0.26471109214493715
+      },
+      "B->Bprime": {
+        "status": "not_computable",
+        "reason": "variant(s) ['Bprime'] absent from this run"
+      }
+    }
+  },
+  "contrasts_note": "Holm applied over the registered family of m=2 confirmatory contrasts; a not-computable member (see contrasts_family) remains a member, so A->B alone gets min(1, 2p). 'resolved' means the 95% BCa interval excludes 0. The Wilcoxon signed-rank test is computed and reported (rank_test) but does NOT change 'decision': the manuscript (main.tex) additionally requires the rank test to agree in sign, PREREG.md registers no such rule, and decision_if_manuscript_rule shows that variant. Holm's input p is the Wilcoxon p (PREREG.md registers the Holm family, not the p-value source). Everything else is exploratory and takes BH-FDR.",
+  "pi_hat": {
+    "estimand": "pi = Pr[J >= 2 AND A == 0] over primary cells (cell level)",
+    "events": 26,
+    "n_cells": 188,
+    "pi_hat": 0.13829787234042554,
+    "n_clusters": 33,
+    "clusters_with_event": 8,
+    "pi_hat_is_a_lower_bound": true,
+    "ci_lo": 0.05851063829787234,
+    "ci_hi": 0.26344086021505375,
+    "ci_method": "BCa cluster bootstrap",
+    "bca_ties": "midrank",
+    "resamples": 10000,
+    "seed": 20260913,
+    "strata_key": null,
+    "strata_sizes": {
+      "all": 33
+    }
+  },
+  "controls_valid_asserted": false,
+  "fragility_pi_interval": {
+    "status": "not_implemented",
+    "registered_text": "PREREG sec.4 L574-584, item 2: adversarially demote labels one step until the pi interval exceeds 10%, and report how many",
+    "reasons": [
+      "unit of a move is undefined for pi: item 1 moves a CQ by lowering its paired A->B delta one step, but the text does not say whether a move for pi flips one cell's A (1->0), every J>=2 cell of a CQ, or a CQ-level quantity",
+      "'the pi interval' is not pinned to one interval: sec.1.1 headlines the cell-level 95% BCa upper limit, G1 gates the cluster-level one-sided Clopper-Pearson bound, and the level of the latter is itself unresolved (L387-390)",
+      "'the cells most favourable to the hypothesis' has no order or tie rule for pi (every flip adds exactly one event) and no K threshold is registered for item 2 (K=6 is the G6 threshold, attached to item 1)"
+    ],
+    "item_1_a_to_b": "computed inside G6 (gates.G6_consistency.value.fragility)"
+  },
+  "gates_summary": {
+    "total": 8,
+    "computed": 3,
+    "calculated": 3,
+    "not_computable": 5,
+    "failed": 3,
+    "fail": 3,
+    "passed": 0,
+    "not_falsified": 0
+  },
+  "n_used": {
+    "primary_cells": 188,
+    "coverage": {
+      "A": {
+        "n_cells": 23,
+        "n_clusters": 23
+      },
+      "B": {
+        "n_cells": 33,
+        "n_clusters": 33
+      },
+      "C": {
+        "n_cells": 33,
+        "n_clusters": 33
+      },
+      "D": {
+        "n_cells": 33,
+        "n_clusters": 33
+      },
+      "E": {
+        "n_cells": 33,
+        "n_clusters": 33
+      },
+      "F": {
+        "n_cells": 33,
+        "n_clusters": 33
+      }
+    },
+    "contrasts": {
+      "A->B": {
+        "n_clusters": 23,
+        "n_questions": 23
+      }
+    },
+    "pi_hat": {
+      "n_cells": 188,
+      "n_clusters": 33
+    },
+    "G1": {
+      "n_clusters": 33
+    },
+    "G2": null,
+    "G4": {
+      "n_cells": 188,
+      "n_clusters": 33
+    },
+    "G5": {
+      "n_cells": 188,
+      "n_clusters": 33
+    },
+    "G7": {
+      "n_cells": null
+    }
+  },
+  "judge_validity": {
+    "n_primary": 188,
+    "n_invalid": 0,
+    "by_variant": {
+      "A": {
+        "n_primary": 23,
+        "n_invalid": 0
+      },
+      "B": {
+        "n_primary": 33,
+        "n_invalid": 0
+      },
+      "C": {
+        "n_primary": 33,
+        "n_invalid": 0
+      },
+      "D": {
+        "n_primary": 33,
+        "n_invalid": 0
+      },
+      "E": {
+        "n_primary": 33,
+        "n_invalid": 0
+      },
+      "F": {
+        "n_primary": 33,
+        "n_invalid": 0
+      }
+    },
+    "allow_invalid_judge": false,
+    "invalid_cells_included": false
+  },
+  "label_provenance": {
+    "mode": "human",
+    "note": "no --drafts: recorded as plain human. The registered primary pass is an AH pass (PREREG sec.11 L1132-1172) and must be run with --drafts; the blind second-annotator subsample is plain human."
+  },
+  "descriptive": {
+    "order_drift": {
+      "status": "not_computable",
+      "reading": "PREREG L551 names an order-drift diagnostic but does not define it; most literal reading: labels (A, rater_L1) of labeled primary cells vs the order in which they were saved (rank of the last save timestamp in the labeling audit); descriptive only, no test, no p-value",
+      "reason": "--label-audit is required: the order comes from the audit save timestamps"
+    },
+    "ah_correction": {
+      "status": "not_computable",
+      "definition": "share of labeled primary cells (that have a draft) whose human A differs from the AI draft's A, plus the share whose span was edited, overall and by CQ category; descriptive only (PREREG sec.11, L1166-1167)",
+      "reason": "needs --drafts (draft file) and/or --label-audit (draft_A)"
+    }
+  },
+  "judge_simulated": false,
+  "input_provenance": {
+    "analyzer_sha256": "3278d71c70829889838aa8f61c4f5b0217b9ef3e921976a8ea5fc0c0fd122e10",
+    "cells_jsonl": {
+      "path": "harness/real_run/cells.jsonl",
+      "sha256": "bfd5b3c83981c8a6ec970b93f460bab7409daf047a2e048bfaa90b5adfd0d4af"
+    },
+    "labels_csv": {
+      "path": "annotation/second_pass_2026-10-13/v2/labels_for_analysis_v2.csv",
+      "sha256": "2794dae4461a4496e0c4f5f141678b1fbb4dae4a09b0418c3794bd5f3b9fe06d"
+    },
+    "unblind_boundary": null,
+    "environment": {
+      "python": "3.12.3",
+      "implementation": "CPython",
+      "numpy": "2.2.6",
+      "scipy": "1.17.1"
+    }
+  },
+  "output_policy": {
+    "main_json": "aggregates only; no cell-level judge/human value and no cell or CQ identifier",
+    "per_cell_detail": "written only to --out-cells"
+  }
+}

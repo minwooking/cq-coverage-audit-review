@@ -1,0 +1,3 @@
+{"domain": "prov", "bank_file": "prov/bank/bank_prov_v1.csv", "rows": 41, "sha256": "665f5e967fe6e92c8d0dd5322dfc184338ce2c013a6a1f811ae49ea0fe5a525f", "frozen_utc": "2026-10-20T09:14:56Z",
+ "tag": "access2026-study4-prov-bank-freeze", "status": "AI draft, not reviewed by an author; written from the ontology snapshot and documentation before any graph existed",
+ "snapshot_sha256": {"prov.ttl": "d7ea634dbcd31347eba38157197f69d314077ef7f88fd4f90e4f24a78bfe1097"}}

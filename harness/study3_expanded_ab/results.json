@@ -1,0 +1,178 @@
+{
+ "banner": "judge-score contrast on the expansion bank; not human-labelled",
+ "addendum": 34,
+ "seed": 20260913,
+ "B": 10000,
+ "bank_sha256": "a39bcc0fd88587de8ef2fe14304948995b8e5bb3e6e5cfb04303784ffc2a33c8",
+ "n_eligible_clusters_total": 70,
+ "n_clusters_eligible_in_A_and_B": 26,
+ "bridge": {
+  "computable": false,
+  "n_shared_questions": 0,
+  "note": "expansion and holdout banks share 0 question texts, 0 groundings, disjoint ids (PLAN 34.6)"
+ },
+ "judges": {
+  "glm": {
+   "model": "GLM-4.7-Flash",
+   "n_records": 624,
+   "n_invalid": 0,
+   "mean_of_repeats": {
+    "n_clusters": 26,
+    "mean_J_A": 1.4102564102564101,
+    "mean_J_B": 1.7692307692307696,
+    "delta": 0.358974358974359,
+    "sd_d": 1.3789628209413267,
+    "n_missing": 0,
+    "ci95": [
+     -0.15384615384615385,
+     0.8846153846153848
+    ],
+    "ci90": [
+     -0.07692307692307689,
+     0.8076923076923077
+    ],
+    "sign_test": {
+     "n_pos": 9,
+     "n_neg": 9,
+     "n_zero": 8,
+     "p": 1.0
+    },
+    "wilcoxon": {
+     "p": 0.17612276585137898,
+     "n_nonzero": 18,
+     "w_plus": 116.5,
+     "w_minus": 54.5,
+     "sign": 1
+    },
+    "decision": "unresolved",
+    "decision_with_rank_rule": "unresolved",
+    "prospective_mde": {
+     "prespecified_1.155": 0.6345986553482519,
+     "holdout_J_1.343": 0.7378926356127292,
+     "holdout_L1star_1.473": 0.809319324093485
+    },
+    "realized_sigma": 1.3789628209413267,
+    "realized_mde": 0.7576519064455396
+   },
+   "median_of_repeats_sensitivity": {
+    "n_clusters": 26,
+    "mean_J_A": 1.5,
+    "mean_J_B": 1.8076923076923077,
+    "delta": 0.3076923076923077,
+    "sd_d": 1.4904826270501985,
+    "n_missing": 0,
+    "ci95": [
+     -0.23076923076923078,
+     0.8846153846153846
+    ],
+    "ci90": [
+     -0.15384615384615385,
+     0.8076923076923077
+    ],
+    "sign_test": {
+     "n_pos": 8,
+     "n_neg": 8,
+     "n_zero": 10,
+     "p": 1.0
+    },
+    "wilcoxon": {
+     "p": 0.1889323594021559,
+     "n_nonzero": 16,
+     "w_plus": 93.0,
+     "w_minus": 43.0,
+     "sign": 1
+    },
+    "decision": "unresolved",
+    "decision_with_rank_rule": "unresolved",
+    "prospective_mde": {
+     "prespecified_1.155": 0.6345986553482519,
+     "holdout_J_1.343": 0.7378926356127292,
+     "holdout_L1star_1.473": 0.809319324093485
+    },
+    "realized_sigma": 1.4904826270501985,
+    "realized_mde": 0.8189249099099446
+   }
+  },
+  "gptoss": {
+   "model": "gpt-oss-20b",
+   "n_records": 624,
+   "n_invalid": 0,
+   "mean_of_repeats": {
+    "n_clusters": 26,
+    "mean_J_A": 2.2564102564102564,
+    "mean_J_B": 1.6923076923076923,
+    "delta": -0.5641025641025641,
+    "sd_d": 1.7301746367070214,
+    "n_missing": 0,
+    "ci95": [
+     -1.1666666666666665,
+     0.15384615384615388
+    ],
+    "ci90": [
+     -1.0641025641025643,
+     0.025641025641025685
+    ],
+    "sign_test": {
+     "n_pos": 4,
+     "n_neg": 11,
+     "n_zero": 11,
+     "p": 0.11846923828124999
+    },
+    "wilcoxon": {
+     "p": 0.187846612802275,
+     "n_nonzero": 15,
+     "w_plus": 37.0,
+     "w_minus": 83.0,
+     "sign": -1
+    },
+    "decision": "unresolved",
+    "decision_with_rank_rule": "unresolved",
+    "prospective_mde": {
+     "prespecified_1.155": 0.6345986553482519,
+     "holdout_J_1.343": 0.7378926356127292,
+     "holdout_L1star_1.473": 0.809319324093485
+    },
+    "realized_sigma": 1.7301746367070214,
+    "realized_mde": 0.9506203445644382
+   },
+   "median_of_repeats_sensitivity": {
+    "n_clusters": 26,
+    "mean_J_A": 2.230769230769231,
+    "mean_J_B": 1.5769230769230769,
+    "delta": -0.6538461538461539,
+    "sd_d": 1.9378814760930596,
+    "n_missing": 0,
+    "ci95": [
+     -1.3461538461538463,
+     0.11538461538461539
+    ],
+    "ci90": [
+     -1.2307692307692308,
+     0.0
+    ],
+    "sign_test": {
+     "n_pos": 4,
+     "n_neg": 10,
+     "n_zero": 12,
+     "p": 0.1795654296875
+    },
+    "wilcoxon": {
+     "p": 0.1104854583093373,
+     "n_nonzero": 14,
+     "w_plus": 28.5,
+     "w_minus": 76.5,
+     "sign": -1
+    },
+    "decision": "unresolved",
+    "decision_with_rank_rule": "unresolved",
+    "prospective_mde": {
+     "prespecified_1.155": 0.6345986553482519,
+     "holdout_J_1.343": 0.7378926356127292,
+     "holdout_L1star_1.473": 0.809319324093485
+    },
+    "realized_sigma": 1.9378814760930596,
+    "realized_mde": 1.0647419731194294
+   }
+  }
+ }
+}

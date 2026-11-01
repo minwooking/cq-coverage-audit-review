@@ -1,0 +1,21 @@
+{
+  "variant_id": "C",
+  "description": "Incremental weighted builder: B's cleaned triples ingested in batches with weight intensity and domain/range inference.",
+  "comparison_role": "exploratory",
+  "generation_method": "B prerequisites, then uv run chunktograph build-c ...",
+  "input_corpus": "paper/access2026/harness/brick_corpus.json",
+  "input_corpus_sha256": "68d6093f24bdc50ba179e69537eb9919fa09a55820cba7863475ab338e4b12f0",
+  "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8",
+  "endpoint_host": "<internal-host> (model server (local port))",
+  "temperature": 0.0,
+  "graph_file": "graph_C.ttl",
+  "graph_sha256": "c057252c5c5b33750984de600ea6c2b176a8319c6f71fe6663b72f8d8f902629",
+  "rendered_view_file": "rendered_view.txt",
+  "rendered_view_sha256": "e1f1ec9eb249070e4d05b7f710b069e8f6995754c967632ea89fc566143b9a46",
+  "rendered_view_lines": 4591,
+  "rendered_view_chars": 2414780,
+  "rendering_spec_sha256": "eb0399af5152ac001074f1a0c27b23652a42a2f9ceeebf95a669abf703ec0a3e",
+  "SIMULATED": true,
+  "simulation_warning": "Generated with the PREREG.md-registered extraction-loop model (Qwen/Qwen3-Next-80B-A3B-Instruct-FP8, served on the internal a shared server), replacing the earlier qwen-next-flash preparation artifact. Exploratory (not a registered confirmatory contrast); still marked SIMULATED because the judge holdout has not been run.",
+  "generated_utc": "2026-09-20T22:30:48.797189+00:00"
+}

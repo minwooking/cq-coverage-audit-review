@@ -1,0 +1,107 @@
+http://example.org/chunktograph#ACMEEnergy2019Tutorial | ACM E-Energy 2019 Tutorial Slides
+http://example.org/chunktograph#AHU | AHU
+http://example.org/chunktograph#AHUVAVSystem | AHU-VAV system
+http://example.org/chunktograph#AHU_Average_Exhaust_Air_Static_Pressure_Sensor | AHU Average Exhaust Air Static Pressure Sensor
+http://example.org/chunktograph#ASHRAE | ASHRAE
+http://example.org/chunktograph#ASHRAE223 | ASHRAE 223
+http://example.org/chunktograph#ASHRAE223P | ASHRAE 223P
+http://example.org/chunktograph#ASHRAEHaystackBrickCollaboration | ASHRAE, Haystack, Brick Collaboration
+http://example.org/chunktograph#ASHRAE_223P | ASHRAE 223P
+http://example.org/chunktograph#BrickClass | Brick Class
+http://example.org/chunktograph#BrickClassDefinitionFile | Brick Class Definition File
+http://example.org/chunktograph#BrickClassDefinitionStructure | Brick Class Definition Structure
+http://example.org/chunktograph#BrickEquipmentDefinition | Brick Equipment Definition
+http://example.org/chunktograph#BrickLocationDefinition | Brick Location Definition
+http://example.org/chunktograph#BrickParameterDefinition | Brick Parameter Definition
+http://example.org/chunktograph#BrickPlus | Brick+ :: Brick+ defines a class lattice that structures the composition of concepts.
+http://example.org/chunktograph#BrickProperty | Brick Property
+http://example.org/chunktograph#BrickQuantityDefinition | Brick Quantity Definition
+http://example.org/chunktograph#BrickRelationship | Brick Relationship
+http://example.org/chunktograph#BrickRelationshipDefinition | Brick Relationship Definition
+http://example.org/chunktograph#BrickSubstanceDefinition | Brick Substance Definition
+http://example.org/chunktograph#BugReport | Bug Report
+http://example.org/chunktograph#Class | Class < http://example.org/chunktograph#Entity :: A class is a category of entities defined by a particular shared purpose and properties.
+http://example.org/chunktograph#Collection | Collection
+http://example.org/chunktograph#Entity | Entity :: An abstraction of any physical, logical or virtual item; the actual "things" in a building.
+http://example.org/chunktograph#Haystack | Haystack < http://example.org/chunktograph#Entity :: Haystack defines entities as a set of value tags (representing key-value pairs) and marker tags (singular annotations).
+http://example.org/chunktograph#Portfolio | Portfolio < http://example.org/chunktograph#Collection
+http://example.org/chunktograph#PythonFile | Python File
+http://example.org/chunktograph#TextualDefinition | Textual Definition
+http://example.org/chunktograph#incompleteDefinition | Incomplete Definition < http://example.org/chunktograph#BugReport
+http://example.org/chunktograph#incorrectDefinition | Incorrect Definition < http://example.org/chunktograph#BugReport
+http://example.org/chunktograph#missingDefinition | Missing Definition < http://example.org/chunktograph#BugReport
+OP http://example.org/chunktograph#addInverseEdges
+OP http://example.org/chunktograph#addVBISTags
+OP http://example.org/chunktograph#addresses
+OP http://example.org/chunktograph#addsInverseRelationships
+OP http://example.org/chunktograph#addsSuperclasses
+OP http://example.org/chunktograph#addsTags
+OP http://example.org/chunktograph#adheresToCompleteness
+OP http://example.org/chunktograph#adheresToConsistency
+OP http://example.org/chunktograph#containsEntity dom:http://example.org/chunktograph#Entity rng:http://example.org/chunktograph#Entity
+OP http://example.org/chunktograph#enablesInferenceFrom dom:http://example.org/chunktograph#BrickPlus
+OP http://example.org/chunktograph#hasAlignment dom:http://example.org/chunktograph#BrickClass
+OP http://example.org/chunktograph#hasAssociatedTag dom:http://example.org/chunktograph#BrickClass
+OP http://example.org/chunktograph#hasBrickClass rng:http://example.org/chunktograph#BrickClass
+OP http://example.org/chunktograph#hasClassDefinition dom:http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile rng:http://example.org/chunktograph#BrickClass
+OP http://example.org/chunktograph#hasClassDefinitionInFile dom:http://example.org/chunktograph#BrickClass rng:http://example.org/chunktograph#PythonFile
+OP http://example.org/chunktograph#hasClassHierarchyFile dom:http://example.org/chunktograph#BrickClass rng:http://example.org/chunktograph#PythonFile
+OP http://example.org/chunktograph#hasDefinition dom:http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#Class rng:http://example.org/chunktograph#Entity,http://example.org/chunktograph#TextualDefinition
+OP http://example.org/chunktograph#hasFile dom:http://example.org/chunktograph#BrickClass rng:http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile
+OP http://example.org/chunktograph#hasInverseOf dom:http://example.org/chunktograph#BrickProperty rng:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasNamespace dom:http://example.org/chunktograph#BrickClass
+OP http://example.org/chunktograph#hasOWLPropertyClass dom:http://example.org/chunktograph#BrickProperty rng:owl:Class
+OP http://example.org/chunktograph#hasPropertyDefinition dom:http://example.org/chunktograph#BrickRelationship,http://example.org/chunktograph#PythonFile rng:http://example.org/chunktograph#BrickProperty,http://example.org/chunktograph#BrickRelationshipDefinition
+OP http://example.org/chunktograph#hasPropertyDefinitionInFile dom:http://example.org/chunktograph#BrickProperty rng:http://example.org/chunktograph#PythonFile
+OP http://example.org/chunktograph#hasRDFSDomain dom:http://example.org/chunktograph#BrickProperty rng:http://example.org/chunktograph#BrickClass
+OP http://example.org/chunktograph#hasRDFSRange dom:http://example.org/chunktograph#BrickProperty rng:http://example.org/chunktograph#BrickClass
+OP http://example.org/chunktograph#hasSubclasses dom:http://example.org/chunktograph#BrickClass rng:http://example.org/chunktograph#BrickClass
+OP http://example.org/chunktograph#hasSubstance dom:http://example.org/chunktograph#BrickClass rng:http://example.org/chunktograph#BrickSubstanceDefinition
+OP http://example.org/chunktograph#hasSubstances dom:http://example.org/chunktograph#BrickClass
+OP http://example.org/chunktograph#includes dom:http://example.org/chunktograph#Collection
+DP http://example.org/chunktograph#BACnetURI rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#MultipleGraphsSupport rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#RDFModelStorage rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#ReasoningInference rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#SHACLSupport rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#SPARQLSupport rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#ScalingAndPerformance rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasClassDefinitionStructure dom:http://example.org/chunktograph#BrickClass rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasClassName dom:http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#Class rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasPropertyName dom:http://example.org/chunktograph#BrickProperty rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasSKOSDefinition dom:http://example.org/chunktograph#BrickClass rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasSKOSDefinitionForProperty dom:http://example.org/chunktograph#BrickProperty rng:http://www.w3.org/2001/XMLSchema#string
+IND http://example.org/chunktograph#ACMEEnergy2019TutorialInstance | ACM E-Energy 2019 Tutorial Slides a http://example.org/chunktograph#ACMEEnergy2019Tutorial
+IND http://example.org/chunktograph#AHU | AHU a http://example.org/chunktograph#AirHandlingUnit,owl:Class
+IND http://example.org/chunktograph#AIF | AI F
+IND http://example.org/chunktograph#AProgrammingModelForPortableFaultDetectionAndDiagnosis | A programming model for portable fault detection and diagnosis {http://example.org/chunktograph#hasPublicationYear=2023; http://example.org/chunktograph#hasURL=https://doi.org/10.1145/3587225.3587245}
+IND http://example.org/chunktograph#ASHRAE | ASHRAE a owl:Class
+IND http://example.org/chunktograph#ASHRAE223P | ASHRAE 223P a http://example.org/chunktograph#Standard,owl:Class
+IND http://example.org/chunktograph#ASHRAEHaystackBrickCollaborationInstance | ASHRAE, Haystack, Brick Collaboration {http://example.org/chunktograph#hasSourceText=ASHRAE, Haystack, Brick Collaboration}
+IND http://example.org/chunktograph#Abound | Abound a http://example.org/chunktograph#Platform
+IND http://example.org/chunktograph#AcademicIndividualResearcherMember | Academic Individual Researcher a http://example.org/chunktograph#MembershipLevel {http://example.org/chunktograph#hasMembershipFee=0; http://example.org/chunktograph#hasRightToChairCommittee=true; http://example.org/chunktograph#hasRightToServeOnCommittee=true; http://example.org/chunktograph#hasRightToVoteForSteering=false; http://example.org/chunktograph#hasRightToVoteOnCommittee=true}
+IND http://example.org/chunktograph#AccessControl | Access Control a http://example.org/chunktograph#BuildingManagementSystem,http://example.org/chunktograph#BuildingSystem
+IND http://example.org/chunktograph#AddedClassesFile | added_classes.txt {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#BrickClass | Brick Class a owl:Class {http://example.org/chunktograph#hasParent=http://example.org/chunktograph#BrickClass; http://example.org/chunktograph#hasSubstance=http://example.org/chunktograph#BrickSubstanceDefinition; owl:equivalentClass=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#BrickClassDefinitionStructure | Brick Class Definition Structure a owl:Class
+IND http://example.org/chunktograph#BrickEquipmentDefinition | Brick Equipment Definition a owl:Class
+IND http://example.org/chunktograph#BrickLocationDefinition | Brick Location Definition a owl:Class
+IND http://example.org/chunktograph#BrickParameterDefinition | Brick Parameter Definition a owl:Class
+IND http://example.org/chunktograph#BrickPlus | Brick+ a http://example.org/chunktograph#BrickPlusOntology,http://example.org/chunktograph#Class,owl:Class,owl:Ontology :: Brick+ defines a class lattice that structures the composition of concepts. {http://example.org/chunktograph#hasDefinition=http://example.org/chunktograph#BrickPlusDefinition; http://example.org/chunktograph#hasDesignPrinciple=http://example.org/chunktograph#FormalCompositionOfProperties}
+IND http://example.org/chunktograph#BrickQuantityDefinition | Brick Quantity Definition a owl:Class
+IND http://example.org/chunktograph#BrickRelationship | Brick Relationship a owl:Class {http://example.org/chunktograph#hasDomain=http://example.org/chunktograph#BrickClass; http://example.org/chunktograph#hasInverse=http://example.org/chunktograph#BrickRelationship; http://example.org/chunktograph#hasRange=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#BrickRelationshipDefinition | Brick Relationship Definition a owl:Class
+IND http://example.org/chunktograph#BrickSubstanceDefinition | Brick Substance Definition a owl:Class
+IND http://example.org/chunktograph#BugReport | Bug Report a owl:Class
+IND http://example.org/chunktograph#Haystack | Haystack a http://example.org/chunktograph#BrickPlusOntology,http://example.org/chunktograph#Class,owl:Class :: Haystack defines entities as a set of value tags (representing key-value pairs) and marker tags (singular annotations). {http://example.org/chunktograph#hasDefinition=http://example.org/chunktograph#HaystackDefinition; rdfs:subClassOf=http://example.org/chunktograph#Entity}
+IND http://example.org/chunktograph#TextualDefinition | Textual Definition a owl:Class
+IND http://example.org/chunktograph#command_py | bricksrc/command.py a http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile :: File for subclasses of Brick Command class
+IND http://example.org/chunktograph#definitions_csv | bricksrc/definitions.csv a http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile :: Alternative location for text descriptions {http://example.org/chunktograph#hasClassDefinition=http://example.org/chunktograph#BrickClass; http://example.org/chunktograph#hasDefinition=http://example.org/chunktograph#TextualDefinition}
+IND http://example.org/chunktograph#equipment_py | bricksrc/equipment.py a http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile :: File for Brick Equipment definitions {http://example.org/chunktograph#hasClassDefinition=http://example.org/chunktograph#BrickEquipmentDefinition}
+IND http://example.org/chunktograph#location_py | bricksrc/location.py a http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile :: File for Brick Location definitions {http://example.org/chunktograph#hasClassDefinition=http://example.org/chunktograph#BrickLocationDefinition}
+IND http://example.org/chunktograph#parameter_py | bricksrc/parameter.py a http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile :: File for Brick Parameter definitions {http://example.org/chunktograph#hasClassDefinition=http://example.org/chunktograph#BrickParameterDefinition}
+IND http://example.org/chunktograph#quantities_py | bricksrc/quantities.py a http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile :: File for Brick Quantity definitions {http://example.org/chunktograph#hasClassDefinition=http://example.org/chunktograph#BrickQuantityDefinition}
+IND http://example.org/chunktograph#sensor_py | bricksrc/sensor.py a http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile :: File for subclasses of Brick Sensor class
+IND http://example.org/chunktograph#setpoint_py | bricksrc/setpoint.py a http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile :: File for subclasses of Brick Setpoint class
+IND http://example.org/chunktograph#status_py | bricksrc/status.py a http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile :: File for subclasses of Brick Status class
+IND http://example.org/chunktograph#substances_py | bricksrc/substances.py a http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile :: File for Brick Substance definitions {http://example.org/chunktograph#hasClassDefinition=http://example.org/chunktograph#BrickSubstanceDefinition}

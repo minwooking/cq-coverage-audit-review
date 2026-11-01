@@ -1,0 +1,225 @@
+{
+ "banner": "LLM-labeled; not human-validated beyond Stage 1.",
+ "n_cells": 188,
+ "rule": ">= 23 of 25 S labels agree (analyze.cell_labels)",
+ "models": {
+  "gptoss": {
+   "n_consistent": 74,
+   "n_rest": 114,
+   "n_clusters_consistent": 21,
+   "share_consistent_labeled_S1": 0.27,
+   "variant": {
+    "A": [
+     7,
+     16
+    ],
+    "B": [
+     11,
+     22
+    ],
+    "C": [
+     15,
+     18
+    ],
+    "D": [
+     15,
+     18
+    ],
+    "E": [
+     12,
+     21
+    ],
+    "F": [
+     14,
+     19
+    ]
+   },
+   "category": {
+    "concept_definition": [
+     4,
+     32
+    ],
+    "instances": [
+     20,
+     16
+    ],
+    "methodology": [
+     24,
+     8
+    ],
+    "relations": [
+     8,
+     19
+    ],
+    "slots_facets": [
+     7,
+     14
+    ],
+    "taxonomy": [
+     11,
+     25
+    ]
+   },
+   "features": {
+    "human S=1, AH": {
+     "consistent": 0.473,
+     "rest": 0.904,
+     "diff_ci": [
+      -0.431,
+      -0.648,
+      -0.181
+     ]
+    },
+    "human S=1, R2": {
+     "consistent": 0.514,
+     "rest": 0.772,
+     "diff_ci": [
+      -0.258,
+      -0.494,
+      0.009
+     ]
+    },
+    "humans agree (S_AH = S_R2)": {
+     "consistent": 0.851,
+     "rest": 0.816,
+     "diff_ci": [
+      0.036,
+      -0.161,
+      0.229
+     ]
+    },
+    "registered judge J>=2": {
+     "consistent": 0.486,
+     "rest": 0.842,
+     "diff_ci": [
+      -0.356,
+      -0.572,
+      -0.117
+     ]
+    },
+    "view holds the answer terms": {
+     "consistent": 0.162,
+     "rest": 0.395,
+     "diff_ci": [
+      -0.233,
+      -0.43,
+      -0.033
+     ]
+    }
+   },
+   "J_mean": {
+    "consistent": 1.31,
+    "rest": 2.39
+   }
+  },
+  "glm": {
+   "n_consistent": 11,
+   "n_rest": 177,
+   "n_clusters_consistent": 6,
+   "share_consistent_labeled_S1": 0.091,
+   "variant": {
+    "A": [
+     2,
+     21
+    ],
+    "B": [
+     1,
+     32
+    ],
+    "C": [
+     2,
+     31
+    ],
+    "D": [
+     2,
+     31
+    ],
+    "E": [
+     1,
+     32
+    ],
+    "F": [
+     3,
+     30
+    ]
+   },
+   "category": {
+    "concept_definition": [
+     2,
+     34
+    ],
+    "instances": [
+     0,
+     36
+    ],
+    "methodology": [
+     1,
+     31
+    ],
+    "relations": [
+     0,
+     27
+    ],
+    "slots_facets": [
+     0,
+     21
+    ],
+    "taxonomy": [
+     8,
+     28
+    ]
+   },
+   "features": {
+    "human S=1, AH": {
+     "consistent": 0.545,
+     "rest": 0.746,
+     "diff_ci": [
+      -0.2,
+      -0.611,
+      0.284
+     ]
+    },
+    "human S=1, R2": {
+     "consistent": 0.545,
+     "rest": 0.678,
+     "diff_ci": [
+      -0.133,
+      -0.544,
+      0.361
+     ]
+    },
+    "humans agree (S_AH = S_R2)": {
+     "consistent": 1.0,
+     "rest": 0.819,
+     "diff_ci": [
+      0.181,
+      0.068,
+      0.307
+     ]
+    },
+    "registered judge J>=2": {
+     "consistent": 0.545,
+     "rest": 0.712,
+     "diff_ci": [
+      -0.166,
+      -0.579,
+      0.314
+     ]
+    },
+    "view holds the answer terms": {
+     "consistent": 0.273,
+     "rest": 0.305,
+     "diff_ci": [
+      -0.032,
+      -0.369,
+      0.497
+     ]
+    }
+   },
+   "J_mean": {
+    "consistent": 1.55,
+    "rest": 1.99
+   }
+  }
+ }
+}

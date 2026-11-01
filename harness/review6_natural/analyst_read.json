@@ -1,0 +1,221 @@
+{
+ "note": "Analyst read, NOT blind: the reader had the bank's expected answers. Ratings: full = corpus states the core of the answer (paraphrase allowed); partial = relevant concept/relation present, key part missing; none = absent. Reader also grepped the whole corpus for each question's anchors and synonyms because the lexical top-3 ranking in GROUNDING_PASSAGES.md was weak for frequent terms (a stated addition to PLAN 27.4).",
+ "ratings": [
+  {
+   "cq_id": "CQB01",
+   "rating": "full",
+   "span": "Instances of the Brick Point class represent sources or sinks of telemetry. There are several major classes of telemetry in Brick: || Sensor: represents the value of a device or instrument designed to detect and measure a variable",
+   "note": "docs/brick/timeseries.md; near-verbatim ASHRAE definition"
+  },
+  {
+   "cq_id": "CQB02",
+   "rating": "full",
+   "span": "Meters are equipment (they are subclasses of the Brick Equipment class) that measure the consumption or production of energy, steam, gas or other \"substances\" in the building.",
+   "note": ""
+  },
+  {
+   "cq_id": "CQB03",
+   "rating": "none",
+   "span": "",
+   "note": "no definition of rec:Asset; only incidental mentions of 'asset'"
+  },
+  {
+   "cq_id": "CQB04",
+   "rating": "none",
+   "span": "",
+   "note": "zone used in examples only; no definition"
+  },
+  {
+   "cq_id": "CQB05",
+   "rating": "none",
+   "span": "",
+   "note": "'campus' occurs only as 'UC Davis campus'"
+  },
+  {
+   "cq_id": "CQB06",
+   "rating": "none",
+   "span": "",
+   "note": "term georeference absent"
+  },
+  {
+   "cq_id": "CQB07",
+   "rating": "partial",
+   "span": "Instances of the Brick Point class represent sources or sinks of telemetry. There are several major classes of telemetry in Brick: || Sensor: represents the value of a device or instrument designed to detect and measure a variable",
+   "note": "Sensor is listed among the major classes of telemetry under Point; subclass relation not stated in those words"
+  },
+  {
+   "cq_id": "CQB08",
+   "rating": "full",
+   "span": "Instances of the Brick Point class represent sources or sinks of telemetry. There are several major classes of telemetry in Brick: || Sensor: represents the value of a device or instrument designed to detect and measure a variable || Setpoint: represents the value at which the desired property is set || Alarm: represents signals that alert an operator to an off-normal condition which requires some form of corrective action || Command: represents settings/actions that directly determines the behavior of equipment and/or affects relevant operational points. || Parameter: represents configuration settings used to guide the operation of equipment and control systems || Status: represents the current operating mode, state, position, or condition of an item.",
+   "note": "all six listed"
+  },
+  {
+   "cq_id": "CQB09",
+   "rating": "partial",
+   "span": "Meters are equipment (they are subclasses of the Brick Equipment class)",
+   "note": "one subclass (Meter) named; no enumeration of the direct subclasses"
+  },
+  {
+   "cq_id": "CQB10",
+   "rating": "partial",
+   "span": "locations can be composed of other locations (e.g. a building is made up of floors and spaces)",
+   "note": "implies a building is a location; subclass relation / directness not stated"
+  },
+  {
+   "cq_id": "CQB11",
+   "rating": "partial",
+   "span": "Sensor: represents the value of a device or instrument designed to detect and measure a variable || Alarm: represents signals that alert an operator to an off-normal condition which requires some form of corrective action",
+   "note": "Sensor and Alarm named as sibling major classes; disjointness stated only for other pairs (Setpoint/Parameter, Point/Equipment in the Brick+ paper)"
+  },
+  {
+   "cq_id": "CQB12",
+   "rating": "partial",
+   "span": "All Brick Location classes have been deprecated as of 1.4 and replaced with equivalents in RealEstateCore. || locations can be composed of other locations (e.g. a building is made up of floors and spaces)",
+   "note": "no enumeration of Location subclasses"
+  },
+  {
+   "cq_id": "CQB13",
+   "rating": "full",
+   "span": "hasPoint describes telemetry associated with the equipment: || hasPoint | isPointOf",
+   "note": ""
+  },
+  {
+   "cq_id": "CQB14",
+   "rating": "full",
+   "span": "hasLocation describes where the equipment is physically located || hasLocation | isLocationOf",
+   "note": ""
+  },
+  {
+   "cq_id": "CQB15",
+   "rating": "full",
+   "span": "brick:feeds: the subject is arranged upstream of object, implying that some media flows from subject into object. || feeds | isFedBy",
+   "note": ""
+  },
+  {
+   "cq_id": "CQB16",
+   "rating": "full",
+   "span": "hasPart | isPartOf",
+   "note": ""
+  },
+  {
+   "cq_id": "CQB17",
+   "rating": "full",
+   "span": "brick:hasLocation | rec:locatedIn",
+   "note": "Brick-to-REC mapping table; counterpart of hasLocation"
+  },
+  {
+   "cq_id": "CQB18",
+   "rating": "full",
+   "span": "Tags are related to a Brick class via the brick:hasAssociatedTag relationship.",
+   "note": ""
+  },
+  {
+   "cq_id": "CQB19",
+   "rating": "full",
+   "span": "Units are associated with Brick Points with the brick:hasUnit relationship:",
+   "note": ""
+  },
+  {
+   "cq_id": "CQB20",
+   "rating": "full",
+   "span": "ability to model the current value of Points, using brick:lastKnownValue",
+   "note": "release note, v1.3"
+  },
+  {
+   "cq_id": "CQB21",
+   "rating": "partial",
+   "span": "The initial release of entity properties include floor area (net and gross), electrical metering properties, and aggregations.",
+   "note": "concept present, property name (grossArea) absent"
+  },
+  {
+   "cq_id": "CQB22",
+   "rating": "none",
+   "span": "",
+   "note": "no mention of building primary function"
+  },
+  {
+   "cq_id": "CQB23",
+   "rating": "none",
+   "span": "",
+   "note": "no mention of year built"
+  },
+  {
+   "cq_id": "CQB24",
+   "rating": "partial",
+   "span": "adding useful semantic annotations to all Brick Point classes with the brick:hasSubstance and brick:hasQuantity properties",
+   "note": "property named, at class level; quantity kinds not described"
+  },
+  {
+   "cq_id": "CQB25",
+   "rating": "none",
+   "span": "",
+   "note": "rec:BuildingElement definition absent"
+  },
+  {
+   "cq_id": "CQB26",
+   "rating": "none",
+   "span": "",
+   "note": "rec:Event definition absent"
+  },
+  {
+   "cq_id": "CQB27",
+   "rating": "none",
+   "span": "",
+   "note": "rec:PointEvent absent"
+  },
+  {
+   "cq_id": "CQB28",
+   "rating": "none",
+   "span": "",
+   "note": "rec:Organization definition absent (consortium/organization mentions are unrelated)"
+  },
+  {
+   "cq_id": "CQB29",
+   "rating": "none",
+   "span": "",
+   "note": "rec:Space containment example absent"
+  },
+  {
+   "cq_id": "CQB31",
+   "rating": "none",
+   "span": "",
+   "note": "rec:ArchitectureArea absent"
+  },
+  {
+   "cq_id": "CQB30",
+   "rating": "partial",
+   "span": "Portfolio: a group of brick:Site",
+   "note": "Brick Portfolio collection; the rec:Portfolio definition's member list absent"
+  },
+  {
+   "cq_id": "CQB32",
+   "rating": "full",
+   "span": "The brick:isReplacedBy property indicates the REC class that should be used in place of the deprecated Brick class.",
+   "note": "deprecation handled via isReplacedBy"
+  },
+  {
+   "cq_id": "CQB33",
+   "rating": "full",
+   "span": "Submeter hierarchies are defined through the brick:hasSubMeter and brick:isSubMeterOf relationships. || Brick supports modeling \"virtual\" meters using the brick:isVirtualMeter Entity Property.",
+   "note": ""
+  },
+  {
+   "cq_id": "CQB34",
+   "rating": "full",
+   "span": "Recall that a rec:Collection is a named group of entities. || Custom collections should now be typed as rec:Collection and use rec:includes to express membership",
+   "note": "gist matches; 'administrative' wording absent"
+  },
+  {
+   "cq_id": "CQB35",
+   "rating": "partial",
+   "span": "adding useful semantic annotations to all Brick Point classes with the brick:hasSubstance and brick:hasQuantity properties",
+   "note": "same sentence as CQB24; QUDT alignment of quantities not stated"
+  },
+  {
+   "cq_id": "CQB36",
+   "rating": "full",
+   "span": "The generic relationship ref:hasExternalReference can be used to find these other references. || ref:hasExternalReference is a new relationship that relates Brick entities to their representations in other digital forms",
+   "note": "hasQUDTReference half of the expected answer absent"
+  }
+ ]
+}

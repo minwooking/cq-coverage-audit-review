@@ -1,0 +1,83 @@
+{
+  "schema": "access2026-variants/1",
+  "generated_utc": "2026-09-20T22:34:01.324556+00:00",
+  "input_corpus": "harness/brick_corpus.json",
+  "rendering_spec_sha256": "eb0399af5152ac001074f1a0c27b23652a42a2f9ceeebf95a669abf703ec0a3e",
+  "SIMULATED": true,
+  "simulation_warning": "A-F were all regenerated 2026-09-20/21 with the PREREG.md-registered extraction-loop model (Qwen/Qwen3-Next-80B-A3B-Instruct-FP8, served on the internal a shared server), replacing the earlier local qwen-next-flash preparation artifacts (see VARIANT_A_BLOCKED.md for A's original stub failure). A and B are now a matched-model pair for the confirmatory A -> B contrast. All six variants remain marked SIMULATED because the confirmatory judge holdout (per PREREG.md) has not been run yet -- only the eligibility preflight has been validated against these artifacts.",
+  "known_defect": "RESOLVED 2026-09-20/21: variant A was stub-only (65 triples) on the local qwen-next-flash endpoint (see VARIANT_A_BLOCKED.md); B-F were also generated with qwen-next-flash. All six variants have now been regenerated with the registered Qwen/Qwen3-Next-80B-A3B-Instruct-FP8 model on <internal-host>. A and B are now a matched-model pair for the confirmatory A -> B contrast; C-F are exploratory and also on the registered model. Eligibility preflight (28/216 primary cells ineligible) is unchanged from the A-only-regenerated state -- see progress.log / final report for detail; this appears to be a sparse corpus-grounding gap (CQB15/22/23 fail across all six variants) rather than a model-quality regression.",
+  "variants": [
+    {
+      "id": "A",
+      "rendered_view_path": "A/rendered_view.txt",
+      "graph_path": "A/graph_A.ttl",
+      "graph_sha256": "1a5cc075065ac1f493e7731ac20e638481754c1a79f586b6e82a25320cb1bc32",
+      "rendered_view_sha256": "f6cca070efee8d933b41ba96d2d2b9c666af5bd804926c22ae0834b099830b98",
+      "rendered_view_lines": 1913,
+      "description": "Naive direct-LLM baseline: each atomic chunk is rendered to Turtle section-by-section, without triple extraction or typing.",
+      "comparison_role": "confirmatory A -> B source endpoint",
+      "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8",
+      "SIMULATED": true
+    },
+    {
+      "id": "B",
+      "rendered_view_path": "B/rendered_view.txt",
+      "graph_path": "B/graph_B.ttl",
+      "graph_sha256": "20d015a83b1158fdf1bc598b75127f63eed088f0a10bc54e91d88d411b4fe490",
+      "rendered_view_sha256": "d0b9543521340c2719381cc7d1312b704322c0e33d452166212840854cbc165f",
+      "rendered_view_lines": 4623,
+      "description": "Full structured pipeline: LLM triple extraction, spaCy refinement, SKOS hierarchy, base-IRI unification, and LLM typing.",
+      "comparison_role": "confirmatory A -> B target; B -> B-prime baseline",
+      "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8",
+      "SIMULATED": true
+    },
+    {
+      "id": "C",
+      "rendered_view_path": "C/rendered_view.txt",
+      "graph_path": "C/graph_C.ttl",
+      "graph_sha256": "c057252c5c5b33750984de600ea6c2b176a8319c6f71fe6663b72f8d8f902629",
+      "rendered_view_sha256": "e1f1ec9eb249070e4d05b7f710b069e8f6995754c967632ea89fc566143b9a46",
+      "rendered_view_lines": 4591,
+      "description": "Incremental weighted builder: B's cleaned triples ingested in batches with weight intensity and domain/range inference.",
+      "comparison_role": "exploratory",
+      "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8",
+      "SIMULATED": true
+    },
+    {
+      "id": "D",
+      "rendered_view_path": "D/rendered_view.txt",
+      "graph_path": "D/graph_D.ttl",
+      "graph_sha256": "268a748b8c15d1bc96ec16b503bcada62e49d8143b57ff617da4737cce3e4585",
+      "rendered_view_sha256": "ac689ff4db929896e0efa33f3983852cb7cd1ca8941731dabd531772dc09c22e",
+      "rendered_view_lines": 4588,
+      "description": "Upstream remediation added to C: pronoun and ungrounded-triple removal, deduplication, and label normalization before the incremental build.",
+      "comparison_role": "exploratory",
+      "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8",
+      "SIMULATED": true
+    },
+    {
+      "id": "E",
+      "rendered_view_path": "E/rendered_view.txt",
+      "graph_path": "E/graph_E.ttl",
+      "graph_sha256": "6283eb356de2a3f9eec3b02470c435c864b775aaaa23ec4575fc3da0ea54c8c7",
+      "rendered_view_sha256": "cb451ed3cc64f134365c3d01d0e9ae91771246d262b0250edf01718a07a95f91",
+      "rendered_view_lines": 4581,
+      "description": "Standard-first variant: D's triples aligned to standard properties, with a PROV-O provenance layer.",
+      "comparison_role": "exploratory",
+      "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8",
+      "SIMULATED": true
+    },
+    {
+      "id": "F",
+      "rendered_view_path": "F/rendered_view.txt",
+      "graph_path": "F/graph_F.ttl",
+      "graph_sha256": "8fa73d3782bee329078808a7a7e9e10f37989eecdef63f778215b626d91bbcb1",
+      "rendered_view_sha256": "cb451ed3cc64f134365c3d01d0e9ae91771246d262b0250edf01718a07a95f91",
+      "rendered_view_lines": 4581,
+      "description": "E plus a SHACL validation pass and HTML graph export; the scored graph construction is E-equivalent by design.",
+      "comparison_role": "exploratory; registered paper notes E/F graph byte identity in the Ontology-101 family",
+      "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8",
+      "SIMULATED": true
+    }
+  ]
+}

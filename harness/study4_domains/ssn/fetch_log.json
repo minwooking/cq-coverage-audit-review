@@ -1,0 +1,34 @@
+{
+ "domain": "ssn",
+ "retrieved_utc": "2026-10-20T09:06:33+00:00",
+ "files": [
+  {
+   "kind": "doc",
+   "name": "ssn-rec",
+   "url": "https://www.w3.org/TR/vocab-ssn/",
+   "file": "ssn-rec.html",
+   "bytes": 673275,
+   "sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+   "license_statement_on_page": "class=\"copyright\"> Copyright \u00a9 2017 OGC & W3C \u00ae ( MIT , ERCIM , Keio , Beihang ), W3C liability , trademark and document use rules apply. Abstract The Semantic Sensor Network (SSN) ontology is an ontology for describing sensors and their observations, the invo"
+  },
+  {
+   "kind": "ontology",
+   "name": "sosa.ttl",
+   "url": "https://www.w3.org/ns/sosa/",
+   "file": "sosa.ttl",
+   "bytes": 27326,
+   "sha256": "c70b0d1c843c0047e4c98e0a89392e46a05752ff6365bda7f7f55303905a0392"
+  },
+  {
+   "kind": "ontology",
+   "name": "ssn.ttl",
+   "url": "https://www.w3.org/ns/ssn/",
+   "file": "ssn.ttl",
+   "bytes": 22714,
+   "sha256": "184d86189191146e314cc52b1bceb96fca11e70aacbc160d71588102a5153eb9"
+  }
+ ],
+ "license_docs": "W3C/OGC document use license (copying with notice; no derivative works)",
+ "license_ontology": "W3C Software and Document License 2015 + OGC Software license (dcterms:license in the files)",
+ "redistribute": false
+}

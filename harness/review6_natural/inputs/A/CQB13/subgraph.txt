@@ -1,0 +1,119 @@
+http://example.org/chunktograph#ACMEEnergy2019Tutorial | ACM E-Energy 2019 Tutorial Slides
+http://example.org/chunktograph#AHU | AHU < http://example.org/chunktograph#Connectable,http://example.org/chunktograph#Equipment
+http://example.org/chunktograph#AHUVAVSystem | AHU-VAV system < owl:Thing
+http://example.org/chunktograph#AHU_Average_Exhaust_Air_Static_Pressure_Sensor | AHU Average Exhaust Air Static Pressure Sensor
+http://example.org/chunktograph#ActuationPoint | Actuation Point < http://example.org/chunktograph#VirtualEntity
+http://example.org/chunktograph#AirHandlingUnit | Air Handling Unit < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#Alarm | Alarm < http://example.org/chunktograph#Point
+http://example.org/chunktograph#BMSPointLabels | BMS point labels
+http://example.org/chunktograph#BidirectionalConnectionPoint | BidirectionalConnectionPoint < http://example.org/chunktograph#ConnectionPoint
+http://example.org/chunktograph#Boiler | Boiler < http://example.org/chunktograph#Connectable,http://example.org/chunktograph#Equipment
+http://example.org/chunktograph#BrickClass | Brick Class < http://example.org/chunktograph#BrickDocumentation,owl:Thing
+http://example.org/chunktograph#BrickCommandClass | Brick Command Class < http://example.org/chunktograph#BrickDocumentation,http://example.org/chunktograph#BrickPointClass
+http://example.org/chunktograph#BrickDocumentation | Brick Documentation
+http://example.org/chunktograph#BrickEquipmentClass | Brick Equipment Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickEquipmentDefinition | Brick Equipment Definition
+http://example.org/chunktograph#BrickPoint | Brick Point
+http://example.org/chunktograph#BrickPointClass | Brick Point Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickSensorClass | Brick Sensor Class < http://example.org/chunktograph#BrickPointClass
+http://example.org/chunktograph#BrickSetpointClass | Brick Setpoint Class < http://example.org/chunktograph#BrickDocumentation,http://example.org/chunktograph#BrickPointClass
+http://example.org/chunktograph#BrickStatusClass | Brick Status Class < http://example.org/chunktograph#BrickDocumentation,http://example.org/chunktograph#BrickPointClass
+http://example.org/chunktograph#Brickschema | Brickschema
+http://example.org/chunktograph#Coil | Coil < http://example.org/chunktograph#Connectable,http://example.org/chunktograph#Equipment
+http://example.org/chunktograph#Command | Command < http://example.org/chunktograph#Point
+http://example.org/chunktograph#ComputedPoint | Computed Point < http://example.org/chunktograph#VirtualEntity
+http://example.org/chunktograph#Connectable | Connectable
+http://example.org/chunktograph#ConnectionPoint | ConnectionPoint
+http://example.org/chunktograph#Damper | Damper < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#DamperPositionCommand | Damper Position Command < http://example.org/chunktograph#ActuationPoint
+http://example.org/chunktograph#DescPoint | Desc. point
+http://example.org/chunktograph#Equipment | Equipment < http://example.org/chunktograph#Connectable :: A class representing equipment in the Brick ontology.
+http://example.org/chunktograph#EquipmentFlavoredClass | Equipment-flavored Class :: A class in Brick that incorporated the name of equipment, e.g., AHU_Zone_Air_Temperature_Sensor
+http://example.org/chunktograph#HeatingCoil | Heating Coil < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#ICT_Equipment | ICT_Equipment
+http://example.org/chunktograph#IOPoint | I/O point
+http://example.org/chunktograph#IceMachine | IceMachine < http://example.org/chunktograph#Equipment :: An equipment class that produces ice.
+http://example.org/chunktograph#IctEquipment | ICT Equipment < http://example.org/chunktograph#PhysicalEntity
+http://example.org/chunktograph#InletConnectionPoint | InletConnectionPoint < http://example.org/chunktograph#ConnectionPoint
+http://example.org/chunktograph#LightingSystem | Lighting System < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#Luminaire | Luminaire < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#MechanicalEquipment | Mechanical Equipment < http://example.org/chunktograph#PhysicalEntity
+http://example.org/chunktograph#OutletConnectionPoint | OutletConnectionPoint < http://example.org/chunktograph#ConnectionPoint
+http://example.org/chunktograph#Parameter | Parameter < http://example.org/chunktograph#Point
+http://example.org/chunktograph#PhysicalAsset | physical asset
+http://example.org/chunktograph#PhysicalEntity | Physical Entity :: Anything that has a physical presence in the world.
+http://example.org/chunktograph#Point | Point < http://example.org/chunktograph#PhysicalAsset :: Root class for point entities in Brick ontology.
+http://example.org/chunktograph#PointClass | Point Class :: A class in Brick, the majority of which were Point classes
+http://example.org/chunktograph#Point_Collection | Point Collection < brick:Point_Collection
+http://example.org/chunktograph#SensingPoint | Sensing Point < http://example.org/chunktograph#VirtualEntity
+http://example.org/chunktograph#Sensor | Sensor < http://example.org/chunktograph#Point,owl:Thing
+http://example.org/chunktograph#Setpoint | Setpoint < http://example.org/chunktograph#Point
+http://example.org/chunktograph#SnowConeMaker | SnowConeMaker < http://example.org/chunktograph#Equipment :: An equipment class that receives ice from an IceMachine and makes snow cones.
+http://example.org/chunktograph#Status | Status < http://example.org/chunktograph#Point
+http://example.org/chunktograph#SupplyFan | Supply Fan < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#TemperatureSensor | Temperature Sensor < http://example.org/chunktograph#SensingPoint,http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#Temperature_Sensor | Temperature Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#VAV | VAV < http://example.org/chunktograph#Connectable,http://example.org/chunktograph#Equipment
+http://example.org/chunktograph#VariableAirVolumeBox | Variable Air Volume Box < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#VirtualEntity | Virtual Entity :: Anything whose representation is based in software.
+http://example.org/chunktograph#pointLabelSharing | point-label-sharing < owl:Thing
+OP http://example.org/chunktograph#cnx dom:http://example.org/chunktograph#ConnectionPoint rng:http://example.org/chunktograph#ConnectionPoint
+OP http://example.org/chunktograph#connectsFrom rng:http://example.org/chunktograph#ConnectionPoint
+OP http://example.org/chunktograph#connectsTo rng:http://example.org/chunktograph#ConnectionPoint
+OP http://example.org/chunktograph#containsSourceFile rng:http://example.org/chunktograph#EquipmentPy,http://example.org/chunktograph#PointPy
+OP http://example.org/chunktograph#controls dom:owl:Thing rng:http://example.org/chunktograph#Equipment,http://example.org/chunktograph#PhysicalEntity,owl:Thing
+OP http://example.org/chunktograph#feeds dom:http://example.org/chunktograph#Equipment,http://example.org/chunktograph#VariableAirVolumeBox,owl:Thing rng:http://example.org/chunktograph#Equipment,owl:Thing
+OP http://example.org/chunktograph#feedsAir dom:http://example.org/chunktograph#Equipment rng:http://example.org/chunktograph#Equipment,owl:Thing
+OP http://example.org/chunktograph#hasAsset rng:http://example.org/chunktograph#IOPoint
+OP http://example.org/chunktograph#hasBrickEquipment dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickEquipmentClass
+OP http://example.org/chunktograph#hasBrickPoint dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickPointClass
+OP http://example.org/chunktograph#hasConnectionPoint dom:http://example.org/chunktograph#Equipment rng:http://example.org/chunktograph#ConnectionPoint
+OP http://example.org/chunktograph#hasContext dom:http://example.org/chunktograph#BrickPoint
+OP http://example.org/chunktograph#hasDataSource dom:http://example.org/chunktograph#BrickPoint
+OP http://example.org/chunktograph#hasEquipment dom:http://example.org/chunktograph#AirHandlingUnit rng:http://example.org/chunktograph#Equipment
+OP http://example.org/chunktograph#hasExternalReference dom:http://example.org/chunktograph#Point rng:owl:Thing
+OP http://example.org/chunktograph#hasInputSubstance dom:http://example.org/chunktograph#Equipment
+OP http://example.org/chunktograph#hasLocation dom:http://example.org/chunktograph#Equipment,owl:Thing rng:http://example.org/chunktograph#PhysicalEntity,owl:Thing
+OP http://example.org/chunktograph#hasMedium dom:http://example.org/chunktograph#ConnectionPoint
+OP http://example.org/chunktograph#hasORMModel dom:http://example.org/chunktograph#Brickschema rng:http://example.org/chunktograph#Equipment,http://example.org/chunktograph#Point
+OP http://example.org/chunktograph#hasOutputSubstance dom:http://example.org/chunktograph#Equipment
+OP http://example.org/chunktograph#hasPart dom:http://example.org/chunktograph#Equipment,owl:Thing rng:http://example.org/chunktograph#Equipment,owl:Thing
+OP http://example.org/chunktograph#hasPoint dom:http://example.org/chunktograph#Equipment,http://example.org/chunktograph#VariableAirVolumeBox,owl:Thing rng:http://example.org/chunktograph#Point,http://example.org/chunktograph#VirtualEntity
+OP http://example.org/chunktograph#hasPositionCommand dom:http://example.org/chunktograph#Damper
+OP http://example.org/chunktograph#hasTag dom:http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#Point,owl:Thing
+OP http://example.org/chunktograph#hasTransitionedFrom dom:http://example.org/chunktograph#Brick_v1.3.0
+OP http://example.org/chunktograph#hasUnit dom:http://example.org/chunktograph#Point,http://example.org/chunktograph#Sensor rng:owl:Thing
+OP http://example.org/chunktograph#hosts dom:http://example.org/chunktograph#IctEquipment rng:http://example.org/chunktograph#Point,http://example.org/chunktograph#VirtualEntity
+OP http://example.org/chunktograph#isComposedOf dom:http://example.org/chunktograph#AirHandlingUnit rng:http://example.org/chunktograph#Equipment
+OP http://example.org/chunktograph#isControlledBy dom:http://example.org/chunktograph#Equipment,http://example.org/chunktograph#PhysicalEntity,owl:Thing rng:owl:Thing inv:http://example.org/chunktograph#controls
+OP http://example.org/chunktograph#isFedBy dom:http://example.org/chunktograph#Equipment rng:http://example.org/chunktograph#AirHandlingUnit,http://example.org/chunktograph#Equipment inv:http://example.org/chunktograph#feeds
+OP http://example.org/chunktograph#isHostedBy dom:http://example.org/chunktograph#Point,http://example.org/chunktograph#VirtualEntity rng:http://example.org/chunktograph#IctEquipment,owl:Thing inv:http://example.org/chunktograph#hosts
+OP http://example.org/chunktograph#isPartOf dom:http://example.org/chunktograph#Equipment rng:http://example.org/chunktograph#Equipment inv:http://example.org/chunktograph#hasPart
+OP http://example.org/chunktograph#isPointOf dom:http://example.org/chunktograph#Point,http://example.org/chunktograph#PointClass,http://example.org/chunktograph#VirtualEntity rng:http://example.org/chunktograph#Equipment,http://example.org/chunktograph#EquipmentFlavoredClass,http://example.org/chunktograph#Point,owl:Thing inv:http://example.org/chunktograph#hasPoint
+OP http://example.org/chunktograph#mapsTo dom:http://example.org/chunktograph#ConnectionPoint rng:http://example.org/chunktograph#ConnectionPoint
+OP http://example.org/chunktograph#measures dom:http://example.org/chunktograph#Point,http://example.org/chunktograph#Sensor,owl:Thing rng:owl:Thing
+OP http://example.org/chunktograph#regulates dom:http://example.org/chunktograph#Equipment,http://example.org/chunktograph#Setpoint
+OP http://example.org/ref#hasExternalReference dom:http://example.org/chunktograph#BrickPoint
+DP http://example.org/chunktograph#hasUnit dom:http://example.org/chunktograph#Point,http://example.org/chunktograph#Sensor rng:owl:Thing
+IND http://example.org/chunktograph#ACMEEnergy2019TutorialInstance | ACM E-Energy 2019 Tutorial Slides a http://example.org/chunktograph#ACMEEnergy2019Tutorial
+IND http://example.org/chunktograph#AHU | AHU a http://example.org/chunktograph#AirHandlingUnit,owl:Class {http://example.org/chunktograph#feeds=http://example.org/chunktograph#VAV; http://example.org/chunktograph#hasPart=http://example.org/chunktograph#SupplyFan; rdfs:subClassOf=http://example.org/chunktograph#Connectable; rdfs:subClassOf=http://example.org/chunktograph#Equipment}
+IND http://example.org/chunktograph#Alignments | Alignments :: Brick 1.2.0 also includes alignments with several external ontologies and metadata representations. {rdfs:subClassOf=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#BACnet_Device | BACnet Device a http://example.org/chunktograph#IctEquipment {http://example.org/chunktograph#hosts=http://example.org/chunktograph#Temperature_Sensor}
+IND http://example.org/chunktograph#BrickClass | Brick Class a owl:Class {http://example.org/chunktograph#hasParent=http://example.org/chunktograph#BrickClass; rdfs:subClassOf=http://example.org/chunktograph#BrickDocumentation; rdfs:subClassOf=owl:Thing; owl:equivalentClass=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#BrickEquipmentDefinition | Brick Equipment Definition a owl:Class
+IND http://example.org/chunktograph#BrickPointClass | Brick Point Class a owl:Class {rdfs:subClassOf=http://example.org/chunktograph#BrickClass; rdfs:subClassOf=http://example.org/chunktograph#BrickDocumentation}
+IND http://example.org/chunktograph#BrickVersion1_2_0 | Brick v1.2.0 :: Marks just over 7 months of work from a growing community of contributors. Brings a number of new features. {rdfs:subClassOf=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#Brick_v1.3.0 | Brick v1.3.0 {http://example.org/chunktograph#hasUnitTests=http://example.org/chunktograph#Point_classes}
+IND http://example.org/chunktograph#Damper | Damper a http://example.org/chunktograph#Damper,owl:Class {rdfs:subClassOf=http://example.org/chunktograph#MechanicalEquipment}
+IND http://example.org/chunktograph#Damper_Position_Command | Damper Position Command a http://example.org/chunktograph#ActuationPoint {http://example.org/chunktograph#isPointOf=http://example.org/chunktograph#Damper}
+IND http://example.org/chunktograph#EquipmentPy | bricksrc/equipment.py {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#HeatingCoil | Heating Coil a http://example.org/chunktograph#MechanicalEquipment,owl:Class {rdfs:subClassOf=http://example.org/chunktograph#MechanicalEquipment}
+IND http://example.org/chunktograph#PointPy | bricksrc/point.py {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#Point_classes | Point classes
+IND http://example.org/chunktograph#Sensor | Sensor a http://example.org/chunktograph#SensorEntity,owl:Class {rdfs:subClassOf=http://example.org/chunktograph#Point; rdfs:subClassOf=owl:Thing}
+IND http://example.org/chunktograph#SupplyFan | Supply Fan a http://example.org/chunktograph#MechanicalEquipment,owl:Class {rdfs:subClassOf=http://example.org/chunktograph#MechanicalEquipment}
+IND http://example.org/chunktograph#Temperature_Sensor | Temperature Sensor a http://example.org/chunktograph#SensingPoint,owl:Class {http://example.org/chunktograph#isPointOf=http://example.org/chunktograph#VAV; rdfs:subClassOf=http://example.org/chunktograph#Sensor}
+IND http://example.org/chunktograph#VAV | VAV a http://example.org/chunktograph#VariableAirVolumeBox,owl:Class {http://example.org/chunktograph#hasPart=http://example.org/chunktograph#Damper; http://example.org/chunktograph#hasPart=http://example.org/chunktograph#HeatingCoil; http://example.org/chunktograph#hasPoint=http://example.org/chunktograph#DamperPositionCommand; http://example.org/chunktograph#hasPoint=http://example.org/chunktograph#TemperatureSensor; rdfs:subClassOf=http://example.org/chunktograph#Connectable; rdfs:subClassOf=http://example.org/chunktograph#Equipment}
+IND http://example.org/chunktograph#equipment_py | bricksrc/equipment.py a http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile :: File for Brick Equipment definitions {http://example.org/chunktograph#hasClassDefinition=http://example.org/chunktograph#BrickEquipmentClass; http://example.org/chunktograph#hasClassDefinition=http://example.org/chunktograph#BrickEquipmentDefinition}
+IND http://example.org/chunktograph#hasPointRangeShape | hasPoint Range Shape a http://example.org/chunktograph#RelationshipShape {http://example.org/chunktograph#constrains=http://example.org/chunktograph#Point; http://example.org/chunktograph#targets=http://example.org/chunktograph#hasPoint}
+IND http://example.org/chunktograph#isPointOfDomainShape | isPointOf Domain Shape a http://example.org/chunktograph#RelationshipShape {http://example.org/chunktograph#constrains=http://example.org/chunktograph#Point; http://example.org/chunktograph#targets=http://example.org/chunktograph#isPointOf}

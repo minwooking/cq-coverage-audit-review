@@ -1,0 +1,3 @@
+{"domain": "dcat", "bank_file": "dcat/bank/bank_dcat_v1.csv", "rows": 42, "sha256": "cf7db0a0ee89badc80562930e3c2b1eb4448cc7ba927feee35d1a5db8e673ace", "frozen_utc": "2026-10-20T09:05:01Z",
+ "tag": "access2026-study4-dcat-bank-freeze", "status": "AI draft, not reviewed by an author; written from the ontology snapshot and documentation before any graph existed",
+ "snapshot_sha256": {"dcat.ttl": "d1624d3bbf364f6fc1d43b9a188bbb9e67639b1a7d46a5cb7ea3f5d47d02b62f"}}

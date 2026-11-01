@@ -1,0 +1,30 @@
+{
+ "domain": "ssn",
+ "corpus_sha256": "05780c597fdc675aaae12d14019b941aaf06d90b12209cce6a71ee16d2d437bf",
+ "docs": [
+  {
+   "doc": "ssn-rec",
+   "raw_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+   "cleaned_chars": 109125,
+   "sections": 159,
+   "atomic_chunks": 433
+  }
+ ],
+ "top_level_chunks": 1,
+ "atomic_chunks": 433,
+ "atomic_chars_total": 103172,
+ "atomic_len": {
+  "mean": 238.3,
+  "median": 178,
+  "p90": 411,
+  "min": 60,
+  "max": 986
+ },
+ "rules": {
+  "merge_under": 120,
+  "split_over": 1000,
+  "drop_under": 40
+ },
+ "license_docs": "W3C/OGC document use license (copying with notice; no derivative works)",
+ "redistributable": false
+}

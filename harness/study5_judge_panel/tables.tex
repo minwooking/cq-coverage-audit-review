@@ -1,0 +1,88 @@
+% Addendum 36: judge-score contrasts across a judge panel; not human-labelled; exploratory, post hoc (addendum 36)
+% rows: judge & scope & n & delta [95% BCa] & decision   (A->B; appendix)
+GLM-4.7-Flash & brick pool & 58 & $+0.414$ [$+0.08$, $+0.75$] & resolved B gt A \\
+GLM-4.7-Flash & new domains pooled & 99 & $+0.347$ [$+0.18$, $+0.54$] & resolved B gt A \\
+GLM-4.7-Flash & dcat & 21 & $+0.143$ [$-0.11$, $+0.54$] & equivalent \\
+GLM-4.7-Flash & ssn & 41 & $+0.520$ [$+0.24$, $+0.85$] & resolved B gt A \\
+GLM-4.7-Flash & prov & 37 & $+0.270$ [$+0.02$, $+0.59$] & resolved B gt A \\
+gpt-oss-20b & brick pool & 58 & $-0.132$ [$-0.55$, $+0.29$] & equivalent \\
+gpt-oss-20b & new domains pooled & 99 & $-0.185$ [$-0.51$, $+0.14$] & equivalent \\
+gpt-oss-20b & dcat & 21 & $-0.397$ [$-1.06$, $+0.30$] & unresolved \\
+gpt-oss-20b & ssn & 41 & $-0.317$ [$-0.79$, $+0.19$] & unresolved \\
+gpt-oss-20b & prov & 37 & $+0.081$ [$-0.48$, $+0.59$] & unresolved \\
+Qwen3.8-Flash-Next & brick pool & 58 & $-0.075$ [$-0.41$, $+0.28$] & equivalent \\
+Qwen3.8-Flash-Next & new domains pooled & 99 & $-0.040$ [$-0.27$, $+0.18$] & equivalent \\
+Qwen3.8-Flash-Next & dcat & 21 & $-0.095$ [$-0.67$, $+0.41$] & unresolved \\
+Qwen3.8-Flash-Next & ssn & 41 & $-0.293$ [$-0.65$, $+0.08$] & unresolved \\
+Qwen3.8-Flash-Next & prov & 37 & $+0.270$ [$-0.05$, $+0.57$] & unresolved \\
+Qwen3-Next-80B-A3B (extractor's model id) & brick pool & 58 & $+0.670$ [$+0.24$, $+1.06$] & resolved B gt A \\
+Qwen3-Next-80B-A3B (extractor's model id) & new domains pooled & 99 & $-0.017$ [$-0.25$, $+0.23$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & dcat & 21 & $-0.286$ [$-0.68$, $+0.03$] & unresolved \\
+Qwen3-Next-80B-A3B (extractor's model id) & ssn & 41 & $-0.163$ [$-0.49$, $+0.21$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & prov & 37 & $+0.297$ [$-0.14$, $+0.77$] & unresolved \\
+gateway judge & brick pool & 58 & $-0.017$ [$-0.31$, $+0.29$] & equivalent \\
+gateway judge & new domains pooled & 99 & $-0.069$ [$-0.27$, $+0.13$] & equivalent \\
+gateway judge & dcat & 21 & $-0.238$ [$-0.69$, $+0.26$] & unresolved \\
+gateway judge & ssn & 41 & $-0.159$ [$-0.44$, $+0.15$] & equivalent \\
+gateway judge & prov & 37 & $+0.126$ [$-0.18$, $+0.44$] & equivalent \\
+
+% panel summary: contrast & scope & independent judges & B>A / A>B / equivalent / unresolved
+A->B & brick pool & 4 & 1 / 0 / 3 / 0 \\
+A->B & dcat & 4 & 0 / 0 / 1 / 3 \\
+A->B & expansion & 4 & 0 / 0 / 0 / 4 \\
+A->B & holdout & 4 & 0 / 0 / 1 / 3 \\
+A->B & new domains pooled & 4 & 1 / 0 / 3 / 0 \\
+A->B & paraphrases & 4 & 0 / 0 / 0 / 4 \\
+A->B & prov & 4 & 1 / 0 / 1 / 2 \\
+A->B & ssn & 4 & 1 / 0 / 1 / 2 \\
+A->B & v2 extras & 4 & 0 / 0 / 0 / 4 \\
+A->F & dcat & 4 & 0 / 0 / 1 / 3 \\
+A->F & new domains pooled & 4 & 1 / 1 / 2 / 0 \\
+A->F & prov & 4 & 1 / 0 / 2 / 1 \\
+A->F & ssn & 4 & 1 / 1 / 1 / 1 \\
+B->F & dcat & 4 & 0 / 1 / 3 / 0 \\
+B->F & new domains pooled & 4 & 0 / 2 / 2 / 0 \\
+B->F & prov & 4 & 0 / 2 / 1 / 1 \\
+B->F & ssn & 4 & 0 / 1 / 3 / 0 \\
+
+% F contrasts: judge & contrast & scope & n & delta [95% BCa] & decision
+GLM-4.7-Flash & A->F & dcat & 22 & $+0.076$ [$-0.18$, $+0.48$] & equivalent \\
+GLM-4.7-Flash & A->F & ssn & 41 & $+0.407$ [$+0.15$, $+0.73$] & resolved F gt A \\
+GLM-4.7-Flash & A->F & prov & 36 & $+0.352$ [$+0.10$, $+0.69$] & resolved F gt A \\
+GLM-4.7-Flash & A->F & new domains pooled & 99 & $+0.313$ [$+0.15$, $+0.51$] & resolved F gt A \\
+GLM-4.7-Flash & B->F & dcat & 26 & $-0.179$ [$-0.37$, $-0.03$] & resolved B gt F \\
+GLM-4.7-Flash & B->F & ssn & 41 & $-0.114$ [$-0.22$, $-0.02$] & resolved B gt F \\
+GLM-4.7-Flash & B->F & prov & 36 & $+0.046$ [$-0.09$, $+0.19$] & equivalent \\
+GLM-4.7-Flash & B->F & new domains pooled & 103 & $-0.074$ [$-0.16$, $+0.01$] & equivalent \\
+gpt-oss-20b & A->F & dcat & 22 & $-0.136$ [$-0.82$, $+0.55$] & unresolved \\
+gpt-oss-20b & A->F & ssn & 41 & $-0.171$ [$-0.60$, $+0.27$] & unresolved \\
+gpt-oss-20b & A->F & prov & 36 & $-0.231$ [$-0.73$, $+0.31$] & unresolved \\
+gpt-oss-20b & A->F & new domains pooled & 99 & $-0.185$ [$-0.48$, $+0.12$] & equivalent \\
+gpt-oss-20b & B->F & dcat & 26 & $+0.103$ [$-0.01$, $+0.38$] & equivalent \\
+gpt-oss-20b & B->F & ssn & 41 & $+0.146$ [$-0.17$, $+0.46$] & equivalent \\
+gpt-oss-20b & B->F & prov & 36 & $-0.315$ [$-0.79$, $+0.19$] & unresolved \\
+gpt-oss-20b & B->F & new domains pooled & 103 & $-0.026$ [$-0.25$, $+0.19$] & equivalent \\
+Qwen3.8-Flash-Next & A->F & dcat & 22 & $-0.136$ [$-0.70$, $+0.41$] & unresolved \\
+Qwen3.8-Flash-Next & A->F & ssn & 41 & $-0.439$ [$-0.82$, $-0.02$] & resolved A gt F \\
+Qwen3.8-Flash-Next & A->F & prov & 36 & $-0.074$ [$-0.41$, $+0.27$] & equivalent \\
+Qwen3.8-Flash-Next & A->F & new domains pooled & 99 & $-0.239$ [$-0.48$, $-0.00$] & resolved A gt F \\
+Qwen3.8-Flash-Next & B->F & dcat & 26 & $-0.051$ [$-0.22$, $+0.08$] & equivalent \\
+Qwen3.8-Flash-Next & B->F & ssn & 41 & $-0.146$ [$-0.30$, $+0.02$] & equivalent \\
+Qwen3.8-Flash-Next & B->F & prov & 36 & $-0.352$ [$-0.56$, $-0.18$] & resolved B gt F \\
+Qwen3.8-Flash-Next & B->F & new domains pooled & 103 & $-0.194$ [$-0.30$, $-0.10$] & resolved B gt F \\
+Qwen3-Next-80B-A3B (extractor's model id) & A->F & dcat & 22 & $-0.121$ [$-0.61$, $+0.23$] & unresolved \\
+Qwen3-Next-80B-A3B (extractor's model id) & A->F & ssn & 41 & $-0.276$ [$-0.61$, $+0.10$] & unresolved \\
+Qwen3-Next-80B-A3B (extractor's model id) & A->F & prov & 36 & $+0.343$ [$-0.10$, $+0.76$] & unresolved \\
+Qwen3-Next-80B-A3B (extractor's model id) & A->F & new domains pooled & 99 & $-0.017$ [$-0.25$, $+0.23$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & B->F & dcat & 26 & $+0.090$ [$-0.12$, $+0.31$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & B->F & ssn & 41 & $-0.114$ [$-0.24$, $-0.02$] & resolved B gt F \\
+Qwen3-Next-80B-A3B (extractor's model id) & B->F & prov & 36 & $+0.037$ [$-0.19$, $+0.31$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & B->F & new domains pooled & 103 & $-0.010$ [$-0.12$, $+0.10$] & equivalent \\
+gateway judge & A->F & dcat & 22 & $-0.250$ [$-0.66$, $+0.18$] & unresolved \\
+gateway judge & A->F & ssn & 41 & $-0.183$ [$-0.50$, $+0.17$] & equivalent \\
+gateway judge & A->F & prov & 36 & $-0.208$ [$-0.50$, $+0.11$] & equivalent \\
+gateway judge & A->F & new domains pooled & 99 & $-0.207$ [$-0.40$, $+0.01$] & equivalent \\
+gateway judge & B->F & dcat & 26 & $-0.006$ [$-0.14$, $+0.12$] & equivalent \\
+gateway judge & B->F & ssn & 41 & $-0.024$ [$-0.21$, $+0.17$] & equivalent \\
+gateway judge & B->F & prov & 36 & $-0.352$ [$-0.61$, $-0.14$] & resolved B gt F \\
+gateway judge & B->F & new domains pooled & 103 & $-0.134$ [$-0.26$, $-0.02$] & resolved B gt F \\

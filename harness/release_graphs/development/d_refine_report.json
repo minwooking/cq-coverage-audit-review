@@ -1,0 +1,120 @@
+{
+  "input_count": 516,
+  "output_count": 429,
+  "dropped": {
+    "pronoun": 61,
+    "self_loop": 8,
+    "empty_predicate": 0,
+    "empty_label": 14,
+    "ungrounded": 4,
+    "total": 87
+  },
+  "predicates": {
+    "before": 148,
+    "after": 142,
+    "morphological_lemma_classes": 142,
+    "merges_example": [
+      {
+        "from": "is",
+        "to": "be"
+      },
+      {
+        "from": "was",
+        "to": "be"
+      },
+      {
+        "from": "make possible change assumption easily",
+        "to": "possible change assumption easily"
+      },
+      {
+        "from": "make assumption hard change",
+        "to": "assumption hard change"
+      },
+      {
+        "from": "make design decision base",
+        "to": "design decision base"
+      },
+      {
+        "from": "are",
+        "to": "be"
+      },
+      {
+        "from": "has",
+        "to": "have"
+      },
+      {
+        "from": "were",
+        "to": "be"
+      },
+      {
+        "from": "take away",
+        "to": "away"
+      },
+      {
+        "from": "include include",
+        "to": "include"
+      },
+      {
+        "from": "used",
+        "to": "use"
+      }
+    ]
+  },
+  "entities": {
+    "before": 422,
+    "after": 422,
+    "merges_example": []
+  },
+  "label_fixes": [
+    {
+      "before": "others",
+      "after": ""
+    },
+    {
+      "before": "make explicit domain assumption underlie implementation",
+      "after": "explicit domain assumption underlie implementation"
+    },
+    {
+      "before": "name",
+      "after": ""
+    },
+    {
+      "before": "part",
+      "after": ""
+    },
+    {
+      "before": "physical abstract part",
+      "after": "physical abstract"
+    },
+    {
+      "before": "one root",
+      "after": "root"
+    },
+    {
+      "before": "system validate ontology well",
+      "after": "system validate ontology"
+    },
+    {
+      "before": "prefix suffix convention name",
+      "after": "prefix suffix convention"
+    },
+    {
+      "before": "has- suffix -of slot name",
+      "after": "has- suffix -of slot"
+    },
+    {
+      "before": "name direct subclass class",
+      "after": "direct subclass class"
+    },
+    {
+      "before": "subclass name",
+      "after": "subclass"
+    },
+    {
+      "before": "the same",
+      "after": ""
+    }
+  ],
+  "grounding": true,
+  "llm_clustering": true
+}

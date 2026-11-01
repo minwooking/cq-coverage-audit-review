@@ -1,0 +1,71 @@
+NOTE: all ratings below are SYNTHETIC random numbers; this run tests the pipeline only.
+== 1. build packets (3 raters, holdout + dev sets, E/F merged)
+unit holdout:928b41e6  members=A
+unit holdout:ca2ac0fe  members=B
+unit holdout:7883d688  members=C
+unit holdout:575df137  members=D
+unit holdout:bf4a0927  members=E+F
+unit dev:91a82fca  members=A
+unit dev:5e7f4913  members=B
+unit dev:494f8c71  members=C
+unit dev:0d1a004e  members=D
+unit dev:ac8b88c5  members=E+F
+packets -> <tmp>/tmpeogrrvdp/packets; keys -> <tmp>/tmpeogrrvdp/keys (do NOT distribute keys/) 
+   packet build took 16s
+   R1: 22 files, dossiers 10 (size KB: [12, 13, 13, 12, 13, 12, 10, 12, 13, 12]), sheet cols ok
+   R2: 22 files, dossiers 10 (size KB: [12, 13, 12, 13, 13, 12, 12, 13, 10, 13]), sheet cols ok
+   R3: 22 files, dossiers 10 (size KB: [13, 11, 12, 12, 13, 13, 12, 12, 12, 12]), sheet cols ok
+   first lines of one dossier (R1, first material):
+   | # Review material Q677863e46
+   | 
+   | Intended use (same for every artifact): [[TBD: author-approved one-paragraph statement of the intended use, identical for all artifacts and sets, containing no question text]]
+   | 
+   | Judge the artifact itself on the five criteria in RATER_FORM_QUALITY.md. All samples below are
+   | random draws of the same size from the artifact; they are not chosen to look good or bad.
+   | 
+   | ## 1. Overview (counts computed uniformly)
+   | 
+   | - concepts/classes: 4517
+   | - concepts with a definition: 965 (21%)
+   | - concepts with at least one parent: 4516 (100%)
+   | - hierarchy roots: 2; longest parent-child chain: 12 levels
+   | - distinct relation/attribute predicates: 75 (with both domain and range declared: 74)
+== 2. synthetic raters fill sheets
+== 3. analysis
+raters: ['R1', 'R2', 'R3']
+artifacts per set: {'dev': 5, 'holdout': 5}
+[dev] Kendall W=0.556 (perm p=0.1626, exact=True); alpha_interval rank=0.378, composite=0.705; ICC(2,1)=0.735, ICC(2,k)=0.893
+    dev:0d1a004e/D (D): rank_score=3.00 composite=3.87 cov={'J_pct': 93.8, 'L1star_pct': None}
+    dev:494f8c71/C (C): rank_score=4.00 composite=4.60 cov={'J_pct': 91.7, 'L1star_pct': None}
+    dev:5e7f4913/B (B): rank_score=3.67 composite=4.07 cov={'J_pct': 91.7, 'L1star_pct': None}
+    dev:91a82fca/A (A): rank_score=1.00 composite=2.07 cov={'J_pct': 58.3, 'L1star_pct': None}
+    dev:ac8b88c5/E+F (E+F): rank_score=3.33 composite=3.73 cov={'J_pct': 92.75, 'L1star_pct': None}
+[holdout] Kendall W=0.689 (perm p=0.0559, exact=True); alpha_interval rank=0.564, composite=0.288; ICC(2,1)=0.285, ICC(2,k)=0.545
+    holdout:575df137/D (D): rank_score=3.33 composite=2.67 cov={'J_pct': 59.6, 'L1star_pct': 56.57}
+    holdout:7883d688/C (C): rank_score=4.67 composite=3.33 cov={'J_pct': 68.69, 'L1star_pct': 64.65}
+    holdout:928b41e6/A (A): rank_score=1.00 composite=1.87 cov={'J_pct': 57.97, 'L1star_pct': 55.07}
+    holdout:bf4a0927/E+F (E+F): rank_score=3.00 composite=2.73 cov={'J_pct': 67.68, 'L1star_pct': 64.65}
+    holdout:ca2ac0fe/B (B): rank_score=3.00 composite=3.07 cov={'J_pct': 68.69, 'L1star_pct': 64.65}
+L1star_pct|rank_score: n=5 tau_b=0.378 p1=0.2500 p2=0.4500 exact=True boot95=[-1.0, 1.0] LORO={'R1': 0.5, 'R2': 0.5, 'R3': 0.76}
+L1star_pct|composite: n=5 tau_b=0.837 p1=0.0500 p2=0.1000 exact=True boot95=[0.667, 1.0] LORO={'R1': 0.6, 'R2': 0.88, 'R3': 0.88}
+L1star_pct|composite_Q1_4: n=5 tau_b=0.837 p1=0.0500 p2=0.1000 exact=True boot95=[0.667, 1.0] LORO={'R1': 0.6, 'R2': 0.84, 'R3': 0.84}
+J_pct|rank_score: n=10 tau_b=0.162 p1=0.3572 p2=0.7108 exact=True boot95=[-0.73, 0.845] LORO={'R1': 0.33, 'R2': 0.33, 'R3': 0.65}
+J_pct|composite: n=10 tau_b=0.527 p1=0.0539 p2=0.1078 exact=True boot95=[0.0, 1.0] LORO={'R1': 0.38, 'R2': 0.49, 'R3': 0.76}
+J_pct|composite_Q1_4: n=10 tau_b=0.527 p1=0.0539 p2=0.1078 exact=True boot95=[0.0, 1.0] LORO={'R1': 0.38, 'R2': 0.42, 'R3': 0.74}
+decision: {"W_by_set": {"dev": 0.5555555555555556, "holdout": 0.6888888888888889}, "reference_ranking_adopted": false, "w_threshold": 0.6, "primary_metric": "J_pct|rank_score", "classification": "reference ranking not adopted (W below threshold); tau reported descriptively"}
+== 4. power (n=5/6/10/12, observed J pattern)
+Exact one-sided critical tau (no ties), alpha=0.05:
+  n=4: tau_crit=1.000  (P at crit=0.0417)
+  n=5: tau_crit=0.800  (P at crit=0.0417)
+  n=6: tau_crit=0.733  (P at crit=0.0278)
+  n=8: tau_crit=0.571  (P at crit=0.0305)
+  n=10: tau_crit=0.467  (P at crit=0.0363)
+  n=12: tau_crit=0.394  (P at crit=0.0432)
+strata [5]: critical tau_b=0.8, power at tau_pop 0.3:0.15, 0.5:0.32, 0.7:0.58, 0.9:0.92; smallest population tau with power>=0.8: 0.85
+strata [6]: critical tau_b=0.7333333333333333, power at tau_pop 0.3:0.13, 0.5:0.32, 0.7:0.62, 0.9:0.96; smallest population tau with power>=0.8: 0.8
+strata [10]: critical tau_b=0.4666666666666667, power at tau_pop 0.3:0.26, 0.5:0.65, 0.7:0.94, 0.9:1.00; smallest population tau with power>=0.8: 0.6
+strata [12]: critical tau_b=0.3939393939393939, power at tau_pop 0.3:0.39, 0.5:0.75, 0.7:0.99, 0.9:1.00; smallest population tau with power>=0.8: 0.55
+strata [5, 5]: critical tau_b=0.6, power at tau_pop 0.3:0.18, 0.5:0.46, 0.7:0.80, 0.9:0.99; smallest population tau with power>=0.8: 0.7
+strata [6, 6]: critical tau_b=0.4666666666666667, power at tau_pop 0.3:0.32, 0.5:0.64, 0.7:0.95, 0.9:1.00; smallest population tau with power>=0.8: 0.6
+observed coverage pattern (holdout, J_pct, distinct artifacts n=5, levels=[57.97, 59.6, 67.68, 68.69]): critical tau_b=0.9486832980505138, power at 0.5/0.7/0.9: 0.24/0.57/1.00; smallest tau_pop with power>=0.8: 0.8
+== done in 22s (temp dir removed; no keys/packets left behind)

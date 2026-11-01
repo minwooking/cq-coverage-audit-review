@@ -1,0 +1,1185 @@
+{
+ "status": "EXPLORATORY AND POST-HOC. Not registered; no new labels and no new LLM calls. The AH labels are an LLM-assisted adjudication and are not a reference standard, so every rate below describes agreement between two label sources, not error against a truth.",
+ "design": {
+  "n_primary_cells": 188,
+  "n_clusters": 33,
+  "unit": "CQ cluster (cluster_id equals cq_id)",
+  "interval": "95% BCa cluster bootstrap",
+  "resamples": 10000,
+  "seed": 20260913,
+  "bca_ties": "midrank",
+  "registered_scheme": true,
+  "multiplicity": "none applied; marginal intervals; no p-values; nothing here is a test",
+  "J_distribution": {
+   "0": 47,
+   "1": 9,
+   "2": 36,
+   "3": 96
+  },
+  "variant_cells": {
+   "A": 23,
+   "B": 33,
+   "C": 33,
+   "D": 33,
+   "E": 33,
+   "F": 33
+  }
+ },
+ "item1_table_2x2_AH": {
+  "exploratory_post_hoc": true,
+  "rows_by_columns": "rows 1[J>=2] / 1[J<=1]; columns A=1 / A=0",
+  "counts": {
+   "Jge2_A1": 118,
+   "Jge2_A0": 14,
+   "Jle1_A1": 20,
+   "Jle1_A0": 36,
+   "n": 188
+  },
+  "metrics": {
+   "raw_agreement": {
+    "numerator": 154,
+    "denominator": 188,
+    "estimate": 0.8191489361702128,
+    "ci_lo": 0.6918918918918919,
+    "ci_hi": 0.9010989010989011
+   },
+   "positive_agreement_both_credit": {
+    "numerator": 236,
+    "denominator": 270,
+    "estimate": 0.8740740740740741,
+    "ci_lo": 0.7684801580695549,
+    "ci_hi": 0.9351561374120458
+   },
+   "negative_agreement_both_no_credit": {
+    "numerator": 72,
+    "denominator": 106,
+    "estimate": 0.6792452830188679,
+    "ci_lo": 0.4307692307692308,
+    "ci_hi": 0.8502994011976048
+   },
+   "agreement_among_A1_cells": {
+    "numerator": 118,
+    "denominator": 138,
+    "estimate": 0.855072463768116,
+    "ci_lo": 0.7188993222559722,
+    "ci_hi": 0.9301503225404563
+   },
+   "agreement_among_A0_cells": {
+    "numerator": 36,
+    "denominator": 50,
+    "estimate": 0.72,
+    "ci_lo": 0.3870967741935484,
+    "ci_hi": 0.9333333333333333
+   },
+   "agreement_among_Jge2_cells": {
+    "numerator": 118,
+    "denominator": 132,
+    "estimate": 0.8939393939393939,
+    "ci_lo": 0.7334398116621966,
+    "ci_hi": 0.9682539682539683
+   },
+   "agreement_among_Jle1_cells": {
+    "numerator": 36,
+    "denominator": 56,
+    "estimate": 0.6428571428571429,
+    "ci_lo": 0.35555555555555557,
+    "ci_hi": 0.8405797101449275
+   },
+   "judge_credit_rate_Jge2": {
+    "numerator": 132,
+    "denominator": 188,
+    "estimate": 0.7021276595744681,
+    "ci_lo": 0.5513513513513514,
+    "ci_hi": 0.8195072375132321
+   },
+   "A1_rate": {
+    "numerator": 138,
+    "denominator": 188,
+    "estimate": 0.7340425531914894,
+    "ci_lo": 0.5783783783783784,
+    "ci_hi": 0.8564041554845939
+   },
+   "net_marginal_difference_Jge2_minus_A1": {
+    "numerator": -6,
+    "denominator": 188,
+    "estimate": -0.031914893617021274,
+    "ci_lo": -0.143646408839779,
+    "ci_hi": 0.07407407407407407
+   },
+   "cohen_kappa": {
+    "estimate": 0.5538805136795086,
+    "ci_lo": 0.2662470805678933,
+    "ci_hi": 0.776026560323932
+   }
+  }
+ },
+ "item2_over_and_under_credit_AH": {
+  "exploratory_post_hoc": true,
+  "pi_hat_J_ge2_and_A0": {
+   "events": 14,
+   "n_cells": 188,
+   "estimate": 0.07446808510638298,
+   "ci_lo": 0.021505376344086023,
+   "ci_hi": 0.18518518518518517,
+   "clusters_with_event": 4,
+   "n_clusters": 33,
+   "ci_reason": null,
+   "basis": "analyze_holdout.silent_over_credit_rate (registered pi-hat; BCa cluster bootstrap)"
+  },
+  "rates": {
+   "over_credit_among_judge_credited_cells": {
+    "numerator": 14,
+    "denominator": 132,
+    "estimate": 0.10606060606060606,
+    "ci_lo": 0.031746031746031744,
+    "ci_hi": 0.266560188337804
+   },
+   "under_credit_among_Jle1_cells": {
+    "numerator": 20,
+    "denominator": 56,
+    "estimate": 0.35714285714285715,
+    "ci_lo": 0.15942028985507245,
+    "ci_hi": 0.6444444444444445
+   },
+   "under_credit_among_A1_cells": {
+    "numerator": 20,
+    "denominator": 138,
+    "estimate": 0.14492753623188406,
+    "ci_lo": 0.06984967745954335,
+    "ci_hi": 0.28110067774402697
+   },
+   "under_credit_cell_rate": {
+    "numerator": 20,
+    "denominator": 188,
+    "estimate": 0.10638297872340426,
+    "ci_lo": 0.05235602094240838,
+    "ci_hi": 0.21081081081081082
+   },
+   "two_sided_disagreement_rate": {
+    "numerator": 34,
+    "denominator": 188,
+    "estimate": 0.18085106382978725,
+    "ci_lo": 0.0989010989010989,
+    "ci_hi": 0.3081081081081081
+   },
+   "under_credit_among_J0_cells": {
+    "numerator": 17,
+    "denominator": 47,
+    "estimate": 0.3617021276595745,
+    "ci_lo": 0.14285714285714285,
+    "ci_hi": 0.6756756756756757
+   },
+   "balanced_two_sided_disagreement": {
+    "estimate": 0.23160173160173161,
+    "ci_lo": 0.12026045085416422,
+    "ci_hi": 0.37918892260754045,
+    "definition": "mean of over-credit among judge-credited cells and under-credit among J<=1 cells"
+   }
+  },
+  "definitions": {
+   "over_credit_among_judge_credited_cells": "Pr[A=0 | J>=2]",
+   "under_credit_among_J0_cells": "Pr[A=1 | J=0]",
+   "under_credit_among_Jle1_cells": "Pr[A=1 | J<=1]",
+   "under_credit_among_A1_cells": "Pr[J<=1 | A=1]",
+   "under_credit_cell_rate": "Pr[J<=1 and A=1] over all cells",
+   "two_sided_disagreement_rate": "(Pr[J>=2 and A=0] + Pr[J<=1 and A=1]) = 1 - raw agreement; the brief's 'two-sided error rate', named for what is counted"
+  }
+ },
+ "item3_label_source_comparison": {
+  "exploratory_post_hoc": true,
+  "sources": {
+   "draft": {
+    "exploratory_post_hoc": true,
+    "label_source": "AI drafts of the A label before author revision (A_draft)",
+    "n_cells": 188,
+    "n_A1": 164,
+    "n_A0": 24,
+    "table_2x2": {
+     "exploratory_post_hoc": true,
+     "rows_by_columns": "rows 1[J>=2] / 1[J<=1]; columns A=1 / A=0",
+     "counts": {
+      "Jge2_A1": 127,
+      "Jge2_A0": 5,
+      "Jle1_A1": 37,
+      "Jle1_A0": 19,
+      "n": 188
+     },
+     "metrics": {
+      "raw_agreement": {
+       "numerator": 146,
+       "denominator": 188,
+       "estimate": 0.776595744680851,
+       "ci_lo": 0.6648648648648648,
+       "ci_hi": 0.8655328303760761
+      },
+      "positive_agreement_both_credit": {
+       "numerator": 254,
+       "denominator": 296,
+       "estimate": 0.8581081081081081,
+       "ci_lo": 0.7633587786259542,
+       "ci_hi": 0.9212827988338192
+      },
+      "negative_agreement_both_no_credit": {
+       "numerator": 38,
+       "denominator": 80,
+       "estimate": 0.475,
+       "ci_lo": 0.2962962962962963,
+       "ci_hi": 0.7076930716098898
+      },
+      "agreement_among_A1_cells": {
+       "numerator": 127,
+       "denominator": 164,
+       "estimate": 0.774390243902439,
+       "ci_lo": 0.6381578947368421,
+       "ci_hi": 0.8707386601219465
+      },
+      "agreement_among_A0_cells": {
+       "numerator": 19,
+       "denominator": 24,
+       "estimate": 0.7916666666666666,
+       "ci_lo": null,
+       "ci_hi": null,
+       "ci_reason": "undefined in at least one resample (an empty denominator), so no interval is reported"
+      },
+      "agreement_among_Jge2_cells": {
+       "numerator": 127,
+       "denominator": 132,
+       "estimate": 0.9621212121212122,
+       "ci_lo": 0.868424690759906,
+       "ci_hi": 1.0
+      },
+      "agreement_among_Jle1_cells": {
+       "numerator": 19,
+       "denominator": 56,
+       "estimate": 0.3392857142857143,
+       "ci_lo": 0.18867924528301888,
+       "ci_hi": 0.5675950011292463
+      },
+      "judge_credit_rate_Jge2": {
+       "numerator": 132,
+       "denominator": 188,
+       "estimate": 0.7021276595744681,
+       "ci_lo": 0.5513513513513514,
+       "ci_hi": 0.8195072375132321
+      },
+      "A1_rate": {
+       "numerator": 164,
+       "denominator": 188,
+       "estimate": 0.8723404255319149,
+       "ci_lo": 0.7593582887700535,
+       "ci_hi": 0.9395604395604396
+      },
+      "net_marginal_difference_Jge2_minus_A1": {
+       "numerator": -32,
+       "denominator": 188,
+       "estimate": -0.1702127659574468,
+       "ci_lo": -0.2852944627608692,
+       "ci_hi": -0.08247422680412371
+      },
+      "cohen_kappa": {
+       "estimate": 0.36075129533678735,
+       "ci_lo": 0.18994164798801835,
+       "ci_hi": 0.6112023802567116
+      }
+     }
+    },
+    "credit_rates": {
+     "exploratory_post_hoc": true,
+     "pi_hat_J_ge2_and_A0": {
+      "events": 5,
+      "n_cells": 188,
+      "estimate": 0.026595744680851064,
+      "ci_lo": 0.0,
+      "ci_hi": 0.08919901885439184,
+      "clusters_with_event": 2,
+      "n_clusters": 33,
+      "ci_reason": null,
+      "basis": "analyze_holdout.silent_over_credit_rate (registered pi-hat; BCa cluster bootstrap)"
+     },
+     "rates": {
+      "over_credit_among_judge_credited_cells": {
+       "numerator": 5,
+       "denominator": 132,
+       "estimate": 0.03787878787878788,
+       "ci_lo": 0.0,
+       "ci_hi": 0.13157530924009414
+      },
+      "under_credit_among_Jle1_cells": {
+       "numerator": 37,
+       "denominator": 56,
+       "estimate": 0.6607142857142857,
+       "ci_lo": 0.43240499887075495,
+       "ci_hi": 0.8113207547169812
+      },
+      "under_credit_among_A1_cells": {
+       "numerator": 37,
+       "denominator": 164,
+       "estimate": 0.22560975609756098,
+       "ci_lo": 0.12926133987805372,
+       "ci_hi": 0.3618421052631579
+      },
+      "under_credit_cell_rate": {
+       "numerator": 37,
+       "denominator": 188,
+       "estimate": 0.19680851063829788,
+       "ci_lo": 0.1164021164021164,
+       "ci_hi": 0.307186155307199
+      },
+      "two_sided_disagreement_rate": {
+       "numerator": 42,
+       "denominator": 188,
+       "estimate": 0.22340425531914893,
+       "ci_lo": 0.13446716962392408,
+       "ci_hi": 0.33513513513513515
+      },
+      "under_credit_among_J0_cells": {
+       "numerator": 30,
+       "denominator": 47,
+       "estimate": 0.6382978723404256,
+       "ci_lo": 0.3823144111776713,
+       "ci_hi": 0.813953488372093
+      },
+      "balanced_two_sided_disagreement": {
+       "estimate": 0.34929653679653677,
+       "ci_lo": 0.22770111772920326,
+       "ci_hi": 0.4251124478171888,
+       "definition": "mean of over-credit among judge-credited cells and under-credit among J<=1 cells"
+      }
+     },
+     "definitions": {
+      "over_credit_among_judge_credited_cells": "Pr[A=0 | J>=2]",
+      "under_credit_among_J0_cells": "Pr[A=1 | J=0]",
+      "under_credit_among_Jle1_cells": "Pr[A=1 | J<=1]",
+      "under_credit_among_A1_cells": "Pr[J<=1 | A=1]",
+      "under_credit_cell_rate": "Pr[J<=1 and A=1] over all cells",
+      "two_sided_disagreement_rate": "(Pr[J>=2 and A=0] + Pr[J<=1 and A=1]) = 1 - raw agreement; the brief's 'two-sided error rate', named for what is counted"
+     }
+    },
+    "pi_hat": {
+     "events": 5,
+     "n_cells": 188,
+     "estimate": 0.026595744680851064,
+     "ci_lo": 0.0,
+     "ci_hi": 0.08919901885439184,
+     "clusters_with_event": 2,
+     "n_clusters": 33,
+     "ci_reason": null,
+     "basis": "analyze_holdout.silent_over_credit_rate (registered pi-hat; BCa cluster bootstrap)"
+    },
+    "variant_A_to_B_L1_star_contrast": {
+     "exploratory_post_hoc": true,
+     "contrast": "mean over paired CQs of L1*(variant B) - L1*(variant A)",
+     "n_paired_cqs": 23,
+     "mean_L1_star_variant_A": 1.7391304347826086,
+     "mean_L1_star_variant_B": 2.217391304347826,
+     "delta": 0.4782608695652174,
+     "ci_lo": 0.0,
+     "ci_hi": 1.0434782608695652,
+     "ci_reason": null,
+     "ci_status": "includes_0",
+     "basis": "analyze_holdout.cluster_bootstrap_stat on one record per paired CQ (the analyzer's pooled mean of per-question differences, clusters resampled)"
+    }
+   },
+   "AH": {
+    "exploratory_post_hoc": true,
+    "label_source": "AH labels: AI draft, human-revised (the registered A)",
+    "n_cells": 188,
+    "n_A1": 138,
+    "n_A0": 50,
+    "table_2x2": {
+     "exploratory_post_hoc": true,
+     "rows_by_columns": "rows 1[J>=2] / 1[J<=1]; columns A=1 / A=0",
+     "counts": {
+      "Jge2_A1": 118,
+      "Jge2_A0": 14,
+      "Jle1_A1": 20,
+      "Jle1_A0": 36,
+      "n": 188
+     },
+     "metrics": {
+      "raw_agreement": {
+       "numerator": 154,
+       "denominator": 188,
+       "estimate": 0.8191489361702128,
+       "ci_lo": 0.6918918918918919,
+       "ci_hi": 0.9010989010989011
+      },
+      "positive_agreement_both_credit": {
+       "numerator": 236,
+       "denominator": 270,
+       "estimate": 0.8740740740740741,
+       "ci_lo": 0.7684801580695549,
+       "ci_hi": 0.9351561374120458
+      },
+      "negative_agreement_both_no_credit": {
+       "numerator": 72,
+       "denominator": 106,
+       "estimate": 0.6792452830188679,
+       "ci_lo": 0.4307692307692308,
+       "ci_hi": 0.8502994011976048
+      },
+      "agreement_among_A1_cells": {
+       "numerator": 118,
+       "denominator": 138,
+       "estimate": 0.855072463768116,
+       "ci_lo": 0.7188993222559722,
+       "ci_hi": 0.9301503225404563
+      },
+      "agreement_among_A0_cells": {
+       "numerator": 36,
+       "denominator": 50,
+       "estimate": 0.72,
+       "ci_lo": 0.3870967741935484,
+       "ci_hi": 0.9333333333333333
+      },
+      "agreement_among_Jge2_cells": {
+       "numerator": 118,
+       "denominator": 132,
+       "estimate": 0.8939393939393939,
+       "ci_lo": 0.7334398116621966,
+       "ci_hi": 0.9682539682539683
+      },
+      "agreement_among_Jle1_cells": {
+       "numerator": 36,
+       "denominator": 56,
+       "estimate": 0.6428571428571429,
+       "ci_lo": 0.35555555555555557,
+       "ci_hi": 0.8405797101449275
+      },
+      "judge_credit_rate_Jge2": {
+       "numerator": 132,
+       "denominator": 188,
+       "estimate": 0.7021276595744681,
+       "ci_lo": 0.5513513513513514,
+       "ci_hi": 0.8195072375132321
+      },
+      "A1_rate": {
+       "numerator": 138,
+       "denominator": 188,
+       "estimate": 0.7340425531914894,
+       "ci_lo": 0.5783783783783784,
+       "ci_hi": 0.8564041554845939
+      },
+      "net_marginal_difference_Jge2_minus_A1": {
+       "numerator": -6,
+       "denominator": 188,
+       "estimate": -0.031914893617021274,
+       "ci_lo": -0.143646408839779,
+       "ci_hi": 0.07407407407407407
+      },
+      "cohen_kappa": {
+       "estimate": 0.5538805136795086,
+       "ci_lo": 0.2662470805678933,
+       "ci_hi": 0.776026560323932
+      }
+     }
+    },
+    "credit_rates": {
+     "exploratory_post_hoc": true,
+     "pi_hat_J_ge2_and_A0": {
+      "events": 14,
+      "n_cells": 188,
+      "estimate": 0.07446808510638298,
+      "ci_lo": 0.021505376344086023,
+      "ci_hi": 0.18518518518518517,
+      "clusters_with_event": 4,
+      "n_clusters": 33,
+      "ci_reason": null,
+      "basis": "analyze_holdout.silent_over_credit_rate (registered pi-hat; BCa cluster bootstrap)"
+     },
+     "rates": {
+      "over_credit_among_judge_credited_cells": {
+       "numerator": 14,
+       "denominator": 132,
+       "estimate": 0.10606060606060606,
+       "ci_lo": 0.031746031746031744,
+       "ci_hi": 0.266560188337804
+      },
+      "under_credit_among_Jle1_cells": {
+       "numerator": 20,
+       "denominator": 56,
+       "estimate": 0.35714285714285715,
+       "ci_lo": 0.15942028985507245,
+       "ci_hi": 0.6444444444444445
+      },
+      "under_credit_among_A1_cells": {
+       "numerator": 20,
+       "denominator": 138,
+       "estimate": 0.14492753623188406,
+       "ci_lo": 0.06984967745954335,
+       "ci_hi": 0.28110067774402697
+      },
+      "under_credit_cell_rate": {
+       "numerator": 20,
+       "denominator": 188,
+       "estimate": 0.10638297872340426,
+       "ci_lo": 0.05235602094240838,
+       "ci_hi": 0.21081081081081082
+      },
+      "two_sided_disagreement_rate": {
+       "numerator": 34,
+       "denominator": 188,
+       "estimate": 0.18085106382978725,
+       "ci_lo": 0.0989010989010989,
+       "ci_hi": 0.3081081081081081
+      },
+      "under_credit_among_J0_cells": {
+       "numerator": 17,
+       "denominator": 47,
+       "estimate": 0.3617021276595745,
+       "ci_lo": 0.14285714285714285,
+       "ci_hi": 0.6756756756756757
+      },
+      "balanced_two_sided_disagreement": {
+       "estimate": 0.23160173160173161,
+       "ci_lo": 0.12026045085416422,
+       "ci_hi": 0.37918892260754045,
+       "definition": "mean of over-credit among judge-credited cells and under-credit among J<=1 cells"
+      }
+     },
+     "definitions": {
+      "over_credit_among_judge_credited_cells": "Pr[A=0 | J>=2]",
+      "under_credit_among_J0_cells": "Pr[A=1 | J=0]",
+      "under_credit_among_Jle1_cells": "Pr[A=1 | J<=1]",
+      "under_credit_among_A1_cells": "Pr[J<=1 | A=1]",
+      "under_credit_cell_rate": "Pr[J<=1 and A=1] over all cells",
+      "two_sided_disagreement_rate": "(Pr[J>=2 and A=0] + Pr[J<=1 and A=1]) = 1 - raw agreement; the brief's 'two-sided error rate', named for what is counted"
+     }
+    },
+    "pi_hat": {
+     "events": 14,
+     "n_cells": 188,
+     "estimate": 0.07446808510638298,
+     "ci_lo": 0.021505376344086023,
+     "ci_hi": 0.18518518518518517,
+     "clusters_with_event": 4,
+     "n_clusters": 33,
+     "ci_reason": null,
+     "basis": "analyze_holdout.silent_over_credit_rate (registered pi-hat; BCa cluster bootstrap)"
+    },
+    "variant_A_to_B_L1_star_contrast": {
+     "exploratory_post_hoc": true,
+     "contrast": "mean over paired CQs of L1*(variant B) - L1*(variant A)",
+     "n_paired_cqs": 23,
+     "mean_L1_star_variant_A": 1.6521739130434783,
+     "mean_L1_star_variant_B": 2.130434782608696,
+     "delta": 0.4782608695652174,
+     "ci_lo": -0.08695652173913043,
+     "ci_hi": 1.0434782608695652,
+     "ci_reason": null,
+     "ci_status": "includes_0",
+     "basis": "analyze_holdout.cluster_bootstrap_stat on one record per paired CQ (the analyzer's pooled mean of per-question differences, clusters resampled)"
+    }
+   },
+   "aux": {
+    "exploratory_post_hoc": true,
+    "label_source": "GPT-5.6 auxiliary A labels (A_auxiliary)",
+    "n_cells": 188,
+    "n_A1": 121,
+    "n_A0": 67,
+    "table_2x2": {
+     "exploratory_post_hoc": true,
+     "rows_by_columns": "rows 1[J>=2] / 1[J<=1]; columns A=1 / A=0",
+     "counts": {
+      "Jge2_A1": 118,
+      "Jge2_A0": 14,
+      "Jle1_A1": 3,
+      "Jle1_A0": 53,
+      "n": 188
+     },
+     "metrics": {
+      "raw_agreement": {
+       "numerator": 171,
+       "denominator": 188,
+       "estimate": 0.9095744680851063,
+       "ci_lo": 0.837696335078534,
+       "ci_hi": 0.9523809523809523
+      },
+      "positive_agreement_both_credit": {
+       "numerator": 236,
+       "denominator": 253,
+       "estimate": 0.932806324110672,
+       "ci_lo": 0.8722466960352423,
+       "ci_hi": 0.966542750929368
+      },
+      "negative_agreement_both_no_credit": {
+       "numerator": 106,
+       "denominator": 123,
+       "estimate": 0.8617886178861789,
+       "ci_lo": 0.717391304347826,
+       "ci_hi": 0.9393339764567143
+      },
+      "agreement_among_A1_cells": {
+       "numerator": 118,
+       "denominator": 121,
+       "estimate": 0.9752066115702479,
+       "ci_lo": 0.9344262295081968,
+       "ci_hi": 0.9926470588235294
+      },
+      "agreement_among_A0_cells": {
+       "numerator": 53,
+       "denominator": 67,
+       "estimate": 0.7910447761194029,
+       "ci_lo": 0.5740740740740741,
+       "ci_hi": 0.9178082191780822
+      },
+      "agreement_among_Jge2_cells": {
+       "numerator": 118,
+       "denominator": 132,
+       "estimate": 0.8939393939393939,
+       "ci_lo": 0.7873290684514826,
+       "ci_hi": 0.9542269218918669
+      },
+      "agreement_among_Jle1_cells": {
+       "numerator": 53,
+       "denominator": 56,
+       "estimate": 0.9464285714285714,
+       "ci_lo": 0.8571428571428571,
+       "ci_hi": 0.987012987012987
+      },
+      "judge_credit_rate_Jge2": {
+       "numerator": 132,
+       "denominator": 188,
+       "estimate": 0.7021276595744681,
+       "ci_lo": 0.5513513513513514,
+       "ci_hi": 0.8195072375132321
+      },
+      "A1_rate": {
+       "numerator": 121,
+       "denominator": 188,
+       "estimate": 0.6436170212765957,
+       "ci_lo": 0.5,
+       "ci_hi": 0.7634408602150538
+      },
+      "net_marginal_difference_Jge2_minus_A1": {
+       "numerator": 11,
+       "denominator": 188,
+       "estimate": 0.05851063829787234,
+       "ci_lo": 0.010582010582010581,
+       "ci_hi": 0.13612565445026178
+      },
+      "cohen_kappa": {
+       "estimate": 0.7953905249679897,
+       "ci_lo": 0.623615828651516,
+       "ci_hi": 0.9030175676203944
+      }
+     }
+    },
+    "credit_rates": {
+     "exploratory_post_hoc": true,
+     "pi_hat_J_ge2_and_A0": {
+      "events": 14,
+      "n_cells": 188,
+      "estimate": 0.07446808510638298,
+      "ci_lo": 0.03208556149732621,
+      "ci_hi": 0.15025906735751296,
+      "clusters_with_event": 7,
+      "n_clusters": 33,
+      "ci_reason": null,
+      "basis": "analyze_holdout.silent_over_credit_rate (registered pi-hat; BCa cluster bootstrap)"
+     },
+     "rates": {
+      "over_credit_among_judge_credited_cells": {
+       "numerator": 14,
+       "denominator": 132,
+       "estimate": 0.10606060606060606,
+       "ci_lo": 0.04577307810813329,
+       "ci_hi": 0.21267093154851774
+      },
+      "under_credit_among_Jle1_cells": {
+       "numerator": 3,
+       "denominator": 56,
+       "estimate": 0.05357142857142857,
+       "ci_lo": 0.012987012987012988,
+       "ci_hi": 0.14285714285714285
+      },
+      "under_credit_among_A1_cells": {
+       "numerator": 3,
+       "denominator": 121,
+       "estimate": 0.024793388429752067,
+       "ci_lo": 0.007352941176470588,
+       "ci_hi": 0.06557377049180328
+      },
+      "under_credit_cell_rate": {
+       "numerator": 3,
+       "denominator": 188,
+       "estimate": 0.015957446808510637,
+       "ci_lo": 0.005235602094240838,
+       "ci_hi": 0.042105263157894736
+      },
+      "two_sided_disagreement_rate": {
+       "numerator": 17,
+       "denominator": 188,
+       "estimate": 0.09042553191489362,
+       "ci_lo": 0.047619047619047616,
+       "ci_hi": 0.16230366492146597
+      },
+      "under_credit_among_J0_cells": {
+       "numerator": 0,
+       "denominator": 47,
+       "estimate": 0.0,
+       "ci_lo": null,
+       "ci_hi": null,
+       "ci_reason": "degenerate: every resample gives the same value, so no interval is reported"
+      },
+      "balanced_two_sided_disagreement": {
+       "estimate": 0.07981601731601731,
+       "ci_lo": 0.040408091530506375,
+       "ci_hi": 0.13549428987341863,
+       "definition": "mean of over-credit among judge-credited cells and under-credit among J<=1 cells"
+      }
+     },
+     "definitions": {
+      "over_credit_among_judge_credited_cells": "Pr[A=0 | J>=2]",
+      "under_credit_among_J0_cells": "Pr[A=1 | J=0]",
+      "under_credit_among_Jle1_cells": "Pr[A=1 | J<=1]",
+      "under_credit_among_A1_cells": "Pr[J<=1 | A=1]",
+      "under_credit_cell_rate": "Pr[J<=1 and A=1] over all cells",
+      "two_sided_disagreement_rate": "(Pr[J>=2 and A=0] + Pr[J<=1 and A=1]) = 1 - raw agreement; the brief's 'two-sided error rate', named for what is counted"
+     }
+    },
+    "pi_hat": {
+     "events": 14,
+     "n_cells": 188,
+     "estimate": 0.07446808510638298,
+     "ci_lo": 0.03208556149732621,
+     "ci_hi": 0.15025906735751296,
+     "clusters_with_event": 7,
+     "n_clusters": 33,
+     "ci_reason": null,
+     "basis": "analyze_holdout.silent_over_credit_rate (registered pi-hat; BCa cluster bootstrap)"
+    },
+    "variant_A_to_B_L1_star_contrast": {
+     "exploratory_post_hoc": true,
+     "contrast": "mean over paired CQs of L1*(variant B) - L1*(variant A)",
+     "n_paired_cqs": 23,
+     "mean_L1_star_variant_A": 1.6521739130434783,
+     "mean_L1_star_variant_B": 2.130434782608696,
+     "delta": 0.4782608695652174,
+     "ci_lo": -0.08695652173913043,
+     "ci_hi": 1.0434782608695652,
+     "ci_reason": null,
+     "ci_status": "includes_0",
+     "basis": "analyze_holdout.cluster_bootstrap_stat on one record per paired CQ (the analyzer's pooled mean of per-question differences, clusters resampled)"
+    }
+   }
+  },
+  "agreement_between_sources": [
+   {
+    "exploratory_post_hoc": true,
+    "first": "draft",
+    "second": "AH",
+    "direction": "'1->0' means A=1 in draft and A=0 in AH",
+    "both_1": 138,
+    "changed_1_to_0": 26,
+    "changed_0_to_1": 0,
+    "both_0": 24,
+    "cohen_kappa": {
+     "estimate": 0.5753995830437802,
+     "ci_lo": 0.39217240150701405,
+     "ci_hi": 0.7757273619308029
+    },
+    "raw_agreement": {
+     "estimate": 0.8617021276595744,
+     "ci_lo": 0.7540106951871658,
+     "ci_hi": 0.9312169312169312
+    },
+    "changes_by_judge_score": {
+     "0": {
+      "1_to_0": 13,
+      "0_to_1": 0
+     },
+     "1": {
+      "1_to_0": 4,
+      "0_to_1": 0
+     },
+     "2": {
+      "1_to_0": 6,
+      "0_to_1": 0
+     },
+     "3": {
+      "1_to_0": 3,
+      "0_to_1": 0
+     }
+    }
+   },
+   {
+    "exploratory_post_hoc": true,
+    "first": "draft",
+    "second": "aux",
+    "direction": "'1->0' means A=1 in draft and A=0 in aux",
+    "both_1": 117,
+    "changed_1_to_0": 47,
+    "changed_0_to_1": 4,
+    "both_0": 20,
+    "cohen_kappa": {
+     "estimate": 0.3098186006334581,
+     "ci_lo": 0.1725066245072963,
+     "ci_hi": 0.5354956995008093
+    },
+    "raw_agreement": {
+     "estimate": 0.7287234042553191,
+     "ci_lo": 0.6203208556149733,
+     "ci_hi": 0.8219895287958116
+    },
+    "changes_by_judge_score": {
+     "0": {
+      "1_to_0": 30,
+      "0_to_1": 0
+     },
+     "1": {
+      "1_to_0": 5,
+      "0_to_1": 1
+     },
+     "2": {
+      "1_to_0": 5,
+      "0_to_1": 1
+     },
+     "3": {
+      "1_to_0": 7,
+      "0_to_1": 2
+     }
+    }
+   },
+   {
+    "exploratory_post_hoc": true,
+    "first": "AH",
+    "second": "aux",
+    "direction": "'1->0' means A=1 in AH and A=0 in aux",
+    "both_1": 110,
+    "changed_1_to_0": 28,
+    "changed_0_to_1": 11,
+    "both_0": 39,
+    "cohen_kappa": {
+     "estimate": 0.5206589958158995,
+     "ci_lo": 0.2478217150995852,
+     "ci_hi": 0.7311515184083488
+    },
+    "raw_agreement": {
+     "estimate": 0.7925531914893617,
+     "ci_lo": 0.6772542954254754,
+     "ci_hi": 0.8770053475935828
+    },
+    "changes_by_judge_score": {
+     "0": {
+      "1_to_0": 17,
+      "0_to_1": 0
+     },
+     "1": {
+      "1_to_0": 1,
+      "0_to_1": 1
+     },
+     "2": {
+      "1_to_0": 3,
+      "0_to_1": 5
+     },
+     "3": {
+      "1_to_0": 7,
+      "0_to_1": 5
+     }
+    }
+   }
+  ],
+  "paired_differences_between_sources": [
+   {
+    "exploratory_post_hoc": true,
+    "difference": "AH minus draft",
+    "pi_hat_difference": {
+     "estimate": 0.047872340425531915,
+     "ci_lo": 0.010752688172043012,
+     "ci_hi": 0.15301805142601166
+    },
+    "variant_A_to_B_contrast_difference": {
+     "estimate": 0.0,
+     "ci_lo": -0.13043478260869565,
+     "ci_hi": 0.30434782608695654
+    }
+   },
+   {
+    "exploratory_post_hoc": true,
+    "difference": "aux minus draft",
+    "pi_hat_difference": {
+     "estimate": 0.047872340425531915,
+     "ci_lo": -0.010635343727791015,
+     "ci_hi": 0.10471204188481675
+    },
+    "variant_A_to_B_contrast_difference": {
+     "estimate": 0.0,
+     "ci_lo": -0.30434782608695654,
+     "ci_hi": 0.34782608695652173
+    }
+   },
+   {
+    "exploratory_post_hoc": true,
+    "difference": "aux minus AH",
+    "pi_hat_difference": {
+     "estimate": 0.0,
+     "ci_lo": -0.10052910052910052,
+     "ci_hi": 0.0640916525802559
+    },
+    "variant_A_to_B_contrast_difference": {
+     "estimate": 0.0,
+     "ci_lo": -0.34782608695652173,
+     "ci_hi": 0.34782608695652173
+    }
+   }
+  ]
+ },
+ "item4_rater_error_tipping_points_AH": {
+  "exploratory_post_hoc": true,
+  "what_is_flipped": "A labels of the AH source, one cell at a time; adversarial (worst-case) flip sets; each criterion has its own adversary",
+  "pi_hat_upper_bound_vs_10pct": {
+   "exploratory_post_hoc": true,
+   "criterion": "95% BCa upper bound of pi-hat versus 10%",
+   "baseline": {
+    "events": 14,
+    "n_cells": 188,
+    "pi_hat": 0.07446808510638298,
+    "ci_hi": 0.18518518518518517,
+    "above_threshold": true,
+    "replay_matches_analyzer": true
+   },
+   "zero_event_rule": "a state with zero events is scored with the cluster-level one-sided 97.5% Clopper-Pearson bound for zero events (0.1058), as the analyzer does",
+   "down": {
+    "direction": "down",
+    "flip_type": "A 0->1 on J>=2 cells that are currently A=0 (removes pi-hat events)",
+    "applicable": true,
+    "crossing": "upper bound <= 10%",
+    "reachable": true,
+    "min_flips_lower_bound": 7,
+    "min_flips_witness": 7,
+    "exact": true,
+    "method": "exhaustive over all flip sets of each size",
+    "bound_at_witness": 0.08836649570049926,
+    "states_evaluated": 170,
+    "available_flips": 14,
+    "n_clusters_touched": 3,
+    "statistic_at_witness": {
+     "events": 7,
+     "pi_hat": 0.03723404255319149,
+     "ci_lo": 0.0106951871657754,
+     "ci_hi": 0.08836649570049926,
+     "ci_hi_source": "analyze_holdout.silent_over_credit_rate",
+     "replay_matches_analyzer": true
+    }
+   },
+   "up": {
+    "direction": "up",
+    "flip_type": "A 1->0 on J>=2 cells that are currently A=1 (adds pi-hat events)",
+    "applicable": false,
+    "reason": "the upper bound is already above 10%, so flips in this direction move it away from the line"
+   },
+   "registered_G1_cluster_level_cp": {
+    "clusters_with_event": 4,
+    "bound_at_baseline": 0.2820162285372203,
+    "bound_at_zero_event_clusters": 0.10576281007457927,
+    "fewest_flips_to_reach_zero_event_clusters": 14,
+    "crossable_by_flips": false,
+    "note": "see g1_design_fact: at this number of clusters the bound exceeds 10% even with no events"
+   }
+  },
+  "variant_A_to_B_contrast": {
+   "exploratory_post_hoc": true,
+   "baseline": {
+    "delta": 0.4782608695652174,
+    "ci_lo": -0.08695652173913043,
+    "ci_hi": 1.0434782608695652,
+    "ci_status": "includes_0",
+    "n_paired_cqs": 23,
+    "replay_matches_analyzer": true
+   },
+   "candidate_flips": {
+    "down": 18,
+    "up": 15,
+    "rule": "only J>=2 cells of variant A or B in a paired CQ can move L1*"
+   },
+   "sign_reversal": {
+    "down": {
+     "direction": "down",
+     "criterion": "point estimate reverses sign",
+     "applicable": true,
+     "exact": true,
+     "method": "exact: independent integer effects, largest first",
+     "min_flips_delta_reaches_zero": 6,
+     "min_flips_delta_strictly_reversed": 6,
+     "available_flips": 18,
+     "witness": {
+      "delta": -0.043478260869565216,
+      "ci_lo": -0.6521739130434783,
+      "ci_hi": 0.5731846984267379,
+      "ci_status": "includes_0",
+      "replay_matches_analyzer": true
+     },
+     "witness_composition": [
+      {
+       "variant": "A",
+       "J": 3,
+       "A_flip": "0->1",
+       "count": 1
+      },
+      {
+       "variant": "B",
+       "J": 3,
+       "A_flip": "1->0",
+       "count": 5
+      }
+     ]
+    },
+    "up": {
+     "direction": "up",
+     "criterion": "point estimate reverses sign",
+     "applicable": false,
+     "reason": "the baseline delta is already on that side of 0"
+    }
+   },
+   "ci_status_change": {
+    "down": {
+     "direction": "down",
+     "criterion": "95% BCa CI status for 0 changes",
+     "baseline_status": "includes_0",
+     "applicable": true,
+     "pushed_bound": "ci_hi",
+     "crossing": "ci_hi < 0",
+     "available_flips": 18,
+     "reachable": true,
+     "min_flips_lower_bound": 12,
+     "min_flips_witness": 12,
+     "exact": true,
+     "method": "exhaustive over all flip sets of each size",
+     "bound_at_witness": -0.043478260869565216,
+     "states_evaluated": 249527,
+     "witness": {
+      "delta": -0.43478260869565216,
+      "ci_lo": -0.8695652173913043,
+      "ci_hi": -0.043478260869565216,
+      "ci_status": "excludes_0_negative",
+      "replay_matches_analyzer": true
+     },
+     "witness_composition": [
+      {
+       "variant": "A",
+       "J": 3,
+       "A_flip": "0->1",
+       "count": 1
+      },
+      {
+       "variant": "B",
+       "J": 2,
+       "A_flip": "1->0",
+       "count": 3
+      },
+      {
+       "variant": "B",
+       "J": 3,
+       "A_flip": "1->0",
+       "count": 8
+      }
+     ]
+    },
+    "up": {
+     "direction": "up",
+     "criterion": "95% BCa CI status for 0 changes",
+     "baseline_status": "includes_0",
+     "applicable": true,
+     "pushed_bound": "ci_lo",
+     "crossing": "ci_lo > 0",
+     "available_flips": 15,
+     "reachable": true,
+     "min_flips_lower_bound": 1,
+     "min_flips_witness": 1,
+     "exact": true,
+     "method": "exhaustive over all flip sets of each size",
+     "bound_at_witness": 0.043478260869565216,
+     "states_evaluated": 15,
+     "witness": {
+      "delta": 0.5652173913043478,
+      "ci_lo": 0.043478260869565216,
+      "ci_hi": 1.1304347826086956,
+      "ci_status": "excludes_0_positive",
+      "replay_matches_analyzer": true
+     },
+     "witness_composition": [
+      {
+       "variant": "A",
+       "J": 3,
+       "A_flip": "1->0",
+       "count": 1
+      }
+     ]
+    }
+   }
+  }
+ },
+ "item5_g1_design_fact": {
+  "exploratory_post_hoc": true,
+  "n_clusters": 33,
+  "one_sided_level": 0.975,
+  "zero_event_upper_bound": 0.10576281007457927,
+  "zero_event_upper_bound_pct_2dp": 10.58,
+  "one_sided_95_zero_event_upper_bound": 0.08678118929147494,
+  "threshold": 0.1,
+  "passable_at_this_n": false,
+  "min_clusters_for_a_zero_event_pass": 36,
+  "note": "A property of the design (the number of clusters), not of the data: with zero events among 33 clusters the bound already exceeds 10%."
+ },
+ "descriptive": {
+  "exploratory_post_hoc": true,
+  "AH_A1_on_J0_cells": {
+   "n": 17,
+   "of_which_span_edited": 9,
+   "note": "J=0 coincides with an empty judge span in every cell (legacy_counts.json), so A=1 there is not a verdict on a span the judge cited; L1* never rises with A"
+  }
+ },
+ "checks": {
+  "n_primary_cells": 188,
+  "n_clusters": 33,
+  "J_equals_cells_jsonl_J": true,
+  "cluster_and_variant_equal_cells_jsonl": true,
+  "AH_L1_star_equals_demote": true,
+  "draft_file_A_equals_per_cell_draft_A": true,
+  "aux_J_equals_cells_jsonl_J": true,
+  "cluster_id_equals_cq_id": true,
+  "consistency_with_the_brief": {
+   "pi_events_14_of_188": true,
+   "over_credit_14_of_132": true,
+   "under_credit_17_of_47": true,
+   "informational": "expected counts from the request; they describe the real data, not a rule"
+  }
+ },
+ "inputs": {
+  "per_cell": {
+   "file": "per_cell.rerun_0dbe6e9.json",
+   "sha256": "5aebf70b6af9b4468f3c066ba84215699316ae5342d33b5c61d6cb4bd90a9248",
+   "role": "per-cell J, A (AH), rater_L1, L1* (unsealed 2026-10-09)"
+  },
+  "cells": {
+   "file": "cells.jsonl",
+   "sha256": "bfd5b3c83981c8a6ec970b93f460bab7409daf047a2e048bfaa90b5adfd0d4af",
+   "role": "judge run; J and ids only"
+  },
+  "drafts": {
+   "file": "draft_224.csv",
+   "sha256": "9489552d7c269b542553c36e78c8220b4c2800739c3b5d8074761df481e92abd",
+   "role": "A_draft before author revision; only cell_id, A_draft and model are read",
+   "model_field_values": {
+    "agent-draft(Sisyphus-Junior-deep)": 224
+   }
+  },
+  "aux": {
+   "file": "llm_auxiliary_labels.jsonl",
+   "sha256": "5952874272327b85d253c7686c1faebd4b9b13f11f9ea58b1fe81b5fe9980d63",
+   "role": "GPT-5.6 auxiliary A labels",
+   "model_field_values": {
+    "gpt-5.6-luna": 224
+   }
+  }
+ },
+ "code": {
+  "exploratory_reanalysis.py": "e337ba482cbfeccf8a5b053cf708baba6747467b9907814f7bbc427741b7db75",
+  "analyze_holdout.py": "3278d71c70829889838aa8f61c4f5b0217b9ef3e921976a8ea5fc0c0fd122e10",
+  "python": "3.12.3",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1"
+ },
+ "no_new_data": "no new human label and no new LLM call; aggregates only (no cell, CQ or cluster id, no span, no note)"
+}

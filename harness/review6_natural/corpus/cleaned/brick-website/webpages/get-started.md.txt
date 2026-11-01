@@ -1,0 +1,43 @@
+There are many ways to get started using Brick: ranging from exploring and analyzing existing Brick models to developing data-driven applications using Brick to creating your own Brick model.
+
+The Concepts page presents an overview of core concepts of Brick.
+
+The Relationships memo provides some guidance and documentation on how to use Brick relationships.
+
+The Public Roadmap outlines the near-term and long-term features of Brick that are under development.
+
+### Exploring existing Brick models
+
+- Observe Brick models for 6 real buildings using the BrickViewer tool
+- Interact with over 100 Brick models using the Brick QueryBuilder tool
+- Download the Brick models for 6 real buildings from this page for use with ontology exploration tools like Protege
+
+### Using Brick for data analysis
+
+- Deploy an API for ingesting and retrieving timeseries data using Brick models with the Brick Server reference implementation
+- Build and execute analytics applications that scale across tens or hundreds of buildings using the Mortar data platform
+
+### Create your own Brick models
+
+- Iterate on existing Brick models and interactively add components with BrickStudio
+- Convert existing building metadata -- from Project Haystack, IFC or BMS point dumps -- into a Brick model (link coming soon)
+
+## Connecting with the Brick Community
+
+Developer Forum: The developer forum Google Group is a collaborative environment for posting questions and sharing comments related to the Brick schema.
+
+Brick Issue Tracker: The Brick GitHub issues page is intended for focused technical discussions surrounding specific issues and questions of the current release of the Brick schema. Posting requires the creation of a free GitHub account. Issues may be raised on the Developer Forum and may be migrated to GitHub to make use of syntax highlighting and other features.
+
+Website Issue Tracker: The Website GitHub issues page is intended for discussing and proposing changes to the Brick website. Posting requires the creaion of a free Github account.
+
+Working Groups: Brick developments are organized through a set of working groups which meet every week at internationally-friendly times.
+
+## Brick Tutorials
+
+Several tutorials have been developed for Brick and its related tools.
+
+BuildSys 2017 Tutorial Slides: The Brick team presented a tutorial at the 2017 BuildSys conference; the tutorial presented a high-level overview of the Brick schema, how to create a Brick model from existing building data and metadata, and the development of a simple building analytics application. The code produced during the tutorial has been captured in a set of Jupyter Notebooks.
+
+Mortar Tutorial: Mortar is a free, open testbed of building data and Brick models that faciliate the development of reproducible building analytics. The Mortar Tutorial presents an interactive overview of the platform and walks the user through the implementation of a fault detection application.
+
+ACM E-Energy 2019 Tutorial Slides: The Brick team presented a tutorial at the 2019 ACM E-Energy conference; the tutorial presented an overview of the Brick schema, the Mortar data platform, and how Brick and Mortar can be used together to author generalizable building analytics applications.

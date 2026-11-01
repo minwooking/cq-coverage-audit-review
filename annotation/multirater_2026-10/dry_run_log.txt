@@ -1,0 +1,77 @@
+R1: 188 cells, min same-CQ gap 20, sheet <tmp>/packets/R1/sheet_R1.csv
+R2: 188 cells, min same-CQ gap 20, sheet <tmp>/packets/R2/sheet_R2.csv
+R3: 188 cells, min same-CQ gap 20, sheet <tmp>/packets/R3/sheet_R3.csv
+keys written to <tmp>/keys (do NOT distribute)
+{
+  "raters": [
+    "R1",
+    "R2",
+    "R3"
+  ],
+  "n_cells_common": 188,
+  "n_cells_complete_S": 188,
+  "S_fleiss_kappa": 0.467888671743379,
+  "S_krippendorff_alpha_nominal": 0.4688321315452524,
+  "S_pairwise_cohen_kappa": {
+    "R1-R2": 0.4316120449873021,
+    "R1-R3": 0.47016297022423736,
+    "R2-R3": 0.5023462880519792
+  },
+  "R_levels": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "R_krippendorff_alpha_ordinal": 0.7988878273921771,
+  "n_unanimous": 118,
+  "n_disagree_cells": 70,
+  "vs_judge": [
+    {
+      "who": "R1",
+      "n_cells": 188,
+      "kappa_vs_J_ge2": 0.6268886043533932,
+      "raw_agreement": 0.8351063829787234,
+      "agreement_CP_lower": 0.77418706033064,
+      "overcredit_cells": 21,
+      "overcredit_clusters": 16,
+      "n_clusters": 33,
+      "overcredit_cluster_CP_upper": 0.6645555216114443
+    },
+    {
+      "who": "R2",
+      "n_cells": 188,
+      "kappa_vs_J_ge2": 0.6842498133864147,
+      "raw_agreement": 0.8563829787234043,
+      "agreement_CP_lower": 0.7979644700307653,
+      "overcredit_cells": 22,
+      "overcredit_clusters": 19,
+      "n_clusters": 33,
+      "overcredit_cluster_CP_upper": 0.7452381772653041
+    },
+    {
+      "who": "R3",
+      "n_cells": 188,
+      "kappa_vs_J_ge2": 0.7020035505959928,
+      "raw_agreement": 0.8670212765957447,
+      "agreement_CP_lower": 0.8099840888446868,
+      "overcredit_cells": 19,
+      "overcredit_clusters": 16,
+      "n_clusters": 33,
+      "overcredit_cluster_CP_upper": 0.6645555216114443
+    },
+    {
+      "who": "majority",
+      "n_cells": 188,
+      "kappa_vs_J_ge2": 0.8371969091393552,
+      "raw_agreement": 0.9308510638297872,
+      "agreement_CP_lower": 0.8846558525440329,
+      "overcredit_cells": 8,
+      "overcredit_clusters": 8,
+      "n_clusters": 33,
+      "overcredit_cluster_CP_upper": 0.42258931771170183
+    }
+  ],
+  "conf": 0.975
+}
+DRY RUN OK; temp dir (synthetic, safe to delete): <tmp>

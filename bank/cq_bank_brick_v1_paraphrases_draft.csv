@@ -1,0 +1,16 @@
+cq_id,cluster_id,paraphrase_text,grounding,author_note
+CQB07,CQB07,Does Brick place Sensor beneath Point in its class hierarchy?,subclassof:Sensor>Point,Draft paraphrase of CQB07; asks the same direct subclass relation without exposing the yes/no answer.
+CQB08,CQB08,Which classes sit immediately below Point?,children:Point,Draft paraphrase of CQB08; preserves the direct-child enumeration target without naming any answer class.
+CQB10,CQB10,Is Building directly classified under Location?,rdfs:subClassOf brick:Building,Draft paraphrase of CQB10; same direct-parent check with a different surface form.
+CQB11,CQB11,Does the ontology declare Alarm and Sensor mutually disjoint?,disjoint:Sensor,Draft paraphrase of CQB11; preserves the disjointness capability without suggesting the outcome.
+CQB12,CQB12,What are the immediate subclasses of Location?,children:Location,Draft paraphrase of CQB12; same direct-child retrieval target without answer leakage.
+CQB13,CQB13,Which relation connects equipment with a point it contains?,inverse:hasPoint~isPointOf,Draft paraphrase of CQB13; same equipment-to-point relation, phrased from the containment perspective.
+CQB14,CQB14,How is an entity associated with the place where it is located?,prop:hasLocation,Draft paraphrase of CQB14; same location relation without naming the property in the question.
+CQB15,CQB15,Which inverse-linked relations encode the direction of a supply connection?,prop:feeds,Draft paraphrase of CQB15; same feed-direction relation without exposing either property name.
+CQB16,CQB16,What relation points from a component back to the larger thing containing it?,inverse:hasPart,Draft paraphrase of CQB16; same inverse-part relation without stating the answer term.
+CQB17,CQB17,Which property captures that an entity is situated within a location?,rec:locatedIn (sh:path),Draft paraphrase of CQB17; same spatial-containment property and SHACL grounding.
+CQB18,CQB18,How can the tags associated with equipment be represented?,prop:hasAssociatedTag,Draft paraphrase of CQB18; same equipment-to-tag association without naming the predicate.
+CQB19,CQB19,Which field links a quantity or point to its measurement unit?,prop:hasUnit,Draft paraphrase of CQB19; same unit attachment capability without answer leakage.
+CQB21,CQB21,What predicate records the total two-dimensional area of a building?,skos:definition brick:grossArea,Draft paraphrase of CQB21; same gross-area property retrieval, phrased through its semantic role.
+CQB22,CQB22,Which property identifies a building's main use or function?,prop:buildingPrimaryFunction,Draft paraphrase of CQB22; same primary-function property without naming it.
+CQB23,CQB23,Which property records the year in which a building was first constructed?,skos:definition brick:yearBuilt,Draft paraphrase of CQB23; same construction-year property target without naming the predicate.

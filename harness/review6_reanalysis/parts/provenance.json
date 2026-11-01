@@ -1,0 +1,68 @@
+{
+ "seed": 20260913,
+ "B": 10000,
+ "bca_ties": "midrank",
+ "inputs_sha256": {
+  "per_cell AH (unsealed 2026-10-09)": {
+   "path": "harness/real_run/results_human_pass/unsealed_2026-10-09/per_cell.rerun_0dbe6e9.json",
+   "sha256": "5aebf70b6af9b4468f3c066ba84215699316ae5342d33b5c61d6cb4bd90a9248"
+  },
+  "second rater v3 per-cell results": {
+   "path": "annotation/second_pass_2026-10-13/v3/results_v3_cells.json",
+   "sha256": "13d87590eb06e5359e55a22fc018c6201caa029a4885c0c7f3a9874e2427c207"
+  },
+  "registered judge cells (224)": {
+   "path": "harness/real_run/cells.jsonl",
+   "sha256": "bfd5b3c83981c8a6ec970b93f460bab7409daf047a2e048bfaa90b5adfd0d4af"
+  },
+  "luna length experiment cells": {
+   "path": "harness/length_experiment/cells_length.jsonl",
+   "sha256": "ceedff1def106b6aa4f95a70fb5e94dad57858efd1400e09c57e671a08b9dd43"
+  },
+  "luna full-view B-F cells": {
+   "path": "harness/length_experiment/luna_full_r35/cells_luna_full_r35.jsonl",
+   "sha256": "8a1136a5474aa75d4b7c0d66244bc9069c666e9e4bb8454f86061f12e860447d"
+  },
+  "panel luna 48 cells": {
+   "path": "harness/real_run/paired_ai_audit_48/gpt-5.6-luna/cells.jsonl",
+   "sha256": "eec479cdf6f30a3b4ebc5c189add3e48e5235659b200e790ebec3f4fb9baa534"
+  },
+  "panel sonnet 48 cells": {
+   "path": "harness/real_run/paired_ai_audit_48/anthropic__claude-sonnet-5-5/cells.jsonl",
+   "sha256": "b7fbe8003cad34202554e8cd3152865f1c021d4356d398182494f9fb94488e6b"
+  },
+  "panel 48-cell list": {
+   "path": "harness/real_run/second_annotator/cell_list_48.txt",
+   "sha256": "bd2333d427971fb182add2e3735e1d81fd3fe343640d736eea2b612819854b7e"
+  },
+  "analyzer (BCa, definitions)": {
+   "path": "harness/analyze_holdout.py",
+   "sha256": "3278d71c70829889838aa8f61c4f5b0217b9ef3e921976a8ea5fc0c0fd122e10"
+  },
+  "AH registered rerun results (reproduction target)": {
+   "path": "harness/real_run/results_human_pass/unsealed_2026-10-09/holdout_results_human.rerun_0dbe6e9.json",
+   "sha256": "ee2650c7cfa1e7655305def2c7437ee9972cf7f7e5813460b4c81c4a84d7da49"
+  },
+  "second rater v3 analyzer results (reproduction target)": {
+   "path": "annotation/second_pass_2026-10-13/v3/results_v3.json",
+   "sha256": "73101bc72b6204598a9c7c8554d565e0c49c52ef6669fe1150b27dd2a71c652b"
+  }
+ },
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "scipy": "1.17.1"
+ },
+ "not_opened": [
+  "site_key*",
+  "labeling_sheet_key*",
+  "human_labels_export*",
+  "views_for_raters.zip",
+  ".env",
+  "persona_pass/*",
+  "raw label CSVs with spans/notes (labels_v3.csv, primary_working.csv)"
+ ],
+ "repo_head": "2aa436f42047b127023052de0c94bafa510f36bc",
+ "repo_dirty_files_in_this_dir_only": "this directory is untracked; nothing else is modified by these scripts"
+}

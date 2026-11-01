@@ -1,0 +1,26 @@
+{
+ "domain": "dcat",
+ "retrieved_utc": "2026-10-20T09:02:45+00:00",
+ "files": [
+  {
+   "kind": "doc",
+   "name": "dcat3-rec",
+   "url": "https://www.w3.org/TR/vocab-dcat-3/",
+   "file": "dcat3-rec.html",
+   "bytes": 664822,
+   "sha256": "068b43f7814525ea784b7d565ada8de2b4538f5377517c4f0ec9b162a34dedfb",
+   "license_statement_on_page": "class=\"copyright\"> Copyright \u00a9 2024 World Wide Web Consortium . W3C \u00ae liability , trademark and permissive document license rules apply. Note DCAT 3 supersedes DCAT 2 [ VOCAB-DCAT-2 ], but it does not make it obsolete. DCAT 3 maintains the DCAT namespace as it"
+  },
+  {
+   "kind": "ontology",
+   "name": "dcat.ttl",
+   "url": "https://www.w3.org/ns/dcat.ttl",
+   "file": "dcat.ttl",
+   "bytes": 200345,
+   "sha256": "d1624d3bbf364f6fc1d43b9a188bbb9e67639b1a7d46a5cb7ea3f5d47d02b62f"
+  }
+ ],
+ "license_docs": "W3C permissive document license (W3C Software and Document Notice and License 2023)",
+ "license_ontology": "CC BY 4.0 (dcterms:license in dcat.ttl)",
+ "redistribute": true
+}

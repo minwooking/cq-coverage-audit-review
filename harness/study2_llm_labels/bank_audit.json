@@ -1,0 +1,138 @@
+{
+ "draft_sha256": "2d9bc07cea366b0557975a76eb45385500ec54c7818da7f5328502b21976190f",
+ "n_rows": 84,
+ "snapshot_sha256": "b65720b7b9b64c646745c689777e6138c0d59ce0088df0aeb78fbd444d04d8e7",
+ "created_column": [
+  "2026-10-13"
+ ],
+ "git_log_draft": [
+  "39a3c24 2026-10-13T23:49:16+09:00 prereg(access): drafts for addendum 19 (expert artifact-quality validity package, blinded, Kendall W / exact tau) and addendum"
+ ],
+ "git_log_builder": [
+  "39a3c24 2026-10-13T23:49:16+09:00 prereg(access): drafts for addendum 19 (expert artifact-quality validity package, blinded, Kendall W / exact tau) and addendum"
+ ],
+ "author_review_values": [
+  "pending"
+ ],
+ "builder_paths_touched": [
+  {
+   "line": 43,
+   "text": "SNAPSHOT = ACCESS / \"data\" / \"brick-v1.4.4.ttl\""
+  },
+  {
+   "line": 44,
+   "text": "EXISTING = ACCESS / \"bank\" / \"cq_bank_brick_v2.csv\"  # 60-row pool, text only"
+  },
+  {
+   "line": 45,
+   "text": "OUT_CSV = HERE / \"cq_bank_brick_expansion_draft_v1.csv\""
+  },
+  {
+   "line": 46,
+   "text": "OUT_JSON = HERE / \"screen_results.json\""
+  },
+  {
+   "line": 47,
+   "text": "QDIR = HERE / \"ask_queries\""
+  },
+  {
+   "line": 75,
+   "text": "g.parse(SNAPSHOT, format=\"turtle\")"
+  },
+  {
+   "line": 396,
+   "text": "(HERE / r[\"ask_query_file\"]).write_text(PREAMBLE + r[\"ask\"] + \"\\n\", encoding=\"utf-8\")"
+  },
+  {
+   "line": 399,
+   "text": "sys.path.insert(0, str(ACCESS / \"harness\"))"
+  },
+  {
+   "line": 408,
+   "text": "sha = hashlib.sha256(SNAPSHOT.read_bytes()).hexdigest()"
+  },
+  {
+   "line": 411,
+   "text": "existing = list(csv.DictReader(EXISTING.open(newline=\"\", encoding=\"utf-8\")))"
+  },
+  {
+   "line": 435,
+   "text": "if r[\"ask_expressible\"] in {\"yes\", \"partial\"} and not (HERE / r[\"ask_query_file\"]).is_file():"
+  },
+  {
+   "line": 486,
+   "text": "with OUT_CSV.open(\"w\", newline=\"\", encoding=\"utf-8\") as fh:"
+  }
+ ],
+ "builder_artifact_word_hits": [
+  {
+   "line": 11,
+   "word": "variants",
+   "text": "It never opens variants/, graph_*.ttl, rendered views, judge cells, labels or any"
+  },
+  {
+   "line": 11,
+   "word": "graph_",
+   "text": "It never opens variants/, graph_*.ttl, rendered views, judge cells, labels or any"
+  },
+  {
+   "line": 11,
+   "word": "judge",
+   "text": "It never opens variants/, graph_*.ttl, rendered views, judge cells, labels or any"
+  },
+  {
+   "line": 11,
+   "word": "label",
+   "text": "It never opens variants/, graph_*.ttl, rendered views, judge cells, labels or any"
+  },
+  {
+   "line": 12,
+   "word": "judge",
+   "text": "length-experiment input.  No judge call is made."
+  },
+  {
+   "line": 53,
+   "word": "judge",
+   "text": "\"(tag) before any judge call. Delete this comment line when freezing; the CSV then \""
+  }
+ ],
+ "readme_claim": "artifact-blind: read data/brick-v1.4.4.ttl and the existing bank's question/grounding text only",
+ "grounding_check": {
+  "n_terms": 102,
+  "n_terms_missing_in_snapshot": 0,
+  "n_brick_terms_without_skos_definition_where_required": 0,
+  "rows_with_any_missing": [],
+  "rows_with_no_definition": [],
+  "rows_checked": 84
+ },
+ "draft_own_screen": {
+  "snapshot_sha256": "b65720b7b9b64c646745c689777e6138c0d59ce0088df0aeb78fbd444d04d8e7",
+  "rows": 84,
+  "per_category": {
+   "concept_definition": 14,
+   "taxonomy": 14,
+   "relations": 14,
+   "slots_facets": 14,
+   "instances": 14,
+   "methodology": 14
+  },
+  "format_pass": 84,
+  "grounding_pass": 84,
+  "ask_pass": 84,
+  "all_three_pass": 84,
+  "anchor_rule_pass": 84,
+  "dup_review": [
+   "CQX19",
+   "CQX23",
+   "CQX28",
+   "CQX43"
+  ],
+  "fail": [],
+  "ask_expressible": {
+   "yes": 35,
+   "partial": 49,
+   "no": 0
+  },
+  "grounding_terms_checked": 273
+ }
+}

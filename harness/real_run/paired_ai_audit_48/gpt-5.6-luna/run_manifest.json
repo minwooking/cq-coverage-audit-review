@@ -1,0 +1,348 @@
+{
+  "status": "EXPLORATORY, POST HOC: run after the holdout results (and the human labels) were known; the second judge was not registered in PREREG.md",
+  "model_requested": "gpt-5.6-luna",
+  "model_id_reported_by_proxy": "gpt-5.6-luna",
+  "models_reported_in_cell_responses": [
+    "gpt-5.6-luna"
+  ],
+  "runner_py_sha256": "456726b8961e88d76e6cbfafe61093baaaf93e93526a4c116ac93f95223a90b8",
+  "provider_path": "local <internal-proxy> proxy (OpenAI-compatible /v1/chat/completions); no other provider",
+  "endpoint": "http://<local-endpoint>/v1",
+  "proxy_facts": {
+    "proxy": {
+      "service": "<internal-proxy>",
+      "version": "2.41.0"
+    },
+    "model_listing": {
+      "id": "gpt-5.6-luna",
+      "owned_by": "openai",
+      "default_reasoning_effort": "medium",
+      "context_length": 922000,
+      "max_output_tokens": 128000,
+      "pricing_overrides": [
+        {
+          "min_prompt_tokens": 272000
+        }
+      ]
+    }
+  },
+  "created_utc": "2026-10-09T11:00:57.427002+00:00",
+  "updated_utc": "2026-10-09T12:38:25.080946+00:00",
+  "settings": {
+    "temperature": 0.0,
+    "temperature_omitted": false,
+    "max_tokens": 1024,
+    "response_format": "OMITTED (registered: json_object); see response_format_probe",
+    "extra_body": null,
+    "extra_top_level_fields": null,
+    "reasoning_effort": "not sent; proxy default for the model (see proxy_facts)",
+    "system_prompt": "run_holdout.RUBRIC, unchanged",
+    "user_message": "ARTIFACT:\\n{artifact}\\n\\nQUESTION: {question}, unchanged",
+    "workers": 1,
+    "max_workers_allowed": 3,
+    "determinism_note": "temperature 0.0 is sent and accepted, but this is a reasoning model behind a proxy: a repeated call of the same cell gave different completion/reasoning token counts (observed 2026-10-09), so the scores are not guaranteed bit-reproducible"
+  },
+  "response_format_probe": {
+    "utc": "2026-10-09T12:38:15.005912+00:00",
+    "availability_http_status": 200,
+    "model_id_reported_by_proxy": "gpt-5.6-luna",
+    "availability_usage": {
+      "prompt_tokens": 33,
+      "completion_tokens": 49,
+      "cached_tokens": 0,
+      "reasoning_tokens": 38
+    },
+    "availability_error": "",
+    "with_response_format_http_status": 502,
+    "with_response_format_error": "{\"error\":{\"message\":\"upstream stream ended early (adapter_eof)\",\"type\":\"server_error\",\"param\":null,\"code\":\"upstream_server_error\"}}",
+    "response_format_omitted_reason": "the <internal-proxy> adapter rejects response_format=json_object (HTTP 502 adapter_eof)"
+  },
+  "digests": {
+    "frozen_input_digests": {
+      "cq_bank_brick_v1.csv": "993c5e1164540dce0f2f9bf2e6ed397cf45910da7889300feeaad6543edb8507",
+      "RUBRIC_L1.md": "d0c397584bd62ca2ba62cf3833b1ad70862d6be22be52a4c3ffa111529756ebf",
+      "RENDERING_SPEC.md": "eb0399af5152ac001074f1a0c27b23652a42a2f9ceeebf95a669abf703ec0a3e"
+    },
+    "variant_views_sha256": "16ede3938e2729c70467c51195dd0f32869c8f375d5945e12d40aa9f1fa50b8f",
+    "queue_sha256": "2ba0a20ad9d85a15a8e9fc8a806999c97ec02ee717faf96475bf5114f8159926",
+    "matches_original_manifest": {
+      "variant_views_sha256": true,
+      "queue_sha256": true,
+      "bank_sha256": true,
+      "rubric_sha256": true,
+      "rendering_spec_sha256": true
+    },
+    "artifact_digests_verified": 224,
+    "artifact_digest_mismatches": 0,
+    "original_cells_jsonl_sha256": "bfd5b3c83981c8a6ec970b93f460bab7409daf047a2e048bfaa90b5adfd0d4af",
+    "original_manifest_sha256": "5a192518429a1f2db13f1b31df67d6e9dd74045e68c001f07dc90f0b6a7eb270",
+    "original_judge_model": "gemini-3.6-flash",
+    "rubric_constant_sha256": "85e208799f10b756125c524dc43222064ac946f3c01f000ee03cf331800cee72",
+    "run_holdout_py_sha256": "ac4e777d6b00a4d62da9ba0b17eeb8dbeebfc1f19573108703d7ac9e46e76477"
+  },
+  "counts": {
+    "planned_cells": 48,
+    "cells_scored_total": 48,
+    "cells_remaining": 0,
+    "failed_attempts_total": 1,
+    "scored_by_kind": {
+      "primary": 48,
+      "ablated_control": 0,
+      "preserved_control": 0
+    },
+    "scored_by_variant_primary": {
+      "A": 3,
+      "B": 9,
+      "C": 13,
+      "D": 7,
+      "E": 10,
+      "F": 6
+    }
+  },
+  "tokens_all_invocations": {
+    "prompt_tokens": 27706097,
+    "completion_tokens": 14908,
+    "cached_tokens": 8944896,
+    "reasoning_tokens": 6719
+  },
+  "token_estimate": {
+    "by_variant_kind": {
+      "primary:F": {
+        "cells": 6,
+        "artifact_chars": 14192643,
+        "est_prompt_tokens_central": 3641539,
+        "est_prompt_tokens_conservative": 3838249
+      },
+      "primary:E": {
+        "cells": 10,
+        "artifact_chars": 23654363,
+        "est_prompt_tokens_central": 6069221,
+        "est_prompt_tokens_conservative": 6397071
+      },
+      "primary:D": {
+        "cells": 7,
+        "artifact_chars": 16820488,
+        "est_prompt_tokens_central": 4315745,
+        "est_prompt_tokens_conservative": 4548877
+      },
+      "primary:C": {
+        "cells": 13,
+        "artifact_chars": 31392754,
+        "est_prompt_tokens_central": 8054624,
+        "est_prompt_tokens_conservative": 8489728
+      },
+      "primary:B": {
+        "cells": 9,
+        "artifact_chars": 17559287,
+        "est_prompt_tokens_central": 4505981,
+        "est_prompt_tokens_conservative": 4749353
+      },
+      "primary:A": {
+        "cells": 3,
+        "artifact_chars": 878677,
+        "est_prompt_tokens_central": 226501,
+        "est_prompt_tokens_conservative": 238680
+      }
+    },
+    "tiers": {
+      "tier1_primary_A_B": {
+        "cells": 12,
+        "est_prompt_tokens_central": 4732482,
+        "est_prompt_tokens_conservative": 4988033
+      },
+      "tier2_primary_C_to_F": {
+        "cells": 36,
+        "est_prompt_tokens_central": 22081129,
+        "est_prompt_tokens_conservative": 23273925
+      },
+      "tier3_controls": {
+        "cells": 0,
+        "est_prompt_tokens_central": 0,
+        "est_prompt_tokens_conservative": 0
+      },
+      "primary_all": {
+        "cells": 48,
+        "est_prompt_tokens_central": 26813611,
+        "est_prompt_tokens_conservative": 28261958
+      },
+      "all_224": {
+        "cells": 48,
+        "est_prompt_tokens_central": 26813611,
+        "est_prompt_tokens_conservative": 28261958
+      }
+    },
+    "chars_per_token": {
+      "central": 3.9,
+      "conservative": 3.7
+    },
+    "context_window_tokens": 922000,
+    "note": "cells over 272000 prompt tokens fall in the proxy's higher pricing tier (/v1/models pricing.overrides.min_prompt_tokens)"
+  },
+  "invocations": [
+    {
+      "started_utc": "2026-10-09T11:00:57.427002+00:00",
+      "token_budget": 5985647,
+      "workers": 3,
+      "variants": [
+        "A",
+        "B"
+      ],
+      "kinds": "all",
+      "order": "priority",
+      "limit": 0,
+      "pending_selected": 12,
+      "already_done_at_start": 0,
+      "probe": {
+        "utc": "2026-10-09T11:01:01.344318+00:00",
+        "availability_http_status": 200,
+        "model_id_reported_by_proxy": "gpt-5.6-luna",
+        "availability_usage": {
+          "prompt_tokens": 33,
+          "completion_tokens": 51,
+          "cached_tokens": 0,
+          "reasoning_tokens": 40
+        },
+        "availability_error": "",
+        "with_response_format_http_status": 502,
+        "with_response_format_error": "{\"error\":{\"message\":\"upstream stream ended early (adapter_eof)\",\"type\":\"server_error\",\"param\":null,\"code\":\"upstream_server_error\"}}",
+        "response_format_omitted_reason": "the <internal-proxy> adapter rejects response_format=json_object (HTTP 502 adapter_eof)"
+      },
+      "finished_utc": "2026-10-09T11:01:32.572002+00:00",
+      "stop_reason": "all_selected_cells_scored",
+      "cells_scored": 12,
+      "cells_failed": 0,
+      "tokens": {
+        "prompt_tokens": 4639870,
+        "completion_tokens": 4290,
+        "cached_tokens": 1473792,
+        "reasoning_tokens": 1573
+      },
+      "tokens_prompt_plus_completion": 4644160,
+      "http_status_histogram": {
+        "200": 12
+      },
+      "scored_by_variant": {
+        "A": 3,
+        "B": 9
+      },
+      "prompt_tokens_by_variant": {
+        "A": 209641,
+        "B": 4430229
+      },
+      "models_reported_in_responses": [
+        "gpt-5.6-luna"
+      ]
+    },
+    {
+      "started_utc": "2026-10-09T12:32:58.543003+00:00",
+      "token_budget": 30256123,
+      "workers": 3,
+      "variants": "all",
+      "kinds": "all",
+      "order": "priority",
+      "limit": 0,
+      "pending_selected": 36,
+      "already_done_at_start": 12,
+      "probe": {
+        "utc": "2026-10-09T12:33:04.336057+00:00",
+        "availability_http_status": 200,
+        "model_id_reported_by_proxy": "gpt-5.6-luna",
+        "availability_usage": {
+          "prompt_tokens": 33,
+          "completion_tokens": 71,
+          "cached_tokens": 0,
+          "reasoning_tokens": 60
+        },
+        "availability_error": "",
+        "with_response_format_http_status": 502,
+        "with_response_format_error": "{\"error\":{\"message\":\"upstream stream ended early (adapter_eof)\",\"type\":\"server_error\",\"param\":null,\"code\":\"upstream_server_error\"}}",
+        "response_format_omitted_reason": "the <internal-proxy> adapter rejects response_format=json_object (HTTP 502 adapter_eof)"
+      },
+      "finished_utc": "2026-10-09T12:34:52.171520+00:00",
+      "stop_reason": "selected_cells_exhausted_with_1_failed",
+      "cells_scored": 35,
+      "cells_failed": 1,
+      "tokens": {
+        "prompt_tokens": 22439788,
+        "completion_tokens": 10291,
+        "cached_tokens": 6845696,
+        "reasoning_tokens": 4962
+      },
+      "tokens_prompt_plus_completion": 22450079,
+      "http_status_histogram": {
+        "200": 36
+      },
+      "scored_by_variant": {
+        "C": 13,
+        "D": 7,
+        "E": 9,
+        "F": 6
+      },
+      "prompt_tokens_by_variant": {
+        "C": 8084320,
+        "D": 4332447,
+        "E": 6264387,
+        "F": 3758634
+      },
+      "models_reported_in_responses": [
+        "gpt-5.6-luna"
+      ]
+    },
+    {
+      "started_utc": "2026-10-09T12:38:10.511694+00:00",
+      "token_budget": 1000000,
+      "workers": 1,
+      "variants": "all",
+      "kinds": "all",
+      "order": "priority",
+      "limit": 0,
+      "pending_selected": 1,
+      "already_done_at_start": 47,
+      "probe": {
+        "utc": "2026-10-09T12:38:15.005912+00:00",
+        "availability_http_status": 200,
+        "model_id_reported_by_proxy": "gpt-5.6-luna",
+        "availability_usage": {
+          "prompt_tokens": 33,
+          "completion_tokens": 49,
+          "cached_tokens": 0,
+          "reasoning_tokens": 38
+        },
+        "availability_error": "",
+        "with_response_format_http_status": 502,
+        "with_response_format_error": "{\"error\":{\"message\":\"upstream stream ended early (adapter_eof)\",\"type\":\"server_error\",\"param\":null,\"code\":\"upstream_server_error\"}}",
+        "response_format_omitted_reason": "the <internal-proxy> adapter rejects response_format=json_object (HTTP 502 adapter_eof)"
+      },
+      "finished_utc": "2026-10-09T12:38:24.617187+00:00",
+      "stop_reason": "all_selected_cells_scored",
+      "cells_scored": 1,
+      "cells_failed": 0,
+      "tokens": {
+        "prompt_tokens": 626439,
+        "completion_tokens": 327,
+        "cached_tokens": 625408,
+        "reasoning_tokens": 184
+      },
+      "tokens_prompt_plus_completion": 626766,
+      "http_status_histogram": {
+        "200": 1
+      },
+      "scored_by_variant": {
+        "E": 1
+      },
+      "prompt_tokens_by_variant": {
+        "E": 626439
+      },
+      "models_reported_in_responses": [
+        "gpt-5.6-luna"
+      ]
+    }
+  ],
+  "last_stop_reason": "all_selected_cells_scored",
+  "resume_command": null,
+  "cell_selection": {
+    "cell_list": "paper/access2026/harness/real_run/second_annotator/cell_list_48.txt",
+    "cell_list_sha256": "bd2333d427971fb182add2e3735e1d81fd3fe343640d736eea2b612819854b7e",
+    "selected_cells": 48
+  }
+}

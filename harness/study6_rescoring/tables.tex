@@ -1,0 +1,25 @@
+% AI-generated; addendum 37; review before use
+\begin{tabular}{@{}llrrl@{}}
+\toprule
+Judge / arm & contrast & $n$ & $\Delta$ [95\% BCa] & decision (0.30 / 0.50) \\
+\midrule
+glm A-hint & A$\to$B & 15 & +0.467 [+0.178, +0.956] & resolved / resolved \\
+glm A-nohint & A$\to$B & 16 & +0.375 [+0.125, +0.812] & resolved / resolved \\
+glm A-holdout & A$\to$B & 15 & +1.333 [+0.933, +1.844] & resolved / resolved \\
+gptoss A-hint & A$\to$B & 16 & +1.188 [+0.021, +2.000] & resolved / resolved \\
+gptoss A-nohint & A$\to$B & 16 & +1.042 [+0.146, +1.771] & resolved / resolved \\
+gptoss A-holdout & A$\to$B & 16 & +1.917 [+1.229, +2.438] & resolved / resolved \\
+qwen35 A-hint & A$\to$B & 14 & +0.762 [+0.405, +1.262] & resolved / resolved \\
+qwen35 A-nohint & A$\to$B & 15 & +0.822 [+0.467, +1.222] & resolved / resolved \\
+qwen35 A-holdout & A$\to$B & 15 & +1.600 [+0.933, +2.200] & resolved / resolved \\
+\midrule
+glm limited & A$\to$B & 23 & +0.000 [-0.261, +0.261] & equivalent / equivalent \\
+glm limited & B$\to$D & 33 & +0.101 [-0.051, +0.364] & unresolved / equivalent \\
+glm subgraph & A$\to$B & 22 & +0.545 [-0.076, +1.182] & unresolved / unresolved \\
+glm subgraph & B$\to$D & 32 & +0.031 [-0.146, +0.292] & equivalent / equivalent \\
+gptoss limited & A$\to$B & 23 & -1.217 [-1.942, -0.386] & resolved / resolved \\
+gptoss limited & B$\to$D & 33 & -0.081 [-0.505, +0.273] & unresolved / equivalent \\
+gptoss subgraph & A$\to$B & 22 & +0.409 [-0.242, +1.045] & unresolved / unresolved \\
+gptoss subgraph & B$\to$D & 32 & -0.021 [-0.427, +0.417] & unresolved / equivalent \\
+\bottomrule
+\end{tabular}

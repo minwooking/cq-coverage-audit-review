@@ -1,0 +1,109 @@
+http://example.org/chunktograph#ADMSStatusVocabulary | ADMS Status vocabulary
+http://example.org/chunktograph#Agent | Agent :: An entity responsible for publishing or curating data.
+http://example.org/chunktograph#Attribution | Attribution :: An agent's responsibility for a resource.
+http://example.org/chunktograph#CI_RoleCode | CI Role Code
+http://example.org/chunktograph#CNRI | CNR - Consiglio Nazionale delle Ricerche
+http://example.org/chunktograph#CSIRO | CSIRO
+http://example.org/chunktograph#Catalog | Catalog < http://example.org/chunktograph#Dataset,http://example.org/chunktograph#Resource,http://www.w3.org/ns/dcat#Dataset :: A kind of dataset whose member items are descriptions of datasets and data services.
+http://example.org/chunktograph#CatalogRecord | Catalog Record < http://example.org/chunktograph#Resource :: A metadata record in the catalog, primarily concerning the registration information, such as who added the record and when.
+http://example.org/chunktograph#Centroid | Centroid :: The geographic center (centroid) of a spatial thing.
+http://example.org/chunktograph#Checksum | Checksum :: A Checksum is a value that allows to check the integrity of the contents of a file. Even small changes to the content of the file will change its checksum. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented.
+http://example.org/chunktograph#ChecksumAlgorithm | Checksum Algorithm :: The set of individuals of class spdx:ChecksumAlgorithm. Version 2.2 defines individuals for the following algorithms: MD2, MD4, MD5, MD6, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512.
+http://example.org/chunktograph#ChildDataset | Child Dataset
+http://example.org/chunktograph#Collection | Collection :: A group of concepts.
+http://example.org/chunktograph#ConceptScheme | ConceptScheme :: A collection of concepts organized in a structured way.
+http://example.org/chunktograph#Contributor | Contributor
+http://example.org/chunktograph#DCAT | DCAT
+http://example.org/chunktograph#DCAT2 | DCAT 2
+http://example.org/chunktograph#DCAT3 | DCAT 3
+http://example.org/chunktograph#DCATAP | DCAT-AP
+http://example.org/chunktograph#DCATNamespace | DCAT Namespace
+http://example.org/chunktograph#DCATProfile | DCAT profile
+http://example.org/chunktograph#DCATVersioning | DCAT versioning
+http://example.org/chunktograph#DCMITypeVocabulary | DCMI Type Vocabulary :: A controlled vocabulary for resource types.
+http://example.org/chunktograph#DERI | DERI
+http://example.org/chunktograph#DS_AssociationTypeCode | DS Association Type Code
+http://example.org/chunktograph#DataCitationProfile | Data Citation Profile
+http://example.org/chunktograph#DataService | Data Service < http://example.org/chunktograph#Resource :: A collection of operations accessible through an interface (API) that provide access to one or more datasets or data processing functions.
+http://example.org/chunktograph#DataTagSuite | Data Tag Suite
+http://example.org/chunktograph#DataciteResourceTypes | Datacite Resource Types :: A controlled vocabulary for resource types from Datacite.
+http://example.org/chunktograph#Dataset | Dataset < http://example.org/chunktograph#Resource,http://www.w3.org/ns/dcat#Dataset,http://www.w3.org/ns/dcat#Resource :: A collection of data that this data service can distribute.
+http://example.org/chunktograph#DatasetSeries | Dataset Series < http://example.org/chunktograph#Dataset,http://www.w3.org/ns/dcat#Dataset :: A dataset that represents a collection of datasets that are published separately, but share some characteristics that group them.
+http://example.org/chunktograph#Distribution | Distribution < http://example.org/chunktograph#Resource,http://www.w3.org/ns/dcat#Distribution :: A representation of a dataset.
+http://example.org/chunktograph#Document | Document :: A Web page or document accessible via a URI.
+http://example.org/chunktograph#EndpointDescription | Endpoint Description :: The endpoint description gives specific details of the actual endpoint instances, while dcterms:conformsTo is used to indicate the general standard or specification that the endpoints implement.
+http://example.org/chunktograph#Resource | Resource < http://www.w3.org/ns/dcat#Resource :: A general class for resources cataloged in DCAT; datasets and data services are sub-classes.
+OP http://example.org/chunktograph#First
+OP http://example.org/chunktograph#HasCurrentVersion
+OP http://example.org/chunktograph#HasVersion
+OP http://example.org/chunktograph#Last
+OP http://example.org/chunktograph#Previous
+OP http://example.org/chunktograph#PreviousVersion
+OP http://example.org/chunktograph#Replaces
+OP http://example.org/chunktograph#accessRights
+OP http://example.org/chunktograph#accessURL dom:http://example.org/chunktograph#Distribution
+OP http://example.org/chunktograph#addsNewClasses dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#DCAT2
+OP http://example.org/chunktograph#addsNewProperties dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#DCAT2
+OP http://example.org/chunktograph#alternateOf
+OP http://example.org/chunktograph#appliesTo dom:http://example.org/chunktograph#measurement_complianceToDWBP
+OP http://example.org/chunktograph#bbox rng:http://www.w3.org/2001/XMLSchema#string
+OP http://example.org/chunktograph#catalog
+OP http://example.org/chunktograph#centroid rng:http://www.w3.org/2001/XMLSchema#string
+OP http://example.org/chunktograph#checksumAlgorithm
+OP http://example.org/chunktograph#conformsTo dom:http://example.org/chunktograph#DataService,http://www.w3.org/ns/dcat#Resource
+OP http://example.org/chunktograph#contactPoint dom:http://www.w3.org/ns/dcat#Resource
+OP http://example.org/chunktograph#creator dom:http://example.org/chunktograph#ChildDataset,http://www.w3.org/ns/dcat#Resource
+OP http://example.org/chunktograph#dataset
+OP http://example.org/chunktograph#datasetSeriesType dom:http://example.org/chunktograph#DatasetSeries
+OP http://example.org/chunktograph#distribution dom:http://example.org/chunktograph#Dataset rng:http://example.org/chunktograph#Distribution
+OP http://example.org/chunktograph#doesNotObsoletes dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#DCAT2
+OP http://example.org/chunktograph#first dom:http://example.org/chunktograph#DatasetSeries rng:http://example.org/chunktograph#Resource
+OP http://example.org/chunktograph#format dom:http://example.org/chunktograph#Resource rng:http://www.w3.org/2001/XMLSchema#string
+OP http://example.org/chunktograph#geometry rng:http://www.w3.org/2001/XMLSchema#string
+OP http://example.org/chunktograph#hadPrimarySource
+OP http://example.org/chunktograph#hadRole
+OP http://example.org/chunktograph#hasAccessRights dom:http://example.org/chunktograph#Distribution,http://www.w3.org/ns/dcat#Resource
+OP http://example.org/chunktograph#hasAccessURL dom:http://example.org/chunktograph#Distribution
+OP http://example.org/chunktograph#hasAccrualPeriodicity dom:http://example.org/chunktograph#Dataset
+OP http://example.org/chunktograph#hasDistribution dom:http://example.org/chunktograph#Dataset rng:http://example.org/chunktograph#Distribution
+OP http://example.org/chunktograph#hasDownloadURL dom:http://example.org/chunktograph#Distribution
+OP http://example.org/chunktograph#hasLandingPage dom:http://example.org/chunktograph#Distribution rng:http://xmlns.com/foaf/0.1/Document
+OP http://example.org/chunktograph#hasLicense dom:http://example.org/chunktograph#Distribution
+OP http://example.org/chunktograph#hasODRLPolicy dom:http://example.org/chunktograph#Distribution,http://example.org/chunktograph#Resource
+OP http://example.org/chunktograph#hasRights dom:http://example.org/chunktograph#Distribution
+OP http://example.org/chunktograph#landingPage dom:http://example.org/chunktograph#Resource rng:http://xmlns.com/foaf/0.1/Document
+OP http://example.org/chunktograph#representation dom:http://www.w3.org/ns/dcat#Dataset rng:http://www.w3.org/ns/dcat#Distribution
+DP http://example.org/chunktograph#accrualPeriodicity dom:http://example.org/chunktograph#DatasetSeries,http://example.org/chunktograph#Resource,http://www.w3.org/ns/dcat#Dataset rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#bbox rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#centroid rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#created dom:http://example.org/chunktograph#Resource rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#datasetIdentifier dom:http://example.org/chunktograph#ChildDataset rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#dateAccepted dom:http://example.org/chunktograph#Resource rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#dateCopyrighted dom:http://example.org/chunktograph#Resource rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#dateSubmitted dom:http://example.org/chunktograph#Resource rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasDatasetType dom:http://example.org/chunktograph#Resource rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasDescription dom:http://example.org/chunktograph#Distribution
+DP http://example.org/chunktograph#hasIssuanceDate dom:http://example.org/chunktograph#Distribution
+DP http://example.org/chunktograph#hasIssuedDate dom:http://example.org/chunktograph#Dataset
+DP http://example.org/chunktograph#hasModificationDate dom:http://example.org/chunktograph#Distribution
+DP http://example.org/chunktograph#hasModifiedDate dom:http://example.org/chunktograph#Dataset
+DP http://example.org/chunktograph#hasName dom:http://example.org/chunktograph#Distribution
+DP http://example.org/chunktograph#hasResourceType dom:http://example.org/chunktograph#Resource rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasSpatialResolutionInMeters dom:http://example.org/chunktograph#Dataset
+DP http://example.org/chunktograph#hasTemporalResolution dom:http://example.org/chunktograph#Dataset
+DP http://example.org/chunktograph#issued dom:http://example.org/chunktograph#Resource,http://www.w3.org/ns/dcat#Resource rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#keyword dom:http://example.org/chunktograph#Resource rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#licenseInfo dom:http://www.w3.org/ns/dcat#Distribution rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#modified dom:http://example.org/chunktograph#Resource,http://www.w3.org/ns/dcat#Resource rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#releaseDate dom:http://example.org/chunktograph#ChildDataset
+DP http://example.org/chunktograph#rightsInfo dom:http://www.w3.org/ns/dcat#Distribution rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#spatialResolutionInMeters dom:http://example.org/chunktograph#Resource,http://www.w3.org/ns/dcat#Dataset
+DP http://example.org/chunktograph#status dom:http://example.org/chunktograph#Resource rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#temporalResolution dom:http://example.org/chunktograph#Resource,http://www.w3.org/ns/dcat#Dataset
+DP http://example.org/chunktograph#title dom:http://example.org/chunktograph#ChildDataset,http://www.w3.org/ns/dcat#Resource rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#valid dom:http://example.org/chunktograph#Resource rng:http://www.w3.org/2001/XMLSchema#string
+IND http://example.org/chunktograph#DCAT2 | DCAT 2 a http://example.org/chunktograph#DCAT2,owl:Class
+IND http://example.org/chunktograph#DCAT3 | DCAT 3 a http://example.org/chunktograph#DCAT3,owl:Class {http://example.org/chunktograph#addsNewClasses=http://example.org/chunktograph#DatasetSeries; http://example.org/chunktograph#addsNewProperties=http://example.org/chunktograph#DatasetSeries; http://example.org/chunktograph#doesNotObsoletes=http://example.org/chunktograph#DCAT2; http://example.org/chunktograph#hasErrata=true; http://example.org/chunktograph#hasHistory=https://www.w3.org/standards/history/vocab-dcat-3/; http://example.org/chunktograph#hasImplementationReport=https://w3c.github.io/dxwg/dcat3-implementation-report/; http://example.org/chunktograph#hasLatestEditorsDraft=https://w3c.github.io/dxwg/dcat/; http://example.org/chunktograph#hasLatestVersion=https://www.w3.org/TR/vocab-dcat-3/; http://example.org/chunktograph#hasPreviousRecommendation=https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/; http://example.org/chunktograph#maintainsBackwardCompatibility=http://example.org/chunktograph#DCAT2; http://example.org/chunktograph#relaxesConstraints=http://example.org/chunktograph#DCAT2; http://example.org/chunktograph#supersedes=http://example.org/chunktograph#DCAT2}
+IND http://example.org/chunktograph#Dataset | Dataset a owl:Class :: A collection of data that this data service can distribute. {http://example.org/chunktograph#hasParentClass=http://example.org/chunktograph#Resource; http://example.org/chunktograph#rdfs:label=Dataset; rdfs:subClassOf=http://example.org/chunktograph#Resource; rdfs:subClassOf=http://www.w3.org/ns/dcat#Dataset; rdfs:subClassOf=http://www.w3.org/ns/dcat#Resource}
+IND http://example.org/chunktograph#dataset-001 | Dataset 001 a http://example.org/chunktograph#Dataset :: An example dataset with relative IRI ex:dataset-001.
+IND http://example.org/chunktograph#measurement_complianceToDWBP | measurement of compliance to DWBP {http://example.org/chunktograph#appliesTo=http://example.org/chunktograph#Dataset}

@@ -1,0 +1,31 @@
+{
+ "domain": "dcat",
+ "atomic_chunks": 426,
+ "corpus_chars": 114539,
+ "corpus_sha256": "670bcf8032fa93e2201210bf693b2d046446144128e761930eccf0ec811974a1",
+ "build_a_sections_skipped": 1,
+ "skip_reasons": [
+  "syntax"
+ ],
+ "triples": {
+  "A": 1877,
+  "B": 4271
+ },
+ "rendered_chars": {
+  "A": 57053,
+  "B": 201444
+ },
+ "llm_calls": {
+  "extract": 0,
+  "triples": 426,
+  "build": 45,
+  "split": 0,
+  "build-a": 21
+ },
+ "llm_failures": 0,
+ "prompt_tokens": 133125,
+ "completion_tokens": 72507,
+ "jobs": 54,
+ "eligible_but_no_subgraph": [],
+ "bank_sha256": "cf7db0a0ee89badc80562930e3c2b1eb4448cc7ba927feee35d1a5db8e673ace"
+}

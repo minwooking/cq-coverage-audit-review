@@ -1,0 +1,730 @@
+http://example.org/chunktograph#Class_artifact | Artifact < skos:Concept
+http://example.org/chunktograph#Class_class | Class < skos:Concept
+http://example.org/chunktograph#Class_concept | Concept < skos:Concept
+http://example.org/chunktograph#Class_event | Event < skos:Concept
+http://example.org/chunktograph#Class_example | Example < skos:Concept
+http://example.org/chunktograph#Class_model | Model < skos:Concept
+http://example.org/chunktograph#Class_process | Process < skos:Concept
+http://example.org/chunktograph#Class_project | Project < skos:Concept
+http://example.org/chunktograph#Class_property | Property < skos:Concept
+http://example.org/chunktograph#Class_relation | Relation < skos:Concept
+http://example.org/chunktograph#Class_schema | Schema < skos:Concept
+http://example.org/chunktograph#Class_system | System < skos:Concept
+OP http://example.org/chunktograph#p_able-define
+OP http://example.org/chunktograph#p_able-enforce
+OP http://example.org/chunktograph#p_able-fully-classify
+OP http://example.org/chunktograph#p_able-infer
+OP http://example.org/chunktograph#p_accept
+OP http://example.org/chunktograph#p_access
+OP http://example.org/chunktograph#p_accumulate
+OP http://example.org/chunktograph#p_achieve
+OP http://example.org/chunktograph#p_act-like
+OP http://example.org/chunktograph#p_add
+OP http://example.org/chunktograph#p_add-easily
+OP http://example.org/chunktograph#p_add-proprietary-extension-file-mark
+OP http://example.org/chunktograph#p_address
+OP http://example.org/chunktograph#p_adhere
+OP http://example.org/chunktograph#p_adopt
+OP http://example.org/chunktograph#p_advocate
+OP http://example.org/chunktograph#p_aim-actively-contribute
+OP http://example.org/chunktograph#p_aim-address
+OP http://example.org/chunktograph#p_aim-cover
+OP http://example.org/chunktograph#p_aim-create
+OP http://example.org/chunktograph#p_alert-author-brick-model
+OP http://example.org/chunktograph#p_align-concept
+OP http://example.org/chunktograph#p_allow
+OP http://example.org/chunktograph#p_allow-automatically-generate
+OP http://example.org/chunktograph#p_allow-graph-object-link
+OP http://example.org/chunktograph#p_allow-real-estate-industry-drive-digital-transformation-forward
+OP http://example.org/chunktograph#p_allow-specify
+OP http://example.org/chunktograph#p_allow-user-generate
+OP http://example.org/chunktograph#p_annotate
+OP http://example.org/chunktograph#p_announce
+OP http://example.org/chunktograph#p_appear
+OP http://example.org/chunktograph#p_apply
+OP http://example.org/chunktograph#p_approve
+OP http://example.org/chunktograph#p_are
+OP http://example.org/chunktograph#p_are-due-in-part-to
+OP http://example.org/chunktograph#p_are-not
+OP http://example.org/chunktograph#p_are-put-into
+OP http://example.org/chunktograph#p_are-used-against
+OP http://example.org/chunktograph#p_are-used-by
+OP http://example.org/chunktograph#p_are-used-for
+OP http://example.org/chunktograph#p_arise-address
+OP http://example.org/chunktograph#p_arrange-hierarchy
+OP http://example.org/chunktograph#p_assign
+OP http://example.org/chunktograph#p_associate
+OP http://example.org/chunktograph#p_attach
+OP http://example.org/chunktograph#p_attach-point
+OP http://example.org/chunktograph#p_attempt-classify
+OP http://example.org/chunktograph#p_attempt-find
+OP http://example.org/chunktograph#p_attempt-implement
+OP http://example.org/chunktograph#p_augment
+OP http://example.org/chunktograph#p_augment-tag
+OP http://example.org/chunktograph#p_automate
+OP http://example.org/chunktograph#p_automatically-add
+OP http://example.org/chunktograph#p_automatically-construct-domain-specific-ontology
+OP http://example.org/chunktograph#p_automatically-generate
+OP http://example.org/chunktograph#p_back
+OP http://example.org/chunktograph#p_becomes
+OP http://example.org/chunktograph#p_believe
+OP http://example.org/chunktograph#p_belong
+OP http://example.org/chunktograph#p_bind
+OP http://example.org/chunktograph#p_bind-rule-pass
+OP http://example.org/chunktograph#p_borrow-concept-tag
+OP http://example.org/chunktograph#p_break
+OP http://example.org/chunktograph#p_build
+OP http://example.org/chunktograph#p_call
+OP http://example.org/chunktograph#p_can-be
+OP http://example.org/chunktograph#p_can-be-in
+OP http://example.org/chunktograph#p_can-be-used-by
+OP http://example.org/chunktograph#p_can-be-used-to
+OP http://example.org/chunktograph#p_can-have
+OP http://example.org/chunktograph#p_capture
+OP http://example.org/chunktograph#p_capture-concept-compose-set-property
+OP http://example.org/chunktograph#p_capture-concept-specialize
+OP http://example.org/chunktograph#p_carry
+OP http://example.org/chunktograph#p_categorize-high-level-semantic-point-behave
+OP http://example.org/chunktograph#p_cause
+OP http://example.org/chunktograph#p_chair-committee
+OP http://example.org/chunktograph#p_challenge
+OP http://example.org/chunktograph#p_change
+OP http://example.org/chunktograph#p_change-medium-instance
+OP http://example.org/chunktograph#p_change-namespace
+OP http://example.org/chunktograph#p_charter
+OP http://example.org/chunktograph#p_check
+OP http://example.org/chunktograph#p_check-instance-brick-rvav-class
+OP http://example.org/chunktograph#p_choose
+OP http://example.org/chunktograph#p_class
+OP http://example.org/chunktograph#p_classifie
+OP http://example.org/chunktograph#p_classify-accord
+OP http://example.org/chunktograph#p_collapse-node-root-node
+OP http://example.org/chunktograph#p_collect
+OP http://example.org/chunktograph#p_collect-datum
+OP http://example.org/chunktograph#p_combine
+OP http://example.org/chunktograph#p_come
+OP http://example.org/chunktograph#p_command
+OP http://example.org/chunktograph#p_commit
+OP http://example.org/chunktograph#p_commit-ensure
+OP http://example.org/chunktograph#p_compile
+OP http://example.org/chunktograph#p_complement
+OP http://example.org/chunktograph#p_complementary-effort
+OP http://example.org/chunktograph#p_compose
+OP http://example.org/chunktograph#p_concern
+OP http://example.org/chunktograph#p_conflict
+OP http://example.org/chunktograph#p_connect
+OP http://example.org/chunktograph#p_connectionpoint-associate
+OP http://example.org/chunktograph#p_consist
+OP http://example.org/chunktograph#p_consist-component-cool-coil-damper-fan
+OP http://example.org/chunktograph#p_consist-member
+OP http://example.org/chunktograph#p_constitute
+OP http://example.org/chunktograph#p_construct
+OP http://example.org/chunktograph#p_contact
+OP http://example.org/chunktograph#p_contain
+OP http://example.org/chunktograph#p_contain-complete-implementation-sparql-1-1
+OP http://example.org/chunktograph#p_contain-definition
+OP http://example.org/chunktograph#p_contribute
+OP http://example.org/chunktograph#p_control
+OP http://example.org/chunktograph#p_convert
+OP http://example.org/chunktograph#p_cooperate
+OP http://example.org/chunktograph#p_correspond
+OP http://example.org/chunktograph#p_cover
+OP http://example.org/chunktograph#p_create
+OP http://example.org/chunktograph#p_currently-infer
+OP http://example.org/chunktograph#p_datum-load-brickify
+OP http://example.org/chunktograph#p_decide-remove-need
+OP http://example.org/chunktograph#p_declare
+OP http://example.org/chunktograph#p_declare-subclass
+OP http://example.org/chunktograph#p_decompose
+OP http://example.org/chunktograph#p_decouple
+OP http://example.org/chunktograph#p_deduce
+OP http://example.org/chunktograph#p_deduplicate
+OP http://example.org/chunktograph#p_define
+OP http://example.org/chunktograph#p_define-set-constraint
+OP http://example.org/chunktograph#p_define-tag
+OP http://example.org/chunktograph#p_deliver
+OP http://example.org/chunktograph#p_demonstrate
+OP http://example.org/chunktograph#p_demonstrate-decent-performance
+OP http://example.org/chunktograph#p_demonstrate-effectiveness
+OP http://example.org/chunktograph#p_demonstrate-typical-shape-structure-constrain-type-object
+OP http://example.org/chunktograph#p_depend
+OP http://example.org/chunktograph#p_deprecate
+OP http://example.org/chunktograph#p_deprecate-favor
+OP http://example.org/chunktograph#p_derive
+OP http://example.org/chunktograph#p_describe
+OP http://example.org/chunktograph#p_describe-belong
+OP http://example.org/chunktograph#p_describe-control-relationship
+OP http://example.org/chunktograph#p_describe-ict-equipment-controller-gateway-device-host-expose
+OP http://example.org/chunktograph#p_describe-physical-structural-composition
+OP http://example.org/chunktograph#p_design
+OP http://example.org/chunktograph#p_determine
+OP http://example.org/chunktograph#p_develop
+OP http://example.org/chunktograph#p_develop-autord-construct-metadata-model
+OP http://example.org/chunktograph#p_differentiate
+OP http://example.org/chunktograph#p_direction
+OP http://example.org/chunktograph#p_disjoint
+OP http://example.org/chunktograph#p_distribute
+OP http://example.org/chunktograph#p_distribute-turtle-file
+OP http://example.org/chunktograph#p_download
+OP http://example.org/chunktograph#p_dramatically-expand
+OP http://example.org/chunktograph#p_drive
+OP http://example.org/chunktograph#p_eliminate
+OP http://example.org/chunktograph#p_email
+OP http://example.org/chunktograph#p_embrace
+OP http://example.org/chunktograph#p_emerge
+OP http://example.org/chunktograph#p_employ
+OP http://example.org/chunktograph#p_enable
+OP http://example.org/chunktograph#p_enable-modeling
+OP http://example.org/chunktograph#p_encapsulate-functional-relationship
+OP http://example.org/chunktograph#p_encode
+OP http://example.org/chunktograph#p_encode-concept-behave-relate
+OP http://example.org/chunktograph#p_encourage
+OP http://example.org/chunktograph#p_enhance
+OP http://example.org/chunktograph#p_ensure
+OP http://example.org/chunktograph#p_entity
+OP http://example.org/chunktograph#p_equip
+OP http://example.org/chunktograph#p_equivalent
+OP http://example.org/chunktograph#p_establish
+OP http://example.org/chunktograph#p_establishe
+OP http://example.org/chunktograph#p_evaluate
+OP http://example.org/chunktograph#p_example
+OP http://example.org/chunktograph#p_execute
+OP http://example.org/chunktograph#p_exhibit
+OP http://example.org/chunktograph#p_exist
+OP http://example.org/chunktograph#p_expand
+OP http://example.org/chunktograph#p_expand-method
+OP http://example.org/chunktograph#p_expand-method-call
+OP http://example.org/chunktograph#p_expand-node
+OP http://example.org/chunktograph#p_expect
+OP http://example.org/chunktograph#p_expect-complete
+OP http://example.org/chunktograph#p_expect-define-distribute-apply
+OP http://example.org/chunktograph#p_expect-occur-quickly
+OP http://example.org/chunktograph#p_experimental-framework-express-complex-transformation-structured-datum-brick-model
+OP http://example.org/chunktograph#p_explain-discuss
+OP http://example.org/chunktograph#p_explore
+OP http://example.org/chunktograph#p_expose
+OP http://example.org/chunktograph#p_express-entity-concept-compose
+OP http://example.org/chunktograph#p_extend
+OP http://example.org/chunktograph#p_extend-cover
+OP http://example.org/chunktograph#p_extract-relevant-entity
+OP http://example.org/chunktograph#p_facilitate
+OP http://example.org/chunktograph#p_fail-capture
+OP http://example.org/chunktograph#p_fall
+OP http://example.org/chunktograph#p_feed
+OP http://example.org/chunktograph#p_filter
+OP http://example.org/chunktograph#p_find
+OP http://example.org/chunktograph#p_fire
+OP http://example.org/chunktograph#p_flow-node
+OP http://example.org/chunktograph#p_focus
+OP http://example.org/chunktograph#p_focus-capture
+OP http://example.org/chunktograph#p_focus-modeling
+OP http://example.org/chunktograph#p_follow
+OP http://example.org/chunktograph#p_for
+OP http://example.org/chunktograph#p_form
+OP http://example.org/chunktograph#p_formalize
+OP http://example.org/chunktograph#p_framework
+OP http://example.org/chunktograph#p_fulfill
+OP http://example.org/chunktograph#p_fully-participate
+OP http://example.org/chunktograph#p_fund
+OP http://example.org/chunktograph#p_generate
+OP http://example.org/chunktograph#p_get
+OP http://example.org/chunktograph#p_give
+OP http://example.org/chunktograph#p_go-in
+OP http://example.org/chunktograph#p_goal-help-drive
+OP http://example.org/chunktograph#p_group
+OP http://example.org/chunktograph#p_grouping-associate
+OP http://example.org/chunktograph#p_grouping-include-equipment-non-point-entity
+OP http://example.org/chunktograph#p_grouping-need
+OP http://example.org/chunktograph#p_grouping-represent
+OP http://example.org/chunktograph#p_had
+OP http://example.org/chunktograph#p_hail
+OP http://example.org/chunktograph#p_handle
+OP http://example.org/chunktograph#p_handle-semantic
+OP http://example.org/chunktograph#p_harmonize-redesign
+OP http://example.org/chunktograph#p_has
+OP http://example.org/chunktograph#p_has-been
+OP http://example.org/chunktograph#p_has-been-done-to
+OP http://example.org/chunktograph#p_haslocation
+OP http://example.org/chunktograph#p_haspart
+OP http://example.org/chunktograph#p_haspoint
+OP http://example.org/chunktograph#p_have
+OP http://example.org/chunktograph#p_have-at-least-one
+OP http://example.org/chunktograph#p_heat
+OP http://example.org/chunktograph#p_heavily-influence
+OP http://example.org/chunktograph#p_heavily-optimize
+OP http://example.org/chunktograph#p_help
+OP http://example.org/chunktograph#p_help-bridge-gap
+OP http://example.org/chunktograph#p_help-ensure
+OP http://example.org/chunktograph#p_help-guide-direct
+OP http://example.org/chunktograph#p_highlight
+OP http://example.org/chunktograph#p_hinder
+OP http://example.org/chunktograph#p_hold
+OP http://example.org/chunktograph#p_host
+OP http://example.org/chunktograph#p_identifie
+OP http://example.org/chunktograph#p_identify
+OP http://example.org/chunktograph#p_illustrate
+OP http://example.org/chunktograph#p_implement
+OP http://example.org/chunktograph#p_implement-graph-base-workflow
+OP http://example.org/chunktograph#p_implement-semantic-metadata-model
+OP http://example.org/chunktograph#p_implementation
+OP http://example.org/chunktograph#p_imply
+OP http://example.org/chunktograph#p_import
+OP http://example.org/chunktograph#p_include
+OP http://example.org/chunktograph#p_include-meter-monitor-power-sensor
+OP http://example.org/chunktograph#p_incompatible
+OP http://example.org/chunktograph#p_incorporate
+OP http://example.org/chunktograph#p_indicate
+OP http://example.org/chunktograph#p_indicate-focus-node-class
+OP http://example.org/chunktograph#p_indicate-shape-target-node-subject
+OP http://example.org/chunktograph#p_infer
+OP http://example.org/chunktograph#p_infer-sensor
+OP http://example.org/chunktograph#p_influence
+OP http://example.org/chunktograph#p_information-expand-include
+OP http://example.org/chunktograph#p_ingest
+OP http://example.org/chunktograph#p_inherit
+OP http://example.org/chunktograph#p_inherit-membership
+OP http://example.org/chunktograph#p_inherit-tag
+OP http://example.org/chunktograph#p_inhibit
+OP http://example.org/chunktograph#p_inhibits
+OP http://example.org/chunktograph#p_initiate-produce
+OP http://example.org/chunktograph#p_insert
+OP http://example.org/chunktograph#p_instal
+OP http://example.org/chunktograph#p_instal-default
+OP http://example.org/chunktograph#p_instance
+OP http://example.org/chunktograph#p_instantiate
+OP http://example.org/chunktograph#p_instruct
+OP http://example.org/chunktograph#p_integrate
+OP http://example.org/chunktograph#p_intend
+OP http://example.org/chunktograph#p_intend-allow
+OP http://example.org/chunktograph#p_interactively-merge
+OP http://example.org/chunktograph#p_interpret
+OP http://example.org/chunktograph#p_introduce
+OP http://example.org/chunktograph#p_inverse
+OP http://example.org/chunktograph#p_invoke
+OP http://example.org/chunktograph#p_involve
+OP http://example.org/chunktograph#p_is
+OP http://example.org/chunktograph#p_is-a
+OP http://example.org/chunktograph#p_is-an
+OP http://example.org/chunktograph#p_is-due-to
+OP http://example.org/chunktograph#p_is-for
+OP http://example.org/chunktograph#p_is-from
+OP http://example.org/chunktograph#p_is-in
+OP http://example.org/chunktograph#p_is-just-used-for
+OP http://example.org/chunktograph#p_is-made-up-of
+OP http://example.org/chunktograph#p_is-not
+OP http://example.org/chunktograph#p_is-one-of
+OP http://example.org/chunktograph#p_is-part-of
+OP http://example.org/chunktograph#p_is-under
+OP http://example.org/chunktograph#p_is-used
+OP http://example.org/chunktograph#p_is-used-for
+OP http://example.org/chunktograph#p_is-used-only-for
+OP http://example.org/chunktograph#p_is-used-to
+OP http://example.org/chunktograph#p_is-used-when
+OP http://example.org/chunktograph#p_iscontrolledby
+OP http://example.org/chunktograph#p_ispointof
+OP http://example.org/chunktograph#p_join
+OP http://example.org/chunktograph#p_join-consortium
+OP http://example.org/chunktograph#p_join-force
+OP http://example.org/chunktograph#p_join-lieu
+OP http://example.org/chunktograph#p_keep
+OP http://example.org/chunktograph#p_key-principle
+OP http://example.org/chunktograph#p_kind-system
+OP http://example.org/chunktograph#p_lack
+OP http://example.org/chunktograph#p_lack-formal-rule
+OP http://example.org/chunktograph#p_largely-complementary
+OP http://example.org/chunktograph#p_leave
+OP http://example.org/chunktograph#p_let
+OP http://example.org/chunktograph#p_let-form
+OP http://example.org/chunktograph#p_leverage
+OP http://example.org/chunktograph#p_leverage-brick
+OP http://example.org/chunktograph#p_leverage-multiprocesse
+OP http://example.org/chunktograph#p_leverage-share-semantic-web-foundation
+OP http://example.org/chunktograph#p_leveraged
+OP http://example.org/chunktograph#p_like-brickify-simple-few-feature
+OP http://example.org/chunktograph#p_link
+OP http://example.org/chunktograph#p_link-entity
+OP http://example.org/chunktograph#p_list
+OP http://example.org/chunktograph#p_llm-develop-framework-construct
+OP http://example.org/chunktograph#p_load
+OP http://example.org/chunktograph#p_load-operation
+OP http://example.org/chunktograph#p_local-llm-extract-metadata-model
+OP http://example.org/chunktograph#p_lower-cost-deploy
+OP http://example.org/chunktograph#p_maintain
+OP http://example.org/chunktograph#p_make
+OP http://example.org/chunktograph#p_make-easy-employ-reasoning
+OP http://example.org/chunktograph#p_make-easy-employ-reasoning-graph
+OP http://example.org/chunktograph#p_make-easy-start
+OP http://example.org/chunktograph#p_make-simple-list-load
+OP http://example.org/chunktograph#p_make-simple-list-load-extension-brick-schema
+OP http://example.org/chunktograph#p_manage
+OP http://example.org/chunktograph#p_manage-llm-interaction
+OP http://example.org/chunktograph#p_map
+OP http://example.org/chunktograph#p_mark
+OP http://example.org/chunktograph#p_match-pattern
+OP http://example.org/chunktograph#p_materialize
+OP http://example.org/chunktograph#p_may-have
+OP http://example.org/chunktograph#p_mean
+OP http://example.org/chunktograph#p_mean-enforcement-consistency
+OP http://example.org/chunktograph#p_measure
+OP http://example.org/chunktograph#p_measure-air
+OP http://example.org/chunktograph#p_medium-associate
+OP http://example.org/chunktograph#p_meet
+OP http://example.org/chunktograph#p_member
+OP http://example.org/chunktograph#p_member-class-c
+OP http://example.org/chunktograph#p_merge
+OP http://example.org/chunktograph#p_meter
+OP http://example.org/chunktograph#p_might-be
+OP http://example.org/chunktograph#p_minimize
+OP http://example.org/chunktograph#p_miss
+OP http://example.org/chunktograph#p_mission
+OP http://example.org/chunktograph#p_model
+OP http://example.org/chunktograph#p_modify
+OP http://example.org/chunktograph#p_monitor
+OP http://example.org/chunktograph#p_monitor-meter-sensor
+OP http://example.org/chunktograph#p_monitor-sensor
+OP http://example.org/chunktograph#p_motivate
+OP http://example.org/chunktograph#p_move
+OP http://example.org/chunktograph#p_move-from
+OP http://example.org/chunktograph#p_move-to
+OP http://example.org/chunktograph#p_must
+OP http://example.org/chunktograph#p_must-be
+OP http://example.org/chunktograph#p_necessary
+OP http://example.org/chunktograph#p_necessary-change
+OP http://example.org/chunktograph#p_necessary-denote
+OP http://example.org/chunktograph#p_need-address
+OP http://example.org/chunktograph#p_need-create
+OP http://example.org/chunktograph#p_need-handle
+OP http://example.org/chunktograph#p_need-know
+OP http://example.org/chunktograph#p_need-load-order
+OP http://example.org/chunktograph#p_occur
+OP http://example.org/chunktograph#p_offer
+OP http://example.org/chunktograph#p_open
+OP http://example.org/chunktograph#p_organize
+OP http://example.org/chunktograph#p_outline
+OP http://example.org/chunktograph#p_output
+OP http://example.org/chunktograph#p_oversee
+OP http://example.org/chunktograph#p_package
+OP http://example.org/chunktograph#p_pass
+OP http://example.org/chunktograph#p_pay
+OP http://example.org/chunktograph#p_pay-2021-membership-fee
+OP http://example.org/chunktograph#p_perform
+OP http://example.org/chunktograph#p_perform-default
+OP http://example.org/chunktograph#p_perform-specific-function
+OP http://example.org/chunktograph#p_permit
+OP http://example.org/chunktograph#p_place
+OP http://example.org/chunktograph#p_point
+OP http://example.org/chunktograph#p_populate
+OP http://example.org/chunktograph#p_pose
+OP http://example.org/chunktograph#p_posses
+OP http://example.org/chunktograph#p_preclude
+OP http://example.org/chunktograph#p_predicate-represent
+OP http://example.org/chunktograph#p_prefer
+OP http://example.org/chunktograph#p_prepare
+OP http://example.org/chunktograph#p_present
+OP http://example.org/chunktograph#p_present-issue
+OP http://example.org/chunktograph#p_present-overview
+OP http://example.org/chunktograph#p_present-promising-path
+OP http://example.org/chunktograph#p_present-tutorial
+OP http://example.org/chunktograph#p_preserve
+OP http://example.org/chunktograph#p_primary-concept
+OP http://example.org/chunktograph#p_prioritize
+OP http://example.org/chunktograph#p_process
+OP http://example.org/chunktograph#p_process-adopt
+OP http://example.org/chunktograph#p_produce
+OP http://example.org/chunktograph#p_prohibit
+OP http://example.org/chunktograph#p_promote
+OP http://example.org/chunktograph#p_property
+OP http://example.org/chunktograph#p_propose
+OP http://example.org/chunktograph#p_provide
+OP http://example.org/chunktograph#p_publish
+OP http://example.org/chunktograph#p_purpose
+OP http://example.org/chunktograph#p_query
+OP http://example.org/chunktograph#p_raise
+OP http://example.org/chunktograph#p_read
+OP http://example.org/chunktograph#p_realize
+OP http://example.org/chunktograph#p_realize-brick-model
+OP http://example.org/chunktograph#p_rebuild
+OP http://example.org/chunktograph#p_receive
+OP http://example.org/chunktograph#p_receive-funding
+OP http://example.org/chunktograph#p_recognize
+OP http://example.org/chunktograph#p_recommend
+OP http://example.org/chunktograph#p_recommend-familiar
+OP http://example.org/chunktograph#p_recommend-name
+OP http://example.org/chunktograph#p_recommend-post
+OP http://example.org/chunktograph#p_recommend-reading
+OP http://example.org/chunktograph#p_recursively-follow
+OP http://example.org/chunktograph#p_reduce
+OP http://example.org/chunktograph#p_refer
+OP http://example.org/chunktograph#p_refer-reader
+OP http://example.org/chunktograph#p_reference
+OP http://example.org/chunktograph#p_refine
+OP http://example.org/chunktograph#p_refine-eliminate
+OP http://example.org/chunktograph#p_reflect
+OP http://example.org/chunktograph#p_relate
+OP http://example.org/chunktograph#p_release
+OP http://example.org/chunktograph#p_rely
+OP http://example.org/chunktograph#p_remain-agnostic
+OP http://example.org/chunktograph#p_remove
+OP http://example.org/chunktograph#p_remove-triple
+OP http://example.org/chunktograph#p_replace
+OP http://example.org/chunktograph#p_report
+OP http://example.org/chunktograph#p_represent
+OP http://example.org/chunktograph#p_represent-different-way
+OP http://example.org/chunktograph#p_representation
+OP http://example.org/chunktograph#p_require
+OP http://example.org/chunktograph#p_requirement
+OP http://example.org/chunktograph#p_reset
+OP http://example.org/chunktograph#p_resolve
+OP http://example.org/chunktograph#p_responsible
+OP http://example.org/chunktograph#p_responsible-develop
+OP http://example.org/chunktograph#p_restrict
+OP http://example.org/chunktograph#p_result
+OP http://example.org/chunktograph#p_retain
+OP http://example.org/chunktograph#p_retrieve
+OP http://example.org/chunktograph#p_return
+OP http://example.org/chunktograph#p_right
+OP http://example.org/chunktograph#p_right-choice
+OP http://example.org/chunktograph#p_right-vote
+OP http://example.org/chunktograph#p_room-equip-fan-coil-unit-feed-chiller
+OP http://example.org/chunktograph#p_root-class-point-telemetry-actuation
+OP http://example.org/chunktograph#p_run
+OP http://example.org/chunktograph#p_run-execute
+OP http://example.org/chunktograph#p_say
+OP http://example.org/chunktograph#p_search
+OP http://example.org/chunktograph#p_see
+OP http://example.org/chunktograph#p_see-adoption-investment
+OP http://example.org/chunktograph#p_select-handler-use-base
+OP http://example.org/chunktograph#p_semantic-annotation-add
+OP http://example.org/chunktograph#p_serialize
+OP http://example.org/chunktograph#p_serve
+OP http://example.org/chunktograph#p_serve-committee
+OP http://example.org/chunktograph#p_set-class
+OP http://example.org/chunktograph#p_share
+OP http://example.org/chunktograph#p_shift
+OP http://example.org/chunktograph#p_should-be
+OP http://example.org/chunktograph#p_should-be-done-on
+OP http://example.org/chunktograph#p_should-be-used-if
+OP http://example.org/chunktograph#p_should-have
+OP http://example.org/chunktograph#p_show
+OP http://example.org/chunktograph#p_sign-memorandum-understanding
+OP http://example.org/chunktograph#p_simple-tool-manage
+OP http://example.org/chunktograph#p_simplifie
+OP http://example.org/chunktograph#p_simplify
+OP http://example.org/chunktograph#p_simplify-graph
+OP http://example.org/chunktograph#p_site
+OP http://example.org/chunktograph#p_solve
+OP http://example.org/chunktograph#p_span
+OP http://example.org/chunktograph#p_specialize
+OP http://example.org/chunktograph#p_specify
+OP http://example.org/chunktograph#p_specify-condition
+OP http://example.org/chunktograph#p_split
+OP http://example.org/chunktograph#p_sponsor
+OP http://example.org/chunktograph#p_stand
+OP http://example.org/chunktograph#p_start
+OP http://example.org/chunktograph#p_state
+OP http://example.org/chunktograph#p_state-object-brick-haspoint-relationship-class
+OP http://example.org/chunktograph#p_stem
+OP http://example.org/chunktograph#p_store
+OP http://example.org/chunktograph#p_structure
+OP http://example.org/chunktograph#p_subclass
+OP http://example.org/chunktograph#p_subproperty
+OP http://example.org/chunktograph#p_subset
+OP http://example.org/chunktograph#p_suggest
+OP http://example.org/chunktograph#p_supercharge
+OP http://example.org/chunktograph#p_superclass
+OP http://example.org/chunktograph#p_supervise-command
+OP http://example.org/chunktograph#p_support
+OP http://example.org/chunktograph#p_support-inference
+OP http://example.org/chunktograph#p_support-interact
+OP http://example.org/chunktograph#p_support-modeling
+OP http://example.org/chunktograph#p_support-name-graph
+OP http://example.org/chunktograph#p_support-relate
+OP http://example.org/chunktograph#p_support-storage-multiple-graph
+OP http://example.org/chunktograph#p_support-storage-rdf-model-local-filesystem
+OP http://example.org/chunktograph#p_support-storage-rdf-model-possible-backend
+OP http://example.org/chunktograph#p_swap
+OP http://example.org/chunktograph#p_tag
+OP http://example.org/chunktograph#p_take
+OP http://example.org/chunktograph#p_take-place
+OP http://example.org/chunktograph#p_tandem
+OP http://example.org/chunktograph#p_target
+OP http://example.org/chunktograph#p_target-release
+OP http://example.org/chunktograph#p_tend-consist
+OP http://example.org/chunktograph#p_there-is
+OP http://example.org/chunktograph#p_tie
+OP http://example.org/chunktograph#p_tie-directly
+OP http://example.org/chunktograph#p_to
+OP http://example.org/chunktograph#p_tool-describe-transformation-brick-structured-source
+OP http://example.org/chunktograph#p_track
+OP http://example.org/chunktograph#p_transform
+OP http://example.org/chunktograph#p_translate
+OP http://example.org/chunktograph#p_transport
+OP http://example.org/chunktograph#p_traverse
+OP http://example.org/chunktograph#p_trigger
+OP http://example.org/chunktograph#p_triple
+OP http://example.org/chunktograph#p_type
+OP http://example.org/chunktograph#p_understand
+OP http://example.org/chunktograph#p_unfold
+OP http://example.org/chunktograph#p_union
+OP http://example.org/chunktograph#p_update
+OP http://example.org/chunktograph#p_update-manage
+OP http://example.org/chunktograph#p_use
+OP http://example.org/chunktograph#p_use-owl-restriction-refine-class
+OP http://example.org/chunktograph#p_use-tag-define-entity
+OP http://example.org/chunktograph#p_using
+OP http://example.org/chunktograph#p_utilize
+OP http://example.org/chunktograph#p_verify
+OP http://example.org/chunktograph#p_vote-committee
+OP http://example.org/chunktograph#p_vote-steering-committee
+OP http://example.org/chunktograph#p_walk-user
+OP http://example.org/chunktograph#p_want
+OP http://example.org/chunktograph#p_welcome
+OP http://example.org/chunktograph#p_will-give
+OP http://example.org/chunktograph#p_will-have
+OP http://example.org/chunktograph#p_work
+OP http://example.org/chunktograph#p_write
+OP http://example.org/chunktograph#p_zoom
+DP http://example.org/chunktograph#p_advance-state-art-building-metadata
+DP http://example.org/chunktograph#p_aggregate-datum
+DP http://example.org/chunktograph#p_available
+DP http://example.org/chunktograph#p_available-online
+DP http://example.org/chunktograph#p_base
+DP http://example.org/chunktograph#p_can-only-be
+DP http://example.org/chunktograph#p_common
+DP http://example.org/chunktograph#p_common-state
+DP http://example.org/chunktograph#p_consistent
+DP http://example.org/chunktograph#p_convenient
+DP http://example.org/chunktograph#p_crucial
+DP http://example.org/chunktograph#p_default-value
+DP http://example.org/chunktograph#p_detrimental
+DP http://example.org/chunktograph#p_differ
+DP http://example.org/chunktograph#p_different
+DP http://example.org/chunktograph#p_difficult
+DP http://example.org/chunktograph#p_difficult-capture
+DP http://example.org/chunktograph#p_does-not-have-to
+DP http://example.org/chunktograph#p_easily-integrate
+DP http://example.org/chunktograph#p_essential
+DP http://example.org/chunktograph#p_essential-solution
+DP http://example.org/chunktograph#p_explicitly-label
+DP http://example.org/chunktograph#p_expressive
+DP http://example.org/chunktograph#p_file
+DP http://example.org/chunktograph#p_format
+DP http://example.org/chunktograph#p_free-open-sourced
+DP http://example.org/chunktograph#p_fully-eligible
+DP http://example.org/chunktograph#p_general
+DP http://example.org/chunktograph#p_go-row-row
+DP http://example.org/chunktograph#p_important
+DP http://example.org/chunktograph#p_important-track
+DP http://example.org/chunktograph#p_increase
+DP http://example.org/chunktograph#p_likely
+DP http://example.org/chunktograph#p_limit
+DP http://example.org/chunktograph#p_need-manually-add-model
+DP http://example.org/chunktograph#p_new
+DP http://example.org/chunktograph#p_new-brick-feature-allow
+DP http://example.org/chunktograph#p_optionally-define
+DP http://example.org/chunktograph#p_passionate
+DP http://example.org/chunktograph#p_possible
+DP http://example.org/chunktograph#p_possible-describe
+DP http://example.org/chunktograph#p_possible-model
+DP http://example.org/chunktograph#p_pre-loaded
+DP http://example.org/chunktograph#p_proud
+DP http://example.org/chunktograph#p_provide-complete-implementation
+DP http://example.org/chunktograph#p_provide-excellent-sparql-query-performance
+DP http://example.org/chunktograph#p_publicly-available
+DP http://example.org/chunktograph#p_purpose-create
+DP http://example.org/chunktograph#p_purpose-prioritize-organize
+DP http://example.org/chunktograph#p_redundant
+DP http://example.org/chunktograph#p_root-class
+DP http://example.org/chunktograph#p_set
+DP http://example.org/chunktograph#p_sound-long
+DP http://example.org/chunktograph#p_straightforward-construct-give
+DP http://example.org/chunktograph#p_strict
+DP http://example.org/chunktograph#p_sufficient
+DP http://example.org/chunktograph#p_suitable
+DP http://example.org/chunktograph#p_support-subset-sparql-1-1
+DP http://example.org/chunktograph#p_transparent
+DP http://example.org/chunktograph#p_type-string-letter
+DP http://example.org/chunktograph#p_unique
+DP http://example.org/chunktograph#p_use-owl-datatypeproperty
+DP http://example.org/chunktograph#p_useful
+DP http://example.org/chunktograph#p_usually-word
+DP http://example.org/chunktograph#p_validate
+DP http://example.org/chunktograph#p_value
+DP http://example.org/chunktograph#p_verifie
+IND http://example.org/chunktograph#0 | $ 0 a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_membership-in-brick; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#1-2-0-release | 1.2.0 release a http://example.org/chunktograph#Class_artifact,skos:Concept {http://example.org/chunktograph#p_include=http://example.org/chunktograph#preliminary-timeserie-storage-property; http://purl.org/dc/terms/source=c39-a371; skos:broader=http://example.org/chunktograph#section_v1-2-0; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#1-3-implementation | 1 3 implementation a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_inference; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#1-3-release | 1.3 release a http://example.org/chunktograph#Class_artifact,skos:Concept {http://example.org/chunktograph#p_include=http://example.org/chunktograph#expressive-model-chiller-heat-pump; http://example.org/chunktograph#p_include=http://example.org/chunktograph#feature-design-interoperability-future-standard-easy-ashrae-223p-standard-currently-development; http://example.org/chunktograph#p_include=http://example.org/chunktograph#official-integration-realtime-data-source-bacnet-timeserie-database; http://purl.org/dc/terms/source=c33-a306; skos:broader=http://example.org/chunktograph#section_new-members-press-release; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#1-hour | 1 hour a http://example.org/chunktograph#Class_property,skos:Concept {http://example.org/chunktograph#p_is=http://example.org/chunktograph#rpt1h; http://purl.org/dc/terms/source=c13-a137; skos:broader=http://example.org/chunktograph#section_peak-hourly-power-meter; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#100-time-gpt-4o-mini-model | 100 time gpt-4o mini model a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_2-3-software-implementation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#12-brick-class-damper-tag | 12 brick class damper tag a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_5-brick-implementation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#15-minute | 15 minute a http://example.org/chunktograph#Class_property,skos:Concept {http://example.org/chunktograph#p_is=http://example.org/chunktograph#rpt15-m; http://purl.org/dc/terms/source=c13-a137; skos:broader=http://example.org/chunktograph#section_peak-hourly-power-meter; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#2-hour | 2 hour a http://example.org/chunktograph#Class_property,skos:Concept {http://example.org/chunktograph#p_is=http://example.org/chunktograph#rpt2h; http://purl.org/dc/terms/source=c13-a137; skos:broader=http://example.org/chunktograph#section_peak-hourly-power-meter; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#2017-buildsys-conference | 2017 buildsys conference a http://example.org/chunktograph#Class_event,skos:Concept {skos:broader=http://example.org/chunktograph#section_brick-tutorials; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#2019-acm-e-energy-conference | 2019 acm e energy conference a http://example.org/chunktograph#Class_event,skos:Concept {skos:broader=http://example.org/chunktograph#section_brick-tutorials; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#23-relationship-shape-distribute-brick | 23 relationship shape distribute brick+ a http://example.org/chunktograph#Class_relation,skos:Concept {skos:broader=http://example.org/chunktograph#section_5-brick-implementation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#3 | 3 a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_article; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#3-form | 3 form a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_defining-entity-properties; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#30-country | 30 country a http://example.org/chunktograph#Class_class,skos:Concept {skos:broader=http://example.org/chunktograph#section_new-members-press-release; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#30-day | 30 day a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_is=http://example.org/chunktograph#rp30d; http://purl.org/dc/terms/source=c13-a137; skos:broader=http://example.org/chunktograph#section_peak-hourly-power-meter; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#320-000-mechanical-asset | 320,000 mechanical asset a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_new-members-press-release; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#400-million-square-foot | 400 million square foot a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_new-members-press-release; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#5-000 | $ 5,000 a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_membership-in-brick; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#5-hvac-zone | 5 hvac zone a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_5-conclusions; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#50-000 | $ 50,000 a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_membership-in-brick; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#73-93-entity-haystack-model-follow-canonical-tagging-scheme | 73–93 entity haystack model follow canonical tagging scheme a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_7-1-migration-strategies-for-brick; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#91-relationship | 91 relationship a http://example.org/chunktograph#Class_relation,skos:Concept {skos:broader=http://example.org/chunktograph#section_7-1-migration-strategies-for-brick; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#98-unique-class-model | 98 unique class model a http://example.org/chunktograph#Class_class,skos:Concept {skos:broader=http://example.org/chunktograph#section_7-1-migration-strategies-for-brick; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#a | a a http://example.org/chunktograph#Class_concept,skos:Concept {http://example.org/chunktograph#p_list=http://example.org/chunktograph#owl-property-class; http://example.org/chunktograph#p_value=list owl property class define relationship behave; http://purl.org/dc/terms/source=c25-a257; http://purl.org/dc/terms/source=c50-a485; skos:broader=http://example.org/chunktograph#section_defining-brick-relationships; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ability-import-triple-variety-source | ability import triple variety source a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_managing-metadata-in-graphs; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ability-robustly-capture-wide-variety-application-requirement | ability robustly capture wide variety application requirement a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_1-2-overview; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#abound-digital-platform | abound digital platform a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_new-members-press-release; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#absence-standardization-underlie-data-model | absence standardization underlie data model a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_article; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#abstract-rdf-namespace-schema-1-1-brickshape | abstract rdf namespace schema/1.1 brickshape a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_5-brick-implementation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#abstract-specification-brick | abstract specification brick+ a http://example.org/chunktograph#Class_concept,skos:Concept {http://example.org/chunktograph#p_allow-automatically-generate=http://example.org/chunktograph#relationship-shape; http://purl.org/dc/terms/source=c55-a732; skos:broader=http://example.org/chunktograph#section_5-brick-implementation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#abstraction-physical-logical-virtual-item | abstraction physical logical virtual item a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_1-2-overview; skos:broader=http://example.org/chunktograph#section_entity; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#academia | academia a http://example.org/chunktograph#Class_class,skos:Concept {skos:broader=http://example.org/chunktograph#section_fierro-et-al-2020-formalizing-tag-based-metadata-with-the-brick-ontology-frontiers-in-big-data; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#academic-individual-researcher | academic individual researcher a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_chair-committee=http://example.org/chunktograph#yes; http://example.org/chunktograph#p_pay-2021-membership-fee=http://example.org/chunktograph#0; http://example.org/chunktograph#p_serve-committee=http://example.org/chunktograph#yes; http://example.org/chunktograph#p_vote-committee=http://example.org/chunktograph#yes; http://example.org/chunktograph#p_vote-steering-committee=http://example.org/chunktograph#no; http://purl.org/dc/terms/source=c49-a465; skos:broader=http://example.org/chunktograph#section_membership-in-brick; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#academic-industrial-source | academic industrial source a http://example.org/chunktograph#Class_class,skos:Concept {skos:broader=http://example.org/chunktograph#section_1-2-overview; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#academic-member | academic member a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_hail=http://example.org/chunktograph#carnegie-mellon-university; http://example.org/chunktograph#p_hail=http://example.org/chunktograph#colorado-school-mine; http://example.org/chunktograph#p_hail=http://example.org/chunktograph#university-california-berkeley; http://example.org/chunktograph#p_hail=http://example.org/chunktograph#university-california-san-diego; http://purl.org/dc/terms/source=c33-a297; skos:broader=http://example.org/chunktograph#section_new-members-press-release; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#academic-partner | academic partner a http://example.org/chunktograph#Class_class,skos:Concept {skos:broader=http://example.org/chunktograph#section_new-members-press-release; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#accessibility-non-expert | accessibility non expert a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_print-the-r-e-s-u-l-t-print-r-e-s-u-l-t-save-t-h-e-r-e-s-u-l-t-t-o-a-f-i-l-e-b-u-i-l-d-i-n-g-g-r-a-p-h-s-a-v-e-t-t-l-o-u-t-p-u-t-my-b-uildi-ng-t-t-l; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#active-research | active research a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_is=http://example.org/chunktograph#research-extend-use-bim-operation-maintenance; http://purl.org/dc/terms/source=c55-a621; skos:broader=http://example.org/chunktograph#section_1-referred-to-as-haystack-in-the-rest-of-the-paper; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#actual-thing-building | actual thing building a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_definitions; skos:broader=http://example.org/chunktograph#section_entity; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#actuation-point | actuation point a http://example.org/chunktograph#Class_artifact,skos:Concept {http://example.org/chunktograph#p_allow=http://example.org/chunktograph#software-write-value; http://purl.org/dc/terms/source=c1-a9; http://purl.org/dc/terms/source=c3-a21; http://purl.org/dc/terms/source=c48-a444; skos:broader=http://example.org/chunktograph#section_core-concepts; skos:broader=http://example.org/chunktograph#section_definitions; skos:broader=http://example.org/chunktograph#section_entity; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ad-hoc-collection | ad hoc collection a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_custom-collections; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ad-hoc-collection-tag | ad hoc collection tag a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_how-does-brick-compare-to-x; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ad-hoc-naming-convention | ad hoc naming convention a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_are=http://example.org/chunktograph#rarely-document; http://purl.org/dc/terms/source=c9-a108; skos:broader=http://example.org/chunktograph#section_from-bms-point-labels; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ad-hoc-nature-building-metadata | ad hoc nature building metadata a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_1-2-overview; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ad-hoc-nature-haystack | ad hoc nature haystack a http://example.org/chunktograph#Class_concept,skos:Concept {http://example.org/chunktograph#p_inhibits=http://example.org/chunktograph#consistent-description-building-system; http://purl.org/dc/terms/source=c55-a761; skos:broader=http://example.org/chunktograph#section_7-1-migration-strategies-for-brick; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#add-package-doc-need | add package doc need a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_to=http://example.org/chunktograph#docs-dependency-group-pyproject-toml; http://purl.org/dc/terms/source=c56-a794; skos:broader=http://example.org/chunktograph#section_docs; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#add-relationship | add relationship a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_7-1-migration-strategies-for-brick; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#added-classes-txt | added_classes.txt a http://example.org/chunktograph#Class_artifact,skos:Concept {http://example.org/chunktograph#p_is=http://example.org/chunktograph#list-new-class-introduce-current-version-compare-previous-version; http://purl.org/dc/terms/source=c26-a279; skos:broader=http://example.org/chunktograph#section_version-comparison; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#addition-unit-test-framework | addition unit test framework a http://example.org/chunktograph#Class_artifact,skos:Concept {http://example.org/chunktograph#p_is-under=http://example.org/chunktograph#tests; http://purl.org/dc/terms/source=c38-a365; skos:broader=http://example.org/chunktograph#section_other-release-notes; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#additional-backend | additional backend a http://example.org/chunktograph#Class_artifact,skos:Concept {http://example.org/chunktograph#p_add-easily=http://example.org/chunktograph#rdflib; http://purl.org/dc/terms/source=c23-a227; skos:broader=http://example.org/chunktograph#section_rdflib-related-libraries; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#additional-class | additional class a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_cover=http://example.org/chunktograph#different-kind-fan-sensor-pv-system; http://purl.org/dc/terms/source=c40-a374; skos:broader=http://example.org/chunktograph#section_v1-3-0; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#additional-class-definition-rule-augmentation-brick-ontology | additional class definition rule augmentation brick ontology a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_listing-and-loading-extensions; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#additional-configuration | additional configuration a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_5-brick-implementation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#additional-information-describe-asset | additional information describe asset a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_from-bms-point-labels; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#additional-information-describe-building-topology | additional information describe building topology a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_from-bms-point-labels; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#additional-information-describe-relate-equipment | additional information describe relate equipment a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_from-bms-point-labels; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#additional-operation | additional operation a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_template-operation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#addressable-subdivision-ingest-triple | addressable subdivision ingest triple a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_managing-metadata-in-graphs; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#adherence-shape | adherence shape a http://example.org/chunktograph#Class_concept,skos:Concept {http://example.org/chunktograph#p_might-be=http://example.org/chunktograph#commission-requirement-brick-model-produce-site; http://purl.org/dc/terms/source=c55-a731; skos:broader=http://example.org/chunktograph#section_5-brick-implementation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#adopt-brick-canonical-description-building | adopt brick canonical description building a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_lower-cost-deploy=http://example.org/chunktograph#analytic-energy-efficiency-measure-intelligent-control-building; http://purl.org/dc/terms/source=c47-a433; http://purl.org/dc/terms/source=c8-a85; skos:broader=http://example.org/chunktograph#section_what-is-brick; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#adoption-industrial-standard-basis-automated-analysis-reasoning | adoption industrial standard basis automated analysis reasoning a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_3-4-impact-on-consistency; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#advanced-system-control | advanced system control a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_article; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#advantage-implement-semantic-layer-base-brick-ontology | advantage implement semantic layer base brick ontology a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_article; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#agenda-group-meeting | agenda group meeting a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_google-calendar; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#aggregationshape | aggregationshape a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_defining-entity-properties; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ahu | ahu a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_feed=http://example.org/chunktograph#vav; http://example.org/chunktograph#p_haspart=http://example.org/chunktograph#supply-fan; http://example.org/chunktograph#p_use=http://example.org/chunktograph#brick-haspart-physical-component; http://example.org/chunktograph#p_use=http://example.org/chunktograph#rec-include-logical-automation-bundle; http://purl.org/dc/terms/source=c21-a211; http://purl.org/dc/terms/source=c3-a34; http://purl.org/dc/terms/source=c52-a512; skos:broader=http://example.org/chunktograph#section_example-frost-detection; skos:broader=http://example.org/chunktograph#section_how-and-when-to-use-brick-relationships; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ahu-air-handler-unit-air-handling-unit | ahu air_handler_unit air_handling_unit a http://example.org/chunktograph#Class_class,skos:Concept {skos:broader=http://example.org/chunktograph#section_aliases; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ahu-equipment | ahu equipment a http://example.org/chunktograph#Class_artifact,skos:Concept {http://example.org/chunktograph#p_monitor-sensor=http://example.org/chunktograph#sensor; http://purl.org/dc/terms/source=c54-a575; skos:broader=http://example.org/chunktograph#section_2-3-software-implementation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ahu-frost-detection-package | ahu frost detection package a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_example-frost-detection; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ahu-have-fan-coil | ahu have fan coil a http://example.org/chunktograph#Class_relation,skos:Concept {skos:broader=http://example.org/chunktograph#section_relationship-roles; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ahu1 | ahu1 a http://example.org/chunktograph#Class_example,skos:Concept {skos:broader=http://example.org/chunktograph#section_example-hvac-system; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ahu2 | ahu2 a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_example-hvac-system; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ai-f | ai f a http://example.org/chunktograph#Class_property,skos:Concept {http://example.org/chunktograph#p_is=http://example.org/chunktograph#firework-ai; http://purl.org/dc/terms/source=c54-a599; skos:broader=http://example.org/chunktograph#section_5-conclusions; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#air | air a http://example.org/chunktograph#Class_concept,skos:Concept {http://example.org/chunktograph#p_example=http://example.org/chunktograph#physical-substance; http://example.org/chunktograph#p_subclass=http://example.org/chunktograph#gas; http://purl.org/dc/terms/source=c55-a663; http://purl.org/dc/terms/source=c55-a683; skos:broader=http://example.org/chunktograph#section_1-referred-to-as-haystack-in-the-rest-of-the-paper; skos:broader=http://example.org/chunktograph#section_4-5-brick-tags; skos:broader=http://example.org/chunktograph#section_4-design-of-brick; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#air-coil-hot-water | air coil hot water a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_1-referred-to-as-haystack-in-the-rest-of-the-paper; skos:inScheme=http://example.org/chunktograph#scheme}
+[truncated]

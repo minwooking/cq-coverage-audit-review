@@ -1,0 +1,478 @@
+{
+ "S_art": [
+  "CQB01",
+  "CQB02",
+  "CQB04",
+  "CQB07",
+  "CQB08",
+  "CQB09",
+  "CQB10",
+  "CQB11",
+  "CQB12",
+  "CQB13",
+  "CQB14",
+  "CQB15",
+  "CQB16",
+  "CQB20",
+  "CQB30",
+  "CQB34"
+ ],
+ "per_question": {
+  "CQB01": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB02": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB03": {
+   "A": {
+    "missing_required_anchors": [
+     "rec:Asset"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": false
+  },
+  "CQB04": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB05": {
+   "A": {
+    "missing_required_anchors": [
+     "rec:Campus"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [
+     "rec:Campus"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB06": {
+   "A": {
+    "missing_required_anchors": [
+     "rec:Georeference"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [
+     "rec:Georeference"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB07": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB08": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB09": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB10": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB11": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB12": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB13": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB14": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB15": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB16": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB17": {
+   "A": {
+    "missing_required_anchors": [
+     "rec:locatedIn"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": false
+  },
+  "CQB18": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [
+     "hasAssociatedTag"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB19": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [
+     "hasUnit"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB20": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB21": {
+   "A": {
+    "missing_required_anchors": [
+     "brick:grossArea"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [
+     "brick:grossArea"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB22": {
+   "A": {
+    "missing_required_anchors": [
+     "buildingPrimaryFunction"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [
+     "buildingPrimaryFunction"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB23": {
+   "A": {
+    "missing_required_anchors": [
+     "brick:yearBuilt"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [
+     "brick:yearBuilt"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB24": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [
+     "hasQuantity"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB25": {
+   "A": {
+    "missing_required_anchors": [
+     "rec:BuildingElement"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [
+     "rec:BuildingElement"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB26": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [
+     "rec:Event"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB27": {
+   "A": {
+    "missing_required_anchors": [
+     "rec:PointEvent"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [
+     "rec:PointEvent"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB28": {
+   "A": {
+    "missing_required_anchors": [
+     "rec:Organization"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": false
+  },
+  "CQB29": {
+   "A": {
+    "missing_required_anchors": [
+     "rec:Space"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": false
+  },
+  "CQB30": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB31": {
+   "A": {
+    "missing_required_anchors": [
+     "rec:ArchitectureArea"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [
+     "rec:ArchitectureArea"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB32": {
+   "A": {
+    "missing_required_anchors": [
+     "deprecation"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [
+     "deprecation"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB33": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [
+     "hasSubMeter"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB34": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "both": true
+  },
+  "CQB35": {
+   "A": {
+    "missing_required_anchors": [],
+    "pass": true
+   },
+   "B": {
+    "missing_required_anchors": [
+     "hasQuantity"
+    ],
+    "pass": false
+   },
+   "both": false
+  },
+  "CQB36": {
+   "A": {
+    "missing_required_anchors": [
+     "brick:hasQUDTReference"
+    ],
+    "pass": false
+   },
+   "B": {
+    "missing_required_anchors": [
+     "brick:hasQUDTReference"
+    ],
+    "pass": false
+   },
+   "both": false
+  }
+ }
+}

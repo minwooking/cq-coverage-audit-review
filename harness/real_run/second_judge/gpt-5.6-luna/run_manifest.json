@@ -1,0 +1,354 @@
+{
+  "status": "EXPLORATORY, POST HOC: run after the holdout results (and the human labels) were known; the second judge was not registered in PREREG.md",
+  "model_requested": "gpt-5.6-luna",
+  "model_id_reported_by_proxy": "gpt-5.6-luna",
+  "models_reported_in_cell_responses": [
+    "gpt-5.6-luna"
+  ],
+  "runner_py_sha256": "391327cef64fbb862a896b421bdce2252c6192d13cd6e74be91f460a621cb811",
+  "provider_path": "local <internal-proxy> proxy (OpenAI-compatible /v1/chat/completions); no other provider",
+  "endpoint": "http://<local-endpoint>/v1",
+  "proxy_facts": {
+    "proxy": {
+      "service": "<internal-proxy>",
+      "version": "2.41.0"
+    },
+    "model_listing": {
+      "id": "gpt-5.6-luna",
+      "owned_by": "openai",
+      "default_reasoning_effort": "medium",
+      "context_length": 922000,
+      "max_output_tokens": 128000,
+      "pricing_overrides": [
+        {
+          "min_prompt_tokens": 272000
+        }
+      ]
+    }
+  },
+  "created_utc": "2026-10-09T05:16:53.735406+00:00",
+  "updated_utc": "2026-10-09T05:23:27.619048+00:00",
+  "settings": {
+    "temperature": 0.0,
+    "max_tokens": 1024,
+    "response_format": "OMITTED (registered: json_object); see response_format_probe",
+    "extra_body": null,
+    "extra_top_level_fields": null,
+    "reasoning_effort": "not sent; proxy default for the model (see proxy_facts)",
+    "system_prompt": "run_holdout.RUBRIC, unchanged",
+    "user_message": "ARTIFACT:\\n{artifact}\\n\\nQUESTION: {question}, unchanged",
+    "workers": 3,
+    "max_workers_allowed": 3,
+    "determinism_note": "temperature 0.0 is sent and accepted, but this is a reasoning model behind a proxy: a repeated call of the same cell gave different completion/reasoning token counts (observed 2026-10-09), so the scores are not guaranteed bit-reproducible"
+  },
+  "response_format_probe": {
+    "utc": "2026-10-09T05:23:27.215704+00:00",
+    "availability_http_status": 200,
+    "model_id_reported_by_proxy": "gpt-5.6-luna",
+    "availability_usage": {
+      "prompt_tokens": 33,
+      "completion_tokens": 50,
+      "cached_tokens": 0,
+      "reasoning_tokens": 39
+    },
+    "availability_error": "",
+    "with_response_format_http_status": 502,
+    "with_response_format_error": "{\"error\":{\"message\":\"upstream stream ended early (adapter_eof)\",\"type\":\"server_error\",\"param\":null,\"code\":\"upstream_server_error\"}}",
+    "response_format_omitted_reason": "the <internal-proxy> adapter rejects response_format=json_object (HTTP 502 adapter_eof)"
+  },
+  "digests": {
+    "frozen_input_digests": {
+      "cq_bank_brick_v1.csv": "993c5e1164540dce0f2f9bf2e6ed397cf45910da7889300feeaad6543edb8507",
+      "RUBRIC_L1.md": "d0c397584bd62ca2ba62cf3833b1ad70862d6be22be52a4c3ffa111529756ebf",
+      "RENDERING_SPEC.md": "eb0399af5152ac001074f1a0c27b23652a42a2f9ceeebf95a669abf703ec0a3e"
+    },
+    "variant_views_sha256": "16ede3938e2729c70467c51195dd0f32869c8f375d5945e12d40aa9f1fa50b8f",
+    "queue_sha256": "2ba0a20ad9d85a15a8e9fc8a806999c97ec02ee717faf96475bf5114f8159926",
+    "matches_original_manifest": {
+      "variant_views_sha256": true,
+      "queue_sha256": true,
+      "bank_sha256": true,
+      "rubric_sha256": true,
+      "rendering_spec_sha256": true
+    },
+    "artifact_digests_verified": 224,
+    "artifact_digest_mismatches": 0,
+    "original_cells_jsonl_sha256": "bfd5b3c83981c8a6ec970b93f460bab7409daf047a2e048bfaa90b5adfd0d4af",
+    "original_manifest_sha256": "5a192518429a1f2db13f1b31df67d6e9dd74045e68c001f07dc90f0b6a7eb270",
+    "original_judge_model": "gemini-3.6-flash",
+    "rubric_constant_sha256": "85e208799f10b756125c524dc43222064ac946f3c01f000ee03cf331800cee72",
+    "run_holdout_py_sha256": "b13aff69300064bcdf03fb89194100d49b46095725888a56d1626d82c3712db0"
+  },
+  "counts": {
+    "planned_cells": 224,
+    "cells_scored_total": 5,
+    "cells_remaining": 219,
+    "failed_attempts_total": 0,
+    "scored_by_kind": {
+      "primary": 5,
+      "ablated_control": 0,
+      "preserved_control": 0
+    },
+    "scored_by_variant_primary": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "E": 0,
+      "F": 0
+    }
+  },
+  "tokens_all_invocations": {
+    "prompt_tokens": 349390,
+    "completion_tokens": 718,
+    "cached_tokens": 69376,
+    "reasoning_tokens": 414
+  },
+  "token_estimate": {
+    "by_variant_kind": {
+      "preserved_control:F": {
+        "cells": 4,
+        "artifact_chars": 9461761,
+        "est_prompt_tokens_central": 2427692,
+        "est_prompt_tokens_conservative": 2558832
+      },
+      "ablated_control:E": {
+        "cells": 4,
+        "artifact_chars": 9445578,
+        "est_prompt_tokens_central": 2423543,
+        "est_prompt_tokens_conservative": 2554458
+      },
+      "preserved_control:C": {
+        "cells": 2,
+        "artifact_chars": 4829676,
+        "est_prompt_tokens_central": 1239178,
+        "est_prompt_tokens_conservative": 1306117
+      },
+      "preserved_control:D": {
+        "cells": 2,
+        "artifact_chars": 4805837,
+        "est_prompt_tokens_central": 1233065,
+        "est_prompt_tokens_conservative": 1299674
+      },
+      "preserved_control:A": {
+        "cells": 1,
+        "artifact_chars": 292905,
+        "est_prompt_tokens_central": 75503,
+        "est_prompt_tokens_conservative": 79563
+      },
+      "ablated_control:B": {
+        "cells": 7,
+        "artifact_chars": 13530151,
+        "est_prompt_tokens_central": 3472069,
+        "est_prompt_tokens_conservative": 3659597
+      },
+      "ablated_control:C": {
+        "cells": 3,
+        "artifact_chars": 7215413,
+        "est_prompt_tokens_central": 1851305,
+        "est_prompt_tokens_conservative": 1951311
+      },
+      "preserved_control:B": {
+        "cells": 1,
+        "artifact_chars": 1951035,
+        "est_prompt_tokens_central": 500665,
+        "est_prompt_tokens_conservative": 527706
+      },
+      "ablated_control:A": {
+        "cells": 2,
+        "artifact_chars": 585725,
+        "est_prompt_tokens_central": 150985,
+        "est_prompt_tokens_conservative": 159104
+      },
+      "ablated_control:D": {
+        "cells": 7,
+        "artifact_chars": 16653662,
+        "est_prompt_tokens_central": 4272969,
+        "est_prompt_tokens_conservative": 4503789
+      },
+      "preserved_control:E": {
+        "cells": 2,
+        "artifact_chars": 4730909,
+        "est_prompt_tokens_central": 1213853,
+        "est_prompt_tokens_conservative": 1279424
+      },
+      "primary:F": {
+        "cells": 33,
+        "artifact_chars": 78059385,
+        "est_prompt_tokens_central": 20028426,
+        "est_prompt_tokens_conservative": 21110331
+      },
+      "ablated_control:F": {
+        "cells": 1,
+        "artifact_chars": 2364393,
+        "est_prompt_tokens_central": 606654,
+        "est_prompt_tokens_conservative": 639425
+      },
+      "primary:E": {
+        "cells": 33,
+        "artifact_chars": 78059385,
+        "est_prompt_tokens_central": 20028426,
+        "est_prompt_tokens_conservative": 21110331
+      },
+      "primary:D": {
+        "cells": 33,
+        "artifact_chars": 79296456,
+        "est_prompt_tokens_central": 20345624,
+        "est_prompt_tokens_conservative": 21444674
+      },
+      "primary:C": {
+        "cells": 33,
+        "artifact_chars": 79689354,
+        "est_prompt_tokens_central": 20446367,
+        "est_prompt_tokens_conservative": 21550863
+      },
+      "primary:B": {
+        "cells": 33,
+        "artifact_chars": 64384218,
+        "est_prompt_tokens_central": 16521973,
+        "est_prompt_tokens_conservative": 17414340
+      },
+      "primary:A": {
+        "cells": 23,
+        "artifact_chars": 6736509,
+        "est_prompt_tokens_central": 1736510,
+        "est_prompt_tokens_conservative": 1829878
+      }
+    },
+    "tiers": {
+      "tier1_primary_A_B": {
+        "cells": 56,
+        "est_prompt_tokens_central": 18258483,
+        "est_prompt_tokens_conservative": 19244218
+      },
+      "tier2_primary_C_to_F": {
+        "cells": 132,
+        "est_prompt_tokens_central": 80848843,
+        "est_prompt_tokens_conservative": 85216199
+      },
+      "tier3_controls": {
+        "cells": 36,
+        "est_prompt_tokens_central": 19467481,
+        "est_prompt_tokens_conservative": 20519000
+      },
+      "primary_all": {
+        "cells": 188,
+        "est_prompt_tokens_central": 99107326,
+        "est_prompt_tokens_conservative": 104460417
+      },
+      "all_224": {
+        "cells": 224,
+        "est_prompt_tokens_central": 118574807,
+        "est_prompt_tokens_conservative": 124979417
+      }
+    },
+    "chars_per_token": {
+      "central": 3.9,
+      "conservative": 3.7
+    },
+    "context_window_tokens": 922000,
+    "note": "cells over 272000 prompt tokens fall in the proxy's higher pricing tier (/v1/models pricing.overrides.min_prompt_tokens)"
+  },
+  "invocations": [
+    {
+      "started_utc": "2026-10-09T05:16:53.735406+00:00",
+      "token_budget": 400000,
+      "workers": 3,
+      "variants": [
+        "A"
+      ],
+      "kinds": [
+        "primary"
+      ],
+      "order": "priority",
+      "limit": 0,
+      "pending_selected": 23,
+      "already_done_at_start": 0,
+      "probe": {
+        "utc": "2026-10-09T05:16:57.617095+00:00",
+        "availability_http_status": 200,
+        "model_id_reported_by_proxy": "gpt-5.6-luna",
+        "availability_usage": {
+          "prompt_tokens": 33,
+          "completion_tokens": 51,
+          "cached_tokens": 0,
+          "reasoning_tokens": 40
+        },
+        "availability_error": "",
+        "with_response_format_http_status": 502,
+        "with_response_format_error": "{\"error\":{\"message\":\"upstream stream ended early (adapter_eof)\",\"type\":\"server_error\",\"param\":null,\"code\":\"upstream_server_error\"}}",
+        "response_format_omitted_reason": "the <internal-proxy> adapter rejects response_format=json_object (HTTP 502 adapter_eof)"
+      },
+      "finished_utc": "2026-10-09T05:17:04.448435+00:00",
+      "stop_reason": "token_budget_reached",
+      "cells_scored": 5,
+      "cells_failed": 0,
+      "tokens": {
+        "prompt_tokens": 349390,
+        "completion_tokens": 718,
+        "cached_tokens": 69376,
+        "reasoning_tokens": 414
+      },
+      "tokens_prompt_plus_completion": 350108,
+      "http_status_histogram": {
+        "200": 5
+      },
+      "scored_by_variant": {
+        "A": 5
+      },
+      "prompt_tokens_by_variant": {
+        "A": 349390
+      },
+      "models_reported_in_responses": [
+        "gpt-5.6-luna"
+      ]
+    },
+    {
+      "started_utc": "2026-10-09T05:23:23.696097+00:00",
+      "token_budget": 1,
+      "workers": 3,
+      "variants": [
+        "A"
+      ],
+      "kinds": [
+        "primary"
+      ],
+      "order": "priority",
+      "limit": 0,
+      "pending_selected": 18,
+      "already_done_at_start": 5,
+      "probe": {
+        "utc": "2026-10-09T05:23:27.215704+00:00",
+        "availability_http_status": 200,
+        "model_id_reported_by_proxy": "gpt-5.6-luna",
+        "availability_usage": {
+          "prompt_tokens": 33,
+          "completion_tokens": 50,
+          "cached_tokens": 0,
+          "reasoning_tokens": 39
+        },
+        "availability_error": "",
+        "with_response_format_http_status": 502,
+        "with_response_format_error": "{\"error\":{\"message\":\"upstream stream ended early (adapter_eof)\",\"type\":\"server_error\",\"param\":null,\"code\":\"upstream_server_error\"}}",
+        "response_format_omitted_reason": "the <internal-proxy> adapter rejects response_format=json_object (HTTP 502 adapter_eof)"
+      },
+      "finished_utc": "2026-10-09T05:23:27.216345+00:00",
+      "stop_reason": "token_budget_reached",
+      "cells_scored": 0,
+      "cells_failed": 0,
+      "tokens": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cached_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "tokens_prompt_plus_completion": 0,
+      "http_status_histogram": {},
+      "scored_by_variant": {},
+      "prompt_tokens_by_variant": {},
+      "models_reported_in_responses": []
+    }
+  ],
+  "last_stop_reason": "token_budget_reached",
+  "resume_command": "PYTHONPATH=$PWD/src <repo>/.venv/bin/python paper/access2026/harness/run_second_judge.py --out paper/access2026/harness/real_run/second_judge/gpt-5.6-luna --model gpt-5.6-luna --token-budget <TOKENS>"
+}

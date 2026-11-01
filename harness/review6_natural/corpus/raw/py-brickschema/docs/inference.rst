@@ -1,0 +1,49 @@
+Inference
+=========
+
+
+``brickschema`` makes it easier to employ reasoning on your graphs. Simply call the ``expand`` method on the Graph object with one of the following profiles:
+
+- ``"rdfs"``: RDFS reasoning
+- ``"owlrl"``: OWL-RL reasoning (using 1 of 3 implementations below)
+- ``"vbis"``: add VBIS tags to Brick entities
+
+By default, ``expand`` will *simplify* the graph. Simplification is the process by which axiomatic, redundant or other "stray" triples are removed from the graph that may be added by a reasoner. This includes items like the following:
+
+- triples that assert an entity to be an instance of ``owl:Thing`` or ``owl:Nothing``
+- triples that assert an entity to be a blank node
+- triples that assert an entity to be the same as itself
+
+To turn simplification off, simply add ``simplify=False`` when calling ``expand``.
+
+.. code-block:: python
+
+  from brickschema import Graph
+
+  g = Graph(load_brick=True)
+  g.load_file("test.ttl")
+  g.expand(profile="owlrl")
+  print(f"Inferred graph has {len(g)} triples")
+
+
+Brickschema also supports inference "schedules", where different inference regimes can be applied to a graph one after another. Specify a schedule by using ``+`` to join the profiles in the call to ``expand``.
+
+.. code-block:: python
+
+  from brickschema import Graph
+
+  g = Graph(load_brick=True)
+  g.load_file("test.ttl")
+  # apply owlrl, then vbis
+  g.expand(profile="owlrl+vbis")
+  print(f"Inferred graph has {len(g)} triples")
+
+
+Both OWL 2 RL reasoners are installed by default, and the fastest one is used
+unless you say otherwise:
+
+- `reasonable <https://reasonable.gtf.fyi>`_ -- Rust OWL 2 RL reasoner; the default backend
+- `owlrl <https://pypi.org/project/owlrl/>`_ -- pure-Python implementation; correct
+  but slow on large ontologies
+
+To use a specific reasoner, specify ``"reasonable"`` or ``"owlrl"`` as the value for the ``backend`` argument to ``graph.expand``.

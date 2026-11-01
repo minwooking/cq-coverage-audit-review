@@ -1,0 +1,21 @@
+{
+  "variant_id": "E",
+  "description": "Standard-first variant: D's triples aligned to standard properties, with a PROV-O provenance layer.",
+  "comparison_role": "exploratory",
+  "generation_method": "D prerequisites, then uv run chunktograph select-standards ...; uv run chunktograph build-e ...",
+  "input_corpus": "paper/access2026/harness/brick_corpus.json",
+  "input_corpus_sha256": "68d6093f24bdc50ba179e69537eb9919fa09a55820cba7863475ab338e4b12f0",
+  "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8",
+  "endpoint_host": "<internal-host> (model server (local port))",
+  "temperature": 0.0,
+  "graph_file": "graph_E.ttl",
+  "graph_sha256": "6283eb356de2a3f9eec3b02470c435c864b775aaaa23ec4575fc3da0ea54c8c7",
+  "rendered_view_file": "rendered_view.txt",
+  "rendered_view_sha256": "cb451ed3cc64f134365c3d01d0e9ae91771246d262b0250edf01718a07a95f91",
+  "rendered_view_lines": 4581,
+  "rendered_view_chars": 2365387,
+  "rendering_spec_sha256": "eb0399af5152ac001074f1a0c27b23652a42a2f9ceeebf95a669abf703ec0a3e",
+  "SIMULATED": true,
+  "simulation_warning": "Generated with the PREREG.md-registered extraction-loop model (Qwen/Qwen3-Next-80B-A3B-Instruct-FP8, served on the internal a shared server), replacing the earlier qwen-next-flash preparation artifact. Exploratory (not a registered confirmatory contrast); still marked SIMULATED because the judge holdout has not been run.",
+  "generated_utc": "2026-09-20T22:30:48.797189+00:00"
+}

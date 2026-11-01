@@ -1,0 +1,12 @@
+# Timeseries Storage
+
+This feature is new in Brick v1.2
+
+It is possible to embed within a Brick model the metadata indicating where timeseries data is stored and how particular Points are identified --- this enables the automatic retrieval of timeseries data. This metadata is associated with Brick Point instances, which represent sources of data, through the ref:hasExternalReference property.
+These all use the ref-schema schema for external references; this schema is packaged with the Brick ontology.
+
+The ref:hasExternalReference property relates a Brick Point instance to a ref:TimeseriesReference object. This object has exactly one ref:hasTimeseriesId property, whose value is a string denoting the identifier or primary key of the instance's data in some database. The database itself is realized as an object and is related to the ref:TimeseriesReference through the ref:storedAt property.
+
+At this point in time, Brick does not mandate what the properties are on the database instance. As best practices arise, this will be codified in a future release of Brick.
+
+## Simple Example

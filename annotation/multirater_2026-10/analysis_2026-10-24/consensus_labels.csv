@@ -1,0 +1,13 @@
+cell_id,A,rater_L1,evidence_span_verbatim,n_raters,raters,S_votes,R_values,J,S_AH,L1_star_AH
+primary:A:CQB03,0,0,,1,H1,0,0,1,1,1
+primary:A:CQB10,1,3,그래프에서는 찾을 수 있는데 txt 파일엔 없음,1,H1,1,3,3,1,3
+primary:A:CQB30,0,0,,1,H1,0,0,0,1,0
+primary:A:CQB31,1,2,"s. As the exact requirements on these measurements will vary from case to case or jurisdiction to jurisdiction, subclassing and specializing this definition is encouraged.",1,H2,1,2,3,1,3
+primary:A:CQB34,1,1,"http://example.org/chunktograph#Collection | Collection < http://example.org/chunktograph#Class,http://example.org/chunktograph#Collection,http://example.org/chunktograph#Entity,rdfs:Resource :: An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings). Inclusion in a Collection is determined by the 'includes' field on a specific subclass.",1,H3,1,1,0,1,0
+primary:B:CQB05,1,3,"rec campus a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_class-schema=http://example.org/chunktograph#schema; http://example.org/chunktograph#p_define=http://example.org/chunktograph#collection-location-entity; http://example.org/chunktograph#p_label=campus;",1,H1,1,3,3,1,3
+primary:B:CQB16,1,3,"brick haspart a http://example.org/chunktograph#Class_relation,skos:Concept {http://example.org/chunktograph#p_inverse=http://example.org/chunktograph#brick-ispartof; http://purl.org/dc/terms/source=c2-a1466; skos:broader=http://example.org/chunktograph#section_object-property-definitions; skos:inScheme=http://example.org/chunktograph#scheme}",1,H1,1,3,3,1,3
+primary:B:CQB21,0,0,,1,H1,0,0,3,1,3
+primary:B:CQB29,0,1,,1,H1,0,1,3,1,3
+primary:D:CQB27,0,1,,1,H1,0,1,3,1,3
+primary:D:CQB34,0,0,,1,H1,0,0,0,0,0
+primary:F:CQB07,0,1,,1,H1,0,1,3,1,3

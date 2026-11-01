@@ -1,0 +1,181 @@
+{
+ "banner": "Study 4 rows at the holdout's registered margin +-0.30, read from the stored 90% BCa intervals of results.json (addendum 34 amendment A3; post hoc, exploratory; judge-score contrasts without human labels). Margin +-0.50 was pre-fixed in addendum 35.",
+ "judges": {
+  "glm": {
+   "dcat": {
+    "n_clusters": 21,
+    "mean_J_A": 2.0634920634920633,
+    "mean_J_B": 2.206349206349206,
+    "delta": 0.14285714285714285,
+    "ci95": [
+     -0.11111111111111109,
+     0.5359859512468069
+    ],
+    "ci90": [
+     -0.06349206349206352,
+     0.4603174603174603
+    ],
+    "decision": "equivalent",
+    "prospective_mde": {
+     "prespecified_1.155": 0.7061161980329625,
+     "holdout_J_1.343": 0.8210511289681979
+    },
+    "realized_mde": 0.4444736627191351,
+    "decision_0.50": "equivalent",
+    "decision_0.30": "unresolved"
+   },
+   "ssn": {
+    "n_clusters": 41,
+    "mean_J_A": 1.8373983739837396,
+    "mean_J_B": 2.3577235772357725,
+    "delta": 0.5203252032520326,
+    "ci95": [
+     0.24390243902439024,
+     0.845528455284553
+    ],
+    "ci90": [
+     0.2845528455284553,
+     0.7967479674796747
+    ],
+    "decision": "resolved",
+    "prospective_mde": {
+     "prespecified_1.155": 0.5053518886926663,
+     "holdout_J_1.343": 0.5876083000123383
+    },
+    "realized_mde": 0.43880691040651115,
+    "decision_0.50": "resolved",
+    "decision_0.30": "resolved"
+   },
+   "prov": {
+    "n_clusters": 37,
+    "mean_J_A": 2.045045045045045,
+    "mean_J_B": 2.3153153153153156,
+    "delta": 0.27027027027027034,
+    "ci95": [
+     0.018018018018018025,
+     0.5945945945945947
+    ],
+    "ci90": [
+     0.0450450450450451,
+     0.5405405405405406
+    ],
+    "decision": "resolved",
+    "prospective_mde": {
+     "prespecified_1.155": 0.5319673274770823,
+     "holdout_J_1.343": 0.6185559487460792
+    },
+    "realized_mde": 0.41863441125406414,
+    "decision_0.50": "resolved",
+    "decision_0.30": "resolved"
+   },
+   "pooled": {
+    "n_clusters": 99,
+    "delta": 0.3468013468013468,
+    "ci95": [
+     0.18181818181818185,
+     0.5420875420875421
+    ],
+    "ci90": [
+     0.20875420875420878,
+     0.5084175084175084
+    ],
+    "decision": "resolved",
+    "prospective_mde": {
+     "prespecified_1.155": 0.3252132445340349,
+     "holdout_J_1.343": 0.37814838736728035
+    },
+    "realized_mde": 0.25892519530308,
+    "decision_0.50": "resolved",
+    "decision_0.30": "resolved"
+   }
+  },
+  "gptoss": {
+   "dcat": {
+    "n_clusters": 21,
+    "mean_J_A": 2.4285714285714284,
+    "mean_J_B": 2.0317460317460316,
+    "delta": -0.39682539682539686,
+    "ci95": [
+     -1.0634920634920635,
+     0.3015873015873016
+    ],
+    "ci90": [
+     -0.9523809523809523,
+     0.1746031746031746
+    ],
+    "decision": "unresolved",
+    "prospective_mde": {
+     "prespecified_1.155": 0.7061161980329625,
+     "holdout_J_1.343": 0.8210511289681979
+    },
+    "realized_mde": 0.9828688514731518,
+    "decision_0.50": "unresolved",
+    "decision_0.30": "unresolved"
+   },
+   "ssn": {
+    "n_clusters": 41,
+    "mean_J_A": 2.1626016260162597,
+    "mean_J_B": 1.845528455284553,
+    "delta": -0.31707317073170727,
+    "ci95": [
+     -0.7886178861788619,
+     0.1869918699186992
+    ],
+    "ci90": [
+     -0.7079883127027394,
+     0.0975609756097561
+    ],
+    "decision": "unresolved",
+    "prospective_mde": {
+     "prespecified_1.155": 0.5053518886926663,
+     "holdout_J_1.343": 0.5876083000123383
+    },
+    "realized_mde": 0.7009284942680281,
+    "decision_0.50": "unresolved",
+    "decision_0.30": "unresolved"
+   },
+   "prov": {
+    "n_clusters": 37,
+    "mean_J_A": 2.0180180180180183,
+    "mean_J_B": 2.099099099099099,
+    "delta": 0.08108108108108107,
+    "ci95": [
+     -0.47747747747747743,
+     0.5855855855855856
+    ],
+    "ci90": [
+     -0.3873873873873874,
+     0.5045045045045046
+    ],
+    "decision": "unresolved",
+    "prospective_mde": {
+     "prespecified_1.155": 0.5319673274770823,
+     "holdout_J_1.343": 0.6185559487460792
+    },
+    "realized_mde": 0.762842945443573,
+    "decision_0.50": "unresolved",
+    "decision_0.30": "unresolved"
+   },
+   "pooled": {
+    "n_clusters": 99,
+    "delta": -0.18518518518518515,
+    "ci95": [
+     -0.5050505050505051,
+     0.14478114478114482
+    ],
+    "ci90": [
+     -0.4478114478114478,
+     0.08754208754208757
+    ],
+    "decision": "equivalent",
+    "prospective_mde": {
+     "prespecified_1.155": 0.3252132445340349,
+     "holdout_J_1.343": 0.37814838736728035
+    },
+    "realized_mde": 0.4563130527839124,
+    "decision_0.50": "equivalent",
+    "decision_0.30": "unresolved"
+   }
+  }
+ }
+}

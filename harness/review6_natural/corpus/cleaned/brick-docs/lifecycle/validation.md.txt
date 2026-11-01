@@ -1,0 +1,7 @@
+# Validation
+
+Documentation coming soon!
+
+Helpful resources:
+- Brick SHACL shapes
+- brickschema package support

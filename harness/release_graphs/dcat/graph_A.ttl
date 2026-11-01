@@ -1,0 +1,2286 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/chunktograph#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://example.org/chunktograph#rdfs:> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:ADMSStatusCompleted a ex:ADMSStatusVocabulary ;
+    rdfs:label "completed" .
+
+ex:ADMSStatusDeprecated a ex:ADMSStatusVocabulary ;
+    rdfs:label "deprecated" .
+
+ex:ADMSStatusUnderDevelopment a ex:ADMSStatusVocabulary ;
+    rdfs:label "under development" .
+
+ex:ADMSStatusWithdrawn a ex:ADMSStatusVocabulary ;
+    rdfs:label "withdrawn" .
+
+ex:CI_RoleCode a owl:Class ;
+    rdfs:label "CI Role Code" .
+
+ex:Centroid a owl:Class ;
+    rdfs:label "Centroid" ;
+    rdfs:comment "The geographic center (centroid) of a spatial thing." .
+
+ex:Checksum a owl:Class ;
+    rdfs:label "Checksum" ;
+    rdfs:comment "A Checksum is a value that allows to check the integrity of the contents of a file. Even small changes to the content of the file will change its checksum. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented." .
+
+ex:ChecksumAlgorithm a owl:Class ;
+    rdfs:label "Checksum Algorithm" ;
+    rdfs:comment "The set of individuals of class spdx:ChecksumAlgorithm. Version 2.2 defines individuals for the following algorithms: MD2, MD4, MD5, MD6, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512." .
+
+ex:Collection a owl:Class ;
+    rdfs:label "Collection" ;
+    rdfs:comment "A group of concepts." .
+
+ex:ConceptScheme a owl:Class ;
+    rdfs:label "ConceptScheme" ;
+    rdfs:comment "A collection of concepts organized in a structured way." .
+
+ex:CreativeCommons a owl:NamedIndividual ;
+    rdfs:label "Creative Commons" ;
+    rdfs:comment "Canonical IRIs of well-known licenses such as those defined by Creative Commons are recommended for interoperability." .
+
+ex:CrossRef a owl:NamedIndividual ;
+    rdfs:label "CrossRef" ;
+    rdfs:comment "CrossRef and DataCite display guidelines recommend displaying DOIs as full URL link in the form https://doi.org/10.xxxx/xxxxx/." .
+
+ex:DCAT-AP a ex:DCATProfile,
+        owl:NamedIndividual ;
+    rdfs:label "DCAT-AP" .
+
+ex:DCAT-AP-NO a ex:DCATProfile,
+        owl:NamedIndividual ;
+    rdfs:label "DCAT-AP-NO" .
+
+ex:DCAT-AP-SE a ex:DCATProfile,
+        owl:NamedIndividual ;
+    rdfs:label "DCAT-AP-SE" .
+
+ex:DCAT-AP.de a ex:DCATProfile,
+        owl:NamedIndividual ;
+    rdfs:label "DCAT-AP.de" .
+
+ex:DCAT-AP_IT a ex:DCATProfile,
+        owl:NamedIndividual ;
+    rdfs:label "DCAT-AP_IT" .
+
+ex:DCAT-BE a ex:DCATProfile,
+        owl:NamedIndividual ;
+    rdfs:label "DCAT-BE" .
+
+ex:DCMITypeVocabulary a owl:Class ;
+    rdfs:label "DCMI Type Vocabulary" ;
+    rdfs:comment "A controlled vocabulary for resource types." .
+
+ex:DOI a owl:NamedIndividual ;
+    rdfs:label "DOI" ;
+    rdfs:comment "DOI is registered as a namespace in the info IRI scheme." .
+
+ex:DS_AssociationTypeCode a owl:Class ;
+    rdfs:label "DS Association Type Code" .
+
+ex:DataCite a owl:NamedIndividual ;
+    rdfs:label "DataCite" ;
+    rdfs:comment "DataCite display guidelines recommend displaying DOIs as full URL link in the form https://doi.org/10.xxxx/xxxxx/." .
+
+ex:DataciteResourceTypes a owl:Class ;
+    rdfs:label "Datacite Resource Types" ;
+    rdfs:comment "A controlled vocabulary for resource types from Datacite." .
+
+ex:Description a owl:DatatypeProperty ;
+    rdfs:label "description" ;
+    rdfs:comment "A free-text account of the record." ;
+    rdfs:domain ex:CatalogRecord ;
+    rdfs:range rdfs:Literal .
+
+ex:Document a owl:Class ;
+    rdfs:label "Document" ;
+    rdfs:comment "A Web page or document accessible via a URI." .
+
+ex:ELI a owl:NamedIndividual ;
+    rdfs:label "ELI" ;
+    rdfs:comment "ELI is an identifier for creative works." .
+
+ex:EndDate a owl:DatatypeProperty ;
+    rdfs:label "End Date" ;
+    rdfs:comment "The end of the period. Encoded using ISO 8601 Date and Time compliant string typed with xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime." ;
+    rdfs:domain dcterms:PeriodOfTime ;
+    rdfs:range xsd:string .
+
+ex:EndpointDescription a owl:Class ;
+    rdfs:label "Endpoint Description" ;
+    rdfs:comment "The endpoint description gives specific details of the actual endpoint instances, while dcterms:conformsTo is used to indicate the general standard or specification that the endpoints implement." .
+
+ex:First a owl:ObjectProperty ;
+    rdfs:label "first" ;
+    rdfs:comment "The first resource in an ordered collection or series of resources, to which the current resource belongs." ;
+    rdfs:subPropertyOf <http://www.w3.org/1999/xhtml/vocab#first> .
+
+ex:Frequency a owl:Class ;
+    rdfs:label "Frequency" ;
+    rdfs:subClassOf dcterms:Frequency .
+
+ex:GeoDCAT-AP a ex:DCATProfile,
+        owl:NamedIndividual ;
+    rdfs:label "GeoDCAT-AP" .
+
+ex:GeoDCAT-AP_IT a ex:DCATProfile,
+        owl:NamedIndividual ;
+    rdfs:label "GeoDCAT-AP_IT" .
+
+ex:HasCurrentVersion a owl:ObjectProperty ;
+    rdfs:label "has current version" ;
+    rdfs:comment "This resource has a more specific, versioned resource with equivalent content." ;
+    rdfs:subPropertyOf <http://purl.org/pav/hasVersion> ;
+    owl:equivalentProperty <http://purl.org/pav/hasCurrentVersion> .
+
+ex:HasVersion a owl:ObjectProperty ;
+    rdfs:label "has version" ;
+    rdfs:comment "This resource has a more specific, versioned resource." ;
+    rdfs:subPropertyOf dcterms:hasVersion,
+        prov:generalizationOf ;
+    owl:equivalentProperty <http://purl.org/pav/hasVersion> .
+
+ex:HydraAPIDescription a owl:Class ;
+    rdfs:label "Hydra API Description" ;
+    rdfs:comment "A machine-readable form of an endpoint description." .
+
+ex:ISNI a owl:NamedIndividual ;
+    rdfs:label "ISNI" ;
+    rdfs:comment "ISNI is an identifier for actors such as authors and publishers." .
+
+ex:Last a owl:ObjectProperty ;
+    rdfs:label "last" ;
+    rdfs:comment "The last resource in an ordered collection or series of resources, to which the current resource belongs." ;
+    rdfs:subPropertyOf <http://www.w3.org/1999/xhtml/vocab#last> .
+
+ex:LicenseDocument a owl:Class ;
+    rdfs:label "LicenseDocument" ;
+    rdfs:comment "A legal document under which the resource is made available." .
+
+ex:LinguisticSystem ns1:label "LinguisticSystem" ;
+    rdfs:subClassOf dcterms:LinguisticSystem .
+
+ex:ListingDate a owl:DatatypeProperty ;
+    rdfs:label "listing date" ;
+    rdfs:comment "The date of listing (i.e., formal recording) of the corresponding dataset or service in the catalog." ;
+    rdfs:domain ex:CatalogRecord ;
+    rdfs:range xsd:date,
+        xsd:dateTime,
+        xsd:gYear,
+        xsd:gYearMonth .
+
+ex:MARCIntellectualResourceTypes a owl:Class ;
+    rdfs:label "MARC Intellectual Resource Types" ;
+    rdfs:comment "A controlled vocabulary for intellectual resource types from MARC." .
+
+ex:MD2 a <http://spdx.org/rdf/terms#ChecksumAlgorithm>,
+        owl:NamedIndividual ;
+    rdfs:label "MD2" ;
+    rdfs:comment "MD2 is a checksum algorithm defined in version 2.2 of SPDX." .
+
+ex:MD4 a <http://spdx.org/rdf/terms#ChecksumAlgorithm>,
+        owl:NamedIndividual ;
+    rdfs:label "MD4" ;
+    rdfs:comment "MD4 is a checksum algorithm defined in version 2.2 of SPDX." .
+
+ex:MD5 a <http://spdx.org/rdf/terms#ChecksumAlgorithm>,
+        owl:NamedIndividual ;
+    rdfs:label "MD5" ;
+    rdfs:comment "MD5 is a checksum algorithm defined in version 2.2 of SPDX." .
+
+ex:MD6 a <http://spdx.org/rdf/terms#ChecksumAlgorithm>,
+        owl:NamedIndividual ;
+    rdfs:label "MD6" ;
+    rdfs:comment "MD6 is a checksum algorithm defined in version 2.2 of SPDX." .
+
+ex:Name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:comment "A name given to the record." ;
+    rdfs:domain ex:CatalogRecord ;
+    rdfs:range rdfs:Literal .
+
+ex:ODRS a owl:NamedIndividual ;
+    rdfs:label "Open Data Rights Statement Vocabulary" ;
+    rdfs:comment "A more sophisticated approach to express rights, based on and extending, is provided by the Open Data Rights Statement Vocabulary (ODRS), which defines properties for specifying, among others, copyright statements and copyright notices." .
+
+ex:OGCGetCapabilities a owl:Class ;
+    rdfs:label "OGC GetCapabilities Response" ;
+    rdfs:comment "A machine-readable form of an endpoint description." .
+
+ex:ORCID a owl:NamedIndividual ;
+    rdfs:label "ORCID" ;
+    rdfs:comment "ORCID is an identifier for actors such as authors and publishers." .
+
+ex:Ontology a owl:Class ;
+    rdfs:label "Ontology" ;
+    rdfs:comment "A formal representation of knowledge." .
+
+ex:OpenAPIDescription a owl:Class ;
+    rdfs:label "OpenAPI (Swagger) Description" ;
+    rdfs:comment "A machine-readable form of an endpoint description." .
+
+ex:Organization ns1:label "Organization" ;
+    rdfs:subClassOf ex:Agent .
+
+ex:PARSEInsightContentTypes a owl:Class ;
+    rdfs:label "PARSE.Insight Content-Types" ;
+    rdfs:comment "A controlled vocabulary for content types used by re3data.org." .
+
+ex:Person ns1:label "Person" ;
+    rdfs:subClassOf ex:Agent .
+
+ex:Policy a owl:Class ;
+    rdfs:label "Policy" ;
+    rdfs:comment "An ODRL conformant policy expressing rights." .
+
+ex:Previous a owl:ObjectProperty ;
+    rdfs:label "previous" ;
+    rdfs:comment "The previous resource (before the current one) in an ordered collection or series of resources." ;
+    rdfs:subPropertyOf <http://www.w3.org/1999/xhtml/vocab#prev> .
+
+ex:PreviousVersion a owl:ObjectProperty ;
+    rdfs:label "previous version" ;
+    rdfs:comment "The previous version of a resource in a lineage." ;
+    rdfs:subPropertyOf prov:wasRevisionOf ;
+    owl:equivalentProperty <http://purl.org/pav/previousVersion> .
+
+ex:RelationshipTarget a owl:Class ;
+    rdfs:label "Relationship Target" ;
+    rdfs:comment "The resource related to the source resource." .
+
+ex:Replaces a owl:ObjectProperty ;
+    rdfs:label "replaces" ;
+    rdfs:comment "A related resource that is supplanted, displaced, or superseded by the described resource." ;
+    rdfs:subPropertyOf dcterms:relation .
+
+ex:RightsStatement a owl:Class ;
+    rdfs:label "RightsStatement" ;
+    ns1:label "RightsStatement" ;
+    rdfs:comment "A statement concerning rights not addressed by license or access rights." ;
+    rdfs:subClassOf dcterms:RightsStatement .
+
+ex:SHA1 a <http://spdx.org/rdf/terms#ChecksumAlgorithm>,
+        owl:NamedIndividual ;
+    rdfs:label "SHA-1" ;
+    rdfs:comment "SHA-1 is a checksum algorithm defined in version 2.2 of SPDX." .
+
+ex:SHA224 a <http://spdx.org/rdf/terms#ChecksumAlgorithm>,
+        owl:NamedIndividual ;
+    rdfs:label "SHA-224" ;
+    rdfs:comment "SHA-224 is a checksum algorithm defined in version 2.2 of SPDX." .
+
+ex:SHA256 a <http://spdx.org/rdf/terms#ChecksumAlgorithm>,
+        owl:NamedIndividual ;
+    rdfs:label "SHA-256" ;
+    rdfs:comment "SHA-256 is a checksum algorithm defined in version 2.2 of SPDX." .
+
+ex:SHA384 a <http://spdx.org/rdf/terms#ChecksumAlgorithm>,
+        owl:NamedIndividual ;
+    rdfs:label "SHA-384" ;
+    rdfs:comment "SHA-384 is a checksum algorithm defined in version 2.2 of SPDX." .
+
+ex:SHA512 a <http://spdx.org/rdf/terms#ChecksumAlgorithm>,
+        owl:NamedIndividual ;
+    rdfs:label "SHA-512" ;
+    rdfs:comment "SHA-512 is a checksum algorithm defined in version 2.2 of SPDX." .
+
+ex:SPARQLServiceDescription a owl:Class ;
+    rdfs:label "SPARQL Service Description" ;
+    rdfs:comment "A machine-readable form of an endpoint description." .
+
+ex:StartDate a owl:DatatypeProperty ;
+    rdfs:label "Start Date" ;
+    rdfs:comment "The start of the period. Encoded using ISO 8601 Date and Time compliant string typed with xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime." ;
+    rdfs:domain dcterms:PeriodOfTime ;
+    rdfs:range xsd:string .
+
+ex:StatDCAT-AP a ex:DCATProfile,
+        owl:NamedIndividual ;
+    rdfs:label "StatDCAT-AP" .
+
+ex:Status a owl:DatatypeProperty ;
+    rdfs:label "status" ;
+    rdfs:comment "The status of the resource in the context of a particular workflow process." ;
+    rdfs:range skos:Concept .
+
+ex:Theme a owl:Class ;
+    rdfs:label "Theme" ;
+    rdfs:comment "A category or a theme used to describe datasets in the catalog." ;
+    rdfs:subClassOf skos:Concept .
+
+ex:ThemeTaxonomy a owl:Class ;
+    rdfs:label "Theme Taxonomy" ;
+    rdfs:comment "A knowledge organization system (KOS) used to represent themes/categories of datasets in the catalog." ;
+    rdfs:subClassOf skos:ConceptScheme .
+
+ex:VIAF a owl:NamedIndividual ;
+    rdfs:label "VIAF" ;
+    rdfs:comment "VIAF is an identifier for actors such as authors and publishers." .
+
+ex:Version a owl:DatatypeProperty ;
+    rdfs:label "version" ;
+    rdfs:comment "The version indicator (name or identifier) of a resource." ;
+    rdfs:range rdfs:Literal ;
+    owl:equivalentProperty <http://purl.org/pav/version> .
+
+ex:VersionNotes a owl:DatatypeProperty ;
+    rdfs:label "version notes" ;
+    rdfs:comment "A description of changes between this version and the previous version of the resource." ;
+    rdfs:range rdfs:Literal .
+
+ex:WKTLiteral a owl:Datatype ;
+    rdfs:label "WKT literal" ;
+    rdfs:comment "The geometry could be encoded as a WKT literal (geosparql:wktLiteral)." ;
+    rdfs:subClassOf rdfs:Literal .
+
+ex:Zenodo a owl:NamedIndividual ;
+    rdfs:label "Zenodo" ;
+    rdfs:comment "Example of a registrant for identifiers; however, representing the authority responsible for assigning identifiers goes against the philosophy of DOI." .
+
+ex:accepted a ex:LifeCycleStatus ;
+    rdfs:label "accepted" .
+
+ex:accessRights a owl:ObjectProperty ;
+    rdfs:label "access rights",
+        "accessRights" ;
+    rdfs:comment "A statement about access rights to the resource.",
+        "use dcterms:accessRights to express statements concerning only access rights." ;
+    rdfs:domain owl:Thing ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf dcterms:rights .
+
+ex:accessURL a owl:ObjectProperty ;
+    rdfs:label "accessURL" ;
+    rdfs:comment "A URL for direct access to a distribution." ;
+    rdfs:domain ex:Distribution ;
+    rdfs:range xsd:anyURI .
+
+ex:accountability a skos:Concept ;
+    rdfs:label "Accountability" ;
+    skos:inScheme ex:themes .
+
+ex:accrualPeriodicity a owl:DatatypeProperty ;
+    rdfs:label "Accrual Periodicity",
+        "accrual periodicity" ;
+    rdfs:comment "The frequency at which a dataset is published." ;
+    rdfs:domain ex:DatasetSeries,
+        ex:Resource,
+        dcat:Dataset ;
+    rdfs:equivalentProperty dcterms:accrualPeriodicity ;
+    rdfs:range dcterms:Frequency,
+        xsd:string .
+
+ex:addsNewClasses a owl:ObjectProperty ;
+    rdfs:label "adds new classes" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range ex:DCAT2 .
+
+ex:addsNewProperties a owl:ObjectProperty ;
+    rdfs:label "adds new properties" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range ex:DCAT2 .
+
+ex:admsIdentifier a owl:DatatypeProperty ;
+    rdfs:label "ADMS identifier" ;
+    rdfs:comment "The property adms:identifier can express other locally minted identifiers or external identifiers, like DOI, ELI, arΧiv for creative works and ORCID, VIAF, ISNI for actors such as authors and publishers, as long as the identifiers are globally unique and stable." ;
+    rdfs:domain owl:Thing ;
+    rdfs:range rdfs:Literal .
+
+ex:alternateOf a owl:ObjectProperty ;
+    rdfs:label "alternateOf" ;
+    rdfs:comment "A resource that is an alternate of the described resource." ;
+    rdfs:subPropertyOf prov:alternateOf .
+
+ex:appliesTo a owl:ObjectProperty ;
+    rdfs:label "applies to" ;
+    rdfs:domain ex:measurement_complianceToDWBP ;
+    rdfs:range owl:Thing .
+
+ex:arXiv a owl:NamedIndividual ;
+    rdfs:label "arXiv" ;
+    rdfs:comment "arXiv is an identifier scheme for creative works." .
+
+ex:bbox a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Bounding Box",
+        "bounding box" ;
+    rdfs:comment "The geographic bounding box of a spatial thing. Range allows different geometry literal encodings such as WKT." ;
+    rdfs:domain ex:Location ;
+    rdfs:equivalentProperty dcat:bbox ;
+    rdfs:range rdfs:Literal,
+        xsd:string .
+
+ex:catalog a owl:ObjectProperty ;
+    rdfs:label "catalog" ;
+    rdfs:comment "A sub-property of dcat:hasPart for linking to a catalog." ;
+    rdfs:subPropertyOf dcat:catalog .
+
+ex:catalogEntryModificationDate a owl:DatatypeProperty ;
+    rdfs:label "Catalog Entry Modification Date" ;
+    rdfs:comment "Most recent date on which the catalog entry was changed, updated or modified." ;
+    rdfs:domain ex:CatalogRecord ;
+    rdfs:range xsd:dateTime .
+
+ex:centroid a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Centroid",
+        "centroid" ;
+    rdfs:comment "The geographic center of a spatial area, or another characteristic point." ;
+    rdfs:domain ex:Location ;
+    rdfs:equivalentProperty dcat:centroid ;
+    rdfs:range rdfs:Literal,
+        xsd:string .
+
+ex:checksumAlgorithm a owl:ObjectProperty ;
+    rdfs:label "checksum algorithm" ;
+    rdfs:comment "Identifies the algorithm used to produce the subject Checksum." ;
+    rdfs:domain <http://spdx.org/rdf/terms#Checksum> ;
+    rdfs:range <http://spdx.org/rdf/terms#ChecksumAlgorithm> .
+
+ex:checksumValue a owl:DatatypeProperty ;
+    rdfs:label "checksum value" ;
+    rdfs:comment "The checksumValue property provides a lowercase hexadecimal encoded digest value produced using a specific algorithm." ;
+    rdfs:domain <http://spdx.org/rdf/terms#Checksum> ;
+    rdfs:range xsd:hexBinary .
+
+ex:completed a ex:LifeCycleStatus ;
+    rdfs:label "completed" .
+
+ex:completenessWRTExpectedNumberOfEntities a owl:NamedIndividual ;
+    rdfs:label "Completeness with Respect to Expected Number of Entities" .
+
+ex:conformant a owl:NamedIndividual ;
+    rdfs:label "conformant" .
+
+ex:conformsTo a owl:ObjectProperty ;
+    rdfs:label "Conforms To",
+        "conforms to",
+        "conformsTo" ;
+    ns1:label "conforms to" ;
+    rdfs:comment "A standard to which the resource conforms.",
+        "An established standard to which the described resource conforms." ;
+    rdfs:domain ex:DataService,
+        dcat:Resource ;
+    rdfs:range ex:Standard,
+        dcterms:Standard,
+        xsd:anyURI ;
+    rdfs:subPropertyOf dcterms:conformsTo .
+
+ex:consumer1 a owl:NamedIndividual ;
+    rdfs:label "consumer1" .
+
+ex:contactPoint a owl:ObjectProperty ;
+    ns1:label "contact point" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range <http://www.w3.org/2006/vcard/ns#Kind> .
+
+ex:created a owl:DatatypeProperty ;
+    rdfs:label "created" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range xsd:string .
+
+ex:creationDate a owl:DatatypeProperty ;
+    rdfs:label "creation date" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range xsd:date .
+
+ex:creator a owl:ObjectProperty,
+        owl:Property ;
+    rdfs:label "dataset creator" ;
+    ns1:label "creator" ;
+    rdfs:domain ex:ChildDataset,
+        dcat:Resource ;
+    rdfs:range owl:Thing,
+        foaf:Agent .
+
+ex:dataset a owl:ObjectProperty ;
+    rdfs:label "dataset" ;
+    rdfs:comment "A sub-property of dcat:hasPart for linking to a dataset." ;
+    rdfs:subPropertyOf dcat:dataset .
+
+ex:dataset-001 a ex:Dataset,
+        owl:NamedIndividual ;
+    rdfs:label "Dataset 001",
+        "dataset-001" ;
+    rdfs:comment "An example dataset with relative IRI ex:dataset-001." .
+
+ex:dataset-001-csv a dcat:Distribution ;
+    rdfs:label "Dataset 001 CSV Distribution" .
+
+ex:dataset-002 a ex:Dataset ;
+    rdfs:label "Dataset 002" .
+
+ex:dataset-003 a ex:Dataset ;
+    rdfs:label "Dataset 003" .
+
+ex:dataset-004 a ex:Dataset ;
+    rdfs:label "Dataset 004" .
+
+ex:datasetIdentifier a owl:DatatypeProperty ;
+    rdfs:label "dataset identifier" ;
+    rdfs:domain ex:ChildDataset ;
+    rdfs:range xsd:string .
+
+ex:datasetLicenseInfo a owl:DatatypeProperty ;
+    rdfs:label "Dataset License Information" ;
+    rdfs:comment "Information about licenses and rights provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset." ;
+    rdfs:domain dcat:Dataset ;
+    rdfs:range xsd:string .
+
+ex:datasetReleaseDate a owl:DatatypeProperty ;
+    rdfs:label "Dataset Release Date" ;
+    rdfs:comment "The date of listing the dataset in the catalog and not the publication date of the dataset itself." ;
+    rdfs:domain dcat:Dataset ;
+    rdfs:range xsd:dateTime .
+
+ex:datasetRightsInfo a owl:DatatypeProperty ;
+    rdfs:label "Dataset Rights Information" ;
+    rdfs:comment "Information about rights provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset." ;
+    rdfs:domain dcat:Dataset ;
+    rdfs:range xsd:string .
+
+ex:datasetSeriesType a owl:ObjectProperty ;
+    rdfs:label "dataset series type" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range owl:Thing ;
+    owl:equivalentProperty dcterms:type .
+
+ex:dateAccepted a owl:DatatypeProperty ;
+    rdfs:label "date accepted" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range xsd:string .
+
+ex:dateCopyrighted a owl:DatatypeProperty ;
+    rdfs:label "date copyrighted" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range xsd:string .
+
+ex:dateSubmitted a owl:DatatypeProperty ;
+    rdfs:label "date submitted" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range xsd:string .
+
+ex:deprecated a ex:LifeCycleStatus ;
+    rdfs:label "deprecated" .
+
+ex:description a owl:DatatypeProperty ;
+    ns1:label "description" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range rdfs:Literal .
+
+ex:distribution a owl:ObjectProperty ;
+    rdfs:label "distribution" ;
+    rdfs:comment "Link from a dcat:Dataset to a representation of the dataset, described as a dcat:Distribution." ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range ex:Distribution ;
+    rdfs:subPropertyOf dcat:distribution .
+
+ex:doesNotObsoletes a owl:ObjectProperty ;
+    rdfs:label "does not obsoletes" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range ex:DCAT2 .
+
+ex:experimental a ex:LifeCycleStatus ;
+    rdfs:label "experimental" .
+
+ex:format a owl:ObjectProperty ;
+    rdfs:label "format" ;
+    rdfs:comment "The file format, physical medium, or dimensions of the resource." ;
+    rdfs:domain ex:Resource ;
+    rdfs:range xsd:string .
+
+ex:genoaBusStopsDataset a ex:ChildDataset ;
+    rdfs:label "Genoa Bus Stops Dataset" ;
+    ex:datasetIdentifier "genoa-bus-stops" ;
+    ex:hasQualityAnnotation ex:genoaBusStopsDatasetCompletenessNote ;
+    ex:publisher "Genoa Transport Authority" ;
+    ex:releaseDate "2023-01-15"^^xsd:date ;
+    ex:title "Georeferenced List of Bus Stops in Genoa" .
+
+ex:geometry a owl:ObjectProperty ;
+    rdfs:label "geometry" ;
+    rdfs:domain ex:Location ;
+    rdfs:equivalentProperty <http://www.w3.org/ns/locn#geometry> ;
+    rdfs:range xsd:string .
+
+ex:hadPrimarySource a owl:ObjectProperty ;
+    rdfs:label "hadPrimarySource" ;
+    rdfs:comment "A resource that is the primary source of the described resource." ;
+    rdfs:subPropertyOf prov:hadPrimarySource .
+
+ex:hadRole a owl:ObjectProperty ;
+    rdfs:label "had role" ;
+    rdfs:domain prov:Attribution ;
+    rdfs:range owl:Thing .
+
+ex:hasADMS a owl:DatatypeProperty ;
+    rdfs:label "has ADMS" ;
+    rdfs:domain ex:DCAT ;
+    rdfs:range xsd:string .
+
+ex:hasAccessRights a owl:ObjectProperty ;
+    rdfs:label "has access rights" ;
+    ns1:label "has access rights" ;
+    rdfs:domain ex:Distribution,
+        dcat:Resource ;
+    rdfs:range dcterms:RightsStatement .
+
+ex:hasAccessURL a owl:ObjectProperty ;
+    rdfs:label "has access URL" ;
+    rdfs:domain ex:Distribution ;
+    rdfs:range xsd:anyURI .
+
+ex:hasAccrualPeriodicity a owl:ObjectProperty ;
+    rdfs:label "has accrual periodicity" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:anyURI .
+
+ex:hasAffiliation a owl:ObjectProperty ;
+    rdfs:label "has affiliation" ;
+    rdfs:domain ex:AlejandraGonzalezBeltran,
+        ex:DavidBrowning,
+        ex:FadiMaali,
+        ex:JohnErickson,
+        ex:RiccardoAlbertoni,
+        ex:SimonJDCox ;
+    rdfs:range ex:CNRI,
+        ex:CSIRO,
+        ex:DERI,
+        ex:Refinitiv,
+        ex:ScienceAndTechnologyFacilitiesCouncil,
+        ex:TetherlessWorldConstellation,
+        ex:UniversityOfOxford .
+
+ex:hasBeginning a owl:ObjectProperty ;
+    rdfs:label "Has Beginning" ;
+    rdfs:comment "Beginning of a period or interval. Use of this property entails that the value of dcterms:temporal is a member of time:TemporalEntity." ;
+    rdfs:range time:Instant .
+
+ex:hasCatalog a owl:ObjectProperty ;
+    rdfs:label "has catalog" ;
+    ns1:label "has catalog" ;
+    rdfs:domain ex:Dataset,
+        dcat:Catalog ;
+    rdfs:range ex:Catalog,
+        dcat:Catalog ;
+    rdfs:subPropertyOf ex:hasResource .
+
+ex:hasCatalogRecord a owl:ObjectProperty ;
+    rdfs:label "has catalog record" ;
+    ns1:label "has catalog record" ;
+    rdfs:comment "A catalog record describes an entry in the catalog, concerning the registration of a resource." ;
+    rdfs:domain ex:Dataset,
+        dcat:Catalog ;
+    rdfs:range ex:CatalogRecord,
+        dcat:CatalogRecord .
+
+ex:hasChildDataset a owl:ObjectProperty ;
+    rdfs:label "has Child Dataset",
+        "has child dataset" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range ex:ChildDataset,
+        ex:Dataset .
+
+ex:hasClassificationScheme a owl:ObjectProperty ;
+    rdfs:label "has classification scheme" ;
+    rdfs:domain ex:Catalog ;
+    rdfs:range rdfs:Resource .
+
+ex:hasCommunityPractice a owl:DatatypeProperty ;
+    rdfs:label "has community practice" ;
+    rdfs:domain ex:LifeCycle ;
+    rdfs:range xsd:string .
+
+ex:hasComplementaryUse a owl:ObjectProperty ;
+    rdfs:label "has complementary use" ;
+    rdfs:domain ex:DCATVersioning ;
+    rdfs:range ex:OWLVocabulary,
+        ex:PROVVocabulary .
+
+ex:hasConformanceResult a owl:ObjectProperty ;
+    rdfs:label "has conformance result" ;
+    rdfs:domain ex:testingActivity ;
+    rdfs:range owl:Thing .
+
+ex:hasConformanceTest a owl:ObjectProperty ;
+    rdfs:label "has conformance test" ;
+    rdfs:domain ex:testingActivity ;
+    rdfs:range ex:conformanceTest .
+
+ex:hasConformanceTestResult a owl:ObjectProperty ;
+    rdfs:label "has conformance test result" ;
+    rdfs:domain ex:testingActivity ;
+    rdfs:range owl:Thing .
+
+ex:hasContactPoint a owl:ObjectProperty ;
+    rdfs:label "has contact point" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range <http://www.w3.org/2006/vcard/ns#VCard> .
+
+ex:hasContributor a owl:ObjectProperty ;
+    rdfs:label "has contributor" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range ex:MakxDekkers .
+
+ex:hasCorrespondence a owl:ObjectProperty ;
+    rdfs:label "has correspondence" ;
+    rdfs:domain ex:DCATVersioning ;
+    rdfs:range ex:OWLVocabulary,
+        ex:PROVVocabulary .
+
+ex:hasCurrentVersion a owl:ObjectProperty ;
+    rdfs:label "has current version" ;
+    rdfs:domain ex:Resource ;
+    rdfs:equivalentProperty <http://purl.org/pav/hasCurrentVersion> ;
+    rdfs:range ex:ResourceVersion ;
+    rdfs:subPropertyOf ex:hasVersion .
+
+ex:hasDCATProperty a owl:DatatypeProperty ;
+    rdfs:label "has DCAT property" ;
+    rdfs:domain ex:DCAT ;
+    rdfs:range xsd:string .
+
+ex:hasDataCitationProfile a owl:ObjectProperty ;
+    rdfs:label "has Data Citation Profile" ;
+    rdfs:domain ex:ChildDataset ;
+    rdfs:range ex:DataCitationProfile .
+
+ex:hasDataManagementPolicy a owl:DatatypeProperty ;
+    rdfs:label "has data management policy" ;
+    rdfs:domain ex:LifeCycle ;
+    rdfs:range xsd:string .
+
+ex:hasDataService a owl:ObjectProperty ;
+    rdfs:label "has data service" ;
+    ns1:label "has data service" ;
+    rdfs:comment "Distributions of a dataset can be provided via data services." ;
+    rdfs:domain ex:Dataset,
+        dcat:Catalog ;
+    rdfs:range ex:DataService,
+        dcat:DataService ;
+    rdfs:subPropertyOf ex:hasResource .
+
+ex:hasDataset a owl:ObjectProperty ;
+    rdfs:label "has dataset" ;
+    ns1:label "has dataset" ;
+    rdfs:comment "The catalog lists each of its datasets via the dcat:dataset property." ;
+    rdfs:domain ex:Catalog,
+        dcat:Catalog ;
+    rdfs:range ex:Dataset,
+        dcat:Dataset ;
+    rdfs:subPropertyOf ex:hasResource .
+
+ex:hasDatasetSeries a owl:ObjectProperty ;
+    rdfs:label "has dataset series" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:DatasetSeries .
+
+ex:hasDatasetSeriesExample a owl:DatatypeProperty ;
+    rdfs:label "has dataset series example" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range xsd:string .
+
+ex:hasDatasetSeriesHierarchy a owl:ObjectProperty ;
+    rdfs:label "has dataset series hierarchy" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range ex:DatasetSeries .
+
+ex:hasDatasetSeriesProperty a owl:ObjectProperty ;
+    rdfs:label "has dataset series property" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range [ owl:unionOf ( owl:ObjectProperty owl:DatatypeProperty ex:Dataset ex:DatasetSeries ex:Resource ex:LifeCycleStatus ex:StatusTransition ex:Versioning ex:LifeCycle ) ] .
+
+ex:hasDatasetType a owl:DatatypeProperty ;
+    rdfs:label "has dataset type" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range xsd:string .
+
+ex:hasDescription a owl:DatatypeProperty ;
+    rdfs:label "has description" ;
+    rdfs:domain ex:Distribution ;
+    rdfs:range rdfs:Literal .
+
+ex:hasDistribution a owl:ObjectProperty ;
+    rdfs:label "has distribution" ;
+    rdfs:comment "A dataset can be represented by one or more distributions." ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range ex:Distribution .
+
+ex:hasDomainPractice a owl:DatatypeProperty ;
+    rdfs:label "has domain practice" ;
+    rdfs:domain ex:LifeCycle ;
+    rdfs:range xsd:string .
+
+ex:hasDownloadURL a owl:ObjectProperty ;
+    rdfs:label "has download URL" ;
+    rdfs:domain ex:Distribution ;
+    rdfs:range xsd:anyURI .
+
+ex:hasEUVocabularies a owl:DatatypeProperty ;
+    rdfs:label "has EU vocabularies" ;
+    rdfs:domain ex:DCAT ;
+    rdfs:range xsd:string .
+
+ex:hasEditor a owl:ObjectProperty ;
+    rdfs:label "has editor" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range ex:AlejandraGonzalezBeltran,
+        ex:AndreaPerego,
+        ex:DavidBrowning,
+        ex:PeterWinstanley,
+        ex:RiccardoAlbertoni,
+        ex:SimonJDCox .
+
+ex:hasEnd a owl:ObjectProperty ;
+    rdfs:label "Has End" ;
+    rdfs:comment "End of a period or interval. Use of this property entails that the value of dcterms:temporal is a member of time:TemporalEntity." ;
+    rdfs:range time:Instant .
+
+ex:hasEndDate a owl:ObjectProperty ;
+    rdfs:label "has end date" ;
+    rdfs:domain dcterms:PeriodOfTime ;
+    rdfs:range xsd:date .
+
+ex:hasEndpointDescription a owl:ObjectProperty ;
+    rdfs:label "has endpoint description" ;
+    rdfs:domain ex:DataService ;
+    rdfs:range xsd:anyURI .
+
+ex:hasEndpointURL a owl:ObjectProperty ;
+    rdfs:label "has endpoint URL" ;
+    rdfs:domain ex:DataService ;
+    rdfs:range xsd:anyURI .
+
+ex:hasErrata a owl:DatatypeProperty ;
+    rdfs:label "has errata" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range xsd:boolean .
+
+ex:hasExtension a owl:ObjectProperty ;
+    rdfs:label "has extension" ;
+    rdfs:domain ex:DCAT ;
+    rdfs:range ex:DCATAP,
+        ex:DataTagSuite,
+        ex:HealthcareAndLifeSciencesProfile .
+
+ex:hasFeedbackMechanism a owl:ObjectProperty ;
+    rdfs:label "has feedback mechanism" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range ex:GitHub,
+        ex:publicDXWGComments .
+
+ex:hasFormat a owl:ObjectProperty ;
+    rdfs:label "hasFormat" ;
+    rdfs:comment "A resource with a different format that is related to the described resource." ;
+    rdfs:subPropertyOf dcterms:hasFormat .
+
+ex:hasFormerEditor a owl:ObjectProperty ;
+    rdfs:label "has former editor" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range ex:FadiMaali,
+        ex:JohnErickson .
+
+ex:hasGenerationActivity a owl:ObjectProperty ;
+    rdfs:label "has generation activity" ;
+    rdfs:domain prov:Entity ;
+    rdfs:range ex:GenerationActivity .
+
+ex:hasGeometry a owl:ObjectProperty ;
+    rdfs:label "Has Geometry" ;
+    rdfs:comment "Associates a spatial thing with a corresponding geometry." ;
+    rdfs:domain ex:SpatialThing ;
+    rdfs:range <http://www.w3.org/ns/locn#Geometry> .
+
+ex:hasGuidance a owl:DatatypeProperty ;
+    rdfs:label "has guidance" ;
+    rdfs:domain ex:DCAT ;
+    rdfs:range xsd:string .
+
+ex:hasHistory a owl:DatatypeProperty ;
+    rdfs:label "has history" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range xsd:string .
+
+ex:hasHomepage a owl:ObjectProperty ;
+    rdfs:label "has homepage" ;
+    rdfs:domain ex:Catalog ;
+    rdfs:range foaf:Document .
+
+ex:hasISOStandard a owl:DatatypeProperty ;
+    rdfs:label "has ISO standard" ;
+    rdfs:domain ex:LifeCycle ;
+    rdfs:range xsd:string .
+
+ex:hasImplementationReport a owl:DatatypeProperty ;
+    rdfs:label "has implementation report" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range xsd:string .
+
+ex:hasInheritance a owl:ObjectProperty ;
+    rdfs:label "has inheritance" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range ex:Resource .
+
+ex:hasIssuanceDate a owl:DatatypeProperty ;
+    rdfs:label "has issuance date" ;
+    rdfs:domain ex:Distribution ;
+    rdfs:range xsd:date,
+        xsd:dateTime,
+        xsd:gYear,
+        xsd:gYearMonth .
+
+ex:hasIssueReference a owl:DatatypeProperty ;
+    rdfs:label "has issue reference" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range xsd:string .
+
+ex:hasIssuedDate a owl:DatatypeProperty ;
+    rdfs:label "has issued date" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:date .
+
+ex:hasLandingPage a owl:ObjectProperty ;
+    rdfs:label "has landing page" ;
+    rdfs:domain ex:Distribution ;
+    rdfs:range foaf:Document .
+
+ex:hasLatestEditorsDraft a owl:DatatypeProperty ;
+    rdfs:label "has latest editor's draft" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range xsd:string .
+
+ex:hasLicense a owl:ObjectProperty ;
+    rdfs:label "has license" ;
+    rdfs:domain ex:Distribution ;
+    rdfs:range dcterms:LicenseDocument .
+
+ex:hasLifeCycle a owl:ObjectProperty ;
+    rdfs:label "has life-cycle" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:LifeCycle .
+
+ex:hasLifeCycleProperty a owl:ObjectProperty ;
+    rdfs:label "has life-cycle property" ;
+    rdfs:domain ex:LifeCycle ;
+    rdfs:range owl:ObjectProperty .
+
+ex:hasLifeCycleStatusVocabulary a owl:ObjectProperty ;
+    rdfs:label "has life-cycle status vocabulary" ;
+    rdfs:domain ex:LifeCycle ;
+    rdfs:range ex:LifeCycleStatus .
+
+ex:hasMember a owl:ObjectProperty ;
+    rdfs:label "has member" ;
+    rdfs:comment "A catalog contains descriptions of datasets and data services." ;
+    rdfs:domain ex:Catalog ;
+    rdfs:range ex:Resource .
+
+ex:hasModificationDate a owl:DatatypeProperty ;
+    rdfs:label "has modification date" ;
+    rdfs:domain ex:Distribution ;
+    rdfs:range xsd:date,
+        xsd:dateTime,
+        xsd:gYear,
+        xsd:gYearMonth .
+
+ex:hasModifiedDate a owl:DatatypeProperty ;
+    rdfs:label "has modified date" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:date .
+
+ex:hasName a owl:DatatypeProperty ;
+    rdfs:label "has name" ;
+    rdfs:domain ex:Distribution ;
+    rdfs:range rdfs:Literal .
+
+ex:hasNamespace a owl:ObjectProperty ;
+    rdfs:label "has namespace" ;
+    rdfs:domain ex:DCAT ;
+    rdfs:range ex:DCATNamespace .
+
+ex:hasNonNormativeFormat a owl:ObjectProperty ;
+    rdfs:label "has non-normative format" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range ex:JSONLD,
+        ex:RDFXML,
+        ex:Turtle .
+
+ex:hasNonNormativeSection a owl:DatatypeProperty ;
+    rdfs:label "has non-normative section" ;
+    rdfs:domain ex:DCAT ;
+    rdfs:range xsd:string .
+
+ex:hasParentClass a owl:ObjectProperty ;
+    rdfs:label "has parent class" ;
+    rdfs:domain ex:Catalog,
+        ex:DataService,
+        ex:Dataset ;
+    rdfs:range ex:Resource .
+
+ex:hasPart a owl:ObjectProperty ;
+    rdfs:label "has part",
+        "hasPart" ;
+    rdfs:comment "A related resource that is included either physically or logically in the described resource." ;
+    rdfs:domain ex:Catalog,
+        ex:DatasetSeries,
+        ex:Resource ;
+    rdfs:range ex:ChildDataset,
+        ex:Resource ;
+    rdfs:subPropertyOf dcterms:hasPart ;
+    owl:equivalentProperty dcterms:hasPart .
+
+ex:hasPolicy a owl:ObjectProperty ;
+    rdfs:label "has policy" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:ODRLPolicy ;
+    rdfs:subPropertyOf ex:hasODRLPolicy .
+
+ex:hasPrefix a owl:DatatypeProperty ;
+    rdfs:label "has prefix" ;
+    rdfs:domain ex:DCATNamespace ;
+    rdfs:range xsd:string .
+
+ex:hasPreviousRecommendation a owl:DatatypeProperty ;
+    rdfs:label "has previous recommendation" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range xsd:string .
+
+ex:hasPublisher a owl:ObjectProperty ;
+    rdfs:label "has publisher" ;
+    rdfs:comment "A dataset is published or curated by a single agent." ;
+    rdfs:domain ex:Catalog,
+        ex:Dataset ;
+    rdfs:range ex:Agent .
+
+ex:hasQualityAnnotation a owl:ObjectProperty ;
+    rdfs:label "has Quality Annotation" ;
+    rdfs:domain ex:ChildDataset ;
+    rdfs:range ex:QualityAnnotation .
+
+ex:hasQualityMeasurement a owl:ObjectProperty ;
+    rdfs:label "has Quality Measurement" ;
+    rdfs:domain ex:ChildDataset ;
+    rdfs:range ex:QualityMeasurement .
+
+ex:hasQualityPolicy a owl:ObjectProperty ;
+    rdfs:label "has Quality Policy" ;
+    rdfs:domain ex:ChildDataset ;
+    rdfs:range ex:QualityPolicy .
+
+ex:hasResourceLifeCycle a owl:ObjectProperty ;
+    rdfs:label "has resource life-cycle" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:LifeCycle .
+
+ex:hasResourceType a owl:DatatypeProperty ;
+    rdfs:label "has resource type" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range xsd:string .
+
+ex:hasResult a owl:ObjectProperty ;
+    rdfs:label "has result" ;
+    rdfs:comment "The result of any request to a data service is a representation of a part or all of a dataset or catalog." ;
+    rdfs:domain ex:DataService ;
+    rdfs:range ex:Dataset .
+
+ex:hasRights a owl:ObjectProperty ;
+    rdfs:label "has rights" ;
+    rdfs:domain ex:Distribution ;
+    rdfs:range dcterms:RightsStatement .
+
+ex:hasRole a owl:ObjectProperty ;
+    rdfs:label "Has Role",
+        "hasRole" ;
+    rdfs:comment "Captures the responsibility of the Agent with respect to the Resource.",
+        "The function of an entity or agent with respect to another entity or resource. Recommended to use controlled vocabularies such as CI_RoleCode or DS_AssociationTypeCode." ;
+    rdfs:domain [ owl:unionOf ( prov:Attribution ex:Relationship ) ],
+        ex:Attribution ;
+    rdfs:range ex:Agent,
+        ex:Role .
+
+ex:hasScopeDifference a owl:DatatypeProperty ;
+    rdfs:label "has scope difference" ;
+    rdfs:domain ex:DCATVersioning ;
+    rdfs:range xsd:string .
+
+ex:hasSemanticDifference a owl:DatatypeProperty ;
+    rdfs:label "has semantic difference" ;
+    rdfs:domain ex:DCATVersioning ;
+    rdfs:range xsd:string .
+
+ex:hasSeries a owl:ObjectProperty ;
+    rdfs:label "has series" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range ex:DatasetSeries ;
+    owl:inverseOf ex:inSeries .
+
+ex:hasServiceType a owl:ObjectProperty ;
+    rdfs:label "has service type" ;
+    rdfs:domain ex:DataService ;
+    rdfs:range xsd:anyURI .
+
+ex:hasSource a owl:ObjectProperty ;
+    rdfs:label "has source" ;
+    rdfs:comment "A data service provides operations over datasets that might be hosted locally or remote to the service." ;
+    rdfs:domain ex:DataService ;
+    rdfs:range ex:Dataset .
+
+ex:hasSpatialCoverage a owl:ObjectProperty ;
+    rdfs:label "has spatial coverage" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:anyURI .
+
+ex:hasSpatialResolutionInMeters a owl:DatatypeProperty ;
+    rdfs:label "has spatial resolution in meters" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:decimal .
+
+ex:hasStartDate a owl:ObjectProperty ;
+    rdfs:label "has start date" ;
+    rdfs:domain dcterms:PeriodOfTime ;
+    rdfs:range xsd:date .
+
+ex:hasStatus a owl:ObjectProperty ;
+    rdfs:label "has status" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:LifeCycleStatus .
+
+ex:hasStatusTime a owl:ObjectProperty ;
+    rdfs:label "has status time" ;
+    rdfs:domain ex:LifeCycleStatus ;
+    rdfs:range dcterms:TimeExpression .
+
+ex:hasStatusTransition a owl:ObjectProperty ;
+    rdfs:label "has status transition" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:StatusTransition .
+
+ex:hasStatusTransitionFrom a owl:ObjectProperty ;
+    rdfs:label "has status transition from" ;
+    rdfs:domain ex:StatusTransition ;
+    rdfs:range ex:LifeCycleStatus .
+
+ex:hasStatusTransitionTime a owl:DatatypeProperty ;
+    rdfs:label "has status transition time" ;
+    rdfs:domain ex:StatusTransition ;
+    rdfs:range xsd:string .
+
+ex:hasStatusTransitionTo a owl:ObjectProperty ;
+    rdfs:label "has status transition to" ;
+    rdfs:domain ex:StatusTransition ;
+    rdfs:range ex:LifeCycleStatus .
+
+ex:hasStatusVocabulary a owl:ObjectProperty ;
+    rdfs:label "has status vocabulary" ;
+    rdfs:domain ex:DCAT ;
+    rdfs:range ex:LifeCycleStatus .
+
+ex:hasSubClass a owl:ObjectProperty ;
+    rdfs:label "has sub class" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:Catalog,
+        ex:DataService,
+        ex:Dataset .
+
+ex:hasTemporalCoverage a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has temporal coverage" ;
+    rdfs:domain ex:Dataset,
+        ex:DatasetSeries ;
+    rdfs:range dcterms:PeriodOfTime,
+        xsd:string .
+
+ex:hasTemporalCoverageUnion a owl:DatatypeProperty ;
+    rdfs:label "has temporal coverage union" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range xsd:string .
+
+ex:hasTemporalResolution a owl:DatatypeProperty ;
+    rdfs:label "has temporal resolution" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:duration .
+
+ex:hasTestingActivity a owl:ObjectProperty ;
+    rdfs:label "has testing activity" ;
+    rdfs:domain ex:ChildDataset ;
+    rdfs:range ex:testingActivity .
+
+ex:hasTheme a owl:ObjectProperty ;
+    rdfs:label "has theme" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range skos:Concept .
+
+ex:hasType a owl:ObjectProperty ;
+    rdfs:label "has type" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:anyURI .
+
+ex:hasUKRegistryExample a owl:DatatypeProperty ;
+    rdfs:label "has UK registry example" ;
+    rdfs:domain ex:DCAT ;
+    rdfs:range xsd:string .
+
+ex:hasUpstreamInheritance a owl:ObjectProperty ;
+    rdfs:label "has upstream inheritance" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range ex:Resource .
+
+ex:hasVersionChain a owl:ObjectProperty ;
+    rdfs:label "has version chain" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:Versioning .
+
+ex:hasVersioning a owl:ObjectProperty ;
+    rdfs:label "has versioning" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:Versioning .
+
+ex:hasVersioningApproach a owl:ObjectProperty ;
+    rdfs:label "has versioning approach" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:Versioning .
+
+ex:hasVersioningProperty a owl:ObjectProperty ;
+    rdfs:label "has versioning property" ;
+    rdfs:domain ex:Versioning ;
+    rdfs:range owl:ObjectProperty .
+
+ex:hasWorkflow a owl:DatatypeProperty ;
+    rdfs:label "has workflow" ;
+    rdfs:domain ex:LifeCycle ;
+    rdfs:range xsd:string .
+
+ex:historicalArchive a ex:LifeCycleStatus ;
+    rdfs:label "historical archive" .
+
+ex:identifier a owl:DatatypeProperty ;
+    rdfs:label "identifier" ;
+    ns1:label "identifier" ;
+    rdfs:comment "The property dcterms:identifier explicitly indicates HTTP IRIs as well as legacy identifiers." ;
+    rdfs:domain owl:Thing,
+        dcat:Resource ;
+    rdfs:range rdfs:Literal .
+
+ex:invalid a ex:LifeCycleStatus ;
+    rdfs:label "invalid" .
+
+ex:isBasedOn a owl:ObjectProperty ;
+    rdfs:label "is based on" ;
+    rdfs:domain ex:DCAT ;
+    rdfs:range ex:Resource .
+
+ex:isFormatOf a owl:ObjectProperty ;
+    rdfs:label "isFormatOf" ;
+    rdfs:comment "A resource that is the format of the described resource." ;
+    rdfs:subPropertyOf dcterms:isFormatOf .
+
+ex:isPartOf a owl:ObjectProperty ;
+    rdfs:label "Is Part Of",
+        "is part of" ;
+    rdfs:comment "A dataset series of which the dataset is part." ;
+    rdfs:domain ex:ChildDataset,
+        dcat:Dataset ;
+    rdfs:range ex:DatasetSeries,
+        dcat:DatasetSeries ;
+    rdfs:subPropertyOf dcterms:isPartOf ;
+    owl:equivalentProperty dcterms:isPartOf .
+
+ex:isPartOfSeries a owl:ObjectProperty ;
+    rdfs:label "is part of series" ;
+    rdfs:comment "A dataset may be part of a dataset series." ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range ex:DatasetSeries .
+
+ex:isPublisherOf a owl:ObjectProperty ;
+    rdfs:label "is publisher of" ;
+    rdfs:comment "The publisher of the catalog has the relative IRI ex:transparency-office." ;
+    rdfs:domain ex:transparency-office ;
+    rdfs:range ex:Catalog .
+
+ex:isReferencedBy a owl:ObjectProperty ;
+    rdfs:label "isReferencedBy" ;
+    rdfs:comment "A related resource, such as a publication, that references, cites, or otherwise points to the cataloged resource.",
+        "A resource that references the described resource.",
+        "Used to associate a resource with the resource that references it, e.g., a dataset referenced by a publication." ;
+    rdfs:domain ex:Resource ;
+    rdfs:subPropertyOf dcterms:isReferencedBy .
+
+ex:isReplacedBy a owl:ObjectProperty ;
+    rdfs:label "is replaced by",
+        "isReplacedBy" ;
+    rdfs:comment "A resource that replaces the described resource." ;
+    rdfs:domain ex:Resource ;
+    rdfs:equivalentProperty dcterms:isReplacedBy ;
+    rdfs:range ex:Resource ;
+    rdfs:subPropertyOf dcterms:isReplacedBy .
+
+ex:isRequiredBy a owl:ObjectProperty ;
+    rdfs:label "isRequiredBy" ;
+    rdfs:comment "A resource that requires the described resource." ;
+    rdfs:subPropertyOf dcterms:isRequiredBy .
+
+ex:isVersionOf a owl:ObjectProperty ;
+    rdfs:label "is version of",
+        "isVersionOf" ;
+    rdfs:comment "A resource that the described resource is a version of." ;
+    rdfs:domain ex:Resource,
+        ex:ResourceVersion ;
+    rdfs:inverseOf ex:hasVersion ;
+    rdfs:range ex:Resource ;
+    rdfs:subPropertyOf dcterms:isVersionOf ;
+    owl:inverseOf ex:hasVersion .
+
+ex:issued a owl:DatatypeProperty ;
+    rdfs:label "issued" ;
+    ns1:label "issued" ;
+    rdfs:domain ex:Resource,
+        dcat:Resource ;
+    rdfs:equivalentProperty dcterms:issued ;
+    rdfs:range xsd:anySimpleType,
+        xsd:date,
+        xsd:string .
+
+ex:keyword a owl:DatatypeProperty ;
+    rdfs:label "keyword" ;
+    rdfs:comment "A keyword or tag describing the resource.",
+        "In DCAT 2, the domain of dcat:keyword was relaxed from dcat:Dataset to ex:Resource." ;
+    rdfs:domain ex:Resource ;
+    rdfs:range xsd:string .
+
+ex:landingPage a owl:ObjectProperty ;
+    rdfs:label "landingPage" ;
+    rdfs:comment "A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.",
+        "In DCAT 2, the domain of dcat:landingPage was relaxed from dcat:Dataset to ex:Resource." ;
+    rdfs:domain ex:Resource ;
+    rdfs:range foaf:Document ;
+    rdfs:subPropertyOf foaf:page .
+
+ex:language a owl:ObjectProperty ;
+    ns1:label "language" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range dcterms:LinguisticSystem .
+
+ex:license a owl:ObjectProperty ;
+    rdfs:label "license" ;
+    rdfs:comment "A legal document under which the resource is made available.",
+        "Information about licenses and rights MAY be provided for the Resource.",
+        "use dcterms:license to refer to licenses." ;
+    rdfs:domain ex:Resource,
+        owl:Thing ;
+    rdfs:range dcterms:LicenseDocument,
+        rdfs:Literal ;
+    rdfs:subPropertyOf dcterms:rights .
+
+ex:licenseInfo a owl:DatatypeProperty ;
+    rdfs:label "License Information" ;
+    rdfs:comment "Information about licenses and rights provided on the level of Distribution." ;
+    rdfs:domain dcat:Distribution ;
+    rdfs:range xsd:string .
+
+ex:maintainsBackwardCompatibility a owl:ObjectProperty ;
+    rdfs:label "maintains backward compatibility" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range ex:DCAT2 .
+
+ex:measures a owl:ObjectProperty ;
+    rdfs:label "measures" ;
+    rdfs:domain ex:measurement_complianceToDWBP ;
+    rdfs:range ex:levelOfComplianceToDWBP .
+
+ex:modified a owl:DatatypeProperty ;
+    rdfs:label "modified" ;
+    ns1:label "modified" ;
+    rdfs:domain ex:Resource,
+        dcat:Resource ;
+    rdfs:equivalentProperty dcterms:modified ;
+    rdfs:range xsd:anySimpleType,
+        xsd:date,
+        xsd:string .
+
+ex:myQualityChecker a owl:NamedIndividual ;
+    rdfs:label "My Quality Checker Service" .
+
+ex:myQualityChecking a ex:QualityMeasurement ;
+    rdfs:label "My Quality Checking Activity" ;
+    ex:qualityDimension ex:completeness ;
+    rdfs:comment "Activity measuring completeness of Genoa Bus Stops Dataset." .
+
+ex:notAccepted a ex:LifeCycleStatus ;
+    rdfs:label "not accepted" .
+
+ex:notConformant a owl:NamedIndividual ;
+    rdfs:label "not conformant" .
+
+ex:obsolete a ex:LifeCycleStatus ;
+    rdfs:label "obsolete" .
+
+ex:odrlPolicy a owl:ObjectProperty ;
+    rdfs:label "odrlPolicy" ;
+    rdfs:comment "An ODRL conformant policy expressing the rights associated with the resource.",
+        "Information about rights expressed as an ODRL policy MAY be provided for the resource." ;
+    rdfs:domain ex:Resource ;
+    rdfs:range odrl:Policy .
+
+ex:ongoing a ex:LifeCycleStatus ;
+    rdfs:label "ongoing" .
+
+ex:pending a ex:LifeCycleStatus ;
+    rdfs:label "pending" .
+
+ex:planned a ex:LifeCycleStatus ;
+    rdfs:label "planned" .
+
+ex:previousAffiliation a owl:ObjectProperty ;
+    rdfs:label "previous affiliation" ;
+    rdfs:domain ex:AlejandraGonzalezBeltran ;
+    rdfs:range ex:UniversityOfOxford .
+
+ex:previousVersion a owl:ObjectProperty ;
+    rdfs:label "previous version" ;
+    rdfs:domain ex:ResourceVersion ;
+    rdfs:equivalentProperty <http://purl.org/pav/previousVersion> ;
+    rdfs:range ex:ResourceVersion .
+
+ex:primaryTopic a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Primary Topic" ;
+    rdfs:comment "The dcat:Resource (dataset or service) described in the record." ;
+    rdfs:domain ex:CatalogRecord ;
+    rdfs:range dcat:Resource ;
+    owl:propertyChainAxiom ( foaf:primaryTopic ) .
+
+ex:proposed a ex:LifeCycleStatus ;
+    rdfs:label "proposed" .
+
+ex:proxyDereferenceableIRI a owl:DatatypeProperty ;
+    rdfs:label "proxy dereferenceable IRI" ;
+    rdfs:comment "Proxy dereferenceable IRIs can be used when resources do not have HTTP dereferenceable IDs." ;
+    rdfs:domain owl:Thing ;
+    rdfs:range rdfs:Literal .
+
+ex:publicationDate a owl:DatatypeProperty ;
+    rdfs:label "publication date" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range xsd:date .
+
+ex:publisher a owl:ObjectProperty,
+        owl:Property ;
+    rdfs:label "dataset publisher" ;
+    ns1:label "publisher" ;
+    rdfs:domain ex:ChildDataset,
+        dcat:Resource ;
+    rdfs:range owl:Thing,
+        foaf:Agent .
+
+ex:qualifiedAgent a owl:ObjectProperty ;
+    rdfs:label "qualifiedAgent" ;
+    rdfs:comment "Link to an Agent having some form of responsibility for the resource.",
+        "Use of this property entails that the context resource is a member of prov:Entity." ;
+    rdfs:domain ex:Resource,
+        prov:Entity ;
+    rdfs:range ex:Attribution ;
+    rdfs:subPropertyOf prov:qualifiedInfluence .
+
+ex:qualifiedAttribution a owl:ObjectProperty ;
+    rdfs:label "qualified attribution" ;
+    rdfs:domain prov:Entity ;
+    rdfs:range prov:Attribution .
+
+ex:qualifiedRelation a owl:ObjectProperty ;
+    rdfs:label "qualified relation",
+        "qualifiedRelation" ;
+    rdfs:comment "Link to a description of a relationship with another resource.",
+        "Use of this property entails that the context resource is a member of prov:Entity." ;
+    rdfs:domain ex:Resource,
+        dcat:Relationship,
+        dcat:Resource ;
+    rdfs:range ex:Relationship,
+        owl:Thing ;
+    rdfs:subPropertyOf prov:qualifiedInfluence .
+
+ex:qualityDimension a owl:ObjectProperty ;
+    rdfs:label "quality dimension" ;
+    rdfs:domain ex:QualityAnnotation,
+        ex:QualityMeasurement ;
+    rdfs:range owl:Thing .
+
+ex:references a owl:ObjectProperty ;
+    rdfs:label "references" ;
+    rdfs:comment "A resource that is referenced by the described resource." ;
+    rdfs:subPropertyOf dcterms:references .
+
+ex:relation a owl:ObjectProperty ;
+    rdfs:label "relation" ;
+    rdfs:comment "A resource with an unspecified relationship to the cataloged resource." ;
+    rdfs:subPropertyOf dcterms:relation .
+
+ex:relaxesConstraints a owl:ObjectProperty ;
+    rdfs:label "relaxes constraints" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range ex:DCAT2 .
+
+ex:releaseDate a owl:DatatypeProperty ;
+    rdfs:label "dataset release date" ;
+    rdfs:domain ex:ChildDataset ;
+    rdfs:range xsd:date .
+
+ex:replaces a owl:ObjectProperty ;
+    rdfs:label "replaces" ;
+    rdfs:comment "A resource that is replaced by the described resource." ;
+    rdfs:domain ex:Resource ;
+    rdfs:equivalentProperty dcterms:replaces ;
+    rdfs:range ex:Resource ;
+    rdfs:subPropertyOf dcterms:replaces .
+
+ex:representation a owl:ObjectProperty ;
+    rdfs:label "Representation" ;
+    rdfs:comment "An available distribution of the dataset." ;
+    rdfs:domain dcat:Dataset ;
+    rdfs:range dcat:Distribution ;
+    rdfs:subPropertyOf dcterms:relation .
+
+ex:required a ex:LifeCycleStatus ;
+    rdfs:label "required" .
+
+ex:requires a owl:ObjectProperty ;
+    rdfs:label "requires" ;
+    rdfs:comment "A resource that is required by the described resource." ;
+    rdfs:subPropertyOf dcterms:requires .
+
+ex:reserved a ex:LifeCycleStatus ;
+    rdfs:label "reserved" .
+
+ex:resource a owl:ObjectProperty ;
+    rdfs:label "resource" ;
+    rdfs:comment "A sub-property of dcat:hasPart for linking to a resource." ;
+    rdfs:subPropertyOf dcat:resource .
+
+ex:retired a ex:LifeCycleStatus ;
+    rdfs:label "retired" .
+
+ex:rights a owl:ObjectProperty ;
+    rdfs:label "rights" ;
+    rdfs:comment "A statement that concerns all rights not addressed with dcterms:license or dcterms:accessRights, such as copyright statements.",
+        "Information about rights MAY be provided for the Resource.",
+        "use dcterms:rights for all the other types of rights statements - those which are not covered by dcterms:license and dcterms:accessRights, such as copyright statements." ;
+    rdfs:domain ex:Resource,
+        owl:Thing ;
+    rdfs:range dcterms:RightsStatement,
+        rdfs:Literal .
+
+ex:rightsInfo a owl:DatatypeProperty ;
+    rdfs:label "Rights Information" ;
+    rdfs:comment "Information about rights provided on the level of Distribution." ;
+    rdfs:domain dcat:Distribution ;
+    rdfs:range xsd:string .
+
+ex:role a owl:DatatypeProperty ;
+    rdfs:label "role" ;
+    rdfs:domain ex:AlejandraGonzalezBeltran,
+        ex:AndreaPerego,
+        ex:DavidBrowning,
+        ex:FadiMaali,
+        ex:JohnErickson,
+        ex:MakxDekkers,
+        ex:PeterWinstanley,
+        ex:RiccardoAlbertoni,
+        ex:SimonJDCox ;
+    rdfs:range xsd:string .
+
+ex:sameAs a owl:ObjectProperty ;
+    rdfs:label "same as" ;
+    rdfs:comment "When the HTTP dereferenceable ID returns an RDF/OWL description for the dataset, the use of owl:sameAs might be considered." ;
+    rdfs:domain owl:Thing ;
+    rdfs:range owl:Thing .
+
+ex:schemaAgency a owl:DatatypeProperty ;
+    rdfs:label "schema agency" ;
+    rdfs:comment "adms:schemaAgency is used when the authority has no IRI associated." ;
+    rdfs:domain owl:Thing ;
+    rdfs:range rdfs:Literal .
+
+ex:service a owl:ObjectProperty ;
+    rdfs:label "service" ;
+    rdfs:comment "A sub-property of dcat:hasPart for linking to a service." ;
+    rdfs:subPropertyOf dcat:service .
+
+ex:spatial a owl:ObjectProperty ;
+    rdfs:label "spatial" ;
+    rdfs:domain ex:Resource ;
+    rdfs:equivalentProperty dcterms:spatial ;
+    rdfs:range ex:Location .
+
+ex:spatialCoverage a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Spatial Coverage",
+        "spatial coverage" ;
+    rdfs:comment "The geographical area covered by the dataset." ;
+    rdfs:domain ex:DatasetSeries,
+        dcat:Dataset ;
+    rdfs:range dcterms:Location,
+        owl:Thing .
+
+ex:spatialReferenceSystem a owl:ObjectProperty ;
+    rdfs:label "spatial reference system" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range owl:Thing .
+
+ex:spatialResolutionInMeters a owl:DatatypeProperty ;
+    rdfs:label "Spatial Resolution in Meters",
+        "spatial resolution in meters" ;
+    rdfs:comment "Minimum spatial separation resolvable in a dataset, measured in meters." ;
+    rdfs:domain ex:Resource,
+        dcat:Dataset ;
+    rdfs:equivalentProperty dcat:spatialResolutionInMeters ;
+    rdfs:range xsd:decimal .
+
+ex:specializationOf a owl:ObjectProperty ;
+    rdfs:label "specializationOf" ;
+    rdfs:comment "A resource that is a specialization of the described resource." ;
+    rdfs:subPropertyOf prov:specializationOf .
+
+ex:stable a ex:LifeCycleStatus ;
+    rdfs:label "stable" .
+
+ex:status a owl:DatatypeProperty ;
+    rdfs:label "status" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range xsd:string .
+
+ex:submitted a ex:LifeCycleStatus ;
+    rdfs:label "submitted" .
+
+ex:superseded a ex:LifeCycleStatus ;
+    rdfs:label "superseded" .
+
+ex:supersedes a owl:ObjectProperty ;
+    rdfs:label "supersedes" ;
+    rdfs:domain ex:DCAT3 ;
+    rdfs:range ex:DCAT2 .
+
+ex:temporal a owl:ObjectProperty ;
+    rdfs:label "temporal" ;
+    rdfs:domain ex:Resource ;
+    rdfs:equivalentProperty dcterms:temporal ;
+    rdfs:range ex:PeriodOfTime .
+
+ex:temporalCoverage a owl:DatatypeProperty ;
+    rdfs:label "Temporal Coverage" ;
+    rdfs:comment "The temporal period that the dataset covers." ;
+    rdfs:domain dcat:Dataset ;
+    rdfs:range dcterms:PeriodOfTime .
+
+ex:temporalResolution a owl:DatatypeProperty ;
+    rdfs:label "Temporal Resolution",
+        "temporal resolution" ;
+    rdfs:comment "Minimum time period resolvable in the dataset." ;
+    rdfs:domain ex:Resource,
+        dcat:Dataset ;
+    rdfs:equivalentProperty dcat:temporalResolution ;
+    rdfs:range xsd:duration .
+
+ex:tentative a ex:LifeCycleStatus ;
+    rdfs:label "tentative" .
+
+ex:testResult a owl:NamedIndividual ;
+    rdfs:label "Test Result" .
+
+ex:theme a owl:ObjectProperty ;
+    rdfs:label "theme" ;
+    rdfs:comment "A main category of the resource. A resource can have multiple themes.",
+        "In DCAT 3, the range of dcat:theme is dropped to prevent automatic inference of skos:Concept.",
+        "The property dcat:theme is defined as an OWL object property with no range to prevent automatic inference of skos:Concept." ;
+    rdfs:domain ex:Resource ;
+    rdfs:subPropertyOf dcterms:subject .
+
+ex:title a owl:DatatypeProperty,
+        owl:Property ;
+    rdfs:label "dataset title" ;
+    ns1:label "title" ;
+    rdfs:domain ex:ChildDataset,
+        dcat:Resource ;
+    rdfs:range rdfs:Literal,
+        xsd:string .
+
+ex:type a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "type" ;
+    rdfs:comment "If identifiers are not HTTP dereferenceable, common identifier types can be served as RDF datatypes or custom OWL datatypes for the sake of interoperability, see ex:type in Example 17.",
+        "The nature or genre of the resource." ;
+    rdfs:domain owl:Thing ;
+    rdfs:range rdfs:Class,
+        rdfs:Literal ;
+    rdfs:subPropertyOf dc:type .
+
+ex:underDevelopment a ex:LifeCycleStatus ;
+    rdfs:label "under development" .
+
+ex:updateDate a owl:DatatypeProperty ;
+    rdfs:label "update date" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range xsd:date .
+
+ex:usesComplementaryVocabulary a owl:ObjectProperty ;
+    rdfs:label "uses complementary vocabulary" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range ex:VoID .
+
+ex:valid a owl:DatatypeProperty ;
+    rdfs:label "valid" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range xsd:string .
+
+ex:validStatus a ex:LifeCycleStatus ;
+    rdfs:label "valid" .
+
+ex:version a owl:DatatypeProperty ;
+    rdfs:label "version" ;
+    rdfs:domain ex:ResourceVersion ;
+    rdfs:equivalentProperty <http://purl.org/pav/version> ;
+    rdfs:range xsd:string .
+
+ex:versionNotes a owl:DatatypeProperty ;
+    rdfs:label "version notes" ;
+    rdfs:domain ex:ResourceVersion ;
+    rdfs:equivalentProperty <http://www.w3.org/ns/adms#versionNotes> ;
+    rdfs:range xsd:string .
+
+ex:wasDerivedFrom a owl:ObjectProperty ;
+    rdfs:label "wasDerivedFrom" ;
+    rdfs:comment "A resource from which the described resource was derived." ;
+    rdfs:subPropertyOf prov:wasDerivedFrom .
+
+ex:wasInfluencedBy a owl:ObjectProperty ;
+    rdfs:label "wasInfluencedBy" ;
+    rdfs:comment "A resource that influenced the described resource." ;
+    rdfs:subPropertyOf prov:wasInfluencedBy .
+
+ex:wasQuotedFrom a owl:ObjectProperty ;
+    rdfs:label "wasQuotedFrom" ;
+    rdfs:comment "A resource from which the described resource was quoted." ;
+    rdfs:subPropertyOf prov:wasQuotedFrom .
+
+ex:wasRevisionOf a owl:ObjectProperty ;
+    rdfs:label "wasRevisionOf" ;
+    rdfs:comment "A resource that the described resource is a revision of." ;
+    rdfs:subPropertyOf prov:wasRevisionOf .
+
+ex:withdrawn a ex:LifeCycleStatus ;
+    rdfs:label "withdrawn" .
+
+ex:Contributor a owl:Class ;
+    rdfs:label "Contributor" ;
+    owl:equivalentClass ex:Contributor .
+
+ex:DataCitationProfile a owl:Class ;
+    rdfs:label "Data Citation Profile" .
+
+ex:Errata a owl:Class ;
+    rdfs:label "Errata" ;
+    owl:equivalentClass ex:Errata .
+
+ex:GenerationActivity a owl:Class ;
+    rdfs:label "Generation Activity" ;
+    rdfs:subClassOf prov:Activity .
+
+ex:PeriodOfTime a owl:Class ;
+    rdfs:label "Period of Time" ;
+    rdfs:comment "An interval of time that is named or defined by its start and end." ;
+    rdfs:subClassOf dcterms:PeriodOfTime .
+
+ex:QualityPolicy a owl:Class ;
+    rdfs:label "Quality Policy" .
+
+ex:RDF a owl:Class ;
+    rdfs:label "RDF" ;
+    owl:equivalentClass ex:RDF .
+
+ex:Role a owl:Class ;
+    rdfs:label "Role" ;
+    rdfs:comment "A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships." ;
+    rdfs:subClassOf skos:Concept .
+
+ex:SpatialThing a owl:Class ;
+    rdfs:label "Spatial Thing" ;
+    rdfs:comment "A spatial region or named place." .
+
+ex:Spreadsheet a owl:Class ;
+    rdfs:label "Spreadsheet" ;
+    owl:equivalentClass ex:Spreadsheet .
+
+ex:Standard a owl:Class ;
+    rdfs:label "Standard" ;
+    ns1:label "Standard" ;
+    rdfs:subClassOf dcterms:Standard .
+
+ex:W3C a owl:Class ;
+    rdfs:label "World Wide Web Consortium" ;
+    owl:equivalentClass ex:W3C .
+
+ex:XML a owl:Class ;
+    rdfs:label "XML" ;
+    owl:equivalentClass ex:XML .
+
+ex:conformanceTest a owl:NamedIndividual ;
+    rdfs:label "Conformance Test" .
+
+ex:first a owl:ObjectProperty ;
+    rdfs:label "first" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range ex:Resource ;
+    owl:inverseOf ex:isFirstInSeries .
+
+ex:genoaBusStopsDatasetCompletenessMeasurement a ex:QualityMeasurement ;
+    rdfs:label "Genoa Bus Stops Dataset Completeness Measurement" ;
+    ex:hasQualityMeasurement ex:genoaBusStopsDatasetCompletenessMeasurement ;
+    ex:qualityDimension ex:completeness .
+
+ex:genoaBusStopsDatasetCompletenessNote a ex:QualityAnnotation ;
+    rdfs:label "Genoa Bus Stops Dataset Completeness Note" ;
+    ex:qualityDimension ex:completeness ;
+    rdfs:comment "The dataset includes only 20500 out of the 30000 stops." .
+
+ex:hasFirstVersion a owl:ObjectProperty ;
+    rdfs:label "has first version" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:Resource ;
+    owl:inverseOf ex:isFirstVersionOf .
+
+ex:hasLatestVersion a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has latest version" ;
+    rdfs:domain ex:DCAT3,
+        ex:Resource ;
+    rdfs:range ex:Resource,
+        xsd:string ;
+    owl:inverseOf ex:isLatestVersionOf .
+
+ex:hasNextVersion a owl:ObjectProperty ;
+    rdfs:label "has next version" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:Resource ;
+    owl:inverseOf ex:isNextVersionOf .
+
+ex:hasODRLPolicy a owl:ObjectProperty ;
+    rdfs:label "has ODRL Policy",
+        "has ODRL policy" ;
+    rdfs:domain ex:Distribution,
+        ex:Resource ;
+    rdfs:range ex:ODRLPolicy,
+        odrl:Policy .
+
+ex:hasPreviousVersion a owl:ObjectProperty ;
+    rdfs:label "has previous version" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:Resource ;
+    owl:inverseOf ex:isPreviousVersionOf .
+
+ex:inSeries a owl:ObjectProperty ;
+    rdfs:label "in series" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:DatasetSeries .
+
+ex:isFirstInSeries a owl:ObjectProperty ;
+    rdfs:label "is first in series" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:DatasetSeries ;
+    owl:inverseOf ex:first .
+
+ex:isFirstVersionOf a owl:ObjectProperty ;
+    rdfs:label "is first version of" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:Resource ;
+    owl:inverseOf ex:hasFirstVersion .
+
+ex:isLastInSeries a owl:ObjectProperty ;
+    rdfs:label "is last in series" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:DatasetSeries ;
+    owl:inverseOf ex:last .
+
+ex:isLatestVersionOf a owl:ObjectProperty ;
+    rdfs:label "is latest version of" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:Resource ;
+    owl:inverseOf ex:hasLatestVersion .
+
+ex:isNextVersionOf a owl:ObjectProperty ;
+    rdfs:label "is next version of" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:Resource ;
+    owl:inverseOf ex:hasNextVersion .
+
+ex:isPreviousInSeries a owl:ObjectProperty ;
+    rdfs:label "is previous in series" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:DatasetSeries ;
+    owl:inverseOf ex:prev .
+
+ex:isPreviousVersionOf a owl:ObjectProperty ;
+    rdfs:label "is previous version of" ;
+    rdfs:domain ex:Resource ;
+    rdfs:range ex:Resource ;
+    owl:inverseOf ex:hasPreviousVersion .
+
+ex:last a owl:ObjectProperty ;
+    rdfs:label "last" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range ex:Resource ;
+    owl:inverseOf ex:isLastInSeries .
+
+ex:prev a owl:ObjectProperty ;
+    rdfs:label "previous" ;
+    rdfs:domain ex:DatasetSeries ;
+    rdfs:range ex:Resource ;
+    owl:inverseOf ex:isPreviousInSeries .
+
+ex:themes a skos:ConceptScheme ;
+    rdfs:label "Themes Concept Scheme" .
+
+ex:transparency-office a ex:Agent,
+        owl:NamedIndividual ;
+    rdfs:label "Agent: transparency-office",
+        "transparency-office" ;
+    rdfs:comment "The publisher of the catalog with relative IRI ex:transparency-office." ;
+    rdfs:subClassOf ex:Agent .
+
+ex:Attribution a owl:Class ;
+    rdfs:label "Attribution" ;
+    rdfs:comment "An agent's responsibility for a resource." ;
+    rdfs:subClassOf prov:Association .
+
+ex:InverseProperties a owl:Class ;
+    rdfs:label "Inverse Properties" .
+
+ex:ODRLPolicy a owl:Class ;
+    rdfs:label "ODRL Policy" .
+
+ex:OWLVocabulary a owl:Class ;
+    rdfs:label "OWL vocabulary" .
+
+ex:PROVVocabulary a owl:Class ;
+    rdfs:label "PROV vocabulary" .
+
+ex:Relationship a owl:Class ;
+    rdfs:label "Relationship" ;
+    rdfs:comment "A resource describing a relationship with another resource.",
+        "An association class for attaching additional information to a relationship between DCAT Resources." ;
+    rdfs:subClassOf prov:Entity,
+        prov:EntityInfluence .
+
+ex:levelOfComplianceToDWBP a owl:Class ;
+    rdfs:label "level of compliance to DWBP" .
+
+ex:measurement_complianceToDWBP a owl:NamedIndividual ;
+    rdfs:label "measurement of compliance to DWBP" ;
+    ex:appliesTo ex:Dataset ;
+    ex:measures ex:levelOfComplianceToDWBP .
+
+ex:AndreaPerego a owl:NamedIndividual ;
+    rdfs:label "Andrea Perego" ;
+    ex:role "Invited Expert" .
+
+ex:CNRI a owl:Class ;
+    rdfs:label "CNR - Consiglio Nazionale delle Ricerche" ;
+    owl:equivalentClass ex:CNRI .
+
+ex:CSIRO a owl:Class ;
+    rdfs:label "CSIRO" ;
+    owl:equivalentClass ex:CSIRO .
+
+ex:DCATAP a owl:Class ;
+    rdfs:label "DCAT-AP" ;
+    owl:equivalentClass ex:DCATAP .
+
+ex:DCATNamespace a owl:Class ;
+    rdfs:label "DCAT Namespace" ;
+    ex:hasPrefix "dcat"^^xsd:string .
+
+ex:DERI a owl:Class ;
+    rdfs:label "DERI" ;
+    owl:equivalentClass ex:DERI .
+
+ex:DataTagSuite a owl:Class ;
+    rdfs:label "Data Tag Suite" ;
+    owl:equivalentClass ex:DataTagSuite .
+
+ex:GitHub a owl:Class ;
+    rdfs:label "GitHub" ;
+    owl:equivalentClass ex:GitHub .
+
+ex:HealthcareAndLifeSciencesProfile a owl:Class ;
+    rdfs:label "Healthcare and Life Sciences Community Profile" ;
+    owl:equivalentClass ex:HealthcareAndLifeSciencesProfile .
+
+ex:JSONLD a owl:Class ;
+    rdfs:label "JSON-LD" ;
+    owl:equivalentClass ex:JSONLD .
+
+ex:MakxDekkers a owl:NamedIndividual ;
+    rdfs:label "Makx Dekkers" ;
+    ex:role "Contributor" .
+
+ex:PeterWinstanley a owl:NamedIndividual ;
+    rdfs:label "Peter Winstanley" ;
+    ex:role "Invited Expert" .
+
+ex:QualityAnnotation a owl:Class ;
+    rdfs:label "Quality Annotation" .
+
+ex:RDFXML a owl:Class ;
+    rdfs:label "RDF/XML" ;
+    owl:equivalentClass ex:RDFXML .
+
+ex:Refinitiv a owl:Class ;
+    rdfs:label "Refinitiv.com" ;
+    owl:equivalentClass ex:Refinitiv .
+
+ex:ScienceAndTechnologyFacilitiesCouncil a owl:Class ;
+    rdfs:label "Scientific Computing Department, Science and Technology Facilities Council" ;
+    owl:equivalentClass ex:ScienceAndTechnologyFacilitiesCouncil .
+
+ex:TetherlessWorldConstellation a owl:Class ;
+    rdfs:label "Tetherless World Constellation (RPI)" ;
+    owl:equivalentClass ex:TetherlessWorldConstellation .
+
+ex:Turtle a owl:Class ;
+    rdfs:label "Turtle" ;
+    owl:equivalentClass ex:Turtle .
+
+ex:VoID a owl:Class ;
+    rdfs:label "VoID" ;
+    owl:equivalentClass ex:VoID .
+
+ex:completeness a <http://linkeddatacenter.org/ldqd#completeness>,
+        owl:NamedIndividual ;
+    rdfs:label "completeness" .
+
+ex:hasResource a owl:ObjectProperty ;
+    ns1:label "has resource" ;
+    rdfs:domain dcat:Catalog ;
+    rdfs:range dcat:Resource .
+
+ex:hasVersion a owl:ObjectProperty ;
+    rdfs:label "has version",
+        "hasVersion" ;
+    rdfs:comment "A resource that is a version of the described resource." ;
+    rdfs:domain ex:Resource ;
+    rdfs:equivalentProperty <http://purl.org/pav/hasVersion> ;
+    rdfs:range ex:Resource,
+        ex:ResourceVersion ;
+    rdfs:subPropertyOf dcterms:hasVersion .
+
+ex:publicDXWGComments a owl:Class ;
+    rdfs:label "<email>" ;
+    owl:equivalentClass ex:publicDXWGComments .
+
+ex:ADMSStatusVocabulary a owl:Class ;
+    rdfs:label "ADMS Status vocabulary" .
+
+ex:DCATVersioning a owl:Class ;
+    rdfs:label "DCAT versioning" .
+
+ex:DavidBrowning a owl:NamedIndividual ;
+    rdfs:label "David Browning" ;
+    ex:affiliation ex:Refinitiv ;
+    ex:role "Invited Expert" .
+
+ex:FadiMaali a owl:NamedIndividual ;
+    rdfs:label "Fadi Maali" ;
+    ex:affiliation ex:DERI ;
+    ex:role "Former Editor" .
+
+ex:JohnErickson a owl:NamedIndividual ;
+    rdfs:label "John Erickson" ;
+    ex:affiliation ex:TetherlessWorldConstellation ;
+    ex:role "Former Editor" .
+
+ex:Location a owl:Class ;
+    rdfs:label "Location" .
+
+ex:QualityMeasurement a owl:Class ;
+    rdfs:label "Quality Measurement" .
+
+ex:RiccardoAlbertoni a owl:NamedIndividual ;
+    rdfs:label "Riccardo Albertoni" ;
+    ex:affiliation ex:CNRI ;
+    ex:role "Invited Expert" .
+
+ex:SimonJDCox a owl:NamedIndividual ;
+    rdfs:label "Simon J D Cox" ;
+    ex:affiliation ex:CSIRO ;
+    ex:role "Invited Expert" .
+
+ex:UniversityOfOxford a owl:Class ;
+    rdfs:label "University of Oxford" ;
+    owl:equivalentClass ex:UniversityOfOxford .
+
+ex:testingActivity a owl:NamedIndividual ;
+    rdfs:label "Testing Activity" .
+
+ex:AlejandraGonzalezBeltran a owl:NamedIndividual ;
+    rdfs:label "Alejandra Gonzalez Beltran" ;
+    ex:affiliation ex:ScienceAndTechnologyFacilitiesCouncil ;
+    ex:previousAffiliation ex:UniversityOfOxford ;
+    ex:role "Invited Expert" .
+
+ex:StatusTransition a owl:Class ;
+    rdfs:label "Status transition" .
+
+ex:Agent a owl:Class ;
+    rdfs:label "Agent" ;
+    ns1:label "Agent" ;
+    rdfs:comment "An entity responsible for publishing or curating data.",
+        "An entity with responsibility for a resource.",
+        "Provides several properties to describe these entities." ;
+    rdfs:subClassOf foaf:Agent .
+
+ex:CatalogRecord a owl:Class ;
+    rdfs:label "Catalog Record",
+        "Catalog record",
+        "CatalogRecord",
+        "catalog record" ;
+    ns1:label "CatalogRecord" ;
+    rdfs:comment "A metadata record in the catalog, primarily concerning the registration information, such as who added the record and when.",
+        "A record in a catalog, describing the registration of a single dcat:Resource." ;
+    rdfs:subClassOf ex:Resource,
+        dcat:CatalogRecord .
+
+ex:ResourceVersion a owl:Class ;
+    rdfs:label "Resource Version" .
+
+ex:Versioning a owl:Class ;
+    rdfs:label "Versioning" .
+
+ex:DCATProfile a owl:Class ;
+    rdfs:label "DCAT profile" .
+
+ex:DCAT a owl:Class ;
+    rdfs:label "DCAT" ;
+    ex:hasExtension ex:DCATAP,
+        ex:DataTagSuite,
+        ex:HealthcareAndLifeSciencesProfile ;
+    ex:hasNamespace ex:DCATNamespace ;
+    ex:isBasedOn ex:Resource .
+
+ex:DataService a owl:Class ;
+    rdfs:label "Data Service",
+        "DataService" ;
+    ex:hasParentClass ex:Resource ;
+    ns1:label "DataService" ;
+    rdfs:comment "A collection of operations accessible through an interface (API) that provide access to one or more datasets or data processing functions." ;
+    rdfs:subClassOf ex:Resource,
+        dcat:DataService .
+
+ex:LifeCycle a owl:Class ;
+    rdfs:label "Life-cycle" .
+
+ex:Catalog a owl:Class ;
+    rdfs:label "Catalog" ;
+    ex:hasParentClass ex:Resource ;
+    ns1:label "Catalog" ;
+    rdfs:comment "A kind of dataset whose member items are descriptions of datasets and data services." ;
+    rdfs:subClassOf ex:Dataset,
+        ex:Resource,
+        dcat:Catalog,
+        dcat:Dataset .
+
+ex:DCAT2 a ex:DCAT2,
+        owl:Class,
+        owl:NamedIndividual ;
+    rdfs:label "DCAT 2" .
+
+ex:ChildDataset a owl:Class ;
+    rdfs:label "Child Dataset" ;
+    owl:equivalentClass dcat:Distribution .
+
+ex:Distribution a owl:Class ;
+    rdfs:label "Distribution" ;
+    rdfs:comment "A representation of a dataset.",
+        "An accessible form of a dataset such as a downloadable file." ;
+    rdfs:subClassOf ex:Resource,
+        dcat:Distribution .
+
+ex:DCAT3 a ex:DCAT3,
+        owl:Class,
+        owl:NamedIndividual ;
+    rdfs:label "DCAT 3" ;
+    ex:addsNewClasses ex:DatasetSeries,
+        ex:InverseProperties,
+        ex:Versioning ;
+    ex:addsNewProperties ex:DatasetSeries,
+        ex:InverseProperties,
+        ex:Versioning ;
+    ex:doesNotObsoletes ex:DCAT2 ;
+    ex:hasContributor ex:MakxDekkers ;
+    ex:hasEditor ex:AlejandraGonzalezBeltran,
+        ex:AndreaPerego,
+        ex:DavidBrowning,
+        ex:PeterWinstanley,
+        ex:RiccardoAlbertoni,
+        ex:SimonJDCox ;
+    ex:hasErrata true ;
+    ex:hasFeedbackMechanism ex:GitHub,
+        ex:publicDXWGComments ;
+    ex:hasFormerEditor ex:FadiMaali,
+        ex:JohnErickson ;
+    ex:hasHistory "https://www.w3.org/standards/history/vocab-dcat-3/"^^xsd:string ;
+    ex:hasImplementationReport "https://w3c.github.io/dxwg/dcat3-implementation-report/"^^xsd:string ;
+    ex:hasLatestEditorsDraft "https://w3c.github.io/dxwg/dcat/"^^xsd:string ;
+    ex:hasLatestVersion "https://www.w3.org/TR/vocab-dcat-3/"^^xsd:string ;
+    ex:hasNonNormativeFormat ex:JSONLD,
+        ex:RDFXML,
+        ex:Turtle ;
+    ex:hasPreviousRecommendation "https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/"^^xsd:string ;
+    ex:maintainsBackwardCompatibility ex:DCAT2 ;
+    ex:relaxesConstraints ex:DCAT2 ;
+    ex:supersedes ex:DCAT2 .
+
+ex:LifeCycleStatus a owl:Class ;
+    rdfs:label "Life-cycle status" .
+
+ex:Dataset a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:label "Dataset" ;
+    ex:hasParentClass ex:Resource ;
+    ns1:label "Dataset" ;
+    ex:usesComplementaryVocabulary ex:VoID ;
+    rdfs:comment "A collection of data that this data service can distribute.",
+        "A collection of data, published or curated by a single agent, and available for access or download in one or more serializations or formats.",
+        "A resource described in DCAT." ;
+    rdfs:subClassOf ex:Resource,
+        dcat:Dataset,
+        dcat:Resource .
+
+ex:DatasetSeries a owl:Class ;
+    rdfs:label "Dataset Series",
+        "Dataset series",
+        "DatasetSeries" ;
+    rdfs:comment "A dataset that represents a collection of datasets that are published separately, but share some characteristics that group them." ;
+    rdfs:subClassOf ex:Dataset,
+        dcat:Dataset ;
+    owl:equivalentClass dcat:Dataset .
+
+ex:Resource a owl:Class ;
+    rdfs:label "Resource" ;
+    ex:hasSubClass ex:Catalog,
+        ex:DataService,
+        ex:Dataset ;
+    ns1:label "Resource" ;
+    rdfs:comment "A general class for resources cataloged in DCAT; datasets and data services are sub-classes.",
+        "A general resource described in DCAT." ;
+    rdfs:subClassOf dcat:Resource .
+

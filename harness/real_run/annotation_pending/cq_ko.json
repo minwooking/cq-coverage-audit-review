@@ -1,0 +1,102 @@
+{
+"_note": "라벨러 편의용 한국어 번역(표시 전용). 판정 근거가 아니며 영어 원문 CQ가 정본이다. 정답 유도 방지를 위해 '핵심 요지'는 두지 않는다.",
+"CQB01": [
+"brick:Sensor는 무엇인가?"
+],
+"CQB02": [
+"brick:Meter는 무엇을 나타내는가?"
+],
+"CQB03": [
+"rec:Asset은 무엇인가?"
+],
+"CQB04": [
+"brick:Zone은 무엇인가?"
+],
+"CQB05": [
+"rec:Campus는 무엇인가?"
+],
+"CQB06": [
+"rec:Georeference는 무엇을 표현하는가?"
+],
+"CQB07": [
+"brick:Sensor는 brick:Point의 하위 클래스인가?"
+],
+"CQB08": [
+"brick:Point의 직접 하위 최상위 클래스는 무엇인가?"
+],
+"CQB09": [
+"brick:Equipment의 직접 하위 클래스는 무엇인가?"
+],
+"CQB10": [
+"brick:Building은 brick:Location의 직접 하위 클래스인가?"
+],
+"CQB11": [
+"Brick에서 Alarm과 Sensor는 서로소(disjoint)인가?"
+],
+"CQB12": [
+"brick:Location의 직접 하위 클래스는 무엇인가?"
+],
+"CQB13": [
+"Point가 Equipment에 속함을 어떻게 표현하는가?"
+],
+"CQB14": [
+"Equipment 또는 Point를 그 Location에 연결하는 관계는 무엇인가?"
+],
+"CQB16": [
+"brick:hasPart의 역관계는 무엇인가?"
+],
+"CQB17": [
+"엔티티가 어떤 위치에 공간적으로 포함됨을 나타내는 속성은 무엇인가?"
+],
+"CQB18": [
+"brick:Equipment를 그것이 가진 태그에 연결하는 관계는 무엇인가?"
+],
+"CQB19": [
+"Quantity 또는 Point에 단위를 붙이는 속성은 무엇인가?"
+],
+"CQB20": [
+"Point의 가장 최근 관측값은 어디에 저장되는가?"
+],
+"CQB21": [
+"건물의 연면적을 기록하는 속성은 무엇인가?"
+],
+"CQB24": [
+"Point는 자신이 측정하는 양(quantity)과 어떻게 연결되는가?"
+],
+"CQB25": [
+"rec:BuildingElement 정의는 어떤 엔티티를 예시로 드는가?"
+],
+"CQB26": [
+"rec:Event 정의는 어떤 이벤트를 예시로 드는가?"
+],
+"CQB27": [
+"rec:PointEvent는 무엇을 예시하는가?"
+],
+"CQB28": [
+"rec:Organization 정의는 어떤 조직들을 인용하는가?"
+],
+"CQB29": [
+"rec:Space 정의는 어떤 포함(containment) 예시를 드는가?"
+],
+"CQB30": [
+"rec:Portfolio 정의는 어떤 구성원을 묶을 수 있다고 나열하는가?"
+],
+"CQB31": [
+"스키마는 rec:ArchitectureArea 측정값을 어떻게 다루라고 권고하는가?"
+],
+"CQB32": [
+"Brick에서 폐기(deprecated) 용어는 어떻게 처리해야 하는가?"
+],
+"CQB33": [
+"가상 계량(virtual metering) 계층은 어떻게 모델링하는가?"
+],
+"CQB34": [
+"rec:Collection은 언제 사용해야 하는가?"
+],
+"CQB35": [
+"측정 양(quantity)은 Point에서 어떻게 표현되는가?"
+],
+"CQB36": [
+"Brick 엔티티를 외부 어휘 참조에 연결하는 속성은 무엇인가?"
+]
+}

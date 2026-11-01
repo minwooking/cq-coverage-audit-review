@@ -1,0 +1,3 @@
+SIMULATED
+Generated 2026-09-21 with the PREREG.md-registered extraction-loop model (Qwen/Qwen3-Next-80B-A3B-Instruct-FP8 on <internal-host>), replacing the earlier qwen-next-flash preparation artifact.
+Exploratory variant; still SIMULATED because the judge holdout has not been run.

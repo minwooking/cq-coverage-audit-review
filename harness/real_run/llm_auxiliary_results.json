@@ -1,0 +1,161 @@
+{
+  "primary_endpoint": "Layer-1 coverage on adjudicated L1*",
+  "coverage_pct": {
+    "A": 56.41025641025641,
+    "B": 56.09756097560976,
+    "C": 62.28070175438597,
+    "D": 50.0,
+    "E": 56.41025641025641,
+    "F": 58.77192982456141
+  },
+  "contrasts": {
+    "A->B": {
+      "delta": 0.2608695652173913,
+      "ci_lo": -0.28628722333597767,
+      "ci_hi": 0.8043478260869565,
+      "n_clusters": 23,
+      "resamples": 10000,
+      "seed": 20260913,
+      "unit": "semantic cluster",
+      "wilcoxon": {
+        "p": 0.5297229812242079,
+        "n_nonzero": 20
+      },
+      "decision": "unresolved",
+      "p_holm": 0.5297229812242079
+    }
+  },
+  "gates": {
+    "G1_silent_over_credit": {
+      "status": "fail",
+      "value": 0.4225893177117019,
+      "threshold": 0.1,
+      "reason": "Clopper-Pearson upper bound does not meet 10%",
+      "estimand": "pi = Pr[J >= 2 AND A == 0]",
+      "events": 8,
+      "n_clusters": 33,
+      "pi_hat_is_a_lower_bound": 0.24242424242424243,
+      "upper_bound_one_sided": 0.4225893177117019,
+      "confidence_level": 0.975,
+      "confidence_level_one_sided": 0.975,
+      "method": "Clopper-Pearson (bootstrap is prohibited for this quantity)"
+    },
+    "G2_intra_rater_qwk": {
+      "status": "not_computable",
+      "value": null,
+      "threshold": 0.7,
+      "reason": "washout rater_L1 scores and a clustered CI are required"
+    },
+    "G3_negative_control": {
+      "status": "not_computable",
+      "value": null,
+      "threshold": 0.9166666666666666,
+      "reason": "unsupported verdict missing for 24 ablated cell(s)",
+      "n_controls": 24,
+      "n_unsupported": null
+    },
+    "G4_human_judge_qwk": {
+      "status": "not_computable",
+      "value": null,
+      "threshold": 0.6,
+      "reason": "G4 human-judge QWK has no registered diagnostic result; not_falsified is not claimed",
+      "falsification_only": true
+    },
+    "G5_mae_judge_human": {
+      "status": "not_computable",
+      "value": null,
+      "threshold": 0.5,
+      "reason": "rater_L1 is missing for 224 cell(s)",
+      "missing_cell_ids": [
+        "preserved_control:F:CQB04",
+        "preserved_control:F:CQB20",
+        "ablated_control:E:CQB05",
+        "preserved_control:C:CQB08",
+        "preserved_control:F:CQB03",
+        "preserved_control:A:CQB11",
+        "preserved_control:D:CQB29",
+        "preserved_control:C:CQB09",
+        "ablated_control:B:CQB34",
+        "ablated_control:C:CQB10",
+        "ablated_control:B:CQB12",
+        "ablated_control:A:CQB17",
+        "preserved_control:B:CQB01",
+        "preserved_control:F:CQB31",
+        "ablated_control:A:CQB21",
+        "ablated_control:E:CQB06",
+        "ablated_control:D:CQB07",
+        "ablated_control:C:CQB33",
+        "ablated_control:D:CQB16",
+        "preserved_control:E:CQB20"
+      ]
+    },
+    "G6_consistency": {
+      "status": "not_computable",
+      "value": {
+        "a_to_b_consistent": false,
+        "non_qwen_direction_agrees": null,
+        "fragility": {
+          "k": 0,
+          "n_cq": 23,
+          "initial_delta": 0.2391304347826087,
+          "initial_ci_lo": -0.30434782608695654,
+          "moved_cq_ids": [],
+          "criterion": "A->B BCa CI includes zero"
+        }
+      },
+      "threshold": {
+        "fragility_K": 6,
+        "a_to_b": "consistent",
+        "non_qwen_direction": "agrees"
+      },
+      "reason": "non-Qwen judge scores are absent or incomplete; G6 cannot pass"
+    },
+    "G7_audit_trail": {
+      "status": "not_computable",
+      "value": null,
+      "threshold": {
+        "timestamp_before_unblind": 1.0,
+        "posthoc_edits": 0,
+        "under_20s_fraction_lt": 0.03
+      },
+      "reason": "elapsed_s and attempt must be finite non-negative numbers"
+    },
+    "G8_external_spotcheck": {
+      "status": "not_computable",
+      "value": null,
+      "threshold": "mean signed-difference CI includes 0",
+      "reason": "G8 external spotcheck has no registered diagnostic result; not_falsified is not claimed",
+      "falsification_only": true
+    }
+  },
+  "label_source": "LLM, not human",
+  "SIMULATED": true,
+  "label_coverage": {
+    "source_csv": "harness/real_run/llm_auxiliary_as_labels.csv",
+    "source": "LLM, not human",
+    "simulated": true,
+    "mode": "complete",
+    "total_cells": 224,
+    "labeled_cells": 224,
+    "unlabeled_cells": 0,
+    "unlabeled_cell_ids": [],
+    "coverage_fraction": 1.0,
+    "coverage_denominator": {
+      "n_cells": 224,
+      "max_points": 672,
+      "formula": "sum(L1_star) / (labeled_cells * 3) * 100"
+    }
+  },
+  "contrasts_note": "Holm applied to the two pre-registered confirmatory contrasts only; everything else is exploratory and takes BH-FDR.",
+  "gates_summary": {
+    "total": 8,
+    "computed": 1,
+    "calculated": 1,
+    "not_computable": 7,
+    "failed": 1,
+    "fail": 1,
+    "passed": 0,
+    "not_falsified": 0
+  },
+  "judge_simulated": false
+}

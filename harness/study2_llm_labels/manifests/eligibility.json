@@ -1,0 +1,4176 @@
+{
+ "bank_sha256": "a39bcc0fd88587de8ef2fe14304948995b8e5bb3e6e5cfb04303784ffc2a33c8",
+ "n_questions": 84,
+ "n_cells_total": 504,
+ "n_eligible_cells": 208,
+ "eligible_cells_by_variant": {
+  "A": 67,
+  "B": 29,
+  "C": 28,
+  "D": 28,
+  "E": 28,
+  "F": 28
+ },
+ "n_eligible_clusters": 70,
+ "n_clusters_eligible_in_A_and_B": 26,
+ "target_clusters": 60,
+ "target_met": true,
+ "ineligible_clusters": [
+  "CQX06",
+  "CQX41",
+  "CQX42",
+  "CQX44",
+  "CQX45",
+  "CQX48",
+  "CQX49",
+  "CQX51",
+  "CQX52",
+  "CQX54",
+  "CQX55",
+  "CQX56",
+  "CQX71",
+  "CQX73"
+ ],
+ "cells": {
+  "primary:A:CQX01": {
+   "variant": "A",
+   "cq_id": "CQX01",
+   "eligible": true,
+   "n_matching_lines": 4,
+   "missing_required": []
+  },
+  "primary:A:CQX02": {
+   "variant": "A",
+   "cq_id": "CQX02",
+   "eligible": true,
+   "n_matching_lines": 5,
+   "missing_required": []
+  },
+  "primary:A:CQX03": {
+   "variant": "A",
+   "cq_id": "CQX03",
+   "eligible": true,
+   "n_matching_lines": 9,
+   "missing_required": []
+  },
+  "primary:A:CQX04": {
+   "variant": "A",
+   "cq_id": "CQX04",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX05": {
+   "variant": "A",
+   "cq_id": "CQX05",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX06": {
+   "variant": "A",
+   "cq_id": "CQX06",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Chilled_Water"
+   ]
+  },
+  "primary:A:CQX07": {
+   "variant": "A",
+   "cq_id": "CQX07",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX08": {
+   "variant": "A",
+   "cq_id": "CQX08",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX09": {
+   "variant": "A",
+   "cq_id": "CQX09",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX10": {
+   "variant": "A",
+   "cq_id": "CQX10",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX11": {
+   "variant": "A",
+   "cq_id": "CQX11",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX12": {
+   "variant": "A",
+   "cq_id": "CQX12",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX13": {
+   "variant": "A",
+   "cq_id": "CQX13",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX14": {
+   "variant": "A",
+   "cq_id": "CQX14",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX15": {
+   "variant": "A",
+   "cq_id": "CQX15",
+   "eligible": true,
+   "n_matching_lines": 4,
+   "missing_required": []
+  },
+  "primary:A:CQX16": {
+   "variant": "A",
+   "cq_id": "CQX16",
+   "eligible": true,
+   "n_matching_lines": 4,
+   "missing_required": []
+  },
+  "primary:A:CQX17": {
+   "variant": "A",
+   "cq_id": "CQX17",
+   "eligible": true,
+   "n_matching_lines": 3,
+   "missing_required": []
+  },
+  "primary:A:CQX18": {
+   "variant": "A",
+   "cq_id": "CQX18",
+   "eligible": true,
+   "n_matching_lines": 12,
+   "missing_required": []
+  },
+  "primary:A:CQX19": {
+   "variant": "A",
+   "cq_id": "CQX19",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:A:CQX20": {
+   "variant": "A",
+   "cq_id": "CQX20",
+   "eligible": true,
+   "n_matching_lines": 5,
+   "missing_required": []
+  },
+  "primary:A:CQX21": {
+   "variant": "A",
+   "cq_id": "CQX21",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX22": {
+   "variant": "A",
+   "cq_id": "CQX22",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX23": {
+   "variant": "A",
+   "cq_id": "CQX23",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:A:CQX24": {
+   "variant": "A",
+   "cq_id": "CQX24",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:A:CQX25": {
+   "variant": "A",
+   "cq_id": "CQX25",
+   "eligible": true,
+   "n_matching_lines": 49,
+   "missing_required": []
+  },
+  "primary:A:CQX26": {
+   "variant": "A",
+   "cq_id": "CQX26",
+   "eligible": true,
+   "n_matching_lines": 50,
+   "missing_required": []
+  },
+  "primary:A:CQX27": {
+   "variant": "A",
+   "cq_id": "CQX27",
+   "eligible": true,
+   "n_matching_lines": 54,
+   "missing_required": []
+  },
+  "primary:A:CQX28": {
+   "variant": "A",
+   "cq_id": "CQX28",
+   "eligible": true,
+   "n_matching_lines": 47,
+   "missing_required": []
+  },
+  "primary:A:CQX29": {
+   "variant": "A",
+   "cq_id": "CQX29",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX30": {
+   "variant": "A",
+   "cq_id": "CQX30",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX31": {
+   "variant": "A",
+   "cq_id": "CQX31",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX32": {
+   "variant": "A",
+   "cq_id": "CQX32",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX33": {
+   "variant": "A",
+   "cq_id": "CQX33",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX34": {
+   "variant": "A",
+   "cq_id": "CQX34",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX35": {
+   "variant": "A",
+   "cq_id": "CQX35",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX36": {
+   "variant": "A",
+   "cq_id": "CQX36",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX37": {
+   "variant": "A",
+   "cq_id": "CQX37",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX38": {
+   "variant": "A",
+   "cq_id": "CQX38",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX39": {
+   "variant": "A",
+   "cq_id": "CQX39",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX40": {
+   "variant": "A",
+   "cq_id": "CQX40",
+   "eligible": true,
+   "n_matching_lines": 3,
+   "missing_required": []
+  },
+  "primary:A:CQX41": {
+   "variant": "A",
+   "cq_id": "CQX41",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:hasSubstance"
+   ]
+  },
+  "primary:A:CQX42": {
+   "variant": "A",
+   "cq_id": "CQX42",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:aliasOf"
+   ]
+  },
+  "primary:A:CQX43": {
+   "variant": "A",
+   "cq_id": "CQX43",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX44": {
+   "variant": "A",
+   "cq_id": "CQX44",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:azimuth"
+   ]
+  },
+  "primary:A:CQX45": {
+   "variant": "A",
+   "cq_id": "CQX45",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:tilt"
+   ]
+  },
+  "primary:A:CQX46": {
+   "variant": "A",
+   "cq_id": "CQX46",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:volume"
+   ]
+  },
+  "primary:A:CQX47": {
+   "variant": "A",
+   "cq_id": "CQX47",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX48": {
+   "variant": "A",
+   "cq_id": "CQX48",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:panelArea"
+   ]
+  },
+  "primary:A:CQX49": {
+   "variant": "A",
+   "cq_id": "CQX49",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:electricalPhases"
+   ]
+  },
+  "primary:A:CQX50": {
+   "variant": "A",
+   "cq_id": "CQX50",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:operationalStageCount"
+   ]
+  },
+  "primary:A:CQX51": {
+   "variant": "A",
+   "cq_id": "CQX51",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:thermalTransmittance"
+   ]
+  },
+  "primary:A:CQX52": {
+   "variant": "A",
+   "cq_id": "CQX52",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:conversionEfficiency"
+   ]
+  },
+  "primary:A:CQX53": {
+   "variant": "A",
+   "cq_id": "CQX53",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:ratedPowerOutput"
+   ]
+  },
+  "primary:A:CQX54": {
+   "variant": "A",
+   "cq_id": "CQX54",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:ratedVoltageInput"
+   ]
+  },
+  "primary:A:CQX55": {
+   "variant": "A",
+   "cq_id": "CQX55",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:electricVehicleChargerType"
+   ]
+  },
+  "primary:A:CQX56": {
+   "variant": "A",
+   "cq_id": "CQX56",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:currentFlowType"
+   ]
+  },
+  "primary:A:CQX57": {
+   "variant": "A",
+   "cq_id": "CQX57",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:A:CQX58": {
+   "variant": "A",
+   "cq_id": "CQX58",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX59": {
+   "variant": "A",
+   "cq_id": "CQX59",
+   "eligible": true,
+   "n_matching_lines": 3,
+   "missing_required": []
+  },
+  "primary:A:CQX60": {
+   "variant": "A",
+   "cq_id": "CQX60",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX61": {
+   "variant": "A",
+   "cq_id": "CQX61",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX62": {
+   "variant": "A",
+   "cq_id": "CQX62",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX63": {
+   "variant": "A",
+   "cq_id": "CQX63",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX64": {
+   "variant": "A",
+   "cq_id": "CQX64",
+   "eligible": true,
+   "n_matching_lines": 4,
+   "missing_required": []
+  },
+  "primary:A:CQX65": {
+   "variant": "A",
+   "cq_id": "CQX65",
+   "eligible": true,
+   "n_matching_lines": 18,
+   "missing_required": []
+  },
+  "primary:A:CQX66": {
+   "variant": "A",
+   "cq_id": "CQX66",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX67": {
+   "variant": "A",
+   "cq_id": "CQX67",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX68": {
+   "variant": "A",
+   "cq_id": "CQX68",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX69": {
+   "variant": "A",
+   "cq_id": "CQX69",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX70": {
+   "variant": "A",
+   "cq_id": "CQX70",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX71": {
+   "variant": "A",
+   "cq_id": "CQX71",
+   "eligible": false,
+   "n_matching_lines": 4,
+   "missing_required": [
+    "brick:Condenser"
+   ]
+  },
+  "primary:A:CQX72": {
+   "variant": "A",
+   "cq_id": "CQX72",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:A:CQX73": {
+   "variant": "A",
+   "cq_id": "CQX73",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Deceleration_Time"
+   ]
+  },
+  "primary:A:CQX74": {
+   "variant": "A",
+   "cq_id": "CQX74",
+   "eligible": true,
+   "n_matching_lines": 71,
+   "missing_required": []
+  },
+  "primary:A:CQX75": {
+   "variant": "A",
+   "cq_id": "CQX75",
+   "eligible": true,
+   "n_matching_lines": 9,
+   "missing_required": []
+  },
+  "primary:A:CQX76": {
+   "variant": "A",
+   "cq_id": "CQX76",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:A:CQX77": {
+   "variant": "A",
+   "cq_id": "CQX77",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:A:CQX78": {
+   "variant": "A",
+   "cq_id": "CQX78",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX79": {
+   "variant": "A",
+   "cq_id": "CQX79",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:A:CQX80": {
+   "variant": "A",
+   "cq_id": "CQX80",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX81": {
+   "variant": "A",
+   "cq_id": "CQX81",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX82": {
+   "variant": "A",
+   "cq_id": "CQX82",
+   "eligible": true,
+   "n_matching_lines": 4,
+   "missing_required": []
+  },
+  "primary:A:CQX83": {
+   "variant": "A",
+   "cq_id": "CQX83",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:A:CQX84": {
+   "variant": "A",
+   "cq_id": "CQX84",
+   "eligible": true,
+   "n_matching_lines": 10,
+   "missing_required": []
+  },
+  "primary:B:CQX01": {
+   "variant": "B",
+   "cq_id": "CQX01",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Variable_Frequency_Drive"
+   ]
+  },
+  "primary:B:CQX02": {
+   "variant": "B",
+   "cq_id": "CQX02",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Heat_Exchanger"
+   ]
+  },
+  "primary:B:CQX03": {
+   "variant": "B",
+   "cq_id": "CQX03",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Temperature_Sensor"
+   ]
+  },
+  "primary:B:CQX04": {
+   "variant": "B",
+   "cq_id": "CQX04",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Luminance_Sensor"
+   ]
+  },
+  "primary:B:CQX05": {
+   "variant": "B",
+   "cq_id": "CQX05",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:B:CQX06": {
+   "variant": "B",
+   "cq_id": "CQX06",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Chilled_Water"
+   ]
+  },
+  "primary:B:CQX07": {
+   "variant": "B",
+   "cq_id": "CQX07",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:B:CQX08": {
+   "variant": "B",
+   "cq_id": "CQX08",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Photovoltaic_Array"
+   ]
+  },
+  "primary:B:CQX09": {
+   "variant": "B",
+   "cq_id": "CQX09",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Cooling_Tower"
+   ]
+  },
+  "primary:B:CQX10": {
+   "variant": "B",
+   "cq_id": "CQX10",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Occupancy_Sensor"
+   ]
+  },
+  "primary:B:CQX11": {
+   "variant": "B",
+   "cq_id": "CQX11",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Electric_Vehicle_Charging_Station"
+   ]
+  },
+  "primary:B:CQX12": {
+   "variant": "B",
+   "cq_id": "CQX12",
+   "eligible": true,
+   "n_matching_lines": 5,
+   "missing_required": []
+  },
+  "primary:B:CQX13": {
+   "variant": "B",
+   "cq_id": "CQX13",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:B:CQX14": {
+   "variant": "B",
+   "cq_id": "CQX14",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:B:CQX15": {
+   "variant": "B",
+   "cq_id": "CQX15",
+   "eligible": true,
+   "n_matching_lines": 31,
+   "missing_required": []
+  },
+  "primary:B:CQX16": {
+   "variant": "B",
+   "cq_id": "CQX16",
+   "eligible": true,
+   "n_matching_lines": 14,
+   "missing_required": []
+  },
+  "primary:B:CQX17": {
+   "variant": "B",
+   "cq_id": "CQX17",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Humidity_Sensor"
+   ]
+  },
+  "primary:B:CQX18": {
+   "variant": "B",
+   "cq_id": "CQX18",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Terminal_Unit"
+   ]
+  },
+  "primary:B:CQX19": {
+   "variant": "B",
+   "cq_id": "CQX19",
+   "eligible": true,
+   "n_matching_lines": 23,
+   "missing_required": []
+  },
+  "primary:B:CQX20": {
+   "variant": "B",
+   "cq_id": "CQX20",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:B:CQX21": {
+   "variant": "B",
+   "cq_id": "CQX21",
+   "eligible": true,
+   "n_matching_lines": 7,
+   "missing_required": []
+  },
+  "primary:B:CQX22": {
+   "variant": "B",
+   "cq_id": "CQX22",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Rooftop_Unit"
+   ]
+  },
+  "primary:B:CQX23": {
+   "variant": "B",
+   "cq_id": "CQX23",
+   "eligible": true,
+   "n_matching_lines": 27,
+   "missing_required": []
+  },
+  "primary:B:CQX24": {
+   "variant": "B",
+   "cq_id": "CQX24",
+   "eligible": false,
+   "n_matching_lines": 26,
+   "missing_required": [
+    "brick:Electrical_Meter"
+   ]
+  },
+  "primary:B:CQX25": {
+   "variant": "B",
+   "cq_id": "CQX25",
+   "eligible": false,
+   "n_matching_lines": 2,
+   "missing_required": [
+    "brick:Terminal_Unit",
+    "brick:HVAC_Equipment"
+   ]
+  },
+  "primary:B:CQX26": {
+   "variant": "B",
+   "cq_id": "CQX26",
+   "eligible": false,
+   "n_matching_lines": 258,
+   "missing_required": [
+    "brick:Supply_Air_Temperature_Sensor"
+   ]
+  },
+  "primary:B:CQX27": {
+   "variant": "B",
+   "cq_id": "CQX27",
+   "eligible": false,
+   "n_matching_lines": 74,
+   "missing_required": [
+    "brick:HVAC_Equipment"
+   ]
+  },
+  "primary:B:CQX28": {
+   "variant": "B",
+   "cq_id": "CQX28",
+   "eligible": true,
+   "n_matching_lines": 180,
+   "missing_required": []
+  },
+  "primary:B:CQX29": {
+   "variant": "B",
+   "cq_id": "CQX29",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:manufacturedBy"
+   ]
+  },
+  "primary:B:CQX30": {
+   "variant": "B",
+   "cq_id": "CQX30",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:installedBy"
+   ]
+  },
+  "primary:B:CQX31": {
+   "variant": "B",
+   "cq_id": "CQX31",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:mountedOn"
+   ]
+  },
+  "primary:B:CQX32": {
+   "variant": "B",
+   "cq_id": "CQX32",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:architectedBy"
+   ]
+  },
+  "primary:B:CQX33": {
+   "variant": "B",
+   "cq_id": "CQX33",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:B:CQX34": {
+   "variant": "B",
+   "cq_id": "CQX34",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:hasMember"
+   ]
+  },
+  "primary:B:CQX35": {
+   "variant": "B",
+   "cq_id": "CQX35",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:B:CQX36": {
+   "variant": "B",
+   "cq_id": "CQX36",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:leasor"
+   ]
+  },
+  "primary:B:CQX37": {
+   "variant": "B",
+   "cq_id": "CQX37",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:B:CQX38": {
+   "variant": "B",
+   "cq_id": "CQX38",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:B:CQX39": {
+   "variant": "B",
+   "cq_id": "CQX39",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:operatedBy"
+   ]
+  },
+  "primary:B:CQX40": {
+   "variant": "B",
+   "cq_id": "CQX40",
+   "eligible": true,
+   "n_matching_lines": 6,
+   "missing_required": []
+  },
+  "primary:B:CQX41": {
+   "variant": "B",
+   "cq_id": "CQX41",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:hasSubstance"
+   ]
+  },
+  "primary:B:CQX42": {
+   "variant": "B",
+   "cq_id": "CQX42",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:aliasOf"
+   ]
+  },
+  "primary:B:CQX43": {
+   "variant": "B",
+   "cq_id": "CQX43",
+   "eligible": true,
+   "n_matching_lines": 9,
+   "missing_required": []
+  },
+  "primary:B:CQX44": {
+   "variant": "B",
+   "cq_id": "CQX44",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:azimuth"
+   ]
+  },
+  "primary:B:CQX45": {
+   "variant": "B",
+   "cq_id": "CQX45",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:tilt"
+   ]
+  },
+  "primary:B:CQX46": {
+   "variant": "B",
+   "cq_id": "CQX46",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:B:CQX47": {
+   "variant": "B",
+   "cq_id": "CQX47",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:B:CQX48": {
+   "variant": "B",
+   "cq_id": "CQX48",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:panelArea"
+   ]
+  },
+  "primary:B:CQX49": {
+   "variant": "B",
+   "cq_id": "CQX49",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:electricalPhases"
+   ]
+  },
+  "primary:B:CQX50": {
+   "variant": "B",
+   "cq_id": "CQX50",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:B:CQX51": {
+   "variant": "B",
+   "cq_id": "CQX51",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:thermalTransmittance"
+   ]
+  },
+  "primary:B:CQX52": {
+   "variant": "B",
+   "cq_id": "CQX52",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:conversionEfficiency"
+   ]
+  },
+  "primary:B:CQX53": {
+   "variant": "B",
+   "cq_id": "CQX53",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:B:CQX54": {
+   "variant": "B",
+   "cq_id": "CQX54",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:ratedVoltageInput"
+   ]
+  },
+  "primary:B:CQX55": {
+   "variant": "B",
+   "cq_id": "CQX55",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:electricVehicleChargerType"
+   ]
+  },
+  "primary:B:CQX56": {
+   "variant": "B",
+   "cq_id": "CQX56",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:currentFlowType"
+   ]
+  },
+  "primary:B:CQX57": {
+   "variant": "B",
+   "cq_id": "CQX57",
+   "eligible": true,
+   "n_matching_lines": 12,
+   "missing_required": []
+  },
+  "primary:B:CQX58": {
+   "variant": "B",
+   "cq_id": "CQX58",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Electric_Vehicle_Charging_Hub"
+   ]
+  },
+  "primary:B:CQX59": {
+   "variant": "B",
+   "cq_id": "CQX59",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Distribution_Frame"
+   ]
+  },
+  "primary:B:CQX60": {
+   "variant": "B",
+   "cq_id": "CQX60",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Field_Of_Play"
+   ]
+  },
+  "primary:B:CQX61": {
+   "variant": "B",
+   "cq_id": "CQX61",
+   "eligible": true,
+   "n_matching_lines": 3,
+   "missing_required": []
+  },
+  "primary:B:CQX62": {
+   "variant": "B",
+   "cq_id": "CQX62",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Retail_Room"
+   ]
+  },
+  "primary:B:CQX63": {
+   "variant": "B",
+   "cq_id": "CQX63",
+   "eligible": true,
+   "n_matching_lines": 6,
+   "missing_required": []
+  },
+  "primary:B:CQX64": {
+   "variant": "B",
+   "cq_id": "CQX64",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Service_Room"
+   ]
+  },
+  "primary:B:CQX65": {
+   "variant": "B",
+   "cq_id": "CQX65",
+   "eligible": true,
+   "n_matching_lines": 22,
+   "missing_required": []
+  },
+  "primary:B:CQX66": {
+   "variant": "B",
+   "cq_id": "CQX66",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Waste_Storage"
+   ]
+  },
+  "primary:B:CQX67": {
+   "variant": "B",
+   "cq_id": "CQX67",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Motor_Direction_Status"
+   ]
+  },
+  "primary:B:CQX68": {
+   "variant": "B",
+   "cq_id": "CQX68",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Speed_Mode_Status"
+   ]
+  },
+  "primary:B:CQX69": {
+   "variant": "B",
+   "cq_id": "CQX69",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Contact_Sensor"
+   ]
+  },
+  "primary:B:CQX70": {
+   "variant": "B",
+   "cq_id": "CQX70",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:TETRA_Room"
+   ]
+  },
+  "primary:B:CQX71": {
+   "variant": "B",
+   "cq_id": "CQX71",
+   "eligible": false,
+   "n_matching_lines": 9,
+   "missing_required": [
+    "brick:Condensing_Unit"
+   ]
+  },
+  "primary:B:CQX72": {
+   "variant": "B",
+   "cq_id": "CQX72",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Chilled_Water_Supply_Temperature_Sensor",
+    "brick:Leaving_Chilled_Water_Temperature_Sensor"
+   ]
+  },
+  "primary:B:CQX73": {
+   "variant": "B",
+   "cq_id": "CQX73",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Deceleration_Time"
+   ]
+  },
+  "primary:B:CQX74": {
+   "variant": "B",
+   "cq_id": "CQX74",
+   "eligible": false,
+   "n_matching_lines": 189,
+   "missing_required": [
+    "brick:Detention_Room"
+   ]
+  },
+  "primary:B:CQX75": {
+   "variant": "B",
+   "cq_id": "CQX75",
+   "eligible": false,
+   "n_matching_lines": 23,
+   "missing_required": [
+    "brick:Bench_Space"
+   ]
+  },
+  "primary:B:CQX76": {
+   "variant": "B",
+   "cq_id": "CQX76",
+   "eligible": true,
+   "n_matching_lines": 4,
+   "missing_required": []
+  },
+  "primary:B:CQX77": {
+   "variant": "B",
+   "cq_id": "CQX77",
+   "eligible": false,
+   "n_matching_lines": 7,
+   "missing_required": [
+    "brick:Water_Tank"
+   ]
+  },
+  "primary:B:CQX78": {
+   "variant": "B",
+   "cq_id": "CQX78",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:B:CQX79": {
+   "variant": "B",
+   "cq_id": "CQX79",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Heating_Enable_Command",
+    "brick:Heating_Command"
+   ]
+  },
+  "primary:B:CQX80": {
+   "variant": "B",
+   "cq_id": "CQX80",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Stage_Enable_Command"
+   ]
+  },
+  "primary:B:CQX81": {
+   "variant": "B",
+   "cq_id": "CQX81",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Main_Circuit_Breaker"
+   ]
+  },
+  "primary:B:CQX82": {
+   "variant": "B",
+   "cq_id": "CQX82",
+   "eligible": false,
+   "n_matching_lines": 2,
+   "missing_required": [
+    "ref:storedAt",
+    "ref:hasTimeseriesId"
+   ]
+  },
+  "primary:B:CQX83": {
+   "variant": "B",
+   "cq_id": "CQX83",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:B:CQX84": {
+   "variant": "B",
+   "cq_id": "CQX84",
+   "eligible": false,
+   "n_matching_lines": 66,
+   "missing_required": [
+    "brick:HVAC_System"
+   ]
+  },
+  "primary:C:CQX01": {
+   "variant": "C",
+   "cq_id": "CQX01",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Variable_Frequency_Drive"
+   ]
+  },
+  "primary:C:CQX02": {
+   "variant": "C",
+   "cq_id": "CQX02",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Heat_Exchanger"
+   ]
+  },
+  "primary:C:CQX03": {
+   "variant": "C",
+   "cq_id": "CQX03",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Temperature_Sensor"
+   ]
+  },
+  "primary:C:CQX04": {
+   "variant": "C",
+   "cq_id": "CQX04",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Luminance_Sensor"
+   ]
+  },
+  "primary:C:CQX05": {
+   "variant": "C",
+   "cq_id": "CQX05",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:C:CQX06": {
+   "variant": "C",
+   "cq_id": "CQX06",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Chilled_Water"
+   ]
+  },
+  "primary:C:CQX07": {
+   "variant": "C",
+   "cq_id": "CQX07",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:C:CQX08": {
+   "variant": "C",
+   "cq_id": "CQX08",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Photovoltaic_Array"
+   ]
+  },
+  "primary:C:CQX09": {
+   "variant": "C",
+   "cq_id": "CQX09",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Cooling_Tower"
+   ]
+  },
+  "primary:C:CQX10": {
+   "variant": "C",
+   "cq_id": "CQX10",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Occupancy_Sensor"
+   ]
+  },
+  "primary:C:CQX11": {
+   "variant": "C",
+   "cq_id": "CQX11",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Electric_Vehicle_Charging_Station"
+   ]
+  },
+  "primary:C:CQX12": {
+   "variant": "C",
+   "cq_id": "CQX12",
+   "eligible": true,
+   "n_matching_lines": 5,
+   "missing_required": []
+  },
+  "primary:C:CQX13": {
+   "variant": "C",
+   "cq_id": "CQX13",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:C:CQX14": {
+   "variant": "C",
+   "cq_id": "CQX14",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:C:CQX15": {
+   "variant": "C",
+   "cq_id": "CQX15",
+   "eligible": true,
+   "n_matching_lines": 31,
+   "missing_required": []
+  },
+  "primary:C:CQX16": {
+   "variant": "C",
+   "cq_id": "CQX16",
+   "eligible": true,
+   "n_matching_lines": 14,
+   "missing_required": []
+  },
+  "primary:C:CQX17": {
+   "variant": "C",
+   "cq_id": "CQX17",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Humidity_Sensor"
+   ]
+  },
+  "primary:C:CQX18": {
+   "variant": "C",
+   "cq_id": "CQX18",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Terminal_Unit"
+   ]
+  },
+  "primary:C:CQX19": {
+   "variant": "C",
+   "cq_id": "CQX19",
+   "eligible": true,
+   "n_matching_lines": 23,
+   "missing_required": []
+  },
+  "primary:C:CQX20": {
+   "variant": "C",
+   "cq_id": "CQX20",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:C:CQX21": {
+   "variant": "C",
+   "cq_id": "CQX21",
+   "eligible": true,
+   "n_matching_lines": 7,
+   "missing_required": []
+  },
+  "primary:C:CQX22": {
+   "variant": "C",
+   "cq_id": "CQX22",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Rooftop_Unit"
+   ]
+  },
+  "primary:C:CQX23": {
+   "variant": "C",
+   "cq_id": "CQX23",
+   "eligible": true,
+   "n_matching_lines": 27,
+   "missing_required": []
+  },
+  "primary:C:CQX24": {
+   "variant": "C",
+   "cq_id": "CQX24",
+   "eligible": false,
+   "n_matching_lines": 26,
+   "missing_required": [
+    "brick:Electrical_Meter"
+   ]
+  },
+  "primary:C:CQX25": {
+   "variant": "C",
+   "cq_id": "CQX25",
+   "eligible": false,
+   "n_matching_lines": 2,
+   "missing_required": [
+    "brick:Terminal_Unit",
+    "brick:HVAC_Equipment"
+   ]
+  },
+  "primary:C:CQX26": {
+   "variant": "C",
+   "cq_id": "CQX26",
+   "eligible": false,
+   "n_matching_lines": 258,
+   "missing_required": [
+    "brick:Supply_Air_Temperature_Sensor"
+   ]
+  },
+  "primary:C:CQX27": {
+   "variant": "C",
+   "cq_id": "CQX27",
+   "eligible": false,
+   "n_matching_lines": 74,
+   "missing_required": [
+    "brick:HVAC_Equipment"
+   ]
+  },
+  "primary:C:CQX28": {
+   "variant": "C",
+   "cq_id": "CQX28",
+   "eligible": true,
+   "n_matching_lines": 180,
+   "missing_required": []
+  },
+  "primary:C:CQX29": {
+   "variant": "C",
+   "cq_id": "CQX29",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:manufacturedBy"
+   ]
+  },
+  "primary:C:CQX30": {
+   "variant": "C",
+   "cq_id": "CQX30",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:installedBy"
+   ]
+  },
+  "primary:C:CQX31": {
+   "variant": "C",
+   "cq_id": "CQX31",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:mountedOn"
+   ]
+  },
+  "primary:C:CQX32": {
+   "variant": "C",
+   "cq_id": "CQX32",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:architectedBy"
+   ]
+  },
+  "primary:C:CQX33": {
+   "variant": "C",
+   "cq_id": "CQX33",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:C:CQX34": {
+   "variant": "C",
+   "cq_id": "CQX34",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:hasMember"
+   ]
+  },
+  "primary:C:CQX35": {
+   "variant": "C",
+   "cq_id": "CQX35",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:C:CQX36": {
+   "variant": "C",
+   "cq_id": "CQX36",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:leasor"
+   ]
+  },
+  "primary:C:CQX37": {
+   "variant": "C",
+   "cq_id": "CQX37",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:C:CQX38": {
+   "variant": "C",
+   "cq_id": "CQX38",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:C:CQX39": {
+   "variant": "C",
+   "cq_id": "CQX39",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:operatedBy"
+   ]
+  },
+  "primary:C:CQX40": {
+   "variant": "C",
+   "cq_id": "CQX40",
+   "eligible": true,
+   "n_matching_lines": 6,
+   "missing_required": []
+  },
+  "primary:C:CQX41": {
+   "variant": "C",
+   "cq_id": "CQX41",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:hasSubstance"
+   ]
+  },
+  "primary:C:CQX42": {
+   "variant": "C",
+   "cq_id": "CQX42",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:aliasOf"
+   ]
+  },
+  "primary:C:CQX43": {
+   "variant": "C",
+   "cq_id": "CQX43",
+   "eligible": true,
+   "n_matching_lines": 9,
+   "missing_required": []
+  },
+  "primary:C:CQX44": {
+   "variant": "C",
+   "cq_id": "CQX44",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:azimuth"
+   ]
+  },
+  "primary:C:CQX45": {
+   "variant": "C",
+   "cq_id": "CQX45",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:tilt"
+   ]
+  },
+  "primary:C:CQX46": {
+   "variant": "C",
+   "cq_id": "CQX46",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:C:CQX47": {
+   "variant": "C",
+   "cq_id": "CQX47",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:C:CQX48": {
+   "variant": "C",
+   "cq_id": "CQX48",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:panelArea"
+   ]
+  },
+  "primary:C:CQX49": {
+   "variant": "C",
+   "cq_id": "CQX49",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:electricalPhases"
+   ]
+  },
+  "primary:C:CQX50": {
+   "variant": "C",
+   "cq_id": "CQX50",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:C:CQX51": {
+   "variant": "C",
+   "cq_id": "CQX51",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:thermalTransmittance"
+   ]
+  },
+  "primary:C:CQX52": {
+   "variant": "C",
+   "cq_id": "CQX52",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:conversionEfficiency"
+   ]
+  },
+  "primary:C:CQX53": {
+   "variant": "C",
+   "cq_id": "CQX53",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:C:CQX54": {
+   "variant": "C",
+   "cq_id": "CQX54",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:ratedVoltageInput"
+   ]
+  },
+  "primary:C:CQX55": {
+   "variant": "C",
+   "cq_id": "CQX55",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:electricVehicleChargerType"
+   ]
+  },
+  "primary:C:CQX56": {
+   "variant": "C",
+   "cq_id": "CQX56",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:currentFlowType"
+   ]
+  },
+  "primary:C:CQX57": {
+   "variant": "C",
+   "cq_id": "CQX57",
+   "eligible": true,
+   "n_matching_lines": 12,
+   "missing_required": []
+  },
+  "primary:C:CQX58": {
+   "variant": "C",
+   "cq_id": "CQX58",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Electric_Vehicle_Charging_Hub"
+   ]
+  },
+  "primary:C:CQX59": {
+   "variant": "C",
+   "cq_id": "CQX59",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Distribution_Frame"
+   ]
+  },
+  "primary:C:CQX60": {
+   "variant": "C",
+   "cq_id": "CQX60",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Field_Of_Play"
+   ]
+  },
+  "primary:C:CQX61": {
+   "variant": "C",
+   "cq_id": "CQX61",
+   "eligible": true,
+   "n_matching_lines": 3,
+   "missing_required": []
+  },
+  "primary:C:CQX62": {
+   "variant": "C",
+   "cq_id": "CQX62",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Retail_Room"
+   ]
+  },
+  "primary:C:CQX63": {
+   "variant": "C",
+   "cq_id": "CQX63",
+   "eligible": true,
+   "n_matching_lines": 6,
+   "missing_required": []
+  },
+  "primary:C:CQX64": {
+   "variant": "C",
+   "cq_id": "CQX64",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Service_Room"
+   ]
+  },
+  "primary:C:CQX65": {
+   "variant": "C",
+   "cq_id": "CQX65",
+   "eligible": true,
+   "n_matching_lines": 22,
+   "missing_required": []
+  },
+  "primary:C:CQX66": {
+   "variant": "C",
+   "cq_id": "CQX66",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Waste_Storage"
+   ]
+  },
+  "primary:C:CQX67": {
+   "variant": "C",
+   "cq_id": "CQX67",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Motor_Direction_Status"
+   ]
+  },
+  "primary:C:CQX68": {
+   "variant": "C",
+   "cq_id": "CQX68",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Speed_Mode_Status"
+   ]
+  },
+  "primary:C:CQX69": {
+   "variant": "C",
+   "cq_id": "CQX69",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Contact_Sensor"
+   ]
+  },
+  "primary:C:CQX70": {
+   "variant": "C",
+   "cq_id": "CQX70",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:TETRA_Room"
+   ]
+  },
+  "primary:C:CQX71": {
+   "variant": "C",
+   "cq_id": "CQX71",
+   "eligible": false,
+   "n_matching_lines": 9,
+   "missing_required": [
+    "brick:Condensing_Unit"
+   ]
+  },
+  "primary:C:CQX72": {
+   "variant": "C",
+   "cq_id": "CQX72",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Chilled_Water_Supply_Temperature_Sensor",
+    "brick:Leaving_Chilled_Water_Temperature_Sensor"
+   ]
+  },
+  "primary:C:CQX73": {
+   "variant": "C",
+   "cq_id": "CQX73",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Deceleration_Time"
+   ]
+  },
+  "primary:C:CQX74": {
+   "variant": "C",
+   "cq_id": "CQX74",
+   "eligible": false,
+   "n_matching_lines": 189,
+   "missing_required": [
+    "brick:Detention_Room"
+   ]
+  },
+  "primary:C:CQX75": {
+   "variant": "C",
+   "cq_id": "CQX75",
+   "eligible": false,
+   "n_matching_lines": 23,
+   "missing_required": [
+    "brick:Bench_Space"
+   ]
+  },
+  "primary:C:CQX76": {
+   "variant": "C",
+   "cq_id": "CQX76",
+   "eligible": true,
+   "n_matching_lines": 4,
+   "missing_required": []
+  },
+  "primary:C:CQX77": {
+   "variant": "C",
+   "cq_id": "CQX77",
+   "eligible": false,
+   "n_matching_lines": 7,
+   "missing_required": [
+    "brick:Water_Tank"
+   ]
+  },
+  "primary:C:CQX78": {
+   "variant": "C",
+   "cq_id": "CQX78",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "ref:preferred"
+   ]
+  },
+  "primary:C:CQX79": {
+   "variant": "C",
+   "cq_id": "CQX79",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Heating_Enable_Command",
+    "brick:Heating_Command"
+   ]
+  },
+  "primary:C:CQX80": {
+   "variant": "C",
+   "cq_id": "CQX80",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Stage_Enable_Command"
+   ]
+  },
+  "primary:C:CQX81": {
+   "variant": "C",
+   "cq_id": "CQX81",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Main_Circuit_Breaker"
+   ]
+  },
+  "primary:C:CQX82": {
+   "variant": "C",
+   "cq_id": "CQX82",
+   "eligible": false,
+   "n_matching_lines": 2,
+   "missing_required": [
+    "ref:storedAt",
+    "ref:hasTimeseriesId"
+   ]
+  },
+  "primary:C:CQX83": {
+   "variant": "C",
+   "cq_id": "CQX83",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:C:CQX84": {
+   "variant": "C",
+   "cq_id": "CQX84",
+   "eligible": false,
+   "n_matching_lines": 66,
+   "missing_required": [
+    "brick:HVAC_System"
+   ]
+  },
+  "primary:D:CQX01": {
+   "variant": "D",
+   "cq_id": "CQX01",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Variable_Frequency_Drive"
+   ]
+  },
+  "primary:D:CQX02": {
+   "variant": "D",
+   "cq_id": "CQX02",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Heat_Exchanger"
+   ]
+  },
+  "primary:D:CQX03": {
+   "variant": "D",
+   "cq_id": "CQX03",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Temperature_Sensor"
+   ]
+  },
+  "primary:D:CQX04": {
+   "variant": "D",
+   "cq_id": "CQX04",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Luminance_Sensor"
+   ]
+  },
+  "primary:D:CQX05": {
+   "variant": "D",
+   "cq_id": "CQX05",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:D:CQX06": {
+   "variant": "D",
+   "cq_id": "CQX06",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Chilled_Water"
+   ]
+  },
+  "primary:D:CQX07": {
+   "variant": "D",
+   "cq_id": "CQX07",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:D:CQX08": {
+   "variant": "D",
+   "cq_id": "CQX08",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Photovoltaic_Array"
+   ]
+  },
+  "primary:D:CQX09": {
+   "variant": "D",
+   "cq_id": "CQX09",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Cooling_Tower"
+   ]
+  },
+  "primary:D:CQX10": {
+   "variant": "D",
+   "cq_id": "CQX10",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Occupancy_Sensor"
+   ]
+  },
+  "primary:D:CQX11": {
+   "variant": "D",
+   "cq_id": "CQX11",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Electric_Vehicle_Charging_Station"
+   ]
+  },
+  "primary:D:CQX12": {
+   "variant": "D",
+   "cq_id": "CQX12",
+   "eligible": true,
+   "n_matching_lines": 5,
+   "missing_required": []
+  },
+  "primary:D:CQX13": {
+   "variant": "D",
+   "cq_id": "CQX13",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:D:CQX14": {
+   "variant": "D",
+   "cq_id": "CQX14",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:D:CQX15": {
+   "variant": "D",
+   "cq_id": "CQX15",
+   "eligible": true,
+   "n_matching_lines": 31,
+   "missing_required": []
+  },
+  "primary:D:CQX16": {
+   "variant": "D",
+   "cq_id": "CQX16",
+   "eligible": true,
+   "n_matching_lines": 14,
+   "missing_required": []
+  },
+  "primary:D:CQX17": {
+   "variant": "D",
+   "cq_id": "CQX17",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Humidity_Sensor"
+   ]
+  },
+  "primary:D:CQX18": {
+   "variant": "D",
+   "cq_id": "CQX18",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Terminal_Unit"
+   ]
+  },
+  "primary:D:CQX19": {
+   "variant": "D",
+   "cq_id": "CQX19",
+   "eligible": true,
+   "n_matching_lines": 23,
+   "missing_required": []
+  },
+  "primary:D:CQX20": {
+   "variant": "D",
+   "cq_id": "CQX20",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:D:CQX21": {
+   "variant": "D",
+   "cq_id": "CQX21",
+   "eligible": true,
+   "n_matching_lines": 7,
+   "missing_required": []
+  },
+  "primary:D:CQX22": {
+   "variant": "D",
+   "cq_id": "CQX22",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Rooftop_Unit"
+   ]
+  },
+  "primary:D:CQX23": {
+   "variant": "D",
+   "cq_id": "CQX23",
+   "eligible": true,
+   "n_matching_lines": 27,
+   "missing_required": []
+  },
+  "primary:D:CQX24": {
+   "variant": "D",
+   "cq_id": "CQX24",
+   "eligible": false,
+   "n_matching_lines": 26,
+   "missing_required": [
+    "brick:Electrical_Meter"
+   ]
+  },
+  "primary:D:CQX25": {
+   "variant": "D",
+   "cq_id": "CQX25",
+   "eligible": false,
+   "n_matching_lines": 2,
+   "missing_required": [
+    "brick:Terminal_Unit",
+    "brick:HVAC_Equipment"
+   ]
+  },
+  "primary:D:CQX26": {
+   "variant": "D",
+   "cq_id": "CQX26",
+   "eligible": false,
+   "n_matching_lines": 258,
+   "missing_required": [
+    "brick:Supply_Air_Temperature_Sensor"
+   ]
+  },
+  "primary:D:CQX27": {
+   "variant": "D",
+   "cq_id": "CQX27",
+   "eligible": false,
+   "n_matching_lines": 74,
+   "missing_required": [
+    "brick:HVAC_Equipment"
+   ]
+  },
+  "primary:D:CQX28": {
+   "variant": "D",
+   "cq_id": "CQX28",
+   "eligible": true,
+   "n_matching_lines": 180,
+   "missing_required": []
+  },
+  "primary:D:CQX29": {
+   "variant": "D",
+   "cq_id": "CQX29",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:manufacturedBy"
+   ]
+  },
+  "primary:D:CQX30": {
+   "variant": "D",
+   "cq_id": "CQX30",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:installedBy"
+   ]
+  },
+  "primary:D:CQX31": {
+   "variant": "D",
+   "cq_id": "CQX31",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:mountedOn"
+   ]
+  },
+  "primary:D:CQX32": {
+   "variant": "D",
+   "cq_id": "CQX32",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:architectedBy"
+   ]
+  },
+  "primary:D:CQX33": {
+   "variant": "D",
+   "cq_id": "CQX33",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:D:CQX34": {
+   "variant": "D",
+   "cq_id": "CQX34",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:hasMember"
+   ]
+  },
+  "primary:D:CQX35": {
+   "variant": "D",
+   "cq_id": "CQX35",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:D:CQX36": {
+   "variant": "D",
+   "cq_id": "CQX36",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:leasor"
+   ]
+  },
+  "primary:D:CQX37": {
+   "variant": "D",
+   "cq_id": "CQX37",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:D:CQX38": {
+   "variant": "D",
+   "cq_id": "CQX38",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:D:CQX39": {
+   "variant": "D",
+   "cq_id": "CQX39",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:operatedBy"
+   ]
+  },
+  "primary:D:CQX40": {
+   "variant": "D",
+   "cq_id": "CQX40",
+   "eligible": true,
+   "n_matching_lines": 6,
+   "missing_required": []
+  },
+  "primary:D:CQX41": {
+   "variant": "D",
+   "cq_id": "CQX41",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:hasSubstance"
+   ]
+  },
+  "primary:D:CQX42": {
+   "variant": "D",
+   "cq_id": "CQX42",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:aliasOf"
+   ]
+  },
+  "primary:D:CQX43": {
+   "variant": "D",
+   "cq_id": "CQX43",
+   "eligible": true,
+   "n_matching_lines": 9,
+   "missing_required": []
+  },
+  "primary:D:CQX44": {
+   "variant": "D",
+   "cq_id": "CQX44",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:azimuth"
+   ]
+  },
+  "primary:D:CQX45": {
+   "variant": "D",
+   "cq_id": "CQX45",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:tilt"
+   ]
+  },
+  "primary:D:CQX46": {
+   "variant": "D",
+   "cq_id": "CQX46",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:D:CQX47": {
+   "variant": "D",
+   "cq_id": "CQX47",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:D:CQX48": {
+   "variant": "D",
+   "cq_id": "CQX48",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:panelArea"
+   ]
+  },
+  "primary:D:CQX49": {
+   "variant": "D",
+   "cq_id": "CQX49",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:electricalPhases"
+   ]
+  },
+  "primary:D:CQX50": {
+   "variant": "D",
+   "cq_id": "CQX50",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:D:CQX51": {
+   "variant": "D",
+   "cq_id": "CQX51",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:thermalTransmittance"
+   ]
+  },
+  "primary:D:CQX52": {
+   "variant": "D",
+   "cq_id": "CQX52",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:conversionEfficiency"
+   ]
+  },
+  "primary:D:CQX53": {
+   "variant": "D",
+   "cq_id": "CQX53",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:D:CQX54": {
+   "variant": "D",
+   "cq_id": "CQX54",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:ratedVoltageInput"
+   ]
+  },
+  "primary:D:CQX55": {
+   "variant": "D",
+   "cq_id": "CQX55",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:electricVehicleChargerType"
+   ]
+  },
+  "primary:D:CQX56": {
+   "variant": "D",
+   "cq_id": "CQX56",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:currentFlowType"
+   ]
+  },
+  "primary:D:CQX57": {
+   "variant": "D",
+   "cq_id": "CQX57",
+   "eligible": true,
+   "n_matching_lines": 12,
+   "missing_required": []
+  },
+  "primary:D:CQX58": {
+   "variant": "D",
+   "cq_id": "CQX58",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Electric_Vehicle_Charging_Hub"
+   ]
+  },
+  "primary:D:CQX59": {
+   "variant": "D",
+   "cq_id": "CQX59",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Distribution_Frame"
+   ]
+  },
+  "primary:D:CQX60": {
+   "variant": "D",
+   "cq_id": "CQX60",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Field_Of_Play"
+   ]
+  },
+  "primary:D:CQX61": {
+   "variant": "D",
+   "cq_id": "CQX61",
+   "eligible": true,
+   "n_matching_lines": 3,
+   "missing_required": []
+  },
+  "primary:D:CQX62": {
+   "variant": "D",
+   "cq_id": "CQX62",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Retail_Room"
+   ]
+  },
+  "primary:D:CQX63": {
+   "variant": "D",
+   "cq_id": "CQX63",
+   "eligible": true,
+   "n_matching_lines": 6,
+   "missing_required": []
+  },
+  "primary:D:CQX64": {
+   "variant": "D",
+   "cq_id": "CQX64",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Service_Room"
+   ]
+  },
+  "primary:D:CQX65": {
+   "variant": "D",
+   "cq_id": "CQX65",
+   "eligible": true,
+   "n_matching_lines": 22,
+   "missing_required": []
+  },
+  "primary:D:CQX66": {
+   "variant": "D",
+   "cq_id": "CQX66",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Waste_Storage"
+   ]
+  },
+  "primary:D:CQX67": {
+   "variant": "D",
+   "cq_id": "CQX67",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Motor_Direction_Status"
+   ]
+  },
+  "primary:D:CQX68": {
+   "variant": "D",
+   "cq_id": "CQX68",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Speed_Mode_Status"
+   ]
+  },
+  "primary:D:CQX69": {
+   "variant": "D",
+   "cq_id": "CQX69",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Contact_Sensor"
+   ]
+  },
+  "primary:D:CQX70": {
+   "variant": "D",
+   "cq_id": "CQX70",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:TETRA_Room"
+   ]
+  },
+  "primary:D:CQX71": {
+   "variant": "D",
+   "cq_id": "CQX71",
+   "eligible": false,
+   "n_matching_lines": 9,
+   "missing_required": [
+    "brick:Condensing_Unit"
+   ]
+  },
+  "primary:D:CQX72": {
+   "variant": "D",
+   "cq_id": "CQX72",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Chilled_Water_Supply_Temperature_Sensor",
+    "brick:Leaving_Chilled_Water_Temperature_Sensor"
+   ]
+  },
+  "primary:D:CQX73": {
+   "variant": "D",
+   "cq_id": "CQX73",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Deceleration_Time"
+   ]
+  },
+  "primary:D:CQX74": {
+   "variant": "D",
+   "cq_id": "CQX74",
+   "eligible": false,
+   "n_matching_lines": 189,
+   "missing_required": [
+    "brick:Detention_Room"
+   ]
+  },
+  "primary:D:CQX75": {
+   "variant": "D",
+   "cq_id": "CQX75",
+   "eligible": false,
+   "n_matching_lines": 23,
+   "missing_required": [
+    "brick:Bench_Space"
+   ]
+  },
+  "primary:D:CQX76": {
+   "variant": "D",
+   "cq_id": "CQX76",
+   "eligible": true,
+   "n_matching_lines": 4,
+   "missing_required": []
+  },
+  "primary:D:CQX77": {
+   "variant": "D",
+   "cq_id": "CQX77",
+   "eligible": false,
+   "n_matching_lines": 7,
+   "missing_required": [
+    "brick:Water_Tank"
+   ]
+  },
+  "primary:D:CQX78": {
+   "variant": "D",
+   "cq_id": "CQX78",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "ref:preferred"
+   ]
+  },
+  "primary:D:CQX79": {
+   "variant": "D",
+   "cq_id": "CQX79",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Heating_Enable_Command",
+    "brick:Heating_Command"
+   ]
+  },
+  "primary:D:CQX80": {
+   "variant": "D",
+   "cq_id": "CQX80",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Stage_Enable_Command"
+   ]
+  },
+  "primary:D:CQX81": {
+   "variant": "D",
+   "cq_id": "CQX81",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Main_Circuit_Breaker"
+   ]
+  },
+  "primary:D:CQX82": {
+   "variant": "D",
+   "cq_id": "CQX82",
+   "eligible": false,
+   "n_matching_lines": 2,
+   "missing_required": [
+    "ref:storedAt",
+    "ref:hasTimeseriesId"
+   ]
+  },
+  "primary:D:CQX83": {
+   "variant": "D",
+   "cq_id": "CQX83",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:D:CQX84": {
+   "variant": "D",
+   "cq_id": "CQX84",
+   "eligible": false,
+   "n_matching_lines": 66,
+   "missing_required": [
+    "brick:HVAC_System"
+   ]
+  },
+  "primary:E:CQX01": {
+   "variant": "E",
+   "cq_id": "CQX01",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Variable_Frequency_Drive"
+   ]
+  },
+  "primary:E:CQX02": {
+   "variant": "E",
+   "cq_id": "CQX02",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Heat_Exchanger"
+   ]
+  },
+  "primary:E:CQX03": {
+   "variant": "E",
+   "cq_id": "CQX03",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Temperature_Sensor"
+   ]
+  },
+  "primary:E:CQX04": {
+   "variant": "E",
+   "cq_id": "CQX04",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Luminance_Sensor"
+   ]
+  },
+  "primary:E:CQX05": {
+   "variant": "E",
+   "cq_id": "CQX05",
+   "eligible": true,
+   "n_matching_lines": 11,
+   "missing_required": []
+  },
+  "primary:E:CQX06": {
+   "variant": "E",
+   "cq_id": "CQX06",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Chilled_Water"
+   ]
+  },
+  "primary:E:CQX07": {
+   "variant": "E",
+   "cq_id": "CQX07",
+   "eligible": true,
+   "n_matching_lines": 9,
+   "missing_required": []
+  },
+  "primary:E:CQX08": {
+   "variant": "E",
+   "cq_id": "CQX08",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Photovoltaic_Array"
+   ]
+  },
+  "primary:E:CQX09": {
+   "variant": "E",
+   "cq_id": "CQX09",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Cooling_Tower"
+   ]
+  },
+  "primary:E:CQX10": {
+   "variant": "E",
+   "cq_id": "CQX10",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Occupancy_Sensor"
+   ]
+  },
+  "primary:E:CQX11": {
+   "variant": "E",
+   "cq_id": "CQX11",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Electric_Vehicle_Charging_Station"
+   ]
+  },
+  "primary:E:CQX12": {
+   "variant": "E",
+   "cq_id": "CQX12",
+   "eligible": true,
+   "n_matching_lines": 5,
+   "missing_required": []
+  },
+  "primary:E:CQX13": {
+   "variant": "E",
+   "cq_id": "CQX13",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:E:CQX14": {
+   "variant": "E",
+   "cq_id": "CQX14",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:E:CQX15": {
+   "variant": "E",
+   "cq_id": "CQX15",
+   "eligible": true,
+   "n_matching_lines": 33,
+   "missing_required": []
+  },
+  "primary:E:CQX16": {
+   "variant": "E",
+   "cq_id": "CQX16",
+   "eligible": true,
+   "n_matching_lines": 14,
+   "missing_required": []
+  },
+  "primary:E:CQX17": {
+   "variant": "E",
+   "cq_id": "CQX17",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Humidity_Sensor"
+   ]
+  },
+  "primary:E:CQX18": {
+   "variant": "E",
+   "cq_id": "CQX18",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Terminal_Unit"
+   ]
+  },
+  "primary:E:CQX19": {
+   "variant": "E",
+   "cq_id": "CQX19",
+   "eligible": true,
+   "n_matching_lines": 23,
+   "missing_required": []
+  },
+  "primary:E:CQX20": {
+   "variant": "E",
+   "cq_id": "CQX20",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:E:CQX21": {
+   "variant": "E",
+   "cq_id": "CQX21",
+   "eligible": true,
+   "n_matching_lines": 7,
+   "missing_required": []
+  },
+  "primary:E:CQX22": {
+   "variant": "E",
+   "cq_id": "CQX22",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Rooftop_Unit"
+   ]
+  },
+  "primary:E:CQX23": {
+   "variant": "E",
+   "cq_id": "CQX23",
+   "eligible": true,
+   "n_matching_lines": 40,
+   "missing_required": []
+  },
+  "primary:E:CQX24": {
+   "variant": "E",
+   "cq_id": "CQX24",
+   "eligible": false,
+   "n_matching_lines": 26,
+   "missing_required": [
+    "brick:Electrical_Meter"
+   ]
+  },
+  "primary:E:CQX25": {
+   "variant": "E",
+   "cq_id": "CQX25",
+   "eligible": false,
+   "n_matching_lines": 2,
+   "missing_required": [
+    "brick:Terminal_Unit",
+    "brick:HVAC_Equipment"
+   ]
+  },
+  "primary:E:CQX26": {
+   "variant": "E",
+   "cq_id": "CQX26",
+   "eligible": false,
+   "n_matching_lines": 272,
+   "missing_required": [
+    "brick:Supply_Air_Temperature_Sensor"
+   ]
+  },
+  "primary:E:CQX27": {
+   "variant": "E",
+   "cq_id": "CQX27",
+   "eligible": false,
+   "n_matching_lines": 77,
+   "missing_required": [
+    "brick:HVAC_Equipment"
+   ]
+  },
+  "primary:E:CQX28": {
+   "variant": "E",
+   "cq_id": "CQX28",
+   "eligible": true,
+   "n_matching_lines": 186,
+   "missing_required": []
+  },
+  "primary:E:CQX29": {
+   "variant": "E",
+   "cq_id": "CQX29",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:manufacturedBy"
+   ]
+  },
+  "primary:E:CQX30": {
+   "variant": "E",
+   "cq_id": "CQX30",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:installedBy"
+   ]
+  },
+  "primary:E:CQX31": {
+   "variant": "E",
+   "cq_id": "CQX31",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:mountedOn"
+   ]
+  },
+  "primary:E:CQX32": {
+   "variant": "E",
+   "cq_id": "CQX32",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:architectedBy"
+   ]
+  },
+  "primary:E:CQX33": {
+   "variant": "E",
+   "cq_id": "CQX33",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:E:CQX34": {
+   "variant": "E",
+   "cq_id": "CQX34",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:hasMember"
+   ]
+  },
+  "primary:E:CQX35": {
+   "variant": "E",
+   "cq_id": "CQX35",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:E:CQX36": {
+   "variant": "E",
+   "cq_id": "CQX36",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:leasor"
+   ]
+  },
+  "primary:E:CQX37": {
+   "variant": "E",
+   "cq_id": "CQX37",
+   "eligible": true,
+   "n_matching_lines": 3,
+   "missing_required": []
+  },
+  "primary:E:CQX38": {
+   "variant": "E",
+   "cq_id": "CQX38",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:E:CQX39": {
+   "variant": "E",
+   "cq_id": "CQX39",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:operatedBy"
+   ]
+  },
+  "primary:E:CQX40": {
+   "variant": "E",
+   "cq_id": "CQX40",
+   "eligible": true,
+   "n_matching_lines": 5,
+   "missing_required": []
+  },
+  "primary:E:CQX41": {
+   "variant": "E",
+   "cq_id": "CQX41",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:hasSubstance"
+   ]
+  },
+  "primary:E:CQX42": {
+   "variant": "E",
+   "cq_id": "CQX42",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:aliasOf"
+   ]
+  },
+  "primary:E:CQX43": {
+   "variant": "E",
+   "cq_id": "CQX43",
+   "eligible": true,
+   "n_matching_lines": 11,
+   "missing_required": []
+  },
+  "primary:E:CQX44": {
+   "variant": "E",
+   "cq_id": "CQX44",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:azimuth"
+   ]
+  },
+  "primary:E:CQX45": {
+   "variant": "E",
+   "cq_id": "CQX45",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:tilt"
+   ]
+  },
+  "primary:E:CQX46": {
+   "variant": "E",
+   "cq_id": "CQX46",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:E:CQX47": {
+   "variant": "E",
+   "cq_id": "CQX47",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:E:CQX48": {
+   "variant": "E",
+   "cq_id": "CQX48",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:panelArea"
+   ]
+  },
+  "primary:E:CQX49": {
+   "variant": "E",
+   "cq_id": "CQX49",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:electricalPhases"
+   ]
+  },
+  "primary:E:CQX50": {
+   "variant": "E",
+   "cq_id": "CQX50",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:E:CQX51": {
+   "variant": "E",
+   "cq_id": "CQX51",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:thermalTransmittance"
+   ]
+  },
+  "primary:E:CQX52": {
+   "variant": "E",
+   "cq_id": "CQX52",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:conversionEfficiency"
+   ]
+  },
+  "primary:E:CQX53": {
+   "variant": "E",
+   "cq_id": "CQX53",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:E:CQX54": {
+   "variant": "E",
+   "cq_id": "CQX54",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:ratedVoltageInput"
+   ]
+  },
+  "primary:E:CQX55": {
+   "variant": "E",
+   "cq_id": "CQX55",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:electricVehicleChargerType"
+   ]
+  },
+  "primary:E:CQX56": {
+   "variant": "E",
+   "cq_id": "CQX56",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:currentFlowType"
+   ]
+  },
+  "primary:E:CQX57": {
+   "variant": "E",
+   "cq_id": "CQX57",
+   "eligible": true,
+   "n_matching_lines": 14,
+   "missing_required": []
+  },
+  "primary:E:CQX58": {
+   "variant": "E",
+   "cq_id": "CQX58",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Electric_Vehicle_Charging_Hub"
+   ]
+  },
+  "primary:E:CQX59": {
+   "variant": "E",
+   "cq_id": "CQX59",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Distribution_Frame"
+   ]
+  },
+  "primary:E:CQX60": {
+   "variant": "E",
+   "cq_id": "CQX60",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Field_Of_Play"
+   ]
+  },
+  "primary:E:CQX61": {
+   "variant": "E",
+   "cq_id": "CQX61",
+   "eligible": true,
+   "n_matching_lines": 3,
+   "missing_required": []
+  },
+  "primary:E:CQX62": {
+   "variant": "E",
+   "cq_id": "CQX62",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Retail_Room"
+   ]
+  },
+  "primary:E:CQX63": {
+   "variant": "E",
+   "cq_id": "CQX63",
+   "eligible": true,
+   "n_matching_lines": 6,
+   "missing_required": []
+  },
+  "primary:E:CQX64": {
+   "variant": "E",
+   "cq_id": "CQX64",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Service_Room"
+   ]
+  },
+  "primary:E:CQX65": {
+   "variant": "E",
+   "cq_id": "CQX65",
+   "eligible": true,
+   "n_matching_lines": 23,
+   "missing_required": []
+  },
+  "primary:E:CQX66": {
+   "variant": "E",
+   "cq_id": "CQX66",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Waste_Storage"
+   ]
+  },
+  "primary:E:CQX67": {
+   "variant": "E",
+   "cq_id": "CQX67",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Motor_Direction_Status"
+   ]
+  },
+  "primary:E:CQX68": {
+   "variant": "E",
+   "cq_id": "CQX68",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Speed_Mode_Status"
+   ]
+  },
+  "primary:E:CQX69": {
+   "variant": "E",
+   "cq_id": "CQX69",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Contact_Sensor"
+   ]
+  },
+  "primary:E:CQX70": {
+   "variant": "E",
+   "cq_id": "CQX70",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:TETRA_Room"
+   ]
+  },
+  "primary:E:CQX71": {
+   "variant": "E",
+   "cq_id": "CQX71",
+   "eligible": false,
+   "n_matching_lines": 14,
+   "missing_required": [
+    "brick:Condensing_Unit"
+   ]
+  },
+  "primary:E:CQX72": {
+   "variant": "E",
+   "cq_id": "CQX72",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Chilled_Water_Supply_Temperature_Sensor",
+    "brick:Leaving_Chilled_Water_Temperature_Sensor"
+   ]
+  },
+  "primary:E:CQX73": {
+   "variant": "E",
+   "cq_id": "CQX73",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Deceleration_Time"
+   ]
+  },
+  "primary:E:CQX74": {
+   "variant": "E",
+   "cq_id": "CQX74",
+   "eligible": false,
+   "n_matching_lines": 211,
+   "missing_required": [
+    "brick:Detention_Room"
+   ]
+  },
+  "primary:E:CQX75": {
+   "variant": "E",
+   "cq_id": "CQX75",
+   "eligible": false,
+   "n_matching_lines": 23,
+   "missing_required": [
+    "brick:Bench_Space"
+   ]
+  },
+  "primary:E:CQX76": {
+   "variant": "E",
+   "cq_id": "CQX76",
+   "eligible": true,
+   "n_matching_lines": 4,
+   "missing_required": []
+  },
+  "primary:E:CQX77": {
+   "variant": "E",
+   "cq_id": "CQX77",
+   "eligible": false,
+   "n_matching_lines": 7,
+   "missing_required": [
+    "brick:Water_Tank"
+   ]
+  },
+  "primary:E:CQX78": {
+   "variant": "E",
+   "cq_id": "CQX78",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "ref:preferred"
+   ]
+  },
+  "primary:E:CQX79": {
+   "variant": "E",
+   "cq_id": "CQX79",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Heating_Enable_Command",
+    "brick:Heating_Command"
+   ]
+  },
+  "primary:E:CQX80": {
+   "variant": "E",
+   "cq_id": "CQX80",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Stage_Enable_Command"
+   ]
+  },
+  "primary:E:CQX81": {
+   "variant": "E",
+   "cq_id": "CQX81",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Main_Circuit_Breaker"
+   ]
+  },
+  "primary:E:CQX82": {
+   "variant": "E",
+   "cq_id": "CQX82",
+   "eligible": false,
+   "n_matching_lines": 2,
+   "missing_required": [
+    "ref:storedAt",
+    "ref:hasTimeseriesId"
+   ]
+  },
+  "primary:E:CQX83": {
+   "variant": "E",
+   "cq_id": "CQX83",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:E:CQX84": {
+   "variant": "E",
+   "cq_id": "CQX84",
+   "eligible": false,
+   "n_matching_lines": 67,
+   "missing_required": [
+    "brick:HVAC_System"
+   ]
+  },
+  "primary:F:CQX01": {
+   "variant": "F",
+   "cq_id": "CQX01",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Variable_Frequency_Drive"
+   ]
+  },
+  "primary:F:CQX02": {
+   "variant": "F",
+   "cq_id": "CQX02",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Heat_Exchanger"
+   ]
+  },
+  "primary:F:CQX03": {
+   "variant": "F",
+   "cq_id": "CQX03",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Temperature_Sensor"
+   ]
+  },
+  "primary:F:CQX04": {
+   "variant": "F",
+   "cq_id": "CQX04",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Luminance_Sensor"
+   ]
+  },
+  "primary:F:CQX05": {
+   "variant": "F",
+   "cq_id": "CQX05",
+   "eligible": true,
+   "n_matching_lines": 11,
+   "missing_required": []
+  },
+  "primary:F:CQX06": {
+   "variant": "F",
+   "cq_id": "CQX06",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Chilled_Water"
+   ]
+  },
+  "primary:F:CQX07": {
+   "variant": "F",
+   "cq_id": "CQX07",
+   "eligible": true,
+   "n_matching_lines": 9,
+   "missing_required": []
+  },
+  "primary:F:CQX08": {
+   "variant": "F",
+   "cq_id": "CQX08",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Photovoltaic_Array"
+   ]
+  },
+  "primary:F:CQX09": {
+   "variant": "F",
+   "cq_id": "CQX09",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Cooling_Tower"
+   ]
+  },
+  "primary:F:CQX10": {
+   "variant": "F",
+   "cq_id": "CQX10",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Occupancy_Sensor"
+   ]
+  },
+  "primary:F:CQX11": {
+   "variant": "F",
+   "cq_id": "CQX11",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Electric_Vehicle_Charging_Station"
+   ]
+  },
+  "primary:F:CQX12": {
+   "variant": "F",
+   "cq_id": "CQX12",
+   "eligible": true,
+   "n_matching_lines": 5,
+   "missing_required": []
+  },
+  "primary:F:CQX13": {
+   "variant": "F",
+   "cq_id": "CQX13",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:F:CQX14": {
+   "variant": "F",
+   "cq_id": "CQX14",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:F:CQX15": {
+   "variant": "F",
+   "cq_id": "CQX15",
+   "eligible": true,
+   "n_matching_lines": 33,
+   "missing_required": []
+  },
+  "primary:F:CQX16": {
+   "variant": "F",
+   "cq_id": "CQX16",
+   "eligible": true,
+   "n_matching_lines": 14,
+   "missing_required": []
+  },
+  "primary:F:CQX17": {
+   "variant": "F",
+   "cq_id": "CQX17",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Humidity_Sensor"
+   ]
+  },
+  "primary:F:CQX18": {
+   "variant": "F",
+   "cq_id": "CQX18",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Terminal_Unit"
+   ]
+  },
+  "primary:F:CQX19": {
+   "variant": "F",
+   "cq_id": "CQX19",
+   "eligible": true,
+   "n_matching_lines": 23,
+   "missing_required": []
+  },
+  "primary:F:CQX20": {
+   "variant": "F",
+   "cq_id": "CQX20",
+   "eligible": true,
+   "n_matching_lines": 8,
+   "missing_required": []
+  },
+  "primary:F:CQX21": {
+   "variant": "F",
+   "cq_id": "CQX21",
+   "eligible": true,
+   "n_matching_lines": 7,
+   "missing_required": []
+  },
+  "primary:F:CQX22": {
+   "variant": "F",
+   "cq_id": "CQX22",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Rooftop_Unit"
+   ]
+  },
+  "primary:F:CQX23": {
+   "variant": "F",
+   "cq_id": "CQX23",
+   "eligible": true,
+   "n_matching_lines": 40,
+   "missing_required": []
+  },
+  "primary:F:CQX24": {
+   "variant": "F",
+   "cq_id": "CQX24",
+   "eligible": false,
+   "n_matching_lines": 26,
+   "missing_required": [
+    "brick:Electrical_Meter"
+   ]
+  },
+  "primary:F:CQX25": {
+   "variant": "F",
+   "cq_id": "CQX25",
+   "eligible": false,
+   "n_matching_lines": 2,
+   "missing_required": [
+    "brick:Terminal_Unit",
+    "brick:HVAC_Equipment"
+   ]
+  },
+  "primary:F:CQX26": {
+   "variant": "F",
+   "cq_id": "CQX26",
+   "eligible": false,
+   "n_matching_lines": 272,
+   "missing_required": [
+    "brick:Supply_Air_Temperature_Sensor"
+   ]
+  },
+  "primary:F:CQX27": {
+   "variant": "F",
+   "cq_id": "CQX27",
+   "eligible": false,
+   "n_matching_lines": 77,
+   "missing_required": [
+    "brick:HVAC_Equipment"
+   ]
+  },
+  "primary:F:CQX28": {
+   "variant": "F",
+   "cq_id": "CQX28",
+   "eligible": true,
+   "n_matching_lines": 186,
+   "missing_required": []
+  },
+  "primary:F:CQX29": {
+   "variant": "F",
+   "cq_id": "CQX29",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:manufacturedBy"
+   ]
+  },
+  "primary:F:CQX30": {
+   "variant": "F",
+   "cq_id": "CQX30",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:installedBy"
+   ]
+  },
+  "primary:F:CQX31": {
+   "variant": "F",
+   "cq_id": "CQX31",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:mountedOn"
+   ]
+  },
+  "primary:F:CQX32": {
+   "variant": "F",
+   "cq_id": "CQX32",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:architectedBy"
+   ]
+  },
+  "primary:F:CQX33": {
+   "variant": "F",
+   "cq_id": "CQX33",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:F:CQX34": {
+   "variant": "F",
+   "cq_id": "CQX34",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:hasMember"
+   ]
+  },
+  "primary:F:CQX35": {
+   "variant": "F",
+   "cq_id": "CQX35",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:F:CQX36": {
+   "variant": "F",
+   "cq_id": "CQX36",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:leasor"
+   ]
+  },
+  "primary:F:CQX37": {
+   "variant": "F",
+   "cq_id": "CQX37",
+   "eligible": true,
+   "n_matching_lines": 3,
+   "missing_required": []
+  },
+  "primary:F:CQX38": {
+   "variant": "F",
+   "cq_id": "CQX38",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:F:CQX39": {
+   "variant": "F",
+   "cq_id": "CQX39",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "rec:operatedBy"
+   ]
+  },
+  "primary:F:CQX40": {
+   "variant": "F",
+   "cq_id": "CQX40",
+   "eligible": true,
+   "n_matching_lines": 5,
+   "missing_required": []
+  },
+  "primary:F:CQX41": {
+   "variant": "F",
+   "cq_id": "CQX41",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:hasSubstance"
+   ]
+  },
+  "primary:F:CQX42": {
+   "variant": "F",
+   "cq_id": "CQX42",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:aliasOf"
+   ]
+  },
+  "primary:F:CQX43": {
+   "variant": "F",
+   "cq_id": "CQX43",
+   "eligible": true,
+   "n_matching_lines": 11,
+   "missing_required": []
+  },
+  "primary:F:CQX44": {
+   "variant": "F",
+   "cq_id": "CQX44",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:azimuth"
+   ]
+  },
+  "primary:F:CQX45": {
+   "variant": "F",
+   "cq_id": "CQX45",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:tilt"
+   ]
+  },
+  "primary:F:CQX46": {
+   "variant": "F",
+   "cq_id": "CQX46",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:F:CQX47": {
+   "variant": "F",
+   "cq_id": "CQX47",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:F:CQX48": {
+   "variant": "F",
+   "cq_id": "CQX48",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:panelArea"
+   ]
+  },
+  "primary:F:CQX49": {
+   "variant": "F",
+   "cq_id": "CQX49",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:electricalPhases"
+   ]
+  },
+  "primary:F:CQX50": {
+   "variant": "F",
+   "cq_id": "CQX50",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:F:CQX51": {
+   "variant": "F",
+   "cq_id": "CQX51",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:thermalTransmittance"
+   ]
+  },
+  "primary:F:CQX52": {
+   "variant": "F",
+   "cq_id": "CQX52",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:conversionEfficiency"
+   ]
+  },
+  "primary:F:CQX53": {
+   "variant": "F",
+   "cq_id": "CQX53",
+   "eligible": true,
+   "n_matching_lines": 1,
+   "missing_required": []
+  },
+  "primary:F:CQX54": {
+   "variant": "F",
+   "cq_id": "CQX54",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:ratedVoltageInput"
+   ]
+  },
+  "primary:F:CQX55": {
+   "variant": "F",
+   "cq_id": "CQX55",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:electricVehicleChargerType"
+   ]
+  },
+  "primary:F:CQX56": {
+   "variant": "F",
+   "cq_id": "CQX56",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:currentFlowType"
+   ]
+  },
+  "primary:F:CQX57": {
+   "variant": "F",
+   "cq_id": "CQX57",
+   "eligible": true,
+   "n_matching_lines": 14,
+   "missing_required": []
+  },
+  "primary:F:CQX58": {
+   "variant": "F",
+   "cq_id": "CQX58",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Electric_Vehicle_Charging_Hub"
+   ]
+  },
+  "primary:F:CQX59": {
+   "variant": "F",
+   "cq_id": "CQX59",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Distribution_Frame"
+   ]
+  },
+  "primary:F:CQX60": {
+   "variant": "F",
+   "cq_id": "CQX60",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Field_Of_Play"
+   ]
+  },
+  "primary:F:CQX61": {
+   "variant": "F",
+   "cq_id": "CQX61",
+   "eligible": true,
+   "n_matching_lines": 3,
+   "missing_required": []
+  },
+  "primary:F:CQX62": {
+   "variant": "F",
+   "cq_id": "CQX62",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Retail_Room"
+   ]
+  },
+  "primary:F:CQX63": {
+   "variant": "F",
+   "cq_id": "CQX63",
+   "eligible": true,
+   "n_matching_lines": 6,
+   "missing_required": []
+  },
+  "primary:F:CQX64": {
+   "variant": "F",
+   "cq_id": "CQX64",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Service_Room"
+   ]
+  },
+  "primary:F:CQX65": {
+   "variant": "F",
+   "cq_id": "CQX65",
+   "eligible": true,
+   "n_matching_lines": 23,
+   "missing_required": []
+  },
+  "primary:F:CQX66": {
+   "variant": "F",
+   "cq_id": "CQX66",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Waste_Storage"
+   ]
+  },
+  "primary:F:CQX67": {
+   "variant": "F",
+   "cq_id": "CQX67",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Motor_Direction_Status"
+   ]
+  },
+  "primary:F:CQX68": {
+   "variant": "F",
+   "cq_id": "CQX68",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Speed_Mode_Status"
+   ]
+  },
+  "primary:F:CQX69": {
+   "variant": "F",
+   "cq_id": "CQX69",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Contact_Sensor"
+   ]
+  },
+  "primary:F:CQX70": {
+   "variant": "F",
+   "cq_id": "CQX70",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:TETRA_Room"
+   ]
+  },
+  "primary:F:CQX71": {
+   "variant": "F",
+   "cq_id": "CQX71",
+   "eligible": false,
+   "n_matching_lines": 14,
+   "missing_required": [
+    "brick:Condensing_Unit"
+   ]
+  },
+  "primary:F:CQX72": {
+   "variant": "F",
+   "cq_id": "CQX72",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Chilled_Water_Supply_Temperature_Sensor",
+    "brick:Leaving_Chilled_Water_Temperature_Sensor"
+   ]
+  },
+  "primary:F:CQX73": {
+   "variant": "F",
+   "cq_id": "CQX73",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Deceleration_Time"
+   ]
+  },
+  "primary:F:CQX74": {
+   "variant": "F",
+   "cq_id": "CQX74",
+   "eligible": false,
+   "n_matching_lines": 211,
+   "missing_required": [
+    "brick:Detention_Room"
+   ]
+  },
+  "primary:F:CQX75": {
+   "variant": "F",
+   "cq_id": "CQX75",
+   "eligible": false,
+   "n_matching_lines": 23,
+   "missing_required": [
+    "brick:Bench_Space"
+   ]
+  },
+  "primary:F:CQX76": {
+   "variant": "F",
+   "cq_id": "CQX76",
+   "eligible": true,
+   "n_matching_lines": 4,
+   "missing_required": []
+  },
+  "primary:F:CQX77": {
+   "variant": "F",
+   "cq_id": "CQX77",
+   "eligible": false,
+   "n_matching_lines": 7,
+   "missing_required": [
+    "brick:Water_Tank"
+   ]
+  },
+  "primary:F:CQX78": {
+   "variant": "F",
+   "cq_id": "CQX78",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "ref:preferred"
+   ]
+  },
+  "primary:F:CQX79": {
+   "variant": "F",
+   "cq_id": "CQX79",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Heating_Enable_Command",
+    "brick:Heating_Command"
+   ]
+  },
+  "primary:F:CQX80": {
+   "variant": "F",
+   "cq_id": "CQX80",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Stage_Enable_Command"
+   ]
+  },
+  "primary:F:CQX81": {
+   "variant": "F",
+   "cq_id": "CQX81",
+   "eligible": false,
+   "n_matching_lines": 0,
+   "missing_required": [
+    "brick:Main_Circuit_Breaker"
+   ]
+  },
+  "primary:F:CQX82": {
+   "variant": "F",
+   "cq_id": "CQX82",
+   "eligible": false,
+   "n_matching_lines": 2,
+   "missing_required": [
+    "ref:storedAt",
+    "ref:hasTimeseriesId"
+   ]
+  },
+  "primary:F:CQX83": {
+   "variant": "F",
+   "cq_id": "CQX83",
+   "eligible": true,
+   "n_matching_lines": 2,
+   "missing_required": []
+  },
+  "primary:F:CQX84": {
+   "variant": "F",
+   "cq_id": "CQX84",
+   "eligible": false,
+   "n_matching_lines": 67,
+   "missing_required": [
+    "brick:HVAC_System"
+   ]
+  }
+ }
+}

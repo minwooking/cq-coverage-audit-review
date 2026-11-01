@@ -1,0 +1,7 @@
+# PROGRESS (addendum 36) -- one line per stage; times UTC
+- 2026-10-20 10:10 plan committed (76eb126). Tunnels opened (request-only) to the <internal-host> containers and the shared-server GLM / gpt-oss judges.
+- 10:12-10:17 Step 2 F build (C, D, E, F on top of each domain's B-side work dir; same CQ file as the Brick build, no bank): dcat/ssn/prov all exit 0, 0 LLM failures (usage in `<d>/build_f_usage.jsonl`, local). ontology_F: dcat 6334 triples, ssn 8547, prov 8671. F eligible cells (strict rule): dcat 27, ssn 41, prov 37 = 105.
+- 10:15 gateway probe (probe_gateway.json): gemini-3.6-flash not listed (no route); gpt-5.6-luna answers 200 (gateway judge `gw`); both Claude models: HTTP 401 "not logged in" (no route, no login attempted).
+- 10:15 Step 1 judges q38 and q80 on the 372 A/B cells x 3 repeats (1116 calls each) running, 3 workers each, ~1 call/s; ETA 10:40. F cells for glm/gptoss started 10:17 (315 calls each), ETA 10:25. Then F cells for q38/q80/gw, then gw A/B+F under its token budget.
+- 10:50 Step 1/2 local judges done (glm, gptoss, q38, q80: 1431 valid calls each incl. F, 0 invalid); tunnels closed. gw (gpt-5.6-luna) running, ETA ~11:30; then analyze.py extract/run and results commit.
+- 10:55 gw stopped by HTTP 429 account-quota policy at 7.12M prompt tokens (repeats 1-2 complete, repeat 3 49 cells). Final analysis written (results.json, REPORT_auto.md, tables.tex).

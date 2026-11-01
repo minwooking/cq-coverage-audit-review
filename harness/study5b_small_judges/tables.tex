@@ -1,0 +1,91 @@
+% Addendum 36B: judge-score contrasts for a Qwen size ladder; not human-labelled; exploratory, post hoc (addendum 36 amendment B)
+% judge & contrast & scope & n & delta [95% BCa] & decision
+Qwen3.8-27B & A->B & holdout & 22 & $+0.091$ [$-0.50$, $+0.77$] & unresolved \\
+Qwen3.8-27B & A->B & paraphrases & 21 & $-0.349$ [$-1.14$, $+0.33$] & unresolved \\
+Qwen3.8-27B & A->B & v2 extras & 10 & $+0.000$ [$-1.00$, $+1.20$] & unresolved \\
+Qwen3.8-27B & A->B & expansion & 26 & $+0.385$ [$-0.31$, $+1.08$] & unresolved \\
+Qwen3.8-27B & A->B & brick pool & 58 & $+0.126$ [$-0.30$, $+0.55$] & equivalent \\
+Qwen3.8-27B & A->B & dcat & 21 & $-0.587$ [$-1.16$, $+0.00$] & unresolved \\
+Qwen3.8-27B & A->B & ssn & 41 & $-0.512$ [$-0.99$, $-0.04$] & resolved A gt B \\
+Qwen3.8-27B & A->B & prov & 37 & $-0.081$ [$-0.43$, $+0.32$] & equivalent \\
+Qwen3.8-27B & A->B & new domains pooled & 99 & $-0.367$ [$-0.64$, $-0.08$] & resolved A gt B \\
+Qwen3.8-27B & A->F & dcat & 22 & $-0.561$ [$-1.12$, $-0.02$] & resolved A gt F \\
+Qwen3.8-27B & A->F & ssn & 41 & $-0.537$ [$-1.07$, $+0.02$] & unresolved \\
+Qwen3.8-27B & A->F & prov & 36 & $-0.509$ [$-0.99$, $-0.04$] & resolved A gt F \\
+Qwen3.8-27B & A->F & new domains pooled & 99 & $-0.532$ [$-0.84$, $-0.21$] & resolved A gt F \\
+Qwen3.8-27B & B->F & dcat & 26 & $-0.038$ [$-0.27$, $+0.23$] & equivalent \\
+Qwen3.8-27B & B->F & ssn & 41 & $-0.024$ [$-0.30$, $+0.24$] & equivalent \\
+Qwen3.8-27B & B->F & prov & 36 & $-0.454$ [$-0.76$, $-0.18$] & resolved B gt F \\
+Qwen3.8-27B & B->F & new domains pooled & 103 & $-0.178$ [$-0.35$, $-0.02$] & resolved B gt F \\
+Qwen3.5-9B & A->B & holdout & 22 & $+0.879$ [$+0.17$, $+1.58$] & resolved B gt A \\
+Qwen3.5-9B & A->B & paraphrases & 21 & $+0.048$ [$-0.86$, $+0.90$] & unresolved \\
+Qwen3.5-9B & A->B & v2 extras & 10 & $+1.100$ [$+0.20$, $+2.10$] & resolved B gt A \\
+Qwen3.5-9B & A->B & expansion & 26 & $+0.436$ [$-0.24$, $+1.13$] & unresolved \\
+Qwen3.5-9B & A->B & brick pool & 58 & $+0.560$ [$+0.13$, $+0.99$] & resolved B gt A \\
+Qwen3.5-9B & A->B & dcat & 21 & $-0.905$ [$-1.48$, $-0.43$] & resolved A gt B \\
+Qwen3.5-9B & A->B & ssn & 41 & $-0.130$ [$-0.57$, $+0.30$] & equivalent \\
+Qwen3.5-9B & A->B & prov & 37 & $+0.045$ [$-0.51$, $+0.62$] & unresolved \\
+Qwen3.5-9B & A->B & new domains pooled & 99 & $-0.229$ [$-0.54$, $+0.08$] & equivalent \\
+Qwen3.5-9B & A->F & dcat & 22 & $-0.864$ [$-1.45$, $-0.41$] & resolved A gt F \\
+Qwen3.5-9B & A->F & ssn & 41 & $-0.146$ [$-0.58$, $+0.30$] & unresolved \\
+Qwen3.5-9B & A->F & prov & 35 & $-0.048$ [$-0.57$, $+0.51$] & equivalent \\
+Qwen3.5-9B & A->F & new domains pooled & 98 & $-0.272$ [$-0.56$, $+0.03$] & unresolved \\
+Qwen3.5-9B & B->F & dcat & 26 & $-0.090$ [$-0.45$, $+0.00$] & equivalent \\
+Qwen3.5-9B & B->F & ssn & 41 & $-0.016$ [$-0.26$, $+0.22$] & equivalent \\
+Qwen3.5-9B & B->F & prov & 35 & $-0.181$ [$-0.52$, $+0.08$] & equivalent \\
+Qwen3.5-9B & B->F & new domains pooled & 102 & $-0.092$ [$-0.25$, $+0.05$] & equivalent \\
+Qwen3.5-4B & A->B & holdout & 22 & $+0.439$ [$-0.09$, $+0.95$] & unresolved \\
+Qwen3.5-4B & A->B & paraphrases & 21 & $-0.333$ [$-0.86$, $+0.29$] & unresolved \\
+Qwen3.5-4B & A->B & v2 extras & 10 & $+0.667$ [$-0.23$, $+1.57$] & unresolved \\
+Qwen3.5-4B & A->B & expansion & 26 & $+0.359$ [$-0.22$, $+0.85$] & unresolved \\
+Qwen3.5-4B & A->B & brick pool & 58 & $+0.299$ [$-0.04$, $+0.63$] & unresolved \\
+Qwen3.5-4B & A->B & dcat & 20 & $-0.217$ [$-0.75$, $+0.22$] & unresolved \\
+Qwen3.5-4B & A->B & ssn & 41 & $+0.089$ [$-0.28$, $+0.48$] & equivalent \\
+Qwen3.5-4B & A->B & prov & 37 & $+0.000$ [$-0.25$, $+0.32$] & equivalent \\
+Qwen3.5-4B & A->B & new domains pooled & 98 & $-0.007$ [$-0.22$, $+0.21$] & equivalent \\
+Qwen3.5-4B & A->F & dcat & 22 & $-0.348$ [$-0.83$, $+0.06$] & unresolved \\
+Qwen3.5-4B & A->F & ssn & 41 & $-0.098$ [$-0.53$, $+0.34$] & equivalent \\
+Qwen3.5-4B & A->F & prov & 36 & $+0.204$ [$-0.06$, $+0.56$] & equivalent \\
+Qwen3.5-4B & A->F & new domains pooled & 99 & $-0.044$ [$-0.28$, $+0.19$] & equivalent \\
+Qwen3.5-4B & B->F & dcat & 25 & $-0.147$ [$-0.41$, $+0.03$] & equivalent \\
+Qwen3.5-4B & B->F & ssn & 41 & $-0.187$ [$-0.50$, $+0.09$] & equivalent \\
+Qwen3.5-4B & B->F & prov & 36 & $+0.176$ [$+0.03$, $+0.52$] & resolved F gt B \\
+Qwen3.5-4B & B->F & new domains pooled & 102 & $-0.049$ [$-0.20$, $+0.10$] & equivalent \\
+
+% pairwise QWK: pair & cells & n & QWK
+glm vs q38 27b & A B cells & 372 & 0.443 \\
+glm vs q35 9b & A B cells & 372 & 0.464 \\
+glm vs q35 4b & A B cells & 371 & 0.493 \\
+gptoss vs q38 27b & A B cells & 372 & 0.465 \\
+gptoss vs q35 9b & A B cells & 372 & 0.446 \\
+gptoss vs q35 4b & A B cells & 371 & 0.436 \\
+q38 vs q38 27b & A B cells & 372 & 0.671 \\
+q38 vs q35 9b & A B cells & 372 & 0.513 \\
+q38 vs q35 4b & A B cells & 371 & 0.516 \\
+q80 vs q38 27b & A B cells & 372 & 0.539 \\
+q80 vs q35 9b & A B cells & 372 & 0.600 \\
+q80 vs q35 4b & A B cells & 371 & 0.562 \\
+gw vs q38 27b & A B cells & 372 & 0.572 \\
+gw vs q35 9b & A B cells & 372 & 0.440 \\
+gw vs q35 4b & A B cells & 371 & 0.412 \\
+q38 27b vs q35 9b & A B cells & 372 & 0.576 \\
+q38 27b vs q35 4b & A B cells & 371 & 0.624 \\
+q35 9b vs q35 4b & A B cells & 371 & 0.639 \\
+glm vs q38 27b & F cells & 105 & 0.253 \\
+glm vs q35 9b & F cells & 104 & 0.324 \\
+glm vs q35 4b & F cells & 105 & 0.455 \\
+gptoss vs q38 27b & F cells & 105 & 0.327 \\
+gptoss vs q35 9b & F cells & 104 & 0.398 \\
+gptoss vs q35 4b & F cells & 105 & 0.366 \\
+q38 vs q38 27b & F cells & 105 & 0.584 \\
+q38 vs q35 9b & F cells & 104 & 0.460 \\
+q38 vs q35 4b & F cells & 105 & 0.545 \\
+q80 vs q38 27b & F cells & 105 & 0.478 \\
+q80 vs q35 9b & F cells & 104 & 0.482 \\
+q80 vs q35 4b & F cells & 105 & 0.576 \\
+gw vs q38 27b & F cells & 105 & 0.534 \\
+gw vs q35 9b & F cells & 104 & 0.370 \\
+gw vs q35 4b & F cells & 105 & 0.394 \\
+q38 27b vs q35 9b & F cells & 104 & 0.474 \\
+q38 27b vs q35 4b & F cells & 105 & 0.502 \\
+q35 9b vs q35 4b & F cells & 104 & 0.579 \\

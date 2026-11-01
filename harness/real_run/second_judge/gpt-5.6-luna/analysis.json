@@ -1,0 +1,658 @@
+{
+  "status": "EXPLORATORY, POST HOC: computed after the holdout results and the human labels were known; the second judge is not in PREREG.md; no number here is confirmatory",
+  "disclosures": [
+    "Post hoc: the second-judge run happened after the holdout results were known (PREREG.md register: no second judge or panel; 12.1 D1 records that the primary judge itself was switched without registration; D10 records G6 as not_computable for want of a second judge).",
+    "The AH labels (A) were adjudicated against judge-1-era material (the judge-1 evidence span and a Qwen draft; per_cell has draft_A, span_edited). pi-hat and L1* under judge 2 treat A as a judge-independent property of the (view, question) cell and inherit any judge-1 conditioning of A. Coverage computed on J alone does not use A.",
+    "The second judge was called without response_format=json_object (the local proxy rejects it) and with the proxy's default reasoning effort; temperature 0.0 was sent, but a reasoning model behind a proxy is not bit-reproducible (see run_manifest.json settings).",
+    "The A->B contrast and the variant ranking are descriptive here; PREREG sec.4 forbids reading differences below 0.53 L1 as ordered and forbids 'tie' language for unresolved contrasts."
+  ],
+  "settings": {
+    "bootstrap": "CQ-cluster BCa, analyze_holdout.cluster_bootstrap_stat",
+    "B": 10000,
+    "seed": 20260913,
+    "registered_B": 10000,
+    "registered_seed": 20260913,
+    "registered_scheme": true,
+    "bca_ties": "midrank",
+    "strata": null,
+    "resample_unit": "semantic cluster (cluster_id)",
+    "ci_level": 0.95,
+    "min_clusters_for_ci": 10,
+    "labels": "AH labels: A from the committed per_cell.rerun_0dbe6e9.json (primary cells only)",
+    "population": "primary cells only (cell_kind == 'primary'); controls never enter"
+  },
+  "completeness": {
+    "primary_cells": 188,
+    "primary_cells_with_j2": 5,
+    "primary_cells_missing_j2": 183,
+    "all_primary_scored": false,
+    "by_variant": {
+      "A": {
+        "primary_cells": 23,
+        "with_j2": 5,
+        "missing": 18
+      },
+      "B": {
+        "primary_cells": 33,
+        "with_j2": 0,
+        "missing": 33
+      },
+      "C": {
+        "primary_cells": 33,
+        "with_j2": 0,
+        "missing": 33
+      },
+      "D": {
+        "primary_cells": 33,
+        "with_j2": 0,
+        "missing": 33
+      },
+      "E": {
+        "primary_cells": 33,
+        "with_j2": 0,
+        "missing": 33
+      },
+      "F": {
+        "primary_cells": 33,
+        "with_j2": 0,
+        "missing": 33
+      }
+    },
+    "registered_primary_cells": 188,
+    "matches_registered_design": true
+  },
+  "integrity": {
+    "j1_matches_original_cells_jsonl": 188,
+    "j1_differs_from_original_cells_jsonl": [],
+    "primary_cells_missing_in_original": [],
+    "j2_digest_matches_original": 5,
+    "j2_digest_differs_from_original": [],
+    "j2_invalid_records": [],
+    "j2_cluster_or_variant_differs": [],
+    "j2_records_for_unknown_cells": [],
+    "j2_control_cells_scored": 0,
+    "ok": true
+  },
+  "reproduction_check_judge_1": {
+    "committed_file": "harness/real_run/results_human_pass/unsealed_2026-10-09/holdout_results_human.rerun_0dbe6e9.json",
+    "compared_quantities": 25,
+    "max_abs_diff": 0.0,
+    "tolerance": 1e-09,
+    "reproduces_committed_judge_1_results": true,
+    "diffs": {
+      "coverage_pct.A": 0.0,
+      "coverage_ci_lo.A": 0.0,
+      "coverage_ci_hi.A": 0.0,
+      "coverage_pct.B": 0.0,
+      "coverage_ci_lo.B": 0.0,
+      "coverage_ci_hi.B": 0.0,
+      "coverage_pct.C": 0.0,
+      "coverage_ci_lo.C": 0.0,
+      "coverage_ci_hi.C": 0.0,
+      "coverage_pct.D": 0.0,
+      "coverage_ci_lo.D": 0.0,
+      "coverage_ci_hi.D": 0.0,
+      "coverage_pct.E": 0.0,
+      "coverage_ci_lo.E": 0.0,
+      "coverage_ci_hi.E": 0.0,
+      "coverage_pct.F": 0.0,
+      "coverage_ci_lo.F": 0.0,
+      "coverage_ci_hi.F": 0.0,
+      "A->B.delta": 0.0,
+      "A->B.ci_lo": 0.0,
+      "A->B.ci_hi": 0.0,
+      "A->B.p_holm": 0.0,
+      "pi_hat": 0.0,
+      "pi_hat_ci_lo": 0.0,
+      "pi_hat_ci_hi": 0.0
+    },
+    "note": "this check is only meaningful at the registered B = 10,000 and seed; at any other setting the interval comparisons are expected to differ"
+  },
+  "agreement": {
+    "status": "computed_on_partial_data",
+    "population": "primary cells with a valid J2 (controls excluded)",
+    "complete": false,
+    "n_cells": 5,
+    "n_clusters": 5,
+    "qwk_j1_j2": {
+      "estimate": -0.25,
+      "n_cells": 5,
+      "n_clusters": 5,
+      "ci_lo": null,
+      "ci_hi": null,
+      "ci_reason": "fewer than 10 CQ clusters (5): BCa interval withheld; point estimate is descriptive only"
+    },
+    "exact_agreement": {
+      "estimate": 0.4,
+      "n_cells": 5,
+      "n_clusters": 5,
+      "ci_lo": null,
+      "ci_hi": null,
+      "ci_reason": "fewer than 10 CQ clusters (5): BCa interval withheld; point estimate is descriptive only"
+    },
+    "binary_kappa_j_ge_2": {
+      "estimate": 0.0,
+      "n_cells": 5,
+      "n_clusters": 5,
+      "ci_lo": null,
+      "ci_hi": null,
+      "ci_reason": "fewer than 10 CQ clusters (5): BCa interval withheld; point estimate is descriptive only"
+    },
+    "mean_signed_diff_j2_minus_j1": {
+      "estimate": 0.4,
+      "n_cells": 5,
+      "n_clusters": 5,
+      "ci_lo": null,
+      "ci_hi": null,
+      "ci_reason": "fewer than 10 CQ clusters (5): BCa interval withheld; point estimate is descriptive only"
+    },
+    "mean_abs_diff": {
+      "estimate": 0.8,
+      "n_cells": 5,
+      "n_clusters": 5,
+      "ci_lo": null,
+      "ci_hi": null,
+      "ci_reason": "fewer than 10 CQ clusters (5): BCa interval withheld; point estimate is descriptive only"
+    },
+    "confusion_counts": {
+      "rows": "J1 (judge 1)",
+      "cols": "J2 (judge 2)",
+      "levels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "counts": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    "binary_table_j_ge_2": {
+      "both_ge2": 4,
+      "j1_ge2_only": 0,
+      "j2_ge2_only": 1,
+      "both_lt2": 0
+    },
+    "by_variant": {
+      "A": {
+        "n_cells": 5,
+        "exact_agreement": 0.4,
+        "qwk_point_estimate_only": -0.25,
+        "note": "descriptive, no interval"
+      }
+    }
+  },
+  "sensitivity": {
+    "coverage_pct": {
+      "A": {
+        "n_cells": 23,
+        "n_clusters": 23,
+        "J1_judge_only_pct": {
+          "estimate": 57.971014492753625,
+          "n_cells": 23,
+          "n_clusters": 23,
+          "ci_lo": 39.130434782608695,
+          "ci_hi": 75.36231884057972,
+          "ci_method": "CQ-cluster BCa (analyze_holdout.cluster_bootstrap_stat)",
+          "B": 10000,
+          "seed": 20260913,
+          "bca_ties": "midrank"
+        },
+        "J1_L1star_pct": {
+          "estimate": 55.072463768115945,
+          "n_cells": 23,
+          "n_clusters": 23,
+          "ci_lo": 37.094513491457576,
+          "ci_hi": 72.46376811594203,
+          "ci_method": "CQ-cluster BCa (analyze_holdout.cluster_bootstrap_stat)",
+          "B": 10000,
+          "seed": 20260913,
+          "bca_ties": "midrank"
+        },
+        "judge_2": {
+          "status": "not_computable",
+          "reason": "A: 18 of 23 cells lack a valid J2; coverage of a variant needs every one of its cells scored by judge 2"
+        }
+      },
+      "B": {
+        "n_cells": 33,
+        "n_clusters": 33,
+        "J1_judge_only_pct": {
+          "estimate": 68.68686868686868,
+          "n_cells": 33,
+          "n_clusters": 33,
+          "ci_lo": 54.54545454545454,
+          "ci_hi": 79.7979797979798,
+          "ci_method": "CQ-cluster BCa (analyze_holdout.cluster_bootstrap_stat)",
+          "B": 10000,
+          "seed": 20260913,
+          "bca_ties": "midrank"
+        },
+        "J1_L1star_pct": {
+          "estimate": 64.64646464646465,
+          "n_cells": 33,
+          "n_clusters": 33,
+          "ci_lo": 50.505050505050505,
+          "ci_hi": 76.76767676767676,
+          "ci_method": "CQ-cluster BCa (analyze_holdout.cluster_bootstrap_stat)",
+          "B": 10000,
+          "seed": 20260913,
+          "bca_ties": "midrank"
+        },
+        "judge_2": {
+          "status": "not_computable",
+          "reason": "B: 33 of 33 cells lack a valid J2; coverage of a variant needs every one of its cells scored by judge 2"
+        }
+      },
+      "C": {
+        "n_cells": 33,
+        "n_clusters": 33,
+        "J1_judge_only_pct": {
+          "estimate": 68.68686868686868,
+          "n_cells": 33,
+          "n_clusters": 33,
+          "ci_lo": 52.52525252525253,
+          "ci_hi": 80.8080808080808,
+          "ci_method": "CQ-cluster BCa (analyze_holdout.cluster_bootstrap_stat)",
+          "B": 10000,
+          "seed": 20260913,
+          "bca_ties": "midrank"
+        },
+        "J1_L1star_pct": {
+          "estimate": 64.64646464646465,
+          "n_cells": 33,
+          "n_clusters": 33,
+          "ci_lo": 48.484848484848484,
+          "ci_hi": 77.77777777777779,
+          "ci_method": "CQ-cluster BCa (analyze_holdout.cluster_bootstrap_stat)",
+          "B": 10000,
+          "seed": 20260913,
+          "bca_ties": "midrank"
+        },
+        "judge_2": {
+          "status": "not_computable",
+          "reason": "C: 33 of 33 cells lack a valid J2; coverage of a variant needs every one of its cells scored by judge 2"
+        }
+      },
+      "D": {
+        "n_cells": 33,
+        "n_clusters": 33,
+        "J1_judge_only_pct": {
+          "estimate": 59.59595959595959,
+          "n_cells": 33,
+          "n_clusters": 33,
+          "ci_lo": 43.43434343434344,
+          "ci_hi": 73.73737373737373,
+          "ci_method": "CQ-cluster BCa (analyze_holdout.cluster_bootstrap_stat)",
+          "B": 10000,
+          "seed": 20260913,
+          "bca_ties": "midrank"
+        },
+        "J1_L1star_pct": {
+          "estimate": 56.56565656565656,
+          "n_cells": 33,
+          "n_clusters": 33,
+          "ci_lo": 41.41414141414141,
+          "ci_hi": 71.71717171717171,
+          "ci_method": "CQ-cluster BCa (analyze_holdout.cluster_bootstrap_stat)",
+          "B": 10000,
+          "seed": 20260913,
+          "bca_ties": "midrank"
+        },
+        "judge_2": {
+          "status": "not_computable",
+          "reason": "D: 33 of 33 cells lack a valid J2; coverage of a variant needs every one of its cells scored by judge 2"
+        }
+      },
+      "E": {
+        "n_cells": 33,
+        "n_clusters": 33,
+        "J1_judge_only_pct": {
+          "estimate": 66.66666666666666,
+          "n_cells": 33,
+          "n_clusters": 33,
+          "ci_lo": 50.505050505050505,
+          "ci_hi": 79.7979797979798,
+          "ci_method": "CQ-cluster BCa (analyze_holdout.cluster_bootstrap_stat)",
+          "B": 10000,
+          "seed": 20260913,
+          "bca_ties": "midrank"
+        },
+        "J1_L1star_pct": {
+          "estimate": 63.63636363636363,
+          "n_cells": 33,
+          "n_clusters": 33,
+          "ci_lo": 47.474747474747474,
+          "ci_hi": 77.77777777777779,
+          "ci_method": "CQ-cluster BCa (analyze_holdout.cluster_bootstrap_stat)",
+          "B": 10000,
+          "seed": 20260913,
+          "bca_ties": "midrank"
+        },
+        "judge_2": {
+          "status": "not_computable",
+          "reason": "E: 33 of 33 cells lack a valid J2; coverage of a variant needs every one of its cells scored by judge 2"
+        }
+      },
+      "F": {
+        "n_cells": 33,
+        "n_clusters": 33,
+        "J1_judge_only_pct": {
+          "estimate": 68.68686868686868,
+          "n_cells": 33,
+          "n_clusters": 33,
+          "ci_lo": 53.535353535353536,
+          "ci_hi": 80.8080808080808,
+          "ci_method": "CQ-cluster BCa (analyze_holdout.cluster_bootstrap_stat)",
+          "B": 10000,
+          "seed": 20260913,
+          "bca_ties": "midrank"
+        },
+        "J1_L1star_pct": {
+          "estimate": 65.65656565656566,
+          "n_cells": 33,
+          "n_clusters": 33,
+          "ci_lo": 50.505050505050505,
+          "ci_hi": 78.78787878787878,
+          "ci_method": "CQ-cluster BCa (analyze_holdout.cluster_bootstrap_stat)",
+          "B": 10000,
+          "seed": 20260913,
+          "bca_ties": "midrank"
+        },
+        "judge_2": {
+          "status": "not_computable",
+          "reason": "F: 33 of 33 cells lack a valid J2; coverage of a variant needs every one of its cells scored by judge 2"
+        }
+      }
+    },
+    "contrasts_A_to_B": {
+      "status": "computed_judge_1_only",
+      "judge_only": {
+        "judge_1": {
+          "status": "computed",
+          "delta": 0.5652173913043478,
+          "ci_lo": 0.043478260869565216,
+          "ci_hi": 1.1304347826086956,
+          "n_clusters": 23,
+          "n_questions": 23,
+          "decision": "resolved",
+          "equivalence_interval_90": [
+            0.13043478260869565,
+            1.0434782608695652
+          ],
+          "wilcoxon_p": 0.04412135564363152,
+          "wilcoxon_sign": 1,
+          "p_holm_family_m2": 0.08824271128726303
+        },
+        "judge_2": {
+          "status": "not_computable",
+          "reason": "A->B needs every A and B primary cell scored by judge 2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2)"
+        },
+        "paired_difference": {
+          "status": "not_computable",
+          "reason": "A->B needs every A and B primary cell scored by judge 2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2)"
+        }
+      },
+      "L1star_AH": {
+        "judge_1": {
+          "status": "computed",
+          "delta": 0.4782608695652174,
+          "ci_lo": -0.08695652173913043,
+          "ci_hi": 1.0434782608695652,
+          "n_clusters": 23,
+          "n_questions": 23,
+          "decision": "unresolved",
+          "equivalence_interval_90": [
+            0.0,
+            0.9565217391304348
+          ],
+          "wilcoxon_p": 0.11378354445349274,
+          "wilcoxon_sign": 1,
+          "p_holm_family_m2": 0.2275670889069855
+        },
+        "judge_2": {
+          "status": "not_computable",
+          "reason": "A->B needs every A and B primary cell scored by judge 2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2)"
+        },
+        "paired_difference": {
+          "status": "not_computable",
+          "reason": "A->B needs every A and B primary cell scored by judge 2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2)"
+        }
+      }
+    },
+    "pi_hat_silent_over_credit": {
+      "judge_1": {
+        "estimand": "pi = Pr[J >= 2 AND A == 0] over primary cells (cell level)",
+        "events": 14,
+        "n_cells": 188,
+        "pi_hat": 0.07446808510638298,
+        "n_clusters": 33,
+        "clusters_with_event": 4,
+        "pi_hat_is_a_lower_bound": true,
+        "ci_lo": 0.021505376344086023,
+        "ci_hi": 0.18518518518518517,
+        "ci_method": "BCa cluster bootstrap",
+        "bca_ties": "midrank",
+        "resamples": 10000,
+        "seed": 20260913,
+        "strata_key": null,
+        "strata_sizes": {
+          "all": 33
+        },
+        "g1_cluster_level_events": 4,
+        "g1_cluster_level_n": 33
+      },
+      "status": "computed_judge_1_only",
+      "judge_2": {
+        "status": "not_computable",
+        "reason": "pi-hat is a rate over all primary cells; 183 of 188 lack a valid J2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2, C: 33 of 33 cells lack a valid J2, D: 33 of 33 cells lack a valid J2, E: 33 of 33 cells lack a valid J2, F: 33 of 33 cells lack a valid J2)"
+      },
+      "paired_difference_j2_minus_j1": {
+        "status": "not_computable",
+        "reason": "pi-hat is a rate over all primary cells; 183 of 188 lack a valid J2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2, C: 33 of 33 cells lack a valid J2, D: 33 of 33 cells lack a valid J2, E: 33 of 33 cells lack a valid J2, F: 33 of 33 cells lack a valid J2)"
+      }
+    },
+    "variant_ranking": {
+      "status": "computed_judge_1_only",
+      "caveat": "descriptive; PREREG sec.4: differences below 0.53 L1 are unresolved and fine rankings (D, E, F) are not to be tested or ordered as conclusions; variants with exactly equal coverage are listed alphabetically, which is not a ranking",
+      "judge_only": {
+        "coverage_pct_judge_1": {
+          "A": 57.971014492753625,
+          "B": 68.68686868686868,
+          "C": 68.68686868686868,
+          "D": 59.59595959595959,
+          "E": 66.66666666666666,
+          "F": 68.68686868686868
+        },
+        "order_best_to_worst_judge_1": [
+          "B",
+          "C",
+          "F",
+          "E",
+          "D",
+          "A"
+        ],
+        "judge_2": {
+          "status": "not_computable",
+          "reason": "the ranking comparison needs all six variants fully scored by judge 2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2, C: 33 of 33 cells lack a valid J2, D: 33 of 33 cells lack a valid J2, E: 33 of 33 cells lack a valid J2, F: 33 of 33 cells lack a valid J2)"
+        }
+      },
+      "L1star_AH": {
+        "coverage_pct_judge_1": {
+          "A": 55.072463768115945,
+          "B": 64.64646464646465,
+          "C": 64.64646464646465,
+          "D": 56.56565656565656,
+          "E": 63.63636363636363,
+          "F": 65.65656565656566
+        },
+        "order_best_to_worst_judge_1": [
+          "F",
+          "B",
+          "C",
+          "E",
+          "D",
+          "A"
+        ],
+        "judge_2": {
+          "status": "not_computable",
+          "reason": "the ranking comparison needs all six variants fully scored by judge 2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2, C: 33 of 33 cells lack a valid J2, D: 33 of 33 cells lack a valid J2, E: 33 of 33 cells lack a valid J2, F: 33 of 33 cells lack a valid J2)"
+        }
+      }
+    }
+  },
+  "G6": {
+    "registered_reading": {
+      "status": "not_computable",
+      "value": {
+        "a_to_b_consistent": false,
+        "non_qwen_direction_agrees": null,
+        "fragility": {
+          "k": 0,
+          "n_cq": 23,
+          "initial_delta": 0.4782608695652174,
+          "initial_ci_lo": -0.08695652173913043,
+          "moved_cq_ids": [],
+          "criterion": "A->B BCa CI includes zero"
+        }
+      },
+      "threshold": {
+        "fragility_K": 6,
+        "a_to_b": "consistent",
+        "non_qwen_direction": "agrees"
+      },
+      "reason": "non-Qwen direction not computable: A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2. G6's non-Qwen direction component needs the judge-2 score of every A and every B primary cell (analyze_holdout._direction reads variants A and B only); judge 1 alone gives A->B consistency and fragility K, shown in 'value'"
+    },
+    "mirrored_reading_descriptive": {
+      "status": "not_computable",
+      "reason": "needs judge 2 on every A and B primary cell"
+    },
+    "judge_2_fills_the_non_qwen_slot": true
+  },
+  "not_computable_sections": [
+    {
+      "section": "sensitivity.coverage_pct.A.judge_2",
+      "reason": "A: 18 of 23 cells lack a valid J2; coverage of a variant needs every one of its cells scored by judge 2"
+    },
+    {
+      "section": "sensitivity.coverage_pct.B.judge_2",
+      "reason": "B: 33 of 33 cells lack a valid J2; coverage of a variant needs every one of its cells scored by judge 2"
+    },
+    {
+      "section": "sensitivity.coverage_pct.C.judge_2",
+      "reason": "C: 33 of 33 cells lack a valid J2; coverage of a variant needs every one of its cells scored by judge 2"
+    },
+    {
+      "section": "sensitivity.coverage_pct.D.judge_2",
+      "reason": "D: 33 of 33 cells lack a valid J2; coverage of a variant needs every one of its cells scored by judge 2"
+    },
+    {
+      "section": "sensitivity.coverage_pct.E.judge_2",
+      "reason": "E: 33 of 33 cells lack a valid J2; coverage of a variant needs every one of its cells scored by judge 2"
+    },
+    {
+      "section": "sensitivity.coverage_pct.F.judge_2",
+      "reason": "F: 33 of 33 cells lack a valid J2; coverage of a variant needs every one of its cells scored by judge 2"
+    },
+    {
+      "section": "sensitivity.contrasts_A_to_B.judge_only.judge_2",
+      "reason": "A->B needs every A and B primary cell scored by judge 2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2)"
+    },
+    {
+      "section": "sensitivity.contrasts_A_to_B.judge_only.paired_difference",
+      "reason": "A->B needs every A and B primary cell scored by judge 2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2)"
+    },
+    {
+      "section": "sensitivity.contrasts_A_to_B.L1star_AH.judge_2",
+      "reason": "A->B needs every A and B primary cell scored by judge 2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2)"
+    },
+    {
+      "section": "sensitivity.contrasts_A_to_B.L1star_AH.paired_difference",
+      "reason": "A->B needs every A and B primary cell scored by judge 2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2)"
+    },
+    {
+      "section": "sensitivity.pi_hat_silent_over_credit.judge_2",
+      "reason": "pi-hat is a rate over all primary cells; 183 of 188 lack a valid J2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2, C: 33 of 33 cells lack a valid J2, D: 33 of 33 cells lack a valid J2, E: 33 of 33 cells lack a valid J2, F: 33 of 33 cells lack a valid J2)"
+    },
+    {
+      "section": "sensitivity.pi_hat_silent_over_credit.paired_difference_j2_minus_j1",
+      "reason": "pi-hat is a rate over all primary cells; 183 of 188 lack a valid J2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2, C: 33 of 33 cells lack a valid J2, D: 33 of 33 cells lack a valid J2, E: 33 of 33 cells lack a valid J2, F: 33 of 33 cells lack a valid J2)"
+    },
+    {
+      "section": "sensitivity.variant_ranking.judge_only.judge_2",
+      "reason": "the ranking comparison needs all six variants fully scored by judge 2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2, C: 33 of 33 cells lack a valid J2, D: 33 of 33 cells lack a valid J2, E: 33 of 33 cells lack a valid J2, F: 33 of 33 cells lack a valid J2)"
+    },
+    {
+      "section": "sensitivity.variant_ranking.L1star_AH.judge_2",
+      "reason": "the ranking comparison needs all six variants fully scored by judge 2 (A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2, C: 33 of 33 cells lack a valid J2, D: 33 of 33 cells lack a valid J2, E: 33 of 33 cells lack a valid J2, F: 33 of 33 cells lack a valid J2)"
+    },
+    {
+      "section": "G6.registered_reading",
+      "reason": "non-Qwen direction not computable: A: 18 of 23 cells lack a valid J2, B: 33 of 33 cells lack a valid J2. G6's non-Qwen direction component needs the judge-2 score of every A and every B primary cell (analyze_holdout._direction reads variants A and B only); judge 1 alone gives A->B consistency and fragility K, shown in 'value'"
+    },
+    {
+      "section": "G6.mirrored_reading_descriptive",
+      "reason": "needs judge 2 on every A and B primary cell"
+    }
+  ],
+  "input_provenance": {
+    "per_cell": {
+      "path": "harness/real_run/results_human_pass/unsealed_2026-10-09/per_cell.rerun_0dbe6e9.json",
+      "sha256": "5aebf70b6af9b4468f3c066ba84215699316ae5342d33b5c61d6cb4bd90a9248"
+    },
+    "original_cells_jsonl": {
+      "path": "harness/real_run/cells.jsonl",
+      "sha256": "bfd5b3c83981c8a6ec970b93f460bab7409daf047a2e048bfaa90b5adfd0d4af"
+    },
+    "j2_cells_jsonl": {
+      "path": "harness/real_run/second_judge/gpt-5.6-luna/cells.jsonl",
+      "sha256": "926902324c55cfbaf83829acfd67546d0ac7f3cfe0674cab7da1069810d7d7a6"
+    },
+    "j1_results_for_reproduction": {
+      "path": "harness/real_run/results_human_pass/unsealed_2026-10-09/holdout_results_human.rerun_0dbe6e9.json",
+      "sha256": "ee2650c7cfa1e7655305def2c7437ee9972cf7f7e5813460b4c81c4a84d7da49"
+    },
+    "analyze_holdout_py": {
+      "path": "harness/analyze_holdout.py",
+      "sha256": "3278d71c70829889838aa8f61c4f5b0217b9ef3e921976a8ea5fc0c0fd122e10"
+    },
+    "analyze_second_judge_py": {
+      "path": "harness/real_run/second_judge/gpt-5.6-luna/analyze_second_judge.py",
+      "sha256": "371d5348d9593723ce631a34348c092be514200a98f1cb4471dcfbd51b6772da"
+    },
+    "run_manifest": {
+      "path": "harness/real_run/second_judge/gpt-5.6-luna/run_manifest.json",
+      "sha256": "c604123cc15eae02830eb3690ebb3ccac0833dfeb2da4a28f753eb8ab0276ec5",
+      "model_requested": "gpt-5.6-luna",
+      "model_id_reported_by_proxy": "gpt-5.6-luna"
+    },
+    "environment": {
+      "python": "3.12.3",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1"
+    }
+  }
+}

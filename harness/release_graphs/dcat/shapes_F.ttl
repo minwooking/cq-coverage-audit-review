@@ -1,0 +1,704 @@
+@prefix ct: <http://example.org/chunktograph#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ct:Class_artifactShape a sh:NodeShape ;
+    sh:property [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_link ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_can-be ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_parent-class ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_expect-adopt ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_check ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_aspect-orthogonal ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_will-have ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_describe ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_indicate ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_need-change-remain-conformance ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_distinguishe ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_provide ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_be ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_allow-describe ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_axis-order ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_annotate ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_strictly-related ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_recommend ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_assign ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_contain-total-information ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_use ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_ontology ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_serialization ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_represent ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_dcat-accessurl-correspond ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_correspond ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_target ],
+        [ sh:datatype xsd:decimal ;
+            sh:minCount 0 ;
+            sh:path ct:weightStrength ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_give ],
+        [ sh:datatype xsd:integer ;
+            sh:minCount 0 ;
+            sh:path ct:updateCount ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_have ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_type ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_need-upgrade ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_instance ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_evolve-time ] ;
+    sh:targetClass ct:Class_artifact .
+
+ct:Class_classShape a sh:NodeShape ;
+    sh:property [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_prescribe ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_maintain-expectation-dcat-2 ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_assumption ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_provide ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_design-facilitate ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_originally-develop ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_allow ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_characterize ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_dataset-series-class-citizen-datum-catalog ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_has-been-used-in ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_enable-publisher-describe-dataset-datum-service-catalog ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_facilitate ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_denote ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_kind ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_link-dataset-series ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_specify-resource-status ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_reuse ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_applicable ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_relax ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_super-class ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_optional ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_refer ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_limit ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_can-be-used-for ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_extend ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_possible ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_member-item ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_add ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_member ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_supersede ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_is-used-from ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_is-used-for ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_drop ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_distinguishe ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_represent ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_use ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_capture ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_increase ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_support ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_safely-ignore ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_move ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_allow-resource ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_relate ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_ontology ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_publish-separately ],
+        [ sh:datatype xsd:integer ;
+            sh:minCount 0 ;
+            sh:path ct:updateCount ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_base ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_domain ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_have ],
+        [ sh:datatype xsd:decimal ;
+            sh:minCount 0 ;
+            sh:path ct:weightStrength ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_sub-class ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_explain ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_concern ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_be ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_maintain ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_use-property ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_appear ] ;
+    sh:targetClass ct:Class_class .
+
+ct:Class_conceptShape a sh:NodeShape ;
+    sh:property [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_adopt ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_show ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_associate ],
+        [ sh:datatype xsd:decimal ;
+            sh:minCount 0 ;
+            sh:path ct:weightStrength ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_involve ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_require ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_express ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_determine ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_limit ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_currently-limit ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_imply-default-crs ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_can-be-used-together-with ],
+        [ sh:datatype xsd:integer ;
+            sh:minCount 0 ;
+            sh:path ct:updateCount ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_be ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_link ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_restrict ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_can-be-used-within ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_allow-description ] ;
+    sh:targetClass ct:Class_concept .
+
+ct:Class_exampleShape a sh:NodeShape ;
+    sh:property [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_result ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_return ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_give ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_represent ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_download ],
+        [ sh:datatype xsd:integer ;
+            sh:minCount 0 ;
+            sh:path ct:updateCount ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_editor ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_apply-measure ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_describe-quality ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_is-about ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_use ],
+        [ sh:datatype xsd:decimal ;
+            sh:minCount 0 ;
+            sh:path ct:weightStrength ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_be ] ;
+    sh:targetClass ct:Class_example .
+
+ct:Class_policyShape a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:integer ;
+            sh:minCount 0 ;
+            sh:path ct:updateCount ],
+        [ sh:datatype xsd:decimal ;
+            sh:minCount 0 ;
+            sh:path ct:weightStrength ] ;
+    sh:targetClass ct:Class_policy .
+
+ct:Class_processShape a sh:NodeShape ;
+    sh:property [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_serve ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_occur ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_intend-prevent ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_undermine ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_describe ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_employ ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_require ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_depend ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_necessarily-lead ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_is-made-for ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_consider ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_generally-discourage ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_substantial ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_available ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_coexist ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_cause ],
+        [ sh:datatype xsd:integer ;
+            sh:minCount 0 ;
+            sh:path ct:updateCount ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_convert-number ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_correspond ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_result ],
+        [ sh:datatype xsd:decimal ;
+            sh:minCount 0 ;
+            sh:path ct:weightStrength ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_limit ] ;
+    sh:targetClass ct:Class_process .
+
+ct:Class_propertyShape a sh:NodeShape ;
+    sh:property [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_use ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_have ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_relax ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_provide-information ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_can-be-used-when ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_represent ],
+        [ sh:datatype xsd:integer ;
+            sh:minCount 0 ;
+            sh:path ct:updateCount ],
+        [ sh:datatype xsd:decimal ;
+            sh:minCount 0 ;
+            sh:path ct:weightStrength ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_refer ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_prefer ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_range ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_specific ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_indicate ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_typically-publish ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_take ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_express-statement-concern ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_correspond ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_provide ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_sub-property ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_give ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_be ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_follow ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_avoid ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_domain ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_proxy ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_will-be ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_can ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_typically ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_is-used-when ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_add ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_associate ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_is-used-to ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_match ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_possibility-specify ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_acquire ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_describe ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_show ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_specify ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_reflect ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_express ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_link ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_easily-handle ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_should-be-used-for ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_equivalent ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_may-have ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_allow-check ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_identifie ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_tighten ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_different-year ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_entail ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_usually-encode ] ;
+    sh:targetClass ct:Class_property .
+
+ct:Class_relationShape a sh:NodeShape ;
+    sh:property [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_remove ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_explicitly-mean ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_fully-informationally-equivalent ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_equivalent ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_subproperty ],
+        [ sh:datatype xsd:decimal ;
+            sh:minCount 0 ;
+            sh:path ct:weightStrength ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_imply ],
+        [ sh:datatype xsd:integer ;
+            sh:minCount 0 ;
+            sh:path ct:updateCount ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_provide ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_range ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_indicate ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_come ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_duplicate ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_be ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:path ct:p_semantically-broad ] ;
+    sh:targetClass ct:Class_relation .
+
+ct:Class_serviceShape a sh:NodeShape ;
+    sh:property [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_source-datum-configure ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_tie ],
+        [ sh:datatype xsd:decimal ;
+            sh:minCount 0 ;
+            sh:path ct:weightStrength ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_allow ],
+        [ sh:datatype xsd:integer ;
+            sh:minCount 0 ;
+            sh:path ct:updateCount ],
+        [ sh:minCount 0 ;
+            sh:nodeKind sh:IRI ;
+            sh:path ct:p_provide ] ;
+    sh:targetClass ct:Class_service .
+
+ct:Class_vocabularyShape a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:integer ;
+            sh:minCount 0 ;
+            sh:path ct:updateCount ],
+        [ sh:datatype xsd:decimal ;
+            sh:minCount 0 ;
+            sh:path ct:weightStrength ] ;
+    sh:targetClass ct:Class_vocabulary .
+
+owl:Class rdfs:subClassOf rdfs:Class .
+
+owl:DatatypeProperty rdfs:subClassOf rdf:Property .
+

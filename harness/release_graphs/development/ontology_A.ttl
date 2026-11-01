@@ -1,0 +1,778 @@
+@prefix ex: <http://example.org/chunktograph#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Beaujolais a owl:Class ;
+    rdfs:label "Beaujolais" ;
+    rdfs:subClassOf ex:Wine .
+
+ex:ChilledWine a owl:Class ;
+    rdfs:label "Chilled wine" ;
+    rdfs:comment "Should not be a class; property of wine bottle." ;
+    rdfs:subClassOf ex:Wine .
+
+ex:Chimaera a ex:Tool,
+        owl:Class ;
+    rdfs:label "Chimaera" ;
+    ex:hasYear 2000 .
+
+ex:ClassName a owl:DatatypeProperty ;
+    rdfs:label "Class Name" ;
+    rdfs:domain ex:Class ;
+    rdfs:range rdfs:Literal .
+
+ex:CotesChalonnaise a owl:Class ;
+    rdfs:label "Cotes Chalonnaise" ;
+    ex:reflectsRealWorldCategorization ex:RealWorldCategorization ;
+    rdfs:subClassOf ex:RedBurgundy .
+
+ex:CotesdOr a owl:Class ;
+    rdfs:label "Cotes d'Or" ;
+    ex:isArtificialClass ex:ArtificialClass ;
+    ex:reflectsRealWorldCategorization ex:RealWorldCategorization ;
+    rdfs:subClassOf ex:RedBurgundy .
+
+ex:Cycle1 a ex:Cycle,
+        owl:NamedIndividual ;
+    rdfs:label "Cycle" ;
+    ex:hasSubclass ex:ClassA,
+        ex:ClassB .
+
+ex:DARPAAgentMarkupLanguage a ex:Ontology,
+        owl:Class ;
+    rdfs:label "DARPA Agent Markup Language" ;
+    ex:hasYear 2000 ;
+    ex:isDevelopedBy ex:DARPA,
+        ex:WWWConsortium ;
+    ex:isExtendedBy ex:ResourceDescriptionFramework .
+
+ex:DirectSubclass a owl:ObjectProperty ;
+    rdfs:label "Direct subclass" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:Class .
+
+ex:DirectSubclassRelationship a owl:ObjectProperty ;
+    rdfs:label "direct subclass of" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:Class .
+
+ex:Document1 a ex:Document ;
+    rdfs:label "Ontology Development 101: A Guide to Creating Your First Ontology" ;
+    ex:hasAuthor ex:dlm,
+        ex:noy .
+
+ex:ElevatorConfiguration a ex:Application ;
+    rdfs:label "Elevator Configuration" ;
+    ex:uses ex:ElevatorComponent,
+        ex:WineFoodOntology .
+
+ex:Hierarchy a owl:Class ;
+    rdfs:label "Hierarchy" .
+
+ex:Jetliner a owl:Class ;
+    rdfs:label "Jetliner" ;
+    rdfs:subClassOf ex:Aircraft .
+
+ex:JohnsFirstLeftRib a ex:FirstLeftRib,
+        owl:NamedIndividual ;
+    rdfs:label "John's 1st left rib" .
+
+ex:KnowledgeBasedSystem a owl:NamedIndividual ;
+    rdfs:label "Knowledge-based system" .
+
+ex:LevelOfGenerality a owl:Class ;
+    rdfs:label "Level of Generality" .
+
+ex:Margaux a owl:Class ;
+    rdfs:label "Margaux" ;
+    ex:reflectsRealWorldCategorization ex:RealWorldCategorization ;
+    rdfs:subClassOf ex:Bordeaux .
+
+ex:Meat a owl:Class ;
+    rdfs:label "Meat" ;
+    rdfs:subClassOf ex:Food .
+
+ex:MedicalRecordSystem a owl:NamedIndividual ;
+    rdfs:label "Medical-record system" .
+
+ex:Medoc a owl:Class ;
+    rdfs:label "Medoc" ;
+    ex:reflectsRealWorldCategorization ex:RealWorldCategorization ;
+    rdfs:subClassOf ex:Bordeaux .
+
+ex:MultipleInheritance rdfs:label "Multiple inheritance" .
+
+ex:Ontolingua a ex:Tool,
+        owl:Class ;
+    rdfs:label "Ontolingua" ;
+    ex:hasYear 1997 .
+
+ex:OntologyDevelopment a owl:Class ;
+    rdfs:label "Ontology Development" .
+
+ex:PCConfiguration a ex:Application ;
+    rdfs:label "PC Configuration" ;
+    ex:uses ex:PCComponent,
+        ex:WineFoodOntology .
+
+ex:Paulliac a owl:Class ;
+    rdfs:label "Paulliac" ;
+    ex:reflectsRealWorldCategorization ex:RealWorldCategorization ;
+    rdfs:subClassOf ex:Bordeaux .
+
+ex:Port a owl:Class ;
+    rdfs:label "Port" ;
+    rdfs:subClassOf ex:DessertWine,
+        ex:RedWine .
+
+ex:ProductServiceOntology a ex:Ontology ;
+    rdfs:label "Product and Service Ontology" ;
+    ex:isBasedOn ex:UNSPSC .
+
+ex:RedMerlot a owl:Class ;
+    rdfs:label "Red Merlot" ;
+    rdfs:subClassOf ex:RedWine .
+
+ex:RedZinfandel a owl:Class ;
+    rdfs:label "Red zinfandel" ;
+    rdfs:subClassOf ex:RedWine,
+        ex:ZinfandelWine .
+
+ex:Root a owl:Class ;
+    rdfs:label "Root" .
+
+ex:SNOMED a ex:Ontology,
+        owl:Class ;
+    rdfs:label "SNOMED" ;
+    ex:hasYear 2000 ;
+    ex:isDevelopedBy ex:Medicine .
+
+ex:SecondLeftRib a owl:Class ;
+    rdfs:label "2nd left rib" ;
+    rdfs:subClassOf ex:Rib .
+
+ex:Section6 a owl:NamedIndividual ;
+    rdfs:label "Section 6",
+        "refers to" ;
+    ex:refersTo ex:BestWayToAvoidError .
+
+ex:StanfordUniversity a ex:Organization ;
+    rdfs:label "Stanford University" ;
+    ex:hasLocation "Stanford, CA, 94305" .
+
+ex:SubclassRelationship a owl:ObjectProperty ;
+    rdfs:label "subclass of" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:Class ;
+    owl:transitive true .
+
+ex:Synonym a owl:ObjectProperty ;
+    rdfs:label "Synonym" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:Class .
+
+ex:UnifiedMedicalLanguageSystem a ex:Ontology,
+        owl:Class ;
+    rdfs:label "Unified Medical Language System" ;
+    ex:hasYear 1993 ;
+    ex:isDevelopedBy ex:Medicine .
+
+ex:WebSite a owl:Class ;
+    rdfs:label "Web Site" .
+
+ex:WhiteMerlot a owl:Class ;
+    rdfs:label "White Merlot" ;
+    rdfs:subClassOf ex:WhiteWine .
+
+ex:WhiteZinfandel a owl:Class ;
+    rdfs:label "White zinfandel" ;
+    rdfs:subClassOf ex:RoseWine,
+        ex:ZinfandelWine .
+
+ex:WineCellar a owl:Class ;
+    rdfs:label "Wine Cellar" .
+
+ex:WineCellarAnalysis a ex:Application ;
+    rdfs:label "Wine Cellar Analysis" ;
+    ex:uses ex:WineFoodOntology .
+
+ex:WineFoodCombination a owl:Class ;
+    rdfs:label "Wine Food Combination" .
+
+ex:WineLabelFactory a owl:NamedIndividual ;
+    rdfs:label "Wine label factory" .
+
+ex:WineSuggestion a ex:Application ;
+    rdfs:label "Wine Suggestion" ;
+    ex:uses ex:WineFoodOntology .
+
+ex:WineTastingOrderKB a owl:NamedIndividual ;
+    rdfs:label "Wine-tasting order knowledge base" .
+
+ex:avoidsError a owl:ObjectProperty ;
+    rdfs:label "avoids error" ;
+    rdfs:domain ex:SingleWineNotSubclassOfAllWines ;
+    rdfs:range ex:BestWayToAvoidError .
+
+ex:color a owl:ObjectProperty ;
+    rdfs:label "color" ;
+    rdfs:domain ex:RedWine ;
+    rdfs:range ex:Color .
+
+ex:ensuring a owl:ObjectProperty ;
+    rdfs:label "ensuring" ;
+    rdfs:domain ex:ClassHierarchy ;
+    rdfs:range ex:ClassHierarchy .
+
+ex:goesWellWith a owl:ObjectProperty ;
+    rdfs:label "goes well with" ;
+    rdfs:domain ex:PinotNoir ;
+    rdfs:range ex:Seafood .
+
+ex:hasAuthor a owl:ObjectProperty ;
+    rdfs:label "has author" ;
+    rdfs:domain ex:Document ;
+    rdfs:range ex:Person .
+
+ex:hasComponent a owl:ObjectProperty ;
+    rdfs:label "has component" ;
+    rdfs:domain ex:Product,
+        ex:Service ;
+    rdfs:range ex:Component .
+
+ex:hasDefinition a owl:ObjectProperty ;
+    rdfs:label "has definition" ;
+    rdfs:domain ex:Ontology ;
+    rdfs:range rdfs:Literal .
+
+ex:hasEmail a owl:DatatypeProperty ;
+    rdfs:label "has email" ;
+    rdfs:domain ex:Person ;
+    rdfs:range xsd:string .
+
+ex:hasGoal a owl:ObjectProperty ;
+    rdfs:label "has goal" ;
+    rdfs:domain ex:Ontology ;
+    rdfs:range ex:Goal .
+
+ex:hasLocation a owl:DatatypeProperty ;
+    rdfs:label "has location" ;
+    rdfs:domain ex:Organization ;
+    rdfs:range xsd:string .
+
+ex:hasMistake a owl:ObjectProperty ;
+    rdfs:label "has mistake" ;
+    rdfs:domain ex:CommonModelingMistake ;
+    rdfs:range ex:ModelingError .
+
+ex:hasOptimalDirectSubclasses a owl:ObjectProperty ;
+    rdfs:label "has optimal direct subclasses" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:OptimalDirectSubclasses .
+
+ex:hasParent a owl:ObjectProperty ;
+    rdfs:label "has parent" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:Class .
+
+ex:hasParentClass a owl:ObjectProperty ;
+    rdfs:label "has parent class" ;
+    rdfs:domain ex:ClassHierarchy ;
+    rdfs:range ex:ClassHierarchy .
+
+ex:hasPurpose a owl:ObjectProperty ;
+    rdfs:label "has purpose" ;
+    rdfs:domain ex:Ontology ;
+    rdfs:range ex:Purpose .
+
+ex:hasRelation a owl:ObjectProperty ;
+    rdfs:label "has relation" ;
+    rdfs:domain ex:Ontology ;
+    rdfs:range rdfs:Literal .
+
+ex:hasRelationship a owl:ObjectProperty ;
+    rdfs:label "has relationship" ;
+    rdfs:domain ex:SingleWineNotKindOfWines ;
+    rdfs:range ex:KindOfRelationship .
+
+ex:hasSibling a owl:ObjectProperty ;
+    rdfs:label "has sibling" ;
+    rdfs:domain ex:Class,
+        ex:Sibling ;
+    rdfs:range ex:Class,
+        ex:Sibling .
+
+ex:hasStandardizedVocabulary a owl:ObjectProperty ;
+    rdfs:label "has standardized vocabulary" ;
+    rdfs:domain ex:Domain ;
+    rdfs:range ex:Ontology .
+
+ex:hasSubclass a owl:ObjectProperty ;
+    rdfs:label "has subclass" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:Class .
+
+ex:hasTerm a owl:ObjectProperty ;
+    rdfs:label "has term" ;
+    rdfs:domain ex:Ontology ;
+    rdfs:range rdfs:Literal .
+
+ex:hasTooFewDirectSubclasses a owl:ObjectProperty ;
+    rdfs:label "has too few direct subclasses" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:TooFewDirectSubclasses .
+
+ex:hasTooManyDirectSubclasses a owl:ObjectProperty ;
+    rdfs:label "has too many direct subclasses" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:TooManyDirectSubclasses .
+
+ex:hasURL a owl:DatatypeProperty ;
+    rdfs:label "has URL" ;
+    rdfs:domain ex:Organization ;
+    rdfs:range xsd:string .
+
+ex:hasYear a owl:DatatypeProperty ;
+    rdfs:label "has year" ;
+    rdfs:domain ex:Publication ;
+    rdfs:range xsd:gYear .
+
+ex:indicatesIncompleteOntology a owl:ObjectProperty ;
+    rdfs:label "indicates incomplete ontology" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:IncompleteOntology .
+
+ex:indicatesModelingProblem a owl:ObjectProperty ;
+    rdfs:label "indicates modeling problem" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:ModelingProblem .
+
+ex:isArtificialClass a owl:ObjectProperty ;
+    rdfs:label "is artificial class" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:ArtificialClass .
+
+ex:isAtSameLevel a owl:ObjectProperty ;
+    rdfs:label "is at same level" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:Class .
+
+ex:isBasedOn a owl:ObjectProperty ;
+    rdfs:label "is based on" ;
+    rdfs:domain ex:Ontology ;
+    rdfs:range ex:Ontology .
+
+ex:isDevelopedBy a owl:ObjectProperty ;
+    rdfs:label "is developed by" ;
+    rdfs:domain ex:Ontology ;
+    rdfs:range ex:Organization .
+
+ex:isDevelopedUsing a owl:ObjectProperty ;
+    rdfs:label "is developed using" ;
+    rdfs:domain ex:Ontology ;
+    rdfs:range ex:Tool .
+
+ex:isEquivalentTo a owl:ObjectProperty ;
+    rdfs:label "is equivalent to" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:Class .
+
+ex:isExtendedBy a owl:ObjectProperty ;
+    rdfs:label "is extended by" ;
+    rdfs:domain ex:Ontology ;
+    rdfs:range ex:Ontology .
+
+ex:isRoot a owl:DatatypeProperty ;
+    rdfs:label "is root" ;
+    rdfs:domain ex:Class ;
+    rdfs:range xsd:boolean .
+
+ex:isUsedBy a owl:ObjectProperty ;
+    rdfs:label "is used by" ;
+    rdfs:domain ex:Ontology ;
+    rdfs:range ex:DomainExpert,
+        ex:SoftwareAgent .
+
+ex:isUsedFor a owl:ObjectProperty ;
+    rdfs:label "is used for" ;
+    rdfs:domain ex:Ontology ;
+    rdfs:range ex:Purpose .
+
+ex:lateralPosition a owl:DatatypeProperty ;
+    rdfs:label "lateral position" ;
+    rdfs:domain ex:Rib ;
+    rdfs:range xsd:string .
+
+ex:order a owl:DatatypeProperty ;
+    rdfs:label "order" ;
+    rdfs:domain ex:Rib ;
+    rdfs:range xsd:integer .
+
+ex:reflectsRealWorldCategorization a owl:ObjectProperty ;
+    rdfs:label "reflects real world categorization" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:RealWorldCategorization .
+
+ex:representsMajorDivision a owl:DatatypeProperty ;
+    rdfs:label "represents major division" ;
+    rdfs:domain ex:Class ;
+    rdfs:range xsd:boolean .
+
+ex:requiresIntermediateCategory a owl:ObjectProperty ;
+    rdfs:label "requires intermediate category" ;
+    rdfs:domain ex:Class ;
+    rdfs:range ex:IntermediateCategory .
+
+ex:sugar a owl:ObjectProperty ;
+    rdfs:label "sugar" ;
+    rdfs:domain ex:DessertWine ;
+    rdfs:range ex:SWEET .
+
+ex:tanninLevel a owl:ObjectProperty ;
+    rdfs:label "tannin level" ;
+    rdfs:domain ex:RedWine ;
+    rdfs:range ex:TanninLevel .
+
+ex:typesettingRule a owl:Class ;
+    rdfs:label "Typesetting rule: no single bullet point" ;
+    rdfs:subClassOf ex:Rule .
+
+ex:uses a owl:ObjectProperty ;
+    rdfs:label "uses" ;
+    rdfs:domain ex:Application ;
+    rdfs:range ex:Ontology .
+
+ex:Aircraft a owl:Class ;
+    rdfs:label "Aircraft" .
+
+ex:AnalyzeDomainKnowledge a ex:Goal ;
+    rdfs:label "Analyze domain knowledge" .
+
+ex:CLASSIC a ex:KnowledgeRepresentationSystem,
+        owl:Class ;
+    rdfs:label "CLASSIC" ;
+    ex:hasYear 1991 .
+
+ex:Chardonnay a owl:Class ;
+    rdfs:label "Chardonnay" ;
+    ex:DirectSubclassRelationship ex:WhiteWine ;
+    ex:SubclassRelationship ex:WhiteWine ;
+    ex:hasParent ex:Wine ;
+    rdfs:subClassOf ex:WhiteWine,
+        ex:Wine .
+
+ex:CommonModelingMistake a owl:Class ;
+    rdfs:label "A common modeling mistake is to include both a singular and a plural version of the same concept in the hierarchy making the former a subclass of the latter" .
+
+ex:Component a owl:Class ;
+    rdfs:label "Component" .
+
+ex:Cycle a owl:Class ;
+    rdfs:label "Cycle" .
+
+ex:DARPA a ex:Organization ;
+    rdfs:label "Defense Advanced Research Projects Agency" .
+
+ex:Domain a owl:Class ;
+    rdfs:label "Domain" .
+
+ex:DomainExpert a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:label "Domain Expert",
+        "Domain expert" .
+
+ex:DunBradstreet a ex:Organization ;
+    rdfs:label "Dun & Bradstreet" .
+
+ex:ElevatorComponent a owl:Class ;
+    rdfs:label "Elevator Component" .
+
+ex:EnableReuse a ex:Goal ;
+    rdfs:label "Enable reuse of domain knowledge" .
+
+ex:FirstLeftRib a owl:Class ;
+    rdfs:label "1st left rib" ;
+    rdfs:subClassOf ex:Rib .
+
+ex:Food a owl:Class ;
+    rdfs:label "Food" .
+
+ex:KindOfRelationship a owl:Class ;
+    rdfs:label "The hierarchy represents the 'kind-of' relationship" .
+
+ex:KnowledgeRepresentationSystem a owl:Class ;
+    rdfs:label "Knowledge Representation System",
+        "Knowledge representation system" .
+
+ex:MakeAssumptionsExplicit a ex:Goal ;
+    rdfs:label "Make domain assumptions explicit" .
+
+ex:ModelingError a owl:Class ;
+    rdfs:label "It is wrong to define a class Wines and a class Wine as a subclass of Wines" .
+
+ex:OptimalDirectSubclasses a owl:Class ;
+    rdfs:label "Optimal number of direct subclasses" ;
+    rdfs:subClassOf ex:Class .
+
+ex:PCComponent a owl:Class ;
+    rdfs:label "PC Component" .
+
+ex:PinotNoir a owl:Class ;
+    rdfs:label "Pinot Noir" ;
+    ex:goesWellWith ex:Seafood ;
+    rdfs:subClassOf ex:RedWine .
+
+ex:Product a owl:Class ;
+    rdfs:label "Product" .
+
+ex:Protégé-2000 a ex:Tool,
+        owl:Class ;
+    rdfs:label "Protégé-2000" ;
+    ex:hasYear 2000 .
+
+ex:Publication a owl:Class ;
+    rdfs:label "Publication" .
+
+ex:Red a owl:NamedIndividual ;
+    rdfs:label "Red" ;
+    rdfs:isDefinedBy ex:RedWine ;
+    rdfs:subClassOf ex:Color .
+
+ex:ResourceDescriptionFramework a ex:Ontology,
+        owl:Class ;
+    rdfs:label "Resource Description Framework" ;
+    ex:hasYear 1999 ;
+    ex:isDevelopedBy ex:WWWConsortium .
+
+ex:RestaurantManagingTool a ex:Application,
+        owl:Class ;
+    rdfs:label "Restaurant Managing Tool" ;
+    ex:uses ex:WineFoodOntology .
+
+ex:RoseWine a owl:Class ;
+    rdfs:label "Rose wine" ;
+    rdfs:subClassOf ex:Wine .
+
+ex:Rule a owl:Class ;
+    rdfs:label "Rule" .
+
+ex:SeparateDomainFromOperationalKnowledge a ex:Goal ;
+    rdfs:label "Separate domain knowledge from operational knowledge" .
+
+ex:Service a owl:Class ;
+    rdfs:label "Service" .
+
+ex:SingleWineNotKindOfWines a owl:Class ;
+    rdfs:label "A single Wine is not a kind of Wines" .
+
+ex:SingleWineNotSubclassOfAllWines a owl:Class ;
+    rdfs:label "A single wine is not a subclass of all wines" .
+
+ex:SoftwareAgent a owl:Class ;
+    rdfs:label "Software Agent" .
+
+ex:Thing a owl:Class ;
+    rdfs:label "Thing" ;
+    ex:isRoot true ;
+    ex:representsMajorDivision true .
+
+ex:UNSDP a ex:Organization ;
+    rdfs:label "United Nations Development Program" .
+
+ex:UNSPSC a ex:Ontology,
+        owl:Class ;
+    rdfs:label "UNSPSC" ;
+    ex:hasURL "http://www.unspsc.org" ;
+    ex:isDevelopedBy ex:DunBradstreet,
+        ex:UNSDP .
+
+ex:Wines a owl:Class ;
+    rdfs:label "Wines" .
+
+ex:dlm a ex:Person ;
+    rdfs:label "dlm" ;
+    ex:hasEmail "<email>" .
+
+ex:hasTanninLevel a owl:ObjectProperty ;
+    rdfs:label "has tannin level" ;
+    rdfs:domain ex:RedWine ;
+    rdfs:range ex:TanninLevel .
+
+ex:noy a ex:Person ;
+    rdfs:label "noy" ;
+    ex:hasEmail "<email>" .
+
+ex:ArtificialClass a owl:Class ;
+    rdfs:label "Artificial class" .
+
+ex:BestWayToAvoidError a owl:Class ;
+    rdfs:label "The best way to avoid such an error is always to use either singular or plural in naming classes" .
+
+ex:ClassA a ex:Class,
+        owl:NamedIndividual ;
+    rdfs:label "Class A" ;
+    ex:hasSubclass ex:ClassB ;
+    ex:isEquivalentTo ex:ClassB .
+
+ex:Color a owl:Class ;
+    rdfs:label "Color" .
+
+ex:Crevette a ex:Class,
+        owl:NamedIndividual ;
+    rdfs:label "Crevette" ;
+    ex:ClassName "Crevette"^^rdfs:Literal ;
+    ex:Synonym ex:Prawn,
+        ex:Shrimp .
+
+ex:Document a owl:Class ;
+    rdfs:label "Document" .
+
+ex:IncompleteOntology a owl:Class ;
+    rdfs:label "Incomplete ontology" .
+
+ex:IntermediateCategory a owl:Class ;
+    rdfs:label "Intermediate category" .
+
+ex:Medicine a owl:Class ;
+    rdfs:label "Medicine" .
+
+ex:ModelingProblem a owl:Class ;
+    rdfs:label "Modeling problem" .
+
+ex:Prawn a ex:Class,
+        owl:NamedIndividual ;
+    rdfs:label "Prawn" ;
+    ex:ClassName "Prawn"^^rdfs:Literal ;
+    ex:Synonym ex:Crevette,
+        ex:Shrimp .
+
+ex:Purpose a owl:Class ;
+    rdfs:label "Purpose" .
+
+ex:RedBurgundy a owl:Class ;
+    rdfs:label "Red Burgundy" ;
+    ex:hasTooFewDirectSubclasses ex:TooFewDirectSubclasses ;
+    ex:indicatesIncompleteOntology ex:IncompleteOntology ;
+    ex:indicatesModelingProblem ex:ModelingProblem ;
+    rdfs:subClassOf ex:Wine .
+
+ex:SWEET a owl:NamedIndividual ;
+    rdfs:label "SWEET" ;
+    rdfs:isDefinedBy ex:DessertWine .
+
+ex:Seafood a owl:Class ;
+    rdfs:label "Seafood" .
+
+ex:Shrimp a ex:Class,
+        owl:NamedIndividual ;
+    rdfs:label "Shrimp" ;
+    ex:ClassName "Shrimp"^^rdfs:Literal ;
+    ex:Synonym ex:Crevette,
+        ex:Prawn .
+
+ex:Sibling a owl:Class ;
+    rdfs:label "Sibling" .
+
+ex:TanninLevel a owl:Class ;
+    rdfs:label "Tannin level" .
+
+ex:TooFewDirectSubclasses a owl:Class ;
+    rdfs:label "Too few direct subclasses" ;
+    rdfs:subClassOf ex:Class .
+
+ex:TooManyDirectSubclasses a owl:Class ;
+    rdfs:label "Too many direct subclasses" ;
+    rdfs:subClassOf ex:Class .
+
+ex:WWWConsortium a ex:Organization ;
+    rdfs:label "WWW Consortium" ;
+    ex:hasURL "https://www.w3.org" .
+
+ex:ZinfandelWine a owl:Class ;
+    rdfs:label "Zinfandel wine" ;
+    rdfs:subClassOf ex:RedWine .
+
+ex:Bordeaux a owl:Class ;
+    rdfs:label "Bordeaux" ;
+    rdfs:subClassOf ex:Wine .
+
+ex:ClassB a ex:Class,
+        owl:NamedIndividual ;
+    rdfs:label "Class B" ;
+    ex:hasSubclass ex:ClassA .
+
+ex:DessertWine a owl:Class ;
+    rdfs:label "Dessert wine" ;
+    ex:sugar ex:SWEET ;
+    rdfs:subClassOf ex:Wine .
+
+ex:ClassHierarchy a owl:Class ;
+    rdfs:label "Class Hierarchy",
+        "Class hierarchy" .
+
+ex:Person a owl:Class ;
+    rdfs:label "Person" .
+
+ex:Rib a owl:Class ;
+    rdfs:label "Rib" .
+
+ex:Tool a owl:Class ;
+    rdfs:label "Tool" .
+
+ex:WhiteWine a owl:Class ;
+    rdfs:label "White wine" ;
+    ex:SubclassRelationship ex:Wine ;
+    ex:hasParent ex:Wine ;
+    ex:isAtSameLevel ex:Chardonnay ;
+    ex:reflectsRealWorldCategorization ex:RealWorldCategorization ;
+    rdfs:subClassOf ex:Wine .
+
+ex:Goal a owl:Class ;
+    rdfs:label "Goal" .
+
+ex:WineFoodOntology a ex:Ontology ;
+    rdfs:label "Wine and Food Ontology" ;
+    ex:hasGoal ex:AnalyzeDomainKnowledge,
+        ex:EnableReuse,
+        ex:MakeAssumptionsExplicit,
+        ex:SeparateDomainFromOperationalKnowledge ;
+    ex:hasPurpose ex:RestaurantManagingTool ;
+    ex:hasRelation "pairing",
+        "suitability" ;
+    ex:hasTerm "combination",
+        "food",
+        "wine" ;
+    ex:isBasedOn ex:CLASSIC ;
+    ex:isDevelopedUsing ex:Protégé-2000 .
+
+ex:Application a owl:Class ;
+    rdfs:label "Application" .
+
+ex:Organization a owl:Class ;
+    rdfs:label "Organization" .
+
+ex:RealWorldCategorization a owl:Class ;
+    rdfs:label "Real world categorization" .
+
+ex:RedWine a owl:Class ;
+    rdfs:label "Red wine" ;
+    ex:color ex:Red ;
+    ex:reflectsRealWorldCategorization ex:RealWorldCategorization ;
+    ex:tanninLevel ex:hasTanninLevel ;
+    rdfs:subClassOf ex:Wine .
+
+ex:Wine a owl:Class ;
+    rdfs:label "Wine" ;
+    ex:hasTooManyDirectSubclasses ex:TooManyDirectSubclasses ;
+    ex:isRoot false ;
+    ex:requiresIntermediateCategory ex:IntermediateCategory ;
+    rdfs:subClassOf ex:Thing,
+        ex:Wines .
+
+ex:Ontology a owl:Class ;
+    rdfs:label "Ontology" .
+
+ex:Class a owl:Class ;
+    rdfs:label "Class" .
+

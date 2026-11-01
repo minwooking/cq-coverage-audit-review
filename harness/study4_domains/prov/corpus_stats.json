@@ -1,0 +1,37 @@
+{
+ "domain": "prov",
+ "corpus_sha256": "e62dca5c48302b3549fbdc36ce02a4c8646fff1aee1c3658c42c52c999a69d81",
+ "docs": [
+  {
+   "doc": "prov-o",
+   "raw_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+   "cleaned_chars": 40262,
+   "sections": 11,
+   "atomic_chunks": 126
+  },
+  {
+   "doc": "prov-dm",
+   "raw_sha256": "5c925c21bc96c285b25017c3b90d82cf74251d07713b71fcb81ca60f873c9e88",
+   "cleaned_chars": 85379,
+   "sections": 65,
+   "atomic_chunks": 332
+  }
+ ],
+ "top_level_chunks": 2,
+ "atomic_chunks": 458,
+ "atomic_chars_total": 122405,
+ "atomic_len": {
+  "mean": 267.3,
+  "median": 197.0,
+  "p90": 517,
+  "min": 52,
+  "max": 988
+ },
+ "rules": {
+  "merge_under": 120,
+  "split_over": 1000,
+  "drop_under": 40
+ },
+ "license_docs": "W3C document use license (copying with notice; no derivative works)",
+ "redistributable": false
+}

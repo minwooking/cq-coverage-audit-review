@@ -1,0 +1,44 @@
+{
+ "para": {
+  "questions": 36,
+  "variants": "ABCDEF",
+  "cells": 213,
+  "not_applicable": 3,
+  "est_input_tokens": 2081619
+ },
+ "v2x": {
+  "questions": 24,
+  "variants": "ABCDEF",
+  "cells": 140,
+  "not_applicable": 4,
+  "est_input_tokens": 1305382
+ },
+ "dev": {
+  "questions": 18,
+  "variants": "ABCDEF",
+  "cells": 106,
+  "not_applicable": 2,
+  "est_input_tokens": 925469
+ },
+ "mfg": {
+  "questions": 12,
+  "variants": "ABC",
+  "cells": 25,
+  "not_applicable": 11,
+  "est_input_tokens": 91585
+ },
+ "mfgko": {
+  "questions": 12,
+  "variants": "ABC",
+  "cells": 3,
+  "not_applicable": 33,
+  "est_input_tokens": 12194
+ },
+ "exp": {
+  "questions": 84,
+  "variants": "ABCDEF",
+  "cells": 504,
+  "not_applicable": 0,
+  "est_input_tokens": 4908075
+ }
+}

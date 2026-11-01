@@ -1,0 +1,2317 @@
+{
+  "generated_at_head": "2f483db8ca8a00cf59bab1f6f2cf71d874d9ff52",
+  "generated_from": "git history of paper/access2026; no file contents other than hashed plan/bank/result-metadata paths were interpreted",
+  "method": {
+    "intro_commit": "git log --follow --diff-filter=A --format=%H%x09%ad --date=iso -- <file> (earliest add)",
+    "sha256": "of blob bytes via `git show <commit>:./<path>`",
+    "sections": "addenda 1-14 are sections of PREREG.md; hash = sha256 of the whitespace-stripped section text from its '## N. ' heading to the next '## M. ' heading",
+    "results_flag": "first commit that added any mapped results path vs first commit of the plan/draft/freeze tag; dates are git author dates"
+  },
+  "plan_whole_file": {
+    "path": "paper/access2026/PREREG.md",
+    "role": "pre-specified plan (whole file)",
+    "intro_commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+    "intro_date": "2026-09-12 15:07:12 +0900",
+    "intro_subject": "paper(access): IEEE Access template kit + manuscript skeleton + threats section",
+    "sha256_at_intro": "934a4b46ed48d2a5c79df5e8f6d32c3c1ae1f56b3540438d02f7a195ca2502b2",
+    "sha256_at_head": "05ad3e0f1840ee0a346356c47a3cc38e48060383418f6a13bc9700c0ba3eecf0",
+    "changed_after_intro": true,
+    "later_commits_touching": [
+      {
+        "commit": "9984f3c401",
+        "date": "2026-10-09 13:49:41 +0900",
+        "subject": "paper(access): PREREG addendum 14 — washout and second annotation not conducted (D22, D23); seal lifted"
+      },
+      {
+        "commit": "256cc19709",
+        "date": "2026-10-09 13:16:21 +0900",
+        "subject": "paper(access): PREREG addendum 13 — washout and second-annotator implementation details (D21), before any washout material exists"
+      },
+      {
+        "commit": "39e3978b25",
+        "date": "2026-10-09 08:56:03 +0900",
+        "subject": "paper(access): PREREG addendum 12 — deviations D1–D20, code corrections, prospective washout and second-annotator protocols"
+      },
+      {
+        "commit": "dbdad7083d",
+        "date": "2026-10-07 15:28:37 +0900",
+        "subject": "paper(access): PREREG addendum 11 — AH mode (AI-drafted, human-revised), registered before the first label"
+      },
+      {
+        "commit": "8647027b7f",
+        "date": "2026-10-07 14:59:12 +0900",
+        "subject": "paper(access): PREREG addendum 10 — post-unblinding disagreement review, registered before the first label"
+      },
+      {
+        "commit": "f0f754dc3a",
+        "date": "2026-09-25 14:15:10 +0900",
+        "subject": "paper(access): report Coverage/pi/TOST from a disclosed LLM auxiliary evidence check, fix page-19 gate"
+      },
+      {
+        "commit": "403befa18a",
+        "date": "2026-09-22 21:37:36 +0900",
+        "subject": "paper(access): reframe pilot as non-confirmatory evidence, add concrete second-annotator subsample plan (reviewer feedback)"
+      },
+      {
+        "commit": "aa49c86149",
+        "date": "2026-09-22 08:14:59 +0900",
+        "subject": "paper(access): add disclosed LLM-auxiliary evidence check (supplementary only, does not feed primary/confirmatory TBDs)"
+      },
+      {
+        "commit": "3e3a9e4b3c",
+        "date": "2026-09-21 15:59:48 +0900",
+        "subject": "paper(access): run ASK-oracle adjudication for 18/36 CQs, build human annotation packet for remainder"
+      },
+      {
+        "commit": "4f59ae5c4c",
+        "date": "2026-09-21 08:21:55 +0900",
+        "subject": "paper(access): document corpus-sparsity cell exclusions, adjust eligibility gate accordingly"
+      },
+      {
+        "commit": "4f8d935ebd",
+        "date": "2026-09-20 23:14:18 +0900",
+        "subject": "paper(access): switch confirmatory judge to Gemini 3.6-flash (PREREG re-decision, OpenAI access unavailable)"
+      },
+      {
+        "commit": "24ab52b523",
+        "date": "2026-09-20 20:39:43 +0900",
+        "subject": "paper(access): re-freeze rendering spec to instance-inclusive (unblocks Brick holdout preflight, partially)"
+      },
+      {
+        "commit": "682bfe3a6c",
+        "date": "2026-09-14 12:57:13 +0900",
+        "subject": "paper(access): human-input fill pipeline, KO companion, holdout harness, rubric/annotation kit"
+      },
+      {
+        "commit": "dff4fa3688",
+        "date": "2026-09-12 21:27:54 +0900",
+        "subject": "paper(access): adopt framing B, run channel-1 screen, freeze CQ bank at 36/60"
+      },
+      {
+        "commit": "929bb7a3ce",
+        "date": "2026-09-12 21:10:25 +0900",
+        "subject": "paper(access): update PREREG/checklist for CQB21/CQB23 correction + oracle fix"
+      },
+      {
+        "commit": "87e54be8ca",
+        "date": "2026-09-12 15:26:03 +0900",
+        "subject": "paper(access): pre-register the primary endpoint, not only the audit estimand"
+      },
+      {
+        "commit": "827be41495",
+        "date": "2026-09-12 15:21:50 +0900",
+        "subject": "paper(access): Related Work + Formalization; fix blinding and audit-chain defects"
+      }
+    ]
+  },
+  "plan_header_section": {
+    "path": "paper/access2026/PREREG.md",
+    "part": "pre-section header incl. freeze block (before section 1)",
+    "intro_commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+    "intro_date": "2026-09-12 15:07:12 +0900",
+    "sha256_at_intro": "1854c5d0e07ee75af0b58a58c57d3b3e038fec1ce5245d94ab555f5df27d3ffe",
+    "sha256_at_head": "a764a3951497ffe6bb72e88c934e170518200c33c933f45b62a449d1136c8152",
+    "changed_after_intro": true,
+    "later_changes": [
+      {
+        "commit": "dff4fa3688",
+        "date": "2026-09-12 21:27:54 +0900",
+        "section_sha256": "b98c649090b6015914fe79c50628c2709cf40db5b46cd5cdcde5e7de73ef3103"
+      },
+      {
+        "commit": "682bfe3a6c",
+        "date": "2026-09-14 12:57:13 +0900",
+        "section_sha256": "263c2fa418f22d103cdbe2702255f265aa46036c039c8ebfbc50b9811d027dec"
+      },
+      {
+        "commit": "24ab52b523",
+        "date": "2026-09-20 20:39:43 +0900",
+        "section_sha256": "5675173b46d9cfb4aad576460d4522984a78639cae15f4193718ba14adc0e921"
+      },
+      {
+        "commit": "4f8d935ebd",
+        "date": "2026-09-20 23:14:18 +0900",
+        "section_sha256": "f7c9ddd852f3f8a141b7a34e0154193584306df230686bea2a524049b568a4b4"
+      },
+      {
+        "commit": "3e3a9e4b3c",
+        "date": "2026-09-21 15:59:48 +0900",
+        "section_sha256": "a764a3951497ffe6bb72e88c934e170518200c33c933f45b62a449d1136c8152"
+      }
+    ]
+  },
+  "ancillary_files": [
+    {
+      "path": "paper/access2026/release/PREREG.public.md",
+      "role": "redacted public copy of PREREG.md (derived)",
+      "intro_commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+      "intro_date": "2026-09-12 15:07:12 +0900",
+      "intro_subject": "paper(access): IEEE Access template kit + manuscript skeleton + threats section",
+      "sha256_at_intro": null,
+      "sha256_at_head": "c8079ee6c1031e0ed7525ac797f7fc645a3d613bb2381a576ab84887b4ece0fa",
+      "changed_after_intro": false,
+      "later_commits_touching": [
+        {
+          "commit": "1175e02978",
+          "date": "2026-10-09 15:09:23 +0900",
+          "subject": "paper(access): release package builder for pre-submission open upload — staged+scrubbed+scanned zip with deterministic build, PREREG redaction log, licences, CITATION/Zenodo metadata and a Korean upload guide; dist/ staged area gitignored"
+        },
+        {
+          "commit": "9984f3c401",
+          "date": "2026-10-09 13:49:41 +0900",
+          "subject": "paper(access): PREREG addendum 14 — washout and second annotation not conducted (D22, D23); seal lifted"
+        },
+        {
+          "commit": "256cc19709",
+          "date": "2026-10-09 13:16:21 +0900",
+          "subject": "paper(access): PREREG addendum 13 — washout and second-annotator implementation details (D21), before any washout material exists"
+        },
+        {
+          "commit": "39e3978b25",
+          "date": "2026-10-09 08:56:03 +0900",
+          "subject": "paper(access): PREREG addendum 12 — deviations D1–D20, code corrections, prospective washout and second-annotator protocols"
+        },
+        {
+          "commit": "dbdad7083d",
+          "date": "2026-10-07 15:28:37 +0900",
+          "subject": "paper(access): PREREG addendum 11 — AH mode (AI-drafted, human-revised), registered before the first label"
+        },
+        {
+          "commit": "8647027b7f",
+          "date": "2026-10-07 14:59:12 +0900",
+          "subject": "paper(access): PREREG addendum 10 — post-unblinding disagreement review, registered before the first label"
+        },
+        {
+          "commit": "f0f754dc3a",
+          "date": "2026-09-25 14:15:10 +0900",
+          "subject": "paper(access): report Coverage/pi/TOST from a disclosed LLM auxiliary evidence check, fix page-19 gate"
+        },
+        {
+          "commit": "403befa18a",
+          "date": "2026-09-22 21:37:36 +0900",
+          "subject": "paper(access): reframe pilot as non-confirmatory evidence, add concrete second-annotator subsample plan (reviewer feedback)"
+        },
+        {
+          "commit": "aa49c86149",
+          "date": "2026-09-22 08:14:59 +0900",
+          "subject": "paper(access): add disclosed LLM-auxiliary evidence check (supplementary only, does not feed primary/confirmatory TBDs)"
+        },
+        {
+          "commit": "3e3a9e4b3c",
+          "date": "2026-09-21 15:59:48 +0900",
+          "subject": "paper(access): run ASK-oracle adjudication for 18/36 CQs, build human annotation packet for remainder"
+        },
+        {
+          "commit": "4f59ae5c4c",
+          "date": "2026-09-21 08:21:55 +0900",
+          "subject": "paper(access): document corpus-sparsity cell exclusions, adjust eligibility gate accordingly"
+        },
+        {
+          "commit": "4f8d935ebd",
+          "date": "2026-09-20 23:14:18 +0900",
+          "subject": "paper(access): switch confirmatory judge to Gemini 3.6-flash (PREREG re-decision, OpenAI access unavailable)"
+        },
+        {
+          "commit": "24ab52b523",
+          "date": "2026-09-20 20:39:43 +0900",
+          "subject": "paper(access): re-freeze rendering spec to instance-inclusive (unblocks Brick holdout preflight, partially)"
+        },
+        {
+          "commit": "682bfe3a6c",
+          "date": "2026-09-14 12:57:13 +0900",
+          "subject": "paper(access): human-input fill pipeline, KO companion, holdout harness, rubric/annotation kit"
+        },
+        {
+          "commit": "dff4fa3688",
+          "date": "2026-09-12 21:27:54 +0900",
+          "subject": "paper(access): adopt framing B, run channel-1 screen, freeze CQ bank at 36/60"
+        },
+        {
+          "commit": "929bb7a3ce",
+          "date": "2026-09-12 21:10:25 +0900",
+          "subject": "paper(access): update PREREG/checklist for CQB21/CQB23 correction + oracle fix"
+        },
+        {
+          "commit": "87e54be8ca",
+          "date": "2026-09-12 15:26:03 +0900",
+          "subject": "paper(access): pre-register the primary endpoint, not only the audit estimand"
+        },
+        {
+          "commit": "827be41495",
+          "date": "2026-09-12 15:21:50 +0900",
+          "subject": "paper(access): Related Work + Formalization; fix blinding and audit-chain defects"
+        }
+      ]
+    }
+  ],
+  "addenda": [
+    {
+      "addendum": 1,
+      "note": "Addenda 1-6: original pre-specified plan body (PREREG.md sections 1-6, incl. in-text addenda 6-1 [2026-09-13] and 6-2 [2026-09-21], and the 2026-09-22 second-annotator paragraph in section 3). Section-level hashes only.",
+      "plan_kind": "PREREG.md section 1",
+      "section_title": "## 1. 주 종점(primary endpoint)과 주 estimand",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+        "intro_date": "2026-09-12 15:07:12 +0900",
+        "sha256_at_intro": "e31e655a49b8444262bab08dec449f1218de08b121a166a60f84b9efea7e7860",
+        "sha256_at_head": "f9bef687ae2d1b98992c07859644521ce2ccbc2ce05bf5f0c1d6129d0da66f6a",
+        "changed_after_intro": true,
+        "later_changes": [
+          {
+            "commit": "87e54be8ca",
+            "date": "2026-09-12 15:26:03 +0900",
+            "section_sha256": "f9bef687ae2d1b98992c07859644521ce2ccbc2ce05bf5f0c1d6129d0da66f6a"
+          }
+        ]
+      },
+      "first_plan_commit": {
+        "commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+        "date": "2026-09-12 15:07:12 +0900"
+      },
+      "first_results_commit": {
+        "commit": "700f6dc11c691640433f94883ffee7de7f76dc2a",
+        "date": "2026-09-21 15:10:53 +0900",
+        "subject": "paper(access): complete valid 224-cell Brick holdout judge run (gemini-3.6-flash)",
+        "evidence_path": "paper/access2026/harness/real_run/cells.jsonl"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/real_run/cells.jsonl",
+        "paper/access2026/harness/real_run/MANIFEST.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 2,
+      "note": "Addenda 1-6: original pre-specified plan body (PREREG.md sections 1-6, incl. in-text addenda 6-1 [2026-09-13] and 6-2 [2026-09-21], and the 2026-09-22 second-annotator paragraph in section 3). Section-level hashes only.",
+      "plan_kind": "PREREG.md section 2",
+      "section_title": "## 2. 수용 게이트 G1–G8",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+        "intro_date": "2026-09-12 15:07:12 +0900",
+        "sha256_at_intro": "ce4786beb5948b3ba1c4970de4c6288e54f611d65868d3e70bb4a8e33018f544",
+        "sha256_at_head": "808c08b62081867c1349bd697c5bd14bb71745c333d1301e2943807a41f51e98",
+        "changed_after_intro": true,
+        "later_changes": [
+          {
+            "commit": "929bb7a3ce",
+            "date": "2026-09-12 21:10:25 +0900",
+            "section_sha256": "43b1a951930147625467d95ace2af4634aa956f951c9183ef2312eeaa917ab51"
+          },
+          {
+            "commit": "dff4fa3688",
+            "date": "2026-09-12 21:27:54 +0900",
+            "section_sha256": "c4d8878789f3764ea1a4415014f6f73b0da7ea73804928ef4acf9b4e4a16482e"
+          },
+          {
+            "commit": "682bfe3a6c",
+            "date": "2026-09-14 12:57:13 +0900",
+            "section_sha256": "808c08b62081867c1349bd697c5bd14bb71745c333d1301e2943807a41f51e98"
+          }
+        ]
+      },
+      "first_plan_commit": {
+        "commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+        "date": "2026-09-12 15:07:12 +0900"
+      },
+      "first_results_commit": {
+        "commit": "700f6dc11c691640433f94883ffee7de7f76dc2a",
+        "date": "2026-09-21 15:10:53 +0900",
+        "subject": "paper(access): complete valid 224-cell Brick holdout judge run (gemini-3.6-flash)",
+        "evidence_path": "paper/access2026/harness/real_run/cells.jsonl"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/real_run/cells.jsonl",
+        "paper/access2026/harness/real_run/MANIFEST.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 3,
+      "note": "Addenda 1-6: original pre-specified plan body (PREREG.md sections 1-6, incl. in-text addenda 6-1 [2026-09-13] and 6-2 [2026-09-21], and the 2026-09-22 second-annotator paragraph in section 3). Section-level hashes only.",
+      "plan_kind": "PREREG.md section 3",
+      "section_title": "## 3. 프로토콜 파라미터 (셀 예산)",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+        "intro_date": "2026-09-12 15:07:12 +0900",
+        "sha256_at_intro": "caa6788faca6b7b54847c1a66194395202825dfa451a2a7fdf1b043ec4d5ddc5",
+        "sha256_at_head": "65bc760cb504b0cfa5d0580b4c82d44266723baf6900ec98d926c198d634e260",
+        "changed_after_intro": true,
+        "later_changes": [
+          {
+            "commit": "827be41495",
+            "date": "2026-09-12 15:21:50 +0900",
+            "section_sha256": "2cf3440e18501cfa6d7f1cdedc605efd15f31edac2586116e377c3a56ba75df4"
+          },
+          {
+            "commit": "403befa18a",
+            "date": "2026-09-22 21:37:36 +0900",
+            "section_sha256": "65bc760cb504b0cfa5d0580b4c82d44266723baf6900ec98d926c198d634e260"
+          }
+        ]
+      },
+      "first_plan_commit": {
+        "commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+        "date": "2026-09-12 15:07:12 +0900"
+      },
+      "first_results_commit": {
+        "commit": "700f6dc11c691640433f94883ffee7de7f76dc2a",
+        "date": "2026-09-21 15:10:53 +0900",
+        "subject": "paper(access): complete valid 224-cell Brick holdout judge run (gemini-3.6-flash)",
+        "evidence_path": "paper/access2026/harness/real_run/cells.jsonl"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/real_run/cells.jsonl",
+        "paper/access2026/harness/real_run/MANIFEST.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 4,
+      "note": "Addenda 1-6: original pre-specified plan body (PREREG.md sections 1-6, incl. in-text addenda 6-1 [2026-09-13] and 6-2 [2026-09-21], and the 2026-09-22 second-annotator paragraph in section 3). Section-level hashes only.",
+      "plan_kind": "PREREG.md section 4",
+      "section_title": "## 4. 통계 처리",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+        "intro_date": "2026-09-12 15:07:12 +0900",
+        "sha256_at_intro": "5ba68bd90bc094fecc10c2e0aa25e19d3b46bc66af0502eccebb446be253941e",
+        "sha256_at_head": "5ba68bd90bc094fecc10c2e0aa25e19d3b46bc66af0502eccebb446be253941e",
+        "changed_after_intro": false,
+        "later_changes": []
+      },
+      "first_plan_commit": {
+        "commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+        "date": "2026-09-12 15:07:12 +0900"
+      },
+      "first_results_commit": {
+        "commit": "700f6dc11c691640433f94883ffee7de7f76dc2a",
+        "date": "2026-09-21 15:10:53 +0900",
+        "subject": "paper(access): complete valid 224-cell Brick holdout judge run (gemini-3.6-flash)",
+        "evidence_path": "paper/access2026/harness/real_run/cells.jsonl"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/real_run/cells.jsonl",
+        "paper/access2026/harness/real_run/MANIFEST.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 5,
+      "note": "Addenda 1-6: original pre-specified plan body (PREREG.md sections 1-6, incl. in-text addenda 6-1 [2026-09-13] and 6-2 [2026-09-21], and the 2026-09-22 second-annotator paragraph in section 3). Section-level hashes only.",
+      "plan_kind": "PREREG.md section 5",
+      "section_title": "## 5. 사전등록된 실패 정책",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+        "intro_date": "2026-09-12 15:07:12 +0900",
+        "sha256_at_intro": "8c549c7d6d3c4e91bffbed87e35d16d39589687d1bfc5204f8588fd8ca628afe",
+        "sha256_at_head": "eaedf755958b6b0b84f5f311233a16a8e24718c3604aac01ee47144c5eb736b3",
+        "changed_after_intro": true,
+        "later_changes": [
+          {
+            "commit": "682bfe3a6c",
+            "date": "2026-09-14 12:57:13 +0900",
+            "section_sha256": "802f8bd36cdc5281af9fce40178bd8bfd7097e40bcd65583bb9b2a0b0fe15db0"
+          },
+          {
+            "commit": "24ab52b523",
+            "date": "2026-09-20 20:39:43 +0900",
+            "section_sha256": "80b2ae568f88deca6c357b4d89e571f4c573161965855b81beb01987ad3abc4e"
+          },
+          {
+            "commit": "4f59ae5c4c",
+            "date": "2026-09-21 08:21:55 +0900",
+            "section_sha256": "eaedf755958b6b0b84f5f311233a16a8e24718c3604aac01ee47144c5eb736b3"
+          }
+        ]
+      },
+      "first_plan_commit": {
+        "commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+        "date": "2026-09-12 15:07:12 +0900"
+      },
+      "first_results_commit": {
+        "commit": "700f6dc11c691640433f94883ffee7de7f76dc2a",
+        "date": "2026-09-21 15:10:53 +0900",
+        "subject": "paper(access): complete valid 224-cell Brick holdout judge run (gemini-3.6-flash)",
+        "evidence_path": "paper/access2026/harness/real_run/cells.jsonl"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/real_run/cells.jsonl",
+        "paper/access2026/harness/real_run/MANIFEST.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 6,
+      "note": "Addenda 1-6: original pre-specified plan body (PREREG.md sections 1-6, incl. in-text addenda 6-1 [2026-09-13] and 6-2 [2026-09-21], and the 2026-09-22 second-annotator paragraph in section 3). Section-level hashes only.",
+      "plan_kind": "PREREG.md section 6",
+      "section_title": "## 6. 동결 이후 남은 운영 항목",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+        "intro_date": "2026-09-12 15:07:12 +0900",
+        "sha256_at_intro": "5688857c73d57e7ddf5fcc33b835d7d47f0a45fafe8f4312a9f731b9f2250b82",
+        "sha256_at_head": "ee7b07b652055278aa0a2c277e49b37b68f769dc30453be5aa1ef55cb0bc6dc1",
+        "changed_after_intro": true,
+        "later_changes": [
+          {
+            "commit": "827be41495",
+            "date": "2026-09-12 15:21:50 +0900",
+            "section_sha256": "474c9e0369df42460766ad61b43a1c64589ee784e9306b3375ab580fbb80151a"
+          },
+          {
+            "commit": "929bb7a3ce",
+            "date": "2026-09-12 21:10:25 +0900",
+            "section_sha256": "7bd2b83e52e3d29b070c5f42dacc2c63f2fd8ff853d8e450056853b006203624"
+          },
+          {
+            "commit": "dff4fa3688",
+            "date": "2026-09-12 21:27:54 +0900",
+            "section_sha256": "6aad9b7bc900b815bee4eb60ff6a11214d23aab566accaa468f4475a8185fa39"
+          },
+          {
+            "commit": "682bfe3a6c",
+            "date": "2026-09-14 12:57:13 +0900",
+            "section_sha256": "f02c023419f3e8d83336174388a0ba17b1c38190b175e476f3a7d0123176421b"
+          },
+          {
+            "commit": "24ab52b523",
+            "date": "2026-09-20 20:39:43 +0900",
+            "section_sha256": "ee7b07b652055278aa0a2c277e49b37b68f769dc30453be5aa1ef55cb0bc6dc1"
+          }
+        ]
+      },
+      "first_plan_commit": {
+        "commit": "9c787a00f82e71b6a0062b6150f4b15013c18786",
+        "date": "2026-09-12 15:07:12 +0900"
+      },
+      "first_results_commit": {
+        "commit": "700f6dc11c691640433f94883ffee7de7f76dc2a",
+        "date": "2026-09-21 15:10:53 +0900",
+        "subject": "paper(access): complete valid 224-cell Brick holdout judge run (gemini-3.6-flash)",
+        "evidence_path": "paper/access2026/harness/real_run/cells.jsonl"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/real_run/cells.jsonl",
+        "paper/access2026/harness/real_run/MANIFEST.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 7,
+      "note": "",
+      "plan_kind": "PREREG.md section 7",
+      "section_title": "## 7. [2026-09-21 addendum] ASK-oracle을 holdout run 그래프로 확장 시도 — 막힘, 기록만",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "3e3a9e4b3c80a665eb7733570d7196eb3e9c67df",
+        "intro_date": "2026-09-21 15:59:48 +0900",
+        "sha256_at_intro": "143c991a62cb95b78f89e8d9c66db4829bb92e9b3b1828e0c1f1ca121bcb24e7",
+        "sha256_at_head": "143c991a62cb95b78f89e8d9c66db4829bb92e9b3b1828e0c1f1ca121bcb24e7",
+        "changed_after_intro": false,
+        "later_changes": []
+      },
+      "first_plan_commit": {
+        "commit": "3e3a9e4b3c80a665eb7733570d7196eb3e9c67df",
+        "date": "2026-09-21 15:59:48 +0900"
+      },
+      "first_results_commit": {
+        "commit": "30520fdc6ac51323370f97d2001721bffaf4a765",
+        "date": "2026-10-09 14:43:52 +0900",
+        "subject": "paper(access): restructured manuscript (14 pp) with post-hoc label-free checks and re-analysis",
+        "evidence_path": "paper/access2026/harness/real_run/ask_alignment"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/real_run/ask_alignment"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 8,
+      "note": "",
+      "plan_kind": "PREREG.md section 8",
+      "section_title": "## 8. [2026-09-22 addendum] Disclosed LLM auxiliary check — supplementary only, does not feed A(v,q)",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "aa49c861490d15bae0390a45c2642caa9a001d74",
+        "intro_date": "2026-09-22 08:14:59 +0900",
+        "sha256_at_intro": "0210da03bb316aea1bccaea01a5bf9671348bbce6b9a803a7c8f2dfd64097a6a",
+        "sha256_at_head": "0210da03bb316aea1bccaea01a5bf9671348bbce6b9a803a7c8f2dfd64097a6a",
+        "changed_after_intro": false,
+        "later_changes": []
+      },
+      "first_plan_commit": {
+        "commit": "aa49c861490d15bae0390a45c2642caa9a001d74",
+        "date": "2026-09-22 08:14:59 +0900"
+      },
+      "first_results_commit": {
+        "commit": "aa49c861490d15bae0390a45c2642caa9a001d74",
+        "date": "2026-09-22 08:14:59 +0900",
+        "subject": "paper(access): add disclosed LLM-auxiliary evidence check (supplementary only, does not feed primary/confirmatory TBDs)",
+        "evidence_path": "paper/access2026/harness/real_run/llm_auxiliary_labels.jsonl"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/real_run/llm_auxiliary_results.json",
+        "paper/access2026/harness/real_run/llm_auxiliary_labels.jsonl"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": true,
+      "flag_reason": "plan and first results added in the SAME commit (cannot show plan precedes results by git alone)"
+    },
+    {
+      "addendum": 9,
+      "note": "",
+      "plan_kind": "PREREG.md section 9",
+      "section_title": "## 9. [2026-09-22 addendum] Protocol deviation — Coverage/π/TOST now computed with the disclosed LLM auxiliary check, NOT the pre-registered",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "f0f754dc3acd0d3d22c8bca805ead6c821da490d",
+        "intro_date": "2026-09-25 14:15:10 +0900",
+        "sha256_at_intro": "905f33efaf2ce7078b639ae213fac1dfc689d8376968989129444e56fee9d2f1",
+        "sha256_at_head": "905f33efaf2ce7078b639ae213fac1dfc689d8376968989129444e56fee9d2f1",
+        "changed_after_intro": false,
+        "later_changes": []
+      },
+      "first_plan_commit": {
+        "commit": "f0f754dc3acd0d3d22c8bca805ead6c821da490d",
+        "date": "2026-09-25 14:15:10 +0900"
+      },
+      "first_results_commit": {
+        "commit": "f0f754dc3acd0d3d22c8bca805ead6c821da490d",
+        "date": "2026-09-25 14:15:10 +0900",
+        "subject": "paper(access): report Coverage/pi/TOST from a disclosed LLM auxiliary evidence check, fix page-19 gate",
+        "evidence_path": "paper/access2026/harness/real_run/llm_auxiliary_as_labels.csv"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/real_run/llm_auxiliary_as_labels.csv"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": true,
+      "flag_reason": "plan and first results added in the SAME commit (cannot show plan precedes results by git alone)"
+    },
+    {
+      "addendum": 10,
+      "note": "",
+      "plan_kind": "PREREG.md section 10",
+      "section_title": "## 10. [2026-10-07 addendum] Post-unblinding disagreement review stage — secondary·descriptive만, primary와 명목 분리; 첫 라벨 저장 이전에 등록",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "8647027b7fb16547146c018758054d0f41cccc5e",
+        "intro_date": "2026-10-07 14:59:12 +0900",
+        "sha256_at_intro": "66741bc9813768cd2fbb37f450f146d8f3a0f8c98e5f5ef23d57517f143deb0c",
+        "sha256_at_head": "66741bc9813768cd2fbb37f450f146d8f3a0f8c98e5f5ef23d57517f143deb0c",
+        "changed_after_intro": false,
+        "later_changes": []
+      },
+      "first_plan_commit": {
+        "commit": "8647027b7fb16547146c018758054d0f41cccc5e",
+        "date": "2026-10-07 14:59:12 +0900"
+      },
+      "first_results_commit": {
+        "commit": "b66f532d07bc107d04a737ad1d607961022f6e7c",
+        "date": "2026-10-09 01:51:35 +0900",
+        "subject": "paper(access): registered analysis of the locked AH labels (rater-safe aggregates; G4/G5 and per-cell values sealed until the washout)",
+        "evidence_path": "paper/access2026/harness/real_run/results_human_pass"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/real_run/results_human_pass"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 11,
+      "note": "",
+      "plan_kind": "PREREG.md section 11",
+      "section_title": "## 11. [2026-10-07 addendum] Protocol change — Channel~2 1차 pass를 AI-drafted, human-revised(AH) 모드로 등록. §10은 이 항에 의해 supersede된다",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "dbdad7083ddb7bd56ad79fa3c44af0de1e434e25",
+        "intro_date": "2026-10-07 15:28:37 +0900",
+        "sha256_at_intro": "7f3e0d606a96b1c2441e9ca929152863bbac469491e3637b83c5e95d7ac55c6c",
+        "sha256_at_head": "7f3e0d606a96b1c2441e9ca929152863bbac469491e3637b83c5e95d7ac55c6c",
+        "changed_after_intro": false,
+        "later_changes": []
+      },
+      "first_plan_commit": {
+        "commit": "dbdad7083ddb7bd56ad79fa3c44af0de1e434e25",
+        "date": "2026-10-07 15:28:37 +0900"
+      },
+      "first_results_commit": {
+        "commit": "b66f532d07bc107d04a737ad1d607961022f6e7c",
+        "date": "2026-10-09 01:51:35 +0900",
+        "subject": "paper(access): registered analysis of the locked AH labels (rater-safe aggregates; G4/G5 and per-cell values sealed until the washout)",
+        "evidence_path": "paper/access2026/harness/real_run/results_human_pass"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/real_run/results_human_pass"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 12,
+      "note": "Section 12 written after the human pass ended (states so itself); washout/second-annotator parts prospective.",
+      "plan_kind": "PREREG.md section 12",
+      "section_title": "## 12. [2026-10-09 addendum] human pass 종료 후 작성 — 프로토콜 이탈 기록(D1–D20), 분석 코드 정합 교정, washout(G2)·2차 annotator 전향 프로토콜",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "39e3978b25172aa6d0b8fab034ee879418563438",
+        "intro_date": "2026-10-09 08:56:03 +0900",
+        "sha256_at_intro": "70c88821182ee5e16afab31ac0d8fe3fe309a8ade16dff8170db7c83bfd5cd6c",
+        "sha256_at_head": "70c88821182ee5e16afab31ac0d8fe3fe309a8ade16dff8170db7c83bfd5cd6c",
+        "changed_after_intro": false,
+        "later_changes": []
+      },
+      "first_plan_commit": {
+        "commit": "39e3978b25172aa6d0b8fab034ee879418563438",
+        "date": "2026-10-09 08:56:03 +0900"
+      },
+      "first_results_commit": {
+        "commit": "5326296d3b2be3a3abd7e7cbf36f34775115a38f",
+        "date": "2026-10-09 14:48:34 +0900",
+        "subject": "paper(access): persona-pass tooling and the 2026-10-08 direction draft — three judge-blind AI personas (provenance=llm-persona, run stopped by quota, not human labels) and the reviewed-against source notes behind addendum 12",
+        "evidence_path": "paper/access2026/harness/real_run/persona_pass"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/real_run/persona_pass"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 13,
+      "note": "Implementation details fixed before first washout save; washout was never run (section 14).",
+      "plan_kind": "PREREG.md section 13",
+      "section_title": "## 13. [2026-10-09 addendum] washout·2차 주석 구현 확정 사항 — 첫 washout 저장 전",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "256cc197097877384d0327f0a82a02f4ed3b8b6a",
+        "intro_date": "2026-10-09 13:16:21 +0900",
+        "sha256_at_intro": "41f8c63492fdff9fa10adcb9147458ad282e4f2b588daba622677612dd964063",
+        "sha256_at_head": "41f8c63492fdff9fa10adcb9147458ad282e4f2b588daba622677612dd964063",
+        "changed_after_intro": false,
+        "later_changes": []
+      },
+      "first_plan_commit": {
+        "commit": "256cc197097877384d0327f0a82a02f4ed3b8b6a",
+        "date": "2026-10-09 13:16:21 +0900"
+      },
+      "first_results_commit": {
+        "commit": "f57d90be122734ac2f5da4771813b5619f5c7966",
+        "date": "2026-10-20 19:13:00 +0900",
+        "subject": "g2(access): washout re-labeling package for gate G2 (blind sheet, dwell logging, analysis script); no labels collected",
+        "evidence_path": "paper/access2026/annotation/g2_washout_2026-10/builder_MANIFEST.json"
+      },
+      "results_paths_considered": [
+        "paper/access2026/annotation/g2_washout_2026-10/builder_MANIFEST.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 14,
+      "note": "Records that washout/second annotation were not run; no results files by design.",
+      "plan_kind": "PREREG.md section 14",
+      "section_title": "## 14. [2026-10-09 addendum] washout·2차 주석 미실시와 봉인 해제",
+      "section": {
+        "path": "paper/access2026/PREREG.md",
+        "intro_commit": "9984f3c401fcf984283f0df6c3986af7b189f1c6",
+        "intro_date": "2026-10-09 13:49:41 +0900",
+        "sha256_at_intro": "692dc5b5fa020baf570dd899c8079f4b2213fa4a9c5509b7a7ef4145210effce",
+        "sha256_at_head": "692dc5b5fa020baf570dd899c8079f4b2213fa4a9c5509b7a7ef4145210effce",
+        "changed_after_intro": false,
+        "later_changes": []
+      },
+      "first_plan_commit": {
+        "commit": "9984f3c401fcf984283f0df6c3986af7b189f1c6",
+        "date": "2026-10-09 13:49:41 +0900"
+      },
+      "first_results_commit": null,
+      "results_paths_considered": [],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": "no results files mapped/committed (by design or draft-only)"
+    },
+    {
+      "addendum": 15,
+      "note": "Only a draft-named file exists; freeze tag is the freeze evidence. Result evidence mapped = IOF bank file (no IOF per-cell result path identified).",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/PREREG_ADDENDUM_15_DRAFT.md",
+          "role": "plan",
+          "intro_commit": "020aa91987d4eda50b6ee05c2b9614639e1d458f",
+          "intro_date": "2026-10-09 20:01:53 +0900",
+          "intro_subject": "paper(access): draft of registration addendum 15 — pooled G1 with the IOF domain, decided before IOF data (not frozen)",
+          "sha256_at_intro": "d1b72ecdde3fd62b232119bb47936ea6b700b7bed4dbd872c82533bc4fbc9964",
+          "sha256_at_head": "9f06dfe9c3d2b8afe2cef47da725258046d4c9ebf779df70eaace5233255866c",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "1789c6f09a",
+              "date": "2026-10-09 20:21:04 +0900",
+              "subject": "paper(access): addendum 15 draft reflects author decisions — pooled G1 as an estimate, G4/G5 diagnostic for IOF, G7 unchanged"
+            }
+          ],
+          "sha256_at_freeze_tag": "a0cf797b977989345ded9c01cd810fa23cb77db3e62893ab4162f73cfcd49d93",
+          "changed_after_freeze_tag": true
+        }
+      ],
+      "draft_files": [],
+      "freeze_tag": {
+        "tag": "access2026-addendum15-freeze",
+        "tag_type": "tag",
+        "commit": "dc51159aef505c71341ad899f597c7c91b563e60",
+        "commit_date": "2026-10-09 23:17:03 +0900",
+        "ancestor_of_head": false,
+        "tagger_date": "2026-10-09 23:17:03 +0900"
+      },
+      "first_plan_commit": {
+        "commit": "020aa91987d4eda50b6ee05c2b9614639e1d458f",
+        "date": "2026-10-09 20:01:53 +0900"
+      },
+      "first_results_commit": null,
+      "results_paths_considered": [
+        "paper/access2026/bank/iof/cq_bank_iof_v1.csv"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": "no results files mapped/committed (by design or draft-only)"
+    },
+    {
+      "addendum": 16,
+      "note": "Frozen inputs (ask_queries_v2, predicate_map.csv) are in the freeze commit by design; mapped results are the oracle outputs only.",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/PREREG_ADDENDUM_16_DRAFT.md",
+          "role": "plan",
+          "intro_commit": "f91fc403f52668d9137b5e518e2920c8309f8cb9",
+          "intro_date": "2026-10-13 19:05:44 +0900",
+          "intro_subject": "prereg(access): addendum 16 — predicate-aligned ASK oracle (frozen before execution)",
+          "sha256_at_intro": "215a6036df0ee6e0f8e4ecb3a28d0ded8ba27fe86569a631c3354495bc0fc314",
+          "sha256_at_head": "215a6036df0ee6e0f8e4ecb3a28d0ded8ba27fe86569a631c3354495bc0fc314",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_freeze_tag": "215a6036df0ee6e0f8e4ecb3a28d0ded8ba27fe86569a631c3354495bc0fc314",
+          "changed_after_freeze_tag": false
+        }
+      ],
+      "draft_files": [
+        {
+          "path": "paper/access2026/PREREG_ADDENDUM_16_NOTES.md",
+          "role": "draft/notes",
+          "status": "ABSENT at HEAD (branch pipeline-reframe); history taken from --all refs; first commit is on another branch/tag",
+          "intro_commit": "6de3825d735fa69834d06414b94dd14e09ca7823",
+          "intro_date": "2026-10-09 23:22:47 +0900",
+          "intro_subject": "paper(access): IOF bank review notes clarified as author-written (FREEZE.md line, addendum 16 notes)",
+          "sha256_at_intro": "91c1106921af97ac6fa9c566fd6415538f3fb6b6b067f21e5fef81e9cbf14d8e",
+          "sha256_at_head": null,
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "535eb35974",
+              "date": "2026-10-10 23:08:21 +0900",
+              "subject": "paper(access): IOF variants A-F regenerated on NVFP4 endpoint with truthful model labeling (driver outage; aggregate manifest; addendum 16 note 3)"
+            },
+            {
+              "commit": "353e7bbfa8",
+              "date": "2026-10-09 23:38:19 +0900",
+              "subject": "paper(access): addendum 16 notes — IOF variant generator runs on NVFP4 weights (precision deviation, author-decided)"
+            }
+          ],
+          "sha256_at_freeze_tag": null,
+          "changed_after_freeze_tag": false
+        }
+      ],
+      "freeze_tag": {
+        "tag": "access2026-addendum16-freeze",
+        "tag_type": "tag",
+        "commit": "f91fc403f52668d9137b5e518e2920c8309f8cb9",
+        "commit_date": "2026-10-13 19:05:44 +0900",
+        "ancestor_of_head": true,
+        "tagger_date": "2026-10-13 19:05:44 +0900"
+      },
+      "first_plan_commit": {
+        "commit": "f91fc403f52668d9137b5e518e2920c8309f8cb9",
+        "date": "2026-10-13 19:05:44 +0900"
+      },
+      "first_results_commit": {
+        "commit": "dd5bce0de9aa15884bb32064ad2336d2ceb74d4f",
+        "date": "2026-10-13 19:09:56 +0900",
+        "subject": "exp(access): predicate-aligned ASK oracle (addendum 16) — results, comparison and report; pre-registered rule verdict: not functional",
+        "evidence_path": "paper/access2026/harness/real_run/ask_alignment_v2/ask_results_v2.json"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/real_run/ask_alignment_v2/ask_results_v2.json",
+        "paper/access2026/harness/real_run/ask_alignment_v2/mapping_v2.csv",
+        "paper/access2026/harness/real_run/ask_alignment_v2/comparison_v2.md"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 17,
+      "note": "Judge change recorded by tag access2026-addendum17-judgechange (D28, section 17.12).",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/PREREG_ADDENDUM_17.md",
+          "role": "plan",
+          "intro_commit": "5dc054c8149c5e39a975185666cf1e4a5fe2204a",
+          "intro_date": "2026-10-13 19:09:38 +0900",
+          "intro_subject": "prereg(access): addendum 17 — rendering-length experiment (frozen before judge calls)",
+          "sha256_at_intro": "d7e4232bb588cd0c822066947c42f216c0d2839bb396651be2a74b7fb0a35038",
+          "sha256_at_head": "9a9633fb51b95069d37a245cd8f862495523c45756bdc0cbf52b889fc3641cc1",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "5f6cf6a388",
+              "date": "2026-10-13 19:40:38 +0900",
+              "subject": "prereg(access): addendum 17 — judge changed to gpt-5.6-luna after upstream quota block"
+            },
+            {
+              "commit": "a2bd35a920",
+              "date": "2026-10-13 19:09:43 +0900",
+              "subject": "prereg(access): addendum 17 — record freeze commit hash"
+            }
+          ],
+          "sha256_at_freeze_tag": "d7e4232bb588cd0c822066947c42f216c0d2839bb396651be2a74b7fb0a35038",
+          "changed_after_freeze_tag": true
+        }
+      ],
+      "draft_files": [],
+      "freeze_tag": {
+        "tag": "access2026-addendum17-freeze",
+        "tag_type": "tag",
+        "commit": "5dc054c8149c5e39a975185666cf1e4a5fe2204a",
+        "commit_date": "2026-10-13 19:09:38 +0900",
+        "ancestor_of_head": true,
+        "tagger_date": "2026-10-13 19:09:38 +0900"
+      },
+      "first_plan_commit": {
+        "commit": "5dc054c8149c5e39a975185666cf1e4a5fe2204a",
+        "date": "2026-10-13 19:09:38 +0900"
+      },
+      "first_results_commit": {
+        "commit": "c20d641ae602044ceaf079bffb7afe6c4a01f597",
+        "date": "2026-10-13 19:31:02 +0900",
+        "subject": "exp(access): length experiment — partial run (113 valid cells) blocked by upstream judge quota; resume budget fix; failures preserved",
+        "evidence_path": "paper/access2026/harness/length_experiment/cells_length.jsonl"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/length_experiment/cells_length.jsonl",
+        "paper/access2026/harness/length_experiment/results_length.json",
+        "paper/access2026/harness/length_experiment/MANIFEST_length.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 18,
+      "note": "Draft only, never frozen (TBD date). No results.",
+      "plan_kind": "separate file",
+      "plan_files": [],
+      "draft_files": [
+        {
+          "path": "paper/access2026/PREREG_ADDENDUM_18_DRAFT.md",
+          "role": "draft/notes",
+          "intro_commit": "5fa44976c83c862c753c181d805c72c23260ed8c",
+          "intro_date": "2026-10-13 19:08:06 +0900",
+          "intro_subject": "annotation(access): multi-rater blind annotation package (per-rater seeds, Fleiss kappa / Krippendorff alpha, adjudication, rater guide) and addendum 18 draft — not frozen until raters are confirmed",
+          "sha256_at_intro": "77047f30f8815de815a09524a9ca1c124c507a5356cc7eca9400de1a452d3972",
+          "sha256_at_head": "77047f30f8815de815a09524a9ca1c124c507a5356cc7eca9400de1a452d3972",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        }
+      ],
+      "first_plan_commit": {
+        "commit": "5fa44976c83c862c753c181d805c72c23260ed8c",
+        "date": "2026-10-13 19:08:06 +0900"
+      },
+      "first_results_commit": null,
+      "results_paths_considered": [],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": "no results files mapped/committed (by design or draft-only)"
+    },
+    {
+      "addendum": 19,
+      "note": "Draft only, never frozen (TBD date). No results.",
+      "plan_kind": "separate file",
+      "plan_files": [],
+      "draft_files": [
+        {
+          "path": "paper/access2026/PREREG_ADDENDUM_19_DRAFT.md",
+          "role": "draft/notes",
+          "intro_commit": "39a3c24faa125c588cc63ffb02e9cd01150c59f4",
+          "intro_date": "2026-10-13 23:49:16 +0900",
+          "intro_subject": "prereg(access): drafts for addendum 19 (expert artifact-quality validity package, blinded, Kendall W / exact tau) and addendum 20 (bank expansion: 84 AI-drafted CQs screened 84/84, author review pending; power and budget); not frozen, no judge calls",
+          "sha256_at_intro": "a0497767c041202f3283e38e96bd97412d5edb2c4203f581484efe50edebdb64",
+          "sha256_at_head": "a0497767c041202f3283e38e96bd97412d5edb2c4203f581484efe50edebdb64",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        }
+      ],
+      "first_plan_commit": {
+        "commit": "39a3c24faa125c588cc63ffb02e9cd01150c59f4",
+        "date": "2026-10-13 23:49:16 +0900"
+      },
+      "first_results_commit": null,
+      "results_paths_considered": [],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": "no results files mapped/committed (by design or draft-only)"
+    },
+    {
+      "addendum": 20,
+      "note": "Draft only, never frozen (TBD date). No results.",
+      "plan_kind": "separate file",
+      "plan_files": [],
+      "draft_files": [
+        {
+          "path": "paper/access2026/PREREG_ADDENDUM_20_DRAFT.md",
+          "role": "draft/notes",
+          "intro_commit": "39a3c24faa125c588cc63ffb02e9cd01150c59f4",
+          "intro_date": "2026-10-13 23:49:16 +0900",
+          "intro_subject": "prereg(access): drafts for addendum 19 (expert artifact-quality validity package, blinded, Kendall W / exact tau) and addendum 20 (bank expansion: 84 AI-drafted CQs screened 84/84, author review pending; power and budget); not frozen, no judge calls",
+          "sha256_at_intro": "9975f324da5bb00214248aa2f23f90118e448abd8946298909a3f3ac272926da",
+          "sha256_at_head": "9975f324da5bb00214248aa2f23f90118e448abd8946298909a3f3ac272926da",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        }
+      ],
+      "first_plan_commit": {
+        "commit": "39a3c24faa125c588cc63ffb02e9cd01150c59f4",
+        "date": "2026-10-13 23:49:16 +0900"
+      },
+      "first_results_commit": null,
+      "results_paths_considered": [],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": "no results files mapped/committed (by design or draft-only)"
+    },
+    {
+      "addendum": 21,
+      "note": "",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/PREREG_ADDENDUM_21.md",
+          "role": "plan",
+          "intro_commit": "6918e7be585e2ec8d2f4527beae3d560786fdf3b",
+          "intro_date": "2026-10-14 13:47:43 +0900",
+          "intro_subject": "prereg(access): addendum 21 — exploratory B->B' recovery contrast on the second domain, frozen before any judge call (Ref r34 E2)",
+          "sha256_at_intro": "67b5790439db37ef6868f59b4fdcc21e5317c3cdf4f80c65d9623d313881117e",
+          "sha256_at_head": "67b5790439db37ef6868f59b4fdcc21e5317c3cdf4f80c65d9623d313881117e",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_freeze_tag": "67b5790439db37ef6868f59b4fdcc21e5317c3cdf4f80c65d9623d313881117e",
+          "changed_after_freeze_tag": false
+        }
+      ],
+      "draft_files": [
+        {
+          "path": "paper/access2026/PREREG_ADDENDUM_21_DRAFT.md",
+          "role": "draft/notes",
+          "intro_commit": "6918e7be585e2ec8d2f4527beae3d560786fdf3b",
+          "intro_date": "2026-10-14 13:47:43 +0900",
+          "intro_subject": "prereg(access): addendum 21 — exploratory B->B' recovery contrast on the second domain, frozen before any judge call (Ref r34 E2)",
+          "sha256_at_intro": "67b5790439db37ef6868f59b4fdcc21e5317c3cdf4f80c65d9623d313881117e",
+          "sha256_at_head": "67b5790439db37ef6868f59b4fdcc21e5317c3cdf4f80c65d9623d313881117e",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_freeze_tag": "67b5790439db37ef6868f59b4fdcc21e5317c3cdf4f80c65d9623d313881117e",
+          "changed_after_freeze_tag": false
+        }
+      ],
+      "freeze_tag": {
+        "tag": "access2026-addendum21-freeze",
+        "tag_type": "commit",
+        "commit": "6918e7be585e2ec8d2f4527beae3d560786fdf3b",
+        "commit_date": "2026-10-14 13:47:43 +0900",
+        "ancestor_of_head": true,
+        "tagger_date": null
+      },
+      "first_plan_commit": {
+        "commit": "6918e7be585e2ec8d2f4527beae3d560786fdf3b",
+        "date": "2026-10-14 13:47:43 +0900"
+      },
+      "first_results_commit": {
+        "commit": "dde41ff93bdf579680b312b2470df1507ef73f8e",
+        "date": "2026-10-14 15:56:05 +0900",
+        "subject": "experiment(access): E2 B->B' on the second domain — results, report, B' graph (exploratory, addendum 21)",
+        "evidence_path": "paper/access2026/harness/r34_bprime/results.json"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/r34_bprime/results.json",
+        "paper/access2026/harness/r34_bprime/eval_en.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 22,
+      "note": "",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/PREREG_ADDENDUM_22.md",
+          "role": "plan",
+          "intro_commit": "cdf61a247b4742e20738b7b0827bf06392b0c321",
+          "intro_date": "2026-10-14 13:56:10 +0900",
+          "intro_subject": "prereg(access): addendum 22 — rendering-length experiment rescored with the registered judge gemini-3.6-flash (exploratory, post hoc; frozen before any call)",
+          "sha256_at_intro": "881995ff16ddbc4b9433757ace8d69aef484bf9eccda6328d8237745f67d0dc9",
+          "sha256_at_head": "881995ff16ddbc4b9433757ace8d69aef484bf9eccda6328d8237745f67d0dc9",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_freeze_tag": "881995ff16ddbc4b9433757ace8d69aef484bf9eccda6328d8237745f67d0dc9",
+          "changed_after_freeze_tag": false
+        }
+      ],
+      "draft_files": [],
+      "freeze_tag": {
+        "tag": "access2026-addendum22-freeze",
+        "tag_type": "tag",
+        "commit": "cdf61a247b4742e20738b7b0827bf06392b0c321",
+        "commit_date": "2026-10-14 13:56:10 +0900",
+        "ancestor_of_head": true,
+        "tagger_date": "2026-10-14 13:56:10 +0900"
+      },
+      "first_plan_commit": {
+        "commit": "cdf61a247b4742e20738b7b0827bf06392b0c321",
+        "date": "2026-10-14 13:56:10 +0900"
+      },
+      "first_results_commit": null,
+      "results_paths_considered": [
+        "paper/access2026/harness/length_experiment/registered_r34"
+      ],
+      "untracked_result_files": [
+        "harness/length_experiment/registered_r34/invalid_402_20261014/MANIFEST_length.json",
+        "harness/length_experiment/registered_r34/invalid_402_20261014/README.txt",
+        "harness/length_experiment/registered_r34/invalid_402_20261014/REPORT_registered_r34_ko.md",
+        "harness/length_experiment/registered_r34/invalid_402_20261014/cells_registered_r34.jsonl",
+        "harness/length_experiment/registered_r34/invalid_402_20261014/results_registered_r34.json"
+      ],
+      "results_precede_plan_flag": false,
+      "flag_reason": "no results files mapped/committed (by design or draft-only)"
+    },
+    {
+      "addendum": 23,
+      "note": "",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/PREREG_ADDENDUM_23.md",
+          "role": "plan",
+          "intro_commit": "efbcfbb285cf4fcdcab9f02d5db657977958ce7b",
+          "intro_date": "2026-10-14 21:31:19 +0900",
+          "intro_subject": "prereg(access): addendum 23 — full views of B-F scored with luna via <internal-proxy> to complete the rendering-length experiment under one judge (exploratory, post hoc; frozen before any call)",
+          "sha256_at_intro": "e557f2cc0f88a5f78d782cfbdd98096eb6d694fa053607d79e9c44399377797a",
+          "sha256_at_head": "2ec31f1c3f83c587167381a10784cf703af5074f661c2b4c06c9d9cde35489b8",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "a9338b85d5",
+              "date": "2026-10-14 21:42:39 +0900",
+              "subject": "exp(access): luna full views of B-D (E partial, F not run: upstream quota) — results and report (addendum 23, exploratory)"
+            }
+          ],
+          "sha256_at_freeze_tag": "e557f2cc0f88a5f78d782cfbdd98096eb6d694fa053607d79e9c44399377797a",
+          "changed_after_freeze_tag": true
+        }
+      ],
+      "draft_files": [],
+      "freeze_tag": {
+        "tag": "access2026-addendum23-freeze",
+        "tag_type": "tag",
+        "commit": "efbcfbb285cf4fcdcab9f02d5db657977958ce7b",
+        "commit_date": "2026-10-14 21:31:19 +0900",
+        "ancestor_of_head": true,
+        "tagger_date": "2026-10-14 21:31:19 +0900"
+      },
+      "first_plan_commit": {
+        "commit": "efbcfbb285cf4fcdcab9f02d5db657977958ce7b",
+        "date": "2026-10-14 21:31:19 +0900"
+      },
+      "first_results_commit": {
+        "commit": "a9338b85d51304b6493a5455a49e27d9a963b652",
+        "date": "2026-10-14 21:42:39 +0900",
+        "subject": "exp(access): luna full views of B-D (E partial, F not run: upstream quota) — results and report (addendum 23, exploratory)",
+        "evidence_path": "paper/access2026/harness/length_experiment/luna_full_r35/cells_luna_full_r35.jsonl"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/length_experiment/luna_full_r35/cells_luna_full_r35.jsonl",
+        "paper/access2026/harness/length_experiment/luna_full_r35/results_luna_full_r35.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 24,
+      "note": "",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/PREREG_ADDENDUM_24.md",
+          "role": "plan",
+          "intro_commit": "26102c7d938ffaa636ba1e3544b7a9d6de06185a",
+          "intro_date": "2026-10-15 11:05:23 +0900",
+          "intro_subject": "prereg(access): addendum 24 — LLM-rater luna labels, frozen before calls",
+          "sha256_at_intro": "b028249c24580189ba0cf5e817acf62599e7cffffccb1bd16415fde731606359",
+          "sha256_at_head": "b028249c24580189ba0cf5e817acf62599e7cffffccb1bd16415fde731606359",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_freeze_tag": "b028249c24580189ba0cf5e817acf62599e7cffffccb1bd16415fde731606359",
+          "changed_after_freeze_tag": false
+        }
+      ],
+      "draft_files": [],
+      "freeze_tag": {
+        "tag": "access2026-addendum24-freeze",
+        "tag_type": "tag",
+        "commit": "26102c7d938ffaa636ba1e3544b7a9d6de06185a",
+        "commit_date": "2026-10-15 11:05:23 +0900",
+        "ancestor_of_head": true,
+        "tagger_date": "2026-10-15 11:05:23 +0900"
+      },
+      "first_plan_commit": {
+        "commit": "26102c7d938ffaa636ba1e3544b7a9d6de06185a",
+        "date": "2026-10-15 11:05:23 +0900"
+      },
+      "first_results_commit": {
+        "commit": "9858078d6893c0c771572bc4cb7fce76fa55d13e",
+        "date": "2026-10-15 11:06:50 +0900",
+        "subject": "exp(access): LLM-rater (luna) pilot labels on the 12 human-labeled cells (addendum 24, exploratory); full 188-cell run not executed (est. 96.7M input tokens > 6M budget)",
+        "evidence_path": "paper/access2026/harness/llm_rater_luna_2026-10-15/luna_rater_raw.jsonl"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/llm_rater_luna_2026-10-15/luna_rater_raw.jsonl",
+        "paper/access2026/harness/llm_rater_luna_2026-10-15/results_llm_rater_luna.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 25,
+      "note": "",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/PREREG_ADDENDUM_25.md",
+          "role": "plan",
+          "intro_commit": "6d1aeecc87cf6ab995a343c3224493064a2e4689",
+          "intro_date": "2026-10-15 11:13:38 +0900",
+          "intro_subject": "prereg(access): addendum 25 — luna rater on subgraph views, 188 cells, frozen before calls",
+          "sha256_at_intro": "bc6a8dcacceade4dd4f0d5974251f3e5fcbd8b581613eb9cd6a457e46e961c58",
+          "sha256_at_head": "bc6a8dcacceade4dd4f0d5974251f3e5fcbd8b581613eb9cd6a457e46e961c58",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_freeze_tag": "bc6a8dcacceade4dd4f0d5974251f3e5fcbd8b581613eb9cd6a457e46e961c58",
+          "changed_after_freeze_tag": false
+        }
+      ],
+      "draft_files": [],
+      "freeze_tag": {
+        "tag": "access2026-addendum25-freeze",
+        "tag_type": "tag",
+        "commit": "6d1aeecc87cf6ab995a343c3224493064a2e4689",
+        "commit_date": "2026-10-15 11:13:38 +0900",
+        "ancestor_of_head": true,
+        "tagger_date": "2026-10-15 11:13:38 +0900"
+      },
+      "first_plan_commit": {
+        "commit": "6d1aeecc87cf6ab995a343c3224493064a2e4689",
+        "date": "2026-10-15 11:13:38 +0900"
+      },
+      "first_results_commit": {
+        "commit": "161a9143007d76b7bdd4b0f760f79447fd6c460f",
+        "date": "2026-10-15 11:21:49 +0900",
+        "subject": "exp(access): LLM-rater (luna) labels, subgraph view, on all 188 primary cells (addendum 25, exploratory) — 188/188 valid; all 8 comparable-rule verdicts 'not comparable (below)' vs the AH-vs-independent baseline; luna-reference pi-hat 28.7%",
+        "evidence_path": "paper/access2026/harness/llm_rater_luna_2026-10-15/subgraph_r25/luna_rater_subgraph_raw.jsonl"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/llm_rater_luna_2026-10-15/subgraph_r25/luna_rater_subgraph_raw.jsonl",
+        "paper/access2026/harness/llm_rater_luna_2026-10-15/subgraph_r25/results_llm_rater_luna_subgraph.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 26,
+      "note": "Plan committed alone before any model call (per the plan's own statement); compared with first results commit below.",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/harness/review6_judges/PLAN.md",
+          "role": "plan",
+          "intro_commit": "87355a0d1ba1027c2e2fb95565a3eaadea29635d",
+          "intro_date": "2026-10-17 17:57:23 +0900",
+          "intro_subject": "addendum 26 (exploratory): non-Qwen judge runs — plan frozen before scoring",
+          "sha256_at_intro": "11684c35274766e315b6a814ffb4ed74ba66d4a9093dd1b8c1cac6f62a9e6234",
+          "sha256_at_head": "11684c35274766e315b6a814ffb4ed74ba66d4a9093dd1b8c1cac6f62a9e6234",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        }
+      ],
+      "draft_files": [],
+      "first_plan_commit": {
+        "commit": "87355a0d1ba1027c2e2fb95565a3eaadea29635d",
+        "date": "2026-10-17 17:57:23 +0900"
+      },
+      "first_results_commit": {
+        "commit": "71bb2ea5ba6632c37cbf1413ecec19b047a47b2a",
+        "date": "2026-10-18 03:49:26 +0900",
+        "subject": "paper(access): review 6 integration - two-way judge-label disagreement, non-Qwen judges, natural-document check, LLM-rater limits, related work",
+        "evidence_path": "paper/access2026/harness/review6_judges/raw"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/review6_judges/raw",
+        "paper/access2026/harness/review6_judges/results.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 27,
+      "note": "Plan committed alone before any model call (per the plan's own statement); compared with first results commit below.",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/harness/review6_natural/PLAN.md",
+          "role": "plan",
+          "intro_commit": "f107732fa96d04331c5ca5a873e2779ff70c1108",
+          "intro_date": "2026-10-17 17:53:46 +0900",
+          "intro_subject": "addendum 27 (exploratory): natural-document Brick corpus — plan frozen before building",
+          "sha256_at_intro": "bfec475c09dfe34d16b292b389d4a55ec39b02502a810a5189fa5d9df7377045",
+          "sha256_at_head": "12caf2e02a195bdaaa33920b101130bfc9ea14476f704eeae37ea136bcbdb159",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "248129f10b",
+              "date": "2026-10-17 18:37:18 +0900",
+              "subject": "addendum 27 amendment 2 (exploratory): same-family contrast judge (Qwen3.8-Flash-Next on <internal-host>) and side-by-side reporting — written before any valid scoring"
+            },
+            {
+              "commit": "7500f27e54",
+              "date": "2026-10-17 18:35:50 +0900",
+              "subject": "addendum 27 amendment 1 (exploratory): judge change to gpt-oss-20b / GLM-4.7-Flash after <internal-proxy> 402 — written before any valid scoring"
+            }
+          ]
+        }
+      ],
+      "draft_files": [],
+      "first_plan_commit": {
+        "commit": "f107732fa96d04331c5ca5a873e2779ff70c1108",
+        "date": "2026-10-17 17:53:46 +0900"
+      },
+      "first_results_commit": {
+        "commit": "71bb2ea5ba6632c37cbf1413ecec19b047a47b2a",
+        "date": "2026-10-18 03:49:26 +0900",
+        "subject": "paper(access): review 6 integration - two-way judge-label disagreement, non-Qwen judges, natural-document check, LLM-rater limits, related work",
+        "evidence_path": "paper/access2026/harness/review6_natural/raw"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/review6_natural/raw",
+        "paper/access2026/harness/review6_natural/results.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 28,
+      "note": "Plan committed alone before any model call (per the plan's own statement); compared with first results commit below.",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/harness/review6_raters/PLAN.md",
+          "role": "plan",
+          "intro_commit": "c8328bf42ab8b2155694cd3010132e75b40a8696",
+          "intro_date": "2026-10-17 18:43:14 +0900",
+          "intro_subject": "addendum 28 (exploratory): LLM-rater stability and cross-family agreement - plan frozen before scoring",
+          "sha256_at_intro": "2e946d256f848e26645382c1657eb8f679fc6732ed98d77cd0f13aad07abe6d9",
+          "sha256_at_head": "2e946d256f848e26645382c1657eb8f679fc6732ed98d77cd0f13aad07abe6d9",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        }
+      ],
+      "draft_files": [],
+      "first_plan_commit": {
+        "commit": "c8328bf42ab8b2155694cd3010132e75b40a8696",
+        "date": "2026-10-17 18:43:14 +0900"
+      },
+      "first_results_commit": {
+        "commit": "71bb2ea5ba6632c37cbf1413ecec19b047a47b2a",
+        "date": "2026-10-18 03:49:26 +0900",
+        "subject": "paper(access): review 6 integration - two-way judge-label disagreement, non-Qwen judges, natural-document check, LLM-rater limits, related work",
+        "evidence_path": "paper/access2026/harness/review6_raters/raw"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/review6_raters/raw",
+        "paper/access2026/harness/review6_raters/results.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 29,
+      "note": "Plan states itself post hoc: written after the analysis ran; no freeze before data.",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/harness/review9_verbatim/PLAN.md",
+          "role": "plan",
+          "intro_commit": "30dabc7857e357784422cab82d055385c61f05d9",
+          "intro_date": "2026-10-18 14:44:30 +0900",
+          "intro_subject": "paper(access): external review 9 - holdout verbatim-span check (post hoc g), design rule corrected, dwell note, detail diet, AI-use verification sentence, release sentence; dist refreshed",
+          "sha256_at_intro": "98288cd59be4f74b276440c8e08885b31c707660615ef8b9bcaca34b9330bf04",
+          "sha256_at_head": "98288cd59be4f74b276440c8e08885b31c707660615ef8b9bcaca34b9330bf04",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        }
+      ],
+      "draft_files": [],
+      "first_plan_commit": {
+        "commit": "30dabc7857e357784422cab82d055385c61f05d9",
+        "date": "2026-10-18 14:44:30 +0900"
+      },
+      "first_results_commit": {
+        "commit": "24d7166a5a89e6d2c0a30a3195b81767f9d611d7",
+        "date": "2026-10-18 12:28:11 +0900",
+        "subject": "harness(access): review-9 verbatim-span check on the 188 holdout cells (post hoc, no model calls)",
+        "evidence_path": "paper/access2026/harness/review9_verbatim/results.json"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/review9_verbatim/results.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": true,
+      "flag_reason": "results first commit is dated before, or is not a descendant of, the plan's first commit"
+    },
+    {
+      "addendum": 30,
+      "note": "Plan committed alone before any model call (per the plan's own statement); compared with first results commit below.",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/harness/review10_llm_labels/PLAN.md",
+          "role": "plan",
+          "intro_commit": "798a04f3fc05877587d1577091ddb42134977a2f",
+          "intro_date": "2026-10-18 17:24:48 +0900",
+          "intro_subject": "addendum 30 (exploratory): persona-ensemble LLM evidence labeler with a consistency filter - plan frozen before any model call",
+          "sha256_at_intro": "471a6bddd13bae2515096ef8a621ad2f2b059bd0aad91adac69fee9760baa19a",
+          "sha256_at_head": "d0e185e20c7ccc434601401bcf1a0b2cca5bdc66f0f2380368441c887dcf4f5e",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "643fbd6318",
+              "date": "2026-10-18 21:48:03 +0900",
+              "subject": "addendum 30, amendment A4: Qwen queue order (dev bank and second domain before paraphrases) and stopping point"
+            },
+            {
+              "commit": "b9affde577",
+              "date": "2026-10-18 19:24:32 +0900",
+              "subject": "addendum 30, amendment A3: <internal-host> replica not creatable (driver/library mismatch in the container runtime hook); Qwen workers raised on the existing endpoint"
+            },
+            {
+              "commit": "11a4a5d87d",
+              "date": "2026-10-18 18:44:01 +0900",
+              "subject": "addendum 30, amendment A2: no GPU clearing or relaunch (listing recorded, reasons), prompt order unchanged"
+            },
+            {
+              "commit": "f49570e29b",
+              "date": "2026-10-18 18:38:45 +0900",
+              "subject": "addendum 30, amendment A1: scope extended to every question of every bank, higher concurrency (before any call on a new cell set)"
+            }
+          ]
+        }
+      ],
+      "draft_files": [],
+      "first_plan_commit": {
+        "commit": "798a04f3fc05877587d1577091ddb42134977a2f",
+        "date": "2026-10-18 17:24:48 +0900"
+      },
+      "first_results_commit": {
+        "commit": "8e77c0a9f4ccd33676a2d51cc2c5e2a1d0e958d8",
+        "date": "2026-10-19 04:02:53 +0900",
+        "subject": "addendum 30: results of the persona-ensemble LLM labeler (Tiers 1-3e; glm and gptoss complete, qwen to its stopping point), analysis, tables, deviations, raw labels (gzip)",
+        "evidence_path": "paper/access2026/harness/review10_llm_labels/raw"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/review10_llm_labels/raw",
+        "paper/access2026/harness/review10_llm_labels/results.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 31,
+      "note": "",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/harness/review10_llm_labels/ADJUDICATION_PLAN.md",
+          "role": "plan",
+          "intro_commit": "88e5cbce35c14ffa3bfd7cca64706ad7e61a6126",
+          "intro_date": "2026-10-19 08:26:20 +0900",
+          "intro_subject": "addendum 31: plan of the objective adjudication check (persona-ensemble LLM vs human label disagreements, bank grounding/expected-answer term test), frozen before any number is computed",
+          "sha256_at_intro": "ec4797352b1b553481d6c7c96fce310c8d3074c7ffff3a44d7616f33e792c06a",
+          "sha256_at_head": "0adc0a31fdc3bc7f02cbc3f76d4af00638fa2230f4b3e2986435fc33e6c820ae",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "3020bb14d4",
+              "date": "2026-10-19 08:29:58 +0900",
+              "subject": "addendum 31: results of the objective adjudication check (reading: not separated in 6 of 6 comparisons), aggregates, reliability side by side"
+            }
+          ]
+        }
+      ],
+      "draft_files": [],
+      "first_plan_commit": {
+        "commit": "88e5cbce35c14ffa3bfd7cca64706ad7e61a6126",
+        "date": "2026-10-19 08:26:20 +0900"
+      },
+      "first_results_commit": {
+        "commit": "3020bb14d41469dbdc2eb8f329995202a835fcfb",
+        "date": "2026-10-19 08:29:58 +0900",
+        "subject": "addendum 31: results of the objective adjudication check (reading: not separated in 6 of 6 comparisons), aggregates, reliability side by side",
+        "evidence_path": "paper/access2026/harness/review10_llm_labels/results_adjudication.json"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/review10_llm_labels/results_adjudication.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 32,
+      "note": "Plan committed alone before any model call (per the plan's own statement); compared with first results commit below.",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/harness/study2_llm_labels/PLAN.md",
+          "role": "plan",
+          "intro_commit": "678d938037e5567fc82df8eadd3c17a96ddf53f5",
+          "intro_date": "2026-10-19 09:40:32 +0900",
+          "intro_subject": "prereg(access): addendum 32 plan (Study 2: LLM evidence labels on a full-rendering retrieval view, two-stage gated) and OSF registration text, committed before any model call; LLM-labeled, not human-validated beyond Stage 1",
+          "sha256_at_intro": "c891b60f89d82bcd67f576320b90135443f2bf0e11bd97fb895806fc9da14c7e",
+          "sha256_at_head": "c891b60f89d82bcd67f576320b90135443f2bf0e11bd97fb895806fc9da14c7e",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        }
+      ],
+      "draft_files": [
+        {
+          "path": "paper/access2026/harness/study2_llm_labels/OSF_REGISTRATION.md",
+          "role": "supporting plan file",
+          "intro_commit": "678d938037e5567fc82df8eadd3c17a96ddf53f5",
+          "intro_date": "2026-10-19 09:40:32 +0900",
+          "intro_subject": "prereg(access): addendum 32 plan (Study 2: LLM evidence labels on a full-rendering retrieval view, two-stage gated) and OSF registration text, committed before any model call; LLM-labeled, not human-validated beyond Stage 1",
+          "sha256_at_intro": "c4f68d5610fd219d3733ffffbd610c994a81776bc269e35cd6f6a82a3127a8c2",
+          "sha256_at_head": "c4f68d5610fd219d3733ffffbd610c994a81776bc269e35cd6f6a82a3127a8c2",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        },
+        {
+          "path": "paper/access2026/harness/study2_llm_labels/BANK_FREEZE.md",
+          "role": "supporting plan file",
+          "intro_commit": "99ca1a354d8c951d026f1eaa5e7fee93e9f971b0",
+          "intro_date": "2026-10-19 10:26:13 +0900",
+          "intro_subject": "study2 (addendum 32): expansion bank frozen as is (84 rows, header comment line removed), sha256 recorded before any judge call",
+          "sha256_at_intro": "6c678e85695d93c70a58f372af275cf9b18653e56d92b3d1cf94844419c92d05",
+          "sha256_at_head": "6c678e85695d93c70a58f372af275cf9b18653e56d92b3d1cf94844419c92d05",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        }
+      ],
+      "first_plan_commit": {
+        "commit": "678d938037e5567fc82df8eadd3c17a96ddf53f5",
+        "date": "2026-10-19 09:40:32 +0900"
+      },
+      "first_results_commit": {
+        "commit": "f1fe1bfc45ff76b0f472683b4d43a24d0a4646aa",
+        "date": "2026-10-19 09:47:20 +0900",
+        "subject": "study2 (addendum 32): view builder, instruction text, cell manifest, runner, Stage 1 analyzer and tests (synthetic data only), committed before any model call; tokenizer preflight (no generation): max prompt 29.7k tokens, 0 cells over the window",
+        "evidence_path": "paper/access2026/harness/study2_llm_labels/raw"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/study2_llm_labels/raw",
+        "paper/access2026/harness/study2_llm_labels/results.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 33,
+      "note": "",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/harness/study2_llm_labels/ADDENDUM_33.md",
+          "role": "plan",
+          "intro_commit": "a9e1fef1cb802a0350e88610bf4e4607dd9ad781",
+          "intro_date": "2026-10-19 14:27:13 +0900",
+          "intro_subject": "paper(access): addendum 33 (post hoc) - preserved-control labels on the Study 2 labeler, plan before any call",
+          "sha256_at_intro": "60a8061b70ab421244402a4be1fb2548df9e195d037c07798fd13421dd22c3e4",
+          "sha256_at_head": "60a8061b70ab421244402a4be1fb2548df9e195d037c07798fd13421dd22c3e4",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        }
+      ],
+      "draft_files": [],
+      "first_plan_commit": {
+        "commit": "a9e1fef1cb802a0350e88610bf4e4607dd9ad781",
+        "date": "2026-10-19 14:27:13 +0900"
+      },
+      "first_results_commit": {
+        "commit": "e5c191095f0d1298c4caa4c5d0b3bbfab801b101",
+        "date": "2026-10-19 14:34:36 +0900",
+        "subject": "paper(access): addendum 33 results (preserved controls, GLM 4/12 and gpt-oss 2/12 marked S=1) and self-consistent-cell profile script and results",
+        "evidence_path": "paper/access2026/harness/study2_llm_labels/results_preserved.json"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/study2_llm_labels/results_preserved.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 34,
+      "note": "Plan committed alone before any model call (per the plan's own statement); compared with first results commit below.",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/harness/study3_expanded_ab/PLAN.md",
+          "role": "plan",
+          "intro_commit": "7a1cb4d521e579ba2e3ffd773fb71c1dcead97a4",
+          "intro_date": "2026-10-20 17:58:40 +0900",
+          "intro_subject": "prereg(access): addendum 34 - expanded A->B judge-score contrast on the expansion bank (post hoc, plan only; no computation yet)",
+          "sha256_at_intro": "ef00cdb95199fa2876eca9773b66a3cd00daa7738854afb23866a3585c50c666",
+          "sha256_at_head": "b21cb4225b0bce3a65ac38101c16317e3801d32bb7028fa8b42adf1af140cc4e",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "613d2d59a0",
+              "date": "2026-10-20 19:33:03 +0900",
+              "subject": "prereg(access): addendum 34 A3 - Brick pool without the expansion bank and margin +-0.30 readings (post hoc; committed before computation)"
+            },
+            {
+              "commit": "3a767e737d",
+              "date": "2026-10-20 18:13:55 +0900",
+              "subject": "prereg(access): addendum 34 A2 - floor-imputation sensitivity for cells with no view (plan only, before computation)"
+            },
+            {
+              "commit": "482ad9f75f",
+              "date": "2026-10-20 18:00:01 +0900",
+              "subject": "prereg(access): addendum 34 A1 - widen A->B contrast to all banks with A and B graphs (plan amendment, before any new call)"
+            }
+          ]
+        }
+      ],
+      "draft_files": [],
+      "first_plan_commit": {
+        "commit": "7a1cb4d521e579ba2e3ffd773fb71c1dcead97a4",
+        "date": "2026-10-20 17:58:40 +0900"
+      },
+      "first_results_commit": {
+        "commit": "b8dec09c169611d78dff090d7bbe521df5e81517",
+        "date": "2026-10-20 17:59:12 +0900",
+        "subject": "paper(access): addendum 34 interim - expansion-bank A->B judge-score contrast from existing Stage 2 scores (26 clusters, no new calls)",
+        "evidence_path": "paper/access2026/harness/study3_expanded_ab/results.json"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/study3_expanded_ab/raw",
+        "paper/access2026/harness/study3_expanded_ab/results.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 35,
+      "note": "Plan committed alone before any model call (per the plan's own statement); compared with first results commit below.",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/harness/study4_domains/PLAN.md",
+          "role": "plan",
+          "intro_commit": "d3a3267fef82ea6d593d80f25038cf0050649d1b",
+          "intro_date": "2026-10-20 18:02:27 +0900",
+          "intro_subject": "prereg(access): addendum 35 - A->B judge-score contrast on further standards-based domains (plan only; no build or model call yet)",
+          "sha256_at_intro": "c17f856cc0df144ce3436b6a259feb41f3c18ca452deb38229476f1cabd08469",
+          "sha256_at_head": "c17f856cc0df144ce3436b6a259feb41f3c18ca452deb38229476f1cabd08469",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        }
+      ],
+      "draft_files": [],
+      "first_plan_commit": {
+        "commit": "d3a3267fef82ea6d593d80f25038cf0050649d1b",
+        "date": "2026-10-20 18:02:27 +0900"
+      },
+      "first_results_commit": {
+        "commit": "a3e27b24ef3af4912599f91e098470ac93046067",
+        "date": "2026-10-20 18:25:53 +0900",
+        "subject": "results(access): addendum 35 - A->B judge-score contrast on DCAT, SOSA/SSN and PROV (exploratory, judge-score only, AI-draft banks); DCAT artifacts committed (permissive license), SSN/PROV scores and hashes only",
+        "evidence_path": "paper/access2026/harness/study4_domains/results.json"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/study4_domains/raw",
+        "paper/access2026/harness/study4_domains/results.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": 36,
+      "note": "Plan committed alone before any model call (per the plan's own statement); compared with first results commit below.",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/harness/study5_judge_panel/PLAN.md",
+          "role": "plan",
+          "intro_commit": "76eb126941b4d4d16a72ecdc473b57be7d45aef8",
+          "intro_date": "2026-10-20 19:12:04 +0900",
+          "intro_subject": "prereg(access): addendum 36 - wider judge panel for the A->B contrast and variant F on DCAT, SOSA/SSN, PROV (post hoc, exploratory; committed before any call)",
+          "sha256_at_intro": "52359f37c9003806075730a0f3cbfca5be5a78eaf60106d6a70910ab60e714ea",
+          "sha256_at_head": "52359f37c9003806075730a0f3cbfca5be5a78eaf60106d6a70910ab60e714ea",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        }
+      ],
+      "draft_files": [],
+      "first_plan_commit": {
+        "commit": "76eb126941b4d4d16a72ecdc473b57be7d45aef8",
+        "date": "2026-10-20 19:12:04 +0900"
+      },
+      "first_results_commit": {
+        "commit": "824329732e0db41188822221f73ce670041b4131",
+        "date": "2026-10-20 19:42:40 +0900",
+        "subject": "results(access): addendum 36 - judge panel (glm, gpt-oss, Qwen3.8-Flash-Next, Qwen3-Next-80B same-family, gpt-5.6-luna) on the A->B cells, and variant F on DCAT, SOSA/SSN, PROV; interpretation rule gives 'judge-dependent'",
+        "evidence_path": "paper/access2026/harness/study5_judge_panel/results.json"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/study5_judge_panel/raw",
+        "paper/access2026/harness/study5_judge_panel/results.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": "36B",
+      "note": "Addendum 36 amendment B.",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/harness/study5b_small_judges/PLAN.md",
+          "role": "plan",
+          "intro_commit": "945d7f98bd95eae556a51f43ad4d97e0c373c976",
+          "intro_date": "2026-10-20 19:33:08 +0900",
+          "intro_subject": "prereg(access): addendum 36 amendment B - Qwen size ladder judges (27B; 9B/4B from Qwen3.5 because Qwen3.8 has no smaller size), post hoc, committed before any call",
+          "sha256_at_intro": "760d4237814b583d03365fa754d1b0819cacdb589b3602a9bfe77c0dde2a6138",
+          "sha256_at_head": "760d4237814b583d03365fa754d1b0819cacdb589b3602a9bfe77c0dde2a6138",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        }
+      ],
+      "draft_files": [],
+      "first_plan_commit": {
+        "commit": "945d7f98bd95eae556a51f43ad4d97e0c373c976",
+        "date": "2026-10-20 19:33:08 +0900"
+      },
+      "first_results_commit": {
+        "commit": "acd02abae8caedfefaec8be06401e4870833f5a5",
+        "date": "2026-10-20 20:59:32 +0900",
+        "subject": "results(access): addendum 36B - Qwen3.8-27B, Qwen3.5-9B, Qwen3.5-4B as judges on the Study 5 cells (judge-score contrasts, exploratory, post hoc)",
+        "evidence_path": "paper/access2026/harness/study5b_small_judges/results.json"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/study5b_small_judges/raw",
+        "paper/access2026/harness/study5b_small_judges/results.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    },
+    {
+      "addendum": "36C",
+      "note": "Addendum 36 amendment C.",
+      "plan_kind": "separate file",
+      "plan_files": [
+        {
+          "path": "paper/access2026/harness/study5c_full_ladder/PLAN.md",
+          "role": "plan",
+          "intro_commit": "0b89bd889958a5b9fe5640806197206ad2abaa9a",
+          "intro_date": "2026-10-20 19:54:39 +0900",
+          "intro_subject": "plan(access): addendum 36 amendment C - full A-F ladder (C, D, E cells) on DCAT, SOSA/SSN, PROV with the judge panel; prereg before any call",
+          "sha256_at_intro": "d3a5ca3195e3903361fff49ad4d297683c1d3f4dd8752c45dd4bbc49f9387fb3",
+          "sha256_at_head": "d3a5ca3195e3903361fff49ad4d297683c1d3f4dd8752c45dd4bbc49f9387fb3",
+          "changed_after_intro": false,
+          "later_commits_touching": []
+        }
+      ],
+      "draft_files": [],
+      "first_plan_commit": {
+        "commit": "0b89bd889958a5b9fe5640806197206ad2abaa9a",
+        "date": "2026-10-20 19:54:39 +0900"
+      },
+      "first_results_commit": {
+        "commit": "8ac622fec8bf56eeab6c25075ee942c4afc7ff2e",
+        "date": "2026-10-20 20:48:00 +0900",
+        "subject": "results(access): addendum 36 amendment C - full A-F ladder on DCAT, SOSA/SSN, PROV (C, D, E cells scored by glm, gpt-oss, Qwen3.8-Flash-Next, Qwen3-Next-80B same-family); adjacent contrasts equivalent except B->C (GLM) and D->E (Qwen3.8); no monotone ladder for any judge",
+        "evidence_path": "paper/access2026/harness/study5c_full_ladder/results.json"
+      },
+      "results_paths_considered": [
+        "paper/access2026/harness/study5c_full_ladder/raw",
+        "paper/access2026/harness/study5c_full_ladder/results.json"
+      ],
+      "untracked_result_files": [],
+      "results_precede_plan_flag": false,
+      "flag_reason": ""
+    }
+  ],
+  "bank_freezes": [
+    {
+      "tag": "access2026-cqbank-brick-v1-freeze",
+      "tag_type": "tag",
+      "commit": "dff4fa36886cbcf62e4f4f6e37cc2b09a379c27a",
+      "commit_date": "2026-09-12 21:27:54 +0900",
+      "ancestor_of_head": true,
+      "tagger_date": "2026-09-12 21:27:54 +0900",
+      "message": "Freeze paper/access2026/bank/cq_bank_brick_v1.csv at SHA256 993c5e1164540dce0f2f9bf2e6ed397cf45910da7889300feeaad6543edb8507, 2026-09-12T12:22:32Z",
+      "files_in_tag_commit_total": 8,
+      "bank_files": [
+        {
+          "path": "paper/access2026/bank/CQ_BANK_BRICK.md",
+          "role": "bank/freeze file",
+          "intro_commit": "bcec3feb05afe5c92c98aa4192969a9a14371531",
+          "intro_date": "2026-09-12 13:50:53 +0900",
+          "intro_subject": "paper(access): Brick holdout CQ bank v0 draft (36=6x6, artifact-blind, groundings verified against frozen snapshot)",
+          "sha256_at_intro": "06236aaf32b27e1704b90f8b3c9c92db41f634f982c1eaa3420d0432cc0c0dc4",
+          "sha256_at_head": "93e863424967679d63393fe234f56716e90ac7b3526ad6bda77149889af291ec",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "dff4fa3688",
+              "date": "2026-09-12 21:27:54 +0900",
+              "subject": "paper(access): adopt framing B, run channel-1 screen, freeze CQ bank at 36/60"
+            },
+            {
+              "commit": "91d4abfc10",
+              "date": "2026-09-12 21:10:09 +0900",
+              "subject": "paper(access): fix ask_oracle.py + correct CQB21/CQB23 grounding, freeze bank at 36/36 60/60"
+            },
+            {
+              "commit": "827be41495",
+              "date": "2026-09-12 15:21:50 +0900",
+              "subject": "paper(access): Related Work + Formalization; fix blinding and audit-chain defects"
+            },
+            {
+              "commit": "ca4a15a0bd",
+              "date": "2026-09-12 14:15:49 +0900",
+              "subject": "paper(access): CQ bank v1 - fix 17 rows after full snapshot re-verification, add verify_bank.py freeze gate"
+            }
+          ],
+          "sha256_at_tag_commit": "93e863424967679d63393fe234f56716e90ac7b3526ad6bda77149889af291ec",
+          "changed_after_tag": false
+        },
+        {
+          "path": "paper/access2026/bank/cq_bank_brick_v1.csv",
+          "role": "bank/freeze file",
+          "intro_commit": "ca4a15a0bd239e9b937486981fd1ea44ad9a8ce4",
+          "intro_date": "2026-09-12 14:15:49 +0900",
+          "intro_subject": "paper(access): CQ bank v1 - fix 17 rows after full snapshot re-verification, add verify_bank.py freeze gate",
+          "sha256_at_intro": "4807ec80428f5b6f1c190ea8d082a65b61d6b3c6f343464cc0748361dbbce44c",
+          "sha256_at_head": "993c5e1164540dce0f2f9bf2e6ed397cf45910da7889300feeaad6543edb8507",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "dff4fa3688",
+              "date": "2026-09-12 21:27:54 +0900",
+              "subject": "paper(access): adopt framing B, run channel-1 screen, freeze CQ bank at 36/60"
+            },
+            {
+              "commit": "91d4abfc10",
+              "date": "2026-09-12 21:10:09 +0900",
+              "subject": "paper(access): fix ask_oracle.py + correct CQB21/CQB23 grounding, freeze bank at 36/36 60/60"
+            }
+          ],
+          "sha256_at_tag_commit": "993c5e1164540dce0f2f9bf2e6ed397cf45910da7889300feeaad6543edb8507",
+          "changed_after_tag": false
+        },
+        {
+          "path": "paper/access2026/bank/cq_bank_brick_v2.csv",
+          "role": "bank/freeze file",
+          "intro_commit": "91d4abfc10be7d6a00f19d29827e9ba9e7bdd6db",
+          "intro_date": "2026-09-12 21:10:09 +0900",
+          "intro_subject": "paper(access): fix ask_oracle.py + correct CQB21/CQB23 grounding, freeze bank at 36/36 60/60",
+          "sha256_at_intro": "ae041097f72f7b46b823ceb0964fb2f9beaf16f02648745c213e687ce69c817c",
+          "sha256_at_head": "3868de4be471f27fda081ceb9b7babe0dd39edc944434453b46b380db3dd40f5",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "dff4fa3688",
+              "date": "2026-09-12 21:27:54 +0900",
+              "subject": "paper(access): adopt framing B, run channel-1 screen, freeze CQ bank at 36/60"
+            }
+          ],
+          "sha256_at_tag_commit": "3868de4be471f27fda081ceb9b7babe0dd39edc944434453b46b380db3dd40f5",
+          "changed_after_tag": false
+        },
+        {
+          "path": "paper/access2026/data/FREEZE.md",
+          "role": "bank/freeze file",
+          "intro_commit": "a7c6ad577996730a923b9f7f2c90d28a22544dde",
+          "intro_date": "2026-09-12 11:55:08 +0900",
+          "intro_subject": "paper(access): freeze Brick v1.4.4 snapshot + domain data-freeze manifest (P0-4)",
+          "sha256_at_intro": "08651f1538b8842365b6fa6e52cc72e629eebdee9797beb6759df9d79f01bd17",
+          "sha256_at_head": "a0a9bfc84713613f5a722223707b952984f755b60aaa36708b3bf640bc525416",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "dff4fa3688",
+              "date": "2026-09-12 21:27:54 +0900",
+              "subject": "paper(access): adopt framing B, run channel-1 screen, freeze CQ bank at 36/60"
+            }
+          ],
+          "sha256_at_tag_commit": "a0a9bfc84713613f5a722223707b952984f755b60aaa36708b3bf640bc525416",
+          "changed_after_tag": false
+        }
+      ]
+    },
+    {
+      "tag": "access2026-cqbank-iof-v1-freeze",
+      "tag_type": "tag",
+      "commit": "466624bf09ec1ed6058605f7759c5fb039c9f683",
+      "commit_date": "2026-10-09 23:14:34 +0900",
+      "ancestor_of_head": false,
+      "tagger_date": "2026-10-09 23:14:34 +0900",
+      "message": "IOF CQ bank v1 freeze (sha256 b790c72733e93acd4fb325b99beca6188a3e938be441ae1e291b6ba624189b6b)",
+      "files_in_tag_commit_total": 4,
+      "bank_files": [
+        {
+          "path": "paper/access2026/bank/iof/FREEZE.md",
+          "role": "bank/freeze file",
+          "status": "ABSENT at HEAD (branch pipeline-reframe); history taken from --all refs; first commit is on another branch/tag",
+          "intro_commit": "466624bf09ec1ed6058605f7759c5fb039c9f683",
+          "intro_date": "2026-10-09 23:14:34 +0900",
+          "intro_subject": "paper(access): IOF bank v1 frozen after author review (36 kept, no edits)",
+          "sha256_at_intro": "885d66772ac74b76c9bacf00fa16b26b7a17d945d56eddffffded2407a52e6b2",
+          "sha256_at_head": null,
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "6de3825d73",
+              "date": "2026-10-09 23:22:47 +0900",
+              "subject": "paper(access): IOF bank review notes clarified as author-written (FREEZE.md line, addendum 16 notes)"
+            }
+          ],
+          "sha256_at_tag_commit": "885d66772ac74b76c9bacf00fa16b26b7a17d945d56eddffffded2407a52e6b2",
+          "changed_after_tag": false
+        },
+        {
+          "path": "paper/access2026/bank/iof/cq_bank_iof_v1.csv",
+          "role": "bank/freeze file",
+          "status": "ABSENT at HEAD (branch pipeline-reframe); history taken from --all refs; first commit is on another branch/tag",
+          "intro_commit": "466624bf09ec1ed6058605f7759c5fb039c9f683",
+          "intro_date": "2026-10-09 23:14:34 +0900",
+          "intro_subject": "paper(access): IOF bank v1 frozen after author review (36 kept, no edits)",
+          "sha256_at_intro": "b790c72733e93acd4fb325b99beca6188a3e938be441ae1e291b6ba624189b6b",
+          "sha256_at_head": null,
+          "changed_after_intro": true,
+          "later_commits_touching": [],
+          "sha256_at_tag_commit": "b790c72733e93acd4fb325b99beca6188a3e938be441ae1e291b6ba624189b6b",
+          "changed_after_tag": false
+        },
+        {
+          "path": "paper/access2026/bank/iof/review_sheet_author.csv",
+          "role": "bank/freeze file",
+          "status": "ABSENT at HEAD (branch pipeline-reframe); history taken from --all refs; first commit is on another branch/tag",
+          "intro_commit": "9b61030e8a73576c985f3ec5e17b60e84e7007a8",
+          "intro_date": "2026-10-09 20:01:30 +0900",
+          "intro_subject": "paper(access): IOF bank author-review packet and freeze tool (no bank frozen yet)",
+          "sha256_at_intro": null,
+          "sha256_at_head": null,
+          "changed_after_intro": false,
+          "later_commits_touching": [
+            {
+              "commit": "466624bf09",
+              "date": "2026-10-09 23:14:34 +0900",
+              "subject": "paper(access): IOF bank v1 frozen after author review (36 kept, no edits)"
+            }
+          ],
+          "sha256_at_tag_commit": "e5950c1723ca937dfa675c14773e875a0fd8e3e1d3b0c1f3e4175595e5eadf63",
+          "changed_after_tag": false
+        }
+      ]
+    },
+    {
+      "tag": "access2026-study2-bank-freeze",
+      "tag_type": "commit",
+      "commit": "99ca1a354d8c951d026f1eaa5e7fee93e9f971b0",
+      "commit_date": "2026-10-19 10:26:13 +0900",
+      "ancestor_of_head": true,
+      "tagger_date": null,
+      "message": "study2 (addendum 32): expansion bank frozen as is (84 rows, header comment line removed), sha256 recorded before any judge call",
+      "files_in_tag_commit_total": 3,
+      "bank_files": [
+        {
+          "path": "paper/access2026/harness/study2_llm_labels/BANK_FREEZE.md",
+          "role": "supporting plan file",
+          "intro_commit": "99ca1a354d8c951d026f1eaa5e7fee93e9f971b0",
+          "intro_date": "2026-10-19 10:26:13 +0900",
+          "intro_subject": "study2 (addendum 32): expansion bank frozen as is (84 rows, header comment line removed), sha256 recorded before any judge call",
+          "sha256_at_intro": "6c678e85695d93c70a58f372af275cf9b18653e56d92b3d1cf94844419c92d05",
+          "sha256_at_head": "6c678e85695d93c70a58f372af275cf9b18653e56d92b3d1cf94844419c92d05",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_tag_commit": "6c678e85695d93c70a58f372af275cf9b18653e56d92b3d1cf94844419c92d05",
+          "changed_after_tag": false
+        },
+        {
+          "path": "paper/access2026/harness/study2_llm_labels/bank_freeze.json",
+          "role": "bank/freeze file",
+          "intro_commit": "99ca1a354d8c951d026f1eaa5e7fee93e9f971b0",
+          "intro_date": "2026-10-19 10:26:13 +0900",
+          "intro_subject": "study2 (addendum 32): expansion bank frozen as is (84 rows, header comment line removed), sha256 recorded before any judge call",
+          "sha256_at_intro": "a52789806b373c978e529636cf506bb0466464e8256ad56078fd2f6568fb3155",
+          "sha256_at_head": "a52789806b373c978e529636cf506bb0466464e8256ad56078fd2f6568fb3155",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_tag_commit": "a52789806b373c978e529636cf506bb0466464e8256ad56078fd2f6568fb3155",
+          "changed_after_tag": false
+        },
+        {
+          "path": "paper/access2026/harness/study2_llm_labels/bank_frozen_v1.csv",
+          "role": "bank/freeze file",
+          "intro_commit": "39a3c24faa125c588cc63ffb02e9cd01150c59f4",
+          "intro_date": "2026-10-13 23:49:16 +0900",
+          "intro_subject": "prereg(access): drafts for addendum 19 (expert artifact-quality validity package, blinded, Kendall W / exact tau) and addendum 20 (bank expansion: 84 AI-drafted CQs screened 84/84, author review pending; power and budget); not frozen, no judge calls",
+          "sha256_at_intro": null,
+          "sha256_at_head": "a39bcc0fd88587de8ef2fe14304948995b8e5bb3e6e5cfb04303784ffc2a33c8",
+          "changed_after_intro": false,
+          "later_commits_touching": [
+            {
+              "commit": "99ca1a354d",
+              "date": "2026-10-19 10:26:13 +0900",
+              "subject": "study2 (addendum 32): expansion bank frozen as is (84 rows, header comment line removed), sha256 recorded before any judge call"
+            }
+          ],
+          "sha256_at_tag_commit": "a39bcc0fd88587de8ef2fe14304948995b8e5bb3e6e5cfb04303784ffc2a33c8",
+          "changed_after_tag": false
+        }
+      ]
+    },
+    {
+      "tag": "access2026-study4-dcat-bank-freeze",
+      "tag_type": "commit",
+      "commit": "916711c4f7b1e5e3fa988667146b980cd3e62163",
+      "commit_date": "2026-10-20 18:05:01 +0900",
+      "ancestor_of_head": true,
+      "tagger_date": null,
+      "message": "bank(access): addendum 35 domain 1 (DCAT 3) - 42-question artifact-blind bank frozen before any build (AI draft, not author-reviewed), snapshot hash, grounding test",
+      "files_in_tag_commit_total": 11,
+      "bank_files": [
+        {
+          "path": "paper/access2026/harness/study4_domains/dcat/bank/bank_dcat_v1.csv",
+          "role": "bank/freeze file",
+          "intro_commit": "916711c4f7b1e5e3fa988667146b980cd3e62163",
+          "intro_date": "2026-10-20 18:05:01 +0900",
+          "intro_subject": "bank(access): addendum 35 domain 1 (DCAT 3) - 42-question artifact-blind bank frozen before any build (AI draft, not author-reviewed), snapshot hash, grounding test",
+          "sha256_at_intro": "cf7db0a0ee89badc80562930e3c2b1eb4448cc7ba927feee35d1a5db8e673ace",
+          "sha256_at_head": "cf7db0a0ee89badc80562930e3c2b1eb4448cc7ba927feee35d1a5db8e673ace",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_tag_commit": "cf7db0a0ee89badc80562930e3c2b1eb4448cc7ba927feee35d1a5db8e673ace",
+          "changed_after_tag": false
+        },
+        {
+          "path": "paper/access2026/harness/study4_domains/dcat/bank_freeze.json",
+          "role": "bank/freeze file",
+          "intro_commit": "916711c4f7b1e5e3fa988667146b980cd3e62163",
+          "intro_date": "2026-10-20 18:05:01 +0900",
+          "intro_subject": "bank(access): addendum 35 domain 1 (DCAT 3) - 42-question artifact-blind bank frozen before any build (AI draft, not author-reviewed), snapshot hash, grounding test",
+          "sha256_at_intro": "6a0b79b28b709542b9e79a0cd3ee37e30aaa8b215fe0f46e437d1d16f9538e98",
+          "sha256_at_head": "6a0b79b28b709542b9e79a0cd3ee37e30aaa8b215fe0f46e437d1d16f9538e98",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_tag_commit": "6a0b79b28b709542b9e79a0cd3ee37e30aaa8b215fe0f46e437d1d16f9538e98",
+          "changed_after_tag": false
+        },
+        {
+          "path": "paper/access2026/harness/study4_domains/make_bank.py",
+          "role": "bank/freeze file",
+          "intro_commit": "916711c4f7b1e5e3fa988667146b980cd3e62163",
+          "intro_date": "2026-10-20 18:05:01 +0900",
+          "intro_subject": "bank(access): addendum 35 domain 1 (DCAT 3) - 42-question artifact-blind bank frozen before any build (AI draft, not author-reviewed), snapshot hash, grounding test",
+          "sha256_at_intro": "d4e1523dac40923f04080f5db63e8f81ed052a4fd1fbf295d72babc75dba60b4",
+          "sha256_at_head": "5f4a38a62e564685ada4be5e931c3cb6dd50b7bbcd7d7e80f232c8222978151a",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "a5e7680661",
+              "date": "2026-10-20 18:14:56 +0900",
+              "subject": "bank(access): addendum 35 domain 3 (PROV) - 41-question artifact-blind bank frozen before any build (AI draft, not author-reviewed)"
+            },
+            {
+              "commit": "4d02755f73",
+              "date": "2026-10-20 18:07:44 +0900",
+              "subject": "bank(access): addendum 35 domain 2 (SOSA/SSN) - 42-question artifact-blind bank frozen before any build (AI draft, not author-reviewed); make_bank generalised (dcat bank byte-identical)"
+            }
+          ],
+          "sha256_at_tag_commit": "d4e1523dac40923f04080f5db63e8f81ed052a4fd1fbf295d72babc75dba60b4",
+          "changed_after_tag": true
+        },
+        {
+          "path": "paper/access2026/harness/study4_domains/test_bank_grounding.py",
+          "role": "bank/freeze file",
+          "intro_commit": "916711c4f7b1e5e3fa988667146b980cd3e62163",
+          "intro_date": "2026-10-20 18:05:01 +0900",
+          "intro_subject": "bank(access): addendum 35 domain 1 (DCAT 3) - 42-question artifact-blind bank frozen before any build (AI draft, not author-reviewed), snapshot hash, grounding test",
+          "sha256_at_intro": "f04e474129f428ed87b551c1902baf356809c4b281eb43b7cf8472a6df9610e4",
+          "sha256_at_head": "f04e474129f428ed87b551c1902baf356809c4b281eb43b7cf8472a6df9610e4",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_tag_commit": "f04e474129f428ed87b551c1902baf356809c4b281eb43b7cf8472a6df9610e4",
+          "changed_after_tag": false
+        }
+      ]
+    },
+    {
+      "tag": "access2026-study4-prov-bank-freeze",
+      "tag_type": "commit",
+      "commit": "a5e768066129c3fd9a542e0f78f4c8f6e923e1a3",
+      "commit_date": "2026-10-20 18:14:56 +0900",
+      "ancestor_of_head": true,
+      "tagger_date": null,
+      "message": "bank(access): addendum 35 domain 3 (PROV) - 41-question artifact-blind bank frozen before any build (AI draft, not author-reviewed)",
+      "files_in_tag_commit_total": 5,
+      "bank_files": [
+        {
+          "path": "paper/access2026/harness/study4_domains/make_bank.py",
+          "role": "bank/freeze file",
+          "intro_commit": "916711c4f7b1e5e3fa988667146b980cd3e62163",
+          "intro_date": "2026-10-20 18:05:01 +0900",
+          "intro_subject": "bank(access): addendum 35 domain 1 (DCAT 3) - 42-question artifact-blind bank frozen before any build (AI draft, not author-reviewed), snapshot hash, grounding test",
+          "sha256_at_intro": "d4e1523dac40923f04080f5db63e8f81ed052a4fd1fbf295d72babc75dba60b4",
+          "sha256_at_head": "5f4a38a62e564685ada4be5e931c3cb6dd50b7bbcd7d7e80f232c8222978151a",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "a5e7680661",
+              "date": "2026-10-20 18:14:56 +0900",
+              "subject": "bank(access): addendum 35 domain 3 (PROV) - 41-question artifact-blind bank frozen before any build (AI draft, not author-reviewed)"
+            },
+            {
+              "commit": "4d02755f73",
+              "date": "2026-10-20 18:07:44 +0900",
+              "subject": "bank(access): addendum 35 domain 2 (SOSA/SSN) - 42-question artifact-blind bank frozen before any build (AI draft, not author-reviewed); make_bank generalised (dcat bank byte-identical)"
+            }
+          ],
+          "sha256_at_tag_commit": "5f4a38a62e564685ada4be5e931c3cb6dd50b7bbcd7d7e80f232c8222978151a",
+          "changed_after_tag": false
+        },
+        {
+          "path": "paper/access2026/harness/study4_domains/prov/bank/bank_prov_v1.csv",
+          "role": "bank/freeze file",
+          "intro_commit": "a5e768066129c3fd9a542e0f78f4c8f6e923e1a3",
+          "intro_date": "2026-10-20 18:14:56 +0900",
+          "intro_subject": "bank(access): addendum 35 domain 3 (PROV) - 41-question artifact-blind bank frozen before any build (AI draft, not author-reviewed)",
+          "sha256_at_intro": "665f5e967fe6e92c8d0dd5322dfc184338ce2c013a6a1f811ae49ea0fe5a525f",
+          "sha256_at_head": "665f5e967fe6e92c8d0dd5322dfc184338ce2c013a6a1f811ae49ea0fe5a525f",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_tag_commit": "665f5e967fe6e92c8d0dd5322dfc184338ce2c013a6a1f811ae49ea0fe5a525f",
+          "changed_after_tag": false
+        },
+        {
+          "path": "paper/access2026/harness/study4_domains/prov/bank_freeze.json",
+          "role": "bank/freeze file",
+          "intro_commit": "a5e768066129c3fd9a542e0f78f4c8f6e923e1a3",
+          "intro_date": "2026-10-20 18:14:56 +0900",
+          "intro_subject": "bank(access): addendum 35 domain 3 (PROV) - 41-question artifact-blind bank frozen before any build (AI draft, not author-reviewed)",
+          "sha256_at_intro": "bba087bc990a9de7a862e5c1239874a312be8188b2ada6ef0c0de9de85e174ae",
+          "sha256_at_head": "bba087bc990a9de7a862e5c1239874a312be8188b2ada6ef0c0de9de85e174ae",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_tag_commit": "bba087bc990a9de7a862e5c1239874a312be8188b2ada6ef0c0de9de85e174ae",
+          "changed_after_tag": false
+        }
+      ]
+    },
+    {
+      "tag": "access2026-study4-ssn-bank-freeze",
+      "tag_type": "commit",
+      "commit": "4d02755f7318746ece823a913143ed1197d74c35",
+      "commit_date": "2026-10-20 18:07:44 +0900",
+      "ancestor_of_head": true,
+      "tagger_date": null,
+      "message": "bank(access): addendum 35 domain 2 (SOSA/SSN) - 42-question artifact-blind bank frozen before any build (AI draft, not author-reviewed); make_bank generalised (dcat bank byte-identical)",
+      "files_in_tag_commit_total": 5,
+      "bank_files": [
+        {
+          "path": "paper/access2026/harness/study4_domains/make_bank.py",
+          "role": "bank/freeze file",
+          "intro_commit": "916711c4f7b1e5e3fa988667146b980cd3e62163",
+          "intro_date": "2026-10-20 18:05:01 +0900",
+          "intro_subject": "bank(access): addendum 35 domain 1 (DCAT 3) - 42-question artifact-blind bank frozen before any build (AI draft, not author-reviewed), snapshot hash, grounding test",
+          "sha256_at_intro": "d4e1523dac40923f04080f5db63e8f81ed052a4fd1fbf295d72babc75dba60b4",
+          "sha256_at_head": "5f4a38a62e564685ada4be5e931c3cb6dd50b7bbcd7d7e80f232c8222978151a",
+          "changed_after_intro": true,
+          "later_commits_touching": [
+            {
+              "commit": "a5e7680661",
+              "date": "2026-10-20 18:14:56 +0900",
+              "subject": "bank(access): addendum 35 domain 3 (PROV) - 41-question artifact-blind bank frozen before any build (AI draft, not author-reviewed)"
+            },
+            {
+              "commit": "4d02755f73",
+              "date": "2026-10-20 18:07:44 +0900",
+              "subject": "bank(access): addendum 35 domain 2 (SOSA/SSN) - 42-question artifact-blind bank frozen before any build (AI draft, not author-reviewed); make_bank generalised (dcat bank byte-identical)"
+            }
+          ],
+          "sha256_at_tag_commit": "e7bfcc844f36371e717d60696d26ec10eda2ba57db79f6c02a3882ea560a3c81",
+          "changed_after_tag": true
+        },
+        {
+          "path": "paper/access2026/harness/study4_domains/ssn/bank/bank_ssn_v1.csv",
+          "role": "bank/freeze file",
+          "intro_commit": "4d02755f7318746ece823a913143ed1197d74c35",
+          "intro_date": "2026-10-20 18:07:44 +0900",
+          "intro_subject": "bank(access): addendum 35 domain 2 (SOSA/SSN) - 42-question artifact-blind bank frozen before any build (AI draft, not author-reviewed); make_bank generalised (dcat bank byte-identical)",
+          "sha256_at_intro": "185f4ac675b4430901ea3cbd93a84d75a46fe4f0431f402dfd8a219e4a15bcdf",
+          "sha256_at_head": "185f4ac675b4430901ea3cbd93a84d75a46fe4f0431f402dfd8a219e4a15bcdf",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_tag_commit": "185f4ac675b4430901ea3cbd93a84d75a46fe4f0431f402dfd8a219e4a15bcdf",
+          "changed_after_tag": false
+        },
+        {
+          "path": "paper/access2026/harness/study4_domains/ssn/bank_freeze.json",
+          "role": "bank/freeze file",
+          "intro_commit": "4d02755f7318746ece823a913143ed1197d74c35",
+          "intro_date": "2026-10-20 18:07:44 +0900",
+          "intro_subject": "bank(access): addendum 35 domain 2 (SOSA/SSN) - 42-question artifact-blind bank frozen before any build (AI draft, not author-reviewed); make_bank generalised (dcat bank byte-identical)",
+          "sha256_at_intro": "1f578940b2781eac13940f1c4635cdd8a27004f2585679434e9f851b6a674d37",
+          "sha256_at_head": "1f578940b2781eac13940f1c4635cdd8a27004f2585679434e9f851b6a674d37",
+          "changed_after_intro": false,
+          "later_commits_touching": [],
+          "sha256_at_tag_commit": "1f578940b2781eac13940f1c4635cdd8a27004f2585679434e9f851b6a674d37",
+          "changed_after_tag": false
+        }
+      ]
+    }
+  ],
+  "addendum_tags": [
+    {
+      "tag": "access2026-addendum15-freeze",
+      "tag_type": "tag",
+      "commit": "dc51159aef505c71341ad899f597c7c91b563e60",
+      "commit_date": "2026-10-09 23:17:03 +0900",
+      "ancestor_of_head": false,
+      "tagger_date": "2026-10-09 23:17:03 +0900"
+    },
+    {
+      "tag": "access2026-addendum16-freeze",
+      "tag_type": "tag",
+      "commit": "f91fc403f52668d9137b5e518e2920c8309f8cb9",
+      "commit_date": "2026-10-13 19:05:44 +0900",
+      "ancestor_of_head": true,
+      "tagger_date": "2026-10-13 19:05:44 +0900"
+    },
+    {
+      "tag": "access2026-addendum17-freeze",
+      "tag_type": "tag",
+      "commit": "5dc054c8149c5e39a975185666cf1e4a5fe2204a",
+      "commit_date": "2026-10-13 19:09:38 +0900",
+      "ancestor_of_head": true,
+      "tagger_date": "2026-10-13 19:09:38 +0900"
+    },
+    {
+      "tag": "access2026-addendum17-judgechange",
+      "tag_type": "tag",
+      "commit": "5f6cf6a388757cbad26de37981a0c2005d744799",
+      "commit_date": "2026-10-13 19:40:38 +0900",
+      "ancestor_of_head": true,
+      "tagger_date": "2026-10-13 19:40:38 +0900"
+    },
+    {
+      "tag": "access2026-addendum21-freeze",
+      "tag_type": "commit",
+      "commit": "6918e7be585e2ec8d2f4527beae3d560786fdf3b",
+      "commit_date": "2026-10-14 13:47:43 +0900",
+      "ancestor_of_head": true,
+      "tagger_date": null
+    },
+    {
+      "tag": "access2026-addendum22-freeze",
+      "tag_type": "tag",
+      "commit": "cdf61a247b4742e20738b7b0827bf06392b0c321",
+      "commit_date": "2026-10-14 13:56:10 +0900",
+      "ancestor_of_head": true,
+      "tagger_date": "2026-10-14 13:56:10 +0900"
+    },
+    {
+      "tag": "access2026-addendum23-freeze",
+      "tag_type": "tag",
+      "commit": "efbcfbb285cf4fcdcab9f02d5db657977958ce7b",
+      "commit_date": "2026-10-14 21:31:19 +0900",
+      "ancestor_of_head": true,
+      "tagger_date": "2026-10-14 21:31:19 +0900"
+    },
+    {
+      "tag": "access2026-addendum24-freeze",
+      "tag_type": "tag",
+      "commit": "26102c7d938ffaa636ba1e3544b7a9d6de06185a",
+      "commit_date": "2026-10-15 11:05:23 +0900",
+      "ancestor_of_head": true,
+      "tagger_date": "2026-10-15 11:05:23 +0900"
+    },
+    {
+      "tag": "access2026-addendum25-freeze",
+      "tag_type": "tag",
+      "commit": "6d1aeecc87cf6ab995a343c3224493064a2e4689",
+      "commit_date": "2026-10-15 11:13:38 +0900",
+      "ancestor_of_head": true,
+      "tagger_date": "2026-10-15 11:13:38 +0900"
+    }
+  ]
+}

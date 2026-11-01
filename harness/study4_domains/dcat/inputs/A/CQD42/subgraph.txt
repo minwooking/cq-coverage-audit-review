@@ -1,0 +1,114 @@
+http://example.org/chunktograph#ADMSStatusVocabulary | ADMS Status vocabulary
+http://example.org/chunktograph#Agent | Agent :: An entity responsible for publishing or curating data.
+http://example.org/chunktograph#Attribution | Attribution :: An agent's responsibility for a resource.
+http://example.org/chunktograph#CI_RoleCode | CI Role Code
+http://example.org/chunktograph#CNRI | CNR - Consiglio Nazionale delle Ricerche
+http://example.org/chunktograph#CSIRO | CSIRO
+http://example.org/chunktograph#Catalog | Catalog < http://example.org/chunktograph#Resource :: A kind of dataset whose member items are descriptions of datasets and data services.
+http://example.org/chunktograph#CatalogRecord | Catalog Record < http://example.org/chunktograph#Resource :: A metadata record in the catalog, primarily concerning the registration information, such as who added the record and when.
+http://example.org/chunktograph#Centroid | Centroid :: The geographic center (centroid) of a spatial thing.
+http://example.org/chunktograph#Checksum | Checksum :: A Checksum is a value that allows to check the integrity of the contents of a file. Even small changes to the content of the file will change its checksum. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented.
+http://example.org/chunktograph#DCAT | DCAT
+http://example.org/chunktograph#DCAT2 | DCAT 2
+http://example.org/chunktograph#DCAT3 | DCAT 3
+http://example.org/chunktograph#DCATAP | DCAT-AP
+http://example.org/chunktograph#DCATNamespace | DCAT Namespace
+http://example.org/chunktograph#DCATProfile | DCAT profile
+http://example.org/chunktograph#DCATVersioning | DCAT versioning
+http://example.org/chunktograph#DataTagSuite | Data Tag Suite
+http://example.org/chunktograph#DatasetSeries | Dataset Series :: A dataset that represents a collection of datasets that are published separately, but share some characteristics that group them.
+http://example.org/chunktograph#GitHub | GitHub
+http://example.org/chunktograph#HealthcareAndLifeSciencesProfile | Healthcare and Life Sciences Community Profile
+http://example.org/chunktograph#InverseProperties | Inverse Properties
+http://example.org/chunktograph#JSONLD | JSON-LD
+http://example.org/chunktograph#RDFXML | RDF/XML
+http://example.org/chunktograph#Resource | Resource :: A general class for resources cataloged in DCAT; datasets and data services are sub-classes.
+http://example.org/chunktograph#Turtle | Turtle
+http://example.org/chunktograph#Versioning | Versioning
+http://example.org/chunktograph#publicDXWGComments | <email>
+OP http://example.org/chunktograph#First
+OP http://example.org/chunktograph#HasCurrentVersion
+OP http://example.org/chunktograph#HasVersion
+OP http://example.org/chunktograph#Last
+OP http://example.org/chunktograph#Previous
+OP http://example.org/chunktograph#PreviousVersion
+OP http://example.org/chunktograph#Replaces
+OP http://example.org/chunktograph#accessRights
+OP http://example.org/chunktograph#accessURL
+OP http://example.org/chunktograph#addsNewClasses dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#DCAT2
+OP http://example.org/chunktograph#addsNewProperties dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#DCAT2
+OP http://example.org/chunktograph#alternateOf
+OP http://example.org/chunktograph#appliesTo
+OP http://example.org/chunktograph#doesNotObsoletes dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#DCAT2
+OP http://example.org/chunktograph#hasComplementaryUse dom:http://example.org/chunktograph#DCATVersioning
+OP http://example.org/chunktograph#hasContributor dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#MakxDekkers
+OP http://example.org/chunktograph#hasCorrespondence dom:http://example.org/chunktograph#DCATVersioning
+OP http://example.org/chunktograph#hasEditor dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#AlejandraGonzalezBeltran,http://example.org/chunktograph#AndreaPerego,http://example.org/chunktograph#DavidBrowning,http://example.org/chunktograph#PeterWinstanley,http://example.org/chunktograph#RiccardoAlbertoni,http://example.org/chunktograph#SimonJDCox
+OP http://example.org/chunktograph#hasExtension dom:http://example.org/chunktograph#DCAT rng:http://example.org/chunktograph#DCATAP,http://example.org/chunktograph#DataTagSuite,http://example.org/chunktograph#HealthcareAndLifeSciencesProfile
+OP http://example.org/chunktograph#hasFeedbackMechanism dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#GitHub,http://example.org/chunktograph#publicDXWGComments
+OP http://example.org/chunktograph#hasFormerEditor dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#FadiMaali,http://example.org/chunktograph#JohnErickson
+OP http://example.org/chunktograph#hasLatestVersion dom:http://example.org/chunktograph#DCAT3,http://example.org/chunktograph#Resource rng:http://example.org/chunktograph#Resource,http://www.w3.org/2001/XMLSchema#string
+OP http://example.org/chunktograph#hasNamespace dom:http://example.org/chunktograph#DCAT rng:http://example.org/chunktograph#DCATNamespace
+OP http://example.org/chunktograph#hasNonNormativeFormat dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#JSONLD,http://example.org/chunktograph#RDFXML,http://example.org/chunktograph#Turtle
+OP http://example.org/chunktograph#hasStatusVocabulary dom:http://example.org/chunktograph#DCAT
+OP http://example.org/chunktograph#isBasedOn dom:http://example.org/chunktograph#DCAT rng:http://example.org/chunktograph#Resource
+OP http://example.org/chunktograph#isPreviousInSeries dom:http://example.org/chunktograph#Resource rng:http://example.org/chunktograph#DatasetSeries inv:http://example.org/chunktograph#prev
+OP http://example.org/chunktograph#maintainsBackwardCompatibility dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#DCAT2
+OP http://example.org/chunktograph#prev dom:http://example.org/chunktograph#DatasetSeries rng:http://example.org/chunktograph#Resource inv:http://example.org/chunktograph#isPreviousInSeries
+OP http://example.org/chunktograph#previousVersion
+OP http://example.org/chunktograph#relaxesConstraints dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#DCAT2
+OP http://example.org/chunktograph#supersedes dom:http://example.org/chunktograph#DCAT3 rng:http://example.org/chunktograph#DCAT2
+DP http://example.org/chunktograph#Description dom:http://example.org/chunktograph#CatalogRecord
+DP http://example.org/chunktograph#EndDate rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#ListingDate dom:http://example.org/chunktograph#CatalogRecord
+DP http://example.org/chunktograph#Name dom:http://example.org/chunktograph#CatalogRecord
+DP http://example.org/chunktograph#StartDate rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#Status
+DP http://example.org/chunktograph#Version
+DP http://example.org/chunktograph#VersionNotes
+DP http://example.org/chunktograph#accrualPeriodicity dom:http://example.org/chunktograph#DatasetSeries,http://example.org/chunktograph#Resource rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#admsIdentifier
+DP http://example.org/chunktograph#hasADMS dom:http://example.org/chunktograph#DCAT rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasDCATProperty dom:http://example.org/chunktograph#DCAT rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasEUVocabularies dom:http://example.org/chunktograph#DCAT rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasErrata dom:http://example.org/chunktograph#DCAT3 rng:http://www.w3.org/2001/XMLSchema#boolean
+DP http://example.org/chunktograph#hasGuidance dom:http://example.org/chunktograph#DCAT rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasHistory dom:http://example.org/chunktograph#DCAT3 rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasImplementationReport dom:http://example.org/chunktograph#DCAT3 rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasLatestEditorsDraft dom:http://example.org/chunktograph#DCAT3 rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasLatestVersion dom:http://example.org/chunktograph#DCAT3,http://example.org/chunktograph#Resource rng:http://example.org/chunktograph#Resource,http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasNonNormativeSection dom:http://example.org/chunktograph#DCAT rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasPrefix dom:http://example.org/chunktograph#DCATNamespace rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasPreviousRecommendation dom:http://example.org/chunktograph#DCAT3 rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasScopeDifference dom:http://example.org/chunktograph#DCATVersioning rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasSemanticDifference dom:http://example.org/chunktograph#DCATVersioning rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasUKRegistryExample dom:http://example.org/chunktograph#DCAT rng:http://www.w3.org/2001/XMLSchema#string
+IND http://example.org/chunktograph#AlejandraGonzalezBeltran | Alejandra Gonzalez Beltran {http://example.org/chunktograph#role=Invited Expert}
+IND http://example.org/chunktograph#AndreaPerego | Andrea Perego {http://example.org/chunktograph#role=Invited Expert}
+IND http://example.org/chunktograph#CreativeCommons | Creative Commons :: Canonical IRIs of well-known licenses such as those defined by Creative Commons are recommended for interoperability.
+IND http://example.org/chunktograph#CrossRef | CrossRef :: CrossRef and DataCite display guidelines recommend displaying DOIs as full URL link in the form https://doi.org/10.xxxx/xxxxx/.
+IND http://example.org/chunktograph#DCAT-AP | DCAT-AP a http://example.org/chunktograph#DCATProfile
+IND http://example.org/chunktograph#DCAT-AP-NO | DCAT-AP-NO a http://example.org/chunktograph#DCATProfile
+IND http://example.org/chunktograph#DCAT-AP-SE | DCAT-AP-SE a http://example.org/chunktograph#DCATProfile
+IND http://example.org/chunktograph#DCAT-AP.de | DCAT-AP.de a http://example.org/chunktograph#DCATProfile
+IND http://example.org/chunktograph#DCAT-AP_IT | DCAT-AP_IT a http://example.org/chunktograph#DCATProfile
+IND http://example.org/chunktograph#DCAT-BE | DCAT-BE a http://example.org/chunktograph#DCATProfile
+IND http://example.org/chunktograph#DCAT2 | DCAT 2 a http://example.org/chunktograph#DCAT2,owl:Class
+IND http://example.org/chunktograph#DCAT3 | DCAT 3 a http://example.org/chunktograph#DCAT3,owl:Class {http://example.org/chunktograph#addsNewClasses=http://example.org/chunktograph#DatasetSeries; http://example.org/chunktograph#addsNewClasses=http://example.org/chunktograph#InverseProperties; http://example.org/chunktograph#addsNewClasses=http://example.org/chunktograph#Versioning; http://example.org/chunktograph#addsNewProperties=http://example.org/chunktograph#DatasetSeries; http://example.org/chunktograph#addsNewProperties=http://example.org/chunktograph#InverseProperties; http://example.org/chunktograph#addsNewProperties=http://example.org/chunktograph#Versioning; http://example.org/chunktograph#doesNotObsoletes=http://example.org/chunktograph#DCAT2; http://example.org/chunktograph#hasContributor=http://example.org/chunktograph#MakxDekkers; http://example.org/chunktograph#hasEditor=http://example.org/chunktograph#AlejandraGonzalezBeltran; http://example.org/chunktograph#hasEditor=http://example.org/chunktograph#AndreaPerego; http://example.org/chunktograph#hasEditor=http://example.org/chunktograph#DavidBrowning; http://example.org/chunktograph#hasEditor=http://example.org/chunktograph#PeterWinstanley; http://example.org/chunktograph#hasEditor=http://example.org/chunktograph#RiccardoAlbertoni; http://example.org/chunktograph#hasEditor=http://example.org/chunktograph#SimonJDCox; http://example.org/chunktograph#hasErrata=true; http://example.org/chunktograph#hasFeedbackMechanism=http://example.org/chunktograph#GitHub; http://example.org/chunktograph#hasFeedbackMechanism=http://example.org/chunktograph#publicDXWGComments; http://example.org/chunktograph#hasFormerEditor=http://example.org/chunktograph#FadiMaali; http://example.org/chunktograph#hasFormerEditor=http://example.org/chunktograph#JohnErickson; http://example.org/chunktograph#hasHistory=https://www.w3.org/standards/history/vocab-dcat-3/; http://example.org/chunktograph#hasImplementationReport=https://w3c.github.io/dxwg/dcat3-implementation-report/; http://example.org/chunktograph#hasLatestEditorsDraft=https://w3c.github.io/dxwg/dcat/; http://example.org/chunktograph#hasLatestVersion=https://www.w3.org/TR/vocab-dcat-3/; http://example.org/chunktograph#hasNonNormativeFormat=http://example.org/chunktograph#JSONLD; http://example.org/chunktograph#hasNonNormativeFormat=http://example.org/chunktograph#RDFXML; http://example.org/chunktograph#hasNonNormativeFormat=http://example.org/chunktograph#Turtle; http://example.org/chunktograph#hasPreviousRecommendation=https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/; http://example.org/chunktograph#maintainsBackwardCompatibility=http://example.org/chunktograph#DCAT2; http://example.org/chunktograph#relaxesConstraints=http://example.org/chunktograph#DCAT2; http://example.org/chunktograph#supersedes=http://example.org/chunktograph#DCAT2}
+IND http://example.org/chunktograph#DOI | DOI :: DOI is registered as a namespace in the info IRI scheme.
+IND http://example.org/chunktograph#DataCite | DataCite :: DataCite display guidelines recommend displaying DOIs as full URL link in the form https://doi.org/10.xxxx/xxxxx/.
+IND http://example.org/chunktograph#DavidBrowning | David Browning {http://example.org/chunktograph#role=Invited Expert}
+IND http://example.org/chunktograph#ELI | ELI :: ELI is an identifier for creative works.
+IND http://example.org/chunktograph#FadiMaali | Fadi Maali {http://example.org/chunktograph#role=Former Editor}
+IND http://example.org/chunktograph#GeoDCAT-AP | GeoDCAT-AP a http://example.org/chunktograph#DCATProfile
+IND http://example.org/chunktograph#GeoDCAT-AP_IT | GeoDCAT-AP_IT a http://example.org/chunktograph#DCATProfile
+IND http://example.org/chunktograph#ISNI | ISNI :: ISNI is an identifier for actors such as authors and publishers.
+IND http://example.org/chunktograph#JohnErickson | John Erickson {http://example.org/chunktograph#role=Former Editor}
+IND http://example.org/chunktograph#MD2 | MD2 a http://spdx.org/rdf/terms#ChecksumAlgorithm :: MD2 is a checksum algorithm defined in version 2.2 of SPDX.
+IND http://example.org/chunktograph#MD4 | MD4 a http://spdx.org/rdf/terms#ChecksumAlgorithm :: MD4 is a checksum algorithm defined in version 2.2 of SPDX.
+IND http://example.org/chunktograph#MD5 | MD5 a http://spdx.org/rdf/terms#ChecksumAlgorithm :: MD5 is a checksum algorithm defined in version 2.2 of SPDX.
+IND http://example.org/chunktograph#MakxDekkers | Makx Dekkers {http://example.org/chunktograph#role=Contributor}
+IND http://example.org/chunktograph#PeterWinstanley | Peter Winstanley {http://example.org/chunktograph#role=Invited Expert}
+IND http://example.org/chunktograph#RiccardoAlbertoni | Riccardo Albertoni {http://example.org/chunktograph#affiliation=http://example.org/chunktograph#CNRI; http://example.org/chunktograph#role=Invited Expert}
+IND http://example.org/chunktograph#SimonJDCox | Simon J D Cox {http://example.org/chunktograph#affiliation=http://example.org/chunktograph#CSIRO; http://example.org/chunktograph#role=Invited Expert}
+IND http://example.org/chunktograph#StatDCAT-AP | StatDCAT-AP a http://example.org/chunktograph#DCATProfile

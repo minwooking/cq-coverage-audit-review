@@ -1,0 +1,1539 @@
+<meta charset="utf-8">
+<title>역량 질문 라벨링</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+/* Layout: 한 화면 작업대. 왼쪽 판정 카드, 오른쪽 자료 뷰어(데스크톱 2단, 모바일 1단). */
+:root {
+  --bg: #eceff3;
+  --surface: #fbfcfd;
+  --surface-2: #f1f3f6;
+  --ink: #1a2030;
+  --muted: #566074;
+  --line: #d3d8e0;
+  --accent: #1f5f8b;
+  --accent-ink: #ffffff;
+  --accent-soft: #dbe9f3;
+  --mark: #ffe58a;
+  --mark-cur: #ff9f43;
+  --warn: #8a5a00;
+  --warn-soft: #fff1d0;
+  --ok: #17694a;
+  --ok-soft: #dcf1e7;
+  --bad: #a2362b;
+  --bad-soft: #fbe3df;
+  --font-body: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "D2Coding", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --vfs: 13px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11141a; --surface: #191d25; --surface-2: #212631; --ink: #e6e9ef; --muted: #98a1b3;
+    --line: #2e3542; --accent: #74b2e2; --accent-ink: #0b1620; --accent-soft: #1f3447;
+    --mark: #6b5a12; --mark-cur: #b8641a; --warn: #f0c36a; --warn-soft: #3a2f12;
+    --ok: #6fd1a6; --ok-soft: #143326; --bad: #f09a8f; --bad-soft: #3a1b18;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11141a; --surface: #191d25; --surface-2: #212631; --ink: #e6e9ef; --muted: #98a1b3;
+  --line: #2e3542; --accent: #74b2e2; --accent-ink: #0b1620; --accent-soft: #1f3447;
+  --mark: #6b5a12; --mark-cur: #b8641a; --warn: #f0c36a; --warn-soft: #3a2f12;
+  --ok: #6fd1a6; --ok-soft: #143326; --bad: #f09a8f; --bad-soft: #3a1b18;
+  color-scheme: dark;
+}
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.6; padding-inline: 16px; padding-block: 10px; box-sizing: border-box; overflow-x: hidden; }
+*, *::before, *::after { box-sizing: border-box; }
+h1, h2, h3 { text-wrap: balance; line-height: 1.3; margin: 0; }
+p { margin: 0; }
+button, input, textarea, select { font: inherit; color: inherit; }
+a { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+
+#app { height: 100%; display: flex; flex-direction: column; gap: 10px; max-width: 1700px; margin-inline: auto; }
+header.top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+header.top h1 { font-size: 17px; font-weight: 700; }
+.spacer { flex: 1; }
+.tabs { display: flex; gap: 4px; }
+.btn { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; cursor: pointer; min-height: 36px; }
+.btn:hover:not(:disabled) { border-color: var(--accent); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 700; }
+.btn.small { min-height: 30px; padding: 3px 9px; font-size: 13px; }
+.btn[aria-pressed="true"], .btn.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+kbd { font-family: var(--font-mono); font-size: 11px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 0 5px; background: var(--surface-2); color: var(--muted); }
+.btn.on kbd, .btn.primary kbd { color: inherit; background: transparent; border-color: currentColor; opacity: .8; }
+
+main { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.screen { flex: 1; min-height: 0; overflow: auto; }
+.page { max-width: 820px; margin-inline: auto; display: flex; flex-direction: column; gap: 18px; padding-block: 8px 40px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+.panel h2 { font-size: 18px; margin-bottom: 8px; }
+.step-h { display: flex; gap: 10px; align-items: baseline; }
+.step-n { font-family: var(--font-mono); background: var(--accent); color: var(--accent-ink); border-radius: 6px; padding: 0 8px; font-size: 13px; }
+.muted { color: var(--muted); }
+.small { font-size: 13px; }
+.mono { font-family: var(--font-mono); }
+pre.sample { font-family: var(--font-mono); font-size: 12.5px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; overflow-x: auto; margin: 8px 0; white-space: pre; }
+pre.sample b { background: var(--mark); font-weight: 500; }
+.ex { border-left: 3px solid var(--line); padding-left: 12px; margin-top: 10px; display: grid; gap: 4px; }
+.pill { display: inline-block; font-size: 12px; padding: 1px 9px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface-2); color: var(--muted); white-space: nowrap; }
+.pill.acc { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+.checks { display: grid; gap: 10px; }
+.checks label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+.checks input { width: 20px; height: 20px; margin-top: 3px; accent-color: var(--accent); flex: none; }
+.banner { border-radius: 10px; padding: 8px 12px; font-size: 14px; background: var(--warn-soft); color: var(--warn); border: 1px solid transparent; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.banner.info { background: var(--accent-soft); color: var(--ink); }
+
+/* work */
+.work { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(330px, 440px) minmax(0, 1fr); gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; display: flex; flex-direction: column; min-height: 0; min-width: 0; }
+.card-body { overflow: auto; padding: 14px 16px; display: flex; flex-direction: column; gap: 14px; flex: 1; min-height: 0; }
+.card-foot { border-top: 1px solid var(--line); padding: 10px 16px; display: grid; gap: 8px; background: var(--surface); border-radius: 0 0 12px 12px; }
+.prog { display: grid; gap: 6px; }
+.prog-row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.prog-n { font-family: var(--font-mono); font-size: 15px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.bar { height: 8px; background: var(--surface-2); border-radius: 99px; overflow: hidden; border: 1px solid var(--line); }
+.bar > i { display: block; height: 100%; background: var(--accent); transition: width .3s; }
+.qtext { font-size: 19px; font-weight: 700; line-height: 1.45; overflow-wrap: anywhere; }
+.qko { font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.qko .tag { font-size: 11px; border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; margin-right: 6px; }
+.drop { border: 2px dashed var(--line); border-radius: 12px; padding: 22px; text-align: center; display: grid; gap: 10px; justify-items: center; background: var(--surface-2); }
+.drop.over { border-color: var(--accent); background: var(--accent-soft); }
+ul.files { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+ul.files li { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.lbl { font-size: 13px; font-weight: 700; display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.seg { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.seg.r4 { grid-template-columns: repeat(4, 1fr); }
+.seg .btn { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 6px; line-height: 1.3; text-align: center; }
+.seg .btn .big { font-weight: 700; font-size: 15px; }
+.anchor-line { font-size: 13px; color: var(--muted); min-height: 2.6em; }
+details > summary { cursor: pointer; font-size: 13px; color: var(--accent); }
+details.anch ul { margin: 6px 0 0; padding-left: 18px; font-size: 13px; color: var(--muted); }
+textarea, input[type="text"], input[type="search"] { width: 100%; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; }
+textarea { resize: vertical; min-height: 64px; }
+textarea.mono { font-family: var(--font-mono); font-size: 12.5px; }
+.vcheck { font-size: 13px; padding: 4px 10px; border-radius: 8px; }
+.vcheck.ok { background: var(--ok-soft); color: var(--ok); }
+.vcheck.bad { background: var(--bad-soft); color: var(--bad); }
+.vcheck.idle { color: var(--muted); }
+.msg { font-size: 13px; color: var(--bad); min-height: 1.2em; }
+.msg.good { color: var(--ok); }
+.actions { display: flex; gap: 8px; }
+.actions .primary { flex: 1; min-height: 44px; font-size: 16px; }
+.cheer { font-size: 14px; background: var(--ok-soft); color: var(--ok); border-radius: 8px; padding: 6px 10px; }
+
+/* viewer */
+.vtools { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+.vtools input[type="search"] { flex: 1 1 160px; min-width: 0; width: auto; }
+.vcount { font-family: var(--font-mono); font-size: 12px; color: var(--muted); min-width: 5.5em; font-variant-numeric: tabular-nums; }
+.vbody { flex: 1; min-height: 0; overflow: auto; position: relative; font-family: var(--font-mono); font-size: var(--vfs); line-height: 1.55; padding: 8px 10px 40px 0; }
+.chunk { content-visibility: auto; contain-intrinsic-size: auto 2200px; }
+.ln { position: relative; padding-left: 4.6em; white-space: pre-wrap; overflow-wrap: anywhere; min-height: 1.55em; }
+.ln::before { content: attr(data-n); position: absolute; left: 0; width: 3.8em; text-align: right; color: var(--muted); opacity: .7; user-select: none; -webkit-user-select: none; font-variant-numeric: tabular-nums; }
+.ln.flash { background: var(--accent-soft); }
+.ln.gap { border-top: 1px dashed var(--line); margin-top: 4px; padding-top: 4px; }
+.vfsel { min-height: 30px; font-size: 13px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 2px 6px; }
+.vfnote { font-size: 12px; color: var(--muted); padding: 2px 10px 4px; }
+details.vlegend { font-size: 12.5px; padding: 2px 10px 6px; border-bottom: 1px solid var(--line); }
+details.vlegend ul { margin: 4px 0 0; padding-left: 18px; color: var(--muted); }
+details.vlegend code { font-family: var(--font-mono); background: var(--surface-2); border-radius: 4px; padding: 0 4px; color: var(--ink); }
+mark { background: var(--mark); color: inherit; border-radius: 2px; }
+mark.cur { background: var(--mark-cur); outline: 2px solid var(--mark-cur); }
+.vstate { padding: 24px; color: var(--muted); }
+.selbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; padding: 6px 10px; border-top: 1px solid var(--line); font-size: 13px; background: var(--surface-2); border-radius: 0 0 12px 12px; }
+.selbar .sel { flex: 1 1 140px; min-width: 0; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: var(--font-mono); font-size: 12px; }
+
+/* tables (admin) */
+.tw { overflow-x: auto; max-width: 100%; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
+th, td { border-bottom: 1px solid var(--line); padding: 6px 8px; text-align: left; white-space: nowrap; }
+th { color: var(--muted); font-weight: 500; }
+td.wrap { white-space: normal; min-width: 14em; max-width: 36em; overflow-wrap: anywhere; }
+
+dialog { background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; max-width: min(680px, calc(100vw - 32px)); max-height: calc(100dvh - 40px); overflow: auto; }
+dialog::backdrop { background: rgba(10, 14, 22, .55); }
+dialog h2 { font-size: 18px; margin-bottom: 8px; }
+dialog .dbtn { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px; flex-wrap: wrap; }
+dialog blockquote { margin: 6px 0; padding: 6px 12px; border-left: 3px solid var(--accent); background: var(--surface-2); font-size: 13px; }
+dialog ul { padding-left: 20px; margin: 6px 0; }
+dialog table td { white-space: normal; }
+
+.loading { padding: 40px 0; text-align: center; color: var(--muted); }
+.stat { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.stat > div { background: var(--surface-2); border-radius: 10px; padding: 10px 12px; }
+.stat b { display: block; font-family: var(--font-mono); font-size: 22px; font-variant-numeric: tabular-nums; }
+
+.vtabs { display: flex; gap: 4px; padding: 6px 10px 0; border-bottom: 1px solid var(--line); }
+.vtabs button { background: transparent; border: 1px solid transparent; border-bottom: 0; border-radius: 8px 8px 0 0; padding: 6px 14px; cursor: pointer; color: var(--muted); }
+.vtabs button[aria-selected="true"] { background: var(--surface-2); color: var(--ink); border-color: var(--line); font-weight: 700; }
+[hidden] { display: none !important; }
+.pane { display: flex; flex-direction: column; flex: 1; min-height: 0; min-width: 0; }
+.gtop { padding: 8px 10px; display: grid; gap: 6px; border-bottom: 1px solid var(--line); }
+.grow { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.grow input[type="text"] { flex: 1 1 200px; min-width: 0; width: auto; font-family: var(--font-mono); font-size: 13px; }
+.gwrap { position: relative; flex: 1; min-height: 260px; }
+#cy { position: absolute; inset: 0; background: var(--surface); }
+.gcard { position: absolute; right: 8px; top: 8px; bottom: 8px; width: min(340px, calc(100% - 16px)); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; overflow: auto; font-size: 13px; box-shadow: 0 4px 18px rgba(0,0,0,.18); z-index: 3; }
+.gcard h3 { font-size: 14px; overflow-wrap: anywhere; }
+.gcard ul { margin: 6px 0; padding-left: 16px; }
+.gcard li { overflow-wrap: anywhere; margin-bottom: 3px; }
+.pill.dim { opacity: .55; text-decoration: line-through; }
+.gnote { font-size: 13px; color: var(--muted); }
+.gnote.warn { color: var(--warn); }
+.glist { max-height: 120px; overflow: auto; padding: 4px 10px 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+.glist .btn { font-size: 12px; min-height: 26px; padding: 1px 8px; }
+@media (max-width: 900px) {
+  html, body { height: auto; }
+  #app { height: auto; min-height: 100%; }
+  .work { display: flex; flex-direction: column; }
+  .card-body { overflow: visible; }
+  .viewer { height: 78dvh; min-height: 420px; }
+  .seg.r4 { grid-template-columns: repeat(2, 1fr); }
+  .card-foot { position: sticky; bottom: 0; z-index: 2; border-radius: 12px; }
+  .screen { overflow: visible; }
+}
+</style>
+
+<div id="app">
+  <header class="top">
+    <h1>역량 질문 라벨링</h1>
+    <nav class="tabs" id="tabs" aria-label="화면">
+      <button class="btn small" id="tabWork" aria-pressed="true" hidden>작업</button>
+      <button class="btn small" id="tabAdmin" aria-pressed="false" hidden>관리</button>
+      <button class="btn small" id="tabReview" aria-pressed="false" hidden>문항 검토</button>
+    </nav>
+    <span class="spacer"></span>
+    <button class="btn small" id="btnRules" hidden>판정 기준</button>
+    <button class="btn small" id="btnHelp" hidden>도움말 <kbd>?</kbd></button>
+    <button class="btn small" id="btnFiles" hidden>렌더링 파일</button>
+    <button class="btn small" id="btnKo" hidden aria-pressed="true">참고 번역: 켜짐</button>
+    <button class="btn small" id="btnTheme" title="화면 색상 바꾸기">화면: 자동</button>
+  </header>
+  <div id="notices"></div>
+  <main id="main"><div class="loading" id="loading" role="status">불러오는 중입니다.</div></main>
+</div>
+<dialog id="dlg" aria-labelledby="dlgT"><h2 id="dlgT"></h2><div id="dlgB"></div><div class="dbtn" id="dlgF"></div></dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
+<script>
+"use strict";
+/* ---------- 설정 ---------- */
+const TOTAL_EXPECT = 188;
+const FAST_MS = 20000;            // G7 등록값: 체류 20초 미만 확인
+const BREAK_MS = 25 * 60 * 1000;  // 휴식 알림 간격
+const SAME_Q_GAP = 21;            // 같은 질문은 최소 21칸 간격(가능한 범위)
+const MAX_MARKS = 20000;
+const CHEERS = [
+  "벌써 10%예요. 차분하게 잘 진행하고 계세요.",
+  "20% 지났어요. 근거를 하나씩 확인하는 방식이 잘 맞고 있어요.",
+  "30%예요. 지금 속도를 유지하셔도 충분합니다.",
+  "40%를 넘겼어요. 눈이 피곤하면 글자 크기를 조절해 보세요.",
+  "절반이 가까워졌어요. 물 한 잔 마시고 오셔도 좋아요.",
+  "50%예요. 저장된 내용은 나눠서 이어 하셔도 그대로 남아 있어요.",
+  "60%를 지났어요. 꼼꼼함이 이 작업의 핵심이에요.",
+  "70%예요. 마무리가 보이기 시작했어요.",
+  "80%까지 오셨어요. 끝까지 같은 기준으로 판정해 주세요.",
+  "90%예요. 거의 다 왔습니다.",
+  "마지막 구간이에요. 마음 편히 한 칸씩 가요."
+];
+const CAT_KO = { concept_definition: "정의", taxonomy: "분류", relations: "관계", slots_facets: "슬롯·패싯", instances: "사례", methodology: "방법론" };
+const ANCHORS = [
+  "0  관련된 개념이나 관계가 없다.",
+  "1  부분적: 개념은 있지만 핵심 관계나 계층이 빠져 있다.",
+  "2  대체로: 핵심 개념과 관계가 있고 사소한 빈틈만 있다.",
+  "3  완전: 질문에 완전히 답한다."
+];
+const $ = (s, r = document) => r.querySelector(s);
+const el = (tag, props = {}, ...kids) => { const e = document.createElement(tag); for (const k in props) { if (k === "class") e.className = props[k]; else if (k === "text") e.textContent = props[k]; else if (k.startsWith("on")) e.addEventListener(k.slice(2), props[k]); else e.setAttribute(k, props[k]); } for (const c of kids) if (c != null) e.append(c); return e; };
+const LS = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) { } } };
+
+/* ---------- 상태 ---------- */
+const ST = {
+  cells: [], byId: new Map(), order: [], idx: 0,
+  labels: new Map(),           // cellId -> 저장된 문서
+  db: null, user: null, uid: null, isOwner: false, persistent: false,
+  progress: null, pledged: false,
+  timers: new Map(), fastOk: new Set(), searchCount: new Map(),
+  views: new Map(), curView: null, form: null,
+  screen: "loading", sessionStart: new Date().toISOString(), lastBreak: Date.now(), activeSince: Date.now(),
+  breakOff: LS.get("brk-off") === "1", saving: false, cheer: "",
+  doneKeys: new Set(), doneAll: new Set(), split: true, unsubDone: null, freeOk: new Set(), splitK: 2, doneBy: new Map()   /* 작업 나누기: 누군가 완료한 셀 id 집합 */
+};
+
+ST.gtext = new Map(); ST.gIdx = new Map(); ST.gStats = new Map();
+/* ---------- 순서(시드 셔플 + 같은 질문 간격 제약) ---------- */
+function xmur3(str) { let h = 1779033703 ^ str.length; for (let i = 0; i < str.length; i++) { h = Math.imul(h ^ str.charCodeAt(i), 3432918353); h = h << 13 | h >>> 19; } return function () { h = Math.imul(h ^ h >>> 16, 2246822507); h = Math.imul(h ^ h >>> 13, 3266489909); return (h ^= h >>> 16) >>> 0; }; }
+function mulberry32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function makeOrder(cells, seedStr, gap) {
+  const rnd = mulberry32(xmur3(seedStr)());
+  const groups = new Map();
+  cells.forEach((c, i) => { if (!groups.has(c.q)) groups.set(c.q, []); groups.get(c.q).push(i); });
+  for (const g of groups.values()) for (let i = g.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [g[i], g[j]] = [g[j], g[i]]; }
+  const keys = [...groups.keys()].sort(); const last = new Map(); const out = [];
+  for (let pos = 0; pos < cells.length; pos++) {
+    let elig = keys.filter(k => groups.get(k).length && (!last.has(k) || pos - last.get(k) >= gap));
+    let pick;
+    if (elig.length) {
+      // 남은 개수가 가장 많은 그룹을 우선(끝부분에서 같은 질문이 몰리는 것을 방지), 동률은 무작위
+      const mx = Math.max(...elig.map(k => groups.get(k).length));
+      const top = elig.filter(k => groups.get(k).length === mx);
+      pick = top[Math.floor(rnd() * top.length)];
+    } else {
+      const rest = keys.filter(k => groups.get(k).length);
+      pick = rest.reduce((a, b) => (last.get(a) ?? -1e9) <= (last.get(b) ?? -1e9) ? a : b);
+    }
+    out.push(groups.get(pick).pop()); last.set(pick, pos);
+  }
+  return out;
+}
+
+/* ---------- 체류 시간(탭 숨김 제외) ---------- */
+function timerOf(id) {
+  let t = ST.timers.get(id);
+  if (!t) { t = { startedAt: new Date().toISOString(), acc: 0, since: null }; ST.timers.set(id, t); }
+  return t;
+}
+const tTotal = t => t.acc + (t.since != null ? performance.now() - t.since : 0);
+function tStart(id) { const t = timerOf(id); if (t.since == null && !document.hidden) t.since = performance.now(); }
+function tPause(id) { const t = ST.timers.get(id); if (t && t.since != null) { t.acc += performance.now() - t.since; t.since = null; } }
+document.addEventListener("visibilitychange", () => {
+  const c = curCell();
+  if (document.hidden) { if (c) tPause(c.id); }
+  else if (c && ST.screen === "work" && !dlgOpen()) tStart(c.id);
+});
+
+/* ---------- 저장 계층 ---------- */
+const pItems = () => "labels/" + ST.uid + "/items";
+async function dbWrite(ref, data) {
+  try { await ref.set(data); }
+  catch (e) {
+    if (e && e.code === "unavailable") { await new Promise(r => setTimeout(r, 400 + Math.random() * 600)); await ref.set(data); }
+    else throw e;
+  }
+}
+function summary() {
+  const docs = [...ST.labels.values()];
+  const sum = docs.reduce((s, d) => s + (d.dwellMs || 0), 0);
+  return { doneCount: docs.length, sumDwellMs: Math.round(sum), avgDwellMs: docs.length ? Math.round(sum / docs.length) : 0, lastSavedAt: docs.reduce((m, d) => d.savedAt > m ? d.savedAt : m, "") };
+}
+async function writeProgress(extra) {
+  if (!ST.persistent) return;
+  const s = summary();
+  ST.progress = Object.assign({}, ST.progress || {}, extra || {}, { doneCount: s.doneCount, sumDwellMs: s.sumDwellMs, lastIndex: ST.idx, updatedAt: new Date().toISOString(), orderVersion: 1 });
+  await dbWrite(ST.db.doc("labels/" + ST.uid + "/meta/progress"), ST.progress);
+  await dbWrite(ST.db.doc("labels/" + ST.uid), { uid: ST.uid, firstSeenAt: ST.progress.pledgeAt || ST.progress.updatedAt, doneCount: s.doneCount, avgDwellMs: s.avgDwellMs, lastSavedAt: s.lastSavedAt, updatedAt: ST.progress.updatedAt });
+}
+
+/* ---------- 다이얼로그(alert/confirm 대체) ---------- */
+function dlgOpen() { return $("#dlg").open; }
+function dialog(title, bodyNode, buttons) {
+  const d = $("#dlg"); $("#dlgT").textContent = title;
+  const b = $("#dlgB"); b.textContent = ""; b.append(bodyNode);
+  const f = $("#dlgF"); f.textContent = "";
+  (buttons || [{ label: "닫기" }]).forEach((x, i) => f.append(el("button", { class: "btn" + (x.primary ? " primary" : ""), type: "button", text: x.label, onclick: () => { d.close(); if (x.fn) x.fn(); } })));
+  const c = curCell(); if (c) tPause(c.id);
+  if (d.open) d.close();
+  d.showModal();
+}
+$("#dlg").addEventListener("close", () => { const c = curCell(); if (c && ST.screen === "work") tStart(c.id); });
+
+/* ---------- 테마 / 글자 크기 ---------- */
+const THEMES = ["auto", "light", "dark"], THEME_KO = { auto: "자동", light: "밝게", dark: "어둡게" };
+function applyTheme(t) { const r = document.documentElement; if (t === "auto") r.removeAttribute("data-theme"); else r.setAttribute("data-theme", t); $("#btnTheme").textContent = "화면: " + THEME_KO[t]; }
+let theme = LS.get("theme"); if (!THEMES.includes(theme)) theme = "auto"; applyTheme(theme);
+$("#btnTheme").addEventListener("click", () => { theme = THEMES[(THEMES.indexOf(theme) + 1) % 3]; LS.set("theme", theme); applyTheme(theme); });
+let vfs = parseInt(LS.get("vfs") || "13", 10); if (!(vfs >= 10 && vfs <= 24)) vfs = 13;
+document.documentElement.style.setProperty("--vfs", vfs + "px");
+
+/* ---------- 도움말 / 기준 내용 ---------- */
+function rulesNode() {
+  const w = el("div", {});
+  w.append(
+    el("h3", { text: "S: 근거 지지 여부 (0/1)" }),
+    el("p", { class: "small muted", text: "연구 프로토콜(PROTOCOL.md) 원문" }),
+    el("blockquote", { text: "Set `evidence_supported` to `1` only when a verbatim span in the supplied material supports the answer to the CQ. Set it to `0` when no such span exists. Copy the shortest sufficient verbatim span, preserving punctuation and whitespace where practical; if unsupported, leave the span empty and explain briefly why no supporting span exists. Do not infer support from the graph, external sources, or the annotator's knowledge." }),
+    el("p", { text: "제공 자료 안의 글자 그대로의 구간이 질문의 답을 뒷받침할 때만 S=1(근거 있음)입니다. 아니면 S=0(근거 없음)입니다. S=1이면 가장 짧은 충분 구간을 근거 칸에 복사하고, S=0이면 근거 칸을 비우고 메모에 이유를 짧게 씁니다. 자료 밖 지식, 외부 출처, 그래프 추론으로 채우지 않습니다." }),
+    el("h3", { text: "R: 자료가 질문에 답하는 정도 (0–3)" }),
+    el("ul", {}, ...ANCHORS.map(a => el("li", { text: a }))),
+    el("p", { text: "R은 S를 정한 뒤에 입력하되, S 값에 맞추지 말고 자료의 답변 충분성만 보고 매깁니다. S=0인데 R이 높거나 그 반대도 가능합니다." }),
+    el("h3", { text: "경계 예시(안내서 기준)" }),
+    el("ul", {}, el("li", { text: "관련 개념은 있지만 질문이 묻는 핵심 관계나 계층을 문장으로 말하지 않으면 S=0입니다. 주제가 가깝다는 것만으로는 근거가 아닙니다(R 앵커 1의 '부분적'에 해당)." }),
+      el("li", { text: "핵심 개념과 요구된 관계가 있고 작은 세부만 빠졌다면 S=1이며, 답을 뒷받침하는 구간을 인용합니다(R 앵커 2의 '대체로'에 해당)." }),
+      el("li", { text: "개념과 관계·정의가 질문에 직접 답하도록 적혀 있으면 S=1이며, 가장 짧은 충분 구간을 인용합니다(R 앵커 3의 '완전'에 해당)." })),
+    el("p", { text: "확신이 없으면 자료를 머릿속으로 보충하지 마세요. 글자 그대로 인용할 충분한 구간이 없으면 S=0으로 하고, 불확실한 이유를 메모에 적습니다." }),
+    el("h3", { text: "지켜 주세요" }),
+    el("ul", {}, el("li", { text: "행(셀) 순서대로 진행합니다. 이전 셀을 고치면 수정 이유를 남깁니다." }),
+      el("li", { text: "다른 평가자·저자와 라벨을 상의하지 않습니다. 같은 질문이 다시 나와도 앞의 답을 찾아 맞추지 않습니다." }),
+      el("li", { text: "파이프라인·모델 출력, 점수, 정답 후보를 알아내려 하지 않습니다. 자료 이름이나 내용으로 어떤 변형인지 추측하지 않습니다." }),
+      el("li", { text: "그래프는 길찾기 도구입니다. 근거 구간(S=1)은 반드시 텍스트 탭에서 원문 그대로 고릅니다." }),
+      el("li", { text: "AI 도구(번역기, 검색 요약, 챗봇, 코드 보조 포함)를 쓰지 않습니다." }),
+      el("li", { text: "기준 해석 질문은 저자가 아닌 조정자에게 보냅니다(연락 방법은 안내받은 곳에서 확인)." })));
+  return w;
+}
+function helpNode() {
+  const rows = [["1", "S = 근거 있음"], ["0", "S = 근거 없음"], ["Q W E R  또는  Shift+0~3", "R = 0 1 2 3"], ["Enter", "저장하고 다음"], ["Ctrl+Enter", "입력칸 안에서 저장하고 다음"], ["Alt+←", "이전 셀"], ["G", "텍스트 탭 / 그래프 탭 전환"], ["/", "텍스트 검색창으로 이동"], ["검색창에서 Enter / Shift+Enter", "다음 / 이전 결과"], ["?", "이 도움말"], ["Esc", "대화상자 닫기, 입력칸에서 나오기"]];
+  const t = el("table", {}, el("tbody", {}, ...rows.map(r => el("tr", {}, el("td", {}, el("kbd", { text: r[0] })), el("td", { text: r[1] })))));
+  return el("div", {}, t, el("p", { class: "small muted", text: "자판 배열이 한글이어도 Q W E R 위치 키로 동작합니다. 입력칸(근거, 메모, 검색)에 커서가 있을 때는 한 글자 단축키가 꺼집니다." }),
+    el("p", { class: "small muted", style: "margin-top:8px", text: "저장은 '저장하고 다음'을 누를 때만 됩니다. 나눠서 하셔도 저장된 셀은 그대로 남고, 다시 열면 이어서 시작합니다." }));
+}
+$("#btnRules").addEventListener("click", () => dialog("판정 기준", rulesNode()));
+$("#btnHelp").addEventListener("click", () => dialog("도움말과 단축키", helpNode()));
+
+/* ---------- 화면 전환 ---------- */
+function setMain(node) { const m = $("#main"); m.textContent = ""; m.append(node); }
+function notice(id, node) { const n = $("#notices"); const old = $("#" + id, n); if (old) old.remove(); if (node) { node.id = id; n.append(node); } }
+function showTabs() {
+  const adminOn = ST.isOwner;
+  $("#tabWork").hidden = !adminOn; $("#tabAdmin").hidden = !adminOn; $("#tabReview").hidden = !adminOn;
+  $("#btnRules").hidden = false; $("#btnHelp").hidden = false; $("#btnFiles").hidden = false; $("#btnKo").hidden = false; paintKoBtn();
+}
+function pressTab(id) { ["tabWork", "tabAdmin", "tabReview"].forEach(x => $("#" + x).setAttribute("aria-pressed", String(x === id))); }
+$("#tabWork").addEventListener("click", () => { pressTab("tabWork"); routeWork(); });
+$("#tabReview").addEventListener("click", () => { const c = curCell(); if (c) tPause(c.id); pressTab("tabReview"); renderReview(); });
+$("#tabAdmin").addEventListener("click", () => { const c = curCell(); if (c) tPause(c.id); pressTab("tabAdmin"); renderAdmin(); });
+
+/* ---------- 시작 ---------- */
+async function boot() {
+  try {
+    const r = await fetch("data/cells.json", { cache: "no-cache" });
+    if (!r.ok) throw new Error(r.status);
+    ST.cells = await r.json();
+  } catch (e) { setMain(el("div", { class: "panel" }, el("h2", { text: "문항을 불러오지 못했습니다" }), el("p", { text: "페이지를 새로고침해 주세요. 계속되면 안내해 준 담당자에게 알려 주세요." }))); return; }
+  ST.cells.forEach(c => ST.byId.set(c.id, c));
+  ST.viewNames = [...new Set(ST.cells.map(c => c.view))].sort(); ST.graphNames = []; /* 그래프는 텍스트 자료에서 바로 만든다(별도 파일 불필요) */
+  try { const r = await fetch("data/views_manifest.json", { cache: "no-cache" }); if (r.ok) ST.manifest = await r.json(); } catch (e) { }
+  await idbLoadAll();
+  try { if (window.claude && claude.use) { ST.user = await claude.use("user"); ST.db = await claude.use("db"); } } catch (e) { }
+  if (ST.user) { try { ST.uid = await ST.user.id(); ST.isOwner = await ST.user.isOwner(); } catch (e) { } }
+  /* 저장 권한 확인: '보기' 권한(Viewer/Commenter)은 플랫폼 규칙상 아무것도 저장할 수 없다. */
+  if (ST.user && !ST.isOwner) { try { ST.canWrite = await ST.user.can("data.write"); } catch (e) { ST.canWrite = null; } }
+  ST.persistent = !!(ST.db && ST.uid);
+  ST.order = makeOrder(ST.cells, (ST.uid || "preview") + "|order-v1", SAME_Q_GAP);
+  if (ST.persistent) {
+    try {
+      const [pg, items] = await Promise.all([ST.db.doc("labels/" + ST.uid + "/meta/progress").get(), ST.db.collection(pItems()).get()]);
+      if (pg.exists) ST.progress = pg.data();
+      items.docs.forEach(d => { const x = d.data(); if (x && ST.byId.has(d.id)) ST.labels.set(d.id, x); });
+    } catch (e) { ST.persistent = false; notice("nopersist", banner("저장소를 읽지 못해 미리보기 모드로 열었어요. 이 모드에서는 저장되지 않아요. 새로고침 후에도 같으면 담당자에게 알려 주세요.")); }
+  } else {
+    notice("nopersist", banner("로그인하고 이 페이지에 '기여자' 권한이 있어야 저장돼요. 지금은 미리보기 모드라서 입력한 내용이 저장되지 않아요."));
+  }
+  ST.pledged = ST.persistent ? !!(ST.progress && ST.progress.pledgeAt) : LS.get("pledged-preview") === "1";
+  if (ST.persistent) await initSplit();
+  showTabs();
+  routeWork();
+  setInterval(breakTick, 30000);
+}
+function banner(text, cls) { return el("div", { class: "banner " + (cls || "") }, el("span", { text })); }
+function routeWork() {
+  if (ST.persistent && ST.canWrite === false && !ST.isOwner) return renderNoAccess();
+  if (!ST.pledged) return renderWelcome();
+  if (!viewsReady()) return renderViewLoader();
+  const first = firstOpenIdx();
+  if (first === -1) { if (ST.screen !== "work") return renderDone(); }
+  if (!ST.started) { ST.idx = first === -1 ? 0 : first; ST.started = true; }
+  renderWork();
+}
+
+/* ---------- 렌더링 파일 불러오기(IndexedDB 보관, 서버 업로드 없음) ---------- */
+const IDB = { name: "ct-labeling-views", store: "views" };
+function idbOpen() { return new Promise((res, rej) => { try { const r = indexedDB.open(IDB.name, 1); r.onupgradeneeded = () => r.result.createObjectStore(IDB.store); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); } catch (e) { rej(e); } }); }
+async function idbLoadAll() {
+  ST.fileState = ST.fileState || {};
+  try {
+    const db = await idbOpen();
+    await new Promise((res) => {
+      const tx = db.transaction(IDB.store, "readonly"); const rq = tx.objectStore(IDB.store).getAll(); const kq = tx.objectStore(IDB.store).getAllKeys();
+      tx.oncomplete = () => { kq.result.forEach((k, i) => { const v = rq.result[i]; if (v && ST.viewNames.includes(k)) { ST.views.set(k, buildView(v.text)); ST.fileState[k] = { ok: v.ok !== false, bytes: v.bytes, kept: true }; } else if (v && ST.graphNames.includes(k)) { ST.gtext.set(k, v.text); ST.fileState[k] = { ok: v.ok !== false, bytes: v.bytes, kept: true }; } }); res(); };
+      tx.onerror = tx.onabort = () => res();
+    });
+    ST.idbOk = true;
+  } catch (e) { ST.idbOk = false; }
+}
+async function idbPut(name, rec) {
+  const db = await idbOpen();
+  return new Promise((res, rej) => { const tx = db.transaction(IDB.store, "readwrite"); tx.objectStore(IDB.store).put(rec, name); tx.oncomplete = () => res(); tx.onerror = tx.onabort = () => rej(tx.error); });
+}
+const viewsReady = () => ST.viewNames && ST.viewNames.every(n => ST.views.has(n));
+const hex = buf => [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, "0")).join("");
+async function importFiles(fileList) {
+  const res = { unknown: [], saveErr: false };
+  ST.fileState = ST.fileState || {};
+  for (const f of fileList) {
+    const isG = ST.graphNames.includes(f.name);
+    if (!isG && !ST.viewNames.includes(f.name)) { res.unknown.push(f.name); continue; }
+    const buf = await f.arrayBuffer();
+    let ok = true, sha = null;
+    const exp = ST.manifest && ST.manifest[f.name];
+    if (exp) {
+      try { sha = hex(await crypto.subtle.digest("SHA-256", buf)); ok = sha === exp.sha256 && buf.byteLength === exp.bytes; } catch (e) { ok = true; sha = null; }
+    }
+    const text = new TextDecoder("utf-8").decode(buf);
+    if (isG) { ST.gtext.set(f.name, text); } else { ST.views.set(f.name, buildView(text)); ST.gIdx.delete(f.name); }
+    ST.fileState[f.name] = { ok, bytes: buf.byteLength, kept: false };
+    if (V.file === f.name) { V.file = null; }
+    try { await idbPut(f.name, { text, bytes: buf.byteLength, ok, sha }); ST.fileState[f.name].kept = true; } catch (e) { res.saveErr = true; }
+  }
+  return res;
+}
+function renderViewLoader() {
+  ST.screen = "files"; ST.idx = ST.idx || 0;
+  const list = el("ul", { class: "files", "aria-live": "polite" });
+  const warn = el("div", { class: "msg", role: "alert" });
+  const nextBtn = el("button", { class: "btn primary", type: "button", text: "다음", onclick: () => { ST.screen = "files-done"; routeWork(); } });
+  const inp = el("input", { type: "file", id: "fileIn", multiple: "", accept: ".txt,.json,text/plain,application/json", hidden: "" });
+  const paint = (extra) => {
+    list.textContent = ""; const missing = [];
+    const missingG = [];
+    ST.viewNames.concat(ST.graphNames).forEach(n => {
+      const isG = ST.graphNames.includes(n);
+      const st = ST.fileState && ST.fileState[n]; const have = isG ? ST.gtext.has(n) : ST.views.has(n);
+      if (!have) (isG ? missingG : missing).push(n);
+      list.append(el("li", {}, el("span", { class: "mono", text: n }), el("span", { class: "muted small", text: isG ? "그래프" : "텍스트" }), el("span", { class: "pill" + (have ? (st && st.ok === false ? "" : " acc") : ""), text: !have ? "아직 없음" : (st && st.ok === false ? "내용이 달라요" : "확인됨") }), have && st && st.bytes ? el("span", { class: "muted small", text: (st.bytes / 1048576).toFixed(2) + " MB" }) : null, have && st && st.ok === false ? el("span", { class: "small", style: "color:var(--warn)", text: "기대한 파일과 해시가 달라요. 담당자에게 받은 원본인지 확인해 주세요." }) : null));
+    });
+    const msgs = [];
+    const allMiss = missing.concat(missingG);
+    if (allMiss.length) msgs.push("아직 못 찾은 파일 " + allMiss.length + "개: " + allMiss.join(", ") + ". 'views' 폴더 안의 파일을 모두 선택해 주세요." + (!missing.length ? " 그래프 파일이 없어도 텍스트만으로 작업할 수 있지만, 그래프 탭은 쓸 수 없어요." : ""));
+    if (extra && extra.unknown.length) msgs.push("목록에 없는 파일은 건너뛰었어요: " + extra.unknown.join(", "));
+    if (extra && extra.saveErr) msgs.push("이 브라우저에 파일을 보관하지 못했어요(저장 공간 부족이거나 보관이 막혀 있어요). 이번 방문에서는 쓸 수 있지만 다음에 다시 불러와야 해요.");
+    if (!ST.idbOk && !(extra && extra.saveErr)) msgs.push("이 브라우저는 파일 보관을 지원하지 않아 방문할 때마다 불러와야 해요.");
+    warn.textContent = msgs.join(" ");
+    nextBtn.disabled = missing.length > 0; nextBtn.textContent = missingG.length ? "그래프 없이 다음" : "다음";
+  };
+  const handle = async (files) => { warn.textContent = "파일을 확인하는 중입니다."; try { const r = await importFiles(files); paint(r); } catch (e) { warn.textContent = "파일을 읽지 못했어요. 다시 선택해 주세요."; } };
+  inp.addEventListener("change", () => { handle([...inp.files]); inp.value = ""; });
+  const drop = el("div", { class: "drop" }, el("p", { text: "여기로 파일 6개를 끌어다 놓거나 아래 버튼으로 선택하세요." }), el("button", { class: "btn", type: "button", text: "파일 선택", onclick: () => inp.click() }));
+  drop.addEventListener("dragover", e => { e.preventDefault(); drop.classList.add("over"); });
+  drop.addEventListener("dragleave", () => drop.classList.remove("over"));
+  drop.addEventListener("drop", e => { e.preventDefault(); drop.classList.remove("over"); handle([...(e.dataTransfer.files || [])]); });
+  paint();
+  const p = el("div", { class: "page" }, el("section", { class: "panel" },
+    el("h2", { text: "렌더링 파일 불러오기" }),
+    el("p", { text: "연구 담당자에게서 받은 'views' 폴더의 텍스트 파일 6개를 선택해 주세요. 그래프 탭은 이 파일에서 자동으로 만들어져요. 파일은 이 컴퓨터 브라우저 안에만 보관되고 서버로 올라가지 않아요." }),
+    el("p", { class: "muted small", style: "margin-top:6px", text: "한 번만 하면 됩니다. 다음 방문에는 다시 묻지 않아요." }),
+    el("div", { style: "margin-top:12px" }, drop, inp), el("div", { style: "margin-top:12px" }, list), warn,
+    el("div", { style: "margin-top:12px; display:flex; gap:8px" }, nextBtn, viewsReady() ? el("button", { class: "btn", type: "button", text: "취소", onclick: () => { ST.screen = "files-done"; routeWork(); } }) : null)));
+  setMain(el("div", { class: "screen" }, p));
+}
+
+/* ---------- 저장 권한 없음 안내 ---------- */
+function renderNoAccess() {
+  ST.screen = "noaccess";
+  const p = el("div", { class: "page" }, el("section", { class: "panel" },
+    el("h2", { text: "저장 권한이 아직 없어요" }),
+    el("p", { text: "지금 이 페이지에 '보기' 권한으로 들어와 계세요. '보기' 권한으로는 서약과 라벨을 저장할 수 없습니다." }),
+    el("ol", { style: "margin:10px 0; padding-left:20px" },
+      el("li", { text: "연구 담당자에게 이 페이지의 '기여자(Contributor)' 권한을 요청해 주세요." }),
+      el("li", { text: "권한을 받은 뒤 아래 '새로고침'을 누르면 바로 시작할 수 있어요." })),
+    el("p", { class: "muted small", text: "이미 권한을 받으셨다면 로그인한 계정이 권한을 받은 계정과 같은지 확인해 주세요." }),
+    el("div", { style: "margin-top:12px; display:flex; gap:8px; flex-wrap:wrap" },
+      el("button", { class: "btn primary", type: "button", text: "새로고침", onclick: () => location.reload() }),
+      el("button", { class: "btn", type: "button", text: "저장 없이 둘러보기", onclick: () => { ST.persistent = false; ST.canWrite = null; notice("nopersist", banner("둘러보기 모드예요. 입력한 내용은 저장되지 않아요. '기여자' 권한을 받은 뒤 새로고침해 주세요.")); ST.pledged = LS.get("pledged-preview") === "1"; routeWork(); } }))));
+  setMain(el("div", { class: "screen" }, p));
+}
+
+/* ---------- 환영 / 튜토리얼 ---------- */
+function renderWelcome() {
+  ST.screen = "welcome";
+  const ai = el("input", { type: "checkbox", id: "p1" }), dis = el("input", { type: "checkbox", id: "p2" }), rd = el("input", { type: "checkbox", id: "p3" });
+  const go = el("button", { class: "btn primary", type: "button", id: "goBtn", text: "라벨링 시작", disabled: "" });
+  const upd = () => { go.disabled = !(ai.checked && dis.checked && rd.checked); };
+  [ai, dis, rd].forEach(x => x.addEventListener("change", upd));
+  go.addEventListener("click", async () => {
+    go.disabled = true;
+    const at = new Date().toISOString();
+    try {
+      ST.pledged = true;
+      if (ST.persistent) await writeProgress({ pledgeAt: at, pledges: { noAiTools: true, noDiscussion: true, readCriteria: true } });
+      else LS.set("pledged-preview", "1");
+      routeWork();
+    } catch (e) { ST.pledged = false; go.disabled = false; const code = (e && e.code) || ""; dialog("시작하지 못했습니다", el("p", { text: code === "invalid_argument" || code === "revoked" ? "이 계정에는 저장 권한이 없어요. 지금 '보기' 권한으로 들어와 계셔서 서약을 저장할 수 없습니다. 연구 담당자에게 이 페이지의 '기여자' 권한을 요청한 뒤 새로고침해 주세요." : "서약을 잠시 저장하지 못했어요. 잠시 뒤 다시 눌러 주세요. 계속되면 연구 담당자에게 알려 주세요. (오류: " + (code || "알 수 없음") + ")" })); }
+  });
+  const ex = (t) => el("pre", { class: "sample" }, t);
+  const p = el("div", { class: "page" },
+    el("section", { class: "panel" },
+      el("h2", { text: "안녕하세요. 함께해 주셔서 감사합니다." }),
+      el("p", { text: "온톨로지 자료가 질문에 답할 수 있는지를 사람의 눈으로 확인하는 작업입니다. 질문 188개를 하나씩 보고, 오른쪽에 있는 자료에서 답의 근거를 찾아 판정해 주세요." }),
+      el("p", { class: "muted small", style: "margin-top:8px", text: "셀당 약 1~2분, 전체 188셀입니다. 저장은 '저장하고 다음'을 누를 때마다 되므로 여러 번에 나눠 하셔도 됩니다. 서두르지 않으셔도 됩니다." })),
+    el("section", { class: "panel" },
+      el("div", { class: "step-h" }, el("span", { class: "step-n", text: "1" }), el("h2", { text: "무엇을 판정하나요" })),
+      el("p", { text: "각 질문마다 두 가지를 서로 독립적으로 입력합니다." }),
+      el("ul", {}, el("li", { text: "S: 제공 자료 안에 글자 그대로의 구간이 질문의 답을 뒷받침하는가 (있다 / 없다)" }), el("li", { text: "R: 자료가 질문에 얼마나 답하는가 (0~3점)" })),
+      el("p", { class: "muted small", text: "자료는 질문마다 오른쪽 화면에 열립니다. 자료 밖 지식, 외부 검색, 본인의 배경지식으로 빈틈을 채우지 마세요." })),
+    el("section", { class: "panel" },
+      el("div", { class: "step-h" }, el("span", { class: "step-n", text: "2" }), el("h2", { text: "S와 R은 어떻게 다른가요" })),
+      el("p", { text: "S는 '인용할 수 있는 문장이 있는가'를 묻고, R은 '자료 전체가 답으로 충분한가'를 묻습니다. S를 먼저 정하고, R은 S에 맞추지 말고 따로 판단합니다." }),
+      el("p", { class: "muted small", style: "margin-top:6px", text: "아래는 이 작업의 자료와 무관한 가상 예시(도서관 시스템)입니다." }),
+      ex("Reservation | A request to hold an Item for a Member.\nLoan | A borrowing of one Item by one Member for a fixed period.\nMember | A person registered to borrow Items.\nEvent\nItem"),
+      el("div", { class: "ex" }, el("b", { text: "질문 A: What is a Reservation?" }), el("span", { text: "첫 줄이 직접 정의합니다. S=1이고, 인용할 구간은 첫 줄입니다. 질문에 완전히 답하므로 R은 3입니다." })),
+      el("div", { class: "ex" }, el("b", { text: "질문 B: Is Loan a subclass of Event?" }), el("span", { text: "Loan과 Event라는 이름은 보이지만 둘의 포함 관계를 말하는 문장은 없습니다. 주제가 가까운 것만으로는 근거가 아니므로 S=0입니다. 개념은 있고 핵심 관계가 빠졌으므로 R은 1에 가깝습니다. S=0이면 근거 칸을 비우고 메모에 이유를 씁니다." })),
+      el("p", { class: "muted small", style: "margin-top:8px", text: "R 앵커: 0 관련 개념·관계 없음 / 1 부분적(핵심 관계·계층 없음) / 2 대체로(사소한 빈틈) / 3 완전." })),
+    el("section", { class: "panel" },
+      el("div", { class: "step-h" }, el("span", { class: "step-n", text: "3" }), el("h2", { text: "근거 구간은 어떻게 고르나요" })),
+      el("ol", { style: "margin:6px 0; padding-left:20px" },
+        el("li", { text: "오른쪽 자료에서 검색창으로 질문의 핵심 단어를 찾습니다(대소문자 구분 없음)." }),
+        el("li", { text: "답을 뒷받침하는 가장 짧은 구간을 마우스로 드래그해 선택합니다." }),
+        el("li", { text: "'선택한 구간을 근거로' 버튼을 누르면 근거 칸에 채워지고, 원문에 그대로 있는지 바로 확인됩니다." }), el("li", { text: "관계는 기호로 적혀 있어요. 'A < B'는 A가 B의 하위 클래스, 'IND X a T'는 X가 T의 사례라는 뜻이에요. 텍스트 탭 위 '자료 읽는 법'에 정리돼 있어요." })),
+      el("p", { class: "muted small", text: "구두점과 공백은 가능한 한 원문 그대로 둡니다. 직접 고쳐 쓰면 '원문에서 찾을 수 없음'으로 표시되고, 이 경우 저장되지 않습니다." })),
+    el("section", { class: "panel" },
+      el("div", { class: "step-h" }, el("span", { class: "step-n", text: "4" }), el("h2", { text: "그래프 탭은 어떻게 쓰나요" })),
+      el("p", { text: "오른쪽 위의 '그래프' 탭을 누르면 질문에 나온 용어를 시작점으로, 그 주변의 노드와 연결선만 그려 줍니다. 자료 전체를 한눈에 보는 그림이 아니라 어디를 읽어야 할지 알려 주는 지도입니다." }),
+      el("p", { class: "muted small", style: "margin-top:6px", text: "가상 예시(도서관 시스템): 질문이 'Which events relate to a Loan?'이면 시작점은 Loan입니다. 그래프에는 Loan과 한 칸 이웃(Member, Item, Event)이 연결선 이름(예: involves)과 함께 나타납니다." }),
+      el("ol", { style: "margin:6px 0; padding-left:20px" }, el("li", { text: "노드나 연결선을 누르면 관련된 문장(s p o 목록)이 옆 카드에 나옵니다." }), el("li", { text: "'원문 정의 줄로 이동'을 누르면 텍스트 탭에서 그 노드가 적힌 줄로 바로 이동해 강조합니다. 그 줄에서 답이 되는 가장 짧은 부분만 드래그해 근거로 고릅니다." }), el("li", { text: "질의 칸에서 용어를 더하거나 빼고 다시 실행할 수 있습니다. 1홉/2홉으로 범위를 넓힐 수 있습니다." }), el("li", { text: "철자가 조금 틀려도 괜찮아요. 예를 들어 'Collction'이라고 쓰면 그래프에서 가장 가까운 이름인 'Collection'으로 고쳐 질의하고, 바꾼 내용을 표시해 줍니다." })),
+      el("p", { class: "banner info", style: "margin-top:8px" }, el("span", { text: "그래프는 길찾기 도구예요. 근거 구간(S=1)은 반드시 텍스트 탭에서 원문 그대로 골라 주세요." }))),
+    el("section", { class: "panel" },
+      el("h2", { text: "시작하기 전에" }),
+      el("div", { class: "checks" },
+        el("label", {}, ai, el("span", { text: "AI 도구(ChatGPT 같은 챗봇, 번역기, 검색 요약, 코드 보조 포함)를 쓰지 않겠습니다." })),
+        el("label", {}, dis, el("span", { text: "저자나 다른 평가자와 라벨을 상의하지 않겠습니다." })),
+        el("label", {}, rd, el("span", { text: "위 기준을 읽고 이해했습니다." }))),
+      el("div", { style: "margin-top:14px; display:flex; gap:10px; align-items:center; flex-wrap:wrap" }, go,
+        el("span", { class: "muted small", text: "세 항목에 모두 체크하면 시작할 수 있어요." }))));
+  const s = el("div", { class: "screen" }, p); setMain(s);
+}
+
+/* ---------- 작업 화면 ---------- */
+const curCell = () => (ST.screen === "work" && ST.order.length) ? ST.cells[ST.order[ST.idx]] : null;
+let els = {};
+function renderWork() {
+  ST.screen = "work";
+  const root = el("div", { class: "work" });
+  // 왼쪽 카드
+  const left = el("section", { class: "card", "aria-label": "판정" });
+  const body = el("div", { class: "card-body" });
+  const prog = el("div", { class: "prog" }, el("div", { class: "prog-row" }, el("span", { class: "prog-n", id: "progN" }), el("span", { class: "muted small", id: "progD" })), el("div", { class: "bar" }, el("i", { id: "progBar" })));
+  const cheer = el("div", { class: "cheer", id: "cheer", role: "status", hidden: "" });
+  const qt = el("div", { class: "qtext", id: "qt" }), qk = el("div", { class: "qko", id: "qk" });
+  const chips = el("div", { class: "chips", id: "chips" });
+  const sb1 = el("button", { class: "btn", type: "button", id: "s1", "aria-pressed": "false" }, el("span", { class: "big", text: "근거 있음" }), el("span", { class: "small muted" }, "S=1  ", el("kbd", { text: "1" })));
+  const sb0 = el("button", { class: "btn", type: "button", id: "s0", "aria-pressed": "false" }, el("span", { class: "big", text: "근거 없음" }), el("span", { class: "small muted" }, "S=0  ", el("kbd", { text: "0" })));
+  sb1.addEventListener("click", () => setS(1)); sb0.addEventListener("click", () => setS(0));
+  const rKeys = ["Q", "W", "E", "R"];
+  const rbs = [0, 1, 2, 3].map(n => { const b = el("button", { class: "btn", type: "button", id: "r" + n, "aria-pressed": "false", title: ANCHORS[n] }, el("span", { class: "big", text: String(n) }), el("span", { class: "small muted" }, el("kbd", { text: rKeys[n] }))); b.addEventListener("click", () => setR(n)); b.addEventListener("mouseenter", () => showAnchor(n)); b.addEventListener("focus", () => showAnchor(n)); b.addEventListener("mouseleave", () => showAnchor(null)); b.addEventListener("blur", () => showAnchor(null)); return b; });
+  const anchorLine = el("div", { class: "anchor-line", id: "anchorLine" });
+  const anch = el("details", { class: "anch" }, el("summary", { text: "R 점수 기준 보기" }), el("ul", {}, ...ANCHORS.map(a => el("li", { text: a }))));
+  const span = el("textarea", { id: "span", class: "mono", rows: "3", placeholder: "오른쪽 자료에서 구간을 드래그한 뒤 '선택한 구간을 근거로'를 누르세요.", "aria-describedby": "vcheck" });
+  const vcheck = el("div", { class: "vcheck idle", id: "vcheck", role: "status" });
+  const locate = el("button", { class: "btn small", type: "button", id: "locate", text: "자료에서 위치 보기" });
+  const note = el("textarea", { id: "note", rows: "2", placeholder: "S=0이면 근거가 없는 이유를 짧게 적어 주세요." });
+  const reason = el("div", { id: "reasonBox", hidden: "" }, el("div", { class: "lbl" }, el("label", { for: "reason", text: "수정 이유 (필수)" })), el("input", { type: "text", id: "reason", placeholder: "이미 저장한 판정을 고치는 이유" }));
+  body.append(prog, cheer, qt, qk, chips,
+    el("div", {}, el("div", { class: "lbl" }, el("span", { text: "1. 근거 판정 (S)" }), el("a", { href: "#", class: "small", id: "rl", text: "기준 보기" })), el("div", { class: "seg", role: "group", "aria-label": "S 판정" }, sb1, sb0)),
+    el("div", {}, el("div", { class: "lbl" }, el("span", { text: "2. 답변 충분성 (R)" }), el("span", { class: "small muted", id: "rHint", text: "S를 먼저 정하세요" })), el("div", { class: "seg r4", role: "group", "aria-label": "R 점수" }, ...rbs), anchorLine, anch),
+    el("div", { id: "spanBox" }, el("div", { class: "lbl" }, el("label", { for: "span", text: "3. 근거 구간 (S=1일 때, 원문 그대로)" }), locate), span, vcheck),
+    el("div", {}, el("div", { class: "lbl" }, el("label", { for: "note", text: "메모" })), note),
+    reason);
+  const msg = el("div", { class: "msg", id: "msg", role: "alert" });
+  const back = el("button", { class: "btn", type: "button", id: "back", text: "이전 셀", title: "Alt+←" });
+  const save = el("button", { class: "btn primary", type: "button", id: "save" }, "저장하고 다음 ", el("kbd", { text: "Enter" }));
+  back.addEventListener("click", () => goPrev()); save.addEventListener("click", saveAndNext);
+  left.append(body, el("div", { class: "card-foot" }, msg, el("div", { class: "actions" }, back, save)));
+  // 오른쪽 뷰어
+  const right = el("section", { class: "card viewer", "aria-label": "자료 뷰어" });
+  const q = el("input", { type: "search", id: "q", placeholder: "자료에서 검색 (대소문자 무시)", "aria-label": "자료 검색", autocomplete: "off" });
+  const cnt = el("span", { class: "vcount", id: "vcount", "aria-live": "polite" });
+  const prev = el("button", { class: "btn small", type: "button", id: "mPrev", text: "이전", "aria-label": "이전 검색 결과" });
+  const next = el("button", { class: "btn small", type: "button", id: "mNext", text: "다음", "aria-label": "다음 검색 결과" });
+  const fm = el("button", { class: "btn small", type: "button", id: "fMinus", text: "가", "aria-label": "글자 작게", style: "font-size:11px" });
+  const fp = el("button", { class: "btn small", type: "button", id: "fPlus", text: "가", "aria-label": "글자 크게", style: "font-size:17px" });
+  const vbody = el("div", { class: "vbody", id: "vbody", tabindex: "0", role: "region", "aria-label": "자료 본문" });
+  const selTxt = el("span", { class: "sel", id: "selTxt", text: "선택한 구간 없음" });
+  const useSel = el("button", { class: "btn small primary", type: "button", id: "useSel", text: "선택한 구간을 근거로", disabled: "" });
+  const tabT = el("button", { type: "button", role: "tab", id: "tabT", "aria-selected": "true", text: "텍스트" });
+  const tabG = el("button", { type: "button", role: "tab", id: "tabG", "aria-selected": "false" }, "그래프 ", el("kbd", { text: "G" }));
+  tabT.addEventListener("click", () => showTab("text")); tabG.addEventListener("click", () => showTab("graph"));
+  const vf = el("div", { class: "chips", role: "group", "aria-label": "보기 필터" });
+  const paintVf = () => vf.querySelectorAll("button").forEach(x => { const on = x.dataset.v === V.filter; x.setAttribute("aria-pressed", String(on)); x.classList.toggle("on", on); });
+  [["all", "전체 줄"], ["search", "검색어 줄만"], ["graph", "그래프 노드 줄만"]].forEach(([v, label]) => { const bt = el("button", { class: "btn small", type: "button", text: label, title: v === "search" ? "검색어가 강조된 줄만 보여 줍니다" : v === "graph" ? "그래프 탭에 그려진 노드의 정의 줄만 보여 줍니다" : "자료 전체를 보여 줍니다" }); bt.dataset.v = v; bt.addEventListener("click", () => { V.filter = v; LS.set("vfilter", v); paintVf(); renderLines(); }); vf.append(bt); });
+  paintVf();
+  const vfn = el("div", { class: "vfnote", id: "vfnote", "aria-live": "polite" });
+  const code = s => el("code", { text: s });
+  const legend = el("details", { class: "vlegend" }, el("summary", { text: "자료 읽는 법 (기호 설명)" }),
+    el("ul", {},
+      el("li", {}, code("A | 이름 < B,C"), " : A는 B와 C의 하위 클래스(subClassOf)예요. 예: ", code("Building < …#Location"), "은 Building이 Location의 하위 클래스라는 뜻."),
+      el("li", {}, code(":: 문장"), " : 그 항목의 정의·설명이에요."),
+      el("li", {}, code("IND X | 이름 a T"), " : X는 T의 사례(인스턴스, type)예요."),
+      el("li", {}, code("OP P dom:D rng:R inv:I"), " : 속성 P의 정의역(D)·치역(R)·역관계(I)예요. DP는 값 속성이에요."),
+      el("li", {}, code("{p=o; …}"), " : 그 밖의 관계(술어 p의 값 o)예요."),
+      el("li", {}, "검색은 단어가 아니라 기호로 적힌 관계를 못 찾을 수 있어요. 그래프에서 노드를 누르고 '원문 정의 줄로 이동'을 쓰면 해당 줄로 바로 갑니다.")));
+  const paneT = el("div", { class: "pane", id: "paneT" }, el("div", { class: "vtools" }, q, prev, next, cnt, vf, fm, fp), vfn, legend, vbody, el("div", { class: "selbar" }, selTxt, useSel));
+  right.append(el("div", { class: "vtabs", role: "tablist", "aria-label": "자료 보기" }, tabT, tabG), paneT, buildGraphPane());
+  root.append(left, right);
+  setMain(root);
+  $("#rl").addEventListener("click", ev => { ev.preventDefault(); dialog("판정 기준", rulesNode()); });
+  // 뷰어 이벤트
+  let qTimer = null, cTimer = null;
+  q.addEventListener("input", () => { clearTimeout(qTimer); qTimer = setTimeout(() => runSearch(q.value, true), 180); clearTimeout(cTimer); cTimer = setTimeout(() => countSearch(q.value), 800); });
+  q.addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); clearTimeout(qTimer); if (V.query !== q.value) runSearch(q.value, true); else stepMatch(e.shiftKey ? -1 : 1); countSearch(q.value); } });
+  next.addEventListener("click", () => stepMatch(1)); prev.addEventListener("click", () => stepMatch(-1));
+  fm.addEventListener("click", () => setFont(vfs - 1)); fp.addEventListener("click", () => setFont(vfs + 1));
+  useSel.addEventListener("mousedown", e => e.preventDefault());
+  useSel.addEventListener("click", takeSelection);
+  locate.addEventListener("click", locateSpan);
+  span.addEventListener("input", () => { debounce(updateSpanCheck, 150)(); markDirty(); });
+  note.addEventListener("input", markDirty); $("#reason").addEventListener("input", markDirty);
+  document.addEventListener("selectionchange", onSelChange);
+  openCell(ST.idx);
+}
+const _deb = {}; function debounce(fn, ms) { return () => { clearTimeout(_deb[fn.name]); _deb[fn.name] = setTimeout(fn, ms); }; }
+function setFont(n) { vfs = Math.max(10, Math.min(24, n)); document.documentElement.style.setProperty("--vfs", vfs + "px"); LS.set("vfs", String(vfs)); }
+
+/* ---- 셀 열기 ---- */
+let lastCountedQ = "";
+function formFor(c) {
+  const s = ST.labels.get(c.id);
+  return s ? { S: s.S, R: s.R, span: s.span || "", note: s.note || "", reason: "" } : { S: null, R: null, span: "", note: "", reason: "" };
+}
+function openCell(i) {
+  if (i < 0 || i >= ST.order.length) return;
+  const prevC = curCell(); if (prevC) tPause(prevC.id);
+  ST.idx = i;
+  const c = curCell(); const t = timerOf(c.id); tStart(c.id);
+  ST.form = formFor(c); lastCountedQ = "";
+  $("#qt").textContent = c.q; paintKo(c);
+  const chips = $("#chips"); chips.textContent = ""; chips.append(el("span", { class: "pill acc", text: "범주 · " + (c.catKo || CAT_KO[c.cat] || c.cat) }));
+  if (ST.labels.has(c.id)) chips.append(el("span", { class: "pill", text: "저장됨 · 수정하면 이유 필요" }));
+  $("#span").value = ST.form.span; $("#note").value = ST.form.note; $("#reason").value = ""; $("#reasonBox").hidden = true;
+  $("#msg").textContent = ""; $("#msg").classList.remove("good");
+  paintForm(); paintProgress();
+  $("#save").disabled = false;
+  $("#back").disabled = nextFree(i - 1, -1) < 0; notice("taken", null);
+  $("#q").value = ""; V.query = "";
+  loadView(c.view); showTab("text"); G.cellId = null;
+  const lb = $(".card-body"); if (lb) lb.scrollTop = 0;
+}
+function go(i) {
+  if (i < 0) return;
+  if (i >= ST.order.length) { renderDone(); return; }
+  openCell(i);
+}
+function paintProgress() {
+  const n = ST.order.length, d = ST.labels.size;
+  $("#progN").textContent = (ST.idx + 1) + " / " + n;
+  $("#progD").textContent = ST.split && ST.persistent ? "내 완료 " + d + "개 · 목표(셀당 " + ST.splitK + "명) 달성 " + ST.doneAll.size + "/" + n : "완료 " + d + "개";
+  $("#progBar").style.width = (100 * d / n) + "%";
+}
+function showCheer(t) { const e = $("#cheer"); if (!e) return; e.textContent = t; e.hidden = !t; }
+
+function paintKo(c) { const k = $("#qk"); if (!k) return; k.textContent = ""; const on = !ST.koOff && c.qko; k.hidden = !on; if (on) k.append(el("span", { class: "tag", text: "참고 번역" }), document.createTextNode(c.qko)); }
+function paintKoBtn() { const b = $("#btnKo"); if (!b) return; b.textContent = "참고 번역: " + (ST.koOff ? "숨김" : "켜짐"); b.setAttribute("aria-pressed", String(!ST.koOff)); }
+ST.koOff = LS.get("ko-off") === "1";
+$("#btnKo").addEventListener("click", () => { ST.koOff = !ST.koOff; LS.set("ko-off", ST.koOff ? "1" : "0"); paintKoBtn(); const c = curCell(); if (c) paintKo(c); });
+$("#btnFiles").addEventListener("click", () => { const c = curCell(); if (c) tPause(c.id); renderViewLoader(); });
+
+/* ---- 폼 ---- */
+function paintForm() {
+  const f = ST.form;
+  $("#s1").setAttribute("aria-pressed", String(f.S === 1)); $("#s1").classList.toggle("on", f.S === 1);
+  $("#s0").setAttribute("aria-pressed", String(f.S === 0)); $("#s0").classList.toggle("on", f.S === 0);
+  [0, 1, 2, 3].forEach(n => { const b = $("#r" + n); b.disabled = f.S == null; b.setAttribute("aria-pressed", String(f.R === n)); b.classList.toggle("on", f.R === n); });
+  $("#rHint").textContent = f.S == null ? "S를 먼저 정하세요" : "S와 별개로 판단하세요";
+  const sp = $("#span"); sp.disabled = f.S !== 1; $("#locate").disabled = f.S !== 1;
+  $("#spanBox").style.opacity = f.S === 0 ? ".55" : "1";
+  $("#note").placeholder = f.S === 0 ? "근거가 없는 이유를 짧게 적어 주세요. (필수)" : "필요하면 메모를 남겨 주세요.";
+  showAnchor(null); updateSpanCheck(); updateSelUI();
+}
+function showAnchor(n) { const e = $("#anchorLine"); if (!e) return; const v = n != null ? n : ST.form && ST.form.R; e.textContent = v != null ? ANCHORS[v] : "버튼 위에 올리면 점수 기준이 보여요."; }
+function setS(v) { if (!ST.form) return; ST.form.S = v; if (v === 0) { /* 근거 칸은 저장 시 비움 */ } markDirty(); paintForm(); }
+function setR(v) { if (!ST.form || ST.form.S == null) return; ST.form.R = v; markDirty(); paintForm(); }
+function readForm() { const f = ST.form; f.span = $("#span").value; f.note = $("#note").value; f.reason = $("#reason").value; return f; }
+function changedFromSaved(c, f) {
+  const s = ST.labels.get(c.id); if (!s) return true;
+  return s.S !== f.S || s.R !== f.R || (s.span || "") !== (f.S === 1 ? f.span.trim() : "") || (s.note || "") !== f.note.trim();
+}
+function markDirty() {
+  const c = curCell(); if (!c) return;
+  const f = readForm();
+  $("#reasonBox").hidden = !(ST.labels.has(c.id) && changedFromSaved(c, f));
+  $("#msg").textContent = "";
+}
+
+/* ---- 뷰어 ---- */
+const V = { file: null, text: "", lines: [], lower: [], norm: "", query: "", matches: [], cur: -1, markEls: [], lineEls: [], token: 0, filter: (["all", "search", "graph"].includes(LS.get("vfilter")) ? LS.get("vfilter") : "all") };
+/* 보기 필터: 강조된 검색어가 있는 줄만, 또는 그래프에 그려진 노드의 정의 줄만 보여 준다. 줄 번호와 줄 내용은 원문 그대로다. */
+function visibleLines() {
+  if (V.filter === "search") {
+    if (!V.query || !V.matches.length) return { idx: null, note: V.query ? "검색 결과가 없어 전체 줄을 보여 줘요." : "검색어를 입력하면 그 단어가 강조된 줄만 보여 줘요." };
+    const idx = [...new Set(V.matches.map(m => m.line))].sort((a, b) => a - b);
+    return { idx, note: "검색어가 강조된 줄 " + idx.length + "개만 보여 주는 중 (전체 " + V.lines.length + "줄)" };
+  }
+  if (V.filter === "graph") {
+    const c = curCell(); const L = G.lastSub;
+    if (!L || !c || G.cellId !== c.id || !L.g.d.D) return { idx: null, note: "그래프 탭을 한 번 열면 그래프에 나온 노드의 줄만 보여 줘요." };
+    const s = new Set(); L.sub.kept.forEach(i => { const li = L.g.d.D[i]; if (li != null && li < V.lines.length) s.add(li); });
+    const idx = [...s].sort((a, b) => a - b);
+    return { idx, note: "그래프에 나온 노드의 정의 줄 " + idx.length + "개만 보여 주는 중 (전체 " + V.lines.length + "줄)" };
+  }
+  return { idx: null, note: "" };
+}
+function buildView(text) {
+  text = text.replace(/\r\n?/g, "\n"); const lines = text.split("\n");
+  if (lines.length && lines[lines.length - 1] === "") lines.pop();
+  return { text, lines, lower: null, norm: null };
+}
+async function getView(file) {
+  if (ST.views.has(file)) return ST.views.get(file);
+  throw new Error("missing");
+}
+async function loadView(file) {
+  const tok = ++V.token; const vb = $("#vbody");
+  if (V.file === file && V.lines.length) { renderLines(); return; }
+  vb.textContent = ""; vb.append(el("div", { class: "vstate", role: "status", text: "자료를 여는 중입니다." }));
+  try {
+    const o = await getView(file); if (tok !== V.token) return;
+    V.file = file; V.o = o; V.lines = o.lines; V.matches = []; V.cur = -1;
+    renderLines(); updateSpanCheck();
+  } catch (e) {
+    if (tok !== V.token) return;
+    vb.textContent = "";
+    vb.append(el("div", { class: "vstate" }, el("p", { text: "이 셀의 렌더링 파일이 아직 불러와지지 않았어요." }), el("button", { class: "btn small", type: "button", text: "렌더링 파일 불러오기", onclick: () => renderViewLoader() })));
+  }
+}
+function matchesByLine() { const m = new Map(); V.matches.forEach((x, i) => { if (i >= MAX_MARKS) return; if (!m.has(x.line)) m.set(x.line, []); m.get(x.line).push({ s: x.start, e: x.start + x.len, i }); }); return m; }
+function renderLines() {
+  const vb = $("#vbody"); const keepTop = vb.scrollTop;
+  vb.textContent = ""; V.markEls = []; V.lineEls = [];
+  const byLine = matchesByLine();
+  const vis = visibleLines(); const idx = vis.idx; const total = idx ? idx.length : V.lines.length;
+  const fn = $("#vfnote"); if (fn) { fn.textContent = vis.note; fn.hidden = !vis.note; if (/sub ?class|하위 ?클래스/i.test(V.query || "")) { fn.textContent = (vis.note ? vis.note + " · " : "") + "이 자료는 하위 클래스 관계를 ' < ' 기호로 적어요. 예: 'Building < …#Location'은 Building이 Location의 하위 클래스라는 뜻이에요. 위 '자료 읽는 법'을 참고하세요."; fn.hidden = false; } }
+  const CH = 100; let frag = document.createDocumentFragment();
+  for (let c0 = 0; c0 < total; c0 += CH) {
+    const ch = el("div", { class: "chunk" });
+    for (let k = c0; k < Math.min(c0 + CH, total); k++) {
+      const i = idx ? idx[k] : k;
+      const d = el("div", { class: "ln" + (idx && k > 0 && idx[k] !== idx[k - 1] + 1 ? " gap" : "") }); d.dataset.n = String(i + 1);
+      const ms = byLine.get(i); const txt = V.lines[i];
+      if (!ms) d.textContent = txt;
+      else {
+        let p = 0;
+        for (const m of ms) { if (m.s > p) d.append(document.createTextNode(txt.slice(p, m.s))); const mk = el("mark", { text: txt.slice(m.s, m.e) }); V.markEls[m.i] = mk; d.append(mk); p = m.e; }
+        if (p < txt.length) d.append(document.createTextNode(txt.slice(p)));
+      }
+      V.lineEls[i] = d; ch.append(d);
+    }
+    frag.append(ch);
+  }
+  vb.append(frag); vb.scrollTop = keepTop;
+  if (V.cur >= 0 && V.markEls[V.cur]) V.markEls[V.cur].classList.add("cur");
+}
+function runSearch(q, jump) {
+  V.query = q; V.matches = []; V.cur = -1;
+  if (!V.o) return;
+  const ql = q.toLowerCase();
+  if (q.length) {
+    if (!V.o.lower) V.o.lower = V.lines.map(l => l.toLowerCase());
+    for (let i = 0; i < V.lines.length; i++) {
+      const low = V.o.lower[i]; let p = 0;
+      while ((p = low.indexOf(ql, p)) !== -1) { V.matches.push({ line: i, start: p, len: ql.length }); p += Math.max(1, ql.length); }
+    }
+  }
+  if (V.matches.length) V.cur = 0;
+  renderLines(); paintCount();
+  if (jump && V.cur >= 0) scrollToMatch();
+}
+function countSearch(q) {
+  const c = curCell(); if (!c || q.trim().length < 2 || q === lastCountedQ) return;
+  lastCountedQ = q; ST.searchCount.set(c.id, (ST.searchCount.get(c.id) || 0) + 1);
+}
+function paintCount() { const e = $("#vcount"); if (!e) return; if (!V.query) e.textContent = ""; else if (!V.matches.length) e.textContent = "결과 0"; else e.textContent = (V.cur + 1) + " / " + V.matches.length + (V.matches.length > MAX_MARKS ? "+" : ""); }
+function stepMatch(d) {
+  if (!V.matches.length) return;
+  if (V.markEls[V.cur]) V.markEls[V.cur].classList.remove("cur");
+  V.cur = (V.cur + d + V.matches.length) % V.matches.length;
+  if (V.markEls[V.cur]) V.markEls[V.cur].classList.add("cur");
+  paintCount(); scrollToMatch();
+}
+function scrollToEl(target) {
+  const vb = $("#vbody"); if (!target) return;
+  const doit = () => { const a = target.getBoundingClientRect(), b = vb.getBoundingClientRect(); vb.scrollTop += (a.top - b.top) - vb.clientHeight / 2 + a.height / 2; };
+  doit(); requestAnimationFrame(() => { doit(); requestAnimationFrame(doit); });
+}
+function scrollToMatch() { const m = V.matches[V.cur]; scrollToEl(V.markEls[V.cur] || V.lineEls[m.line]); }
+
+/* ---- 선택 → 근거 ---- */
+function selectionText() {
+  const sel = window.getSelection(); if (!sel || sel.isCollapsed || !sel.rangeCount) return "";
+  const vb = $("#vbody"); const r = sel.getRangeAt(0);
+  if (!vb || !vb.contains(r.commonAncestorContainer)) return "";
+  return sel.toString();
+}
+function onSelChange() { if (ST.screen === "work") updateSelUI(); }
+function updateSelUI() {
+  const t = selectionText().trim(); const b = $("#useSel"), s = $("#selTxt"); if (!b) return;
+  if (t) { s.textContent = t.replace(/\s+/g, " ").slice(0, 160); b.disabled = !(ST.form && ST.form.S === 1); b.title = ST.form && ST.form.S === 1 ? "" : "먼저 S를 '근거 있음'으로 선택하세요"; }
+  else if (!document.activeElement || document.activeElement.id !== "useSel") { s.textContent = "선택한 구간 없음"; b.disabled = true; }
+}
+function takeSelection() {
+  const t = selectionText().replace(/^\s+|\s+$/g, ""); if (!t) return;
+  $("#span").value = t; markDirty(); updateSpanCheck();
+  if (t.length > 400) $("#msg").textContent = "구간이 깁니다. 가장 짧은 충분 구간만 남겨 주세요.";
+}
+const collapse = s => s.replace(/\s+/g, " ").trim();
+function spanStatus() {
+  const v = $("#span") ? $("#span").value : ""; const n = collapse(v);
+  if (!n) return { k: "empty" };
+  if (!V.o) return { k: "wait" };
+  if (!V.o.norm) V.o.norm = collapse(V.o.text);
+  let cnt = 0, p = 0; while (cnt < 9 && (p = V.o.norm.indexOf(n, p)) !== -1) { cnt++; p += n.length; }
+  return cnt ? { k: "ok", cnt } : { k: "bad" };
+}
+function updateSpanCheck() {
+  const e = $("#vcheck"); if (!e) return; const f = ST.form;
+  if (f && f.S !== 1) { e.className = "vcheck idle"; e.textContent = "근거 없음을 선택하면 근거 칸은 비워 두고 메모에 이유를 적습니다."; return; }
+  const s = spanStatus();
+  if (s.k === "empty" || s.k === "wait") { e.className = "vcheck idle"; e.textContent = s.k === "wait" ? "자료를 불러오면 확인합니다." : "근거 구간이 비어 있습니다."; }
+  else if (s.k === "ok") { e.className = "vcheck ok"; e.textContent = "원문에 그대로 있음" + (s.cnt > 1 ? " (" + (s.cnt >= 9 ? "9곳 이상" : s.cnt + "곳") + ")" : "") + " · 줄바꿈과 연속 공백의 차이는 무시해요."; }
+  else { e.className = "vcheck bad"; e.textContent = "원문에서 글자 그대로 찾을 수 없음. 그대로 저장하면 '원문 외 근거'로 표시돼요. 관계가 기호(예: ' < ')로 적혀 있을 수 있으니 '자료 읽는 법'을 확인해 보세요."; }
+}
+function locateSpan() {
+  const n = collapse($("#span").value); if (!n || !V.lines.length) return;
+  const first = n.split(" ").slice(0, 8).join(" ");
+  const li = V.lines.findIndex(l => collapse(l).includes(first));
+  if (li < 0) { $("#msg").textContent = "첫 부분이 한 줄 안에서 찾아지지 않았어요. 여러 줄에 걸친 구간일 수 있어요."; return; }
+  const d = V.lineEls[li]; scrollToEl(d); d.classList.add("flash"); setTimeout(() => d.classList.remove("flash"), 2500);
+}
+
+/* ---- 저장 ---- */
+function validate(f) {
+  if (f.S == null) return "S(근거 있음/없음)를 먼저 선택해 주세요.";
+  if (f.R == null) return "R(0~3)을 선택해 주세요.";
+  if (f.S === 1) {
+    if (!collapse(f.span)) return "S=1이면 근거 구간이 필요합니다. 자료에서 구간을 선택해 채워 주세요.";
+  } else if (!f.note.trim()) return "S=0이면 메모에 근거가 없는 이유를 짧게 적어 주세요.";
+  return "";
+}
+async function saveAndNext() {
+  if (ST.saving) return; const c = curCell(); if (!c) return;
+  if (isTaken(c.id)) { dialog("이미 목표 인원이 평가한 셀이에요", el("p", { text: "이 셀은 목표 인원(" + ST.splitK + "명)이 먼저 평가를 마쳐서 건너뜁니다. 입력한 내용은 저장되지 않아요." }), [{ label: "다음 셀로", primary: true, fn: () => { notice("taken", null); goNext(); } }]); return; }
+  const f = readForm(); const err = validate(f);
+  const msg = $("#msg"); msg.classList.remove("good");
+  if (err) { msg.textContent = err; return; }
+  const saved = ST.labels.get(c.id);
+  if (saved && !changedFromSaved(c, f)) { goNext(); return; }
+  if (saved && f.reason.trim().length < 2) { $("#reasonBox").hidden = false; msg.textContent = "저장한 판정을 고치는 중입니다. 수정 이유를 적어 주세요."; $("#reason").focus(); return; }
+  const t = timerOf(c.id); const dwell = Math.round(tTotal(t));
+  if (!saved && dwell < FAST_MS && !ST.fastOk.has(c.id)) {
+    dialog("근거를 충분히 확인하셨나요?", el("p", { text: "이 셀을 연 지 " + Math.max(1, Math.round(dwell / 1000)) + "초 지났어요. 근거를 충분히 확인하셨다면 그대로 저장하셔도 됩니다." }),
+      [{ label: "다시 살펴볼게요" }, { label: "그대로 저장", primary: true, fn: () => { ST.fastOk.add(c.id); saveAndNext(); } }]);
+    return;
+  }
+  const verbatim = f.S === 1 ? spanStatus().k === "ok" : true;
+  if (f.S === 1 && !verbatim && !ST.freeOk.has(c.id)) {
+    dialog("근거가 원문에 그대로 있지 않아요", el("div", {}, el("p", { text: "입력한 근거 구간을 텍스트 자료에서 글자 그대로 찾지 못했어요. 그대로 저장하면 이 셀은 '원문 외 근거'로 표시되어 분석에서 따로 다뤄집니다." }), el("p", { class: "small muted", style: "margin-top:6px", text: "관계가 기호로 적혀 있을 수 있어요(예: 'Building < …#Location'). 텍스트 탭 위 '자료 읽는 법'을 확인하거나, 그래프에서 노드를 눌러 '원문 정의 줄로 이동'으로 해당 줄을 찾아 드래그하면 원문 근거로 저장돼요." })),
+      [{ label: "다시 고를게요" }, { label: "원문 외 근거로 저장", primary: true, fn: () => { ST.freeOk.add(c.id); saveAndNext(); } }]);
+    return;
+  }
+  const now = new Date().toISOString();
+  const doc = {
+    cellId: c.id, S: f.S, R: f.R, span: f.S === 1 ? f.span.trim() : "", note: f.note.trim(),
+    startedAt: saved ? saved.startedAt : t.startedAt, savedAt: now,
+    dwellMs: saved ? saved.dwellMs : dwell, viewSearchCount: saved ? saved.viewSearchCount : (ST.searchCount.get(c.id) || 0),
+    version: (saved ? saved.version : 0) + 1, position: ST.idx, fastConfirmed: saved ? !!saved.fastConfirmed : ST.fastOk.has(c.id), spanVerbatim: verbatim
+  };
+  { const gs = ST.gStats.get(c.id) || { opened: false, count: 0, queries: [] }; doc.graphOpened = !!(saved && saved.graphOpened) || gs.opened; doc.graphQueryCount = ((saved && saved.graphQueryCount) || 0) + gs.count; doc.graphQueries = (((saved && saved.graphQueries) || []).concat(gs.queries)).slice(-10); ST.gStats.delete(c.id); }
+  if (saved) {
+    const rev = (saved.revisions || []).slice(); rev.push({ at: now, reason: f.reason.trim(), prev: { S: saved.S, R: saved.R, span: saved.span || "", note: saved.note || "", savedAt: saved.savedAt } });
+    doc.revisions = rev;
+    if (!doc.note.includes("수정함")) doc.note = (doc.note ? doc.note + " " : "") + "[수정함: " + f.reason.trim() + "]";
+  } else doc.revisions = [];
+  ST.saving = true; $("#save").disabled = true; msg.textContent = "저장 중…";
+  const before = ST.labels.size;
+  try {
+    if (ST.persistent) await dbWrite(ST.db.doc(pItems() + "/" + c.id), doc);
+    ST.labels.set(c.id, doc);
+  } catch (e) {
+    ST.saving = false; $("#save").disabled = false; msg.textContent = "";
+    dialog("저장하지 못했습니다", el("p", { text: (e && (e.code === "invalid_argument" || e.code === "revoked") ? "이 페이지에 '기여자' 권한이 있는지 확인해 주세요. " : "") + "입력한 내용은 화면에 남아 있어요. 잠시 뒤 '저장하고 다음'을 다시 눌러 주세요. (오류: " + ((e && e.code) || "알 수 없음") + ")" }));
+    return;
+  }
+  ST.saving = false; tPause(c.id);
+  const isNew = ST.labels.size > before;
+  const nextIdx = ST.idx + 1;
+  ST.idx = Math.min(nextIdx, ST.order.length - 1);
+  if (ST.persistent) { try { await writeProgress(); } catch (e) { notice("progfail", banner("판정은 저장됐지만 진행 요약을 갱신하지 못했어요. 다음 저장 때 다시 시도합니다.")); setTimeout(() => notice("progfail", null), 6000); } }
+  let cheer = "";
+  if (isNew) {
+    const n = ST.labels.size, tot = ST.order.length;
+    const m0 = Math.floor((n - 1) * 10 / tot), m1 = Math.floor(n * 10 / tot);
+    if (m1 > m0 && m1 >= 1 && m1 <= 10) cheer = CHEERS[(m1 - 1) % CHEERS.length];
+  }
+  if (ST.persistent && ST.split) { const k = c.id + "__" + ST.uid; try { await ST.db.doc("done/" + k).set({ at: now }); ST.doneKeys.add(k); setDone([...ST.doneKeys]); } catch (e) { } }
+  notice("taken", null);
+  let n = nextFree(nextIdx, 1); if (n < 0) n = firstOpenIdx();
+  if (n < 0) { renderDone(); return; }
+  go(n);
+  showCheer(cheer);
+  const m = $("#msg"); if (m) { m.classList.add("good"); m.textContent = "저장했어요."; setTimeout(() => { if (m.classList.contains("good")) m.textContent = ""; }, 2500); }
+}
+function firstOpenIdx() { return ST.order.findIndex(x => { const id = ST.cells[x].id; return !ST.labels.has(id) && !isTaken(id); }); }
+/* ---------- 작업 나누기: 다른 평가자가 완료한 셀은 건너뛴다(라벨 내용은 공유하지 않고 완료 표시만 공유) ---------- */
+async function initSplit() {
+  try { const cf = await ST.db.doc("config/split").get(); const x = cf.exists ? (cf.data() || {}) : {}; ST.split = x.on !== false; ST.splitK = Number.isFinite(x.k) && x.k >= 1 ? x.k : 2; } catch (e) { ST.split = true; ST.splitK = 2; }
+  if (!ST.split) return;
+  await new Promise(res => {
+    let first = true; const done = () => { if (first) { first = false; res(); } };
+    try {
+      ST.unsubDone = ST.db.collection("done").onSnapshot(snap => { setDone(snap.docs.map(d => d.id)); if (first) done(); else onDoneChange(); }, () => done());
+    } catch (e) { done(); }
+    setTimeout(done, 6000);
+  });
+  for (const id of ST.labels.keys()) { const k = id + "__" + ST.uid; if (!ST.doneKeys.has(k)) { try { await ST.db.doc("done/" + k).set({ at: new Date().toISOString() }); ST.doneKeys.add(k); setDone([...ST.doneKeys]); } catch (e) { } } }
+}
+/* 완료 표시: 문서 id = "<셀>__<평가자>" (예전 형식 "<셀>"은 평가자 한 명으로 센다. 같은 셀에 새 형식이 있으면 예전 표시는 그중 하나로 본다) */
+function setDone(ids) {
+  ST.doneKeys = new Set(ids); const by = new Map(), legacy = new Set();
+  for (const id of ids) { const i = id.indexOf("__"); if (i > 0) { const c = id.slice(0, i); if (!by.has(c)) by.set(c, new Set()); by.get(c).add(id.slice(i + 2)); } else legacy.add(id); }
+  for (const c of legacy) if (!by.has(c)) by.set(c, new Set(["legacy"]));
+  ST.doneBy = by; ST.doneAll = new Set([...by.entries()].filter(([, s]) => s.size >= ST.splitK).map(([c]) => c));
+}
+function isTaken(id) { return !!(ST.split && ST.doneAll.has(id) && !ST.labels.has(id)); }
+function nextFree(from, dir) { for (let i = from; i >= 0 && i < ST.order.length; i += dir) if (!isTaken(ST.cells[ST.order[i]].id)) return i; return -1; }
+function goNext() { let n = nextFree(ST.idx + 1, 1); if (n < 0) n = firstOpenIdx(); if (n < 0 || n === ST.idx) return renderDone(); go(n); }
+function goPrev() { const p = nextFree(ST.idx - 1, -1); if (p >= 0) go(p); }
+function onDoneChange() {
+  if (ST.screen !== "work") return;
+  paintProgress();
+  const c = curCell();
+  if (c && isTaken(c.id)) notice("taken", el("div", { class: "banner" }, el("span", { text: "이 셀은 방금 목표 인원(" + ST.splitK + "명)이 모두 평가했어요. 다음 셀로 넘어가 주세요." }), el("button", { class: "btn small", type: "button", text: "다음 셀로", onclick: () => { notice("taken", null); goNext(); } })));
+}
+
+/* ---------- 완료 ---------- */
+function median(a) { if (!a.length) return 0; const s = a.slice().sort((x, y) => x - y); const m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; }
+const fmtSec = ms => (ms / 1000).toFixed(1) + "초";
+function renderDone() {
+  ST.screen = "done"; const docs = [...ST.labels.values()]; const dw = docs.map(d => d.dwellMs || 0);
+  const avg = dw.length ? dw.reduce((a, b) => a + b, 0) / dw.length : 0;
+  const rev = docs.reduce((s, d) => s + ((d.revisions || []).length), 0);
+  const p = el("div", { class: "page" }, el("section", { class: "panel" },
+    el("h2", { text: "모든 셀을 마치셨습니다. 감사합니다." }),
+    el("p", { text: "꼼꼼하게 읽고 판정해 주신 덕분에 이 연구의 측정이 훨씬 믿을 만해집니다. 수고 많으셨습니다." }),
+    el("div", { class: "stat", style: "margin-top:14px" },
+      el("div", {}, "판정 수", el("b", { text: String(docs.length) })), el("div", {}, "평균 체류 시간", el("b", { text: fmtSec(avg) })),
+      el("div", {}, "중앙값", el("b", { text: fmtSec(median(dw)) })), el("div", {}, "수정한 횟수", el("b", { text: String(rev) }))),
+    el("p", { class: "muted small", style: "margin-top:12px", text: "체류 시간은 셀을 연 뒤 저장하기까지 탭이 보이던 시간입니다. 결과는 자동으로 저장되어 있어 따로 제출할 것이 없습니다." }),
+    el("div", { style: "margin-top:12px" }, el("button", { class: "btn", type: "button", text: "저장한 셀 다시 보기", onclick: () => { ST.idx = 0; ST.screen = "work"; renderWork(); } }))));
+  setMain(el("div", { class: "screen" }, p));
+}
+
+/* ---------- 관리(소유자 전용) ---------- */
+async function renderAdmin() {
+  ST.screen = "admin";
+  const page = el("div", { class: "page", style: "max-width:1100px" }); setMain(el("div", { class: "screen" }, page));
+  page.append(el("div", { class: "loading", text: "평가자 정보를 읽는 중입니다." }));
+  if (!ST.isOwner || !ST.db) { page.textContent = ""; page.append(banner("관리 화면은 소유자 계정에서만 볼 수 있어요.")); return; }
+  try {
+    const roster = await ST.db.collection("labels").get();
+    const uids = roster.docs.map(d => d.id);
+    const perUser = await Promise.all(uids.map(async u => { const r = await ST.db.collection("labels/" + u + "/items").get(); return { uid: u, head: roster.docs.find(d => d.id === u).data() || {}, items: r.docs.map(d => d.data()).filter(Boolean) }; }));
+    perUser.sort((a, b) => String(a.head.firstSeenAt || "").localeCompare(String(b.head.firstSeenAt || "")));
+    let prof = {}; try { prof = await ST.user.profiles(uids); } catch (e) { }
+    page.textContent = "";
+    { const on = ST.split !== false;
+      const setCfg = async (o) => { try { await ST.db.doc("config/split").set(Object.assign({ on: on, k: ST.splitK }, o, { at: new Date().toISOString() })); location.reload(); } catch (e) { dialog("바꾸지 못했어요", el("p", { text: "오류: " + ((e && e.code) || "알 수 없음") })); } };
+      const hist = [0, 0, 0, 0]; ST.cells.forEach(c => { const s = ST.doneBy.get(c.id); const n = s ? Math.min(3, s.size) : 0; hist[n]++; });
+      page.append(el("section", { class: "panel" }, el("h2", { text: "작업 나누기 (셀당 목표 평가자 수)" }),
+        el("p", { class: "small muted", text: "켜면 목표 인원이 평가를 마친 셀은 다른 평가자에게 나오지 않아요. 평가자 간 일치도(κ)를 내려면 셀당 2명 이상이 필요해요. 라벨 내용은 공유되지 않고 완료 표시만 공유돼요." }),
+        el("div", { style: "display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px" }, el("span", { text: "현재: " + (on ? "켜짐, 셀당 " + ST.splitK + "명" : "꺼짐(모두가 188셀 전부)") }),
+          ...[1, 2, 3].map(k => el("button", { class: "btn small" + (on && ST.splitK === k ? " on" : ""), type: "button", text: "셀당 " + k + "명", onclick: () => setCfg({ on: true, k }) })),
+          el("button", { class: "btn small" + (on ? "" : " on"), type: "button", text: "끄기(전원이 전부)", onclick: () => setCfg({ on: false }) })),
+        el("p", { class: "small muted", style: "margin-top:6px", text: "평가 인원별 셀 수: 0명 " + hist[0] + " · 1명 " + hist[1] + " · 2명 " + hist[2] + " · 3명 이상 " + hist[3] })));
+    }
+    const rows = perUser.map((x, i) => {
+      const dw = x.items.map(d => d.dwellMs || 0); const n = x.items.length;
+      const fast = dw.filter(v => v < FAST_MS).length;
+      return { name: ((prof[x.uid] && prof[x.uid].name) || "") || "평가자 " + (i + 1), n, avg: n ? dw.reduce((a, b) => a + b, 0) / n : 0, med: median(dw), fast, s1: x.items.filter(d => d.S === 1).length, rev: x.items.reduce((s, d) => s + (d.revisions || []).length, 0), last: x.items.reduce((m, d) => d.savedAt > m ? d.savedAt : m, ""), pledge: x.head.firstSeenAt || "", uid: x.uid, items: x.items };
+    });
+    const th = ["평가자", "완료", "평균 체류(초)", "중앙값(초)", "20초 미만", "S=1", "수정", "시작", "마지막 저장"];
+    const tbl = el("table", {}, el("thead", {}, el("tr", {}, ...th.map(t => el("th", { text: t })))), el("tbody", {}, ...(rows.length ? rows.map(r => el("tr", {}, el("td", { text: r.name }), el("td", { text: r.n + " / " + ST.cells.length }), el("td", { text: (r.avg / 1000).toFixed(1) }), el("td", { text: (r.med / 1000).toFixed(1) }), el("td", { text: r.fast + " (" + (r.n ? Math.round(100 * r.fast / r.n) : 0) + "%)" }), el("td", { text: String(r.s1) }), el("td", { text: String(r.rev) }), el("td", { text: r.pledge.replace("T", " ").slice(0, 16) }), el("td", { text: r.last.replace("T", " ").slice(0, 16) }))) : [el("tr", {}, el("td", { colspan: "9", class: "muted", text: "아직 시작한 평가자가 없습니다." }))])));
+    const refresh = el("button", { class: "btn small", type: "button", text: "새로고침", onclick: renderAdmin });
+    page.append(el("section", { class: "panel" }, el("div", { style: "display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap" }, el("h2", { text: "평가자 진행 현황" }), refresh), el("p", { class: "muted small", style: "margin:4px 0 10px", text: "소유자만 보이는 화면입니다. 이름은 플랫폼이 알려 주는 경우에만 표시됩니다. 내려받기 기능은 없습니다." }), el("div", { class: "tw" }, tbl)));
+    const sel = el("select", { id: "admSel", "aria-label": "평가자 선택" }, ...rows.map((r, i) => el("option", { value: String(i), text: r.name })));
+    const hold = el("div", { class: "tw" });
+    const draw = () => {
+      const r = rows[+sel.value]; hold.textContent = ""; if (!r) return;
+      const items = r.items.slice().sort((a, b) => (a.position ?? 0) - (b.position ?? 0));
+      hold.append(el("table", {}, el("thead", {}, el("tr", {}, ...["순서", "셀 ID", "S", "R", "체류(초)", "검색", "v", "근거 구간", "원문", "메모"].map(t => el("th", { text: t })))), el("tbody", {}, ...items.map(d => el("tr", {}, el("td", { text: String((d.position ?? 0) + 1) }), el("td", { class: "mono", text: d.cellId }), el("td", { text: String(d.S) }), el("td", { text: String(d.R) }), el("td", { text: ((d.dwellMs || 0) / 1000).toFixed(1) }), el("td", { text: String(d.viewSearchCount || 0) }), el("td", { text: String(d.version || 1) }), el("td", { class: "wrap mono", text: (d.span || "").slice(0, 160) }), el("td", { text: d.S === 1 ? (d.spanVerbatim === false ? "원문 외" : "✓") : "" }), el("td", { class: "wrap", text: (d.note || "").slice(0, 160) }))))));
+    };
+    sel.addEventListener("change", draw);
+    if (rows.length) { page.append(el("section", { class: "panel" }, el("h2", { text: "평가자별 라벨" }), el("div", { style: "margin:8px 0" }, sel), hold)); draw(); }
+  } catch (e) { page.textContent = ""; page.append(banner("평가자 정보를 읽지 못했어요 (" + ((e && e.code) || "오류") + "). 새로고침해 보세요.")); }
+}
+
+/* ---------- 그래프 탭(cytoscape, 질문 용어 주변 부분 그래프만 표시) ---------- */
+const G = { tab: "text", cy: null, hop: 1, hideType: false, cellId: null, sel: null, lastSub: null, layout: (LS.get("glayout") === "cose" ? "cose" : "rings") };
+function gName(v) { return "g-" + v.slice(2, -4) + ".json"; }
+const gNorm = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim();
+function gLocal(id) { return /^[a-z]{2,5}:(?!\/)/.test(id) ? id.replace(/^[a-z]{2,5}:/, "") : id; }
+function gKeys(id, label) {
+  const camel = s => String(s || "").replace(/([a-z0-9])([A-Z])/g, "$1 $2");
+  const loc = gLocal(id).replace(/^(Class_|p_)/, "");
+  const ks = new Set([gNorm(loc), gNorm(label || ""), gNorm(camel(loc)), gNorm(camel(label || ""))]);
+  for (const k of [...ks]) { const m = /^(brick|rec|ex) (.+)$/.exec(k); if (m) ks.add(m[2]); }
+  ks.delete(""); return ks;
+}
+/* 텍스트 자료(렌더링 뷰)를 그대로 파싱해 그래프를 만든다. 평가자가 읽는 텍스트와 그래프가 같은 정보를 담는다.
+   줄 형식: 클래스 "ID | label < 부모,부모 :: 정의", 속성 "OP|DP ID dom:X rng:Y inv:Z", 개체 "IND ID | label a 타입,타입 :: 정의 {술어=값; ...}" */
+const RES_RE = /^(?:https?:\/\/\S+|[A-Za-z][\w.-]*:[^\s=;]+)$/;
+const shortId = s => s.replace(/^https?:\/\/example\.org\/[^#\s]*#/, "ex:");
+/* 화면 표시용 이름: 주소(IRI)는 짧은 이름으로 바꾼다. 원문 줄과 검색 키는 그대로 둔다. */
+const NS_PRE = [["http://www.w3.org/2004/02/skos/core#", "skos:"], ["http://www.w3.org/2000/01/rdf-schema#", "rdfs:"], ["http://www.w3.org/1999/02/22-rdf-syntax-ns#", "rdf:"], ["http://www.w3.org/2002/07/owl#", "owl:"], ["http://purl.org/dc/terms/", "dct:"], ["https://brickschema.org/schema/Brick/ref#", "ref:"], ["https://brickschema.org/schema/Brick#", "brick:"], ["https://w3id.org/rec#", "rec:"], ["http://qudt.org/schema/qudt/", "qudt:"], ["http://qudt.org/vocab/", "qudt:"], ["http://www.w3.org/ns/shacl#", "sh:"]];
+function prettyIri(s) {
+  s = String(s || ""); if (!/^https?:\/\//.test(s)) return s.replace(/^ex:/, "");
+  for (const [u, pfx] of NS_PRE) if (s.startsWith(u)) return pfx + s.slice(u.length);
+  if (/^https?:\/\/example\.org\//.test(s)) return s.replace(/^https?:\/\/example\.org\/[^#\s]*#/, "");
+  const m = /[#\/]([^#\/]+)\/?$/.exec(s); return m ? m[1] : s;
+}
+function parseView(text) {
+  const P = [], pIdx = new Map(), N = [], nIdx = new Map(), E = [], L = {}, D = {}; /* D: 노드 → 정의 줄 번호(0부터) */
+  const pid = p => { let i = pIdx.get(p); if (i == null) { i = P.length; P.push(p); pIdx.set(p, i); } return i; };
+  const node = (id, label, kind) => {
+    id = shortId(id); let i = nIdx.get(id); const lab = label ? prettyIri(label) : "";
+    if (i == null) { i = N.length; N.push([id, lab || prettyIri(id), kind || "other"]); nIdx.set(id, i); }
+    else { const n = N[i]; if (lab && n[1] === prettyIri(n[0])) n[1] = lab; if (kind && n[2] === "other") n[2] = kind; }
+    return i;
+  };
+  const edge = (s, p, o) => E.push([s, pid(p), o]);
+  const lit = (i, p, v) => { (L[i] = L[i] || []).push([pid(p), v]); };
+  const list = s => s.split(",").map(x => x.trim()).filter(Boolean);
+  const isList = s => s && !/\s/.test(s);
+  const rows = text.split("\n");
+  for (let li = 0; li < rows.length; li++) {
+    const line = rows[li].trim(); if (!line) continue;
+    let m;
+    if ((m = /^(OP|DP)\s+(\S+)(.*)$/.exec(line))) {
+      const s = node(m[2], null, "property"); if (D[s] == null) D[s] = li; const rest = m[3];
+      for (const [k, p] of [["dom", "rdfs:domain"], ["rng", "rdfs:range"], ["inv", "owl:inverseOf"]]) {
+        const mm = new RegExp("\\b" + k + ":(\\S+)").exec(rest); if (mm) list(mm[1]).forEach(o => edge(s, p, node(o)));
+      }
+      continue;
+    }
+    const isInd = line.startsWith("IND ");
+    let body = isInd ? line.slice(4) : line;
+    const sp = body.indexOf(" "); const id = sp < 0 ? body : body.slice(0, sp); let rest = sp < 0 ? "" : body.slice(sp + 1);
+    let fields = "";
+    if (isInd && rest.endsWith("}")) { const b = rest.lastIndexOf(" {"); if (b >= 0) { fields = rest.slice(b + 2, -1); rest = rest.slice(0, b); } else if (rest.startsWith("{")) { fields = rest.slice(1, -1); rest = ""; } }
+    let defn = ""; const di = rest.indexOf(" :: "); if (di >= 0) { defn = rest.slice(di + 4); rest = rest.slice(0, di); } else if (rest.startsWith(":: ")) { defn = rest.slice(3); rest = ""; }
+    let rel = []; const relTok = isInd ? " a " : " < ";
+    const ri = rest.lastIndexOf(relTok);
+    if (ri >= 0 && isList(rest.slice(ri + 3))) { rel = list(rest.slice(ri + 3)); rest = rest.slice(0, ri); }
+    else if (rest.startsWith(relTok.trim() + " ") && isList(rest.slice(2))) { rel = list(rest.slice(2)); rest = ""; }
+    const label = rest.startsWith("| ") ? rest.slice(2).trim() : "";
+    const s = node(id, label, isInd ? "individual" : "class"); if (D[s] == null) D[s] = li;
+    rel.forEach(o => edge(s, isInd ? "rdf:type" : "rdfs:subClassOf", node(o, null, isInd ? "class" : null)));
+    if (defn) lit(s, "definition", defn);
+    if (fields) for (const f of fields.split(/; (?=[^\s=;]+=)/)) {
+      const eq = f.indexOf("="); if (eq <= 0) continue;
+      const p = shortId(f.slice(0, eq)), v = f.slice(eq + 1);
+      if (RES_RE.test(v)) edge(s, p, node(v)); else lit(s, p, v);
+    }
+  }
+  return { P, N, E, L, D };
+}
+function graphIndex(name) {
+  let g = ST.gIdx.get(name); if (g) return g;
+  const vw = ST.views.get(name); if (!vw) return null;
+  const t0 = performance.now(); const d = parseView(vw.text);
+  const adj = d.N.map(() => []);
+  d.E.forEach((e, i) => { adj[e[0]].push(i); if (e[2] !== e[0]) adj[e[2]].push(i); });
+  const keyIdx = new Map();
+  d.N.forEach((x, i) => { for (const k of gKeys(x[0], x[1])) { let a = keyIdx.get(k); if (!a) keyIdx.set(k, a = []); a.push(i); } });
+  g = { d, adj, keyIdx, typeP: d.P.indexOf("rdf:type"), ms: performance.now() - t0 }; ST.gIdx.set(name, g); return g;
+}
+function resolveTerm(g, term) {
+  const t = term.trim(); if (!t) return [];
+  const cands = [gNorm(t)];
+  const m = /^[a-z]{2,6}:(.+)$/i.exec(t); if (m) cands.push(gNorm(m[1]));
+  for (const c of cands.slice()) { if (c.endsWith("ies")) cands.push(c.slice(0, -3) + "y"); if (c.endsWith("s")) cands.push(c.slice(0, -1)); }
+  for (const c of cands) { const h = g.keyIdx.get(c); if (h) return h.slice(0, 20); }
+  return [];
+}
+/* 부분 일치: 이름 일부("gross", "Re")나 띄어 쓴 표현("gross floor area")으로도 노드를 찾는다. 앞부분 일치 > 단어 시작 일치 > 포함 순, 짧은 이름 우선. */
+function nodeName(g, i, k, typedPrefix) { const n = g.d.N[i]; const loc = gLocal(n[0]).replace(/^(Class_|p_)/, ""); const lab = gLocal(n[1] || ""); const c = s => gNorm(String(s).replace(/([a-z0-9])([A-Z])/g, "$1 $2")); let disp = (gNorm(loc) === k || c(loc) === k) ? loc : (gNorm(lab) === k || c(lab) === k) ? lab : loc || k; return (typedPrefix ? typedPrefix + ":" : "") + disp; }
+function partialTerm(g, term, maxNodes, needOverride) {
+  const t = term.trim(); const m = /^([a-z]{2,6}):(.*)$/i.exec(t); const q = gNorm(m ? m[2] : t); if (q.length < 2) return null;
+  const toks = q.split(" ").filter(Boolean); const need = needOverride || (toks.length > 1 ? Math.min(2, toks.length) : 1); const sc = [];
+  for (const [k, hits] of g.keyIdx) {
+    if (k.length > 60) continue;
+    const kc = k.replace(/ /g, ""); let s = 0; for (const w of toks) if (kc.includes(w)) s++;
+    if (s < need) continue;
+    const rank = k === q ? 0 : (k.startsWith(q) || kc.startsWith(q.replace(/ /g, ""))) ? 1 : (" " + k).includes(" " + toks[0]) ? 2 : 3;
+    const kr = Math.min(...hits.map(i => KIND_RANK[g.d.N[i][2]] ?? 3));
+    sc.push([s, rank, kr, k.length, k, hits]);
+  }
+  if (!sc.length) return (toks.length > 1 && !needOverride) ? partialTerm(g, term, maxNodes, 1) : null;
+  sc.sort((a, b) => b[0] - a[0] || a[1] - b[1] || a[2] - b[2] || a[3] - b[3]);
+  const nodes = []; for (const x of sc) { for (const h of x[5]) if (!nodes.includes(h)) nodes.push(h); if (nodes.length >= (maxNodes || 6)) break; }
+  const names = [...new Set(sc.slice(0, 14).map(x => nodeName(g, x[5][0], x[4], m ? m[1] : "")))].slice(0, 10);
+  return { hits: nodes.slice(0, maxNodes || 6), total: sc.length, names, top: names[0] };
+}
+/* 질문 문장에 온톨로지 용어(brick:X 등)가 없을 때: 질문의 내용어로 시작점을 자동으로 찾는다. 질문 문장만 쓰고 정답·판정 정보는 쓰지 않는다. */
+const STOP = new Set("a an the of to in on for by with and or is are was be been being do does did should can could would how what which who whom whose when where why its it this that these those as at from into than then there their brick rec schema property properties record records recorded link links linked relate relates related express expresses expressed represent represents used use using model modeled modelled handle handled give gives given list lists listed define defined definition definitions example examples kind kinds type types term terms entity entities value values one two some any each every own most".split(" "));
+function autoSeeds(g, q) {
+  const words = String(q).replace(/[’']s\b/g, "").replace(/[a-z]+:[A-Za-z_]+/g, " ").split(/[^A-Za-z0-9]+/).map(w => w.toLowerCase()).filter(w => w.length >= 3 && !STOP.has(w));
+  const stem = w => { for (const suf of ["ations", "ation", "ments", "ment", "ings", "ing", "ions", "ion", "ies", "ed", "es", "s"]) if (w.endsWith(suf) && w.length - suf.length >= 4) return w.slice(0, -suf.length); return w; };
+  const stems = [...new Set(words.map(stem))]; if (!stems.length) return [];
+  const sc = [];
+  for (const [k, hits] of g.keyIdx) {
+    if (k.length > 40) continue;
+    const ws = k.split(" "); let s = 0;
+    for (const st of stems) if (ws.some(w => w.startsWith(st) || (st.length >= 4 && w.includes(st))) || k.replace(/ /g, "").startsWith(st)) s++;
+    if (!s) continue;
+    const kr = Math.min(...hits.map(i => KIND_RANK[g.d.N[i][2]] ?? 3));
+    sc.push([s, kr, k.length, k, hits, ws.length]);
+  }
+  sc.sort((a, b) => b[0] - a[0] || a[5] - b[5] || a[1] - b[1] || a[2] - b[2]);
+  const out = [], seenNode = new Set();
+  for (const x of sc) {
+    if (out.length >= 3) break;
+    if (x[0] < Math.min(2, stems.length) && out.length >= 1) break;
+    if (x[4].some(h => seenNode.has(h))) continue;
+    x[4].forEach(h => seenNode.add(h)); out.push(nodeName(g, x[4][0], x[3]));
+  }
+  return out;
+}
+/* 철자 자동 교정: 정확히 일치하는 노드가 없을 때 편집 거리(전치 포함)가 가장 가까운 노드 이름으로 바꾼다. */
+const KIND_RANK = { class: 0, property: 1, individual: 2, other: 3 };
+function editDist(a, b, max) {
+  const la = a.length, lb = b.length; if (Math.abs(la - lb) > max) return max + 1;
+  let pp = null, p = Array.from({ length: lb + 1 }, (_, j) => j);
+  for (let i = 1; i <= la; i++) {
+    const c = [i]; let rowMin = i;
+    for (let j = 1; j <= lb; j++) {
+      let v = Math.min(p[j] + 1, c[j - 1] + 1, p[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      if (pp && i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) v = Math.min(v, pp[j - 2] + 1);
+      c.push(v); if (v < rowMin) rowMin = v;
+    }
+    if (rowMin > max) return max + 1;
+    pp = p; p = c;
+  }
+  return p[lb];
+}
+function fuzzyTerm(g, term) {
+  const t = term.trim(); const m = /^([a-z]{2,6}):(.+)$/i.exec(t);
+  const q = gNorm(m ? m[2] : t); if (q.length < 3) return null;
+  const max = q.length <= 4 ? 1 : q.length <= 8 ? 2 : 3;
+  let best = [], bd = max + 1;
+  for (const [k, hits] of g.keyIdx) {
+    if (Math.abs(k.length - q.length) > max || /^(brick|rec|ex) /.test(k)) continue;
+    const dd = editDist(q, k, Math.min(max, bd));
+    if (dd < bd) { bd = dd; best = [[k, hits]]; } else if (dd === bd && dd <= max) best.push([k, hits]);
+  }
+  if (!best.length || bd > max || bd === 0) return null;
+  const rank = ([k, h]) => Math.min(...h.map(i => KIND_RANK[g.d.N[i][2]] ?? 3));
+  best.sort((a, b) => rank(a) - rank(b) || b[1].length - a[1].length || a[0].length - b[0].length);
+  const name = ([k, h]) => { const n = g.d.N[h[0]]; const loc = gLocal(n[0]).replace(/^(Class_|p_)/, ""); const lab = gLocal(n[1] || ""); let disp = gNorm(loc) === k ? loc : gNorm(lab) === k ? lab : k; const typed = (m ? m[2] : t).trim(); if (/^[A-Z]/.test(typed) && /^[a-z]/.test(disp)) disp = disp[0].toUpperCase() + disp.slice(1); return (m ? m[1] + ":" : "") + disp; };
+  const names = [...new Set(best.map(name))];
+  return { term: names[0], hits: best[0][1].slice(0, 20), dist: bd, alts: names.slice(1, 4) };
+}
+function buildSub(g, seeds, hop, hideType, cap) {
+  const { d, adj } = g; const HUB = 200;
+  const seen = new Map(); const src = new Map(); const levels = [seeds.slice()];
+  seeds.forEach((n, i) => { seen.set(n, 0); src.set(n, i); });
+  let frontier = seeds.slice();
+  for (let h = 1; h <= hop; h++) {
+    const nxt = [];
+    for (const n of frontier) {
+      if (h > 1 && adj[n].length > HUB) continue;
+      for (const ei of adj[n]) { const e = d.E[ei]; if (hideType && e[1] === g.typeP) continue; const m = e[0] === n ? e[2] : e[0]; if (!seen.has(m)) { seen.set(m, h); src.set(m, src.get(n)); nxt.push(m); } }
+    }
+    levels.push(nxt); frontier = nxt;
+  }
+  const kept = [];
+  for (const lv of levels) {
+    if (kept.length >= cap) break;
+    const bySrc = new Map(); lv.forEach(n => { const k = src.get(n); if (!bySrc.has(k)) bySrc.set(k, []); bySrc.get(k).push(n); });
+    const lists = [...bySrc.entries()].sort((a, b) => a[0] - b[0]).map(x => x[1].sort((a, b) => adj[a].length - adj[b].length || a - b));
+    for (let r = 0; kept.length < cap; r++) { let any = false; for (const l of lists) if (r < l.length) { any = true; if (kept.length < cap) kept.push(l[r]); } if (!any) break; }
+  }
+  const keep = new Set(kept); const edges = new Set();
+  for (const n of kept) for (const ei of adj[n]) { const e = d.E[ei]; if (hideType && e[1] === g.typeP) continue; if (keep.has(e[0]) && keep.has(e[2])) edges.add(ei); if (edges.size >= 500) break; }
+  return { kept, hop: seen, edges: [...edges], total: seen.size };
+}
+function buildGraphPane() {
+  const gq = el("input", { type: "text", id: "gq", "aria-label": "그래프에서 질의", placeholder: "용어를 쉼표로 구분 (예: brick:Sensor, Point)", autocomplete: "off" });
+  const run = el("button", { class: "btn small primary", type: "button", id: "gRun", text: "다시 질의" });
+  const h1 = el("button", { class: "btn small", type: "button", id: "gh1", "aria-pressed": "true", text: "1홉" });
+  const h2 = el("button", { class: "btn small", type: "button", id: "gh2", "aria-pressed": "false", text: "2홉" });
+  const ht = el("input", { type: "checkbox", id: "gHideType" });
+  const fit = el("button", { class: "btn small", type: "button", id: "gFit", text: "맞춤" });
+  const lr = el("button", { class: "btn small", type: "button", id: "gLr", text: "원형으로 펼치기", title: "질문 용어를 가운데, 이웃을 바깥 고리에 고르게 배치" });
+  const lc = el("button", { class: "btn small", type: "button", id: "gLc", text: "자유롭게 펼치기", title: "연결 관계에 따라 넓게 흩어 배치" });
+  const paintL = () => { lr.classList.toggle("on", G.layout === "rings"); lc.classList.toggle("on", G.layout === "cose"); lr.setAttribute("aria-pressed", String(G.layout === "rings")); lc.setAttribute("aria-pressed", String(G.layout === "cose")); };
+  lr.addEventListener("click", () => { G.layout = "rings"; LS.set("glayout", "rings"); paintL(); relayout(); });
+  lc.addEventListener("click", () => { G.layout = "cose"; LS.set("glayout", "cose"); paintL(); relayout(); });
+  paintL();
+  run.addEventListener("click", () => graphRun(true));
+  gq.addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); $("#gsugg").textContent = ""; graphRun(true); } });
+  let sgT = null;
+  gq.addEventListener("input", () => { clearTimeout(sgT); sgT = setTimeout(() => {
+    const box = $("#gsugg"); if (!box) return; box.textContent = "";
+    const c = curCell(); if (!c || !ST.views.has(c.view)) return; const g = graphIndex(c.view); if (!g) return;
+    const parts = gq.value.split(","); const last = parts[parts.length - 1].trim(); if (last.length < 2) return;
+    const px = partialTerm(g, last, 6); const fz = px ? null : fuzzyTerm(g, last);
+    const names = px ? px.names : fz ? [fz.term].concat(fz.alts) : [];
+    if (!names.length) { box.append(el("span", { class: "small muted", text: "'" + last + "'와 맞는 이름이 없어요." })); return; }
+    box.append(el("span", { class: "small muted", text: "입력 중 후보 (누르면 질의):" }));
+    names.slice(0, 10).forEach(nm => box.append(el("button", { class: "btn small", type: "button", text: nm, onclick: () => { parts[parts.length - 1] = (parts.length > 1 ? " " : "") + nm; gq.value = parts.join(","); box.textContent = ""; graphRun(true); } })));
+  }, 150); });
+  [h1, h2].forEach((b, i) => b.addEventListener("click", () => { G.hop = i + 1; h1.setAttribute("aria-pressed", String(G.hop === 1)); h2.setAttribute("aria-pressed", String(G.hop === 2)); h1.classList.toggle("on", G.hop === 1); h2.classList.toggle("on", G.hop === 2); graphRun(false); }));
+  h1.classList.add("on");
+  ht.addEventListener("change", () => { G.hideType = ht.checked; graphRun(false); });
+  fit.addEventListener("click", () => { if (G.cy) G.cy.fit(undefined, 24); });
+  const card = el("div", { class: "gcard", id: "gcard", hidden: "", role: "dialog", "aria-label": "선택한 항목" });
+  return el("div", { class: "pane", id: "paneG", hidden: "" },
+    el("div", { class: "gtop" },
+      el("div", { class: "banner info", style: "padding:4px 10px" }, el("span", { text: "그래프는 길찾기 도구예요. 근거 구간(S=1)은 반드시 텍스트 탭에서 원문 그대로 골라 주세요." })),
+      el("div", { class: "grow" }, el("label", { for: "gq", class: "small", style: "font-weight:700", text: "그래프에서 질의" }), gq, run),
+      el("div", { class: "grow" }, h1, h2, el("label", { class: "small", style: "display:flex;gap:4px;align-items:center" }, ht, "type 간선 숨기기"), lr, lc, fit, el("span", { class: "gnote", id: "gnote", role: "status" })),
+      el("div", { class: "grow", id: "gsugg" }),
+      el("div", { class: "grow", id: "gseeds", "aria-live": "polite" })),
+    el("div", { class: "gwrap" }, el("div", { id: "cy", role: "img", "aria-label": "질문 주변 부분 그래프" }), card),
+    el("details", {}, el("summary", { class: "small", style: "padding:4px 10px", text: "노드 목록(키보드로 열기)" }), el("div", { class: "glist", id: "glist" })));
+}
+function showTab(name) {
+  G.tab = name; const T = $("#paneT"), P = $("#paneG"); if (!T || !P) return;
+  T.hidden = name !== "text"; P.hidden = name !== "graph";
+  if (name === "text" && V.filter === "graph" && V.o) renderLines();
+  $("#tabT").setAttribute("aria-selected", String(name === "text")); $("#tabG").setAttribute("aria-selected", String(name === "graph"));
+  if (name === "graph") {
+    const c = curCell(); if (!c) return; gStat(c.id).opened = true;
+    if (G.cellId !== c.id) { G.cellId = c.id; let sd = (c.seeds || []).slice(); G.auto = false;
+      try { const g0 = ST.views.has(c.view) ? graphIndex(c.view) : null; if (g0 && !sd.some(s => resolveTerm(g0, s).length || partialTerm(g0, s, 1))) { const au = autoSeeds(g0, c.q); if (au.length) { sd = au; G.auto = true; } } } catch (e) { }
+      $("#gq").value = sd.join(", "); G.hop = 1; $("#gh1").classList.add("on"); $("#gh2").classList.remove("on"); $("#gh1").setAttribute("aria-pressed", "true"); $("#gh2").setAttribute("aria-pressed", "false"); graphRun(false); }
+    else if (G.cy) { G.cy.resize(); }
+  }
+}
+function gStat(id) { let s = ST.gStats.get(id); if (!s) { s = { opened: false, count: 0, queries: [] }; ST.gStats.set(id, s); } return s; }
+function graphRun(fromUser) {
+  const c = curCell(); if (!c) return;
+  const raw = $("#gq").value; const terms = raw.split(/[,，、]/).map(x => x.trim()).filter(Boolean);
+  if (fromUser) { const s = gStat(c.id); s.count++; s.queries.push(raw.trim().slice(0, 160)); if (s.queries.length > 10) s.queries.shift(); }
+  const note = $("#gnote"), seedsEl = $("#gseeds"); note.textContent = ""; note.classList.remove("warn"); seedsEl.textContent = "";
+  hideCard();
+  const name = c.view;
+  if (!ST.views.has(name)) { killCy(); note.classList.add("warn"); note.textContent = "이 셀의 텍스트 자료가 아직 불러와지지 않았어요. 그래프는 텍스트 자료에서 만들어집니다."; seedsEl.append(el("button", { class: "btn small", type: "button", text: "렌더링 파일 불러오기", onclick: () => renderViewLoader() })); return; }
+  if (typeof cytoscape === "undefined") { killCy(); note.classList.add("warn"); note.textContent = "그래프 라이브러리를 불러오지 못했어요. 인터넷 연결을 확인하고 새로고침해 주세요. 텍스트 탭은 그대로 쓸 수 있어요."; return; }
+  const t0 = performance.now(); let g;
+  try { g = graphIndex(name); } catch (e) { killCy(); note.classList.add("warn"); note.textContent = "그래프 파일을 읽지 못했어요. 파일을 다시 불러와 주세요."; return; }
+  const t1 = performance.now();
+  const seedNodes = []; const seedSet = new Set();
+  const fixes = [];
+  const chips = terms.map(t => {
+    let hits = resolveTerm(g, t), fx = null, px = null;
+    if (!hits.length) { px = partialTerm(g, t, 6); if (px) hits = px.hits; }
+    if (!hits.length) { fx = fuzzyTerm(g, t); if (fx) { hits = fx.hits; fixes.push([t, fx.term]); } }
+    hits.forEach(h => { if (!seedSet.has(h)) { seedSet.add(h); seedNodes.push(h); } }); return { t, n: hits.length, fx, px };
+  });
+  if (fixes.length) {
+    $("#gq").value = terms.map(t => { const f = fixes.find(x => x[0] === t); return f ? f[1] : t; }).join(", ");
+    if (fromUser) { const s = gStat(c.id); s.queries[s.queries.length - 1] = ($("#gq").value + " [교정: " + fixes.map(f => f[0] + "→" + f[1]).join(", ") + "]").slice(0, 200); }
+  }
+  chips.forEach(x => {
+    if (x.fx) {
+      seedsEl.append(el("span", { class: "pill acc", title: "입력한 철자와 일치하는 노드가 없어 가장 가까운 이름으로 바꿨어요.", text: x.t + " → " + x.fx.term + " · 노드 " + x.n + "개 (철자 교정)" }));
+      if (x.fx.alts.length) {
+        seedsEl.append(el("span", { class: "small muted", text: "혹시:" }));
+        x.fx.alts.forEach(a => seedsEl.append(el("button", { class: "btn small", type: "button", text: a, onclick: () => { $("#gq").value = $("#gq").value.split(/\s*,\s*/).map(v => v === x.fx.term ? a : v).join(", "); graphRun(true); } })));
+      }
+    } else if (x.px) {
+      seedsEl.append(el("span", { class: "pill acc", title: "이름 일부가 맞는 노드를 찾았어요", text: x.t + " → 부분 일치 " + x.px.total + "개 중 노드 " + x.n + "개 표시" }));
+      seedsEl.append(el("span", { class: "small muted", text: "후보:" }));
+      x.px.names.slice(0, 8).forEach(nm => seedsEl.append(el("button", { class: "btn small", type: "button", text: nm, title: "이 이름으로 질의", onclick: () => { $("#gq").value = $("#gq").value.split(/\s*,\s*/).map(v => v === x.t ? nm : v).join(", "); graphRun(true); } })));
+    } else seedsEl.append(el("span", { class: "pill" + (x.n ? " acc" : " dim"), text: x.t + (x.n ? " · 노드 " + x.n + "개" : " · 그래프에 없음") }));
+  });
+  if (G.auto && !fromUser) seedsEl.append(el("span", { class: "small muted", text: "질문에 온톨로지 용어가 없어 질문 문장의 낱말로 시작점을 자동으로 찾았어요. 맞지 않으면 질의 칸을 고쳐 주세요." }));
+  if (!terms.length) { killCy(); note.textContent = "질문에서 시작점을 찾지 못했어요. 위 질의 칸에 단어 일부만 입력해도 후보가 나와요 (예: gross, area, Re)."; return; }
+  if (!seedNodes.length) { killCy(); note.classList.add("warn"); note.textContent = "입력한 용어와 일치하는 노드가 이 그래프에 없어요. 다른 철자나 접두어 없는 이름으로 질의해 보세요."; return; }
+  const sub = buildSub(g, seedNodes, G.hop, G.hideType, 150); const t2 = performance.now();
+  G.lastSub = { sub, g, seedSet };
+  if (sub.total > sub.kept.length) { note.classList.add("warn"); note.textContent = "노드 " + sub.total + "개 중 " + sub.kept.length + "개만 표시"; }
+  else note.textContent = "노드 " + sub.kept.length + "개 · 연결선 " + sub.edges.length + "개";
+  drawGraph(sub, g, seedSet); const t3 = performance.now();
+  window.__gt = { index: Math.round(t1 - t0), build: Math.round(t2 - t1), draw: Math.round(t3 - t2), nodes: sub.kept.length, edges: sub.edges.length, total: sub.total, name };
+}
+function killCy() { if (G.cy) { G.cy.destroy(); G.cy = null; } const l = $("#glist"); if (l) l.textContent = ""; }
+function drawGraph(sub, g, seedSet) {
+  const css = getComputedStyle(document.documentElement); const col = n => css.getPropertyValue(n).trim();
+  const els = [];
+  sub.kept.forEach(i => { const n = g.d.N[i]; els.push({ group: "nodes", data: { id: "n" + i, idx: i, label: n[1].length > 28 ? n[1].slice(0, 27) + "…" : n[1], kind: n[2], seed: seedSet.has(i) ? 1 : 0, hop: sub.hop.get(i) || 0 } }); });
+  sub.edges.forEach(ei => { const e = g.d.E[ei]; els.push({ group: "edges", data: { id: "e" + ei, ei, source: "n" + e[0], target: "n" + e[2], label: edgeLabel(g.d.P[e[1]]) } }); });
+  killCy();
+  G.cy = cytoscape({
+    container: $("#cy"), elements: els, wheelSensitivity: 0.3, minZoom: 0.08, maxZoom: 3,
+    style: [
+      { selector: "node", style: { label: "data(label)", "font-size": 9, color: col("--ink"), "text-valign": "bottom", "text-margin-y": 3, "background-color": col("--muted"), width: 14, height: 14, "text-wrap": "ellipsis", "text-max-width": 90 } },
+      { selector: 'node[kind="class"]', style: { shape: "round-rectangle", "background-color": col("--accent"), width: 18, height: 14 } },
+      { selector: 'node[kind="property"]', style: { shape: "diamond", "background-color": col("--warn"), width: 16, height: 16 } },
+      { selector: 'node[kind="other"]', style: { shape: "hexagon", "background-color": col("--line") } },
+      { selector: "node[seed = 1]", style: { "border-width": 4, "border-color": col("--mark-cur"), width: 26, height: 22, "font-size": 11, "font-weight": 700, "z-index": 10 } },
+      { selector: "edge", style: { width: 1, "line-color": col("--muted"), "target-arrow-color": col("--muted"), "target-arrow-shape": "triangle", "curve-style": "bezier", label: "data(label)", "font-size": 7, color: col("--muted"), "text-rotation": "autorotate", "text-background-color": col("--surface"), "text-background-opacity": 0.85, "text-background-padding": 1, "arrow-scale": 0.8 } },
+      { selector: ":selected", style: { "overlay-color": col("--accent"), "overlay-opacity": 0.25, "line-color": col("--accent"), "target-arrow-color": col("--accent") } }
+    ],
+    layout: layoutOpts()
+  });
+  G.cy.on("tap", "node", ev => showNodeCard(ev.target.data("idx")));
+  G.cy.on("tap", "edge", ev => showEdgeCard(ev.target.data("ei")));
+  G.cy.on("tap", ev => { if (ev.target === G.cy) hideCard(); });
+  const gl = $("#glist"); gl.textContent = "";
+  sub.kept.forEach(i => gl.append(el("button", { class: "btn", type: "button", text: g.d.N[i][1], onclick: () => showNodeCard(i) })));
+}
+/* 노드를 넓게 펼친다: 원형(질문 용어 가운데, 1홉·2홉을 바깥 고리에 고르게) 또는 자유 배치(간격을 넓힌 힘 기반) */
+function layoutOpts() {
+  if (G.layout === "cose") return { name: "cose", animate: false, randomize: true, fit: true, padding: 30, nodeRepulsion: () => 60000, idealEdgeLength: () => 140, edgeElasticity: () => 60, gravity: 0.15, numIter: 1500, componentSpacing: 140, nodeDimensionsIncludeLabels: true, nodeOverlap: 40 };
+  return { name: "concentric", fit: true, padding: 30, startAngle: 1.5 * Math.PI, minNodeSpacing: 46, avoidOverlap: true, nodeDimensionsIncludeLabels: true, spacingFactor: 1.2, concentric: n => (n.data("seed") ? 100 : 50 - 10 * (n.data("hop") || 0)), levelWidth: () => 10 };
+}
+function relayout() { if (G.cy) { G.cy.layout(layoutOpts()).run(); G.cy.fit(undefined, 30); } }
+const EDGE_NOTE = { "rdfs:subClassOf": ["subClassOf  <", "'A < B' (A가 B의 하위 클래스)"], "rdf:type": ["type  a", "'IND A a B' (A가 B의 사례)"], "rdfs:domain": ["dom", "'OP P dom:D'"], "rdfs:range": ["rng", "'OP P rng:R'"], "owl:inverseOf": ["inv", "'OP P inv:I'"] };
+function edgeLabel(p) { return EDGE_NOTE[p] ? EDGE_NOTE[p][0] : prettyIri(p).replace(/^[a-z]+:/, ""); }
+function hideCard() { const c = $("#gcard"); if (c) c.hidden = true; }
+const gDisp = (g, i) => g.d.N[i][1];
+function termFor(g, i) { const n = g.d.N[i]; return (n[2] === "class" || n[2] === "individual") && n[1] ? n[1].replace(/^ex:/, "").replace(/\s*[<:].*$/, "").replace(/'+/g, "").trim() || gLocal(n[0]) : gLocal(n[0]); }
+function gotoDef(li, term) {
+  showTab("text"); if (!V.o) return;
+  const q = $("#q"); q.value = term || ""; runSearch(q.value, false); if (q.value) countSearch(q.value);
+  const k = V.matches.findIndex(m => m.line === li);
+  if (k >= 0) { if (V.markEls[V.cur]) V.markEls[V.cur].classList.remove("cur"); V.cur = k; if (V.markEls[k]) V.markEls[k].classList.add("cur"); paintCount(); }
+  const d = V.lineEls[li]; if (d) { scrollToEl(d); d.classList.add("flash"); setTimeout(() => d.classList.remove("flash"), 5000); }
+  const msg = $("#msg"); if (msg) { msg.classList.add("good"); msg.textContent = (li + 1) + "행의 정의 줄로 이동했어요. 이 줄에서 질문에 답하는 가장 짧은 부분만 드래그한 뒤 '선택한 구간을 근거로'를 누르세요."; }
+}
+function findInText(term) {
+  showTab("text"); const q = $("#q"); if (!q || !term) return; q.value = term; if (V.o) { runSearch(term, true); countSearch(term); }
+}
+function fillCard(title, kind, triples, lits, term, extraBtn, li) {
+  const c = $("#gcard"); c.textContent = "";
+  c.append(el("div", { style: "display:flex;justify-content:space-between;gap:6px;align-items:start" }, el("h3", { text: title }), el("button", { class: "btn small", type: "button", text: "닫기", onclick: hideCard })));
+  if (kind) c.append(el("span", { class: "pill", text: kind }));
+  const hasLine = li != null;
+  c.append(el("div", { class: "grow", style: "margin:8px 0" },
+    hasLine ? el("button", { class: "btn small primary", type: "button", text: "원문 정의 줄로 이동 (" + (li + 1) + "행)", title: "텍스트 탭에서 이 항목이 적힌 줄로 이동해 강조합니다", onclick: () => gotoDef(li, term) }) : null,
+    el("button", { class: "btn small" + (hasLine ? "" : " primary"), type: "button", text: hasLine ? "용어 전체 검색" : "텍스트에서 찾기", onclick: () => findInText(term) }), extraBtn || null));
+  if (hasLine) c.append(el("div", { class: "small muted", text: "근거 구간은 이동한 줄에서 원문 그대로 드래그해 고릅니다." }));
+  c.append(el("div", { class: "small muted", text: "s p o 목록 (" + triples.length + "개)" }));
+  const ul = el("ul", {}); triples.slice(0, 40).forEach(t => ul.append(el("li", { text: t }))); if (triples.length > 40) ul.append(el("li", { class: "muted", text: "…외 " + (triples.length - 40) + "개" }));
+  c.append(ul);
+  if (lits && lits.length) { c.append(el("div", { class: "small muted", text: "속성 값" })); const l2 = el("ul", {}); lits.slice(0, 12).forEach(t => l2.append(el("li", { text: t }))); if (lits.length > 12) l2.append(el("li", { class: "muted", text: "…외 " + (lits.length - 12) + "개" })); c.append(l2); }
+  c.hidden = false; c.scrollTop = 0;
+}
+function showNodeCard(i) {
+  const { g } = G.lastSub; const d = g.d; const trip = [];
+  for (const ei of g.adj[i]) { const e = d.E[ei]; trip.push(gDisp(g, e[0]) + "  →  " + prettyIri(d.P[e[1]]) + "  →  " + gDisp(g, e[2])); }
+  const lits = (d.L[String(i)] || []).map(x => prettyIri(d.P[x[0]]) + " = " + x[1]);
+  const add = el("button", { class: "btn small", type: "button", text: "질의에 추가", onclick: () => { const q = $("#gq"); const t = termFor(g, i); if (!q.value.toLowerCase().split(/\s*,\s*/).includes(t.toLowerCase())) q.value = (q.value.trim() ? q.value.trim() + ", " : "") + t; } });
+  fillCard(d.N[i][1] + (prettyIri(d.N[i][0]) !== d.N[i][1] ? "  (" + prettyIri(d.N[i][0]) + ")" : ""), ({ class: "클래스", property: "속성", individual: "개체(사례)", other: "참조된 항목" }[d.N[i][2]] || d.N[i][2]), trip, lits, termFor(g, i), add, d.D ? d.D[i] : null);
+}
+function showEdgeCard(ei) {
+  const { g } = G.lastSub; const d = g.d; const e = d.E[ei]; const p = d.P[e[1]];
+  const trip = [gDisp(g, e[0]) + "  →  " + prettyIri(p) + "  →  " + gDisp(g, e[2])];
+  d.E.forEach((x, k) => { if (k !== ei && x[0] === e[0] && x[2] === e[2]) trip.push(gDisp(g, x[0]) + "  →  " + prettyIri(d.P[x[1]]) + "  →  " + gDisp(g, x[2])); });
+  fillCard(prettyIri(p), "연결선 · 텍스트 표기 " + (EDGE_NOTE[p] ? EDGE_NOTE[p][1] : "'{" + gLocal(p) + "=…}'") + " · " + gDisp(g, e[0]) + " 줄에 적혀 있음", trip, null, termFor(g, e[2]), null, d.D ? d.D[e[0]] : null);
+}
+window.addEventListener("resize", () => { clearTimeout(G.rt); G.rt = setTimeout(() => { if (G.cy && G.tab === "graph") { G.cy.resize(); G.cy.fit(undefined, 24); } }, 200); });
+$("#btnTheme").addEventListener("click", () => { if (G.tab === "graph" && G.lastSub && G.cy) setTimeout(() => drawGraph(G.lastSub.sub, G.lastSub.g, G.lastSub.seedSet), 0); });
+
+/* ---------- 문항 검토(소유자 전용): 확장 은행 84문항 승인·수정·제외. 문항은 소유자만 읽는 db 경로 cqreview에 있다. ---------- */
+const RV = { items: [], i: 0, filter: "pending" };
+const CAT_KO2 = Object.assign({}, CAT_KO);
+async function renderReview() {
+  ST.screen = "review";
+  const page = el("div", { class: "page", style: "max-width:960px" }); setMain(el("div", { class: "screen" }, page));
+  if (!ST.isOwner || !ST.db) { page.append(banner("문항 검토는 소유자 계정에서만 할 수 있어요.")); return; }
+  page.append(el("div", { class: "loading", text: "문항을 불러오는 중입니다." }));
+  try {
+    const snap = await ST.db.collection("cqreview").get();
+    RV.items = snap.docs.map(d => Object.assign({ id: d.id }, d.data() || {})).sort((a, b) => a.id.localeCompare(b.id));
+  } catch (e) { page.textContent = ""; page.append(banner("문항을 읽지 못했어요 (" + ((e && e.code) || "오류") + ").")); return; }
+  if (!RV.items.length) { page.textContent = ""; page.append(banner("검토할 문항이 아직 없어요. 연구 담당자에게 문항 업로드를 요청해 주세요.")); return; }
+  drawReview();
+}
+function rvList() { return RV.items.filter(x => RV.filter === "all" ? true : RV.filter === "pending" ? !x.decision : RV.filter === "flag" ? x.screen_fail === "REVIEW" : x.decision === RV.filter); }
+function drawReview(focusId) {
+  const page = $("#main .page"); if (!page) return; page.textContent = "";
+  const cnt = k => RV.items.filter(x => k === "pending" ? !x.decision : x.decision === k).length;
+  const done = RV.items.length - cnt("pending");
+  const list = rvList(); if (focusId) { const j = list.findIndex(x => x.id === focusId); RV.i = j >= 0 ? j : Math.min(RV.i, list.length - 1); } RV.i = Math.max(0, Math.min(RV.i, list.length - 1));
+  const fb = (k, label) => el("button", { class: "btn small" + (RV.filter === k ? " on" : ""), type: "button", text: label, onclick: () => { RV.filter = k; RV.i = 0; drawReview(); } });
+  page.append(el("section", { class: "panel" },
+    el("div", { style: "display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:baseline" }, el("h2", { text: "확장 질문 은행 검토 (" + RV.items.length + "문항)" }), el("span", { class: "prog-n", text: "검토 완료 " + done + " / " + RV.items.length })),
+    el("div", { class: "bar", style: "margin:6px 0 10px" }, el("i", { style: "width:" + (100 * done / RV.items.length) + "%" })),
+    el("p", { class: "small muted", text: "AI가 Brick 스냅샷만 보고 작성한 초안이에요. 질문과 기대 답이 원천 정의를 충실히 옮겼는지, 기존 은행과 겹치지 않는지 보고 승인·수정·제외를 정해 주세요. 결정은 바로 저장되고, 검토가 끝나면 은행을 동결합니다." }),
+    el("div", { class: "chips", style: "margin-top:8px" }, fb("pending", "미검토 " + cnt("pending")), fb("approve", "승인 " + cnt("approve")), fb("edit", "수정 승인 " + cnt("edit")), fb("exclude", "제외 " + cnt("exclude")), fb("flag", "자동 점검 확인 필요 " + RV.items.filter(x => x.screen_fail === "REVIEW").length), fb("all", "전체"))));
+  if (!list.length) { page.append(el("section", { class: "panel" }, el("p", { text: RV.filter === "pending" ? "모든 문항을 검토했어요. 수고하셨습니다." : "이 분류에 해당하는 문항이 없어요." }))); return; }
+  const x = list[RV.i];
+  const q = el("textarea", { rows: "2", id: "rvQ" }); q.value = x.question_final || x.question || "";
+  const a = el("textarea", { rows: "4", id: "rvA" }); a.value = x.expected_final || x.expected_answer || "";
+  const note = el("input", { type: "text", id: "rvN", placeholder: "메모 (제외 이유, 수정 이유 등)" }); note.value = x.note || "";
+  const msg = el("div", { class: "msg", role: "status" });
+  const save = async (decision) => {
+    const qv = q.value.trim(), av = a.value.trim();
+    const edited = qv !== (x.question || "").trim() || av !== (x.expected_answer || "").trim();
+    if (decision === "approve" && edited) decision = "edit";
+    if (decision === "exclude" && !note.value.trim()) { msg.textContent = "제외 이유를 메모에 짧게 적어 주세요."; note.focus(); return; }
+    const upd = { decision, question_final: qv, expected_final: av, note: note.value.trim(), reviewedAt: new Date().toISOString() };
+    try { await ST.db.doc("cqreview/" + x.id).update(upd); Object.assign(x, upd); const nextId = (rvList()[RV.i + (RV.filter === "pending" ? 0 : 1)] || {}).id; drawReview(nextId); }
+    catch (e) { msg.textContent = "저장하지 못했어요 (" + ((e && e.code) || "오류") + "). 다시 눌러 주세요."; }
+  };
+  const nav = d => { RV.i = Math.max(0, Math.min(list.length - 1, RV.i + d)); drawReview(); };
+  const st = (k, v) => el("span", { class: "pill" + (v === "REVIEW" ? "" : " acc"), style: v === "REVIEW" ? "background:var(--warn-soft);color:var(--warn)" : "", text: k + " " + v });
+  page.append(el("section", { class: "panel" },
+    el("div", { class: "chips" }, el("span", { class: "pill acc", text: x.id }), el("span", { class: "pill", text: "범주 · " + (CAT_KO2[x.category] || x.category) }), x.decision ? el("span", { class: "pill", text: "현재 결정: " + ({ approve: "승인", edit: "수정 승인", exclude: "제외" }[x.decision]) }) : null, el("span", { class: "muted small", text: (RV.i + 1) + " / " + list.length })),
+    el("div", { class: "lbl", style: "margin-top:10px" }, el("label", { for: "rvQ", text: "질문 (고치면 '수정 승인'으로 저장돼요)" })), q,
+    el("div", { class: "lbl", style: "margin-top:8px" }, el("label", { for: "rvA", text: "기대 답 (원천 정의 기준)" })), a,
+    el("div", { class: "small", style: "margin-top:8px" }, el("b", { text: "근거 용어: " }), el("span", { class: "mono", text: x.grounding || "" })),
+    el("div", { class: "small muted" }, el("b", { text: "가장 가까운 기존 문항: " }), x.nearest_existing || "-"),
+    el("div", { class: "chips", style: "margin-top:6px" }, st("형식", x.screen_format), st("근거", x.screen_grounding), st("ASK", x.screen_ask), st("중복", x.screen_dup)),
+    x.screen_notes ? el("div", { class: "banner", style: "margin-top:6px" }, el("span", { text: "자동 점검 메모: " + x.screen_notes })) : null,
+    el("div", { class: "lbl", style: "margin-top:8px" }, el("label", { for: "rvN", text: "메모" })), note, msg,
+    el("div", { style: "display:flex;gap:8px;flex-wrap:wrap;margin-top:10px" },
+      el("button", { class: "btn", type: "button", text: "← 이전", onclick: () => nav(-1) }),
+      el("button", { class: "btn primary", type: "button", onclick: () => save("approve") }, "승인 ", el("kbd", { text: "A" })),
+      el("button", { class: "btn", type: "button", onclick: () => save("exclude") }, "제외 ", el("kbd", { text: "X" })),
+      el("button", { class: "btn", type: "button", text: "다음 →", onclick: () => nav(1) })),
+    el("p", { class: "small muted", style: "margin-top:6px", text: "단축키: A 승인, X 제외, ←/→ 이동 (입력칸 밖에서). 질문이나 기대 답을 고친 뒤 승인하면 '수정 승인'으로 기록돼요." })));
+  RV.keys = e => { if (ST.screen !== "review" || dlgOpen()) return; const tg = e.target; if (tg && (tg.tagName === "INPUT" || tg.tagName === "TEXTAREA")) return; if (e.code === "KeyA") { e.preventDefault(); save("approve"); } else if (e.code === "KeyX") { e.preventDefault(); save("exclude"); } else if (e.key === "ArrowRight") nav(1); else if (e.key === "ArrowLeft") nav(-1); };
+}
+document.addEventListener("keydown", e => { if (RV.keys) RV.keys(e); });
+
+/* ---------- 휴식 알림 ---------- */
+function breakTick() {
+  if (document.hidden || ST.screen !== "work" || ST.breakOff) return;
+  const now = Date.now(); ST.active = (ST.active || 0) + (now - (ST.tickAt || now)); ST.tickAt = now;
+  if (ST.active - (ST.lastBreakActive || 0) >= BREAK_MS && !$("#brk")) {
+    const b = el("div", { class: "banner info", role: "status" }, el("span", { text: "잠깐 쉬어가요. 25분 넘게 이어서 작업하셨어요. 눈을 쉬게 하고 오셔도 저장된 내용은 그대로예요." }),
+      el("button", { class: "btn small", type: "button", text: "닫기", onclick: () => { ST.lastBreakActive = ST.active; notice("brk", null); } }),
+      el("button", { class: "btn small", type: "button", text: "알림 끄기", onclick: () => { ST.breakOff = true; LS.set("brk-off", "1"); notice("brk", null); } }));
+    notice("brk", b);
+  }
+}
+ST.tickAt = Date.now();
+document.addEventListener("visibilitychange", () => { ST.tickAt = Date.now(); });
+
+/* ---------- 단축키 ---------- */
+document.addEventListener("keydown", e => {
+  if (e.isComposing || e.keyCode === 229) return;
+  if (dlgOpen()) return;
+  const t = e.target; const typing = t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.tagName === "SELECT" || t.isContentEditable);
+  if (typing) {
+    if (ST.screen === "work" && e.key === "Enter" && (e.ctrlKey || e.metaKey) && t.tagName === "TEXTAREA") { e.preventDefault(); saveAndNext(); }
+    else if (e.key === "Escape") t.blur();
+    return;
+  }
+  if (e.key === "?" ) { e.preventDefault(); $("#btnHelp").click(); return; }
+  if (ST.screen !== "work") return;
+  if (e.altKey && e.key === "ArrowLeft") { e.preventDefault(); goPrev(); return; }
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  if (e.code === "KeyG" && !e.shiftKey) { e.preventDefault(); showTab(G.tab === "graph" ? "text" : "graph"); return; }
+  if (e.key === "/") { e.preventDefault(); showTab("text"); $("#q").focus(); return; }
+  if (e.key === "Enter") { if (t && (t.tagName === "BUTTON" || t.tagName === "A" || t.tagName === "SUMMARY")) return; e.preventDefault(); saveAndNext(); return; }
+  if (e.shiftKey) { const m = /^Digit([0-3])$/.exec(e.code); if (m) { e.preventDefault(); setR(+m[1]); } return; }
+  if (e.code === "Digit1" || e.code === "Numpad1") { e.preventDefault(); setS(1); return; }
+  if (e.code === "Digit0" || e.code === "Numpad0") { e.preventDefault(); setS(0); return; }
+  const rm = { KeyQ: 0, KeyW: 1, KeyE: 2, KeyR: 3 }[e.code]; if (rm != null) { e.preventDefault(); setR(rm); }
+});
+
+boot();
+</script>

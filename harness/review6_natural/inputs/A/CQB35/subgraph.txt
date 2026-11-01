@@ -1,0 +1,129 @@
+http://example.org/chunktograph#AHU | AHU
+http://example.org/chunktograph#AHUVAVSystem | AHU-VAV system < owl:Thing
+http://example.org/chunktograph#ASHRAE | ASHRAE
+http://example.org/chunktograph#ASHRAE223P | ASHRAE 223P
+http://example.org/chunktograph#Air | Air
+http://example.org/chunktograph#AirFlowSetpoint | Air Flow Setpoint
+http://example.org/chunktograph#AirTemperatureSensor | Air Temperature Sensor
+http://example.org/chunktograph#Anthropic | Anthropic
+http://example.org/chunktograph#ApplicationsAndAnalyticsWorkingGroup | Applications and Analytics Working Group
+http://example.org/chunktograph#BACnetReference | BACnetReference < owl:Thing
+http://example.org/chunktograph#BlocklyAPI | Blockly API
+http://example.org/chunktograph#BoardOfDirectors | Board of Directors
+http://example.org/chunktograph#Brick | Brick :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities.
+http://example.org/chunktograph#BrickClass | Brick Class < owl:Thing
+http://example.org/chunktograph#BrickClassDefinitionFile | Brick Class Definition File
+http://example.org/chunktograph#BrickOntology | Brick Ontology < owl:Thing
+http://example.org/chunktograph#BrickQuantityClass | Brick Quantity Class < http://example.org/chunktograph#BrickClass
+http://example.org/chunktograph#BrickQuantityDefinition | Brick Quantity Definition
+http://example.org/chunktograph#Building | Building < owl:Thing
+http://example.org/chunktograph#Controller | Controller < owl:Thing
+http://example.org/chunktograph#Dependency | Dependency < owl:Thing
+http://example.org/chunktograph#Dictionary | dictionary < http://www.w3.org/2001/XMLSchema#string
+http://example.org/chunktograph#EnergyManagementAndInformationSystem | Energy Management and Information System < owl:Thing
+http://example.org/chunktograph#EnergySystem | Energy system < owl:Thing
+http://example.org/chunktograph#Graph | Graph < owl:Thing :: An abstract organizational data structure representing a set of entities (nodes) and relationships (edges).
+http://example.org/chunktograph#HVAC | HVAC < http://example.org/chunktograph#EnergySystem,owl:Thing
+http://example.org/chunktograph#Inference | Inference
+http://example.org/chunktograph#LargeLanguageModel | Large Language Model < owl:Thing
+http://example.org/chunktograph#Lighting | Lighting < http://example.org/chunktograph#EnergySystem,owl:Thing
+http://example.org/chunktograph#MonitoringSystem | Monitoring system < owl:Thing
+http://example.org/chunktograph#OntoEnv | OntoEnv < owl:Thing
+http://example.org/chunktograph#Ontology | Ontology < owl:Thing
+http://example.org/chunktograph#OpenRefine | OpenRefine < owl:Thing
+http://example.org/chunktograph#PythonFile | Python File
+http://example.org/chunktograph#PythonLibrary | Python library < owl:Thing
+http://example.org/chunktograph#RDF | Resource Description Framework < owl:Thing
+http://example.org/chunktograph#RDFFile | RDF File < owl:Thing
+http://example.org/chunktograph#Relationship | Relationship :: The nature of a link between two related entities.
+http://example.org/chunktograph#SecuritySystem | Security system < owl:Thing
+http://example.org/chunktograph#Sensor | Sensor < owl:Thing
+http://example.org/chunktograph#Text | text < http://www.w3.org/2001/XMLSchema#string
+http://example.org/chunktograph#TimeseriesReference | TimeseriesReference < owl:Thing
+OP http://example.org/chunktograph#Relationship
+OP http://example.org/chunktograph#addInverseEdges dom:http://example.org/chunktograph#Inference rng:owl:Thing
+OP http://example.org/chunktograph#addVBISTags dom:http://example.org/chunktograph#BrickOntology
+OP http://example.org/chunktograph#addresses
+OP http://example.org/chunktograph#addsInverseRelationships dom:http://example.org/chunktograph#Inference
+OP http://example.org/chunktograph#addsSuperclasses dom:http://example.org/chunktograph#Inference
+OP http://example.org/chunktograph#addsTags dom:http://example.org/chunktograph#Inference
+OP http://example.org/chunktograph#adheresToCompleteness dom:http://example.org/chunktograph#Brick
+OP http://example.org/chunktograph#adheresToConsistency dom:http://example.org/chunktograph#Brick
+OP http://example.org/chunktograph#adheresToExpressivity dom:http://example.org/chunktograph#Brick
+OP http://example.org/chunktograph#adheresToExtensibility dom:http://example.org/chunktograph#Brick
+OP http://example.org/chunktograph#adheresToUsability dom:http://example.org/chunktograph#Brick
+OP http://example.org/chunktograph#annotateWithSubstancesAndQuantities dom:http://example.org/chunktograph#Inference rng:owl:Thing
+DP http://example.org/chunktograph#BACnetURI dom:http://example.org/chunktograph#BACnetReference rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#MultipleGraphsSupport rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#RDFModelStorage rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#ReasoningInference rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#SHACLSupport rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#SPARQLSupport rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#ScalingAndPerformance rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#aggregationInterval rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#assertsSameAsSelf dom:http://example.org/chunktograph#Graph rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#backend dom:http://example.org/chunktograph#Graph rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#boolConversion
+DP http://example.org/chunktograph#commandLineOption rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#conditionFires
+DP http://example.org/chunktograph#convertedBoolean rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#coolingCapacity rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#evalMethod rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#firesIfVariablesPresent
+DP http://example.org/chunktograph#hasAcceptedDate rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasArXivID dom:owl:NamedIndividual rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasArticleId rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasBranch rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasBrickEntities
+DP http://example.org/chunktograph#hasBuildFrequency rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasClassDefinitionStructure dom:http://example.org/chunktograph#BrickClass rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#measurement dom:owl:Thing rng:http://www.w3.org/2001/XMLSchema#string
+IND http://example.org/chunktograph#ACMEEnergy2019TutorialInstance | ACM E-Energy 2019 Tutorial Slides a http://example.org/chunktograph#ACMEEnergy2019Tutorial
+IND http://example.org/chunktograph#AHU | AHU a http://example.org/chunktograph#AirHandlingUnit,owl:Class
+IND http://example.org/chunktograph#AIF | AI F
+IND http://example.org/chunktograph#AProgrammingModelForPortableFaultDetectionAndDiagnosis | A programming model for portable fault detection and diagnosis {http://example.org/chunktograph#hasPublicationYear=2023; http://example.org/chunktograph#hasURL=https://doi.org/10.1145/3587225.3587245}
+IND http://example.org/chunktograph#ASHRAE | ASHRAE a owl:Class
+IND http://example.org/chunktograph#ASHRAE223P | ASHRAE 223P a http://example.org/chunktograph#Standard,owl:Class
+IND http://example.org/chunktograph#ASHRAEHaystackBrickCollaborationInstance | ASHRAE, Haystack, Brick Collaboration {http://example.org/chunktograph#hasSourceText=ASHRAE, Haystack, Brick Collaboration}
+IND http://example.org/chunktograph#Abound | Abound a http://example.org/chunktograph#Platform
+IND http://example.org/chunktograph#AcademicIndividualResearcherMember | Academic Individual Researcher a http://example.org/chunktograph#MembershipLevel {http://example.org/chunktograph#hasMembershipFee=0; http://example.org/chunktograph#hasRightToChairCommittee=true; http://example.org/chunktograph#hasRightToServeOnCommittee=true; http://example.org/chunktograph#hasRightToVoteForSteering=false; http://example.org/chunktograph#hasRightToVoteOnCommittee=true}
+IND http://example.org/chunktograph#AccessControl | Access Control a http://example.org/chunktograph#BuildingManagementSystem,http://example.org/chunktograph#BuildingSystem
+IND http://example.org/chunktograph#AddedClassesFile | added_classes.txt {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#Air | Air a http://example.org/chunktograph#Substance,owl:Class
+IND http://example.org/chunktograph#AirFlowSetpoint | Air Flow Setpoint a http://example.org/chunktograph#Setpoint,owl:Class
+IND http://example.org/chunktograph#AirTemperatureSensor | Air Temperature Sensor a http://example.org/chunktograph#Sensor,owl:Class
+IND http://example.org/chunktograph#AkshayJohar | Akshay Johar {http://example.org/chunktograph#hasEmail=; http://example.org/chunktograph#hasRole=Member}
+IND http://example.org/chunktograph#AlignmentInstance | Alignment instance a http://example.org/chunktograph#Alignment {http://example.org/chunktograph#alignmentFile=http://example.org/chunktograph#BOTAlignment.ttl}
+IND http://example.org/chunktograph#Alignments | Alignments :: Brick 1.2.0 also includes alignments with several external ontologies and metadata representations. {rdfs:subClassOf=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#Allegrograph | Allegrograph a http://example.org/chunktograph#Database {http://example.org/chunktograph#MultipleGraphsSupport=unknown; http://example.org/chunktograph#RDFModelStorage=The paid version of Allegograph supports horizontally scalable storage of RDF models; the base version stores RDF models on a single node; http://example.org/chunktograph#ReasoningInference=supports both OWL-RL and RDFS languages; http://example.org/chunktograph#SHACLSupport=supports SHACL validation but does not seem to support SHACL advanced features such as inference; http://example.org/chunktograph#SPARQLSupport=supports full SPARQL 1.1; http://example.org/chunktograph#ScalingAndPerformance=Allegrograph demonstrates good performance on graphs typical of Brick}
+IND http://example.org/chunktograph#Anthropic | Anthropic a owl:Class {http://example.org/chunktograph#hasAccessDate=2023-11-04; http://example.org/chunktograph#hasPublicationYear=2024; http://example.org/chunktograph#hasURL=https://anthropic.com}
+IND http://example.org/chunktograph#AntonellaFranzen | Antonella Franzen a http://example.org/chunktograph#Person {http://example.org/chunktograph#hasEmail=<email>; http://example.org/chunktograph#hasPhone=609.720.4665}
+IND http://example.org/chunktograph#ApplicationDrivenCreationOfBuildingMetadataModelsWithSemanticSufficiency | Application-driven creation of building metadata models with semantic sufficiency {http://example.org/chunktograph#hasPublicationYear=2022}
+IND http://example.org/chunktograph#ApplicationsAndAnalyticsWorkingGroup | Applications and Analytics Working Group a http://example.org/chunktograph#ApplicationsAndAnalyticsWorkingGroup,owl:Class
+IND http://example.org/chunktograph#AutoRD | AutoRD: An automatic and end-to-end system for rare disease knowledge graph construction based on ontologies-enhanced large language models {http://example.org/chunktograph#hasPublicationYear=2024}
+IND http://example.org/chunktograph#AutomatedConstructionOfThemeSpecificKnowledgeGraphs | Automated construction of theme-specific knowledge graphs {http://example.org/chunktograph#hasPublicationYear=2024}
+IND http://example.org/chunktograph#BACnet | BACnet a http://example.org/chunktograph#Standard
+IND http://example.org/chunktograph#BACnet_Device | BACnet Device a http://example.org/chunktograph#IctEquipment
+IND http://example.org/chunktograph#BACnet_networks | BACnet networks
+IND http://example.org/chunktograph#BOT | BOT :: An ontology for building topologies and locations. {rdfs:subClassOf=http://example.org/chunktograph#Alignments}
+IND http://example.org/chunktograph#Balaji2018 | Balaji et al. (2018) a http://example.org/chunktograph#Validation
+IND http://example.org/chunktograph#BeccaWirta | Becca Wirta a http://example.org/chunktograph#Person {http://example.org/chunktograph#hasEmail=<email>}
+IND http://example.org/chunktograph#BlocklyAPI | Blockly API a owl:Class
+IND http://example.org/chunktograph#BoardOfDirectors | Board of Directors a http://example.org/chunktograph#BoardOfDirectors,owl:Class {http://example.org/chunktograph#isResponsibleFor=corporate governance and government filings}
+IND http://example.org/chunktograph#Brick | Brick a owl:Class :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities. {http://example.org/chunktograph#hasBrickSupport=http://example.org/chunktograph#Brick; http://example.org/chunktograph#hasFile=http://example.org/chunktograph#quantities_py; http://example.org/chunktograph#hasTutorial=http://example.org/chunktograph#ACMEEnergy2019TutorialInstance; http://example.org/chunktograph#isCollaboratingWith=http://example.org/chunktograph#ASHRAE; http://example.org/chunktograph#isUsedIn=http://example.org/chunktograph#ASHRAE223P}
+IND http://example.org/chunktograph#Brick-REC-alignment.ttl | Brick-REC-alignment.ttl
+IND http://example.org/chunktograph#Brick-REC-nodevice.rdf | Brick-REC-nodevice.rdf
+IND http://example.org/chunktograph#Brick-VBIS-alignment.ttl | Brick-VBIS-alignment.ttl
+IND http://example.org/chunktograph#BrickClass | Brick Class a owl:Class {http://example.org/chunktograph#hasParent=http://example.org/chunktograph#BrickClass; rdfs:subClassOf=owl:Thing; owl:equivalentClass=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#BrickOntology | Brick Ontology a http://example.org/chunktograph#Ontology,owl:Class {http://example.org/chunktograph#compliantWith=http://example.org/chunktograph#RDF; http://example.org/chunktograph#discussesTopic=additions, extensions and fixes to the Brick ontology definition; http://example.org/chunktograph#discussesTopic=anything else that comes up!; http://example.org/chunktograph#discussesTopic=building data sets that can inform research and illustrate idiomatic use of Brick; http://example.org/chunktograph#discussesTopic=changes to the ontology structure; http://example.org/chunktograph#discussesTopic=developing, testing and documenting open-source software that facilitates use of Brick; http://example.org/chunktograph#discussesTopic=documentation for Brick; http://example.org/chunktograph#discussesTopic=example Brick models (both for full buildings as well as individual systems); http://example.org/chunktograph#discussesTopic=modeling domains; http://example.org/chunktograph#discussesTopic=new classes; http://example.org/chunktograph#discussesTopic=software for producing Brick models from existing representations; http://example.org/chunktograph#discussesTopic=software/libraries/databases for querying, managing and storing Brick models; rdfs:subClassOf=owl:Thing}
+IND http://example.org/chunktograph#BrickQuantityDefinition | Brick Quantity Definition a owl:Class
+IND http://example.org/chunktograph#Building | Building a http://example.org/chunktograph#Building,owl:Class {http://example.org/chunktograph#partOf=http://example.org/chunktograph#HVAC; http://example.org/chunktograph#partOf=http://example.org/chunktograph#Lighting; http://example.org/chunktograph#partOf=http://example.org/chunktograph#MonitoringSystem; http://example.org/chunktograph#partOf=http://example.org/chunktograph#SecuritySystem; rdfs:subClassOf=owl:Thing}
+IND http://example.org/chunktograph#Graph | Graph a owl:Class :: An abstract organizational data structure representing a set of entities (nodes) and relationships (edges). {rdfs:subClassOf=owl:Thing}
+IND http://example.org/chunktograph#HVAC | HVAC a http://example.org/chunktograph#BuildingManagementSystem,http://example.org/chunktograph#BuildingSystem,owl:Class {http://example.org/chunktograph#hasComponent=http://example.org/chunktograph#Controller; http://example.org/chunktograph#hasComponent=http://example.org/chunktograph#Sensor; rdfs:subClassOf=http://example.org/chunktograph#EnergySystem; rdfs:subClassOf=owl:Thing}
+IND http://example.org/chunktograph#Lighting | Lighting a http://example.org/chunktograph#BuildingSystem,owl:Class {http://example.org/chunktograph#hasComponent=http://example.org/chunktograph#Sensor; rdfs:subClassOf=http://example.org/chunktograph#EnergySystem; rdfs:subClassOf=owl:Thing}
+IND http://example.org/chunktograph#Sensor | Sensor a http://example.org/chunktograph#SensorEntity,owl:Class {rdfs:subClassOf=owl:Thing}
+IND http://example.org/chunktograph#dataOperation | data operation a http://www.w3.org/2001/XMLSchema#string {http://www.w3.org/2001/XMLSchema#string=data}
+IND http://example.org/chunktograph#defaultBackend | reasonable a http://www.w3.org/2001/XMLSchema#string
+IND http://example.org/chunktograph#exampleBuildingFile | example building file a http://www.w3.org/2001/XMLSchema#string {http://example.org/chunktograph#hasFilename=bldg.ttl}
+IND http://example.org/chunktograph#graphInputFormat | graph input format a http://www.w3.org/2001/XMLSchema#string {http://www.w3.org/2001/XMLSchema#string=graph}
+IND http://example.org/chunktograph#quantities_py | bricksrc/quantities.py a http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile :: File for Brick Quantity definitions {http://example.org/chunktograph#hasClassDefinition=http://example.org/chunktograph#BrickQuantityClass; http://example.org/chunktograph#hasClassDefinition=http://example.org/chunktograph#BrickQuantityDefinition}

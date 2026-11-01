@@ -1,0 +1,36 @@
+{
+ "domain": "prov",
+ "atomic_chunks": 458,
+ "corpus_chars": 122405,
+ "corpus_sha256": "e62dca5c48302b3549fbdc36ce02a4c8646fff1aee1c3658c42c52c999a69d81",
+ "build_a_sections_skipped": 3,
+ "skip_reasons": [
+  "string index out of range)",
+  "syntax",
+  "syntax"
+ ],
+ "triples": {
+  "A": 2398,
+  "B": 6015
+ },
+ "rendered_chars": {
+  "A": 66068,
+  "B": 282428
+ },
+ "llm_calls": {
+  "extract": 0,
+  "triples": 458,
+  "build": 63,
+  "split": 0,
+  "build-a": 21
+ },
+ "llm_failures": 0,
+ "prompt_tokens": 145195,
+ "completion_tokens": 104116,
+ "jobs": 77,
+ "eligible_but_no_subgraph": [
+  "primary:A:CQP38",
+  "primary:B:CQP38"
+ ],
+ "bank_sha256": "665f5e967fe6e92c8d0dd5322dfc184338ce2c013a6a1f811ae49ea0fe5a525f"
+}

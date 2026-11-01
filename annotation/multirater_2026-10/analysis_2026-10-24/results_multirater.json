@@ -1,0 +1,564 @@
+{
+ "banner": "AI-generated analysis (Claude, 2026-10-24). Not human-reviewed.",
+ "inputs": {
+  "export": {
+   "path": "paper/access2026/annotation/multirater_2026-10/human_labels_export_2026-10-15.csv",
+   "sha256": "1f9e67129afbfb477b65491ff5ca52ba3ae4e4031021a752fadfa86d350ebbd6",
+   "rows": 12
+  },
+  "site_key": {
+   "sha256": "7242d1c2314de1496ab42c0a6e3f115512fdf250512466f96140dac3522d3dd2"
+  },
+  "ah_key": {
+   "sha256": "7c178e4413066e4dbb36178bbc66d764cdc58d8dd976449db0d6c00e65df3134",
+   "n": 188
+  },
+  "cells_jsonl_j_present": 224
+ },
+ "per_rater": {
+  "H1": {
+   "n_cells": 10,
+   "n_S1": 3,
+   "R_hist": {
+    "0": 4,
+    "1": 3,
+    "2": 0,
+    "3": 3
+   },
+   "dwell_ms_median": 108012.0,
+   "dwell_ms_min": 49014,
+   "dwell_ms_max": 340807,
+   "share_under_20s": 0.0
+  },
+  "H2": {
+   "n_cells": 1,
+   "n_S1": 1,
+   "R_hist": {
+    "0": 0,
+    "1": 0,
+    "2": 1,
+    "3": 0
+   },
+   "dwell_ms_median": 234166,
+   "dwell_ms_min": 234166,
+   "dwell_ms_max": 234166,
+   "share_under_20s": 0.0
+  },
+  "H3": {
+   "n_cells": 1,
+   "n_S1": 1,
+   "R_hist": {
+    "0": 0,
+    "1": 1,
+    "2": 0,
+    "3": 0
+   },
+   "dwell_ms_median": 126786,
+   "dwell_ms_min": 126786,
+   "dwell_ms_max": 126786,
+   "share_under_20s": 0.0
+  }
+ },
+ "pairs": {
+  "H1-H2": {
+   "n": 0,
+   "pct_agreement_S": null,
+   "cohen_kappa_S": null,
+   "qwk_R": null,
+   "mae_R": null
+  },
+  "H1-H3": {
+   "n": 0,
+   "pct_agreement_S": null,
+   "cohen_kappa_S": null,
+   "qwk_R": null,
+   "mae_R": null
+  },
+  "H2-H3": {
+   "n": 0,
+   "pct_agreement_S": null,
+   "cohen_kappa_S": null,
+   "qwk_R": null,
+   "mae_R": null
+  }
+ },
+ "consensus": {
+  "n_cells": 12,
+  "n_multi_rater": 0,
+  "n_single_rater": 12,
+  "rows": [
+   {
+    "cell_id": "primary:A:CQB03",
+    "cq": "CQB03",
+    "variant": "A",
+    "A": 0,
+    "rater_L1": 0,
+    "S_votes": "0",
+    "R_values": "0",
+    "n_raters": 1,
+    "raters": "H1",
+    "evidence_span_verbatim": "",
+    "J": 1,
+    "S_AH": 1,
+    "L1_star_AH": 1
+   },
+   {
+    "cell_id": "primary:A:CQB10",
+    "cq": "CQB10",
+    "variant": "A",
+    "A": 1,
+    "rater_L1": 3,
+    "S_votes": "1",
+    "R_values": "3",
+    "n_raters": 1,
+    "raters": "H1",
+    "evidence_span_verbatim": "그래프에서는 찾을 수 있는데 txt 파일엔 없음",
+    "J": 3,
+    "S_AH": 1,
+    "L1_star_AH": 3
+   },
+   {
+    "cell_id": "primary:A:CQB30",
+    "cq": "CQB30",
+    "variant": "A",
+    "A": 0,
+    "rater_L1": 0,
+    "S_votes": "0",
+    "R_values": "0",
+    "n_raters": 1,
+    "raters": "H1",
+    "evidence_span_verbatim": "",
+    "J": 0,
+    "S_AH": 1,
+    "L1_star_AH": 0
+   },
+   {
+    "cell_id": "primary:A:CQB31",
+    "cq": "CQB31",
+    "variant": "A",
+    "A": 1,
+    "rater_L1": 2,
+    "S_votes": "1",
+    "R_values": "2",
+    "n_raters": 1,
+    "raters": "H2",
+    "evidence_span_verbatim": "s. As the exact requirements on these measurements will vary from case to case or jurisdiction to jurisdiction, subclassing and specializing this definition is encouraged.",
+    "J": 3,
+    "S_AH": 1,
+    "L1_star_AH": 3
+   },
+   {
+    "cell_id": "primary:A:CQB34",
+    "cq": "CQB34",
+    "variant": "A",
+    "A": 1,
+    "rater_L1": 1,
+    "S_votes": "1",
+    "R_values": "1",
+    "n_raters": 1,
+    "raters": "H3",
+    "evidence_span_verbatim": "http://example.org/chunktograph#Collection | Collection < http://example.org/chunktograph#Class,http://example.org/chunktograph#Collection,http://example.org/chunktograph#Entity,rdfs:Resource :: An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings). Inclusion in a Collection is determined by the 'includes' field on a specific subclass.",
+    "J": 0,
+    "S_AH": 1,
+    "L1_star_AH": 0
+   },
+   {
+    "cell_id": "primary:B:CQB05",
+    "cq": "CQB05",
+    "variant": "B",
+    "A": 1,
+    "rater_L1": 3,
+    "S_votes": "1",
+    "R_values": "3",
+    "n_raters": 1,
+    "raters": "H1",
+    "evidence_span_verbatim": "rec campus a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_class-schema=http://example.org/chunktograph#schema; http://example.org/chunktograph#p_define=http://example.org/chunktograph#collection-location-entity; http://example.org/chunktograph#p_label=campus;",
+    "J": 3,
+    "S_AH": 1,
+    "L1_star_AH": 3
+   },
+   {
+    "cell_id": "primary:B:CQB16",
+    "cq": "CQB16",
+    "variant": "B",
+    "A": 1,
+    "rater_L1": 3,
+    "S_votes": "1",
+    "R_values": "3",
+    "n_raters": 1,
+    "raters": "H1",
+    "evidence_span_verbatim": "brick haspart a http://example.org/chunktograph#Class_relation,skos:Concept {http://example.org/chunktograph#p_inverse=http://example.org/chunktograph#brick-ispartof; http://purl.org/dc/terms/source=c2-a1466; skos:broader=http://example.org/chunktograph#section_object-property-definitions; skos:inScheme=http://example.org/chunktograph#scheme}",
+    "J": 3,
+    "S_AH": 1,
+    "L1_star_AH": 3
+   },
+   {
+    "cell_id": "primary:B:CQB21",
+    "cq": "CQB21",
+    "variant": "B",
+    "A": 0,
+    "rater_L1": 0,
+    "S_votes": "0",
+    "R_values": "0",
+    "n_raters": 1,
+    "raters": "H1",
+    "evidence_span_verbatim": "",
+    "J": 3,
+    "S_AH": 1,
+    "L1_star_AH": 3
+   },
+   {
+    "cell_id": "primary:B:CQB29",
+    "cq": "CQB29",
+    "variant": "B",
+    "A": 0,
+    "rater_L1": 1,
+    "S_votes": "0",
+    "R_values": "1",
+    "n_raters": 1,
+    "raters": "H1",
+    "evidence_span_verbatim": "",
+    "J": 3,
+    "S_AH": 1,
+    "L1_star_AH": 3
+   },
+   {
+    "cell_id": "primary:D:CQB27",
+    "cq": "CQB27",
+    "variant": "D",
+    "A": 0,
+    "rater_L1": 1,
+    "S_votes": "0",
+    "R_values": "1",
+    "n_raters": 1,
+    "raters": "H1",
+    "evidence_span_verbatim": "",
+    "J": 3,
+    "S_AH": 1,
+    "L1_star_AH": 3
+   },
+   {
+    "cell_id": "primary:D:CQB34",
+    "cq": "CQB34",
+    "variant": "D",
+    "A": 0,
+    "rater_L1": 0,
+    "S_votes": "0",
+    "R_values": "0",
+    "n_raters": 1,
+    "raters": "H1",
+    "evidence_span_verbatim": "",
+    "J": 0,
+    "S_AH": 0,
+    "L1_star_AH": 0
+   },
+   {
+    "cell_id": "primary:F:CQB07",
+    "cq": "CQB07",
+    "variant": "F",
+    "A": 0,
+    "rater_L1": 1,
+    "S_votes": "0",
+    "R_values": "1",
+    "n_raters": 1,
+    "raters": "H1",
+    "evidence_span_verbatim": "",
+    "J": 3,
+    "S_AH": 1,
+    "L1_star_AH": 3
+   }
+  ]
+ },
+ "vs_ah": {
+  "n": 12,
+  "S_agreement": 0.5,
+  "S_cohen_kappa": 0.12195121951219517,
+  "R_qwk": 0.4725274725274725,
+  "R_mae": 1.0,
+  "R_exact": 0.4166666666666667,
+  "mismatches": [
+   {
+    "cell_id": "primary:A:CQB03",
+    "J": 1,
+    "consensus_S": 0,
+    "S_AH": 1,
+    "consensus_R": 0,
+    "L1_star_AH": 1
+   },
+   {
+    "cell_id": "primary:A:CQB30",
+    "J": 0,
+    "consensus_S": 0,
+    "S_AH": 1,
+    "consensus_R": 0,
+    "L1_star_AH": 0
+   },
+   {
+    "cell_id": "primary:A:CQB31",
+    "J": 3,
+    "consensus_S": 1,
+    "S_AH": 1,
+    "consensus_R": 2,
+    "L1_star_AH": 3
+   },
+   {
+    "cell_id": "primary:A:CQB34",
+    "J": 0,
+    "consensus_S": 1,
+    "S_AH": 1,
+    "consensus_R": 1,
+    "L1_star_AH": 0
+   },
+   {
+    "cell_id": "primary:B:CQB21",
+    "J": 3,
+    "consensus_S": 0,
+    "S_AH": 1,
+    "consensus_R": 0,
+    "L1_star_AH": 3
+   },
+   {
+    "cell_id": "primary:B:CQB29",
+    "J": 3,
+    "consensus_S": 0,
+    "S_AH": 1,
+    "consensus_R": 1,
+    "L1_star_AH": 3
+   },
+   {
+    "cell_id": "primary:D:CQB27",
+    "J": 3,
+    "consensus_S": 0,
+    "S_AH": 1,
+    "consensus_R": 1,
+    "L1_star_AH": 3
+   },
+   {
+    "cell_id": "primary:F:CQB07",
+    "J": 3,
+    "consensus_S": 0,
+    "S_AH": 1,
+    "consensus_R": 1,
+    "L1_star_AH": 3
+   }
+  ],
+  "basis": "저장소 내 AH 키: S_AH, L1_star(=f(J,A) 파생). 주의: G4/인간-인간 기준은 AH의 새 rater_L1을 씀 → vs_ah_fresh 참조"
+ },
+ "vs_ah_fresh": {
+  "present": true,
+  "sha256": "60347b3fa1b591ba74695602656007eebc342b29e57aad1c80476760f1d6bae2",
+  "n": 12,
+  "A_agreement": 0.5,
+  "A_cohen_kappa": 0.12195121951219517,
+  "R_qwk": 0.1250000000000001,
+  "R_mae": 1.4166666666666667,
+  "R_exact": 0.16666666666666666,
+  "mismatches": [
+   {
+    "cell_id": "primary:A:CQB03",
+    "consensus_S": 0,
+    "AH_A": 1,
+    "consensus_R": 0,
+    "AH_rater_L1": 3
+   },
+   {
+    "cell_id": "primary:A:CQB30",
+    "consensus_S": 0,
+    "AH_A": 1,
+    "consensus_R": 0,
+    "AH_rater_L1": 3
+   },
+   {
+    "cell_id": "primary:A:CQB31",
+    "consensus_S": 1,
+    "AH_A": 1,
+    "consensus_R": 2,
+    "AH_rater_L1": 3
+   },
+   {
+    "cell_id": "primary:A:CQB34",
+    "consensus_S": 1,
+    "AH_A": 1,
+    "consensus_R": 1,
+    "AH_rater_L1": 3
+   },
+   {
+    "cell_id": "primary:B:CQB05",
+    "consensus_S": 1,
+    "AH_A": 1,
+    "consensus_R": 3,
+    "AH_rater_L1": 2
+   },
+   {
+    "cell_id": "primary:B:CQB21",
+    "consensus_S": 0,
+    "AH_A": 1,
+    "consensus_R": 0,
+    "AH_rater_L1": 2
+   },
+   {
+    "cell_id": "primary:B:CQB29",
+    "consensus_S": 0,
+    "AH_A": 1,
+    "consensus_R": 1,
+    "AH_rater_L1": 2
+   },
+   {
+    "cell_id": "primary:D:CQB27",
+    "consensus_S": 0,
+    "AH_A": 1,
+    "consensus_R": 1,
+    "AH_rater_L1": 2
+   },
+   {
+    "cell_id": "primary:D:CQB34",
+    "consensus_S": 0,
+    "AH_A": 0,
+    "consensus_R": 0,
+    "AH_rater_L1": 1
+   },
+   {
+    "cell_id": "primary:F:CQB07",
+    "consensus_S": 0,
+    "AH_A": 1,
+    "consensus_R": 1,
+    "AH_rater_L1": 3
+   }
+  ],
+  "S_AH_key_vs_locked_A_all_match": true,
+  "basis": "AH 라벨의 새 rater_L1(0-3) — 인간-인간 기준선과 동일 지표"
+ },
+ "vs_ind_v3": {
+  "present": true,
+  "n": 12,
+  "S_agreement": 0.5,
+  "S_cohen_kappa": 0.12195121951219517,
+  "R_qwk": -0.010989010989011172,
+  "R_mae": 1.6666666666666667,
+  "R_exact": 0.16666666666666666,
+  "basis": "IND = second_pass v3 rater_L1(새 0-3) — 인간-인간(OTHER pair) 참고치"
+ },
+ "vs_judge": {
+  "n": 12,
+  "n_cq_clusters": 11,
+  "mae": 1.0,
+  "mae_ci": {
+   "ci_lo": 0.46153846153846156,
+   "ci_hi": 1.6363636363636365,
+   "b_effective": 10000
+  },
+  "qwk": 0.4725274725274725,
+  "qwk_ci": {
+   "ci_lo": 0.0,
+   "ci_hi": 0.8035714285714286,
+   "b_effective": 10000
+  },
+  "J_hist": {
+   "0": 3,
+   "1": 1,
+   "2": 0,
+   "3": 8
+  },
+  "H_hist": {
+   "0": 4,
+   "1": 4,
+   "2": 1,
+   "3": 3
+  },
+  "confusion_rows_J_cols_H": [
+   [
+    2,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    3,
+    1,
+    3
+   ]
+  ],
+  "note": "percentile CI(탐색적). 등록 BCa 수치는 피닝된 analyze_holdout.py 결과 참조"
+ },
+ "dwell": {
+  "n": 12,
+  "median_ms": 126549.5,
+  "mean_ms": 149361,
+  "min_ms": 49014,
+  "max_ms": 340807,
+  "iqr_ms": [
+   67021.5,
+   216023.5
+  ],
+  "share_under_20s": 0.0,
+  "per_rater": {
+   "H1": 108012.0,
+   "H2": 234166,
+   "H3": 126786
+  }
+ },
+ "note_checks": {
+  "n_rows": 12,
+  "n_nonempty": 10,
+  "n_distinct_nonempty": 10,
+  "v2_template_hits": 0,
+  "common_prefix_all_nonempty_chars": 0,
+  "max_pairwise_prefix_chars": 7,
+  "notes_with_hangul": 10,
+  "identical_note_across_raters": [],
+  "edit_marker_수정함_count": 1,
+  "span_verbatim_False_rows": [
+   "primary:A:CQB10"
+  ],
+  "s0_rows_with_empty_span": 7,
+  "s1_rows_with_nonempty_span": 5,
+  "s1_rows_with_note": 3,
+  "s0_rows_with_note": 7,
+  "v2_signature_conclusion": "v2와 같은 전건 동일 접두/단일 문구 서명 없음",
+  "limit": "이 검사들은 '기계 복제 서명 부재'만 확인한다. 인간/생성기 출처를 증명하지는 못한다."
+ },
+ "overlap": {
+  "pairwise_shared_cells": {
+   "H1-H2": 0,
+   "H1-H3": 0,
+   "H2-H3": 0
+  },
+  "cells_with_2plus_raters": 0,
+  "n_labeled_cells": 12,
+  "in_ah_set_188": 12,
+  "coverage_of_ah_188": 0.06382978723404255,
+  "in_cells_jsonl": 12
+ },
+ "g2": {
+  "washout_ready_to_fill_nonblank_A": 0,
+  "g2_washout_2026_10_dir_files": [
+   ".gitignore",
+   "G2_DEFINITION.md",
+   "INSTRUCTIONS.md",
+   "INSTRUCTIONS_ko.md",
+   "builder_MANIFEST.json",
+   "g2_manifest.json"
+  ],
+  "export_retest_cells_same_rater": 0,
+  "conclusion": "G2 불가 계속 — washout 라벨 0건, 내보내기에 동일 rater 재평가 0건"
+ },
+ "g3": {
+  "site_key_control_cells": 0,
+  "conclusion": "사이트 키는 primary 188셀만 포함 → 이 내보내기로 ablated 24셀 라벨 불가 → G3 불가 계속"
+ },
+ "seed": 20260913,
+ "boot_B": 10000
+}

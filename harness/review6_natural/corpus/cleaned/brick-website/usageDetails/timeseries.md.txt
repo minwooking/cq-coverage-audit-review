@@ -1,0 +1,3 @@
+## Example usage
+
+Read more about Timeseries Storage here.

@@ -1,0 +1,55 @@
+# Table Handler
+
+The Table Handler processes input datasets row by row. The Table Halder is invoked with the --input-format is set to TSV, CSV, or table.
+
+We have already seen parts of the TableHandler. Let's recall the config file we used earlier:
+
+Internally, Brickify converts each 'data' operation to a SPARQL insert operation.
+If the 'data' operation fires, because all of the variables referenced in the operation are present in that row, Brickify executes a SPARQL INSERT DATA statement.
+This is the SPARQL generated from the first row:
+
+## Conditional syntax
+
+Brickify implements conditions by taking the condition and feeding it to Python's eval method.
+If the condition evaluates to True, the data method fires, and if the method evaluates to False, the condition fails.
+Consider this input file:
+
+One of the things that can be a little tricky with the 'condition' operation is ensuring that the types are correct when crossing from CSV/TSV and into Python, especially for strings and Booleans.
+
+For example, this expression will fire for row A but not row B:
+
+Internally, this is converted to the string '16 > 14' and then passed to the Python eval() method, which returns True.
+
+A trickier version - which looks like our earlier example but is slightly different:
+
+In our example, this will fail! (Spoiler: we took away the quotes from our earlier example)
+
+The issue is that the has_reheat column is pulled in as a string, but is not valid Python because the capitalization of 'true' and 'false' is incorrect in the TSV file.
+
+One way to fix this is to correct the data:
+
+This will match the condition because we have capitalized True and False.
+Unfortunately, changing the data in the input CSV you are processing may not always be possible.
+
+As a compromise, to support this common use case where the input strings look like booleans but are not quite formatted right, Brickify expects Boolean conditions to be handled first as quoted strings:
+Brickify will pass that code to the Python eval() method, which will return 'true', which is type str (and not True which is type Boolean)
+However, as a special case, Brickify converts the following strings to booleans:
+["TRUE", "true", "True", "on", "ON"] all become True, and ["FALSE", "false", "False", "off", "OFF"] are converted to False.
+
+An important note: the replacement text is not carried out on the substrings. At present, this will not work:
+
+## Template Operation
+
+The TableHandler supports an additional operation, similar to the 'data' operation, that uses Jinja2 templates.
+This introduces a new section into the configuration file for defining Jinja2 templates, the 'macros' section, which is added at the top level of the configuration file.
+
+The new operation is a 'template' operation, which can reference the Jinja2 macros from the top-level macro section.
+Much like 'data' operations, a 'template' operation only fires if all of the referenced variables are present in the row being processed.
+
+Consider this input table:
+
+The example config file below defines two template operations.
+The template uses a 'for' loop to create multiple sensors and setpoints, following a naming pattern provided to macro as arguments.
+The numbers of sensors and setpoints come from the input CSV file.
+
+And the output, just for the building B row:

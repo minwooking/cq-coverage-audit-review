@@ -1,0 +1,49 @@
+# Using Tags
+
+A tag is an atomic term that is used to annotate an entity in a Brick model.
+The set of tags associated with a Brick entity can be queried by users and applications; Brick also supports the automatic association of tags with entities based on which Brick class they are an instance of.
+
+In contrast to other metadata efforts such as Project Haystack, Brick does not use tags to define what an entity is.
+Tags constitute a "folksonomic" approach to capturing knowledge.
+Because tags are usually just words (e.g. hot, water, sensor, evaporative), there is no explicit mechanism to state how a certain word is intended.
+As a result, while tags are great for to informally annotate properties whose meaning is already known to the user, they are not an effective mechanism for communicating semantic information in a consistent and interpretable manner fierro2019beyond.
+
+You may want to review the section on Inference to understand how an external software reasoner supports use of a Brick model.
+
+## Querying Tags
+
+Tags are instances of the brick:Tag class, and are defined as part of the Brick distribution in the namespace (commonly abbreviated as tag:`).
+The full set of Brick tags can be retrieved with the following SPARQL query:
+
+### Tags and Brick Classes
+
+Most, if not all, Brick classes have a set of associated tags, which will be "inherited" by any Brick entity which is an instance of that class.
+Tags are related to a Brick class via the brick:hasAssociatedTag relationship.
+For example, to fetch the tags associated with the brick:Zone_Air_Temperature_Sensor class, execute the following query:
+
+### Tags and Brick Entities
+
+After inference is applied to a Brick model, Brick entities will inherit tags from their Brick classes.
+These inferred tags are related to the Brick entity via the brick:hasTag relationship.
+The set of tags associated with a Brick entity will be the union of the tags associated with each of the classes it instantiates.
+
+For example, consider an instance of brick:Zone_Air_Temperature_Sensor in a Brick model (before inference is applied):
+
+After inference, the model will consist of the following:
+
+To retrieve the set of tags associated with a specific entity, use the following query (remembering to apply inference first):
+
+### Finding Stuff with Tags
+
+The primary use case of tags is as a form of "keyword search".
+Memorizing the whole Brick schema is neither tractable nor expected; tags can be used by user interfaces, automated tools or users themselves to help guide or direct a search for relevant classes or entities in a Brick model.
+
+To find all classes with a given tag (helpful for figuring out which class to use for a new entity), use a variation of the following query (this example finds all classes with the air and temperature tags):
+
+To find all instances with a given tag, remember to apply inference, and then execute a query like:
+
+## Tag Inference Implementation
+
+Coming soon...
+
+## References

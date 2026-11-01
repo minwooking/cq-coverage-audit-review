@@ -1,0 +1,14 @@
+# Study 2 (addendum 32) -- deviations and implementation notes (after the plan commit 678d938)
+
+LLM-labeled; not human-validated beyond Stage 1. None of these changes a view rule, persona, rubric text, rule, gate, threshold, cell set or statistic of `PLAN.md`.
+
+1. **Qwen (secondary labeler) route down, 2026-10-19 00:47-00:50 UTC.** The local <internal-proxy> gateway answered every request with HTTP 502 "unknown certificate verification error" (7 calls, the five-consecutive-failure stop rule fired), and the shared server did not answer SSH (banner timeout). Nothing was touched on that host (GPUs 2, 3 and 4 included). Qwen is recorded as down for Stage 1; the 7 failed call records stay in `raw/qwen_stage1.jsonl` (status `error`, not labels). The verdict never depended on Qwen (PLAN 32.6).
+2. **Code commit order, split by stage.** PLAN 32.3 step 2 lists all code before any model call. The Stage 1 code (views, runner, analyzer, tests) was committed before the first Stage 1 call (commit f1fe1bf). The Stage 2 code (`audit_bank.py`, `s2_stage2.py`, `s2_stage2_analysis.py`, `s2_report.py`, their tests) is committed before the first Stage 2 call (bank audit, freeze, eligibility, judge scoring), not before Stage 1; it does not touch Stage 1 data.
+3. **Concurrency.** The planned probe over {16, 24, 32} on real Stage 1 calls was replaced by the result of the same probe of addendum 30 (amendment A1: GLM flat above 16 workers, gpt-oss still rising to 32): `glm` 16 workers, `gptoss` 24. Throughput is in `PROGRESS.md`. No rule depends on it.
+4. **Judge-span evidence in the Stage 2 view.** PLAN 32.4 B says "the evidence of each audited judge, union". Implemented as the distinct evidence strings of all valid repeats (up to 3 per judge) of both judges. The verbatim-span check uses the evidence of the repeat that carries the median score.
+5. **Scorer flag name.** The judge scorer of addendum 26 is imported unchanged; its worker cap (3) is raised at run time (`MAX_WORKERS = 32`) and its confirmation flag keeps its historical name `--confirm-addendum26-frozen`.
+6. **View term coverage.** The target of 90% in the plan is reported as measured; the ceiling set by the full rendering under the strict single-line test is reported next to it (REPORT_auto.md); no view parameter was changed after the measurement.
+
+## Addendum 33 (preserved controls, post hoc)
+
+1. The runner got one more `--stage` choice (`preserved`) and the manifest builder one function (`s2_cells.py preserved`); no view rule, persona, rubric text, rule or statistic changed. 2. Concurrency 8 per model (the Study 2 runs used 16 and 24) because the run is 300 calls per model. 3. gpt-oss-20b left one preserved control without a majority (a tie among its valid slots); it is counted as undefined in (a) and (c) and as consistent or not by its slots in (b).

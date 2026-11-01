@@ -1,0 +1,21 @@
+{
+  "variant_id": "D",
+  "description": "Upstream remediation added to C: pronoun and ungrounded-triple removal, deduplication, and label normalization before the incremental build.",
+  "comparison_role": "exploratory",
+  "generation_method": "B prerequisites, then uv run chunktograph refine-d ...; uv run chunktograph build-d ...",
+  "input_corpus": "paper/access2026/harness/brick_corpus.json",
+  "input_corpus_sha256": "68d6093f24bdc50ba179e69537eb9919fa09a55820cba7863475ab338e4b12f0",
+  "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8",
+  "endpoint_host": "<internal-host> (model server (local port))",
+  "temperature": 0.0,
+  "graph_file": "graph_D.ttl",
+  "graph_sha256": "268a748b8c15d1bc96ec16b503bcada62e49d8143b57ff617da4737cce3e4585",
+  "rendered_view_file": "rendered_view.txt",
+  "rendered_view_sha256": "ac689ff4db929896e0efa33f3983852cb7cd1ca8941731dabd531772dc09c22e",
+  "rendered_view_lines": 4588,
+  "rendered_view_chars": 2402874,
+  "rendering_spec_sha256": "eb0399af5152ac001074f1a0c27b23652a42a2f9ceeebf95a669abf703ec0a3e",
+  "SIMULATED": true,
+  "simulation_warning": "Generated with the PREREG.md-registered extraction-loop model (Qwen/Qwen3-Next-80B-A3B-Instruct-FP8, served on the internal a shared server), replacing the earlier qwen-next-flash preparation artifact. Exploratory (not a registered confirmatory contrast); still marked SIMULATED because the judge holdout has not been run.",
+  "generated_utc": "2026-09-20T22:30:48.797189+00:00"
+}

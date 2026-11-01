@@ -1,0 +1,21 @@
+{
+ "model": "gptoss",
+ "stage": "preserved",
+ "window": 65536,
+ "prompt_tokens": {
+  "preserved_control:A:CQB11": 15895,
+  "preserved_control:B:CQB01": 27421,
+  "preserved_control:C:CQB08": 9710,
+  "preserved_control:C:CQB09": 28028,
+  "preserved_control:D:CQB03": 5579,
+  "preserved_control:D:CQB29": 24830,
+  "preserved_control:E:CQB20": 2335,
+  "preserved_control:E:CQB36": 3001,
+  "preserved_control:F:CQB03": 6467,
+  "preserved_control:F:CQB04": 14910,
+  "preserved_control:F:CQB20": 2335,
+  "preserved_control:F:CQB31": 2365
+ },
+ "max_prompt_tokens": 28028,
+ "over_context": []
+}

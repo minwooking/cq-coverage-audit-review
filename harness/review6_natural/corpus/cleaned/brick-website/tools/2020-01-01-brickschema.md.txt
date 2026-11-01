@@ -1,0 +1,54 @@
+- Documentation
+- Source Code
+
+## Features
+
+- wrapper around RDFlib providing syntactic sugar and simplified use
+- automatic loading of Brick ontology into graphs
+- embedded SPARQL server and web interface
+- built-in reasoning and inference (OWL, SHACL, RDFS)
+
+## Quickstart
+
+The main Graph object is just a subclass of the excellent RDFlib Graph library, so all features on rdflib.Graph will also work here.
+
+Brief overview of the main features of the brickschema package:
+
+## Features
+
+## Inference
+
+brickschema makes it easier to employ reasoning on your graphs. Simply call the expand method on the Graph object with one of the following profiles:
+- "rdfs": RDFS reasoning
+- "owlrl": OWL-RL reasoning (using 1 of 3 implementations below)
+- "vbis": add VBIS tags to Brick entities
+- "tag": infer Brick classes from Brick tags
+
+The package will automatically use the fastest available reasoning implementation for your system:
+
+- reasonable (fastest, Linux-only for now): pip install brickschema[reasonable]
+- Allegro (next-fastest, requires Docker): pip install brickschema[allegro]
+- OWLRL (default, native Python implementation): pip install brickschema
+
+To use a specific reasoner, specify "reasonable", "allegrograph" or "owlrl" as the value for the backend argument to graph.expand.
+
+## Haystack Translation
+
+brickschema can produce a Brick model from a JSON export of a Haystack model.
+Then you can use this package as follows:
+
+## VBIS Translation
+
+brickschema can add VBIS tags to a Brick model easily
+
+## Web-based Interaction
+
+brickschema now supports interacting with a Graph object in a web browser. Executing g.serve( ) on a graph object from your Python script or interpreter will start a webserver listening (by default) at . This uses Yasgui to provide a simple web interface supporting SPARQL queries and inference.
+
+## Brick model validation
+
+The module utilizes the pySHACL package to validate a building ontology against the Brick Schema, its default constraints (shapes) and user provided shapes.
+
+The module provides a command
+brick_validate similar to the pyshacl command. The following command is functionally
+equivalent to the code above.

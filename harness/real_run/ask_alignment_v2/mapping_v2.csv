@@ -1,0 +1,415 @@
+variant,brick_term,brick_iri,brick_labels,status,rule,ct_iri,n_candidates_at_rule,candidates_at_rule,alternate_candidates,used_by_cqs
+A,brick:Alarm,https://brickschema.org/schema/Brick#Alarm,Alarm,mapped,local_exact,http://example.org/chunktograph#Alarm,1,Alarm,,CQB08|CQB11
+A,brick:Building,https://brickschema.org/schema/Brick#Building,Building,mapped,local_exact,http://example.org/chunktograph#Building,1,Building,,CQB10|CQB12
+A,brick:Camera,https://brickschema.org/schema/Brick#Camera,Camera,mapped,local_exact,http://example.org/chunktograph#Camera,1,Camera,,CQB09
+A,brick:Command,https://brickschema.org/schema/Brick#Command,Command,mapped,local_exact,http://example.org/chunktograph#Command,1,Command,,CQB08|CQB11
+A,brick:Electrical_Equipment,https://brickschema.org/schema/Brick#Electrical_Equipment,Electrical Equipment,mapped,local_exact,http://example.org/chunktograph#Electrical_Equipment,1,Electrical_Equipment,,CQB09
+A,brick:Elevator,https://brickschema.org/schema/Brick#Elevator,Elevator,mapped,local_exact,http://example.org/chunktograph#Elevator,1,Elevator,,CQB09
+A,brick:EntityProperty,https://brickschema.org/schema/Brick#EntityProperty,,unmapped,,,0,,,CQB21|CQB23
+A,brick:Equipment,https://brickschema.org/schema/Brick#Equipment,Equipment,mapped,local_exact,http://example.org/chunktograph#Equipment,1,Equipment,,CQB02|CQB09
+A,brick:Floor,https://brickschema.org/schema/Brick#Floor,Floor,mapped,local_exact,http://example.org/chunktograph#Floor,1,Floor,,CQB12
+A,brick:Furniture,https://brickschema.org/schema/Brick#Furniture,Furniture,mapped,local_exact,http://example.org/chunktograph#Furniture,1,Furniture,,CQB09
+A,brick:HVAC_Equipment,https://brickschema.org/schema/Brick#HVAC_Equipment,HVAC Equipment,mapped,local_exact,http://example.org/chunktograph#HVAC_Equipment,1,HVAC_Equipment,label_to_local=Hvac_Equipment;local_joined=Hvac_Equipment;local_normalized=Hvac_Equipment,CQB09
+A,brick:Lighting_Equipment,https://brickschema.org/schema/Brick#Lighting_Equipment,Lighting Equipment,mapped,local_exact,http://example.org/chunktograph#Lighting_Equipment,1,Lighting_Equipment,,CQB09
+A,brick:Location,https://brickschema.org/schema/Brick#Location,Location,mapped,local_exact,http://example.org/chunktograph#Location,1,Location,,CQB10|CQB12
+A,brick:Meter,https://brickschema.org/schema/Brick#Meter,Meter,mapped,local_exact,http://example.org/chunktograph#Meter,1,Meter,,CQB02|CQB09
+A,brick:Motor,https://brickschema.org/schema/Brick#Motor,Motor,mapped,local_exact,http://example.org/chunktograph#Motor,1,Motor,,CQB09
+A,brick:Outdoor_Area,https://brickschema.org/schema/Brick#Outdoor_Area,Outdoor Area,mapped,local_exact,http://example.org/chunktograph#Outdoor_Area,1,Outdoor_Area,,CQB12
+A,brick:Outside,https://brickschema.org/schema/Brick#Outside,Outside,mapped,local_exact,http://example.org/chunktograph#Outside,1,Outside,,CQB12
+A,brick:Parameter,https://brickschema.org/schema/Brick#Parameter,Parameter,mapped,local_exact,http://example.org/chunktograph#Parameter,1,Parameter,,CQB08|CQB11
+A,brick:Point,https://brickschema.org/schema/Brick#Point,Point,mapped,local_exact,http://example.org/chunktograph#Point,1,Point,,CQB07|CQB08
+A,brick:Quantity,https://brickschema.org/schema/Brick#Quantity,Quantity,mapped,local_exact,http://example.org/chunktograph#Quantity,1,Quantity,,CQB24
+A,brick:Region,https://brickschema.org/schema/Brick#Region,Region,mapped,local_exact,http://example.org/chunktograph#Region,1,Region,label=region;label_to_local=region;local_joined=region;local_normalized=region,CQB12
+A,brick:Sensor,https://brickschema.org/schema/Brick#Sensor,Sensor,mapped,local_exact,http://example.org/chunktograph#Sensor,1,Sensor,,CQB01|CQB07|CQB08|CQB11
+A,brick:Setpoint,https://brickschema.org/schema/Brick#Setpoint,Setpoint,mapped,local_exact,http://example.org/chunktograph#Setpoint,1,Setpoint,,CQB08|CQB11
+A,brick:Site,https://brickschema.org/schema/Brick#Site,Site,mapped,local_exact,http://example.org/chunktograph#Site,1,Site,,CQB12
+A,brick:Space,https://brickschema.org/schema/Brick#Space,Space,mapped,local_exact,http://example.org/chunktograph#Space,1,Space,,CQB12
+A,brick:Status,https://brickschema.org/schema/Brick#Status,Status,mapped,local_exact,http://example.org/chunktograph#Status,1,Status,label=status;label_to_local=status;local_joined=status;local_normalized=status,CQB08|CQB11
+A,brick:Storey,https://brickschema.org/schema/Brick#Storey,Storey,mapped,local_exact,http://example.org/chunktograph#Storey,1,Storey,,CQB12
+A,brick:Tag,https://brickschema.org/schema/Brick#Tag,Tag,mapped,local_exact,http://example.org/chunktograph#Tag,1,Tag,,CQB18
+A,brick:Tank,https://brickschema.org/schema/Brick#Tank,Tank,mapped,local_exact,http://example.org/chunktograph#Tank,1,Tank,,CQB09
+A,brick:Valve,https://brickschema.org/schema/Brick#Valve,Valve,mapped,local_exact,http://example.org/chunktograph#Valve,1,Valve,,CQB09
+A,brick:Wing,https://brickschema.org/schema/Brick#Wing,Wing,mapped,local_exact,http://example.org/chunktograph#Wing,1,Wing,,CQB12
+A,brick:Zone,https://brickschema.org/schema/Brick#Zone,Zone,mapped,local_exact,http://example.org/chunktograph#Zone,1,Zone,,CQB04|CQB12
+A,brick:buildingPrimaryFunction,https://brickschema.org/schema/Brick#buildingPrimaryFunction,Building primary function,mapped,label,http://example.org/chunktograph#brick_buildingPrimaryFunction,1,brick_buildingPrimaryFunction,,CQB22
+A,brick:deprecation,https://brickschema.org/schema/Brick#deprecation,Deprecation Notice,mapped,ns_prefixed_local,http://example.org/chunktograph#brick_deprecation,1,brick_deprecation,,CQB32
+A,brick:deprecationMitigationRule,https://brickschema.org/schema/Brick#deprecationMitigationRule,deprecationMitigationRule,mapped,label,http://example.org/chunktograph#brick_deprecationMitigationRule,1,brick_deprecationMitigationRule,,CQB32
+A,brick:feeds,https://brickschema.org/schema/Brick#feeds,Feeds,mapped,label,http://example.org/chunktograph#brick_feeds,1,brick_feeds,,CQB15
+A,brick:grossArea,https://brickschema.org/schema/Brick#grossArea,Gross area,mapped,local_exact,http://example.org/chunktograph#grossArea,1,grossArea,label=brick_grossArea;ns_prefixed_local=brick_grossArea,CQB21
+A,brick:hasAssociatedTag,https://brickschema.org/schema/Brick#hasAssociatedTag,Has associated tag,mapped,label,http://example.org/chunktograph#brick_hasAssociatedTag,1,brick_hasAssociatedTag,,CQB18
+A,brick:hasLocation,https://brickschema.org/schema/Brick#hasLocation,Has location,mapped,label,http://example.org/chunktograph#brick_hasLocation,1,brick_hasLocation,,CQB14|CQB17
+A,brick:hasPart,https://brickschema.org/schema/Brick#hasPart,Has part,mapped,local_exact,http://example.org/chunktograph#hasPart,1,hasPart,label=brick_hasPart;ns_prefixed_local=brick_hasPart,CQB16
+A,brick:hasPoint,https://brickschema.org/schema/Brick#hasPoint,Has point,mapped,local_exact,http://example.org/chunktograph#hasPoint,1,hasPoint,label=brick_hasPoint;ns_prefixed_local=brick_hasPoint,CQB13
+A,brick:hasQUDTReference,https://brickschema.org/schema/Brick#hasQUDTReference,Has QUDT reference,mapped,label,http://example.org/chunktograph#brick_hasQUDTReference,1,brick_hasQUDTReference,,CQB35|CQB36
+A,brick:hasQuantity,https://brickschema.org/schema/Brick#hasQuantity,Has Quantity,mapped,label,http://example.org/chunktograph#brick_hasQuantity,1,brick_hasQuantity,,CQB24|CQB35
+A,brick:hasSubMeter,https://brickschema.org/schema/Brick#hasSubMeter,has sub-meter,mapped,label,http://example.org/chunktograph#brick_hasSubMeter,1,brick_hasSubMeter,,CQB33
+A,brick:hasUnit,https://brickschema.org/schema/Brick#hasUnit,Has unit,mapped,label,http://example.org/chunktograph#brick_hasUnit,1,brick_hasUnit,,CQB19
+A,brick:isAssociatedWith,https://brickschema.org/schema/Brick#isAssociatedWith,Is associated with,mapped,label,http://example.org/chunktograph#brick_isAssociatedWith,1,brick_isAssociatedWith,,CQB18
+A,brick:isFedBy,https://brickschema.org/schema/Brick#isFedBy,Is fed by,mapped,local_exact,http://example.org/chunktograph#isFedBy,1,isFedBy,label=brick_isFedBy;ns_prefixed_local=brick_isFedBy,CQB15
+A,brick:isLocationOf,https://brickschema.org/schema/Brick#isLocationOf,Is location of,mapped,local_exact,http://example.org/chunktograph#isLocationOf,1,isLocationOf,label=brick_isLocationOf;ns_prefixed_local=brick_isLocationOf,CQB14|CQB17
+A,brick:isPartOf,https://brickschema.org/schema/Brick#isPartOf,Is part of,mapped,local_exact,http://example.org/chunktograph#isPartOf,1,isPartOf,label=brick_isPartOf;ns_prefixed_local=brick_isPartOf,CQB16
+A,brick:isPointOf,https://brickschema.org/schema/Brick#isPointOf,Is point of,mapped,label,http://example.org/chunktograph#brick_isPointOf,1,brick_isPointOf,,CQB13
+A,brick:isReplacedBy,https://brickschema.org/schema/Brick#isReplacedBy,Is replaced by,mapped,label,http://example.org/chunktograph#brick_isReplacedBy,1,brick_isReplacedBy,,CQB32
+A,brick:isSubMeterOf,https://brickschema.org/schema/Brick#isSubMeterOf,is sub-meter of,mapped,label,http://example.org/chunktograph#brick_isSubMeterOf,1,brick_isSubMeterOf,,CQB33
+A,brick:isVirtualMeter,https://brickschema.org/schema/Brick#isVirtualMeter,is virtual meter,mapped,label,http://example.org/chunktograph#brick_isVirtualMeter,1,brick_isVirtualMeter,,CQB33
+A,brick:lastKnownValue,https://brickschema.org/schema/Brick#lastKnownValue,Last known value,mapped,label,http://example.org/chunktograph#brick_lastKnownValue,1,brick_lastKnownValue,,CQB20
+A,brick:yearBuilt,https://brickschema.org/schema/Brick#yearBuilt,Year built,mapped,label,http://example.org/chunktograph#brick_yearBuilt,1,brick_yearBuilt,,CQB23
+A,qudt:hasQuantityKind,http://qudt.org/schema/qudt/hasQuantityKind,,unmapped,,,0,,,CQB24
+A,rec:ArchitectureArea,https://w3id.org/rec#ArchitectureArea,Architecture area,mapped,local_exact,http://example.org/chunktograph#ArchitectureArea,1,ArchitectureArea,,CQB31
+A,rec:Asset,https://w3id.org/rec#Asset,Asset,mapped,local_exact,http://example.org/chunktograph#Asset,1,Asset,,CQB03
+A,rec:BuildingElement,https://w3id.org/rec#BuildingElement,Building element,mapped,local_exact,http://example.org/chunktograph#BuildingElement,1,BuildingElement,,CQB25
+A,rec:Campus,https://w3id.org/rec#Campus,Campus,mapped,local_exact,http://example.org/chunktograph#Campus,1,Campus,,CQB05
+A,rec:Collection,https://w3id.org/rec#Collection,Collection,mapped,local_exact,http://example.org/chunktograph#Collection,1,Collection,,CQB34
+A,rec:Event,https://w3id.org/rec#Event,Event,mapped,local_exact,http://example.org/chunktograph#Event,1,Event,,CQB26
+A,rec:Georeference,https://w3id.org/rec#Georeference,Georeference,mapped,local_exact,http://example.org/chunktograph#Georeference,1,Georeference,label=georeference;label_to_local=georeference;local_joined=georeference;local_normalized=georeference,CQB06
+A,rec:Organization,https://w3id.org/rec#Organization,Organization,mapped,local_exact,http://example.org/chunktograph#Organization,1,Organization,,CQB28
+A,rec:PointEvent,https://w3id.org/rec#PointEvent,Point event,mapped,local_exact,http://example.org/chunktograph#PointEvent,1,PointEvent,,CQB27
+A,rec:Portfolio,https://w3id.org/rec#Portfolio,Portfolio,mapped,local_exact,http://example.org/chunktograph#Portfolio,1,Portfolio,,CQB30
+A,rec:Space,https://w3id.org/rec#Space,Space,mapped,local_exact,http://example.org/chunktograph#Space,1,Space,,CQB29
+A,rec:locatedIn,https://w3id.org/rec#locatedIn,locatedIn,mapped,local_exact,http://example.org/chunktograph#locatedIn,1,locatedIn,,CQB17
+A,ref:hasExternalReference,https://brickschema.org/schema/Brick/ref#hasExternalReference,hasExternalReference,mapped,local_exact,http://example.org/chunktograph#hasExternalReference,1,hasExternalReference,,CQB36
+B,brick:Alarm,https://brickschema.org/schema/Brick#Alarm,Alarm,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-alarm,1,brick-alarm,,CQB08|CQB11
+B,brick:Building,https://brickschema.org/schema/Brick#Building,Building,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-building,1,brick-building,,CQB10|CQB12
+B,brick:Camera,https://brickschema.org/schema/Brick#Camera,Camera,mapped,local_normalized,http://example.org/chunktograph#camera,1,camera,ns_prefixed_local=brick-camera,CQB09
+B,brick:Command,https://brickschema.org/schema/Brick#Command,Command,mapped,local_normalized,http://example.org/chunktograph#command,1,command,ns_prefixed_local=brick-command,CQB08|CQB11
+B,brick:Electrical_Equipment,https://brickschema.org/schema/Brick#Electrical_Equipment,Electrical Equipment,mapped,local_normalized,http://example.org/chunktograph#electrical-equipment,1,electrical-equipment,ns_prefixed_local=brick-electrical-equipment,CQB09
+B,brick:Elevator,https://brickschema.org/schema/Brick#Elevator,Elevator,mapped,local_normalized,http://example.org/chunktograph#elevator,1,elevator,ns_prefixed_local=brick-elevator,CQB09
+B,brick:EntityProperty,https://brickschema.org/schema/Brick#EntityProperty,,unmapped,,,0,,,CQB21|CQB23
+B,brick:Equipment,https://brickschema.org/schema/Brick#Equipment,Equipment,mapped,local_normalized,http://example.org/chunktograph#equipment,1,equipment,ns_prefixed_local=brick-equipment,CQB02|CQB09
+B,brick:Floor,https://brickschema.org/schema/Brick#Floor,Floor,mapped,local_normalized,http://example.org/chunktograph#floor,1,floor,ns_prefixed_local=brick-floor,CQB12
+B,brick:Furniture,https://brickschema.org/schema/Brick#Furniture,Furniture,mapped,local_normalized,http://example.org/chunktograph#furniture,1,furniture,ns_prefixed_local=brick-furniture,CQB09
+B,brick:HVAC_Equipment,https://brickschema.org/schema/Brick#HVAC_Equipment,HVAC Equipment,mapped,local_normalized,http://example.org/chunktograph#hvac-equipment,1,hvac-equipment,ns_prefixed_local=brick-hvac-equipment,CQB09
+B,brick:Lighting_Equipment,https://brickschema.org/schema/Brick#Lighting_Equipment,Lighting Equipment,mapped,local_normalized,http://example.org/chunktograph#lighting-equipment,1,lighting-equipment,ns_prefixed_local=brick-lighting-equipment,CQB09
+B,brick:Location,https://brickschema.org/schema/Brick#Location,Location,mapped,local_normalized,http://example.org/chunktograph#location,1,location,ns_prefixed_local=brick-location,CQB10|CQB12
+B,brick:Meter,https://brickschema.org/schema/Brick#Meter,Meter,mapped,local_normalized,http://example.org/chunktograph#meter,1,meter,ns_prefixed_local=brick-meter,CQB02|CQB09
+B,brick:Motor,https://brickschema.org/schema/Brick#Motor,Motor,mapped,local_normalized,http://example.org/chunktograph#motor,1,motor,ns_prefixed_local=brick-motor,CQB09
+B,brick:Outdoor_Area,https://brickschema.org/schema/Brick#Outdoor_Area,Outdoor Area,mapped,local_normalized,http://example.org/chunktograph#outdoor-area,1,outdoor-area,ns_prefixed_local=brick-outdoor-area,CQB12
+B,brick:Outside,https://brickschema.org/schema/Brick#Outside,Outside,mapped,local_normalized,http://example.org/chunktograph#outside,1,outside,ns_prefixed_local=brick-outside,CQB12
+B,brick:Parameter,https://brickschema.org/schema/Brick#Parameter,Parameter,mapped,local_normalized,http://example.org/chunktograph#parameter,1,parameter,ns_prefixed_local=brick-parameter,CQB08|CQB11
+B,brick:Point,https://brickschema.org/schema/Brick#Point,Point,mapped,local_normalized,http://example.org/chunktograph#point,1,point,ns_prefixed_local=brick-point,CQB07|CQB08
+B,brick:Quantity,https://brickschema.org/schema/Brick#Quantity,Quantity,mapped,local_normalized,http://example.org/chunktograph#quantity,1,quantity,ns_prefixed_local=brick-quantity,CQB24
+B,brick:Region,https://brickschema.org/schema/Brick#Region,Region,mapped,local_normalized,http://example.org/chunktograph#region,1,region,ns_prefixed_local=brick-region,CQB12
+B,brick:Sensor,https://brickschema.org/schema/Brick#Sensor,Sensor,mapped,local_normalized,http://example.org/chunktograph#sensor,1,sensor,ns_prefixed_local=brick-sensor,CQB01|CQB07|CQB08|CQB11
+B,brick:Setpoint,https://brickschema.org/schema/Brick#Setpoint,Setpoint,mapped,local_normalized,http://example.org/chunktograph#setpoint,1,setpoint,ns_prefixed_local=brick-setpoint,CQB08|CQB11
+B,brick:Site,https://brickschema.org/schema/Brick#Site,Site,mapped,local_normalized,http://example.org/chunktograph#site,1,site,ns_prefixed_local=brick-site,CQB12
+B,brick:Space,https://brickschema.org/schema/Brick#Space,Space,mapped,local_normalized,http://example.org/chunktograph#space,1,space,ns_prefixed_local=brick-space,CQB12
+B,brick:Status,https://brickschema.org/schema/Brick#Status,Status,mapped,local_normalized,http://example.org/chunktograph#status,1,status,ns_prefixed_local=brick-status,CQB08|CQB11
+B,brick:Storey,https://brickschema.org/schema/Brick#Storey,Storey,mapped,local_normalized,http://example.org/chunktograph#storey,1,storey,ns_prefixed_local=brick-storey,CQB12
+B,brick:Tag,https://brickschema.org/schema/Brick#Tag,Tag,mapped,local_normalized,http://example.org/chunktograph#tag,1,tag,ns_prefixed_local=brick-tag,CQB18
+B,brick:Tank,https://brickschema.org/schema/Brick#Tank,Tank,mapped,local_normalized,http://example.org/chunktograph#tank,1,tank,ns_prefixed_local=brick-tank,CQB09
+B,brick:Valve,https://brickschema.org/schema/Brick#Valve,Valve,mapped,local_normalized,http://example.org/chunktograph#valve,1,valve,ns_prefixed_local=brick-valve,CQB09
+B,brick:Wing,https://brickschema.org/schema/Brick#Wing,Wing,mapped,local_normalized,http://example.org/chunktograph#wing,1,wing,ns_prefixed_local=brick-wing,CQB12
+B,brick:Zone,https://brickschema.org/schema/Brick#Zone,Zone,mapped,local_normalized,http://example.org/chunktograph#zone,1,zone,ns_prefixed_local=brick-zone,CQB04|CQB12
+B,brick:buildingPrimaryFunction,https://brickschema.org/schema/Brick#buildingPrimaryFunction,Building primary function,unmapped,,,0,,,CQB22
+B,brick:deprecation,https://brickschema.org/schema/Brick#deprecation,Deprecation Notice,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-deprecation,1,brick-deprecation,,CQB32
+B,brick:deprecationMitigationRule,https://brickschema.org/schema/Brick#deprecationMitigationRule,deprecationMitigationRule,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-deprecationmitigationrule,1,brick-deprecationmitigationrule,,CQB32
+B,brick:feeds,https://brickschema.org/schema/Brick#feeds,Feeds,unmapped,,,0,,,CQB15
+B,brick:grossArea,https://brickschema.org/schema/Brick#grossArea,Gross area,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-grossarea,1,brick-grossarea,,CQB21
+B,brick:hasAssociatedTag,https://brickschema.org/schema/Brick#hasAssociatedTag,Has associated tag,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasassociatedtag,1,brick-hasassociatedtag,,CQB18
+B,brick:hasLocation,https://brickschema.org/schema/Brick#hasLocation,Has location,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haslocation,1,brick-haslocation,,CQB14|CQB17
+B,brick:hasPart,https://brickschema.org/schema/Brick#hasPart,Has part,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haspart,1,brick-haspart,,CQB16
+B,brick:hasPoint,https://brickschema.org/schema/Brick#hasPoint,Has point,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haspoint,1,brick-haspoint,,CQB13
+B,brick:hasQUDTReference,https://brickschema.org/schema/Brick#hasQUDTReference,Has QUDT reference,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasqudtreference,1,brick-hasqudtreference,,CQB35|CQB36
+B,brick:hasQuantity,https://brickschema.org/schema/Brick#hasQuantity,Has Quantity,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasquantity,1,brick-hasquantity,,CQB24|CQB35
+B,brick:hasSubMeter,https://brickschema.org/schema/Brick#hasSubMeter,has sub-meter,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hassubmeter,1,brick-hassubmeter,,CQB33
+B,brick:hasUnit,https://brickschema.org/schema/Brick#hasUnit,Has unit,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasunit,1,brick-hasunit,,CQB19
+B,brick:isAssociatedWith,https://brickschema.org/schema/Brick#isAssociatedWith,Is associated with,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-isassociatedwith,1,brick-isassociatedwith,,CQB18
+B,brick:isFedBy,https://brickschema.org/schema/Brick#isFedBy,Is fed by,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-isfedby,1,brick-isfedby,,CQB15
+B,brick:isLocationOf,https://brickschema.org/schema/Brick#isLocationOf,Is location of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-islocationof,1,brick-islocationof,,CQB14|CQB17
+B,brick:isPartOf,https://brickschema.org/schema/Brick#isPartOf,Is part of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-ispartof,1,brick-ispartof,,CQB16
+B,brick:isPointOf,https://brickschema.org/schema/Brick#isPointOf,Is point of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-ispointof,1,brick-ispointof,,CQB13
+B,brick:isReplacedBy,https://brickschema.org/schema/Brick#isReplacedBy,Is replaced by,unmapped,,,0,,,CQB32
+B,brick:isSubMeterOf,https://brickschema.org/schema/Brick#isSubMeterOf,is sub-meter of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-issubmeterof,1,brick-issubmeterof,,CQB33
+B,brick:isVirtualMeter,https://brickschema.org/schema/Brick#isVirtualMeter,is virtual meter,unmapped,,,0,,,CQB33
+B,brick:lastKnownValue,https://brickschema.org/schema/Brick#lastKnownValue,Last known value,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-lastknownvalue,1,brick-lastknownvalue,,CQB20
+B,brick:yearBuilt,https://brickschema.org/schema/Brick#yearBuilt,Year built,unmapped,,,0,,,CQB23
+B,qudt:hasQuantityKind,http://qudt.org/schema/qudt/hasQuantityKind,,unmapped,,,0,,,CQB24
+B,rec:ArchitectureArea,https://w3id.org/rec#ArchitectureArea,Architecture area,mapped,local_normalized,http://example.org/chunktograph#architecture-area,1,architecture-area,ns_prefixed_local=rec-architecturearea,CQB31
+B,rec:Asset,https://w3id.org/rec#Asset,Asset,mapped,local_normalized,http://example.org/chunktograph#asset,1,asset,ns_prefixed_local=rec-asset,CQB03
+B,rec:BuildingElement,https://w3id.org/rec#BuildingElement,Building element,mapped,local_normalized,http://example.org/chunktograph#building-element,1,building-element,ns_prefixed_local=rec-buildingelement,CQB25
+B,rec:Campus,https://w3id.org/rec#Campus,Campus,mapped,local_normalized,http://example.org/chunktograph#campus,1,campus,ns_prefixed_local=rec-campus,CQB05
+B,rec:Collection,https://w3id.org/rec#Collection,Collection,mapped,local_normalized,http://example.org/chunktograph#collection,1,collection,ns_prefixed_local=rec-collection,CQB34
+B,rec:Event,https://w3id.org/rec#Event,Event,mapped,local_normalized,http://example.org/chunktograph#event,1,event,ns_prefixed_local=rec-event,CQB26
+B,rec:Georeference,https://w3id.org/rec#Georeference,Georeference,mapped,local_normalized,http://example.org/chunktograph#georeference,1,georeference,ns_prefixed_local=rec-georeference,CQB06
+B,rec:Organization,https://w3id.org/rec#Organization,Organization,mapped,local_normalized,http://example.org/chunktograph#organization,1,organization,ns_prefixed_local=rec-organization,CQB28
+B,rec:PointEvent,https://w3id.org/rec#PointEvent,Point event,mapped,local_normalized,http://example.org/chunktograph#point-event,1,point-event,ns_prefixed_local=rec-pointevent,CQB27
+B,rec:Portfolio,https://w3id.org/rec#Portfolio,Portfolio,mapped,local_normalized,http://example.org/chunktograph#portfolio,1,portfolio,ns_prefixed_local=rec-portfolio,CQB30
+B,rec:Space,https://w3id.org/rec#Space,Space,mapped,local_normalized,http://example.org/chunktograph#space,1,space,ns_prefixed_local=rec-space,CQB29
+B,rec:locatedIn,https://w3id.org/rec#locatedIn,locatedIn,mapped,ns_prefixed_local,http://example.org/chunktograph#rec-locatedin,1,rec-locatedin,,CQB17
+B,ref:hasExternalReference,https://brickschema.org/schema/Brick/ref#hasExternalReference,hasExternalReference,mapped,ns_prefixed_local,http://example.org/chunktograph#ref-hasexternalreference,1,ref-hasexternalreference,,CQB36
+C,brick:Alarm,https://brickschema.org/schema/Brick#Alarm,Alarm,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-alarm,1,brick-alarm,,CQB08|CQB11
+C,brick:Building,https://brickschema.org/schema/Brick#Building,Building,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-building,1,brick-building,,CQB10|CQB12
+C,brick:Camera,https://brickschema.org/schema/Brick#Camera,Camera,mapped,local_normalized,http://example.org/chunktograph#camera,1,camera,ns_prefixed_local=brick-camera,CQB09
+C,brick:Command,https://brickschema.org/schema/Brick#Command,Command,mapped,local_normalized,http://example.org/chunktograph#command,1,command,ns_prefixed_local=brick-command,CQB08|CQB11
+C,brick:Electrical_Equipment,https://brickschema.org/schema/Brick#Electrical_Equipment,Electrical Equipment,mapped,local_normalized,http://example.org/chunktograph#electrical-equipment,1,electrical-equipment,ns_prefixed_local=brick-electrical-equipment,CQB09
+C,brick:Elevator,https://brickschema.org/schema/Brick#Elevator,Elevator,mapped,local_normalized,http://example.org/chunktograph#elevator,1,elevator,ns_prefixed_local=brick-elevator,CQB09
+C,brick:EntityProperty,https://brickschema.org/schema/Brick#EntityProperty,,unmapped,,,0,,,CQB21|CQB23
+C,brick:Equipment,https://brickschema.org/schema/Brick#Equipment,Equipment,mapped,local_normalized,http://example.org/chunktograph#equipment,1,equipment,ns_prefixed_local=brick-equipment,CQB02|CQB09
+C,brick:Floor,https://brickschema.org/schema/Brick#Floor,Floor,mapped,local_normalized,http://example.org/chunktograph#floor,1,floor,ns_prefixed_local=brick-floor,CQB12
+C,brick:Furniture,https://brickschema.org/schema/Brick#Furniture,Furniture,mapped,local_normalized,http://example.org/chunktograph#furniture,1,furniture,ns_prefixed_local=brick-furniture,CQB09
+C,brick:HVAC_Equipment,https://brickschema.org/schema/Brick#HVAC_Equipment,HVAC Equipment,mapped,local_normalized,http://example.org/chunktograph#hvac-equipment,1,hvac-equipment,ns_prefixed_local=brick-hvac-equipment,CQB09
+C,brick:Lighting_Equipment,https://brickschema.org/schema/Brick#Lighting_Equipment,Lighting Equipment,mapped,local_normalized,http://example.org/chunktograph#lighting-equipment,1,lighting-equipment,ns_prefixed_local=brick-lighting-equipment,CQB09
+C,brick:Location,https://brickschema.org/schema/Brick#Location,Location,mapped,local_normalized,http://example.org/chunktograph#location,1,location,ns_prefixed_local=brick-location,CQB10|CQB12
+C,brick:Meter,https://brickschema.org/schema/Brick#Meter,Meter,mapped,local_normalized,http://example.org/chunktograph#meter,1,meter,ns_prefixed_local=brick-meter,CQB02|CQB09
+C,brick:Motor,https://brickschema.org/schema/Brick#Motor,Motor,mapped,local_normalized,http://example.org/chunktograph#motor,1,motor,ns_prefixed_local=brick-motor,CQB09
+C,brick:Outdoor_Area,https://brickschema.org/schema/Brick#Outdoor_Area,Outdoor Area,mapped,local_normalized,http://example.org/chunktograph#outdoor-area,1,outdoor-area,ns_prefixed_local=brick-outdoor-area,CQB12
+C,brick:Outside,https://brickschema.org/schema/Brick#Outside,Outside,mapped,local_normalized,http://example.org/chunktograph#outside,1,outside,ns_prefixed_local=brick-outside,CQB12
+C,brick:Parameter,https://brickschema.org/schema/Brick#Parameter,Parameter,mapped,local_normalized,http://example.org/chunktograph#parameter,1,parameter,ns_prefixed_local=brick-parameter,CQB08|CQB11
+C,brick:Point,https://brickschema.org/schema/Brick#Point,Point,mapped,local_normalized,http://example.org/chunktograph#point,1,point,ns_prefixed_local=brick-point,CQB07|CQB08
+C,brick:Quantity,https://brickschema.org/schema/Brick#Quantity,Quantity,mapped,local_normalized,http://example.org/chunktograph#quantity,1,quantity,ns_prefixed_local=brick-quantity,CQB24
+C,brick:Region,https://brickschema.org/schema/Brick#Region,Region,mapped,local_normalized,http://example.org/chunktograph#region,1,region,ns_prefixed_local=brick-region,CQB12
+C,brick:Sensor,https://brickschema.org/schema/Brick#Sensor,Sensor,mapped,local_normalized,http://example.org/chunktograph#sensor,1,sensor,ns_prefixed_local=brick-sensor,CQB01|CQB07|CQB08|CQB11
+C,brick:Setpoint,https://brickschema.org/schema/Brick#Setpoint,Setpoint,mapped,local_normalized,http://example.org/chunktograph#setpoint,1,setpoint,ns_prefixed_local=brick-setpoint,CQB08|CQB11
+C,brick:Site,https://brickschema.org/schema/Brick#Site,Site,mapped,local_normalized,http://example.org/chunktograph#site,1,site,ns_prefixed_local=brick-site,CQB12
+C,brick:Space,https://brickschema.org/schema/Brick#Space,Space,mapped,local_normalized,http://example.org/chunktograph#space,1,space,ns_prefixed_local=brick-space,CQB12
+C,brick:Status,https://brickschema.org/schema/Brick#Status,Status,mapped,local_normalized,http://example.org/chunktograph#status,1,status,ns_prefixed_local=brick-status,CQB08|CQB11
+C,brick:Storey,https://brickschema.org/schema/Brick#Storey,Storey,mapped,local_normalized,http://example.org/chunktograph#storey,1,storey,ns_prefixed_local=brick-storey,CQB12
+C,brick:Tag,https://brickschema.org/schema/Brick#Tag,Tag,mapped,local_normalized,http://example.org/chunktograph#tag,1,tag,ns_prefixed_local=brick-tag,CQB18
+C,brick:Tank,https://brickschema.org/schema/Brick#Tank,Tank,mapped,local_normalized,http://example.org/chunktograph#tank,1,tank,ns_prefixed_local=brick-tank,CQB09
+C,brick:Valve,https://brickschema.org/schema/Brick#Valve,Valve,mapped,local_normalized,http://example.org/chunktograph#valve,1,valve,ns_prefixed_local=brick-valve,CQB09
+C,brick:Wing,https://brickschema.org/schema/Brick#Wing,Wing,mapped,local_normalized,http://example.org/chunktograph#wing,1,wing,ns_prefixed_local=brick-wing,CQB12
+C,brick:Zone,https://brickschema.org/schema/Brick#Zone,Zone,mapped,local_normalized,http://example.org/chunktograph#zone,1,zone,ns_prefixed_local=brick-zone,CQB04|CQB12
+C,brick:buildingPrimaryFunction,https://brickschema.org/schema/Brick#buildingPrimaryFunction,Building primary function,unmapped,,,0,,,CQB22
+C,brick:deprecation,https://brickschema.org/schema/Brick#deprecation,Deprecation Notice,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-deprecation,1,brick-deprecation,,CQB32
+C,brick:deprecationMitigationRule,https://brickschema.org/schema/Brick#deprecationMitigationRule,deprecationMitigationRule,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-deprecationmitigationrule,1,brick-deprecationmitigationrule,,CQB32
+C,brick:feeds,https://brickschema.org/schema/Brick#feeds,Feeds,unmapped,,,0,,,CQB15
+C,brick:grossArea,https://brickschema.org/schema/Brick#grossArea,Gross area,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-grossarea,1,brick-grossarea,,CQB21
+C,brick:hasAssociatedTag,https://brickschema.org/schema/Brick#hasAssociatedTag,Has associated tag,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasassociatedtag,1,brick-hasassociatedtag,,CQB18
+C,brick:hasLocation,https://brickschema.org/schema/Brick#hasLocation,Has location,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haslocation,1,brick-haslocation,,CQB14|CQB17
+C,brick:hasPart,https://brickschema.org/schema/Brick#hasPart,Has part,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haspart,1,brick-haspart,,CQB16
+C,brick:hasPoint,https://brickschema.org/schema/Brick#hasPoint,Has point,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haspoint,1,brick-haspoint,,CQB13
+C,brick:hasQUDTReference,https://brickschema.org/schema/Brick#hasQUDTReference,Has QUDT reference,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasqudtreference,1,brick-hasqudtreference,,CQB35|CQB36
+C,brick:hasQuantity,https://brickschema.org/schema/Brick#hasQuantity,Has Quantity,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasquantity,1,brick-hasquantity,,CQB24|CQB35
+C,brick:hasSubMeter,https://brickschema.org/schema/Brick#hasSubMeter,has sub-meter,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hassubmeter,1,brick-hassubmeter,,CQB33
+C,brick:hasUnit,https://brickschema.org/schema/Brick#hasUnit,Has unit,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasunit,1,brick-hasunit,,CQB19
+C,brick:isAssociatedWith,https://brickschema.org/schema/Brick#isAssociatedWith,Is associated with,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-isassociatedwith,1,brick-isassociatedwith,,CQB18
+C,brick:isFedBy,https://brickschema.org/schema/Brick#isFedBy,Is fed by,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-isfedby,1,brick-isfedby,,CQB15
+C,brick:isLocationOf,https://brickschema.org/schema/Brick#isLocationOf,Is location of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-islocationof,1,brick-islocationof,,CQB14|CQB17
+C,brick:isPartOf,https://brickschema.org/schema/Brick#isPartOf,Is part of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-ispartof,1,brick-ispartof,,CQB16
+C,brick:isPointOf,https://brickschema.org/schema/Brick#isPointOf,Is point of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-ispointof,1,brick-ispointof,,CQB13
+C,brick:isReplacedBy,https://brickschema.org/schema/Brick#isReplacedBy,Is replaced by,unmapped,,,0,,,CQB32
+C,brick:isSubMeterOf,https://brickschema.org/schema/Brick#isSubMeterOf,is sub-meter of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-issubmeterof,1,brick-issubmeterof,,CQB33
+C,brick:isVirtualMeter,https://brickschema.org/schema/Brick#isVirtualMeter,is virtual meter,unmapped,,,0,,,CQB33
+C,brick:lastKnownValue,https://brickschema.org/schema/Brick#lastKnownValue,Last known value,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-lastknownvalue,1,brick-lastknownvalue,,CQB20
+C,brick:yearBuilt,https://brickschema.org/schema/Brick#yearBuilt,Year built,unmapped,,,0,,,CQB23
+C,qudt:hasQuantityKind,http://qudt.org/schema/qudt/hasQuantityKind,,unmapped,,,0,,,CQB24
+C,rec:ArchitectureArea,https://w3id.org/rec#ArchitectureArea,Architecture area,mapped,local_normalized,http://example.org/chunktograph#architecture-area,1,architecture-area,ns_prefixed_local=rec-architecturearea,CQB31
+C,rec:Asset,https://w3id.org/rec#Asset,Asset,mapped,local_normalized,http://example.org/chunktograph#asset,1,asset,ns_prefixed_local=rec-asset,CQB03
+C,rec:BuildingElement,https://w3id.org/rec#BuildingElement,Building element,mapped,local_normalized,http://example.org/chunktograph#building-element,1,building-element,ns_prefixed_local=rec-buildingelement,CQB25
+C,rec:Campus,https://w3id.org/rec#Campus,Campus,mapped,local_normalized,http://example.org/chunktograph#campus,1,campus,ns_prefixed_local=rec-campus,CQB05
+C,rec:Collection,https://w3id.org/rec#Collection,Collection,mapped,local_normalized,http://example.org/chunktograph#collection,1,collection,ns_prefixed_local=rec-collection,CQB34
+C,rec:Event,https://w3id.org/rec#Event,Event,mapped,local_normalized,http://example.org/chunktograph#event,1,event,ns_prefixed_local=rec-event,CQB26
+C,rec:Georeference,https://w3id.org/rec#Georeference,Georeference,mapped,local_normalized,http://example.org/chunktograph#georeference,1,georeference,ns_prefixed_local=rec-georeference,CQB06
+C,rec:Organization,https://w3id.org/rec#Organization,Organization,mapped,local_normalized,http://example.org/chunktograph#organization,1,organization,ns_prefixed_local=rec-organization,CQB28
+C,rec:PointEvent,https://w3id.org/rec#PointEvent,Point event,mapped,local_normalized,http://example.org/chunktograph#point-event,1,point-event,ns_prefixed_local=rec-pointevent,CQB27
+C,rec:Portfolio,https://w3id.org/rec#Portfolio,Portfolio,mapped,local_normalized,http://example.org/chunktograph#portfolio,1,portfolio,ns_prefixed_local=rec-portfolio,CQB30
+C,rec:Space,https://w3id.org/rec#Space,Space,mapped,local_normalized,http://example.org/chunktograph#space,1,space,ns_prefixed_local=rec-space,CQB29
+C,rec:locatedIn,https://w3id.org/rec#locatedIn,locatedIn,mapped,ns_prefixed_local,http://example.org/chunktograph#rec-locatedin,1,rec-locatedin,,CQB17
+C,ref:hasExternalReference,https://brickschema.org/schema/Brick/ref#hasExternalReference,hasExternalReference,mapped,ns_prefixed_local,http://example.org/chunktograph#ref-hasexternalreference,1,ref-hasexternalreference,,CQB36
+D,brick:Alarm,https://brickschema.org/schema/Brick#Alarm,Alarm,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-alarm,1,brick-alarm,,CQB08|CQB11
+D,brick:Building,https://brickschema.org/schema/Brick#Building,Building,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-building,1,brick-building,,CQB10|CQB12
+D,brick:Camera,https://brickschema.org/schema/Brick#Camera,Camera,mapped,local_normalized,http://example.org/chunktograph#camera,1,camera,ns_prefixed_local=brick-camera,CQB09
+D,brick:Command,https://brickschema.org/schema/Brick#Command,Command,mapped,local_normalized,http://example.org/chunktograph#command,1,command,ns_prefixed_local=brick-command,CQB08|CQB11
+D,brick:Electrical_Equipment,https://brickschema.org/schema/Brick#Electrical_Equipment,Electrical Equipment,mapped,local_normalized,http://example.org/chunktograph#electrical-equipment,1,electrical-equipment,ns_prefixed_local=brick-electrical-equipment,CQB09
+D,brick:Elevator,https://brickschema.org/schema/Brick#Elevator,Elevator,mapped,local_normalized,http://example.org/chunktograph#elevator,1,elevator,ns_prefixed_local=brick-elevator,CQB09
+D,brick:EntityProperty,https://brickschema.org/schema/Brick#EntityProperty,,unmapped,,,0,,,CQB21|CQB23
+D,brick:Equipment,https://brickschema.org/schema/Brick#Equipment,Equipment,mapped,local_normalized,http://example.org/chunktograph#equipment,1,equipment,ns_prefixed_local=brick-equipment,CQB02|CQB09
+D,brick:Floor,https://brickschema.org/schema/Brick#Floor,Floor,mapped,local_normalized,http://example.org/chunktograph#floor,1,floor,ns_prefixed_local=brick-floor,CQB12
+D,brick:Furniture,https://brickschema.org/schema/Brick#Furniture,Furniture,mapped,local_normalized,http://example.org/chunktograph#furniture,1,furniture,ns_prefixed_local=brick-furniture,CQB09
+D,brick:HVAC_Equipment,https://brickschema.org/schema/Brick#HVAC_Equipment,HVAC Equipment,mapped,local_normalized,http://example.org/chunktograph#hvac-equipment,1,hvac-equipment,ns_prefixed_local=brick-hvac-equipment,CQB09
+D,brick:Lighting_Equipment,https://brickschema.org/schema/Brick#Lighting_Equipment,Lighting Equipment,mapped,local_normalized,http://example.org/chunktograph#lighting-equipment,1,lighting-equipment,ns_prefixed_local=brick-lighting-equipment,CQB09
+D,brick:Location,https://brickschema.org/schema/Brick#Location,Location,mapped,local_normalized,http://example.org/chunktograph#location,1,location,ns_prefixed_local=brick-location,CQB10|CQB12
+D,brick:Meter,https://brickschema.org/schema/Brick#Meter,Meter,mapped,local_normalized,http://example.org/chunktograph#meter,1,meter,ns_prefixed_local=brick-meter,CQB02|CQB09
+D,brick:Motor,https://brickschema.org/schema/Brick#Motor,Motor,mapped,local_normalized,http://example.org/chunktograph#motor,1,motor,ns_prefixed_local=brick-motor,CQB09
+D,brick:Outdoor_Area,https://brickschema.org/schema/Brick#Outdoor_Area,Outdoor Area,mapped,local_normalized,http://example.org/chunktograph#outdoor-area,1,outdoor-area,ns_prefixed_local=brick-outdoor-area,CQB12
+D,brick:Outside,https://brickschema.org/schema/Brick#Outside,Outside,mapped,local_normalized,http://example.org/chunktograph#outside,1,outside,ns_prefixed_local=brick-outside,CQB12
+D,brick:Parameter,https://brickschema.org/schema/Brick#Parameter,Parameter,mapped,local_normalized,http://example.org/chunktograph#parameter,1,parameter,ns_prefixed_local=brick-parameter,CQB08|CQB11
+D,brick:Point,https://brickschema.org/schema/Brick#Point,Point,mapped,local_normalized,http://example.org/chunktograph#point,1,point,ns_prefixed_local=brick-point,CQB07|CQB08
+D,brick:Quantity,https://brickschema.org/schema/Brick#Quantity,Quantity,mapped,local_normalized,http://example.org/chunktograph#quantity,1,quantity,ns_prefixed_local=brick-quantity,CQB24
+D,brick:Region,https://brickschema.org/schema/Brick#Region,Region,mapped,local_normalized,http://example.org/chunktograph#region,1,region,ns_prefixed_local=brick-region,CQB12
+D,brick:Sensor,https://brickschema.org/schema/Brick#Sensor,Sensor,mapped,local_normalized,http://example.org/chunktograph#sensor,1,sensor,ns_prefixed_local=brick-sensor,CQB01|CQB07|CQB08|CQB11
+D,brick:Setpoint,https://brickschema.org/schema/Brick#Setpoint,Setpoint,mapped,local_normalized,http://example.org/chunktograph#setpoint,1,setpoint,ns_prefixed_local=brick-setpoint,CQB08|CQB11
+D,brick:Site,https://brickschema.org/schema/Brick#Site,Site,mapped,local_normalized,http://example.org/chunktograph#site,1,site,ns_prefixed_local=brick-site,CQB12
+D,brick:Space,https://brickschema.org/schema/Brick#Space,Space,mapped,local_normalized,http://example.org/chunktograph#space,1,space,ns_prefixed_local=brick-space,CQB12
+D,brick:Status,https://brickschema.org/schema/Brick#Status,Status,mapped,local_normalized,http://example.org/chunktograph#status,1,status,ns_prefixed_local=brick-status,CQB08|CQB11
+D,brick:Storey,https://brickschema.org/schema/Brick#Storey,Storey,mapped,local_normalized,http://example.org/chunktograph#storey,1,storey,ns_prefixed_local=brick-storey,CQB12
+D,brick:Tag,https://brickschema.org/schema/Brick#Tag,Tag,mapped,local_normalized,http://example.org/chunktograph#tag,1,tag,ns_prefixed_local=brick-tag,CQB18
+D,brick:Tank,https://brickschema.org/schema/Brick#Tank,Tank,mapped,local_normalized,http://example.org/chunktograph#tank,1,tank,ns_prefixed_local=brick-tank,CQB09
+D,brick:Valve,https://brickschema.org/schema/Brick#Valve,Valve,mapped,local_normalized,http://example.org/chunktograph#valve,1,valve,ns_prefixed_local=brick-valve,CQB09
+D,brick:Wing,https://brickschema.org/schema/Brick#Wing,Wing,mapped,local_normalized,http://example.org/chunktograph#wing,1,wing,ns_prefixed_local=brick-wing,CQB12
+D,brick:Zone,https://brickschema.org/schema/Brick#Zone,Zone,mapped,local_normalized,http://example.org/chunktograph#zone,1,zone,ns_prefixed_local=brick-zone,CQB04|CQB12
+D,brick:buildingPrimaryFunction,https://brickschema.org/schema/Brick#buildingPrimaryFunction,Building primary function,unmapped,,,0,,,CQB22
+D,brick:deprecation,https://brickschema.org/schema/Brick#deprecation,Deprecation Notice,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-deprecation,1,brick-deprecation,,CQB32
+D,brick:deprecationMitigationRule,https://brickschema.org/schema/Brick#deprecationMitigationRule,deprecationMitigationRule,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-deprecationmitigationrule,1,brick-deprecationmitigationrule,,CQB32
+D,brick:feeds,https://brickschema.org/schema/Brick#feeds,Feeds,unmapped,,,0,,,CQB15
+D,brick:grossArea,https://brickschema.org/schema/Brick#grossArea,Gross area,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-grossarea,1,brick-grossarea,,CQB21
+D,brick:hasAssociatedTag,https://brickschema.org/schema/Brick#hasAssociatedTag,Has associated tag,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasassociatedtag,1,brick-hasassociatedtag,,CQB18
+D,brick:hasLocation,https://brickschema.org/schema/Brick#hasLocation,Has location,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haslocation,1,brick-haslocation,,CQB14|CQB17
+D,brick:hasPart,https://brickschema.org/schema/Brick#hasPart,Has part,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haspart,1,brick-haspart,,CQB16
+D,brick:hasPoint,https://brickschema.org/schema/Brick#hasPoint,Has point,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haspoint,1,brick-haspoint,,CQB13
+D,brick:hasQUDTReference,https://brickschema.org/schema/Brick#hasQUDTReference,Has QUDT reference,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasqudtreference,1,brick-hasqudtreference,,CQB35|CQB36
+D,brick:hasQuantity,https://brickschema.org/schema/Brick#hasQuantity,Has Quantity,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasquantity,1,brick-hasquantity,,CQB24|CQB35
+D,brick:hasSubMeter,https://brickschema.org/schema/Brick#hasSubMeter,has sub-meter,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hassubmeter,1,brick-hassubmeter,,CQB33
+D,brick:hasUnit,https://brickschema.org/schema/Brick#hasUnit,Has unit,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasunit,1,brick-hasunit,,CQB19
+D,brick:isAssociatedWith,https://brickschema.org/schema/Brick#isAssociatedWith,Is associated with,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-isassociatedwith,1,brick-isassociatedwith,,CQB18
+D,brick:isFedBy,https://brickschema.org/schema/Brick#isFedBy,Is fed by,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-isfedby,1,brick-isfedby,,CQB15
+D,brick:isLocationOf,https://brickschema.org/schema/Brick#isLocationOf,Is location of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-islocationof,1,brick-islocationof,,CQB14|CQB17
+D,brick:isPartOf,https://brickschema.org/schema/Brick#isPartOf,Is part of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-ispartof,1,brick-ispartof,,CQB16
+D,brick:isPointOf,https://brickschema.org/schema/Brick#isPointOf,Is point of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-ispointof,1,brick-ispointof,,CQB13
+D,brick:isReplacedBy,https://brickschema.org/schema/Brick#isReplacedBy,Is replaced by,unmapped,,,0,,,CQB32
+D,brick:isSubMeterOf,https://brickschema.org/schema/Brick#isSubMeterOf,is sub-meter of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-issubmeterof,1,brick-issubmeterof,,CQB33
+D,brick:isVirtualMeter,https://brickschema.org/schema/Brick#isVirtualMeter,is virtual meter,unmapped,,,0,,,CQB33
+D,brick:lastKnownValue,https://brickschema.org/schema/Brick#lastKnownValue,Last known value,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-lastknownvalue,1,brick-lastknownvalue,,CQB20
+D,brick:yearBuilt,https://brickschema.org/schema/Brick#yearBuilt,Year built,unmapped,,,0,,,CQB23
+D,qudt:hasQuantityKind,http://qudt.org/schema/qudt/hasQuantityKind,,unmapped,,,0,,,CQB24
+D,rec:ArchitectureArea,https://w3id.org/rec#ArchitectureArea,Architecture area,mapped,local_normalized,http://example.org/chunktograph#architecture-area,1,architecture-area,ns_prefixed_local=rec-architecturearea,CQB31
+D,rec:Asset,https://w3id.org/rec#Asset,Asset,mapped,local_normalized,http://example.org/chunktograph#asset,1,asset,ns_prefixed_local=rec-asset,CQB03
+D,rec:BuildingElement,https://w3id.org/rec#BuildingElement,Building element,mapped,local_normalized,http://example.org/chunktograph#building-element,1,building-element,ns_prefixed_local=rec-buildingelement,CQB25
+D,rec:Campus,https://w3id.org/rec#Campus,Campus,mapped,local_normalized,http://example.org/chunktograph#campus,1,campus,ns_prefixed_local=rec-campus,CQB05
+D,rec:Collection,https://w3id.org/rec#Collection,Collection,mapped,local_normalized,http://example.org/chunktograph#collection,1,collection,ns_prefixed_local=rec-collection,CQB34
+D,rec:Event,https://w3id.org/rec#Event,Event,mapped,local_normalized,http://example.org/chunktograph#event,1,event,ns_prefixed_local=rec-event,CQB26
+D,rec:Georeference,https://w3id.org/rec#Georeference,Georeference,mapped,local_normalized,http://example.org/chunktograph#georeference,1,georeference,ns_prefixed_local=rec-georeference,CQB06
+D,rec:Organization,https://w3id.org/rec#Organization,Organization,mapped,local_normalized,http://example.org/chunktograph#organization,1,organization,ns_prefixed_local=rec-organization,CQB28
+D,rec:PointEvent,https://w3id.org/rec#PointEvent,Point event,mapped,local_normalized,http://example.org/chunktograph#point-event,1,point-event,ns_prefixed_local=rec-pointevent,CQB27
+D,rec:Portfolio,https://w3id.org/rec#Portfolio,Portfolio,mapped,local_normalized,http://example.org/chunktograph#portfolio,1,portfolio,ns_prefixed_local=rec-portfolio,CQB30
+D,rec:Space,https://w3id.org/rec#Space,Space,mapped,local_normalized,http://example.org/chunktograph#space,1,space,ns_prefixed_local=rec-space,CQB29
+D,rec:locatedIn,https://w3id.org/rec#locatedIn,locatedIn,mapped,ns_prefixed_local,http://example.org/chunktograph#rec-locatedin,1,rec-locatedin,,CQB17
+D,ref:hasExternalReference,https://brickschema.org/schema/Brick/ref#hasExternalReference,hasExternalReference,mapped,ns_prefixed_local,http://example.org/chunktograph#ref-hasexternalreference,1,ref-hasexternalreference,,CQB36
+E,brick:Alarm,https://brickschema.org/schema/Brick#Alarm,Alarm,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-alarm,1,brick-alarm,,CQB08|CQB11
+E,brick:Building,https://brickschema.org/schema/Brick#Building,Building,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-building,1,brick-building,,CQB10|CQB12
+E,brick:Camera,https://brickschema.org/schema/Brick#Camera,Camera,mapped,local_normalized,http://example.org/chunktograph#camera,1,camera,ns_prefixed_local=brick-camera,CQB09
+E,brick:Command,https://brickschema.org/schema/Brick#Command,Command,mapped,local_normalized,http://example.org/chunktograph#command,1,command,ns_prefixed_local=brick-command,CQB08|CQB11
+E,brick:Electrical_Equipment,https://brickschema.org/schema/Brick#Electrical_Equipment,Electrical Equipment,mapped,local_normalized,http://example.org/chunktograph#electrical-equipment,1,electrical-equipment,ns_prefixed_local=brick-electrical-equipment,CQB09
+E,brick:Elevator,https://brickschema.org/schema/Brick#Elevator,Elevator,mapped,local_normalized,http://example.org/chunktograph#elevator,1,elevator,ns_prefixed_local=brick-elevator,CQB09
+E,brick:EntityProperty,https://brickschema.org/schema/Brick#EntityProperty,,unmapped,,,0,,,CQB21|CQB23
+E,brick:Equipment,https://brickschema.org/schema/Brick#Equipment,Equipment,mapped,local_normalized,http://example.org/chunktograph#equipment,1,equipment,ns_prefixed_local=brick-equipment,CQB02|CQB09
+E,brick:Floor,https://brickschema.org/schema/Brick#Floor,Floor,mapped,local_normalized,http://example.org/chunktograph#floor,1,floor,ns_prefixed_local=brick-floor,CQB12
+E,brick:Furniture,https://brickschema.org/schema/Brick#Furniture,Furniture,mapped,local_normalized,http://example.org/chunktograph#furniture,1,furniture,ns_prefixed_local=brick-furniture,CQB09
+E,brick:HVAC_Equipment,https://brickschema.org/schema/Brick#HVAC_Equipment,HVAC Equipment,mapped,local_normalized,http://example.org/chunktograph#hvac-equipment,1,hvac-equipment,ns_prefixed_local=brick-hvac-equipment,CQB09
+E,brick:Lighting_Equipment,https://brickschema.org/schema/Brick#Lighting_Equipment,Lighting Equipment,mapped,local_normalized,http://example.org/chunktograph#lighting-equipment,1,lighting-equipment,ns_prefixed_local=brick-lighting-equipment,CQB09
+E,brick:Location,https://brickschema.org/schema/Brick#Location,Location,mapped,local_normalized,http://example.org/chunktograph#location,1,location,ns_prefixed_local=brick-location,CQB10|CQB12
+E,brick:Meter,https://brickschema.org/schema/Brick#Meter,Meter,mapped,local_normalized,http://example.org/chunktograph#meter,1,meter,ns_prefixed_local=brick-meter,CQB02|CQB09
+E,brick:Motor,https://brickschema.org/schema/Brick#Motor,Motor,mapped,local_normalized,http://example.org/chunktograph#motor,1,motor,ns_prefixed_local=brick-motor,CQB09
+E,brick:Outdoor_Area,https://brickschema.org/schema/Brick#Outdoor_Area,Outdoor Area,mapped,local_normalized,http://example.org/chunktograph#outdoor-area,1,outdoor-area,ns_prefixed_local=brick-outdoor-area,CQB12
+E,brick:Outside,https://brickschema.org/schema/Brick#Outside,Outside,mapped,local_normalized,http://example.org/chunktograph#outside,1,outside,ns_prefixed_local=brick-outside,CQB12
+E,brick:Parameter,https://brickschema.org/schema/Brick#Parameter,Parameter,mapped,local_normalized,http://example.org/chunktograph#parameter,1,parameter,ns_prefixed_local=brick-parameter,CQB08|CQB11
+E,brick:Point,https://brickschema.org/schema/Brick#Point,Point,mapped,local_normalized,http://example.org/chunktograph#point,1,point,ns_prefixed_local=brick-point,CQB07|CQB08
+E,brick:Quantity,https://brickschema.org/schema/Brick#Quantity,Quantity,mapped,local_normalized,http://example.org/chunktograph#quantity,1,quantity,ns_prefixed_local=brick-quantity,CQB24
+E,brick:Region,https://brickschema.org/schema/Brick#Region,Region,mapped,local_normalized,http://example.org/chunktograph#region,1,region,ns_prefixed_local=brick-region,CQB12
+E,brick:Sensor,https://brickschema.org/schema/Brick#Sensor,Sensor,mapped,local_normalized,http://example.org/chunktograph#sensor,1,sensor,ns_prefixed_local=brick-sensor,CQB01|CQB07|CQB08|CQB11
+E,brick:Setpoint,https://brickschema.org/schema/Brick#Setpoint,Setpoint,mapped,local_normalized,http://example.org/chunktograph#setpoint,1,setpoint,ns_prefixed_local=brick-setpoint,CQB08|CQB11
+E,brick:Site,https://brickschema.org/schema/Brick#Site,Site,mapped,local_normalized,http://example.org/chunktograph#site,1,site,ns_prefixed_local=brick-site,CQB12
+E,brick:Space,https://brickschema.org/schema/Brick#Space,Space,mapped,local_normalized,http://example.org/chunktograph#space,1,space,ns_prefixed_local=brick-space,CQB12
+E,brick:Status,https://brickschema.org/schema/Brick#Status,Status,mapped,local_normalized,http://example.org/chunktograph#status,1,status,ns_prefixed_local=brick-status,CQB08|CQB11
+E,brick:Storey,https://brickschema.org/schema/Brick#Storey,Storey,mapped,local_normalized,http://example.org/chunktograph#storey,1,storey,ns_prefixed_local=brick-storey,CQB12
+E,brick:Tag,https://brickschema.org/schema/Brick#Tag,Tag,mapped,local_normalized,http://example.org/chunktograph#tag,1,tag,ns_prefixed_local=brick-tag,CQB18
+E,brick:Tank,https://brickschema.org/schema/Brick#Tank,Tank,mapped,local_normalized,http://example.org/chunktograph#tank,1,tank,ns_prefixed_local=brick-tank,CQB09
+E,brick:Valve,https://brickschema.org/schema/Brick#Valve,Valve,mapped,local_normalized,http://example.org/chunktograph#valve,1,valve,ns_prefixed_local=brick-valve,CQB09
+E,brick:Wing,https://brickschema.org/schema/Brick#Wing,Wing,mapped,local_normalized,http://example.org/chunktograph#wing,1,wing,ns_prefixed_local=brick-wing,CQB12
+E,brick:Zone,https://brickschema.org/schema/Brick#Zone,Zone,mapped,local_normalized,http://example.org/chunktograph#zone,1,zone,ns_prefixed_local=brick-zone,CQB04|CQB12
+E,brick:buildingPrimaryFunction,https://brickschema.org/schema/Brick#buildingPrimaryFunction,Building primary function,unmapped,,,0,,,CQB22
+E,brick:deprecation,https://brickschema.org/schema/Brick#deprecation,Deprecation Notice,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-deprecation,1,brick-deprecation,,CQB32
+E,brick:deprecationMitigationRule,https://brickschema.org/schema/Brick#deprecationMitigationRule,deprecationMitigationRule,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-deprecationmitigationrule,1,brick-deprecationmitigationrule,,CQB32
+E,brick:feeds,https://brickschema.org/schema/Brick#feeds,Feeds,unmapped,,,0,,,CQB15
+E,brick:grossArea,https://brickschema.org/schema/Brick#grossArea,Gross area,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-grossarea,1,brick-grossarea,,CQB21
+E,brick:hasAssociatedTag,https://brickschema.org/schema/Brick#hasAssociatedTag,Has associated tag,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasassociatedtag,1,brick-hasassociatedtag,,CQB18
+E,brick:hasLocation,https://brickschema.org/schema/Brick#hasLocation,Has location,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haslocation,1,brick-haslocation,,CQB14|CQB17
+E,brick:hasPart,https://brickschema.org/schema/Brick#hasPart,Has part,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haspart,1,brick-haspart,,CQB16
+E,brick:hasPoint,https://brickschema.org/schema/Brick#hasPoint,Has point,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haspoint,1,brick-haspoint,,CQB13
+E,brick:hasQUDTReference,https://brickschema.org/schema/Brick#hasQUDTReference,Has QUDT reference,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasqudtreference,1,brick-hasqudtreference,,CQB35|CQB36
+E,brick:hasQuantity,https://brickschema.org/schema/Brick#hasQuantity,Has Quantity,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasquantity,1,brick-hasquantity,,CQB24|CQB35
+E,brick:hasSubMeter,https://brickschema.org/schema/Brick#hasSubMeter,has sub-meter,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hassubmeter,1,brick-hassubmeter,,CQB33
+E,brick:hasUnit,https://brickschema.org/schema/Brick#hasUnit,Has unit,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasunit,1,brick-hasunit,,CQB19
+E,brick:isAssociatedWith,https://brickschema.org/schema/Brick#isAssociatedWith,Is associated with,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-isassociatedwith,1,brick-isassociatedwith,,CQB18
+E,brick:isFedBy,https://brickschema.org/schema/Brick#isFedBy,Is fed by,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-isfedby,1,brick-isfedby,,CQB15
+E,brick:isLocationOf,https://brickschema.org/schema/Brick#isLocationOf,Is location of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-islocationof,1,brick-islocationof,,CQB14|CQB17
+E,brick:isPartOf,https://brickschema.org/schema/Brick#isPartOf,Is part of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-ispartof,1,brick-ispartof,,CQB16
+E,brick:isPointOf,https://brickschema.org/schema/Brick#isPointOf,Is point of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-ispointof,1,brick-ispointof,,CQB13
+E,brick:isReplacedBy,https://brickschema.org/schema/Brick#isReplacedBy,Is replaced by,unmapped,,,0,,,CQB32
+E,brick:isSubMeterOf,https://brickschema.org/schema/Brick#isSubMeterOf,is sub-meter of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-issubmeterof,1,brick-issubmeterof,,CQB33
+E,brick:isVirtualMeter,https://brickschema.org/schema/Brick#isVirtualMeter,is virtual meter,unmapped,,,0,,,CQB33
+E,brick:lastKnownValue,https://brickschema.org/schema/Brick#lastKnownValue,Last known value,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-lastknownvalue,1,brick-lastknownvalue,,CQB20
+E,brick:yearBuilt,https://brickschema.org/schema/Brick#yearBuilt,Year built,unmapped,,,0,,,CQB23
+E,qudt:hasQuantityKind,http://qudt.org/schema/qudt/hasQuantityKind,,unmapped,,,0,,,CQB24
+E,rec:ArchitectureArea,https://w3id.org/rec#ArchitectureArea,Architecture area,mapped,local_normalized,http://example.org/chunktograph#architecture-area,1,architecture-area,ns_prefixed_local=rec-architecturearea,CQB31
+E,rec:Asset,https://w3id.org/rec#Asset,Asset,mapped,local_normalized,http://example.org/chunktograph#asset,1,asset,ns_prefixed_local=rec-asset,CQB03
+E,rec:BuildingElement,https://w3id.org/rec#BuildingElement,Building element,mapped,local_normalized,http://example.org/chunktograph#building-element,1,building-element,ns_prefixed_local=rec-buildingelement,CQB25
+E,rec:Campus,https://w3id.org/rec#Campus,Campus,mapped,local_normalized,http://example.org/chunktograph#campus,1,campus,ns_prefixed_local=rec-campus,CQB05
+E,rec:Collection,https://w3id.org/rec#Collection,Collection,mapped,local_normalized,http://example.org/chunktograph#collection,1,collection,ns_prefixed_local=rec-collection,CQB34
+E,rec:Event,https://w3id.org/rec#Event,Event,mapped,local_normalized,http://example.org/chunktograph#event,1,event,ns_prefixed_local=rec-event,CQB26
+E,rec:Georeference,https://w3id.org/rec#Georeference,Georeference,mapped,local_normalized,http://example.org/chunktograph#georeference,1,georeference,ns_prefixed_local=rec-georeference,CQB06
+E,rec:Organization,https://w3id.org/rec#Organization,Organization,mapped,local_normalized,http://example.org/chunktograph#organization,1,organization,ns_prefixed_local=rec-organization,CQB28
+E,rec:PointEvent,https://w3id.org/rec#PointEvent,Point event,mapped,local_normalized,http://example.org/chunktograph#point-event,1,point-event,ns_prefixed_local=rec-pointevent,CQB27
+E,rec:Portfolio,https://w3id.org/rec#Portfolio,Portfolio,mapped,local_normalized,http://example.org/chunktograph#portfolio,1,portfolio,ns_prefixed_local=rec-portfolio,CQB30
+E,rec:Space,https://w3id.org/rec#Space,Space,mapped,local_normalized,http://example.org/chunktograph#space,1,space,ns_prefixed_local=rec-space,CQB29
+E,rec:locatedIn,https://w3id.org/rec#locatedIn,locatedIn,mapped,ns_prefixed_local,http://example.org/chunktograph#rec-locatedin,1,rec-locatedin,,CQB17
+E,ref:hasExternalReference,https://brickschema.org/schema/Brick/ref#hasExternalReference,hasExternalReference,mapped,ns_prefixed_local,http://example.org/chunktograph#ref-hasexternalreference,1,ref-hasexternalreference,,CQB36
+F,brick:Alarm,https://brickschema.org/schema/Brick#Alarm,Alarm,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-alarm,1,brick-alarm,,CQB08|CQB11
+F,brick:Building,https://brickschema.org/schema/Brick#Building,Building,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-building,1,brick-building,,CQB10|CQB12
+F,brick:Camera,https://brickschema.org/schema/Brick#Camera,Camera,mapped,local_normalized,http://example.org/chunktograph#camera,1,camera,ns_prefixed_local=brick-camera,CQB09
+F,brick:Command,https://brickschema.org/schema/Brick#Command,Command,mapped,local_normalized,http://example.org/chunktograph#command,1,command,ns_prefixed_local=brick-command,CQB08|CQB11
+F,brick:Electrical_Equipment,https://brickschema.org/schema/Brick#Electrical_Equipment,Electrical Equipment,mapped,local_normalized,http://example.org/chunktograph#electrical-equipment,1,electrical-equipment,ns_prefixed_local=brick-electrical-equipment,CQB09
+F,brick:Elevator,https://brickschema.org/schema/Brick#Elevator,Elevator,mapped,local_normalized,http://example.org/chunktograph#elevator,1,elevator,ns_prefixed_local=brick-elevator,CQB09
+F,brick:EntityProperty,https://brickschema.org/schema/Brick#EntityProperty,,unmapped,,,0,,,CQB21|CQB23
+F,brick:Equipment,https://brickschema.org/schema/Brick#Equipment,Equipment,mapped,local_normalized,http://example.org/chunktograph#equipment,1,equipment,ns_prefixed_local=brick-equipment,CQB02|CQB09
+F,brick:Floor,https://brickschema.org/schema/Brick#Floor,Floor,mapped,local_normalized,http://example.org/chunktograph#floor,1,floor,ns_prefixed_local=brick-floor,CQB12
+F,brick:Furniture,https://brickschema.org/schema/Brick#Furniture,Furniture,mapped,local_normalized,http://example.org/chunktograph#furniture,1,furniture,ns_prefixed_local=brick-furniture,CQB09
+F,brick:HVAC_Equipment,https://brickschema.org/schema/Brick#HVAC_Equipment,HVAC Equipment,mapped,local_normalized,http://example.org/chunktograph#hvac-equipment,1,hvac-equipment,ns_prefixed_local=brick-hvac-equipment,CQB09
+F,brick:Lighting_Equipment,https://brickschema.org/schema/Brick#Lighting_Equipment,Lighting Equipment,mapped,local_normalized,http://example.org/chunktograph#lighting-equipment,1,lighting-equipment,ns_prefixed_local=brick-lighting-equipment,CQB09
+F,brick:Location,https://brickschema.org/schema/Brick#Location,Location,mapped,local_normalized,http://example.org/chunktograph#location,1,location,ns_prefixed_local=brick-location,CQB10|CQB12
+F,brick:Meter,https://brickschema.org/schema/Brick#Meter,Meter,mapped,local_normalized,http://example.org/chunktograph#meter,1,meter,ns_prefixed_local=brick-meter,CQB02|CQB09
+F,brick:Motor,https://brickschema.org/schema/Brick#Motor,Motor,mapped,local_normalized,http://example.org/chunktograph#motor,1,motor,ns_prefixed_local=brick-motor,CQB09
+F,brick:Outdoor_Area,https://brickschema.org/schema/Brick#Outdoor_Area,Outdoor Area,mapped,local_normalized,http://example.org/chunktograph#outdoor-area,1,outdoor-area,ns_prefixed_local=brick-outdoor-area,CQB12
+F,brick:Outside,https://brickschema.org/schema/Brick#Outside,Outside,mapped,local_normalized,http://example.org/chunktograph#outside,1,outside,ns_prefixed_local=brick-outside,CQB12
+F,brick:Parameter,https://brickschema.org/schema/Brick#Parameter,Parameter,mapped,local_normalized,http://example.org/chunktograph#parameter,1,parameter,ns_prefixed_local=brick-parameter,CQB08|CQB11
+F,brick:Point,https://brickschema.org/schema/Brick#Point,Point,mapped,local_normalized,http://example.org/chunktograph#point,1,point,ns_prefixed_local=brick-point,CQB07|CQB08
+F,brick:Quantity,https://brickschema.org/schema/Brick#Quantity,Quantity,mapped,local_normalized,http://example.org/chunktograph#quantity,1,quantity,ns_prefixed_local=brick-quantity,CQB24
+F,brick:Region,https://brickschema.org/schema/Brick#Region,Region,mapped,local_normalized,http://example.org/chunktograph#region,1,region,ns_prefixed_local=brick-region,CQB12
+F,brick:Sensor,https://brickschema.org/schema/Brick#Sensor,Sensor,mapped,local_normalized,http://example.org/chunktograph#sensor,1,sensor,ns_prefixed_local=brick-sensor,CQB01|CQB07|CQB08|CQB11
+F,brick:Setpoint,https://brickschema.org/schema/Brick#Setpoint,Setpoint,mapped,local_normalized,http://example.org/chunktograph#setpoint,1,setpoint,ns_prefixed_local=brick-setpoint,CQB08|CQB11
+F,brick:Site,https://brickschema.org/schema/Brick#Site,Site,mapped,local_normalized,http://example.org/chunktograph#site,1,site,ns_prefixed_local=brick-site,CQB12
+F,brick:Space,https://brickschema.org/schema/Brick#Space,Space,mapped,local_normalized,http://example.org/chunktograph#space,1,space,ns_prefixed_local=brick-space,CQB12
+F,brick:Status,https://brickschema.org/schema/Brick#Status,Status,mapped,local_normalized,http://example.org/chunktograph#status,1,status,ns_prefixed_local=brick-status,CQB08|CQB11
+F,brick:Storey,https://brickschema.org/schema/Brick#Storey,Storey,mapped,local_normalized,http://example.org/chunktograph#storey,1,storey,ns_prefixed_local=brick-storey,CQB12
+F,brick:Tag,https://brickschema.org/schema/Brick#Tag,Tag,mapped,local_normalized,http://example.org/chunktograph#tag,1,tag,ns_prefixed_local=brick-tag,CQB18
+F,brick:Tank,https://brickschema.org/schema/Brick#Tank,Tank,mapped,local_normalized,http://example.org/chunktograph#tank,1,tank,ns_prefixed_local=brick-tank,CQB09
+F,brick:Valve,https://brickschema.org/schema/Brick#Valve,Valve,mapped,local_normalized,http://example.org/chunktograph#valve,1,valve,ns_prefixed_local=brick-valve,CQB09
+F,brick:Wing,https://brickschema.org/schema/Brick#Wing,Wing,mapped,local_normalized,http://example.org/chunktograph#wing,1,wing,ns_prefixed_local=brick-wing,CQB12
+F,brick:Zone,https://brickschema.org/schema/Brick#Zone,Zone,mapped,local_normalized,http://example.org/chunktograph#zone,1,zone,ns_prefixed_local=brick-zone,CQB04|CQB12
+F,brick:buildingPrimaryFunction,https://brickschema.org/schema/Brick#buildingPrimaryFunction,Building primary function,unmapped,,,0,,,CQB22
+F,brick:deprecation,https://brickschema.org/schema/Brick#deprecation,Deprecation Notice,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-deprecation,1,brick-deprecation,,CQB32
+F,brick:deprecationMitigationRule,https://brickschema.org/schema/Brick#deprecationMitigationRule,deprecationMitigationRule,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-deprecationmitigationrule,1,brick-deprecationmitigationrule,,CQB32
+F,brick:feeds,https://brickschema.org/schema/Brick#feeds,Feeds,unmapped,,,0,,,CQB15
+F,brick:grossArea,https://brickschema.org/schema/Brick#grossArea,Gross area,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-grossarea,1,brick-grossarea,,CQB21
+F,brick:hasAssociatedTag,https://brickschema.org/schema/Brick#hasAssociatedTag,Has associated tag,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasassociatedtag,1,brick-hasassociatedtag,,CQB18
+F,brick:hasLocation,https://brickschema.org/schema/Brick#hasLocation,Has location,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haslocation,1,brick-haslocation,,CQB14|CQB17
+F,brick:hasPart,https://brickschema.org/schema/Brick#hasPart,Has part,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haspart,1,brick-haspart,,CQB16
+F,brick:hasPoint,https://brickschema.org/schema/Brick#hasPoint,Has point,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-haspoint,1,brick-haspoint,,CQB13
+F,brick:hasQUDTReference,https://brickschema.org/schema/Brick#hasQUDTReference,Has QUDT reference,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasqudtreference,1,brick-hasqudtreference,,CQB35|CQB36
+F,brick:hasQuantity,https://brickschema.org/schema/Brick#hasQuantity,Has Quantity,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasquantity,1,brick-hasquantity,,CQB24|CQB35
+F,brick:hasSubMeter,https://brickschema.org/schema/Brick#hasSubMeter,has sub-meter,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hassubmeter,1,brick-hassubmeter,,CQB33
+F,brick:hasUnit,https://brickschema.org/schema/Brick#hasUnit,Has unit,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-hasunit,1,brick-hasunit,,CQB19
+F,brick:isAssociatedWith,https://brickschema.org/schema/Brick#isAssociatedWith,Is associated with,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-isassociatedwith,1,brick-isassociatedwith,,CQB18
+F,brick:isFedBy,https://brickschema.org/schema/Brick#isFedBy,Is fed by,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-isfedby,1,brick-isfedby,,CQB15
+F,brick:isLocationOf,https://brickschema.org/schema/Brick#isLocationOf,Is location of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-islocationof,1,brick-islocationof,,CQB14|CQB17
+F,brick:isPartOf,https://brickschema.org/schema/Brick#isPartOf,Is part of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-ispartof,1,brick-ispartof,,CQB16
+F,brick:isPointOf,https://brickschema.org/schema/Brick#isPointOf,Is point of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-ispointof,1,brick-ispointof,,CQB13
+F,brick:isReplacedBy,https://brickschema.org/schema/Brick#isReplacedBy,Is replaced by,unmapped,,,0,,,CQB32
+F,brick:isSubMeterOf,https://brickschema.org/schema/Brick#isSubMeterOf,is sub-meter of,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-issubmeterof,1,brick-issubmeterof,,CQB33
+F,brick:isVirtualMeter,https://brickschema.org/schema/Brick#isVirtualMeter,is virtual meter,unmapped,,,0,,,CQB33
+F,brick:lastKnownValue,https://brickschema.org/schema/Brick#lastKnownValue,Last known value,mapped,ns_prefixed_local,http://example.org/chunktograph#brick-lastknownvalue,1,brick-lastknownvalue,,CQB20
+F,brick:yearBuilt,https://brickschema.org/schema/Brick#yearBuilt,Year built,unmapped,,,0,,,CQB23
+F,qudt:hasQuantityKind,http://qudt.org/schema/qudt/hasQuantityKind,,unmapped,,,0,,,CQB24
+F,rec:ArchitectureArea,https://w3id.org/rec#ArchitectureArea,Architecture area,mapped,local_normalized,http://example.org/chunktograph#architecture-area,1,architecture-area,ns_prefixed_local=rec-architecturearea,CQB31
+F,rec:Asset,https://w3id.org/rec#Asset,Asset,mapped,local_normalized,http://example.org/chunktograph#asset,1,asset,ns_prefixed_local=rec-asset,CQB03
+F,rec:BuildingElement,https://w3id.org/rec#BuildingElement,Building element,mapped,local_normalized,http://example.org/chunktograph#building-element,1,building-element,ns_prefixed_local=rec-buildingelement,CQB25
+F,rec:Campus,https://w3id.org/rec#Campus,Campus,mapped,local_normalized,http://example.org/chunktograph#campus,1,campus,ns_prefixed_local=rec-campus,CQB05
+F,rec:Collection,https://w3id.org/rec#Collection,Collection,mapped,local_normalized,http://example.org/chunktograph#collection,1,collection,ns_prefixed_local=rec-collection,CQB34
+F,rec:Event,https://w3id.org/rec#Event,Event,mapped,local_normalized,http://example.org/chunktograph#event,1,event,ns_prefixed_local=rec-event,CQB26
+F,rec:Georeference,https://w3id.org/rec#Georeference,Georeference,mapped,local_normalized,http://example.org/chunktograph#georeference,1,georeference,ns_prefixed_local=rec-georeference,CQB06
+F,rec:Organization,https://w3id.org/rec#Organization,Organization,mapped,local_normalized,http://example.org/chunktograph#organization,1,organization,ns_prefixed_local=rec-organization,CQB28
+F,rec:PointEvent,https://w3id.org/rec#PointEvent,Point event,mapped,local_normalized,http://example.org/chunktograph#point-event,1,point-event,ns_prefixed_local=rec-pointevent,CQB27
+F,rec:Portfolio,https://w3id.org/rec#Portfolio,Portfolio,mapped,local_normalized,http://example.org/chunktograph#portfolio,1,portfolio,ns_prefixed_local=rec-portfolio,CQB30
+F,rec:Space,https://w3id.org/rec#Space,Space,mapped,local_normalized,http://example.org/chunktograph#space,1,space,ns_prefixed_local=rec-space,CQB29
+F,rec:locatedIn,https://w3id.org/rec#locatedIn,locatedIn,mapped,ns_prefixed_local,http://example.org/chunktograph#rec-locatedin,1,rec-locatedin,,CQB17
+F,ref:hasExternalReference,https://brickschema.org/schema/Brick/ref#hasExternalReference,hasExternalReference,mapped,ns_prefixed_local,http://example.org/chunktograph#ref-hasexternalreference,1,ref-hasexternalreference,,CQB36

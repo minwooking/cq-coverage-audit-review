@@ -1,0 +1,78 @@
+{
+ "addendum": 33,
+ "ablated_controls_study2": {
+  "glm": {
+   "cells": 24,
+   "a_majority_S0": 22,
+   "b_consistent": 6,
+   "c_consistent_and_S0": 6,
+   "undefined": 0
+  },
+  "gptoss": {
+   "cells": 24,
+   "a_majority_S0": 22,
+   "b_consistent": 22,
+   "c_consistent_and_S0": 20,
+   "undefined": 0
+  },
+  "both_models": {
+   "a_majority_S0": 22,
+   "b_consistent": 6,
+   "c_consistent_and_S0": 6
+  }
+ },
+ "n_cells": 12,
+ "per_model": {
+  "glm": {
+   "cells": 12,
+   "undefined": 0,
+   "a_majority_S1": 4,
+   "b_consistent": 1,
+   "c_consistent_and_S1": 0,
+   "valid_slots_min": 24,
+   "valid_slots_total": 298,
+   "context_skip": 0
+  },
+  "gptoss": {
+   "cells": 12,
+   "undefined": 1,
+   "a_majority_S1": 2,
+   "b_consistent": 4,
+   "c_consistent_and_S1": 1,
+   "valid_slots_min": 24,
+   "valid_slots_total": 299,
+   "context_skip": 0
+  }
+ },
+ "both_models": {
+  "a_majority_S1": 2,
+  "b_consistent": 1,
+  "c_consistent_and_S1": 0
+ },
+ "view_holds_terms": 2,
+ "registered_J_of_cells_marked_S0": {
+  "glm": [
+   0,
+   0,
+   2,
+   2,
+   3,
+   3,
+   3,
+   3
+  ],
+  "gptoss": [
+   0,
+   0,
+   2,
+   2,
+   3,
+   3,
+   3,
+   3,
+   3
+  ]
+ },
+ "comparison_ablated_S0": "22 of 24 (both models, Study 2)",
+ "banner": "LLM-labeled; post hoc; not human-validated"
+}

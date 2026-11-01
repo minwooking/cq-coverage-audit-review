@@ -1,0 +1,13 @@
+# Brick ORM
+
+To use this feature, install brickschema with the "orm" feature: pip install brickschema[orm] or pip install brickschema[all]
+
+Currently, the ORM models Locations, Points and Equipment and the
+basic relationships between them.
+
+Please see the SQLAlchemy docs for detailed information on how to interact with the ORM. use the
+orm.session instance variable to interact with the ORM connection.
+
+See querying docs for how to use the SQLalchemy querying mechanisms
+
+## Example

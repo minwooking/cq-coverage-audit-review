@@ -1,0 +1,38 @@
+# Domain parameters for the Brick holdout (frozen, registered).
+# Every value below is the one that used to be hard-coded in the harness; changing one
+# changes Brick behaviour. Paths are relative to paper/access2026/.
+name = "brick"
+title = "Brick Schema v1.4.4"
+cluster_prefix = "brick"          # pooled analyses qualify cluster ids as "brick:<cluster_id>"
+cq_id_prefix = "CQB"
+
+[snapshot]
+path = "data/brick-v1.4.4.ttl"
+sha256 = "b65720b7b9b64c646745c689777e6138c0d59ce0088df0aeb78fbd444d04d8e7"
+format = "turtle"
+
+[corpus]
+builder = "build_brick_corpus"      # module in harness/
+path = "harness/brick_corpus.json"
+generated_from = "brick-v1.4.4.ttl (frozen snapshot)"
+
+[namespaces]
+"brick:" = "https://brickschema.org/schema/Brick#"
+"rec:" = "https://w3id.org/rec#"
+"ref:" = "https://brickschema.org/schema/Brick/ref#"
+"qudt:" = "http://qudt.org/schema/qudt/"
+"sosa:" = "http://www.w3.org/ns/sosa/"
+"rdfs:" = "http://www.w3.org/2000/01/rdf-schema#"
+"owl:" = "http://www.w3.org/2002/07/owl#"
+
+[bank]
+path = "bank/cq_bank_brick_v1.csv"
+sha256 = "993c5e1164540dce0f2f9bf2e6ed397cf45910da7889300feeaad6543edb8507"
+rows = 36
+paraphrases = "bank/cq_bank_brick_v1_paraphrases.csv"
+
+[variants]
+dir = "harness/variants"
+work_dir = "harness/variants/_work"
+manifest = "harness/variants/MANIFEST.json"
+cq_json = "eval/competency_questions.json"   # path relative to the repository root

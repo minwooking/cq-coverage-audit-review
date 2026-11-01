@@ -1,0 +1,221 @@
+{
+ "checks": [
+  {
+   "name": "2x2 J>=2,A=1",
+   "got": 118,
+   "recorded": 118,
+   "ok": true
+  },
+  {
+   "name": "2x2 J>=2,A=0 (pi events)",
+   "got": 14,
+   "recorded": 14,
+   "ok": true
+  },
+  {
+   "name": "2x2 J<=1,A=1 (under)",
+   "got": 20,
+   "recorded": 20,
+   "ok": true
+  },
+  {
+   "name": "2x2 J<=1,A=0",
+   "got": 36,
+   "recorded": 36,
+   "ok": true
+  },
+  {
+   "name": "pi_hat est",
+   "got": 0.07446808510638298,
+   "recorded": 0.07446808510638298,
+   "ok": true
+  },
+  {
+   "name": "pi_hat ci_lo",
+   "got": 0.021505376344086023,
+   "recorded": 0.021505376344086023,
+   "ok": true
+  },
+  {
+   "name": "pi_hat ci_hi",
+   "got": 0.18518518518518517,
+   "recorded": 0.18518518518518517,
+   "ok": true
+  },
+  {
+   "name": "A->B L1* delta",
+   "got": 0.4782608695652174,
+   "recorded": 0.4782608695652174,
+   "ok": true
+  },
+  {
+   "name": "A->B L1* ci_lo",
+   "got": -0.08695652173913043,
+   "recorded": -0.08695652173913043,
+   "ok": true
+  },
+  {
+   "name": "A->B L1* ci_hi",
+   "got": 1.0434782608695652,
+   "recorded": 1.0434782608695652,
+   "ok": true
+  },
+  {
+   "name": "A->B L1* ci90_lo",
+   "got": 0.0,
+   "recorded": 0.0,
+   "ok": true
+  },
+  {
+   "name": "A->B L1* ci90_hi",
+   "got": 0.9565217391304348,
+   "recorded": 0.9565217391304348,
+   "ok": true
+  },
+  {
+   "name": "G4 QWK est",
+   "got": 0.5002334145961929,
+   "recorded": 0.5002334145961926,
+   "ok": true
+  },
+  {
+   "name": "G4 QWK ci_lo",
+   "got": 0.34465937459365575,
+   "recorded": 0.34465937459365537,
+   "ok": true
+  },
+  {
+   "name": "G4 QWK ci_hi",
+   "got": 0.6420924763138267,
+   "recorded": 0.6420924763138265,
+   "ok": true
+  },
+  {
+   "name": "G5 MAE est",
+   "got": 0.7925531914893617,
+   "recorded": 0.7925531914893617,
+   "ok": true
+  },
+  {
+   "name": "G5 MAE ci_lo",
+   "got": 0.643979057591623,
+   "recorded": 0.643979057591623,
+   "ok": true
+  },
+  {
+   "name": "G5 MAE ci_hi",
+   "got": 0.946524064171123,
+   "recorded": 0.946524064171123,
+   "ok": true
+  },
+  {
+   "name": "2nd rater pi_hat est",
+   "got": 0.13829787234042554,
+   "recorded": 0.13829787234042554,
+   "ok": true
+  },
+  {
+   "name": "2nd rater pi_hat ci_lo",
+   "got": 0.05851063829787234,
+   "recorded": 0.05851063829787234,
+   "ok": true
+  },
+  {
+   "name": "2nd rater pi_hat ci_hi",
+   "got": 0.26344086021505375,
+   "recorded": 0.26344086021505375,
+   "ok": true
+  },
+  {
+   "name": "2nd rater A->B delta",
+   "got": 0.43478260869565216,
+   "recorded": 0.43478260869565216,
+   "ok": true
+  },
+  {
+   "name": "2nd rater A->B ci_lo",
+   "got": -0.13043478260869565,
+   "recorded": -0.13043478260869565,
+   "ok": true
+  },
+  {
+   "name": "2nd rater A->B ci_hi",
+   "got": 1.0434782608695652,
+   "recorded": 1.0434782608695652,
+   "ok": true
+  },
+  {
+   "name": "J A->B delta (3dp)",
+   "got": 0.565,
+   "recorded": 0.565,
+   "ok": true
+  },
+  {
+   "name": "J A->B ci_lo (3dp)",
+   "got": 0.043,
+   "recorded": 0.043,
+   "ok": true
+  },
+  {
+   "name": "J A->B ci_hi (3dp)",
+   "got": 1.13,
+   "recorded": 1.13,
+   "ok": true
+  },
+  {
+   "name": "HH QWK est vs r31",
+   "got": 0.727874276261373,
+   "recorded": 0.727874276261373,
+   "ok": true
+  },
+  {
+   "name": "HH QWK lo vs r31",
+   "got": 0.56666673399157,
+   "recorded": 0.5666667339915705,
+   "ok": true
+  },
+  {
+   "name": "HH QWK hi vs r31",
+   "got": 0.8590794130067481,
+   "recorded": 0.859079413006749,
+   "ok": true
+  },
+  {
+   "name": "sigma J vs r31",
+   "got": 1.342524316912724,
+   "recorded": 1.342524316912724,
+   "ok": true
+  },
+  {
+   "name": "MDE23 J vs r31",
+   "got": 0.7842636387322156,
+   "recorded": 0.7842636387322156,
+   "ok": true
+  },
+  {
+   "name": "sigma L1star_AH vs r31",
+   "got": 1.473078570310593,
+   "recorded": 1.473078570310593,
+   "ok": true
+  },
+  {
+   "name": "MDE23 L1star_AH vs r31",
+   "got": 0.8605296344627322,
+   "recorded": 0.8605296344627322,
+   "ok": true
+  },
+  {
+   "name": "signflip == binomial sign test (all |d|=1)",
+   "got": 0.454498291015625,
+   "recorded": 0.454498291015625,
+   "ok": true
+  },
+  {
+   "name": "signflip == brute-force enumeration",
+   "got": 0.6298828125,
+   "recorded": 0.6298828125,
+   "ok": true
+  }
+ ],
+ "n_fail": 0
+}

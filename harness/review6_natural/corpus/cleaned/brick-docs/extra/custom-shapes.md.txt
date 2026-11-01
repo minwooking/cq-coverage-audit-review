@@ -1,0 +1,32 @@
+# Writing Custom SHACL Shapes
+
+This document describes how to write custom SHACL shapes for use with Brick models.
+
+Please file an issue if you would like additional examples or guidance on this topic
+
+## Introduction
+
+SHACL is a W3C standard for defining constraints on RDF data.
+Brick uses both the base SHACL vocabulary as well as the SHACL-AF advanced features vocabulary.
+These languages can also be used to define custom constraints on Brick models, for example to ensure that all instances of a certain class have a certain property, or to ensure that all instances of a certain class have a certain relationship to another class.
+
+To learn SHACL, we recommend reading the definitions of SHACL and SHACL-AF.
+The RDF Validation book is another good resource.
+
+## Examples
+
+### Example: Point list for a RVAV
+
+A simple and common pattern is to define a custom SHACL shape which checks all instances of a class have the correct/required points (e.g., sensor points, setpoints).
+Below is an example of a custom SHACL shape for a VAV with reheat which checks that all instances of the brick:RVAV class have a heating coil with a valve position command, and a damper with a position command.
+It also checks that all instances of the brick:RVAV class have a supply air temperature sensor and setpoint.
+
+### Example: Custom Shape for a Heat Exchanger (with 223P)
+
+In this example, we will define a custom SHACL shape for an energy recovery ventilation (ERV) heat exchanger.
+This is an air-to-air heat exhanger with two inputs and two outputs.
+We want to define a custom SHACL shape that checks that all instances of this new ERV type have exactly two air inlets and two air outlets.
+
+Brick does not care about inlets and outlets, so extending Brick to support an ERV would only involve ensuring that the ERV has two brick:feeds and two brick:isFedBy relationships.
+
+Using ASHRAE 223P, we can add additional constraints on the Brick class which represent the actual connection points and get more specific as to what kind of fluid is being exchanged.

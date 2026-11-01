@@ -1,0 +1,138 @@
+% Addendum 36C: judge-score ladder A-F on three W3C domains; not human-labelled; exploratory, post hoc (addendum 36 amendment C)
+% ladder rows: judge & scope & mean J (n) for A..F
+GLM-4.7-Flash & dcat & 2.00 (28) & 2.15 (26) & 1.99 (27) & 2.06 (27) & 1.96 (27) & 1.98 (27) \\
+GLM-4.7-Flash & ssn & 1.86 (42) & 2.36 (41) & 2.26 (41) & 2.18 (41) & 2.28 (41) & 2.24 (41) \\
+GLM-4.7-Flash & prov & 2.01 (40) & 2.32 (37) & 2.33 (36) & 2.35 (36) & 2.33 (37) & 2.36 (37) \\
+GLM-4.7-Flash & new domains pooled & 1.95 (110) & 2.29 (104) & 2.21 (104) & 2.21 (104) & 2.22 (105) & 2.22 (105) \\
+gpt-oss-20b & dcat & 2.25 (28) & 1.95 (26) & 2.31 (27) & 2.20 (27) & 2.14 (27) & 2.09 (27) \\
+gpt-oss-20b & ssn & 2.13 (42) & 1.85 (41) & 2.02 (41) & 2.02 (41) & 2.02 (41) & 1.99 (41) \\
+gpt-oss-20b & prov & 1.94 (40) & 2.10 (37) & 1.93 (36) & 1.81 (36) & 1.80 (37) & 1.76 (37) \\
+gpt-oss-20b & new domains pooled & 2.09 (110) & 1.96 (104) & 2.06 (104) & 1.99 (104) & 1.97 (105) & 1.93 (105) \\
+Qwen3.8-Flash-Next & dcat & 2.19 (28) & 2.09 (26) & 2.05 (27) & 2.05 (27) & 2.00 (27) & 2.00 (27) \\
+Qwen3.8-Flash-Next & ssn & 2.02 (42) & 1.77 (41) & 1.76 (41) & 1.75 (41) & 1.69 (41) & 1.63 (41) \\
+Qwen3.8-Flash-Next & prov & 2.16 (40) & 2.41 (37) & 2.25 (36) & 2.22 (36) & 2.00 (37) & 2.00 (37) \\
+Qwen3.8-Flash-Next & new domains pooled & 2.11 (110) & 2.08 (104) & 2.00 (104) & 1.99 (104) & 1.88 (105) & 1.85 (105) \\
+Qwen3-Next-80B-A3B (extractor's model id) & dcat & 1.98 (28) & 1.74 (26) & 1.94 (27) & 1.89 (27) & 1.81 (27) & 1.86 (27) \\
+Qwen3-Next-80B-A3B (extractor's model id) & ssn & 2.11 (42) & 1.99 (41) & 1.95 (41) & 2.00 (41) & 1.93 (41) & 1.88 (41) \\
+Qwen3-Next-80B-A3B (extractor's model id) & prov & 1.88 (40) & 2.09 (37) & 2.11 (36) & 2.14 (36) & 2.17 (37) & 2.08 (37) \\
+Qwen3-Next-80B-A3B (extractor's model id) & new domains pooled & 1.99 (110) & 1.96 (104) & 2.00 (104) & 2.02 (104) & 1.98 (105) & 1.95 (105) \\
+
+% adjacent contrasts: judge & contrast & scope & n & delta [95% BCa] & decision
+GLM-4.7-Flash & A$\to$B & dcat & 21 & $+0.143$ [$-0.11$, $+0.54$] & equivalent \\
+GLM-4.7-Flash & A$\to$B & ssn & 41 & $+0.520$ [$+0.24$, $+0.85$] & resolved B gt A \\
+GLM-4.7-Flash & A$\to$B & prov & 37 & $+0.270$ [$+0.02$, $+0.59$] & resolved B gt A \\
+GLM-4.7-Flash & A$\to$B & new domains pooled & 99 & $+0.347$ [$+0.18$, $+0.54$] & resolved B gt A \\
+GLM-4.7-Flash & B$\to$C & dcat & 26 & $-0.167$ [$-0.33$, $-0.06$] & resolved B gt C \\
+GLM-4.7-Flash & B$\to$C & ssn & 41 & $-0.098$ [$-0.24$, $+0.01$] & equivalent \\
+GLM-4.7-Flash & B$\to$C & prov & 36 & $+0.009$ [$-0.13$, $+0.16$] & equivalent \\
+GLM-4.7-Flash & B$\to$C & new domains pooled & 103 & $-0.078$ [$-0.16$, $-0.00$] & resolved B gt C \\
+GLM-4.7-Flash & C$\to$D & dcat & 27 & $+0.074$ [$-0.02$, $+0.23$] & equivalent \\
+GLM-4.7-Flash & C$\to$D & ssn & 41 & $-0.081$ [$-0.28$, $+0.04$] & equivalent \\
+GLM-4.7-Flash & C$\to$D & prov & 36 & $+0.019$ [$-0.06$, $+0.11$] & equivalent \\
+GLM-4.7-Flash & C$\to$D & new domains pooled & 104 & $-0.006$ [$-0.09$, $+0.06$] & equivalent \\
+GLM-4.7-Flash & D$\to$E & dcat & 27 & $-0.099$ [$-0.27$, $+0.04$] & equivalent \\
+GLM-4.7-Flash & D$\to$E & ssn & 41 & $+0.098$ [$-0.02$, $+0.26$] & equivalent \\
+GLM-4.7-Flash & D$\to$E & prov & 36 & $-0.009$ [$-0.13$, $+0.12$] & equivalent \\
+GLM-4.7-Flash & D$\to$E & new domains pooled & 104 & $+0.010$ [$-0.07$, $+0.09$] & equivalent \\
+GLM-4.7-Flash & E$\to$F & dcat & 27 & $+0.012$ [$-0.06$, $+0.10$] & equivalent \\
+GLM-4.7-Flash & E$\to$F & ssn & 41 & $-0.033$ [$-0.11$, $+0.04$] & equivalent \\
+GLM-4.7-Flash & E$\to$F & prov & 37 & $+0.027$ [$-0.07$, $+0.13$] & equivalent \\
+GLM-4.7-Flash & E$\to$F & new domains pooled & 105 & $+0.000$ [$-0.05$, $+0.05$] & equivalent \\
+gpt-oss-20b & A$\to$B & dcat & 21 & $-0.397$ [$-1.06$, $+0.30$] & unresolved \\
+gpt-oss-20b & A$\to$B & ssn & 41 & $-0.317$ [$-0.79$, $+0.19$] & unresolved \\
+gpt-oss-20b & A$\to$B & prov & 37 & $+0.081$ [$-0.48$, $+0.59$] & unresolved \\
+gpt-oss-20b & A$\to$B & new domains pooled & 99 & $-0.185$ [$-0.51$, $+0.14$] & equivalent \\
+gpt-oss-20b & B$\to$C & dcat & 26 & $+0.333$ [$+0.09$, $+0.76$] & resolved C gt B \\
+gpt-oss-20b & B$\to$C & ssn & 41 & $+0.179$ [$-0.11$, $+0.53$] & equivalent \\
+gpt-oss-20b & B$\to$C & prov & 36 & $-0.148$ [$-0.59$, $+0.22$] & unresolved \\
+gpt-oss-20b & B$\to$C & new domains pooled & 103 & $+0.104$ [$-0.10$, $+0.31$] & equivalent \\
+gpt-oss-20b & C$\to$D & dcat & 27 & $-0.111$ [$-0.52$, $+0.11$] & equivalent \\
+gpt-oss-20b & C$\to$D & ssn & 41 & $+0.000$ [$-0.28$, $+0.24$] & equivalent \\
+gpt-oss-20b & C$\to$D & prov & 36 & $-0.120$ [$-0.44$, $+0.25$] & equivalent \\
+gpt-oss-20b & C$\to$D & new domains pooled & 104 & $-0.071$ [$-0.25$, $+0.10$] & equivalent \\
+gpt-oss-20b & D$\to$E & dcat & 27 & $-0.062$ [$-0.36$, $+0.20$] & equivalent \\
+gpt-oss-20b & D$\to$E & ssn & 41 & $-0.008$ [$-0.33$, $+0.35$] & equivalent \\
+gpt-oss-20b & D$\to$E & prov & 36 & $+0.000$ [$-0.37$, $+0.44$] & equivalent \\
+gpt-oss-20b & D$\to$E & new domains pooled & 104 & $-0.019$ [$-0.22$, $+0.20$] & equivalent \\
+gpt-oss-20b & E$\to$F & dcat & 27 & $-0.049$ [$-0.25$, $+0.00$] & equivalent \\
+gpt-oss-20b & E$\to$F & ssn & 41 & $-0.024$ [$-0.15$, $+0.10$] & equivalent \\
+gpt-oss-20b & E$\to$F & prov & 37 & $-0.045$ [$-0.38$, $+0.27$] & equivalent \\
+gpt-oss-20b & E$\to$F & new domains pooled & 105 & $-0.038$ [$-0.17$, $+0.09$] & equivalent \\
+Qwen3.8-Flash-Next & A$\to$B & dcat & 21 & $-0.095$ [$-0.67$, $+0.41$] & unresolved \\
+Qwen3.8-Flash-Next & A$\to$B & ssn & 41 & $-0.293$ [$-0.65$, $+0.08$] & unresolved \\
+Qwen3.8-Flash-Next & A$\to$B & prov & 37 & $+0.270$ [$-0.05$, $+0.57$] & unresolved \\
+Qwen3.8-Flash-Next & A$\to$B & new domains pooled & 99 & $-0.040$ [$-0.27$, $+0.18$] & equivalent \\
+Qwen3.8-Flash-Next & B$\to$C & dcat & 26 & $-0.013$ [$-0.15$, $+0.08$] & equivalent \\
+Qwen3.8-Flash-Next & B$\to$C & ssn & 41 & $-0.016$ [$-0.15$, $+0.10$] & equivalent \\
+Qwen3.8-Flash-Next & B$\to$C & prov & 36 & $-0.148$ [$-0.31$, $-0.01$] & resolved B gt C \\
+Qwen3.8-Flash-Next & B$\to$C & new domains pooled & 103 & $-0.061$ [$-0.15$, $+0.01$] & equivalent \\
+Qwen3.8-Flash-Next & C$\to$D & dcat & 27 & $+0.000$ [$-0.09$, $+0.09$] & equivalent \\
+Qwen3.8-Flash-Next & C$\to$D & ssn & 41 & $-0.008$ [$-0.17$, $+0.15$] & equivalent \\
+Qwen3.8-Flash-Next & C$\to$D & prov & 36 & $-0.028$ [$-0.17$, $+0.10$] & equivalent \\
+Qwen3.8-Flash-Next & C$\to$D & new domains pooled & 104 & $-0.013$ [$-0.10$, $+0.07$] & equivalent \\
+Qwen3.8-Flash-Next & D$\to$E & dcat & 27 & $-0.049$ [$-0.15$, $+0.07$] & equivalent \\
+Qwen3.8-Flash-Next & D$\to$E & ssn & 41 & $-0.057$ [$-0.21$, $+0.10$] & equivalent \\
+Qwen3.8-Flash-Next & D$\to$E & prov & 36 & $-0.167$ [$-0.34$, $-0.02$] & resolved D gt E \\
+Qwen3.8-Flash-Next & D$\to$E & new domains pooled & 104 & $-0.093$ [$-0.18$, $-0.01$] & resolved D gt E \\
+Qwen3.8-Flash-Next & E$\to$F & dcat & 27 & $+0.000$ [$-0.06$, $+0.06$] & equivalent \\
+Qwen3.8-Flash-Next & E$\to$F & ssn & 41 & $-0.065$ [$-0.15$, $+0.02$] & equivalent \\
+Qwen3.8-Flash-Next & E$\to$F & prov & 37 & $+0.000$ [$-0.08$, $+0.08$] & equivalent \\
+Qwen3.8-Flash-Next & E$\to$F & new domains pooled & 105 & $-0.025$ [$-0.07$, $+0.02$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & A$\to$B & dcat & 21 & $-0.286$ [$-0.68$, $+0.03$] & unresolved \\
+Qwen3-Next-80B-A3B (extractor's model id) & A$\to$B & ssn & 41 & $-0.163$ [$-0.49$, $+0.21$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & A$\to$B & prov & 37 & $+0.297$ [$-0.14$, $+0.77$] & unresolved \\
+Qwen3-Next-80B-A3B (extractor's model id) & A$\to$B & new domains pooled & 99 & $-0.017$ [$-0.25$, $+0.23$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & B$\to$C & dcat & 26 & $+0.179$ [$+0.03$, $+0.37$] & resolved C gt B \\
+Qwen3-Next-80B-A3B (extractor's model id) & B$\to$C & ssn & 41 & $-0.041$ [$-0.12$, $+0.04$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & B$\to$C & prov & 36 & $+0.046$ [$-0.20$, $+0.31$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & B$\to$C & new domains pooled & 103 & $+0.045$ [$-0.06$, $+0.16$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & C$\to$D & dcat & 27 & $-0.049$ [$-0.22$, $+0.10$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & C$\to$D & ssn & 41 & $+0.049$ [$-0.11$, $+0.27$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & C$\to$D & prov & 36 & $+0.028$ [$-0.09$, $+0.17$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & C$\to$D & new domains pooled & 104 & $+0.016$ [$-0.07$, $+0.12$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & D$\to$E & dcat & 27 & $-0.074$ [$-0.33$, $+0.07$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & D$\to$E & ssn & 41 & $-0.073$ [$-0.24$, $+0.06$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & D$\to$E & prov & 36 & $+0.056$ [$-0.25$, $+0.31$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & D$\to$E & new domains pooled & 104 & $-0.029$ [$-0.16$, $+0.09$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & E$\to$F & dcat & 27 & $+0.049$ [$-0.05$, $+0.16$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & E$\to$F & ssn & 41 & $-0.049$ [$-0.13$, $+0.05$] & equivalent \\
+Qwen3-Next-80B-A3B (extractor's model id) & E$\to$F & prov & 37 & $-0.090$ [$-0.21$, $-0.00$] & resolved E gt F \\
+Qwen3-Next-80B-A3B (extractor's model id) & E$\to$F & new domains pooled & 105 & $-0.038$ [$-0.10$, $+0.02$] & equivalent \\
+
+% panel summary (independent judges): contrast & scope & n judges & second>first / first>second / equivalent / unresolved
+A->B & dcat & 3 & 0 / 0 / 1 / 2 \\
+A->B & ssn & 3 & 1 / 0 / 0 / 2 \\
+A->B & prov & 3 & 1 / 0 / 0 / 2 \\
+A->B & new domains pooled & 3 & 1 / 0 / 2 / 0 \\
+B->C & dcat & 3 & 1 / 1 / 1 / 0 \\
+B->C & ssn & 3 & 0 / 0 / 3 / 0 \\
+B->C & prov & 3 & 0 / 1 / 1 / 1 \\
+B->C & new domains pooled & 3 & 0 / 1 / 2 / 0 \\
+C->D & dcat & 3 & 0 / 0 / 3 / 0 \\
+C->D & ssn & 3 & 0 / 0 / 3 / 0 \\
+C->D & prov & 3 & 0 / 0 / 3 / 0 \\
+C->D & new domains pooled & 3 & 0 / 0 / 3 / 0 \\
+D->E & dcat & 3 & 0 / 0 / 3 / 0 \\
+D->E & ssn & 3 & 0 / 0 / 3 / 0 \\
+D->E & prov & 3 & 0 / 1 / 2 / 0 \\
+D->E & new domains pooled & 3 & 0 / 1 / 2 / 0 \\
+E->F & dcat & 3 & 0 / 0 / 3 / 0 \\
+E->F & ssn & 3 & 0 / 0 / 3 / 0 \\
+E->F & prov & 3 & 0 / 0 / 3 / 0 \\
+E->F & new domains pooled & 3 & 0 / 0 / 3 / 0 \\
+A->C & dcat & 3 & 0 / 0 / 1 / 2 \\
+A->C & ssn & 3 & 1 / 0 / 0 / 2 \\
+A->C & prov & 3 & 1 / 0 / 1 / 1 \\
+A->C & new domains pooled & 3 & 1 / 0 / 2 / 0 \\
+A->D & dcat & 3 & 0 / 0 / 1 / 2 \\
+A->D & ssn & 3 & 1 / 0 / 0 / 2 \\
+A->D & prov & 3 & 1 / 0 / 1 / 1 \\
+A->D & new domains pooled & 3 & 1 / 0 / 2 / 0 \\
+A->E & dcat & 3 & 0 / 0 / 1 / 2 \\
+A->E & ssn & 3 & 1 / 0 / 0 / 2 \\
+A->E & prov & 3 & 1 / 0 / 1 / 1 \\
+A->E & new domains pooled & 3 & 1 / 0 / 2 / 0 \\
+A->F & dcat & 3 & 0 / 0 / 1 / 2 \\
+A->F & ssn & 3 & 1 / 1 / 0 / 1 \\
+A->F & prov & 3 & 1 / 0 / 1 / 1 \\
+A->F & new domains pooled & 3 & 1 / 1 / 1 / 0 \\

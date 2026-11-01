@@ -1,0 +1,104 @@
+http://example.org/chunktograph#ACMEEnergy2019Tutorial | ACM E-Energy 2019 Tutorial Slides
+http://example.org/chunktograph#AHU | AHU
+http://example.org/chunktograph#AHUVAVSystem | AHU-VAV system < owl:Thing
+http://example.org/chunktograph#AHU_Average_Exhaust_Air_Static_Pressure_Sensor | AHU Average Exhaust Air Static Pressure Sensor
+http://example.org/chunktograph#ASHRAE | ASHRAE
+http://example.org/chunktograph#ASHRAE223 | ASHRAE 223
+http://example.org/chunktograph#ASHRAE223P | ASHRAE 223P
+http://example.org/chunktograph#ASHRAEHaystackBrickCollaboration | ASHRAE, Haystack, Brick Collaboration
+http://example.org/chunktograph#BACnetReference | BACnetReference < owl:Thing
+http://example.org/chunktograph#Brick | Brick :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities.
+http://example.org/chunktograph#BrickDocumentation | Brick Documentation
+http://example.org/chunktograph#BrickEntityProperty | Brick Entity Property
+http://example.org/chunktograph#BrickProperty | Brick Property < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickRelationship | Brick Relationship
+http://example.org/chunktograph#BrickRelationshipDefinition | Brick Relationship Definition
+http://example.org/chunktograph#BuiltEnvironmentAsset | Built environment asset
+http://example.org/chunktograph#EntityProperty | Entity Property
+http://example.org/chunktograph#InnovatingBuiltEnvironmentWithDigitalTwins | Innovating the built environment with digital twins
+http://example.org/chunktograph#MigrationProcess | Migration Process
+http://example.org/chunktograph#PropertyValue | Property Value
+http://example.org/chunktograph#PythonFile | Python File
+http://example.org/chunktograph#RDFGraph | RDF Graph
+http://example.org/chunktograph#SHACLShape | SHACL Shape
+OP http://example.org/chunktograph#addInverseEdges rng:owl:Thing
+OP http://example.org/chunktograph#addVBISTags
+OP http://example.org/chunktograph#addresses
+OP http://example.org/chunktograph#addsInverseRelationships
+OP http://example.org/chunktograph#addsSuperclasses
+OP http://example.org/chunktograph#addsTags
+OP http://example.org/chunktograph#adheresToCompleteness dom:http://example.org/chunktograph#Brick
+OP http://example.org/chunktograph#adheresToConsistency dom:http://example.org/chunktograph#Brick
+OP http://example.org/chunktograph#adheresToExpressivity dom:http://example.org/chunktograph#Brick
+OP http://example.org/chunktograph#adheresToExtensibility dom:http://example.org/chunktograph#Brick
+OP http://example.org/chunktograph#aggregate dom:owl:Thing rng:http://example.org/chunktograph#PropertyValue
+OP http://example.org/chunktograph#aggregationFunction dom:http://example.org/chunktograph#PropertyValue rng:owl:Thing
+OP http://example.org/chunktograph#area dom:owl:Thing rng:http://example.org/chunktograph#PropertyValue
+OP http://example.org/chunktograph#generates rng:http://example.org/chunktograph#RDFGraph
+OP http://example.org/chunktograph#hasAssetMetatag rng:http://example.org/chunktograph#BuiltEnvironmentAsset
+OP http://example.org/chunktograph#hasBrickClass dom:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickCommand dom:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickDocumentation rng:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickEquipment dom:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickLocation dom:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickParameter dom:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickPoint dom:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickProperty dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasBrickQuantity dom:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickSchema dom:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickSetpoint dom:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickStatus dom:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickSubstance dom:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasClassificationStructure rng:http://example.org/chunktograph#BuiltEnvironmentAsset
+OP http://example.org/chunktograph#hasEntityProperty dom:http://example.org/chunktograph#BrickEntityProperty rng:http://example.org/chunktograph#SHACLShape
+OP http://example.org/chunktograph#hasInverseOf dom:http://example.org/chunktograph#BrickProperty rng:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasMigrationProperty dom:http://example.org/chunktograph#MigrationProcess rng:http://example.org/chunktograph#MigrationProperty
+OP http://example.org/chunktograph#hasNameplateProperty dom:owl:Thing rng:owl:Thing
+OP http://example.org/chunktograph#hasOWLPropertyClass dom:http://example.org/chunktograph#BrickProperty rng:owl:Class
+OP http://example.org/chunktograph#hasOutput rng:http://example.org/chunktograph#RDFGraph
+OP http://example.org/chunktograph#hasPropertyDefinition dom:http://example.org/chunktograph#BrickRelationship,http://example.org/chunktograph#PythonFile rng:http://example.org/chunktograph#BrickProperty,http://example.org/chunktograph#BrickRelationshipDefinition
+OP http://example.org/chunktograph#hasPropertyDefinitionInFile dom:http://example.org/chunktograph#BrickProperty rng:http://example.org/chunktograph#PythonFile
+OP http://example.org/chunktograph#hasPropertyType dom:http://example.org/chunktograph#BrickProperty rng:owl:Class
+OP http://example.org/chunktograph#hasRDFSDomain dom:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasRDFSRange dom:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasShape dom:http://example.org/chunktograph#BrickEntityProperty rng:http://example.org/chunktograph#SHACLShape
+OP http://example.org/chunktograph#hasUnit dom:http://example.org/chunktograph#PropertyValue rng:http://www.w3.org/2001/XMLSchema#string,owl:Thing,qudt:Unit
+OP http://example.org/chunktograph#isPropertyOf dom:owl:NamedIndividual rng:http://example.org/chunktograph#Brick
+OP http://example.org/chunktograph#powerComplexity dom:owl:Thing rng:http://example.org/chunktograph#PropertyValue
+DP http://example.org/chunktograph#BACnetURI dom:http://example.org/chunktograph#BACnetReference rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#MultipleGraphsSupport rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#RDFModelStorage rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#ReasoningInference rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#SHACLSupport rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#SPARQLSupport rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#ScalingAndPerformance rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#aggregationInterval dom:http://example.org/chunktograph#PropertyValue rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#assertsSameAsSelf rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#backend rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#coolingCapacity dom:http://example.org/chunktograph#EntityProperty rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasProperty dom:http://example.org/chunktograph#SHACLShape rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasPropertyName dom:http://example.org/chunktograph#BrickProperty rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasSKOSDefinitionForProperty dom:http://example.org/chunktograph#BrickProperty rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasSourceText dom:owl:Thing rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#hasUnit dom:http://example.org/chunktograph#PropertyValue rng:http://www.w3.org/2001/XMLSchema#string,owl:Thing,qudt:Unit
+DP http://example.org/chunktograph#measurement dom:owl:Thing rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#value dom:http://example.org/chunktograph#PropertyValue rng:http://www.w3.org/2001/XMLSchema#decimal
+DP http://example.org/chunktograph#what dom:owl:Thing rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph#where dom:owl:Thing rng:http://www.w3.org/2001/XMLSchema#string
+DP http://example.org/chunktograph/bacnet#read-property dom:http://example.org/chunktograph#BACnetReference rng:http://www.w3.org/2001/XMLSchema#string
+IND http://example.org/chunktograph#ACMEEnergy2019TutorialInstance | ACM E-Energy 2019 Tutorial Slides a http://example.org/chunktograph#ACMEEnergy2019Tutorial
+IND http://example.org/chunktograph#AHU | AHU a http://example.org/chunktograph#AirHandlingUnit,owl:Class
+IND http://example.org/chunktograph#AIF | AI F
+IND http://example.org/chunktograph#AProgrammingModelForPortableFaultDetectionAndDiagnosis | A programming model for portable fault detection and diagnosis {http://example.org/chunktograph#hasPublicationYear=2023; http://example.org/chunktograph#hasURL=https://doi.org/10.1145/3587225.3587245}
+IND http://example.org/chunktograph#ASHRAE | ASHRAE a owl:Class
+IND http://example.org/chunktograph#ASHRAE223P | ASHRAE 223P a http://example.org/chunktograph#Standard,owl:Class
+IND http://example.org/chunktograph#Brick | Brick a owl:Class :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities. {http://example.org/chunktograph#hasBrickSupport=http://example.org/chunktograph#Brick; http://example.org/chunktograph#hasFile=http://example.org/chunktograph#entity_properties_py; http://example.org/chunktograph#hasFile=http://example.org/chunktograph#properties_py; http://example.org/chunktograph#hasGoal=http://example.org/chunktograph#CompleteAndConsistentModeling; http://example.org/chunktograph#hasTutorial=http://example.org/chunktograph#ACMEEnergy2019TutorialInstance; http://example.org/chunktograph#isCollaboratingWith=http://example.org/chunktograph#ASHRAE; http://example.org/chunktograph#isUsedIn=http://example.org/chunktograph#ASHRAE223P}
+IND http://example.org/chunktograph#BrickEntityProperty | Brick Entity Property a owl:Class {http://example.org/chunktograph#hasShape=http://example.org/chunktograph#SHACLShape}
+IND http://example.org/chunktograph#BrickRelationship | Brick Relationship a owl:Class {http://example.org/chunktograph#hasInverse=http://example.org/chunktograph#BrickRelationship}
+IND http://example.org/chunktograph#BrickRelationshipDefinition | Brick Relationship Definition a owl:Class
+IND http://example.org/chunktograph#FrontiersInBuiltEnvironment | Frontiers in Built Environment a http://example.org/chunktograph#RDFGraph
+IND http://example.org/chunktograph#InnovatingBuiltEnvironmentWithDigitalTwinsInstance | Innovating the built environment with digital twins {http://example.org/chunktograph#hasSourceText=Innovating the built environment with digital twins}
+IND http://example.org/chunktograph#MigrationPropertyAutomatic | Automatic :: Minimize manual input and translation effort {rdfs:subClassOf=http://example.org/chunktograph#MigrationProperty}
+IND http://example.org/chunktograph#MigrationPropertyComplete | Complete :: The migration should handle translation of all classes and relationships {rdfs:subClassOf=http://example.org/chunktograph#MigrationProperty}
+IND http://example.org/chunktograph#MigrationPropertySemanticsPreserving | Semantics-preserving :: Preserve semantics of original model when updating to new ontology {rdfs:subClassOf=http://example.org/chunktograph#MigrationProperty}
+IND http://example.org/chunktograph#SHACLShape | SHACL Shape a owl:Class {http://example.org/chunktograph#hasDatatype=xsd:string; http://example.org/chunktograph#hasProperty=property; http://example.org/chunktograph#hasUnits=unit; http://example.org/chunktograph#hasValues=value}

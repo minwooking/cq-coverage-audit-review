@@ -1,0 +1,306 @@
+http://example.org/chunktograph#Class_artifact | Artifact < skos:Concept
+http://example.org/chunktograph#Class_class | Class < skos:Concept
+http://example.org/chunktograph#Class_concept | Concept < skos:Concept
+http://example.org/chunktograph#Class_datum | Datum < skos:Concept
+http://example.org/chunktograph#Class_example | Example < skos:Concept
+http://example.org/chunktograph#Class_process | Process < skos:Concept
+http://example.org/chunktograph#Class_property | Property < skos:Concept
+http://example.org/chunktograph#Class_relation | Relation < skos:Concept
+OP http://example.org/chunktograph#p_acquire
+OP http://example.org/chunktograph#p_add
+OP http://example.org/chunktograph#p_adopt
+OP http://example.org/chunktograph#p_allow
+OP http://example.org/chunktograph#p_allow-check
+OP http://example.org/chunktograph#p_allow-describe
+OP http://example.org/chunktograph#p_allow-description
+OP http://example.org/chunktograph#p_allow-resource
+OP http://example.org/chunktograph#p_annotate
+OP http://example.org/chunktograph#p_annotate-dataset
+OP http://example.org/chunktograph#p_appear
+OP http://example.org/chunktograph#p_apply-measure
+OP http://example.org/chunktograph#p_are
+OP http://example.org/chunktograph#p_assign
+OP http://example.org/chunktograph#p_associate
+OP http://example.org/chunktograph#p_assumption
+OP http://example.org/chunktograph#p_avoid
+OP http://example.org/chunktograph#p_base
+OP http://example.org/chunktograph#p_benefit
+OP http://example.org/chunktograph#p_can
+OP http://example.org/chunktograph#p_can-be
+OP http://example.org/chunktograph#p_can-be-used-for
+OP http://example.org/chunktograph#p_can-be-used-together-with
+OP http://example.org/chunktograph#p_can-be-used-when
+OP http://example.org/chunktograph#p_can-be-used-within
+OP http://example.org/chunktograph#p_capture
+OP http://example.org/chunktograph#p_cause
+OP http://example.org/chunktograph#p_characterize
+OP http://example.org/chunktograph#p_check
+OP http://example.org/chunktograph#p_coexist
+OP http://example.org/chunktograph#p_come
+OP http://example.org/chunktograph#p_concern
+OP http://example.org/chunktograph#p_consider
+OP http://example.org/chunktograph#p_contain-total-information
+OP http://example.org/chunktograph#p_correspond
+OP http://example.org/chunktograph#p_currently-limit
+OP http://example.org/chunktograph#p_dcat-accessurl-correspond
+OP http://example.org/chunktograph#p_define
+OP http://example.org/chunktograph#p_denote
+OP http://example.org/chunktograph#p_depend
+OP http://example.org/chunktograph#p_describe
+OP http://example.org/chunktograph#p_design-facilitate
+OP http://example.org/chunktograph#p_determine
+OP http://example.org/chunktograph#p_distinguishe
+OP http://example.org/chunktograph#p_domain
+OP http://example.org/chunktograph#p_download
+OP http://example.org/chunktograph#p_drop
+OP http://example.org/chunktograph#p_duplicate
+OP http://example.org/chunktograph#p_editor
+OP http://example.org/chunktograph#p_employ
+OP http://example.org/chunktograph#p_enable
+OP http://example.org/chunktograph#p_enable-publisher-describe-dataset-datum-service-catalog
+OP http://example.org/chunktograph#p_entail
+OP http://example.org/chunktograph#p_equivalent
+OP http://example.org/chunktograph#p_expect-adopt
+OP http://example.org/chunktograph#p_explain
+OP http://example.org/chunktograph#p_explicitly-mean
+OP http://example.org/chunktograph#p_express
+OP http://example.org/chunktograph#p_express-statement-concern
+OP http://example.org/chunktograph#p_extend
+OP http://example.org/chunktograph#p_facilitate
+OP http://example.org/chunktograph#p_follow
+OP http://example.org/chunktograph#p_fully-informationally-equivalent
+OP http://example.org/chunktograph#p_generally-discourage
+OP http://example.org/chunktograph#p_give
+OP http://example.org/chunktograph#p_has
+OP http://example.org/chunktograph#p_has-been-used-in
+OP http://example.org/chunktograph#p_have
+OP http://example.org/chunktograph#p_identifie
+OP http://example.org/chunktograph#p_imply
+OP http://example.org/chunktograph#p_imply-default-crs
+OP http://example.org/chunktograph#p_include
+OP http://example.org/chunktograph#p_indicate
+OP http://example.org/chunktograph#p_instance
+OP http://example.org/chunktograph#p_intend-prevent
+OP http://example.org/chunktograph#p_intend-provide
+OP http://example.org/chunktograph#p_involve
+OP http://example.org/chunktograph#p_is
+OP http://example.org/chunktograph#p_is-a
+OP http://example.org/chunktograph#p_is-about
+OP http://example.org/chunktograph#p_is-an
+OP http://example.org/chunktograph#p_is-made-for
+OP http://example.org/chunktograph#p_is-used-for
+OP http://example.org/chunktograph#p_is-used-from
+OP http://example.org/chunktograph#p_is-used-to
+OP http://example.org/chunktograph#p_is-used-when
+OP http://example.org/chunktograph#p_kind
+OP http://example.org/chunktograph#p_link
+OP http://example.org/chunktograph#p_link-dataset-series
+OP http://example.org/chunktograph#p_maintain
+OP http://example.org/chunktograph#p_maintain-expectation-dcat-2
+OP http://example.org/chunktograph#p_make-dataset-series-class-citizen-datum-catalog
+OP http://example.org/chunktograph#p_make-possible
+OP http://example.org/chunktograph#p_make-use
+OP http://example.org/chunktograph#p_match
+OP http://example.org/chunktograph#p_may-have
+OP http://example.org/chunktograph#p_mean
+OP http://example.org/chunktograph#p_member
+OP http://example.org/chunktograph#p_member-item
+OP http://example.org/chunktograph#p_move
+OP http://example.org/chunktograph#p_necessarily-lead
+OP http://example.org/chunktograph#p_need-upgrade
+OP http://example.org/chunktograph#p_occur
+OP http://example.org/chunktograph#p_ontology
+OP http://example.org/chunktograph#p_originally-develop
+OP http://example.org/chunktograph#p_parent-class
+OP http://example.org/chunktograph#p_prefer
+OP http://example.org/chunktograph#p_prescribe
+OP http://example.org/chunktograph#p_provide
+OP http://example.org/chunktograph#p_proxy
+OP http://example.org/chunktograph#p_publish-separately
+OP http://example.org/chunktograph#p_recommend
+OP http://example.org/chunktograph#p_refer
+OP http://example.org/chunktograph#p_reflect
+OP http://example.org/chunktograph#p_relate
+OP http://example.org/chunktograph#p_relax
+OP http://example.org/chunktograph#p_remove
+OP http://example.org/chunktograph#p_represent
+OP http://example.org/chunktograph#p_require
+OP http://example.org/chunktograph#p_restrict
+OP http://example.org/chunktograph#p_result
+OP http://example.org/chunktograph#p_return
+OP http://example.org/chunktograph#p_reuse
+OP http://example.org/chunktograph#p_safely-ignore
+OP http://example.org/chunktograph#p_serve
+OP http://example.org/chunktograph#p_should-be-used-for
+OP http://example.org/chunktograph#p_show
+OP http://example.org/chunktograph#p_source-datum-configure
+OP http://example.org/chunktograph#p_specify
+OP http://example.org/chunktograph#p_specify-resource-status
+OP http://example.org/chunktograph#p_strictly-related
+OP http://example.org/chunktograph#p_sub-class
+OP http://example.org/chunktograph#p_sub-property
+OP http://example.org/chunktograph#p_subproperty
+OP http://example.org/chunktograph#p_substantial
+OP http://example.org/chunktograph#p_super-class
+OP http://example.org/chunktograph#p_supersede
+OP http://example.org/chunktograph#p_support
+OP http://example.org/chunktograph#p_take
+OP http://example.org/chunktograph#p_target
+OP http://example.org/chunktograph#p_tie
+OP http://example.org/chunktograph#p_tighten
+OP http://example.org/chunktograph#p_type
+OP http://example.org/chunktograph#p_typically-publish
+OP http://example.org/chunktograph#p_undermine
+OP http://example.org/chunktograph#p_use
+OP http://example.org/chunktograph#p_usually-encode
+OP http://example.org/chunktograph#p_will-have
+DP http://example.org/chunktograph#p_applicable
+DP http://example.org/chunktograph#p_aspect-orthogonal
+DP http://example.org/chunktograph#p_available
+DP http://example.org/chunktograph#p_axis-order
+DP http://example.org/chunktograph#p_convert-number
+DP http://example.org/chunktograph#p_definition
+DP http://example.org/chunktograph#p_describe-quality
+DP http://example.org/chunktograph#p_different-year
+DP http://example.org/chunktograph#p_easily-handle
+DP http://example.org/chunktograph#p_evolve-time
+DP http://example.org/chunktograph#p_give-possibility-specify
+DP http://example.org/chunktograph#p_increase
+DP http://example.org/chunktograph#p_limit
+DP http://example.org/chunktograph#p_make-use-property
+DP http://example.org/chunktograph#p_need-change-remain-conformance
+DP http://example.org/chunktograph#p_optional
+DP http://example.org/chunktograph#p_property-describe
+DP http://example.org/chunktograph#p_provide-information
+DP http://example.org/chunktograph#p_range
+DP http://example.org/chunktograph#p_semantically-broad
+DP http://example.org/chunktograph#p_serialization
+DP http://example.org/chunktograph#p_specific
+DP http://example.org/chunktograph#p_typically
+DP http://example.org/chunktograph#p_was
+DP http://example.org/chunktograph#p_were
+DP http://example.org/chunktograph#p_will-be
+IND http://example.org/chunktograph#100-0 | 100.0 a http://example.org/chunktograph#Class_property,skos:Concept {http://example.org/chunktograph#p_is-an=http://example.org/chunktograph#xsd-decimal; http://purl.org/dc/terms/source=c0-a192; skos:broader=http://example.org/chunktograph#section_property-spatial-resolution; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#1e2 | 1e2 a http://example.org/chunktograph#Class_property,skos:Concept {http://example.org/chunktograph#p_is-an=http://example.org/chunktograph#xsd-double; http://purl.org/dc/terms/source=c0-a192; skos:broader=http://example.org/chunktograph#section_property-spatial-resolution; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#2014-version-dcat | 2014 version dcat a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_rdf-representation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#2018-2019-2020 | 2018 2019 2020 a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_dataset-series-metadata; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#20500-30000-stop | 20500 30000 stop a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_providing-quality-information; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#5-kb-csv-file | 5 kb csv file a http://example.org/chunktograph#Class_artifact,skos:Concept {http://example.org/chunktograph#p_represent=http://example.org/chunktograph#rdf-resource-type-dcat-distribution; http://purl.org/dc/terms/source=c0-a47; skos:broader=http://example.org/chunktograph#section_basic-example; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ability-collaboratively-annotate-datum | ability collaboratively annotate datum a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_rdf-considerations; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#abstract-dataset-different-manifestation-distribution | abstract dataset different manifestation distribution a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_introduction; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#abstract-resource-snapshot-correspond-current-version-content | abstract resource snapshot correspond current version content a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_version-chains-and-hierarchies; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#abstract-resource-version | abstract resource version a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_version-chains-and-hierarchies; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#academic-research-project | academic research project a http://example.org/chunktograph#Class_class,skos:Concept {skos:broader=http://example.org/chunktograph#section_property-was-generated-by; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#access-right | access right a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_license-and-rights-statements; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#access-url-distribution | access url distribution a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_property-access-url; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#accessible-form-dataset-downloadable-file | accessible form dataset downloadable file a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#acquire-new-dataset | acquire new dataset a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_how-to-specify-dataset-series; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#activity | activity a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_relationships-between-datasets-and-agents; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#actor | actor a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_include=http://example.org/chunktograph#author; http://example.org/chunktograph#p_include=http://example.org/chunktograph#publisher; http://purl.org/dc/terms/source=c0-a304; skos:broader=http://example.org/chunktograph#section_dereferenceable-identifiers; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#add-record | add record a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#additional-detail-responsible-agent | additional detail responsible agent a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_complementary-vocabularies; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#adms-identifier | adms identifier a http://example.org/chunktograph#Class_property,skos:Concept {http://example.org/chunktograph#p_express=http://example.org/chunktograph#external-identifier; http://example.org/chunktograph#p_express=http://example.org/chunktograph#locally-mint-identifier; http://purl.org/dc/terms/source=c0-a304; skos:broader=http://example.org/chunktograph#section_dereferenceable-identifiers; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#adms-schemaagency | adms schemaagency a http://example.org/chunktograph#Class_property,skos:Concept {http://example.org/chunktograph#p_is-used-when=http://example.org/chunktograph#authority-iri-associate; http://purl.org/dc/terms/source=c0-a305; skos:broader=http://example.org/chunktograph#section_dereferenceable-identifiers; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#advantage-gain-wide-adoption-rdf-model | advantage gain wide adoption rdf model a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_rdf-considerations; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#aggregate-dcat-metadata | aggregate dcat metadata a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_serve=http://example.org/chunktograph#manifest-file-digital-preservation-process; http://purl.org/dc/terms/source=c0-a11; skos:broader=http://example.org/chunktograph#section_abstract; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#anyone-can-say-anything-anywhere | anyone can say anything anywhere a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_rdf-considerations; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#appropriate-time-relate-property | appropriate time relate property a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_resource-life-cycle; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#approval-workflow | approval workflow a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_cause=http://example.org/chunktograph#resource-undergo-change-revision-need; http://purl.org/dc/terms/source=c0-a356; skos:broader=http://example.org/chunktograph#section_resource-life-cycle; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#ar-iv | arχiv a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_dereferenceable-identifiers; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#association-class | association class a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_sub-class=http://example.org/chunktograph#prov-entityinfluence; http://purl.org/dc/terms/source=c0-a268; skos:broader=http://example.org/chunktograph#section_class-relationship; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#attach-specific-role-association-class-prov-attribution | attach specific role association class prov attribution a http://example.org/chunktograph#Class_relation,skos:Concept {skos:broader=http://example.org/chunktograph#section_relationships-between-datasets-and-agents; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#author | author a http://example.org/chunktograph#Class_class,skos:Concept {skos:broader=http://example.org/chunktograph#section_dereferenceable-identifiers; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#authority-iri-associate | authority iri associate a http://example.org/chunktograph#Class_relation,skos:Concept {skos:broader=http://example.org/chunktograph#section_dereferenceable-identifiers; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#available-dcat-1 | available dcat 1 a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_data-citation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#basic-property-begin-end-time-associate-agent-etc | basic property begin end time associate agent etc a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_property-was-generated-by; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#basis-comparison-reference-point-thing-evaluate | basis comparison reference point thing evaluate a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_property-conforms-to; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#blank-node | blank node a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_appear=http://example.org/chunktograph#subject-object-position-triple; http://example.org/chunktograph#p_denote=http://example.org/chunktograph#resource-explicitly-name-iri; http://example.org/chunktograph#p_limit=ability collaboratively annotate datum; http://purl.org/dc/terms/source=c0-a38; skos:broader=http://example.org/chunktograph#section_rdf-considerations; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#blank-node-nest-inside-relate-dataset-description | blank node nest inside relate dataset description a http://example.org/chunktograph#Class_relation,skos:Concept {skos:broader=http://example.org/chunktograph#section_rdf-considerations; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#blank-node-resource | blank node resource a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_annotate=http://example.org/chunktograph#new-information-new-source; http://example.org/chunktograph#p_target=http://example.org/chunktograph#link; http://purl.org/dc/terms/source=c0-a38; skos:broader=http://example.org/chunktograph#section_rdf-considerations; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#broad-notion-version | broad notion version a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_complementary-approaches-to-versioning; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#build-version-chain | build version chain a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_complementary-approaches-to-versioning; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#catalog | catalog a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_is=http://example.org/chunktograph#dataset-individual-item-metadata-record-describe-resource; http://example.org/chunktograph#p_kind=http://example.org/chunktograph#dataset; http://example.org/chunktograph#p_member-item=http://example.org/chunktograph#description-dataset-datum-service; http://purl.org/dc/terms/source=c0-a23; http://purl.org/dc/terms/source=c0-a33; skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#catalog-compose-catalog | catalog compose catalog a http://example.org/chunktograph#Class_relation,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#catalog-dataset | catalog dataset a http://example.org/chunktograph#Class_relation,skos:Concept {skos:broader=http://example.org/chunktograph#section_class-catalog; skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#catalog-record | catalog record a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_describe=http://example.org/chunktograph#entry-catalog; http://purl.org/dc/terms/source=c0-a36; skos:broader=http://example.org/chunktograph#section_class-catalog-record; skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#catalog-resource-addition-dataset | catalog resource addition dataset a http://example.org/chunktograph#Class_relation,skos:Concept {skos:broader=http://example.org/chunktograph#section_introduction; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#catalog-use | catalog use a http://example.org/chunktograph#Class_relation,skos:Concept {skos:broader=http://example.org/chunktograph#section_class-catalog-record; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#change | change a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_intend-prevent=http://example.org/chunktograph#entity-object-dcat-theme-automatically-infer-skos-concept; http://example.org/chunktograph#p_substantial=http://example.org/chunktograph#implement-resource-development; http://purl.org/dc/terms/source=c0-a108; http://purl.org/dc/terms/source=c0-a356; skos:broader=http://example.org/chunktograph#section_property-theme-category; skos:broader=http://example.org/chunktograph#section_resource-life-cycle; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#change-status | change status a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_resource-life-cycle; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#checksum | checksum a http://example.org/chunktograph#Class_property,skos:Concept {http://example.org/chunktograph#p_allow-check=http://example.org/chunktograph#integrity-content-file; http://purl.org/dc/terms/source=c0-a294; skos:broader=http://example.org/chunktograph#section_class-checksum; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#child-dataset | child dataset a http://example.org/chunktograph#Class_artifact,skos:Concept {http://example.org/chunktograph#p_have=http://example.org/chunktograph#different-geographic-bounding-box-spatial-coverage; http://example.org/chunktograph#p_type=http://example.org/chunktograph#dcat-dataset; http://example.org/chunktograph#p_type=http://example.org/chunktograph#dcat-distribution; http://example.org/chunktograph#p_use=http://example.org/chunktograph#different-spatial-reference-system; http://purl.org/dc/terms/source=c0-a379; http://purl.org/dc/terms/source=c0-a380; http://purl.org/dc/terms/source=c0-a386; http://purl.org/dc/terms/source=c0-a387; skos:broader=http://example.org/chunktograph#section_dataset-series-in-existing-dcat-implementations; skos:broader=http://example.org/chunktograph#section_dataset-series-metadata; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#class | class a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_add=http://example.org/chunktograph#dcat-2; http://example.org/chunktograph#p_add=http://example.org/chunktograph#dcat-3; http://example.org/chunktograph#p_allow=http://example.org/chunktograph#result-variety-checksum-cryptographic-message-digest-algorithm-represent; http://example.org/chunktograph#p_optional=catalog use; http://purl.org/dc/terms/source=c0-a164; http://purl.org/dc/terms/source=c0-a255; http://purl.org/dc/terms/source=c0-a294; skos:broader=http://example.org/chunktograph#section_class-catalog-record; skos:broader=http://example.org/chunktograph#section_class-checksum; skos:broader=http://example.org/chunktograph#section_class-data-service; skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#class-property-organization-ontology | class property organization ontology a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_explain=http://example.org/chunktograph#additional-detail-responsible-agent; http://purl.org/dc/terms/source=c0-a62; skos:broader=http://example.org/chunktograph#section_complementary-vocabularies; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#client-find-suitable-dataset | client find suitable dataset a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#collection-dataset | collection dataset a http://example.org/chunktograph#Class_artifact,skos:Concept {http://example.org/chunktograph#p_publish-separately=http://example.org/chunktograph#share-characteristic-group; http://example.org/chunktograph#p_sub-class=http://example.org/chunktograph#dcat-dataset; http://purl.org/dc/terms/source=c0-a207; skos:broader=http://example.org/chunktograph#section_class-dataset-series; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#collection-datum-publish-curate-single-agent-available-access-download-serialization-format | collection datum publish curate single agent available access download serialization format a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#collection-metadata-dataset-data-service-resource-type | collection metadata dataset data service resource type a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#collection-operation-accessible-interface-api-provide-access-dataset-datum-processing-function | collection operation accessible interface api provide access dataset datum processing function a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#collection-operation-api-provide-access-datum | collection operation api provide access datum a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#comment-feedback-dataset-send | comment feedback dataset send a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_basic-example; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#common-qualified-relation-pattern-describe-qualified-relation | common qualified relation pattern describe qualified relation a http://example.org/chunktograph#Class_relation,skos:Concept {skos:broader=http://example.org/chunktograph#section_property-qualified-relation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#community-practice | community practice a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_resource-life-cycle; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#complement-replace | complement replace a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_complementary-approaches-to-versioning; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#complementary-vocabulary | complementary vocabulary a http://example.org/chunktograph#Class_concept,skos:Concept {http://example.org/chunktograph#p_can-be-used-together-with=http://example.org/chunktograph#dcat; http://purl.org/dc/terms/source=c0-a18; skos:broader=http://example.org/chunktograph#section_introduction; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#conception-creation-publication | conception creation publication a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_resource-life-cycle; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#conceptual-entity | conceptual entity a http://example.org/chunktograph#Class_class,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#consideration-dereferenceable-identifier | consideration dereferenceable identifier a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_data-citation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#constraint | constraint a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_data-catalog-vocabulary-dcat-version-3; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#consumption-aggregation-metadata-multiple-catalog | consumption aggregation metadata multiple catalog a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_abstract; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#contact-information | contact information a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_property-contact-point; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#contact-point | contact point a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_provide=http://example.org/chunktograph#comment-feedback-dataset-send; http://purl.org/dc/terms/source=c0-a46; skos:broader=http://example.org/chunktograph#section_basic-example; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#content-orient-guideline-develop-w3c-datum-cube-vocabulary-effort | content orient guideline develop w3c datum cube vocabulary effort a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_basic-example; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#context | context a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_introduction; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#context-government-datum-catalog-data-gov-data-gov-uk | context government datum catalog data.gov data.gov.uk a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_introduction; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#context-resource-member-class-prov-entity | context resource member class prov entity a http://example.org/chunktograph#Class_class,skos:Concept {skos:broader=http://example.org/chunktograph#section_property-qualified-relation; skos:broader=http://example.org/chunktograph#section_property-was-generated-by; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#control-vocabulary-dublin-core-collection-description-frequency-vocabulary | control vocabulary dublin core collection description frequency vocabulary a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_temporal-properties; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#convert | convert a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_convert-number=xsd double xsd integer; http://purl.org/dc/terms/source=c0-a192; skos:broader=http://example.org/chunktograph#section_property-spatial-resolution; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#core-dcat-vocabulary | core dcat vocabulary a http://example.org/chunktograph#Class_class,skos:Concept {skos:broader=http://example.org/chunktograph#section_rdf-representation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#correct-error-add-new-content-etc | correct error add new content etc a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_resource-life-cycle; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#correspondence | correspondence a http://example.org/chunktograph#Class_relation,skos:Concept {http://example.org/chunktograph#p_imply=http://example.org/chunktograph#equivalence; http://purl.org/dc/terms/source=c0-a366; skos:broader=http://example.org/chunktograph#section_complementary-approaches-to-versioning; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#creation-date-dataset-series | creation date dataset series a http://example.org/chunktograph#Class_property,skos:Concept {http://example.org/chunktograph#p_correspond=http://example.org/chunktograph#early-creation-date-child-dataset; http://purl.org/dc/terms/source=c0-a382; skos:broader=http://example.org/chunktograph#section_dataset-series-metadata; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#creation-new-version | creation new version a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_necessarily-lead=http://example.org/chunktograph#change-status; http://purl.org/dc/terms/source=c0-a356; skos:broader=http://example.org/chunktograph#section_resource-life-cycle; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#crossref-datacite-display-guideline | crossref datacite display guideline a http://example.org/chunktograph#Class_artifact,skos:Concept {http://example.org/chunktograph#p_recommend=http://example.org/chunktograph#display-dois-url-link-form-https-doi-org-10-xxxx-xxxxx; http://purl.org/dc/terms/source=c0-a305; skos:broader=http://example.org/chunktograph#section_dereferenceable-identifiers; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#crs84 | crs84 a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_axis-order=longitude latitude; http://example.org/chunktograph#p_correspond=http://example.org/chunktograph#wgs84; http://purl.org/dc/terms/source=c0-a332; skos:broader=http://example.org/chunktograph#section_spatial-properties; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#csv-file | csv file a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_class-distribution; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#current-dcat-2-deployment | current dcat 2 deployment a http://example.org/chunktograph#Class_artifact,skos:Concept {http://example.org/chunktograph#p_need-change-remain-conformance=dcat 3; http://purl.org/dc/terms/source=c0-a9; skos:broader=http://example.org/chunktograph#section_data-catalog-vocabulary-dcat-version-3; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#d | d a http://example.org/chunktograph#Class_concept,skos:Concept {skos:broader=http://example.org/chunktograph#section_dereferenceable-identifiers; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#data-completeness-ldqd-completeness | data completeness ldqd completeness a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_providing-quality-information; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#data-consumer-ex-consumer1 | data consumer ex consumer1 a http://example.org/chunktograph#Class_example,skos:Concept {http://example.org/chunktograph#p_describe-quality=dataset ex genoabusstopsdataset; http://purl.org/dc/terms/source=c0-a400; skos:broader=http://example.org/chunktograph#section_providing-quality-information; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#data-discovery-service | data discovery service a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_allow=http://example.org/chunktograph#client-find-suitable-dataset; http://purl.org/dc/terms/source=c0-a31; skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#data-distribution-service | data distribution service a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_allow=http://example.org/chunktograph#selection-download-distribution-dataset-subset; http://purl.org/dc/terms/source=c0-a31; skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#data-management-policy | data management policy a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_resource-life-cycle; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#data-provider-datum-consumer | data provider datum consumer a http://example.org/chunktograph#Class_relation,skos:Concept {skos:broader=http://example.org/chunktograph#section_dataset-series; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#data-service | data service a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_provide=http://example.org/chunktograph#selection-extraction-combination-processing-transformation-operation-dataset; http://example.org/chunktograph#p_source-datum-configure=http://example.org/chunktograph#request-run-time; http://example.org/chunktograph#p_tie=http://example.org/chunktograph#specific-dataset; http://purl.org/dc/terms/source=c0-a31; skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#data-service-dcat | data service dcat a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_is=http://example.org/chunktograph#collection-operation-api-provide-access-datum; http://purl.org/dc/terms/source=c0-a31; skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#data-transformation-service-coordinate-transformation-service-sampling-interpolation-service-datum-processing-service-include-simulation-modeling-service | data transformation service coordinate transformation service sampling interpolation service datum processing service include simulation modeling service a http://example.org/chunktograph#Class_class,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#datacite-metadata-schema | datacite metadata schema a http://example.org/chunktograph#Class_artifact,skos:Concept {http://example.org/chunktograph#p_is=http://example.org/chunktograph#metadata-associate-persistent-identifier; http://purl.org/dc/terms/source=c0-a391; skos:broader=http://example.org/chunktograph#section_data-citation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset | dataset a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_is=http://example.org/chunktograph#conceptual-entity; http://example.org/chunktograph#p_link-dataset-series=http://example.org/chunktograph#property-dcat-inserie; http://example.org/chunktograph#p_represent=http://example.org/chunktograph#distribution; http://purl.org/dc/terms/source=c0-a30; http://purl.org/dc/terms/source=c0-a372; skos:broader=http://example.org/chunktograph#section_basic-example; skos:broader=http://example.org/chunktograph#section_class-dataset; skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:broader=http://example.org/chunktograph#section_dereferenceable-identifiers; skos:broader=http://example.org/chunktograph#section_how-to-specify-dataset-series; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-completeness | dataset completeness a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_providing-quality-information; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-creator-s | dataset creator(s a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_data-citation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-datum-service | dataset datum service a http://example.org/chunktograph#Class_class,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-datum-service-dcat-conformant-catalog | dataset datum service dcat conformant catalog a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-dcat | dataset dcat a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_define=http://example.org/chunktograph#collection-datum-publish-curate-single-agent-available-access-download-serialization-format; http://purl.org/dc/terms/source=c0-a30; skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-description | dataset description a http://example.org/chunktograph#Class_property,skos:Concept {http://example.org/chunktograph#p_include=http://example.org/chunktograph#dataset-creator-s; http://example.org/chunktograph#p_include=http://example.org/chunktograph#dataset-identifier; http://example.org/chunktograph#p_include=http://example.org/chunktograph#dataset-publication-release-date; http://example.org/chunktograph#p_include=http://example.org/chunktograph#dataset-publisher; http://example.org/chunktograph#p_include=http://example.org/chunktograph#dataset-title; http://purl.org/dc/terms/source=c0-a391; skos:broader=http://example.org/chunktograph#section_data-citation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-different-information-provide-distribution-dataset | dataset different information provide distribution dataset a http://example.org/chunktograph#Class_relation,skos:Concept {skos:broader=http://example.org/chunktograph#section_class-dataset; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-document-catalog | dataset document catalog a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-ex-genoabusstopsdataset | dataset ex genoabusstopsdataset a http://example.org/chunktograph#Class_example,skos:Concept {http://example.org/chunktograph#p_include=http://example.org/chunktograph#20500-30000-stop; http://example.org/chunktograph#p_include=http://example.org/chunktograph#georeference-list-bus-stop-genoa; http://purl.org/dc/terms/source=c0-a400; skos:broader=http://example.org/chunktograph#section_providing-quality-information; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-identifier | dataset identifier a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_data-citation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-individual-item-metadata-record-describe-resource | dataset individual item metadata record describe resource a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-publication-release-date | dataset publication release date a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_data-citation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-publication-revision-date | dataset publication revision date a http://example.org/chunktograph#Class_property,skos:Concept {http://example.org/chunktograph#p_show=http://example.org/chunktograph#dcterm-issue-dcterm-modify; http://purl.org/dc/terms/source=c0-a44; skos:broader=http://example.org/chunktograph#section_basic-example; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-publisher | dataset publisher a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_data-citation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-series | dataset series a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_can-be=http://example.org/chunktograph#dataset-series; http://example.org/chunktograph#p_can-be=http://example.org/chunktograph#hierarchical; http://example.org/chunktograph#p_evolve-time=acquire new dataset; http://example.org/chunktograph#p_link=http://example.org/chunktograph#dcterm-haspart-dcterm-ispartof; http://example.org/chunktograph#p_property-describe=dataset series; http://example.org/chunktograph#p_type=http://example.org/chunktograph#dcat-dataset; http://example.org/chunktograph#p_will-have=http://example.org/chunktograph#multiple-spatial-reference-system; http://purl.org/dc/terms/source=c0-a372; http://purl.org/dc/terms/source=c0-a373; http://purl.org/dc/terms/source=c0-a375; http://purl.org/dc/terms/source=c0-a380; http://purl.org/dc/terms/source=c0-a386; http://purl.org/dc/terms/source=c0-a387; skos:broader=http://example.org/chunktograph#section_dataset-series-in-existing-dcat-implementations; skos:broader=http://example.org/chunktograph#section_dataset-series-metadata; skos:broader=http://example.org/chunktograph#section_how-to-specify-dataset-series; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-series-yearly-budget-datum | dataset series yearly budget datum a http://example.org/chunktograph#Class_datum,skos:Concept {http://example.org/chunktograph#p_acquire=http://example.org/chunktograph#new-child-dataset-year; http://purl.org/dc/terms/source=c0-a373; skos:broader=http://example.org/chunktograph#section_how-to-specify-dataset-series; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-service | dataset service a http://example.org/chunktograph#Class_artifact,skos:Concept {skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dataset-title | dataset title a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_data-citation; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#date-dataset-add-catalog | date dataset add catalog a http://example.org/chunktograph#Class_process,skos:Concept {skos:broader=http://example.org/chunktograph#section_class-catalog-record; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#date-information-originally-available-publishing-agency | date information originally available publishing agency a http://example.org/chunktograph#Class_property,skos:Concept {skos:broader=http://example.org/chunktograph#section_class-catalog-record; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#datum | datum a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_provide=http://example.org/chunktograph#service; http://purl.org/dc/terms/source=c0-a17; skos:broader=http://example.org/chunktograph#section_introduction; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#datum-describe-catalog | datum describe catalog a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_come=http://example.org/chunktograph#format; http://example.org/chunktograph#p_range=spreadsheet xml rdf specialized format; http://purl.org/dc/terms/source=c0-a16; skos:broader=http://example.org/chunktograph#section_introduction; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#datum-huge-size | datum huge size a http://example.org/chunktograph#Class_property,skos:Concept {http://example.org/chunktograph#p_easily-handle=data provider datum consumer; http://purl.org/dc/terms/source=c0-a369; skos:broader=http://example.org/chunktograph#section_dataset-series; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#datum-release-yearly-basis | datum release yearly basis a http://example.org/chunktograph#Class_process,skos:Concept {http://example.org/chunktograph#p_typically-publish=http://example.org/chunktograph#separate-dataset; http://purl.org/dc/terms/source=c0-a369; skos:broader=http://example.org/chunktograph#section_dataset-series; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dbpedia | dbpedia a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_ontology=http://example.org/chunktograph#general-project; http://purl.org/dc/terms/source=c0-a204; skos:broader=http://example.org/chunktograph#section_property-was-generated-by; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dcat | dcat a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_allow=http://example.org/chunktograph#description-data-access-service-include-catalog; http://example.org/chunktograph#p_applicable=context; http://example.org/chunktograph#p_assumption=http://example.org/chunktograph#serialization-format-dataset; http://example.org/chunktograph#p_base=http://example.org/chunktograph#seven-main-class; http://example.org/chunktograph#p_define=http://example.org/chunktograph#specific-property-describe-version-history; http://example.org/chunktograph#p_design-facilitate=http://example.org/chunktograph#interoperability-datum-catalog-publish-web; http://example.org/chunktograph#p_distinguishe=http://example.org/chunktograph#abstract-dataset-different-manifestation-distribution; http://example.org/chunktograph#p_enable=http://example.org/chunktograph#dataset-datum-service-dcat-conformant-catalog; http://example.org/chunktograph#p_enable-publisher-describe-dataset-datum-service-catalog=http://example.org/chunktograph#standard-model-vocabulary; http://example.org/chunktograph#p_facilitate=http://example.org/chunktograph#consumption-aggregation-metadata-multiple-catalog; http://example.org/chunktograph#p_has-been-used-in=http://example.org/chunktograph#context; http://example.org/chunktograph#p_increase=discoverability dataset datum service; http://example.org/chunktograph#p_is=http://example.org/chunktograph#rdf-vocabulary; http://example.org/chunktograph#p_is=http://example.org/chunktograph#rdf-vocabulary-represent-datum-catalog; http://example.org/chunktograph#p_is=http://example.org/chunktograph#vocabulary-publish-datum-catalog-web; http://example.org/chunktograph#p_make-dataset-series-class-citizen-datum-catalog=http://example.org/chunktograph#mint-new-class-dcat-datasetserie; http://example.org/chunktograph#p_make-possible=http://example.org/chunktograph#decentralized-approach-publish-datum-catalog; http://example.org/chunktograph#p_make-possible=http://example.org/chunktograph#federate-search-dataset-catalog-multiple-site; http://example.org/chunktograph#p_make-use=http://example.org/chunktograph#appropriate-time-relate-property; http://example.org/chunktograph#p_make-use=http://example.org/chunktograph#dcat-version; http://example.org/chunktograph#p_make-use=http://example.org/chunktograph#property-adm-status; http://example.org/chunktograph#p_make-use-property=dcat dcat prev dcat; http://example.org/chunktograph#p_originally-develop=http://example.org/chunktograph#context-government-datum-catalog-data-gov-data-gov-uk; http://example.org/chunktograph#p_prescribe=http://example.org/chunktograph#use-specific-set-life-cycle-status; http://example.org/chunktograph#p_refer=http://example.org/chunktograph#exist-standard-community-practice; http://example.org/chunktograph#p_reuse=http://example.org/chunktograph#dcterm-isreplacedby; http://example.org/chunktograph#p_reuse=http://example.org/chunktograph#dcterm-replace; http://example.org/chunktograph#p_specify-resource-status=http://example.org/chunktograph#resource-life-cycle; http://example.org/chunktograph#p_support=http://example.org/chunktograph#kind-relationship-version; http://example.org/chunktograph#p_use=http://example.org/chunktograph#query-mechanism-structure; http://purl.org/dc/terms/source=c0-a10; http://purl.org/dc/terms/source=c0-a11; http://purl.org/dc/terms/source=c0-a12; http://purl.org/dc/terms/source=c0-a16; http://purl.org/dc/terms/source=c0-a17; http://purl.org/dc/terms/source=c0-a23; http://purl.org/dc/terms/source=c0-a34; http://purl.org/dc/terms/source=c0-a340; http://purl.org/dc/terms/source=c0-a341; http://purl.org/dc/terms/source=c0-a346; http://purl.org/dc/terms/source=c0-a348; http://purl.org/dc/terms/source=c0-a352; http://purl.org/dc/terms/source=c0-a359; http://purl.org/dc/terms/source=c0-a372; http://purl.org/dc/terms/source=c0-a373; skos:broader=http://example.org/chunktograph#section_abstract; skos:broader=http://example.org/chunktograph#section_dcat-scope; skos:broader=http://example.org/chunktograph#section_how-to-specify-dataset-series; skos:broader=http://example.org/chunktograph#section_introduction; skos:broader=http://example.org/chunktograph#section_relationships-between-versions; skos:broader=http://example.org/chunktograph#section_resource-life-cycle; skos:broader=http://example.org/chunktograph#section_spatial-properties; skos:broader=http://example.org/chunktograph#section_temporal-properties; skos:broader=http://example.org/chunktograph#section_version-chains-and-hierarchies; skos:broader=http://example.org/chunktograph#section_version-information; skos:broader=http://example.org/chunktograph#section_versions-replaced-by-other-ones; skos:inScheme=http://example.org/chunktograph#scheme}
+IND http://example.org/chunktograph#dcat-1 | dcat 1 a http://example.org/chunktograph#Class_class,skos:Concept {http://example.org/chunktograph#p_domain=http://example.org/chunktograph#dcat-dataset; http://purl.org/dc/terms/source=c0-a107; http://purl.org/dc/terms/source=c0-a120; http://purl.org/dc/terms/source=c0-a121; http://purl.org/dc/terms/source=c0-a87; skos:broader=http://example.org/chunktograph#section_property-contact-point; skos:broader=http://example.org/chunktograph#section_property-keyword-tag; skos:broader=http://example.org/chunktograph#section_property-landing-page; skos:broader=http://example.org/chunktograph#section_property-theme-category; skos:inScheme=http://example.org/chunktograph#scheme}
+[truncated]

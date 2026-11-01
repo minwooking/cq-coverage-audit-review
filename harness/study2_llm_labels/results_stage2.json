@@ -1,0 +1,125 @@
+{
+ "banner": "LLM-labeled; not human-validated beyond Stage 1.",
+ "stage": 2,
+ "stage1_gate": {
+  "pass": false,
+  "passing_models": [],
+  "headline_labeler": null,
+  "rule": "PASS iff at least one primary model (glm, gptoss) passes both humans; qwen never counts"
+ },
+ "bank": {
+  "bank_sha256": "a39bcc0fd88587de8ef2fe14304948995b8e5bb3e6e5cfb04303784ffc2a33c8",
+  "n_questions": 84,
+  "n_cells_total": 504,
+  "n_eligible_cells": 208,
+  "eligible_cells_by_variant": {
+   "A": 67,
+   "B": 29,
+   "C": 28,
+   "D": 28,
+   "E": 28,
+   "F": 28
+  },
+  "n_eligible_clusters": 70,
+  "n_clusters_eligible_in_A_and_B": 26,
+  "target_clusters": 60,
+  "target_met": true,
+  "ineligible_clusters": [
+   "CQX06",
+   "CQX41",
+   "CQX42",
+   "CQX44",
+   "CQX45",
+   "CQX48",
+   "CQX49",
+   "CQX51",
+   "CQX52",
+   "CQX54",
+   "CQX55",
+   "CQX56",
+   "CQX71",
+   "CQX73"
+  ]
+ },
+ "judges": [
+  "GLM-4.7-Flash (glm)",
+  "gpt-oss-20b (gptoss)"
+ ],
+ "judge_note": "the registered holdout judge has no route here; named non-Qwen judges on question-only subgraph views (deviation stated in PLAN 32.8)",
+ "audit_run": false,
+ "reason": "Stage 1 gate failed: Stage 2 is not run as an LLM-labeled audit",
+ "descriptive_judge_only": {
+  "banner": "LLM-labeled; not human-validated beyond Stage 1.",
+  "note": "judge scores only; no label-based statistic (Stage 1 did not pass or labels absent)",
+  "glm": {
+   "n_cells": 208,
+   "by_variant": {
+    "A": {
+     "n": 67,
+     "mean_J": 1.6716,
+     "share_J_ge2": 0.597
+    },
+    "B": {
+     "n": 29,
+     "mean_J": 1.8621,
+     "share_J_ge2": 0.8276
+    },
+    "C": {
+     "n": 28,
+     "mean_J": 1.8929,
+     "share_J_ge2": 0.7857
+    },
+    "D": {
+     "n": 28,
+     "mean_J": 1.8929,
+     "share_J_ge2": 0.75
+    },
+    "E": {
+     "n": 28,
+     "mean_J": 1.75,
+     "share_J_ge2": 0.7857
+    },
+    "F": {
+     "n": 28,
+     "mean_J": 1.75,
+     "share_J_ge2": 0.75
+    }
+   }
+  },
+  "gptoss": {
+   "n_cells": 208,
+   "by_variant": {
+    "A": {
+     "n": 67,
+     "mean_J": 1.9403,
+     "share_J_ge2": 0.6418
+    },
+    "B": {
+     "n": 29,
+     "mean_J": 1.5517,
+     "share_J_ge2": 0.4828
+    },
+    "C": {
+     "n": 28,
+     "mean_J": 1.7143,
+     "share_J_ge2": 0.5357
+    },
+    "D": {
+     "n": 28,
+     "mean_J": 2.2143,
+     "share_J_ge2": 0.7143
+    },
+    "E": {
+     "n": 28,
+     "mean_J": 1.5714,
+     "share_J_ge2": 0.5
+    },
+    "F": {
+     "n": 28,
+     "mean_J": 1.5357,
+     "share_J_ge2": 0.5
+    }
+   }
+  }
+ }
+}

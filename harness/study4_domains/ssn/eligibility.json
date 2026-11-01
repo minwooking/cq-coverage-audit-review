@@ -1,0 +1,580 @@
+{
+ "domain": "ssn",
+ "bank_sha256": "185f4ac675b4430901ea3cbd93a84d75a46fe4f0431f402dfd8a219e4a15bcdf",
+ "n_questions": 42,
+ "eligible_cells": {
+  "A": 42,
+  "B": 41
+ },
+ "eligible_clusters_A_or_B": 42,
+ "eligible_clusters_A_and_B": 41,
+ "eligible_in_both": [
+  "CQS01",
+  "CQS02",
+  "CQS03",
+  "CQS04",
+  "CQS05",
+  "CQS06",
+  "CQS07",
+  "CQS08",
+  "CQS09",
+  "CQS10",
+  "CQS11",
+  "CQS12",
+  "CQS13",
+  "CQS14",
+  "CQS15",
+  "CQS16",
+  "CQS17",
+  "CQS18",
+  "CQS19",
+  "CQS21",
+  "CQS22",
+  "CQS23",
+  "CQS24",
+  "CQS25",
+  "CQS26",
+  "CQS27",
+  "CQS28",
+  "CQS29",
+  "CQS30",
+  "CQS31",
+  "CQS32",
+  "CQS33",
+  "CQS34",
+  "CQS35",
+  "CQS36",
+  "CQS37",
+  "CQS38",
+  "CQS39",
+  "CQS40",
+  "CQS41",
+  "CQS42"
+ ],
+ "eligible_but_no_subgraph": [],
+ "n_jobs": 83,
+ "variants": {
+  "A": {
+   "triples": 2057,
+   "rendered_view_chars": 36459,
+   "graph_sha256": "9f0a757198de8e57039aacaa1b0c7d76db7da79b1f948181e711cb205721034b",
+   "rendered_view_sha256": "0b35581eb11c04c3d42c138a5f97cd17f2ffbfaa1c5a09c594eab40081a1e708"
+  },
+  "B": {
+   "triples": 5922,
+   "rendered_view_chars": 285924,
+   "graph_sha256": "858874c21f41b037c2847afda6e094844f37bf0c3d21a43785763ac677da7449",
+   "rendered_view_sha256": "369531ed8b716cd3d00069f511aced3aed0fbf1af7941e41457794aaa16817b7"
+  }
+ },
+ "jobs_sha256": "be5005568bec23fce119dbeaab79b249cb624878bf2817c64d3b4982969eae0b",
+ "inputs_manifest_sha256": "32b9e7945909712e68d24997f6317a64385ead2f08a9a30303aa7456c29f80e9",
+ "cells": {
+  "primary:A:CQS01": {
+   "variant": "A",
+   "cq_id": "CQS01",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS01": {
+   "variant": "B",
+   "cq_id": "CQS01",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS02": {
+   "variant": "A",
+   "cq_id": "CQS02",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS02": {
+   "variant": "B",
+   "cq_id": "CQS02",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS03": {
+   "variant": "A",
+   "cq_id": "CQS03",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS03": {
+   "variant": "B",
+   "cq_id": "CQS03",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS04": {
+   "variant": "A",
+   "cq_id": "CQS04",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS04": {
+   "variant": "B",
+   "cq_id": "CQS04",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS05": {
+   "variant": "A",
+   "cq_id": "CQS05",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS05": {
+   "variant": "B",
+   "cq_id": "CQS05",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS06": {
+   "variant": "A",
+   "cq_id": "CQS06",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS06": {
+   "variant": "B",
+   "cq_id": "CQS06",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS07": {
+   "variant": "A",
+   "cq_id": "CQS07",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS07": {
+   "variant": "B",
+   "cq_id": "CQS07",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS08": {
+   "variant": "A",
+   "cq_id": "CQS08",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS08": {
+   "variant": "B",
+   "cq_id": "CQS08",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS09": {
+   "variant": "A",
+   "cq_id": "CQS09",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS09": {
+   "variant": "B",
+   "cq_id": "CQS09",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS10": {
+   "variant": "A",
+   "cq_id": "CQS10",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS10": {
+   "variant": "B",
+   "cq_id": "CQS10",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS11": {
+   "variant": "A",
+   "cq_id": "CQS11",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS11": {
+   "variant": "B",
+   "cq_id": "CQS11",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS12": {
+   "variant": "A",
+   "cq_id": "CQS12",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS12": {
+   "variant": "B",
+   "cq_id": "CQS12",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS13": {
+   "variant": "A",
+   "cq_id": "CQS13",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS13": {
+   "variant": "B",
+   "cq_id": "CQS13",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS14": {
+   "variant": "A",
+   "cq_id": "CQS14",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS14": {
+   "variant": "B",
+   "cq_id": "CQS14",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS15": {
+   "variant": "A",
+   "cq_id": "CQS15",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS15": {
+   "variant": "B",
+   "cq_id": "CQS15",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS16": {
+   "variant": "A",
+   "cq_id": "CQS16",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS16": {
+   "variant": "B",
+   "cq_id": "CQS16",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS17": {
+   "variant": "A",
+   "cq_id": "CQS17",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS17": {
+   "variant": "B",
+   "cq_id": "CQS17",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS18": {
+   "variant": "A",
+   "cq_id": "CQS18",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS18": {
+   "variant": "B",
+   "cq_id": "CQS18",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS19": {
+   "variant": "A",
+   "cq_id": "CQS19",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS19": {
+   "variant": "B",
+   "cq_id": "CQS19",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS20": {
+   "variant": "A",
+   "cq_id": "CQS20",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS20": {
+   "variant": "B",
+   "cq_id": "CQS20",
+   "eligible": false,
+   "missing_required": [
+    "implements"
+   ]
+  },
+  "primary:A:CQS21": {
+   "variant": "A",
+   "cq_id": "CQS21",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS21": {
+   "variant": "B",
+   "cq_id": "CQS21",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS22": {
+   "variant": "A",
+   "cq_id": "CQS22",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS22": {
+   "variant": "B",
+   "cq_id": "CQS22",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS23": {
+   "variant": "A",
+   "cq_id": "CQS23",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS23": {
+   "variant": "B",
+   "cq_id": "CQS23",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS24": {
+   "variant": "A",
+   "cq_id": "CQS24",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS24": {
+   "variant": "B",
+   "cq_id": "CQS24",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS25": {
+   "variant": "A",
+   "cq_id": "CQS25",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS25": {
+   "variant": "B",
+   "cq_id": "CQS25",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS26": {
+   "variant": "A",
+   "cq_id": "CQS26",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS26": {
+   "variant": "B",
+   "cq_id": "CQS26",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS27": {
+   "variant": "A",
+   "cq_id": "CQS27",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS27": {
+   "variant": "B",
+   "cq_id": "CQS27",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS28": {
+   "variant": "A",
+   "cq_id": "CQS28",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS28": {
+   "variant": "B",
+   "cq_id": "CQS28",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS29": {
+   "variant": "A",
+   "cq_id": "CQS29",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS29": {
+   "variant": "B",
+   "cq_id": "CQS29",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS30": {
+   "variant": "A",
+   "cq_id": "CQS30",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS30": {
+   "variant": "B",
+   "cq_id": "CQS30",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS31": {
+   "variant": "A",
+   "cq_id": "CQS31",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS31": {
+   "variant": "B",
+   "cq_id": "CQS31",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS32": {
+   "variant": "A",
+   "cq_id": "CQS32",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS32": {
+   "variant": "B",
+   "cq_id": "CQS32",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS33": {
+   "variant": "A",
+   "cq_id": "CQS33",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS33": {
+   "variant": "B",
+   "cq_id": "CQS33",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS34": {
+   "variant": "A",
+   "cq_id": "CQS34",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS34": {
+   "variant": "B",
+   "cq_id": "CQS34",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS35": {
+   "variant": "A",
+   "cq_id": "CQS35",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS35": {
+   "variant": "B",
+   "cq_id": "CQS35",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS36": {
+   "variant": "A",
+   "cq_id": "CQS36",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS36": {
+   "variant": "B",
+   "cq_id": "CQS36",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS37": {
+   "variant": "A",
+   "cq_id": "CQS37",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS37": {
+   "variant": "B",
+   "cq_id": "CQS37",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS38": {
+   "variant": "A",
+   "cq_id": "CQS38",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS38": {
+   "variant": "B",
+   "cq_id": "CQS38",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS39": {
+   "variant": "A",
+   "cq_id": "CQS39",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS39": {
+   "variant": "B",
+   "cq_id": "CQS39",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS40": {
+   "variant": "A",
+   "cq_id": "CQS40",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS40": {
+   "variant": "B",
+   "cq_id": "CQS40",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS41": {
+   "variant": "A",
+   "cq_id": "CQS41",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS41": {
+   "variant": "B",
+   "cq_id": "CQS41",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQS42": {
+   "variant": "A",
+   "cq_id": "CQS42",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQS42": {
+   "variant": "B",
+   "cq_id": "CQS42",
+   "eligible": true,
+   "missing_required": []
+  }
+ }
+}

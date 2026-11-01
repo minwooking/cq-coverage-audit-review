@@ -1,0 +1,4123 @@
+{
+ "generated_utc": "2026-10-22T02:55:21Z",
+ "seed": 20260913,
+ "external_fetch_log": [
+  {
+   "file": "brick/Brick.ttl",
+   "url": "https://github.com/BrickSchema/Brick/releases/download/v1.4.4/Brick.ttl",
+   "http": "200",
+   "bytes": 1749633,
+   "sha256": "b65720b7b9b64c646745c689777e6138c0d59ce0088df0aeb78fbd444d04d8e7",
+   "retrieved_utc": "2026-10-22T02:45:00Z"
+  },
+  {
+   "file": "dcat-ap-3.0.1/dcat-ap-SHACL.ttl",
+   "url": "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/3.0.1/releases/3.0.1/shacl/dcat-ap-SHACL.ttl",
+   "http": "200",
+   "bytes": 155471,
+   "sha256": "990d3e42721de6a4be8cc338a7171559f195e62dea89c0b56531356b78cc026f",
+   "retrieved_utc": "2026-10-22T02:45:01Z"
+  },
+  {
+   "file": "dcat-ap-3.0.1/ranges.ttl",
+   "url": "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/3.0.1/releases/3.0.1/shacl/ranges.ttl",
+   "http": "200",
+   "bytes": 80322,
+   "sha256": "a6eed0fae8d0f5ca977fe2098ca12081ac60b0efe1ddce802d5c08e49505ebcc",
+   "retrieved_utc": "2026-10-22T02:45:01Z"
+  }
+ ],
+ "domains": {
+  "development": {
+   "counts_only": false,
+   "variants": {
+    "A": {
+     "sha256": "b8bf7b536c5cd6cf8aa2292fce2fe3bead4b044edb61255098250066362010ab",
+     "triples": 599,
+     "file": "output/ontology_A.ttl",
+     "step2": {
+      "classes_declared": 90,
+      "classes_used_as_entity_type": 0,
+      "properties_typed": 51,
+      "props_with_domain": 51,
+      "props_with_range": 51,
+      "share_domain_is_most_frequent_declared_domain": 0.39215686274509803,
+      "share_range_is_most_frequent_declared_range": 0.17647058823529413,
+      "share_domain_is_most_frequent_entity_class": 0.0,
+      "most_frequent_entity_class_share_of_typed_entities": null,
+      "distinct_declared_domains": 17,
+      "distinct_declared_ranges": 30
+     }
+    },
+    "B": {
+     "sha256": "7163629ac7fc375ac0a745f9212d7b8ee969d8642afe97ac46b51393766ee45c",
+     "triples": 4425,
+     "file": "output/ontology_B.ttl",
+     "step2": {
+      "classes_declared": 9,
+      "classes_used_as_entity_type": 9,
+      "properties_typed": 179,
+      "props_with_domain": 0,
+      "props_with_range": 0,
+      "share_domain_is_most_frequent_declared_domain": null,
+      "share_range_is_most_frequent_declared_range": null,
+      "share_domain_is_most_frequent_entity_class": null,
+      "most_frequent_entity_class_share_of_typed_entities": 0.20491803278688525,
+      "distinct_declared_domains": 0,
+      "distinct_declared_ranges": 0
+     }
+    },
+    "C": {
+     "sha256": "7eca648bd8129016c25c723f4ff538cf3328374f4eeeec1a778c8b982b9abd8f",
+     "triples": 6059,
+     "file": "output/ontology_C.ttl",
+     "step2": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 179,
+      "props_with_domain": 179,
+      "props_with_range": 179,
+      "share_domain_is_most_frequent_declared_domain": 0.4301675977653631,
+      "share_range_is_most_frequent_declared_range": 0.18994413407821228,
+      "share_domain_is_most_frequent_entity_class": 0.4301675977653631,
+      "most_frequent_entity_class_share_of_typed_entities": 0.22453222453222454,
+      "distinct_declared_domains": 8,
+      "distinct_declared_ranges": 11
+     }
+    },
+    "D": {
+     "sha256": "29e33b03a643ad9cf162fb6fa53a26016b06a62dbc528787590facc3441e0bf3",
+     "triples": 5209,
+     "file": "output/ontology_D.ttl",
+     "step2": {
+      "classes_declared": 9,
+      "classes_used_as_entity_type": 9,
+      "properties_typed": 142,
+      "props_with_domain": 142,
+      "props_with_range": 142,
+      "share_domain_is_most_frequent_declared_domain": 0.2605633802816901,
+      "share_range_is_most_frequent_declared_range": 0.176056338028169,
+      "share_domain_is_most_frequent_entity_class": 0.2605633802816901,
+      "most_frequent_entity_class_share_of_typed_entities": 0.21800947867298578,
+      "distinct_declared_domains": 9,
+      "distinct_declared_ranges": 9
+     }
+    },
+    "E": {
+     "sha256": "90d57be26a3b35858d50711db63add01ee814b527773c26b0eb5d643cc6aa6c5",
+     "triples": 5727,
+     "file": "output/ontology_E.ttl",
+     "step2": {
+      "classes_declared": 9,
+      "classes_used_as_entity_type": 9,
+      "properties_typed": 134,
+      "props_with_domain": 134,
+      "props_with_range": 134,
+      "share_domain_is_most_frequent_declared_domain": 0.26119402985074625,
+      "share_range_is_most_frequent_declared_range": 0.1791044776119403,
+      "share_domain_is_most_frequent_entity_class": 0.26119402985074625,
+      "most_frequent_entity_class_share_of_typed_entities": 0.21800947867298578,
+      "distinct_declared_domains": 9,
+      "distinct_declared_ranges": 9
+     },
+     "step3": {
+      "concepts": 506,
+      "concepts_with_prov": 184,
+      "share_concepts_with_prov": 0.36363636363636365,
+      "concepts_with_source_but_no_prov": 0,
+      "chunks_total": 202,
+      "chunks_referenced": 102,
+      "share_chunks_referenced": 0.504950495049505,
+      "links_total": 257,
+      "links_per_linked_concept_mean": 1.3967391304347827,
+      "links_per_linked_concept_median": 1,
+      "links_per_linked_concept_max": 8,
+      "triples_eligible": 5110,
+      "share_triples_subject_has_prov": 0.3634050880626223,
+      "share_concept_subject_triples_subject_has_prov": 0.4563774883263701,
+      "spot_check": {
+       "links_available": 257,
+       "sampled": 30,
+       "chunk_text_missing": 0,
+       "strict_contained": 14,
+       "strict_share": 0.4666666666666667,
+       "loose_contained": 20,
+       "loose_share": 0.6666666666666666
+      }
+     }
+    },
+    "F": {
+     "sha256": "1ec59cc90bde878806483a2d3ff84c4a896a7851b007710ca60c35c273842c77",
+     "triples": 5727,
+     "file": "output/ontology_F.ttl",
+     "step2": {
+      "classes_declared": 9,
+      "classes_used_as_entity_type": 9,
+      "properties_typed": 134,
+      "props_with_domain": 134,
+      "props_with_range": 134,
+      "share_domain_is_most_frequent_declared_domain": 0.26119402985074625,
+      "share_range_is_most_frequent_declared_range": 0.1791044776119403,
+      "share_domain_is_most_frequent_entity_class": 0.26119402985074625,
+      "most_frequent_entity_class_share_of_typed_entities": 0.21800947867298578,
+      "distinct_declared_domains": 9,
+      "distinct_declared_ranges": 9
+     },
+     "step3": {
+      "concepts": 506,
+      "concepts_with_prov": 184,
+      "share_concepts_with_prov": 0.36363636363636365,
+      "concepts_with_source_but_no_prov": 0,
+      "chunks_total": 202,
+      "chunks_referenced": 102,
+      "share_chunks_referenced": 0.504950495049505,
+      "links_total": 257,
+      "links_per_linked_concept_mean": 1.3967391304347827,
+      "links_per_linked_concept_median": 1,
+      "links_per_linked_concept_max": 8,
+      "triples_eligible": 5110,
+      "share_triples_subject_has_prov": 0.3634050880626223,
+      "share_concept_subject_triples_subject_has_prov": 0.4563774883263701
+     },
+     "own_shapes": {
+      "file": "output/shapes_F.ttl",
+      "sha256": "5d3385229f1e71e5a0f4e6f17485524f31c341a9dfd46e6a0068b8e967c07ac3",
+      "triples": 796,
+      "node_shapes": 9,
+      "property_shapes_with_path": 194,
+      "minCount_0": 194,
+      "minCount_ge1": 0,
+      "maxCount": 0,
+      "nodeKind": 150,
+      "datatype": 44,
+      "class_constraints": 0,
+      "node_constraints": 0,
+      "in_constraints": 0,
+      "pattern": 0,
+      "shapes_with_explicit_target": 9,
+      "shapes_with_implicit_class_target": 0,
+      "non_vacuous_constraints": true,
+      "F_conforms": true
+     }
+    }
+   },
+   "external_shapes": null
+  },
+  "Brick holdout": {
+   "counts_only": false,
+   "variants": {
+    "A": {
+     "sha256": "1a5cc075065ac1f493e7731ac20e638481754c1a79f586b6e82a25320cb1bc32",
+     "triples": 6841,
+     "file": "paper/access2026/harness/variants/A/graph_A.ttl",
+     "external_shacl": {
+      "Brick.ttl (release shapes)": {
+       "scope": {
+        "targeted_shapes": 1747,
+        "shapes_with_focus_nodes": 3,
+        "distinct_focus_nodes": 49,
+        "data_nodes": 1946,
+        "constraint_shapes_targeted": 251,
+        "constraint_shapes_with_focus_nodes": 0,
+        "constraint_distinct_focus_nodes": 0,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://brickschema.org/schema/BrickShape#OWLEquivalentClassRule2",
+          "focus_nodes": 40
+         },
+         {
+          "shape": "https://brickschema.org/schema/BrickShape#OWLEquivalentClassRule1",
+          "focus_nodes": 40
+         },
+         {
+          "shape": "https://brickschema.org/schema/BrickShape#RDFSRangeRule",
+          "focus_nodes": 4
+         }
+        ]
+       },
+       "conforms_data_nodes_only": true,
+       "conforms_pyshacl_raw": false,
+       "violations": 0,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 0,
+       "results_on_official_ontology_nodes_ignored": 3,
+       "top_constraints": [],
+       "seconds": 8.6
+      }
+     },
+     "step2": {
+      "classes_declared": 1709,
+      "classes_used_as_entity_type": 0,
+      "properties_typed": 199,
+      "props_with_domain": 2,
+      "props_with_range": 4,
+      "share_domain_is_most_frequent_declared_domain": 1.0,
+      "share_range_is_most_frequent_declared_range": 0.5,
+      "share_domain_is_most_frequent_entity_class": 0.0,
+      "most_frequent_entity_class_share_of_typed_entities": null,
+      "distinct_declared_domains": 1,
+      "distinct_declared_ranges": 3,
+      "pipeline_properties": 199,
+      "mapping_levels": {
+       "localname": 111,
+       "unmapped": 77,
+       "ambiguous": 11
+      },
+      "n_mapped": 111,
+      "n_mapped_with_declared_domain_or_range": 3,
+      "declared_domain": {
+       "not_declared": 108,
+       "broader": 1
+      },
+      "declared_range": {
+       "exact": 2,
+       "noncomparable": 1
+      },
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 1709,
+      "classes_used_as_entity_type": 0,
+      "properties_typed": 199,
+      "props_with_domain": 2,
+      "props_with_range": 4,
+      "share_domain_is_most_frequent_declared_domain": 1.0,
+      "share_range_is_most_frequent_declared_range": 0.5,
+      "share_domain_is_most_frequent_entity_class": 0.0,
+      "most_frequent_entity_class_share_of_typed_entities": null,
+      "distinct_declared_domains": 1,
+      "distinct_declared_ranges": 3,
+      "pipeline_properties": 199,
+      "mapping_levels": {
+       "localname": 111,
+       "unmapped": 77,
+       "ambiguous": 11
+      },
+      "n_mapped": 111,
+      "n_mapped_with_declared_domain_or_range": 3,
+      "declared_domain": {
+       "not_declared": 108,
+       "broader": 1
+      },
+      "declared_range": {
+       "exact": 2,
+       "noncomparable": 1
+      },
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     }
+    },
+    "B": {
+     "sha256": "20d015a83b1158fdf1bc598b75127f63eed088f0a10bc54e91d88d411b4fe490",
+     "triples": 35668,
+     "file": "paper/access2026/harness/variants/B/graph_B.ttl",
+     "external_shacl": {
+      "Brick.ttl (release shapes)": {
+       "scope": {
+        "targeted_shapes": 1747,
+        "shapes_with_focus_nodes": 0,
+        "distinct_focus_nodes": 0,
+        "data_nodes": 4642,
+        "constraint_shapes_targeted": 251,
+        "constraint_shapes_with_focus_nodes": 0,
+        "constraint_distinct_focus_nodes": 0,
+        "shapes_with_focus_top": []
+       },
+       "conforms_data_nodes_only": true,
+       "conforms_pyshacl_raw": false,
+       "violations": 0,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 0,
+       "results_on_official_ontology_nodes_ignored": 3,
+       "top_constraints": [],
+       "seconds": 12.1
+      }
+     },
+     "step2": {
+      "classes_declared": 14,
+      "classes_used_as_entity_type": 14,
+      "properties_typed": 87,
+      "props_with_domain": 0,
+      "props_with_range": 0,
+      "share_domain_is_most_frequent_declared_domain": null,
+      "share_range_is_most_frequent_declared_range": null,
+      "share_domain_is_most_frequent_entity_class": null,
+      "most_frequent_entity_class_share_of_typed_entities": 0.4155614500442087,
+      "distinct_declared_domains": 0,
+      "distinct_declared_ranges": 0,
+      "pipeline_properties": 87,
+      "mapping_levels": {
+       "unmapped": 79,
+       "aligned_nondomain": 5,
+       "alignment": 2,
+       "localname": 1
+      },
+      "n_mapped": 3,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {
+       "not_declared": 3
+      },
+      "declared_range": {},
+      "usage_triples_on_mapped": 2008,
+      "usage_subject": {
+       "official_undeclared": 1595,
+       "compatible": 1,
+       "unresolved": 412
+      },
+      "usage_object": {
+       "unresolved": 476,
+       "official_undeclared": 1532
+      },
+      "usage_subject_compatible_share": 1.0,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 0.7948207171314741
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 14,
+      "classes_used_as_entity_type": 14,
+      "properties_typed": 87,
+      "props_with_domain": 0,
+      "props_with_range": 0,
+      "share_domain_is_most_frequent_declared_domain": null,
+      "share_range_is_most_frequent_declared_range": null,
+      "share_domain_is_most_frequent_entity_class": null,
+      "most_frequent_entity_class_share_of_typed_entities": 0.4155614500442087,
+      "distinct_declared_domains": 0,
+      "distinct_declared_ranges": 0,
+      "pipeline_properties": 87,
+      "mapping_levels": {
+       "unmapped": 79,
+       "aligned_nondomain": 5,
+       "alignment": 2,
+       "localname": 1
+      },
+      "n_mapped": 3,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {
+       "not_declared": 3
+      },
+      "declared_range": {},
+      "usage_triples_on_mapped": 2008,
+      "usage_subject": {
+       "official_undeclared": 1595,
+       "compatible": 1,
+       "unresolved": 412
+      },
+      "usage_object": {
+       "unresolved": 476,
+       "official_undeclared": 1532
+      },
+      "usage_subject_compatible_share": 1.0,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 0.7948207171314741
+     }
+    },
+    "C": {
+     "sha256": "c057252c5c5b33750984de600ea6c2b176a8319c6f71fe6663b72f8d8f902629",
+     "triples": 44796,
+     "file": "paper/access2026/harness/variants/C/graph_C.ttl",
+     "external_shacl": {
+      "Brick.ttl (release shapes)": {
+       "scope": {
+        "targeted_shapes": 1747,
+        "shapes_with_focus_nodes": 1,
+        "distinct_focus_nodes": 86,
+        "data_nodes": 4611,
+        "constraint_shapes_targeted": 251,
+        "constraint_shapes_with_focus_nodes": 0,
+        "constraint_distinct_focus_nodes": 0,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://brickschema.org/schema/BrickShape#RDFSRangeRule",
+          "focus_nodes": 86
+         }
+        ]
+       },
+       "conforms_data_nodes_only": true,
+       "conforms_pyshacl_raw": false,
+       "violations": 0,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 0,
+       "results_on_official_ontology_nodes_ignored": 3,
+       "top_constraints": [],
+       "seconds": 14.5
+      }
+     },
+     "step2": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 86,
+      "props_with_domain": 86,
+      "props_with_range": 86,
+      "share_domain_is_most_frequent_declared_domain": 0.627906976744186,
+      "share_range_is_most_frequent_declared_range": 0.2558139534883721,
+      "share_domain_is_most_frequent_entity_class": 0.627906976744186,
+      "most_frequent_entity_class_share_of_typed_entities": 0.40088987764182427,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 7,
+      "pipeline_properties": 88,
+      "mapping_levels": {
+       "unmapped": 80,
+       "aligned_nondomain": 5,
+       "alignment": 2,
+       "localname": 1
+      },
+      "n_mapped": 3,
+      "n_mapped_with_declared_domain_or_range": 3,
+      "declared_domain": {
+       "official_undeclared": 2,
+       "noncomparable": 1
+      },
+      "declared_range": {
+       "official_undeclared": 3
+      },
+      "usage_triples_on_mapped": 2006,
+      "usage_subject": {
+       "official_undeclared": 1595,
+       "compatible": 1,
+       "unresolved": 410
+      },
+      "usage_object": {
+       "unresolved": 474,
+       "official_undeclared": 1532
+      },
+      "usage_subject_compatible_share": 1.0,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 0.7956131605184447
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 86,
+      "props_with_domain": 86,
+      "props_with_range": 86,
+      "share_domain_is_most_frequent_declared_domain": 0.627906976744186,
+      "share_range_is_most_frequent_declared_range": 0.2558139534883721,
+      "share_domain_is_most_frequent_entity_class": 0.627906976744186,
+      "most_frequent_entity_class_share_of_typed_entities": 0.40088987764182427,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 7,
+      "pipeline_properties": 88,
+      "mapping_levels": {
+       "unmapped": 80,
+       "aligned_nondomain": 5,
+       "alignment": 2,
+       "localname": 1
+      },
+      "n_mapped": 3,
+      "n_mapped_with_declared_domain_or_range": 3,
+      "declared_domain": {
+       "official_undeclared": 2,
+       "noncomparable": 1
+      },
+      "declared_range": {
+       "official_undeclared": 3
+      },
+      "usage_triples_on_mapped": 2006,
+      "usage_subject": {
+       "official_undeclared": 1595,
+       "compatible": 1,
+       "unresolved": 410
+      },
+      "usage_object": {
+       "unresolved": 474,
+       "official_undeclared": 1532
+      },
+      "usage_subject_compatible_share": 1.0,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 0.7956131605184447
+     }
+    },
+    "D": {
+     "sha256": "268a748b8c15d1bc96ec16b503bcada62e49d8143b57ff617da4737cce3e4585",
+     "triples": 44659,
+     "file": "paper/access2026/harness/variants/D/graph_D.ttl",
+     "external_shacl": {
+      "Brick.ttl (release shapes)": {
+       "scope": {
+        "targeted_shapes": 1747,
+        "shapes_with_focus_nodes": 1,
+        "distinct_focus_nodes": 81,
+        "data_nodes": 4608,
+        "constraint_shapes_targeted": 251,
+        "constraint_shapes_with_focus_nodes": 0,
+        "constraint_distinct_focus_nodes": 0,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://brickschema.org/schema/BrickShape#RDFSRangeRule",
+          "focus_nodes": 81
+         }
+        ]
+       },
+       "conforms_data_nodes_only": true,
+       "conforms_pyshacl_raw": false,
+       "violations": 0,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 0,
+       "results_on_official_ontology_nodes_ignored": 3,
+       "top_constraints": [],
+       "seconds": 14.3
+      }
+     },
+     "step2": {
+      "classes_declared": 12,
+      "classes_used_as_entity_type": 12,
+      "properties_typed": 81,
+      "props_with_domain": 81,
+      "props_with_range": 81,
+      "share_domain_is_most_frequent_declared_domain": 0.6790123456790124,
+      "share_range_is_most_frequent_declared_range": 0.2716049382716049,
+      "share_domain_is_most_frequent_entity_class": 0.6790123456790124,
+      "most_frequent_entity_class_share_of_typed_entities": 0.39559706470980655,
+      "distinct_declared_domains": 6,
+      "distinct_declared_ranges": 9,
+      "pipeline_properties": 83,
+      "mapping_levels": {
+       "unmapped": 75,
+       "aligned_nondomain": 5,
+       "alignment": 2,
+       "localname": 1
+      },
+      "n_mapped": 3,
+      "n_mapped_with_declared_domain_or_range": 3,
+      "declared_domain": {
+       "official_undeclared": 2,
+       "noncomparable": 1
+      },
+      "declared_range": {
+       "official_undeclared": 3
+      },
+      "usage_triples_on_mapped": 2008,
+      "usage_subject": {
+       "official_undeclared": 1595,
+       "unresolved": 412,
+       "compatible": 1
+      },
+      "usage_object": {
+       "unresolved": 476,
+       "official_undeclared": 1532
+      },
+      "usage_subject_compatible_share": 1.0,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 0.7948207171314741
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 12,
+      "classes_used_as_entity_type": 12,
+      "properties_typed": 81,
+      "props_with_domain": 81,
+      "props_with_range": 81,
+      "share_domain_is_most_frequent_declared_domain": 0.6790123456790124,
+      "share_range_is_most_frequent_declared_range": 0.2716049382716049,
+      "share_domain_is_most_frequent_entity_class": 0.6790123456790124,
+      "most_frequent_entity_class_share_of_typed_entities": 0.39559706470980655,
+      "distinct_declared_domains": 6,
+      "distinct_declared_ranges": 9,
+      "pipeline_properties": 83,
+      "mapping_levels": {
+       "unmapped": 75,
+       "aligned_nondomain": 5,
+       "alignment": 2,
+       "localname": 1
+      },
+      "n_mapped": 3,
+      "n_mapped_with_declared_domain_or_range": 3,
+      "declared_domain": {
+       "official_undeclared": 2,
+       "noncomparable": 1
+      },
+      "declared_range": {
+       "official_undeclared": 3
+      },
+      "usage_triples_on_mapped": 2008,
+      "usage_subject": {
+       "official_undeclared": 1595,
+       "unresolved": 412,
+       "compatible": 1
+      },
+      "usage_object": {
+       "unresolved": 476,
+       "official_undeclared": 1532
+      },
+      "usage_subject_compatible_share": 1.0,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 0.7948207171314741
+     }
+    },
+    "E": {
+     "sha256": "6283eb356de2a3f9eec3b02470c435c864b775aaaa23ec4575fc3da0ea54c8c7",
+     "triples": 52056,
+     "file": "paper/access2026/harness/variants/E/graph_E.ttl",
+     "external_shacl": {
+      "Brick.ttl (release shapes)": {
+       "scope": {
+        "targeted_shapes": 1747,
+        "shapes_with_focus_nodes": 1,
+        "distinct_focus_nodes": 74,
+        "data_nodes": 6450,
+        "constraint_shapes_targeted": 251,
+        "constraint_shapes_with_focus_nodes": 0,
+        "constraint_distinct_focus_nodes": 0,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://brickschema.org/schema/BrickShape#RDFSRangeRule",
+          "focus_nodes": 74
+         }
+        ]
+       },
+       "conforms_data_nodes_only": true,
+       "conforms_pyshacl_raw": false,
+       "violations": 0,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 0,
+       "results_on_official_ontology_nodes_ignored": 3,
+       "top_constraints": [],
+       "seconds": 14.1
+      }
+     },
+     "step2": {
+      "classes_declared": 12,
+      "classes_used_as_entity_type": 12,
+      "properties_typed": 74,
+      "props_with_domain": 74,
+      "props_with_range": 74,
+      "share_domain_is_most_frequent_declared_domain": 0.6621621621621622,
+      "share_range_is_most_frequent_declared_range": 0.28378378378378377,
+      "share_domain_is_most_frequent_entity_class": 0.6621621621621622,
+      "most_frequent_entity_class_share_of_typed_entities": 0.39559706470980655,
+      "distinct_declared_domains": 6,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 76,
+      "mapping_levels": {
+       "unmapped": 75,
+       "localname": 1
+      },
+      "n_mapped": 1,
+      "n_mapped_with_declared_domain_or_range": 1,
+      "declared_domain": {
+       "noncomparable": 1
+      },
+      "declared_range": {
+       "official_undeclared": 1
+      },
+      "usage_triples_on_mapped": 1,
+      "usage_subject": {
+       "compatible": 1
+      },
+      "usage_object": {
+       "unresolved": 1
+      },
+      "usage_subject_compatible_share": 1.0,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 1.0
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 12,
+      "classes_used_as_entity_type": 12,
+      "properties_typed": 74,
+      "props_with_domain": 74,
+      "props_with_range": 74,
+      "share_domain_is_most_frequent_declared_domain": 0.6621621621621622,
+      "share_range_is_most_frequent_declared_range": 0.28378378378378377,
+      "share_domain_is_most_frequent_entity_class": 0.6621621621621622,
+      "most_frequent_entity_class_share_of_typed_entities": 0.39559706470980655,
+      "distinct_declared_domains": 6,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 76,
+      "mapping_levels": {
+       "unmapped": 75,
+       "localname": 1
+      },
+      "n_mapped": 1,
+      "n_mapped_with_declared_domain_or_range": 1,
+      "declared_domain": {
+       "noncomparable": 1
+      },
+      "declared_range": {
+       "official_undeclared": 1
+      },
+      "usage_triples_on_mapped": 1,
+      "usage_subject": {
+       "compatible": 1
+      },
+      "usage_object": {
+       "unresolved": 1
+      },
+      "usage_subject_compatible_share": 1.0,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 1.0
+     },
+     "step3": {
+      "concepts": 4505,
+      "concepts_with_prov": 1888,
+      "share_concepts_with_prov": 0.4190899001109878,
+      "concepts_with_source_but_no_prov": 0,
+      "chunks_total": 1985,
+      "chunks_referenced": 1845,
+      "share_chunks_referenced": 0.929471032745592,
+      "links_total": 1898,
+      "links_per_linked_concept_mean": 1.0052966101694916,
+      "links_per_linked_concept_median": 1,
+      "links_per_linked_concept_max": 4,
+      "triples_eligible": 46413,
+      "share_triples_subject_has_prov": 0.45952642578587893,
+      "share_concept_subject_triples_subject_has_prov": 0.5049601060681393,
+      "spot_check": {
+       "links_available": 1898,
+       "sampled": 30,
+       "chunk_text_missing": 0,
+       "strict_contained": 30,
+       "strict_share": 1.0,
+       "loose_contained": 30,
+       "loose_share": 1.0,
+       "sample": [
+        {
+         "concept": "brick-condenser-water-temperature-sensor",
+         "chunk": "c0-a195",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-supply-fan",
+         "chunk": "c0-a1254",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "rec-volumeflowrateobservation",
+         "chunk": "c6-a1854",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "rec-cabinet",
+         "chunk": "c6-a1635",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-electric-vehicle-charging-station",
+         "chunk": "c0-a387",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "rec-window",
+         "chunk": "c6-a1860",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-ess-panel",
+         "chunk": "c0-a364",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "rec-ethernetswitch",
+         "chunk": "c6-a1688",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "rec-subbuilding",
+         "chunk": "c6-a1834",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "rec-ismemberof",
+         "chunk": "c8-a1946",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "rec-classroom",
+         "chunk": "c6-a1643",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "rec-dishingroom",
+         "chunk": "c6-a1669",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-library",
+         "chunk": "c0-a744",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-lighting-zone",
+         "chunk": "c0-a752",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-medium-temperature-hot-water-differential-pressure-load-shed-setpoint",
+         "chunk": "c0-a845",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-humidity-tolerance-parameter",
+         "chunk": "c0-a673",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-bypass-command",
+         "chunk": "c0-a99",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-leaving-medium-temperature-hot-water-temperature-low-reset-setpoint",
+         "chunk": "c0-a728",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-luminance-setpoint",
+         "chunk": "c0-a793",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "rec-mothersroom",
+         "chunk": "c6-a1755",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-energy-generation-system",
+         "chunk": "c0-a423",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "status",
+         "chunk": "c0-a1199",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-reset-command",
+         "chunk": "c0-a1092",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-water-heater",
+         "chunk": "c0-a1392",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-differential-pressure-deadband-setpoint",
+         "chunk": "c0-a271",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-water-flow-sensor",
+         "chunk": "c0-a1390",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-discharge-condenser-water-flow-sensor",
+         "chunk": "c0-a333",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-water-pressure-sensor",
+         "chunk": "c0-a1400",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-centrifugal-chiller",
+         "chunk": "c0-a122",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "brick-ozone-level-sensor",
+         "chunk": "c0-a992",
+         "strict": true,
+         "loose": true
+        }
+       ]
+      }
+     }
+    },
+    "F": {
+     "sha256": "8fa73d3782bee329078808a7a7e9e10f37989eecdef63f778215b626d91bbcb1",
+     "triples": 52056,
+     "file": "paper/access2026/harness/variants/F/graph_F.ttl",
+     "external_shacl": {
+      "Brick.ttl (release shapes)": {
+       "scope": {
+        "targeted_shapes": 1747,
+        "shapes_with_focus_nodes": 1,
+        "distinct_focus_nodes": 74,
+        "data_nodes": 6450,
+        "constraint_shapes_targeted": 251,
+        "constraint_shapes_with_focus_nodes": 0,
+        "constraint_distinct_focus_nodes": 0,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://brickschema.org/schema/BrickShape#RDFSRangeRule",
+          "focus_nodes": 74
+         }
+        ]
+       },
+       "conforms_data_nodes_only": true,
+       "conforms_pyshacl_raw": false,
+       "violations": 0,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 0,
+       "results_on_official_ontology_nodes_ignored": 3,
+       "top_constraints": [],
+       "seconds": 15.2
+      }
+     },
+     "step2": {
+      "classes_declared": 12,
+      "classes_used_as_entity_type": 12,
+      "properties_typed": 74,
+      "props_with_domain": 74,
+      "props_with_range": 74,
+      "share_domain_is_most_frequent_declared_domain": 0.6621621621621622,
+      "share_range_is_most_frequent_declared_range": 0.28378378378378377,
+      "share_domain_is_most_frequent_entity_class": 0.6621621621621622,
+      "most_frequent_entity_class_share_of_typed_entities": 0.39559706470980655,
+      "distinct_declared_domains": 6,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 76,
+      "mapping_levels": {
+       "unmapped": 75,
+       "localname": 1
+      },
+      "n_mapped": 1,
+      "n_mapped_with_declared_domain_or_range": 1,
+      "declared_domain": {
+       "noncomparable": 1
+      },
+      "declared_range": {
+       "official_undeclared": 1
+      },
+      "usage_triples_on_mapped": 1,
+      "usage_subject": {
+       "compatible": 1
+      },
+      "usage_object": {
+       "unresolved": 1
+      },
+      "usage_subject_compatible_share": 1.0,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 1.0
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 12,
+      "classes_used_as_entity_type": 12,
+      "properties_typed": 74,
+      "props_with_domain": 74,
+      "props_with_range": 74,
+      "share_domain_is_most_frequent_declared_domain": 0.6621621621621622,
+      "share_range_is_most_frequent_declared_range": 0.28378378378378377,
+      "share_domain_is_most_frequent_entity_class": 0.6621621621621622,
+      "most_frequent_entity_class_share_of_typed_entities": 0.39559706470980655,
+      "distinct_declared_domains": 6,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 76,
+      "mapping_levels": {
+       "unmapped": 75,
+       "localname": 1
+      },
+      "n_mapped": 1,
+      "n_mapped_with_declared_domain_or_range": 1,
+      "declared_domain": {
+       "noncomparable": 1
+      },
+      "declared_range": {
+       "official_undeclared": 1
+      },
+      "usage_triples_on_mapped": 1,
+      "usage_subject": {
+       "compatible": 1
+      },
+      "usage_object": {
+       "unresolved": 1
+      },
+      "usage_subject_compatible_share": 1.0,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 1.0
+     },
+     "step3": {
+      "concepts": 4505,
+      "concepts_with_prov": 1888,
+      "share_concepts_with_prov": 0.4190899001109878,
+      "concepts_with_source_but_no_prov": 0,
+      "chunks_total": 1985,
+      "chunks_referenced": 1845,
+      "share_chunks_referenced": 0.929471032745592,
+      "links_total": 1898,
+      "links_per_linked_concept_mean": 1.0052966101694916,
+      "links_per_linked_concept_median": 1,
+      "links_per_linked_concept_max": 4,
+      "triples_eligible": 46413,
+      "share_triples_subject_has_prov": 0.45952642578587893,
+      "share_concept_subject_triples_subject_has_prov": 0.5049601060681393
+     },
+     "own_shapes": {
+      "file": "paper/access2026/harness/variants/_work/shapes_F.ttl",
+      "sha256": "1b1ca85a93814c3740d4d3402f5c4e3185c94e4bc06c8122261742e096311c12",
+      "triples": 522,
+      "node_shapes": 12,
+      "property_shapes_with_path": 124,
+      "minCount_0": 124,
+      "minCount_ge1": 0,
+      "maxCount": 0,
+      "nodeKind": 87,
+      "datatype": 37,
+      "class_constraints": 0,
+      "node_constraints": 0,
+      "in_constraints": 0,
+      "pattern": 0,
+      "shapes_with_explicit_target": 12,
+      "shapes_with_implicit_class_target": 0,
+      "non_vacuous_constraints": true,
+      "F_conforms": true
+     }
+    }
+   },
+   "external_shapes": {
+    "Brick.ttl (release shapes)": {
+     "files": [
+      {
+       "file": "paper/access2026/harness/study8_structural_quality/external/brick/Brick.ttl",
+       "sha256": "b65720b7b9b64c646745c689777e6138c0d59ce0088df0aeb78fbd444d04d8e7"
+      }
+     ],
+     "triples": 53960,
+     "node_shapes": 1750,
+     "property_shapes_with_path": 514,
+     "minCount_0": 1,
+     "minCount_ge1": 211,
+     "maxCount": 294,
+     "nodeKind": 121,
+     "datatype": 138,
+     "class_constraints": 148,
+     "node_constraints": 50,
+     "in_constraints": 74,
+     "pattern": 0,
+     "shapes_with_explicit_target": 35,
+     "shapes_with_implicit_class_target": 1712,
+     "non_vacuous_constraints": true,
+     "dangling_sh_property_refs_removed_before_validation": 0
+    }
+   },
+   "official_ontology": {
+    "files": [
+     {
+      "file": "paper/access2026/harness/study8_structural_quality/external/brick/Brick.ttl",
+      "sha256": "b65720b7b9b64c646745c689777e6138c0d59ce0088df0aeb78fbd444d04d8e7"
+     }
+    ],
+    "classes": 1786,
+    "properties": 204,
+    "props_with_official_domain": 191,
+    "props_with_official_range": 127
+   }
+  },
+  "DCAT": {
+   "counts_only": false,
+   "variants": {
+    "A": {
+     "sha256": "833ad42cda809ff3c933add4ad9060a6ef878513e28d985bad4b427cefa47e97",
+     "triples": 1877,
+     "file": "paper/access2026/harness/study4_domains/dcat/variants/A/graph_A.ttl",
+     "external_shacl": {
+      "DCAT-AP 3.0.1 core": {
+       "scope": {
+        "targeted_shapes": 33,
+        "shapes_with_focus_nodes": 7,
+        "distinct_focus_nodes": 18,
+        "data_nodes": 542,
+        "constraint_shapes_targeted": 33,
+        "constraint_shapes_with_focus_nodes": 7,
+        "constraint_distinct_focus_nodes": 18,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#ChecksumAlgorithmShape",
+          "focus_nodes": 9
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:ResourceShape",
+          "focus_nodes": 4
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:DatasetShape",
+          "focus_nodes": 4
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:DistributionShape",
+          "focus_nodes": 2
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptShape",
+          "focus_nodes": 1
+         }
+        ]
+       },
+       "conforms_data_nodes_only": false,
+       "conforms_pyshacl_raw": false,
+       "violations": 33,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 33,
+       "results_on_official_ontology_nodes_ignored": 1,
+       "top_constraints": [
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/description",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:DatasetShape/8f61614144aa7bca188b24f5976593dc08aad0e6",
+         "n": 7
+        },
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:DatasetShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 7
+        },
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:CatalogShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 3
+        },
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/publisher",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:CatalogShape/a0ccdf3bd7f5d161d07f375a26e68c18ca91dc19",
+         "n": 3
+        },
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/description",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:CatalogShape/8f61614144aa7bca188b24f5976593dc08aad0e6",
+         "n": 3
+        }
+       ],
+       "seconds": 0.2
+      },
+      "DCAT-AP 3.0.1 core+ranges": {
+       "scope": {
+        "targeted_shapes": 35,
+        "shapes_with_focus_nodes": 7,
+        "distinct_focus_nodes": 18,
+        "data_nodes": 542,
+        "constraint_shapes_targeted": 35,
+        "constraint_shapes_with_focus_nodes": 7,
+        "constraint_distinct_focus_nodes": 18,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#ChecksumAlgorithmShape",
+          "focus_nodes": 9
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:ResourceShape",
+          "focus_nodes": 4
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:DatasetShape",
+          "focus_nodes": 4
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:DistributionShape",
+          "focus_nodes": 2
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptShape",
+          "focus_nodes": 1
+         }
+        ]
+       },
+       "conforms_data_nodes_only": false,
+       "conforms_pyshacl_raw": false,
+       "violations": 33,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 33,
+       "results_on_official_ontology_nodes_ignored": 1,
+       "top_constraints": [
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/description",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:DatasetShape/8f61614144aa7bca188b24f5976593dc08aad0e6",
+         "n": 7
+        },
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:DatasetShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 7
+        },
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:CatalogShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 3
+        },
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/publisher",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:CatalogShape/a0ccdf3bd7f5d161d07f375a26e68c18ca91dc19",
+         "n": 3
+        },
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/description",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#dcat:CatalogShape/8f61614144aa7bca188b24f5976593dc08aad0e6",
+         "n": 3
+        }
+       ],
+       "seconds": 0.2
+      }
+     },
+     "step2": {
+      "classes_declared": 85,
+      "classes_used_as_entity_type": 0,
+      "properties_typed": 245,
+      "props_with_domain": 216,
+      "props_with_range": 219,
+      "share_domain_is_most_frequent_declared_domain": 0.23148148148148148,
+      "share_range_is_most_frequent_declared_range": 0.1963470319634703,
+      "share_domain_is_most_frequent_entity_class": 0.0,
+      "most_frequent_entity_class_share_of_typed_entities": null,
+      "distinct_declared_domains": 34,
+      "distinct_declared_ranges": 73,
+      "pipeline_properties": 247,
+      "mapping_levels": {
+       "unmapped": 213,
+       "localname": 32,
+       "ambiguous": 2
+      },
+      "n_mapped": 32,
+      "n_mapped_with_declared_domain_or_range": 22,
+      "declared_domain": {
+       "official_undeclared": 14,
+       "not_declared": 10,
+       "noncomparable": 5,
+       "exact": 3
+      },
+      "declared_range": {
+       "official_undeclared": 8,
+       "noncomparable": 2,
+       "exact": 6,
+       "subclass": 4,
+       "broader": 1
+      },
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 85,
+      "classes_used_as_entity_type": 0,
+      "properties_typed": 245,
+      "props_with_domain": 216,
+      "props_with_range": 219,
+      "share_domain_is_most_frequent_declared_domain": 0.23148148148148148,
+      "share_range_is_most_frequent_declared_range": 0.1963470319634703,
+      "share_domain_is_most_frequent_entity_class": 0.0,
+      "most_frequent_entity_class_share_of_typed_entities": null,
+      "distinct_declared_domains": 34,
+      "distinct_declared_ranges": 73,
+      "pipeline_properties": 247,
+      "mapping_levels": {
+       "unmapped": 196,
+       "localname": 32,
+       "stem": 17,
+       "ambiguous": 2
+      },
+      "n_mapped": 49,
+      "n_mapped_with_declared_domain_or_range": 39,
+      "declared_domain": {
+       "official_undeclared": 21,
+       "exact": 10,
+       "not_declared": 10,
+       "noncomparable": 7,
+       "broader": 1
+      },
+      "declared_range": {
+       "official_undeclared": 12,
+       "subclass": 9,
+       "noncomparable": 4,
+       "exact": 12,
+       "broader": 1
+      },
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     }
+    },
+    "B": {
+     "sha256": "bbdd2e4714b4c6ba194c45fdaebe67653b89a03a0f7a02e6d7abf139e826da97",
+     "triples": 4271,
+     "file": "paper/access2026/harness/study4_domains/dcat/variants/B/graph_B.ttl",
+     "external_shacl": {
+      "DCAT-AP 3.0.1 core": {
+       "scope": {
+        "targeted_shapes": 33,
+        "shapes_with_focus_nodes": 2,
+        "distinct_focus_nodes": 548,
+        "data_nodes": 738,
+        "constraint_shapes_targeted": 33,
+        "constraint_shapes_with_focus_nodes": 2,
+        "constraint_distinct_focus_nodes": 548,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptShape",
+          "focus_nodes": 547
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape",
+          "focus_nodes": 1
+         }
+        ]
+       },
+       "conforms_data_nodes_only": false,
+       "conforms_pyshacl_raw": false,
+       "violations": 1,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 1,
+       "results_on_official_ontology_nodes_ignored": 0,
+       "top_constraints": [
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 1
+        }
+       ],
+       "seconds": 0.3
+      },
+      "DCAT-AP 3.0.1 core+ranges": {
+       "scope": {
+        "targeted_shapes": 35,
+        "shapes_with_focus_nodes": 2,
+        "distinct_focus_nodes": 548,
+        "data_nodes": 738,
+        "constraint_shapes_targeted": 35,
+        "constraint_shapes_with_focus_nodes": 2,
+        "constraint_distinct_focus_nodes": 548,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptShape",
+          "focus_nodes": 547
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape",
+          "focus_nodes": 1
+         }
+        ]
+       },
+       "conforms_data_nodes_only": false,
+       "conforms_pyshacl_raw": false,
+       "violations": 1,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 1,
+       "results_on_official_ontology_nodes_ignored": 0,
+       "top_constraints": [
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 1
+        }
+       ],
+       "seconds": 0.3
+      }
+     },
+     "step2": {
+      "classes_declared": 8,
+      "classes_used_as_entity_type": 8,
+      "properties_typed": 174,
+      "props_with_domain": 0,
+      "props_with_range": 0,
+      "share_domain_is_most_frequent_declared_domain": null,
+      "share_range_is_most_frequent_declared_range": null,
+      "share_domain_is_most_frequent_entity_class": null,
+      "most_frequent_entity_class_share_of_typed_entities": 0.30691056910569103,
+      "distinct_declared_domains": 0,
+      "distinct_declared_ranges": 0,
+      "pipeline_properties": 174,
+      "mapping_levels": {
+       "unmapped": 168,
+       "aligned_nondomain": 6
+      },
+      "n_mapped": 0,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {},
+      "declared_range": {},
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 8,
+      "classes_used_as_entity_type": 8,
+      "properties_typed": 174,
+      "props_with_domain": 0,
+      "props_with_range": 0,
+      "share_domain_is_most_frequent_declared_domain": null,
+      "share_range_is_most_frequent_declared_range": null,
+      "share_domain_is_most_frequent_entity_class": null,
+      "most_frequent_entity_class_share_of_typed_entities": 0.30691056910569103,
+      "distinct_declared_domains": 0,
+      "distinct_declared_ranges": 0,
+      "pipeline_properties": 174,
+      "mapping_levels": {
+       "unmapped": 168,
+       "aligned_nondomain": 6
+      },
+      "n_mapped": 0,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {},
+      "declared_range": {},
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     }
+    },
+    "C": {
+     "sha256": "58da1426e860c5009a5ec67b903537435aa9101420e60a7dbf32404b4b41704e",
+     "triples": 5902,
+     "file": "paper/access2026/harness/study5c_full_ladder/dcat/variants/C/graph_C.ttl",
+     "external_shacl": {
+      "DCAT-AP 3.0.1 core": {
+       "scope": {
+        "targeted_shapes": 33,
+        "shapes_with_focus_nodes": 2,
+        "distinct_focus_nodes": 543,
+        "data_nodes": 734,
+        "constraint_shapes_targeted": 33,
+        "constraint_shapes_with_focus_nodes": 2,
+        "constraint_distinct_focus_nodes": 543,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptShape",
+          "focus_nodes": 542
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape",
+          "focus_nodes": 1
+         }
+        ]
+       },
+       "conforms_data_nodes_only": false,
+       "conforms_pyshacl_raw": false,
+       "violations": 1,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 1,
+       "results_on_official_ontology_nodes_ignored": 0,
+       "top_constraints": [
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 1
+        }
+       ],
+       "seconds": 1.5
+      },
+      "DCAT-AP 3.0.1 core+ranges": {
+       "scope": {
+        "targeted_shapes": 35,
+        "shapes_with_focus_nodes": 2,
+        "distinct_focus_nodes": 543,
+        "data_nodes": 734,
+        "constraint_shapes_targeted": 35,
+        "constraint_shapes_with_focus_nodes": 2,
+        "constraint_distinct_focus_nodes": 543,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptShape",
+          "focus_nodes": 542
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape",
+          "focus_nodes": 1
+         }
+        ]
+       },
+       "conforms_data_nodes_only": false,
+       "conforms_pyshacl_raw": false,
+       "violations": 1,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 1,
+       "results_on_official_ontology_nodes_ignored": 0,
+       "top_constraints": [
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 1
+        }
+       ],
+       "seconds": 0.4
+      }
+     },
+     "step2": {
+      "classes_declared": 9,
+      "classes_used_as_entity_type": 9,
+      "properties_typed": 173,
+      "props_with_domain": 173,
+      "props_with_range": 173,
+      "share_domain_is_most_frequent_declared_domain": 0.34104046242774566,
+      "share_range_is_most_frequent_declared_range": 0.1907514450867052,
+      "share_domain_is_most_frequent_entity_class": 0.24855491329479767,
+      "most_frequent_entity_class_share_of_typed_entities": 0.25667351129363447,
+      "distinct_declared_domains": 8,
+      "distinct_declared_ranges": 10,
+      "pipeline_properties": 175,
+      "mapping_levels": {
+       "unmapped": 169,
+       "aligned_nondomain": 6
+      },
+      "n_mapped": 0,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {},
+      "declared_range": {},
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 9,
+      "classes_used_as_entity_type": 9,
+      "properties_typed": 173,
+      "props_with_domain": 173,
+      "props_with_range": 173,
+      "share_domain_is_most_frequent_declared_domain": 0.34104046242774566,
+      "share_range_is_most_frequent_declared_range": 0.1907514450867052,
+      "share_domain_is_most_frequent_entity_class": 0.24855491329479767,
+      "most_frequent_entity_class_share_of_typed_entities": 0.25667351129363447,
+      "distinct_declared_domains": 8,
+      "distinct_declared_ranges": 10,
+      "pipeline_properties": 175,
+      "mapping_levels": {
+       "unmapped": 169,
+       "aligned_nondomain": 6
+      },
+      "n_mapped": 0,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {},
+      "declared_range": {},
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     }
+    },
+    "D": {
+     "sha256": "fc84858f95eef7dec783ba96c8d46f70208354d3378605caec11162f9a89e3f3",
+     "triples": 5766,
+     "file": "paper/access2026/harness/study5c_full_ladder/dcat/variants/D/graph_D.ttl",
+     "external_shacl": {
+      "DCAT-AP 3.0.1 core": {
+       "scope": {
+        "targeted_shapes": 33,
+        "shapes_with_focus_nodes": 2,
+        "distinct_focus_nodes": 534,
+        "data_nodes": 717,
+        "constraint_shapes_targeted": 33,
+        "constraint_shapes_with_focus_nodes": 2,
+        "constraint_distinct_focus_nodes": 534,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptShape",
+          "focus_nodes": 533
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape",
+          "focus_nodes": 1
+         }
+        ]
+       },
+       "conforms_data_nodes_only": false,
+       "conforms_pyshacl_raw": false,
+       "violations": 1,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 1,
+       "results_on_official_ontology_nodes_ignored": 0,
+       "top_constraints": [
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 1
+        }
+       ],
+       "seconds": 0.5
+      },
+      "DCAT-AP 3.0.1 core+ranges": {
+       "scope": {
+        "targeted_shapes": 35,
+        "shapes_with_focus_nodes": 2,
+        "distinct_focus_nodes": 534,
+        "data_nodes": 717,
+        "constraint_shapes_targeted": 35,
+        "constraint_shapes_with_focus_nodes": 2,
+        "constraint_distinct_focus_nodes": 534,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptShape",
+          "focus_nodes": 533
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape",
+          "focus_nodes": 1
+         }
+        ]
+       },
+       "conforms_data_nodes_only": false,
+       "conforms_pyshacl_raw": false,
+       "violations": 1,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 1,
+       "results_on_official_ontology_nodes_ignored": 0,
+       "top_constraints": [
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 1
+        }
+       ],
+       "seconds": 0.4
+      }
+     },
+     "step2": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 164,
+      "props_with_domain": 164,
+      "props_with_range": 164,
+      "share_domain_is_most_frequent_declared_domain": 0.3170731707317073,
+      "share_range_is_most_frequent_declared_range": 0.1951219512195122,
+      "share_domain_is_most_frequent_entity_class": 0.2621951219512195,
+      "most_frequent_entity_class_share_of_typed_entities": 0.27824267782426776,
+      "distinct_declared_domains": 8,
+      "distinct_declared_ranges": 11,
+      "pipeline_properties": 166,
+      "mapping_levels": {
+       "unmapped": 160,
+       "aligned_nondomain": 6
+      },
+      "n_mapped": 0,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {},
+      "declared_range": {},
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 164,
+      "props_with_domain": 164,
+      "props_with_range": 164,
+      "share_domain_is_most_frequent_declared_domain": 0.3170731707317073,
+      "share_range_is_most_frequent_declared_range": 0.1951219512195122,
+      "share_domain_is_most_frequent_entity_class": 0.2621951219512195,
+      "most_frequent_entity_class_share_of_typed_entities": 0.27824267782426776,
+      "distinct_declared_domains": 8,
+      "distinct_declared_ranges": 11,
+      "pipeline_properties": 166,
+      "mapping_levels": {
+       "unmapped": 160,
+       "aligned_nondomain": 6
+      },
+      "n_mapped": 0,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {},
+      "declared_range": {},
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     }
+    },
+    "E": {
+     "sha256": "bbd7bdce994338899d53ce8d6c80e6206bc87e439470321437ee9e2222d1781f",
+     "triples": 6334,
+     "file": "paper/access2026/harness/study5c_full_ladder/dcat/variants/E/graph_E.ttl",
+     "external_shacl": {
+      "DCAT-AP 3.0.1 core": {
+       "scope": {
+        "targeted_shapes": 33,
+        "shapes_with_focus_nodes": 3,
+        "distinct_focus_nodes": 535,
+        "data_nodes": 825,
+        "constraint_shapes_targeted": 33,
+        "constraint_shapes_with_focus_nodes": 3,
+        "constraint_distinct_focus_nodes": 535,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptShape",
+          "focus_nodes": 533
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#prov:ActivityShape",
+          "focus_nodes": 1
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape",
+          "focus_nodes": 1
+         }
+        ]
+       },
+       "conforms_data_nodes_only": false,
+       "conforms_pyshacl_raw": false,
+       "violations": 1,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 1,
+       "results_on_official_ontology_nodes_ignored": 0,
+       "top_constraints": [
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 1
+        }
+       ],
+       "seconds": 0.4
+      },
+      "DCAT-AP 3.0.1 core+ranges": {
+       "scope": {
+        "targeted_shapes": 35,
+        "shapes_with_focus_nodes": 3,
+        "distinct_focus_nodes": 535,
+        "data_nodes": 825,
+        "constraint_shapes_targeted": 35,
+        "constraint_shapes_with_focus_nodes": 3,
+        "constraint_distinct_focus_nodes": 535,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptShape",
+          "focus_nodes": 533
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#prov:ActivityShape",
+          "focus_nodes": 1
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape",
+          "focus_nodes": 1
+         }
+        ]
+       },
+       "conforms_data_nodes_only": false,
+       "conforms_pyshacl_raw": false,
+       "violations": 1,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 1,
+       "results_on_official_ontology_nodes_ignored": 0,
+       "top_constraints": [
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 1
+        }
+       ],
+       "seconds": 0.4
+      }
+     },
+     "step2": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 158,
+      "props_with_domain": 158,
+      "props_with_range": 158,
+      "share_domain_is_most_frequent_declared_domain": 0.31645569620253167,
+      "share_range_is_most_frequent_declared_range": 0.20253164556962025,
+      "share_domain_is_most_frequent_entity_class": 0.2468354430379747,
+      "most_frequent_entity_class_share_of_typed_entities": 0.27824267782426776,
+      "distinct_declared_domains": 8,
+      "distinct_declared_ranges": 11,
+      "pipeline_properties": 160,
+      "mapping_levels": {
+       "unmapped": 160
+      },
+      "n_mapped": 0,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {},
+      "declared_range": {},
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 158,
+      "props_with_domain": 158,
+      "props_with_range": 158,
+      "share_domain_is_most_frequent_declared_domain": 0.31645569620253167,
+      "share_range_is_most_frequent_declared_range": 0.20253164556962025,
+      "share_domain_is_most_frequent_entity_class": 0.2468354430379747,
+      "most_frequent_entity_class_share_of_typed_entities": 0.27824267782426776,
+      "distinct_declared_domains": 8,
+      "distinct_declared_ranges": 11,
+      "pipeline_properties": 160,
+      "mapping_levels": {
+       "unmapped": 160
+      },
+      "n_mapped": 0,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {},
+      "declared_range": {},
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     },
+     "step3": {
+      "concepts": 533,
+      "concepts_with_prov": 206,
+      "share_concepts_with_prov": 0.38649155722326456,
+      "concepts_with_source_but_no_prov": 0,
+      "chunks_total": 426,
+      "chunks_referenced": 110,
+      "share_chunks_referenced": 0.25821596244131456,
+      "links_total": 268,
+      "links_per_linked_concept_mean": 1.3009708737864079,
+      "links_per_linked_concept_median": 1,
+      "links_per_linked_concept_max": 14,
+      "triples_eligible": 5686,
+      "share_triples_subject_has_prov": 0.3663383749560324,
+      "share_concept_subject_triples_subject_has_prov": 0.464747880410531,
+      "spot_check": {
+       "links_available": 268,
+       "sampled": 30,
+       "chunk_text_missing": 0,
+       "strict_contained": 15,
+       "strict_share": 0.5,
+       "loose_contained": 19,
+       "loose_share": 0.6333333333333333,
+       "sample": [
+        {
+         "concept": "dataset-series",
+         "chunk": "c0-a380",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "dcat-example-org-proxyid",
+         "chunk": "c0-a303",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "dcterm-standard",
+         "chunk": "c0-a86",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "property-common-catalog-resource",
+         "chunk": "c0-a64",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "property-dcat-hasversion",
+         "chunk": "c0-a344",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "registration-information",
+         "chunk": "c0-a28",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "kind-datum-service",
+         "chunk": "c0-a31",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "complementary-vocabulary",
+         "chunk": "c0-a18",
+         "strict": false,
+         "loose": true
+        },
+        {
+         "concept": "property",
+         "chunk": "c0-a366",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "prov-wasrevisionof",
+         "chunk": "c0-a366",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "dcat-spatialresolutioninmeter",
+         "chunk": "c0-a45",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "dcat",
+         "chunk": "c0-a359",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "dcat-catalogrecord",
+         "chunk": "c0-a28",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "namespace-dcat-term",
+         "chunk": "c0-a11",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "change",
+         "chunk": "c0-a108",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "digital-object-identifi-dois",
+         "chunk": "c0-a391",
+         "strict": false,
+         "loose": true
+        },
+        {
+         "concept": "distinct-temporal-descriptor",
+         "chunk": "c0-a44",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "data-discovery-service",
+         "chunk": "c0-a31",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "share-datum-resource-different-organization-researcher-government-citizen",
+         "chunk": "c0-a12",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "dcat-resource",
+         "chunk": "c0-a24",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "different-resource-type",
+         "chunk": "c0-a358",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "dcat-versione-approach",
+         "chunk": "c0-a364",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "creation-new-version",
+         "chunk": "c0-a356",
+         "strict": false,
+         "loose": true
+        },
+        {
+         "concept": "owl-property",
+         "chunk": "c0-a366",
+         "strict": false,
+         "loose": true
+        },
+        {
+         "concept": "dcat",
+         "chunk": "c0-a346",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "properly-generate-xsd-decimal",
+         "chunk": "c0-a192",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "range",
+         "chunk": "c0-a232",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "class",
+         "chunk": "c0-a164",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "kind-relationship-version",
+         "chunk": "c0-a340",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "dcat-3",
+         "chunk": "c0-a8",
+         "strict": true,
+         "loose": true
+        }
+       ]
+      }
+     }
+    },
+    "F": {
+     "sha256": "51f138a53d43b87d7e8d5bcf5f3d6b0d533ab4102cf06eb95098c2a26316fea4",
+     "triples": 6334,
+     "file": "paper/access2026/harness/study5_judge_panel/dcat/variants/F/graph_F.ttl",
+     "external_shacl": {
+      "DCAT-AP 3.0.1 core": {
+       "scope": {
+        "targeted_shapes": 33,
+        "shapes_with_focus_nodes": 3,
+        "distinct_focus_nodes": 535,
+        "data_nodes": 825,
+        "constraint_shapes_targeted": 33,
+        "constraint_shapes_with_focus_nodes": 3,
+        "constraint_distinct_focus_nodes": 535,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptShape",
+          "focus_nodes": 533
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#prov:ActivityShape",
+          "focus_nodes": 1
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape",
+          "focus_nodes": 1
+         }
+        ]
+       },
+       "conforms_data_nodes_only": false,
+       "conforms_pyshacl_raw": false,
+       "violations": 1,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 1,
+       "results_on_official_ontology_nodes_ignored": 0,
+       "top_constraints": [
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 1
+        }
+       ],
+       "seconds": 0.4
+      },
+      "DCAT-AP 3.0.1 core+ranges": {
+       "scope": {
+        "targeted_shapes": 35,
+        "shapes_with_focus_nodes": 3,
+        "distinct_focus_nodes": 535,
+        "data_nodes": 825,
+        "constraint_shapes_targeted": 35,
+        "constraint_shapes_with_focus_nodes": 3,
+        "constraint_distinct_focus_nodes": 535,
+        "shapes_with_focus_top": [
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptShape",
+          "focus_nodes": 533
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#prov:ActivityShape",
+          "focus_nodes": 1
+         },
+         {
+          "shape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape",
+          "focus_nodes": 1
+         }
+        ]
+       },
+       "conforms_data_nodes_only": false,
+       "conforms_pyshacl_raw": false,
+       "violations": 1,
+       "warnings": 0,
+       "infos": 0,
+       "results_on_data_nodes": 1,
+       "results_on_official_ontology_nodes_ignored": 0,
+       "top_constraints": [
+        {
+         "component": "MinCountConstraintComponent",
+         "path": "http://purl.org/dc/terms/title",
+         "sourceShape": "https://semiceu.github.io/DCAT-AP/releases/3.0.1#skos:ConceptSchemeShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
+         "n": 1
+        }
+       ],
+       "seconds": 0.5
+      }
+     },
+     "step2": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 158,
+      "props_with_domain": 158,
+      "props_with_range": 158,
+      "share_domain_is_most_frequent_declared_domain": 0.31645569620253167,
+      "share_range_is_most_frequent_declared_range": 0.20253164556962025,
+      "share_domain_is_most_frequent_entity_class": 0.2468354430379747,
+      "most_frequent_entity_class_share_of_typed_entities": 0.27824267782426776,
+      "distinct_declared_domains": 8,
+      "distinct_declared_ranges": 11,
+      "pipeline_properties": 160,
+      "mapping_levels": {
+       "unmapped": 160
+      },
+      "n_mapped": 0,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {},
+      "declared_range": {},
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 158,
+      "props_with_domain": 158,
+      "props_with_range": 158,
+      "share_domain_is_most_frequent_declared_domain": 0.31645569620253167,
+      "share_range_is_most_frequent_declared_range": 0.20253164556962025,
+      "share_domain_is_most_frequent_entity_class": 0.2468354430379747,
+      "most_frequent_entity_class_share_of_typed_entities": 0.27824267782426776,
+      "distinct_declared_domains": 8,
+      "distinct_declared_ranges": 11,
+      "pipeline_properties": 160,
+      "mapping_levels": {
+       "unmapped": 160
+      },
+      "n_mapped": 0,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {},
+      "declared_range": {},
+      "usage_triples_on_mapped": 0,
+      "usage_subject": {},
+      "usage_object": {},
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": null
+     },
+     "step3": {
+      "concepts": 533,
+      "concepts_with_prov": 206,
+      "share_concepts_with_prov": 0.38649155722326456,
+      "concepts_with_source_but_no_prov": 0,
+      "chunks_total": 426,
+      "chunks_referenced": 110,
+      "share_chunks_referenced": 0.25821596244131456,
+      "links_total": 268,
+      "links_per_linked_concept_mean": 1.3009708737864079,
+      "links_per_linked_concept_median": 1,
+      "links_per_linked_concept_max": 14,
+      "triples_eligible": 5686,
+      "share_triples_subject_has_prov": 0.3663383749560324,
+      "share_concept_subject_triples_subject_has_prov": 0.464747880410531
+     },
+     "own_shapes": {
+      "file": "paper/access2026/harness/study5_judge_panel/dcat/work/shapes_F.ttl",
+      "sha256": "ce118bb7f479344d9d1504502829933f00e46f82877decc5030ff6d1cd5ae79a",
+      "triples": 906,
+      "node_shapes": 10,
+      "property_shapes_with_path": 221,
+      "minCount_0": 221,
+      "minCount_ge1": 0,
+      "maxCount": 0,
+      "nodeKind": 183,
+      "datatype": 38,
+      "class_constraints": 0,
+      "node_constraints": 0,
+      "in_constraints": 0,
+      "pattern": 0,
+      "shapes_with_explicit_target": 10,
+      "shapes_with_implicit_class_target": 0,
+      "non_vacuous_constraints": true,
+      "F_conforms": true
+     }
+    }
+   },
+   "external_shapes": {
+    "DCAT-AP 3.0.1 core": {
+     "files": [
+      {
+       "file": "paper/access2026/harness/study8_structural_quality/external/dcat-ap-3.0.1/dcat-ap-SHACL.ttl",
+       "sha256": "990d3e42721de6a4be8cc338a7171559f195e62dea89c0b56531356b78cc026f"
+      }
+     ],
+     "triples": 1874,
+     "node_shapes": 33,
+     "property_shapes_with_path": 290,
+     "minCount_0": 0,
+     "minCount_ge1": 20,
+     "maxCount": 50,
+     "nodeKind": 131,
+     "datatype": 6,
+     "class_constraints": 83,
+     "node_constraints": 0,
+     "in_constraints": 0,
+     "pattern": 0,
+     "shapes_with_explicit_target": 33,
+     "shapes_with_implicit_class_target": 0,
+     "non_vacuous_constraints": true,
+     "dangling_sh_property_refs_removed_before_validation": 2
+    },
+    "DCAT-AP 3.0.1 core+ranges": {
+     "files": [
+      {
+       "file": "paper/access2026/harness/study8_structural_quality/external/dcat-ap-3.0.1/dcat-ap-SHACL.ttl",
+       "sha256": "990d3e42721de6a4be8cc338a7171559f195e62dea89c0b56531356b78cc026f"
+      },
+      {
+       "file": "paper/access2026/harness/study8_structural_quality/external/dcat-ap-3.0.1/ranges.ttl",
+       "sha256": "a6eed0fae8d0f5ca977fe2098ca12081ac60b0efe1ddce802d5c08e49505ebcc"
+      }
+     ],
+     "triples": 1903,
+     "node_shapes": 35,
+     "property_shapes_with_path": 292,
+     "minCount_0": 0,
+     "minCount_ge1": 20,
+     "maxCount": 50,
+     "nodeKind": 131,
+     "datatype": 6,
+     "class_constraints": 85,
+     "node_constraints": 0,
+     "in_constraints": 0,
+     "pattern": 0,
+     "shapes_with_explicit_target": 35,
+     "shapes_with_implicit_class_target": 0,
+     "non_vacuous_constraints": true,
+     "dangling_sh_property_refs_removed_before_validation": 5
+    }
+   },
+   "official_ontology": {
+    "files": [
+     {
+      "file": "paper/access2026/harness/study4_domains/dcat/raw/dcat.ttl",
+      "sha256": "d1624d3bbf364f6fc1d43b9a188bbb9e67639b1a7d46a5cb7ea3f5d47d02b62f"
+     }
+    ],
+    "classes": 9,
+    "properties": 39,
+    "props_with_official_domain": 22,
+    "props_with_official_range": 27
+   }
+  },
+  "SOSA/SSN": {
+   "counts_only": false,
+   "variants": {
+    "A": {
+     "sha256": "9f0a757198de8e57039aacaa1b0c7d76db7da79b1f948181e711cb205721034b",
+     "triples": 2057,
+     "file": "paper/access2026/harness/study4_domains/ssn/variants/A/graph_A.ttl",
+     "step2": {
+      "classes_declared": 114,
+      "classes_used_as_entity_type": 0,
+      "properties_typed": 107,
+      "props_with_domain": 93,
+      "props_with_range": 93,
+      "share_domain_is_most_frequent_declared_domain": 0.07526881720430108,
+      "share_range_is_most_frequent_declared_range": 0.053763440860215055,
+      "share_domain_is_most_frequent_entity_class": 0.0,
+      "most_frequent_entity_class_share_of_typed_entities": null,
+      "distinct_declared_domains": 52,
+      "distinct_declared_ranges": 64,
+      "pipeline_properties": 121,
+      "mapping_levels": {
+       "unmapped": 67,
+       "localname": 45,
+       "exact_iri": 9
+      },
+      "n_mapped": 54,
+      "n_mapped_with_declared_domain_or_range": 44,
+      "declared_domain": {
+       "not_declared": 10,
+       "official_undeclared": 19,
+       "exact": 16,
+       "noncomparable": 7,
+       "mismatch": 2
+      },
+      "declared_range": {
+       "official_undeclared": 20,
+       "exact": 16,
+       "noncomparable": 5,
+       "mismatch": 3
+      },
+      "usage_triples_on_mapped": 20,
+      "usage_subject": {
+       "official_undeclared": 9,
+       "compatible": 2,
+       "incompatible": 2,
+       "unresolved": 7
+      },
+      "usage_object": {
+       "unresolved": 18,
+       "literal": 2
+      },
+      "usage_subject_compatible_share": 0.5,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 0.65
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 114,
+      "classes_used_as_entity_type": 0,
+      "properties_typed": 107,
+      "props_with_domain": 93,
+      "props_with_range": 93,
+      "share_domain_is_most_frequent_declared_domain": 0.07526881720430108,
+      "share_range_is_most_frequent_declared_range": 0.053763440860215055,
+      "share_domain_is_most_frequent_entity_class": 0.0,
+      "most_frequent_entity_class_share_of_typed_entities": null,
+      "distinct_declared_domains": 52,
+      "distinct_declared_ranges": 64,
+      "pipeline_properties": 121,
+      "mapping_levels": {
+       "unmapped": 65,
+       "localname": 45,
+       "exact_iri": 9,
+       "stem": 2
+      },
+      "n_mapped": 56,
+      "n_mapped_with_declared_domain_or_range": 45,
+      "declared_domain": {
+       "not_declared": 11,
+       "official_undeclared": 19,
+       "exact": 16,
+       "noncomparable": 8,
+       "mismatch": 2
+      },
+      "declared_range": {
+       "official_undeclared": 20,
+       "exact": 16,
+       "noncomparable": 5,
+       "mismatch": 4
+      },
+      "usage_triples_on_mapped": 22,
+      "usage_subject": {
+       "official_undeclared": 9,
+       "compatible": 2,
+       "incompatible": 2,
+       "unresolved": 9
+      },
+      "usage_object": {
+       "unresolved": 18,
+       "literal": 4
+      },
+      "usage_subject_compatible_share": 0.5,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 0.5909090909090909
+     }
+    },
+    "B": {
+     "sha256": "858874c21f41b037c2847afda6e094844f37bf0c3d21a43785763ac677da7449",
+     "triples": 5922,
+     "file": "paper/access2026/harness/study4_domains/ssn/variants/B/graph_B.ttl",
+     "step2": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 167,
+      "props_with_domain": 0,
+      "props_with_range": 0,
+      "share_domain_is_most_frequent_declared_domain": null,
+      "share_range_is_most_frequent_declared_range": null,
+      "share_domain_is_most_frequent_entity_class": null,
+      "most_frequent_entity_class_share_of_typed_entities": 0.19538461538461538,
+      "distinct_declared_domains": 0,
+      "distinct_declared_ranges": 0,
+      "pipeline_properties": 167,
+      "mapping_levels": {
+       "localname": 11,
+       "unmapped": 148,
+       "aligned_nondomain": 6,
+       "alignment": 2
+      },
+      "n_mapped": 13,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {
+       "not_declared": 13
+      },
+      "declared_range": {},
+      "usage_triples_on_mapped": 34,
+      "usage_subject": {
+       "official_undeclared": 3,
+       "unresolved": 23,
+       "incompatible": 2,
+       "compatible": 6
+      },
+      "usage_object": {
+       "official_undeclared": 4,
+       "unresolved": 22,
+       "compatible": 7,
+       "incompatible": 1
+      },
+      "usage_subject_compatible_share": 0.75,
+      "usage_object_compatible_share": 0.875,
+      "usage_subject_resolvable_share": 0.3235294117647059
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 167,
+      "props_with_domain": 0,
+      "props_with_range": 0,
+      "share_domain_is_most_frequent_declared_domain": null,
+      "share_range_is_most_frequent_declared_range": null,
+      "share_domain_is_most_frequent_entity_class": null,
+      "most_frequent_entity_class_share_of_typed_entities": 0.19538461538461538,
+      "distinct_declared_domains": 0,
+      "distinct_declared_ranges": 0,
+      "pipeline_properties": 167,
+      "mapping_levels": {
+       "localname": 11,
+       "unmapped": 148,
+       "aligned_nondomain": 6,
+       "alignment": 2
+      },
+      "n_mapped": 13,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {
+       "not_declared": 13
+      },
+      "declared_range": {},
+      "usage_triples_on_mapped": 34,
+      "usage_subject": {
+       "official_undeclared": 3,
+       "unresolved": 23,
+       "incompatible": 2,
+       "compatible": 6
+      },
+      "usage_object": {
+       "official_undeclared": 4,
+       "unresolved": 22,
+       "compatible": 7,
+       "incompatible": 1
+      },
+      "usage_subject_compatible_share": 0.75,
+      "usage_object_compatible_share": 0.875,
+      "usage_subject_resolvable_share": 0.3235294117647059
+     }
+    },
+    "C": {
+     "sha256": "05b9aa4835727033eb9b0bb8b6fad3ca35ad74cdec3e650d1bbe08dab9a02657",
+     "triples": 7816,
+     "file": "paper/access2026/harness/study5c_full_ladder/ssn/variants/C/graph_C.ttl",
+     "step2": {
+      "classes_declared": 11,
+      "classes_used_as_entity_type": 11,
+      "properties_typed": 165,
+      "props_with_domain": 165,
+      "props_with_range": 165,
+      "share_domain_is_most_frequent_declared_domain": 0.3151515151515151,
+      "share_range_is_most_frequent_declared_range": 0.21818181818181817,
+      "share_domain_is_most_frequent_entity_class": 0.12727272727272726,
+      "most_frequent_entity_class_share_of_typed_entities": 0.2301710730948678,
+      "distinct_declared_domains": 8,
+      "distinct_declared_ranges": 9,
+      "pipeline_properties": 167,
+      "mapping_levels": {
+       "localname": 11,
+       "unmapped": 148,
+       "aligned_nondomain": 6,
+       "alignment": 2
+      },
+      "n_mapped": 13,
+      "n_mapped_with_declared_domain_or_range": 13,
+      "declared_domain": {
+       "official_undeclared": 8,
+       "noncomparable": 5
+      },
+      "declared_range": {
+       "official_undeclared": 8,
+       "noncomparable": 5
+      },
+      "usage_triples_on_mapped": 34,
+      "usage_subject": {
+       "official_undeclared": 3,
+       "unresolved": 23,
+       "incompatible": 2,
+       "compatible": 6
+      },
+      "usage_object": {
+       "official_undeclared": 4,
+       "unresolved": 22,
+       "compatible": 7,
+       "incompatible": 1
+      },
+      "usage_subject_compatible_share": 0.75,
+      "usage_object_compatible_share": 0.875,
+      "usage_subject_resolvable_share": 0.3235294117647059
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 11,
+      "classes_used_as_entity_type": 11,
+      "properties_typed": 165,
+      "props_with_domain": 165,
+      "props_with_range": 165,
+      "share_domain_is_most_frequent_declared_domain": 0.3151515151515151,
+      "share_range_is_most_frequent_declared_range": 0.21818181818181817,
+      "share_domain_is_most_frequent_entity_class": 0.12727272727272726,
+      "most_frequent_entity_class_share_of_typed_entities": 0.2301710730948678,
+      "distinct_declared_domains": 8,
+      "distinct_declared_ranges": 9,
+      "pipeline_properties": 167,
+      "mapping_levels": {
+       "localname": 11,
+       "unmapped": 148,
+       "aligned_nondomain": 6,
+       "alignment": 2
+      },
+      "n_mapped": 13,
+      "n_mapped_with_declared_domain_or_range": 13,
+      "declared_domain": {
+       "official_undeclared": 8,
+       "noncomparable": 5
+      },
+      "declared_range": {
+       "official_undeclared": 8,
+       "noncomparable": 5
+      },
+      "usage_triples_on_mapped": 34,
+      "usage_subject": {
+       "official_undeclared": 3,
+       "unresolved": 23,
+       "incompatible": 2,
+       "compatible": 6
+      },
+      "usage_object": {
+       "official_undeclared": 4,
+       "unresolved": 22,
+       "compatible": 7,
+       "incompatible": 1
+      },
+      "usage_subject_compatible_share": 0.75,
+      "usage_object_compatible_share": 0.875,
+      "usage_subject_resolvable_share": 0.3235294117647059
+     }
+    },
+    "D": {
+     "sha256": "6772152b2a49e7e9890c3c2c088167a9d343c685ff2c2f25516d4816fcf2beae",
+     "triples": 7542,
+     "file": "paper/access2026/harness/study5c_full_ladder/ssn/variants/D/graph_D.ttl",
+     "step2": {
+      "classes_declared": 8,
+      "classes_used_as_entity_type": 8,
+      "properties_typed": 152,
+      "props_with_domain": 152,
+      "props_with_range": 152,
+      "share_domain_is_most_frequent_declared_domain": 0.3026315789473684,
+      "share_range_is_most_frequent_declared_range": 0.20394736842105263,
+      "share_domain_is_most_frequent_entity_class": 0.09210526315789473,
+      "most_frequent_entity_class_share_of_typed_entities": 0.22632423756019263,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 154,
+      "mapping_levels": {
+       "unmapped": 136,
+       "aligned_nondomain": 6,
+       "localname": 10,
+       "alignment": 2
+      },
+      "n_mapped": 12,
+      "n_mapped_with_declared_domain_or_range": 12,
+      "declared_domain": {
+       "official_undeclared": 7,
+       "noncomparable": 5
+      },
+      "declared_range": {
+       "official_undeclared": 7,
+       "noncomparable": 5
+      },
+      "usage_triples_on_mapped": 32,
+      "usage_subject": {
+       "unresolved": 23,
+       "official_undeclared": 2,
+       "incompatible": 2,
+       "compatible": 5
+      },
+      "usage_object": {
+       "unresolved": 22,
+       "compatible": 6,
+       "official_undeclared": 3,
+       "incompatible": 1
+      },
+      "usage_subject_compatible_share": 0.7142857142857143,
+      "usage_object_compatible_share": 0.8571428571428571,
+      "usage_subject_resolvable_share": 0.28125
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 8,
+      "classes_used_as_entity_type": 8,
+      "properties_typed": 152,
+      "props_with_domain": 152,
+      "props_with_range": 152,
+      "share_domain_is_most_frequent_declared_domain": 0.3026315789473684,
+      "share_range_is_most_frequent_declared_range": 0.20394736842105263,
+      "share_domain_is_most_frequent_entity_class": 0.09210526315789473,
+      "most_frequent_entity_class_share_of_typed_entities": 0.22632423756019263,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 154,
+      "mapping_levels": {
+       "unmapped": 136,
+       "aligned_nondomain": 6,
+       "localname": 10,
+       "alignment": 2
+      },
+      "n_mapped": 12,
+      "n_mapped_with_declared_domain_or_range": 12,
+      "declared_domain": {
+       "official_undeclared": 7,
+       "noncomparable": 5
+      },
+      "declared_range": {
+       "official_undeclared": 7,
+       "noncomparable": 5
+      },
+      "usage_triples_on_mapped": 32,
+      "usage_subject": {
+       "unresolved": 23,
+       "official_undeclared": 2,
+       "incompatible": 2,
+       "compatible": 5
+      },
+      "usage_object": {
+       "unresolved": 22,
+       "compatible": 6,
+       "official_undeclared": 3,
+       "incompatible": 1
+      },
+      "usage_subject_compatible_share": 0.7142857142857143,
+      "usage_object_compatible_share": 0.8571428571428571,
+      "usage_subject_resolvable_share": 0.28125
+     }
+    },
+    "E": {
+     "sha256": "d9d37f23e59edef47fd941a6bea74c6f91e41fc01cd7d28e1ac35f27e0127918",
+     "triples": 8547,
+     "file": "paper/access2026/harness/study5c_full_ladder/ssn/variants/E/graph_E.ttl",
+     "step2": {
+      "classes_declared": 8,
+      "classes_used_as_entity_type": 8,
+      "properties_typed": 144,
+      "props_with_domain": 144,
+      "props_with_range": 144,
+      "share_domain_is_most_frequent_declared_domain": 0.3125,
+      "share_range_is_most_frequent_declared_range": 0.2013888888888889,
+      "share_domain_is_most_frequent_entity_class": 0.0763888888888889,
+      "most_frequent_entity_class_share_of_typed_entities": 0.22632423756019263,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 146,
+      "mapping_levels": {
+       "unmapped": 136,
+       "localname": 10
+      },
+      "n_mapped": 10,
+      "n_mapped_with_declared_domain_or_range": 10,
+      "declared_domain": {
+       "official_undeclared": 5,
+       "noncomparable": 5
+      },
+      "declared_range": {
+       "official_undeclared": 5,
+       "noncomparable": 5
+      },
+      "usage_triples_on_mapped": 19,
+      "usage_subject": {
+       "unresolved": 10,
+       "official_undeclared": 2,
+       "incompatible": 2,
+       "compatible": 5
+      },
+      "usage_object": {
+       "unresolved": 9,
+       "compatible": 6,
+       "official_undeclared": 3,
+       "incompatible": 1
+      },
+      "usage_subject_compatible_share": 0.7142857142857143,
+      "usage_object_compatible_share": 0.8571428571428571,
+      "usage_subject_resolvable_share": 0.47368421052631576
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 8,
+      "classes_used_as_entity_type": 8,
+      "properties_typed": 144,
+      "props_with_domain": 144,
+      "props_with_range": 144,
+      "share_domain_is_most_frequent_declared_domain": 0.3125,
+      "share_range_is_most_frequent_declared_range": 0.2013888888888889,
+      "share_domain_is_most_frequent_entity_class": 0.0763888888888889,
+      "most_frequent_entity_class_share_of_typed_entities": 0.22632423756019263,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 146,
+      "mapping_levels": {
+       "unmapped": 136,
+       "localname": 10
+      },
+      "n_mapped": 10,
+      "n_mapped_with_declared_domain_or_range": 10,
+      "declared_domain": {
+       "official_undeclared": 5,
+       "noncomparable": 5
+      },
+      "declared_range": {
+       "official_undeclared": 5,
+       "noncomparable": 5
+      },
+      "usage_triples_on_mapped": 19,
+      "usage_subject": {
+       "unresolved": 10,
+       "official_undeclared": 2,
+       "incompatible": 2,
+       "compatible": 5
+      },
+      "usage_object": {
+       "unresolved": 9,
+       "compatible": 6,
+       "official_undeclared": 3,
+       "incompatible": 1
+      },
+      "usage_subject_compatible_share": 0.7142857142857143,
+      "usage_object_compatible_share": 0.8571428571428571,
+      "usage_subject_resolvable_share": 0.47368421052631576
+     },
+     "step3": {
+      "concepts": 698,
+      "concepts_with_prov": 334,
+      "share_concepts_with_prov": 0.4785100286532951,
+      "concepts_with_source_but_no_prov": 0,
+      "chunks_total": 433,
+      "chunks_referenced": 190,
+      "share_chunks_referenced": 0.4387990762124711,
+      "links_total": 477,
+      "links_per_linked_concept_mean": 1.4281437125748504,
+      "links_per_linked_concept_median": 1,
+      "links_per_linked_concept_max": 18,
+      "triples_eligible": 7401,
+      "share_triples_subject_has_prov": 0.4661532225374949,
+      "share_concept_subject_triples_subject_has_prov": 0.5630814427941897,
+      "spot_check": {
+       "links_available": 477,
+       "sampled": 30,
+       "chunk_text_missing": 0,
+       "strict_contained": 22,
+       "strict_share": 0.7333333333333333,
+       "loose_contained": 24,
+       "loose_share": 0.8,
+       "sample": [
+        {
+         "concept": "domain-include",
+         "chunk": "c0-a179",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "room-145",
+         "chunk": "c0-a430",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "system-property",
+         "chunk": "c0-a212",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "ssn-deployment",
+         "chunk": "c0-a283",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "inverse-property",
+         "chunk": "c0-a90",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "systemcapability-specification",
+         "chunk": "c0-a254",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "iri-http-www-w3-org-ns-ssn-hasdeployment",
+         "chunk": "c0-a191",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "ssn-ispropertyof",
+         "chunk": "c0-a136",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "survival-range",
+         "chunk": "c0-a254",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "ssn-system-hasoperatingproperty",
+         "chunk": "c0-a247",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "ssn-forproperty",
+         "chunk": "c0-a211",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "ssn-implement",
+         "chunk": "c0-a184",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "observation",
+         "chunk": "c0-a69",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "observation-class-initial-ssn",
+         "chunk": "c0-a39",
+         "strict": false,
+         "loose": true
+        },
+        {
+         "concept": "oldssn-hasinput",
+         "chunk": "c0-a331",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "o-m",
+         "chunk": "c0-a25",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "define",
+         "chunk": "c0-a84",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "observation",
+         "chunk": "c0-a423",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "oldssn-batterylifetime",
+         "chunk": "c0-a300",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "stimulus",
+         "chunk": "c0-a78",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "iri-http-www-w3-org-ns-sosa-isresultof",
+         "chunk": "c0-a150",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "wall",
+         "chunk": "c0-a430",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "owl-implementation-o-m",
+         "chunk": "c0-a349",
+         "strict": false,
+         "loose": true
+        },
+        {
+         "concept": "sosa-actuator",
+         "chunk": "c0-a363",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "hammer",
+         "chunk": "c0-a117",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "window",
+         "chunk": "c0-a128",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "inverse-property",
+         "chunk": "c0-a100",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "sosa-featureofinter",
+         "chunk": "c0-a284",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "deployment",
+         "chunk": "c0-a191",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "oldssn-property",
+         "chunk": "c0-a294",
+         "strict": true,
+         "loose": true
+        }
+       ]
+      }
+     }
+    },
+    "F": {
+     "sha256": "a90e8606c0151941c287a8b615862965e495435c7a9cc6547efe9d87057d5d23",
+     "triples": 8547,
+     "file": "paper/access2026/harness/study5_judge_panel/ssn/variants/F/graph_F.ttl",
+     "step2": {
+      "classes_declared": 8,
+      "classes_used_as_entity_type": 8,
+      "properties_typed": 144,
+      "props_with_domain": 144,
+      "props_with_range": 144,
+      "share_domain_is_most_frequent_declared_domain": 0.3125,
+      "share_range_is_most_frequent_declared_range": 0.2013888888888889,
+      "share_domain_is_most_frequent_entity_class": 0.0763888888888889,
+      "most_frequent_entity_class_share_of_typed_entities": 0.22632423756019263,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 146,
+      "mapping_levels": {
+       "unmapped": 136,
+       "localname": 10
+      },
+      "n_mapped": 10,
+      "n_mapped_with_declared_domain_or_range": 10,
+      "declared_domain": {
+       "official_undeclared": 5,
+       "noncomparable": 5
+      },
+      "declared_range": {
+       "official_undeclared": 5,
+       "noncomparable": 5
+      },
+      "usage_triples_on_mapped": 19,
+      "usage_subject": {
+       "unresolved": 10,
+       "official_undeclared": 2,
+       "incompatible": 2,
+       "compatible": 5
+      },
+      "usage_object": {
+       "unresolved": 9,
+       "compatible": 6,
+       "official_undeclared": 3,
+       "incompatible": 1
+      },
+      "usage_subject_compatible_share": 0.7142857142857143,
+      "usage_object_compatible_share": 0.8571428571428571,
+      "usage_subject_resolvable_share": 0.47368421052631576
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 8,
+      "classes_used_as_entity_type": 8,
+      "properties_typed": 144,
+      "props_with_domain": 144,
+      "props_with_range": 144,
+      "share_domain_is_most_frequent_declared_domain": 0.3125,
+      "share_range_is_most_frequent_declared_range": 0.2013888888888889,
+      "share_domain_is_most_frequent_entity_class": 0.0763888888888889,
+      "most_frequent_entity_class_share_of_typed_entities": 0.22632423756019263,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 146,
+      "mapping_levels": {
+       "unmapped": 136,
+       "localname": 10
+      },
+      "n_mapped": 10,
+      "n_mapped_with_declared_domain_or_range": 10,
+      "declared_domain": {
+       "official_undeclared": 5,
+       "noncomparable": 5
+      },
+      "declared_range": {
+       "official_undeclared": 5,
+       "noncomparable": 5
+      },
+      "usage_triples_on_mapped": 19,
+      "usage_subject": {
+       "unresolved": 10,
+       "official_undeclared": 2,
+       "incompatible": 2,
+       "compatible": 5
+      },
+      "usage_object": {
+       "unresolved": 9,
+       "compatible": 6,
+       "official_undeclared": 3,
+       "incompatible": 1
+      },
+      "usage_subject_compatible_share": 0.7142857142857143,
+      "usage_object_compatible_share": 0.8571428571428571,
+      "usage_subject_resolvable_share": 0.47368421052631576
+     },
+     "step3": {
+      "concepts": 698,
+      "concepts_with_prov": 334,
+      "share_concepts_with_prov": 0.4785100286532951,
+      "concepts_with_source_but_no_prov": 0,
+      "chunks_total": 433,
+      "chunks_referenced": 190,
+      "share_chunks_referenced": 0.4387990762124711,
+      "links_total": 477,
+      "links_per_linked_concept_mean": 1.4281437125748504,
+      "links_per_linked_concept_median": 1,
+      "links_per_linked_concept_max": 18,
+      "triples_eligible": 7401,
+      "share_triples_subject_has_prov": 0.4661532225374949,
+      "share_concept_subject_triples_subject_has_prov": 0.5630814427941897
+     },
+     "own_shapes": {
+      "file": "paper/access2026/harness/study5_judge_panel/ssn/work/shapes_F.ttl",
+      "sha256": "0d72ac24bfdf2b09a2933b1a41c4cefacbc5f94ab23c2b90cb5d6d2038cafe08",
+      "triples": 870,
+      "node_shapes": 8,
+      "property_shapes_with_path": 213,
+      "minCount_0": 213,
+      "minCount_ge1": 0,
+      "maxCount": 0,
+      "nodeKind": 176,
+      "datatype": 37,
+      "class_constraints": 0,
+      "node_constraints": 0,
+      "in_constraints": 0,
+      "pattern": 0,
+      "shapes_with_explicit_target": 8,
+      "shapes_with_implicit_class_target": 0,
+      "non_vacuous_constraints": true,
+      "F_conforms": true
+     }
+    }
+   },
+   "external_shapes": null,
+   "official_ontology_sh_terms": {
+    "paper/access2026/harness/study4_domains/ssn/raw/sosa.ttl": 0,
+    "paper/access2026/harness/study4_domains/ssn/raw/ssn.ttl": 0
+   },
+   "official_ontology": {
+    "files": [
+     {
+      "file": "paper/access2026/harness/study4_domains/ssn/raw/sosa.ttl",
+      "sha256": "c70b0d1c843c0047e4c98e0a89392e46a05752ff6365bda7f7f55303905a0392"
+     },
+     {
+      "file": "paper/access2026/harness/study4_domains/ssn/raw/ssn.ttl",
+      "sha256": "184d86189191146e314cc52b1bceb96fca11e70aacbc160d71588102a5153eb9"
+     }
+    ],
+    "classes": 22,
+    "properties": 52,
+    "props_with_official_domain": 23,
+    "props_with_official_range": 22
+   }
+  },
+  "PROV": {
+   "counts_only": false,
+   "variants": {
+    "A": {
+     "sha256": "821b6970b20d20fe2546f0f4a19aef04662bb034e3efb9bb0072d8100d571164",
+     "triples": 2398,
+     "file": "paper/access2026/harness/study4_domains/prov/variants/A/graph_A.ttl",
+     "step2": {
+      "classes_declared": 119,
+      "classes_used_as_entity_type": 0,
+      "properties_typed": 201,
+      "props_with_domain": 198,
+      "props_with_range": 201,
+      "share_domain_is_most_frequent_declared_domain": 0.24242424242424243,
+      "share_range_is_most_frequent_declared_range": 0.23880597014925373,
+      "share_domain_is_most_frequent_entity_class": 0.0,
+      "most_frequent_entity_class_share_of_typed_entities": null,
+      "distinct_declared_domains": 44,
+      "distinct_declared_ranges": 48,
+      "pipeline_properties": 206,
+      "mapping_levels": {
+       "localname": 61,
+       "unmapped": 145
+      },
+      "n_mapped": 61,
+      "n_mapped_with_declared_domain_or_range": 61,
+      "declared_domain": {
+       "exact": 53,
+       "noncomparable": 4,
+       "subclass": 2,
+       "official_undeclared": 2
+      },
+      "declared_range": {
+       "exact": 52,
+       "mismatch": 4,
+       "subclass": 1,
+       "noncomparable": 1,
+       "official_undeclared": 3
+      },
+      "usage_triples_on_mapped": 34,
+      "usage_subject": {
+       "unresolved": 34
+      },
+      "usage_object": {
+       "unresolved": 34
+      },
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 0.0
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 119,
+      "classes_used_as_entity_type": 0,
+      "properties_typed": 201,
+      "props_with_domain": 198,
+      "props_with_range": 201,
+      "share_domain_is_most_frequent_declared_domain": 0.24242424242424243,
+      "share_range_is_most_frequent_declared_range": 0.23880597014925373,
+      "share_domain_is_most_frequent_entity_class": 0.0,
+      "most_frequent_entity_class_share_of_typed_entities": null,
+      "distinct_declared_domains": 44,
+      "distinct_declared_ranges": 48,
+      "pipeline_properties": 206,
+      "mapping_levels": {
+       "localname": 61,
+       "unmapped": 139,
+       "stem": 6
+      },
+      "n_mapped": 67,
+      "n_mapped_with_declared_domain_or_range": 67,
+      "declared_domain": {
+       "exact": 53,
+       "noncomparable": 5,
+       "official_undeclared": 4,
+       "subclass": 3,
+       "mismatch": 2
+      },
+      "declared_range": {
+       "exact": 55,
+       "mismatch": 4,
+       "subclass": 1,
+       "noncomparable": 1,
+       "official_undeclared": 6
+      },
+      "usage_triples_on_mapped": 52,
+      "usage_subject": {
+       "unresolved": 52
+      },
+      "usage_object": {
+       "unresolved": 51,
+       "literal": 1
+      },
+      "usage_subject_compatible_share": null,
+      "usage_object_compatible_share": null,
+      "usage_subject_resolvable_share": 0.0
+     }
+    },
+    "B": {
+     "sha256": "3b2ad00e9a725127457fe96b6e2bff50f7753dda837b676e7324c21655474df1",
+     "triples": 6015,
+     "file": "paper/access2026/harness/study4_domains/prov/variants/B/graph_B.ttl",
+     "step2": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 236,
+      "props_with_domain": 0,
+      "props_with_range": 0,
+      "share_domain_is_most_frequent_declared_domain": null,
+      "share_range_is_most_frequent_declared_range": null,
+      "share_domain_is_most_frequent_entity_class": null,
+      "most_frequent_entity_class_share_of_typed_entities": 0.21542940320232898,
+      "distinct_declared_domains": 0,
+      "distinct_declared_ranges": 0,
+      "pipeline_properties": 236,
+      "mapping_levels": {
+       "unmapped": 214,
+       "localname": 16,
+       "aligned_nondomain": 6
+      },
+      "n_mapped": 16,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {
+       "not_declared": 16
+      },
+      "declared_range": {},
+      "usage_triples_on_mapped": 29,
+      "usage_subject": {
+       "compatible": 12,
+       "unresolved": 10,
+       "incompatible": 7
+      },
+      "usage_object": {
+       "compatible": 11,
+       "unresolved": 17,
+       "literal": 1
+      },
+      "usage_subject_compatible_share": 0.631578947368421,
+      "usage_object_compatible_share": 1.0,
+      "usage_subject_resolvable_share": 0.6551724137931034
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 236,
+      "props_with_domain": 0,
+      "props_with_range": 0,
+      "share_domain_is_most_frequent_declared_domain": null,
+      "share_range_is_most_frequent_declared_range": null,
+      "share_domain_is_most_frequent_entity_class": null,
+      "most_frequent_entity_class_share_of_typed_entities": 0.21542940320232898,
+      "distinct_declared_domains": 0,
+      "distinct_declared_ranges": 0,
+      "pipeline_properties": 236,
+      "mapping_levels": {
+       "unmapped": 214,
+       "localname": 16,
+       "aligned_nondomain": 6
+      },
+      "n_mapped": 16,
+      "n_mapped_with_declared_domain_or_range": 0,
+      "declared_domain": {
+       "not_declared": 16
+      },
+      "declared_range": {},
+      "usage_triples_on_mapped": 29,
+      "usage_subject": {
+       "compatible": 12,
+       "unresolved": 10,
+       "incompatible": 7
+      },
+      "usage_object": {
+       "compatible": 11,
+       "unresolved": 17,
+       "literal": 1
+      },
+      "usage_subject_compatible_share": 0.631578947368421,
+      "usage_object_compatible_share": 1.0,
+      "usage_subject_resolvable_share": 0.6551724137931034
+     }
+    },
+    "C": {
+     "sha256": "76f669c6bebec63536919c6f117929bc876866b71aed5719cd56ada973f8aee5",
+     "triples": 8106,
+     "file": "paper/access2026/harness/study5c_full_ladder/prov/variants/C/graph_C.ttl",
+     "step2": {
+      "classes_declared": 9,
+      "classes_used_as_entity_type": 9,
+      "properties_typed": 233,
+      "props_with_domain": 233,
+      "props_with_range": 233,
+      "share_domain_is_most_frequent_declared_domain": 0.22317596566523606,
+      "share_range_is_most_frequent_declared_range": 0.1630901287553648,
+      "share_domain_is_most_frequent_entity_class": 0.22317596566523606,
+      "most_frequent_entity_class_share_of_typed_entities": 0.21084337349397592,
+      "distinct_declared_domains": 9,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 235,
+      "mapping_levels": {
+       "unmapped": 213,
+       "localname": 16,
+       "aligned_nondomain": 6
+      },
+      "n_mapped": 16,
+      "n_mapped_with_declared_domain_or_range": 16,
+      "declared_domain": {
+       "noncomparable": 15,
+       "official_undeclared": 1
+      },
+      "declared_range": {
+       "noncomparable": 13,
+       "official_undeclared": 2,
+       "subclass": 1
+      },
+      "usage_triples_on_mapped": 28,
+      "usage_subject": {
+       "compatible": 12,
+       "unresolved": 9,
+       "incompatible": 7
+      },
+      "usage_object": {
+       "compatible": 11,
+       "unresolved": 16,
+       "literal": 1
+      },
+      "usage_subject_compatible_share": 0.631578947368421,
+      "usage_object_compatible_share": 1.0,
+      "usage_subject_resolvable_share": 0.6785714285714286
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 9,
+      "classes_used_as_entity_type": 9,
+      "properties_typed": 233,
+      "props_with_domain": 233,
+      "props_with_range": 233,
+      "share_domain_is_most_frequent_declared_domain": 0.22317596566523606,
+      "share_range_is_most_frequent_declared_range": 0.1630901287553648,
+      "share_domain_is_most_frequent_entity_class": 0.22317596566523606,
+      "most_frequent_entity_class_share_of_typed_entities": 0.21084337349397592,
+      "distinct_declared_domains": 9,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 235,
+      "mapping_levels": {
+       "unmapped": 213,
+       "localname": 16,
+       "aligned_nondomain": 6
+      },
+      "n_mapped": 16,
+      "n_mapped_with_declared_domain_or_range": 16,
+      "declared_domain": {
+       "noncomparable": 15,
+       "official_undeclared": 1
+      },
+      "declared_range": {
+       "noncomparable": 13,
+       "official_undeclared": 2,
+       "subclass": 1
+      },
+      "usage_triples_on_mapped": 28,
+      "usage_subject": {
+       "compatible": 12,
+       "unresolved": 9,
+       "incompatible": 7
+      },
+      "usage_object": {
+       "compatible": 11,
+       "unresolved": 16,
+       "literal": 1
+      },
+      "usage_subject_compatible_share": 0.631578947368421,
+      "usage_object_compatible_share": 1.0,
+      "usage_subject_resolvable_share": 0.6785714285714286
+     }
+    },
+    "D": {
+     "sha256": "2da0b77421b960694f2cb1d5b11130e21ad8c4467192386d4c2aa1bc29982e89",
+     "triples": 7880,
+     "file": "paper/access2026/harness/study5c_full_ladder/prov/variants/D/graph_D.ttl",
+     "step2": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 217,
+      "props_with_domain": 217,
+      "props_with_range": 217,
+      "share_domain_is_most_frequent_declared_domain": 0.2764976958525346,
+      "share_range_is_most_frequent_declared_range": 0.17972350230414746,
+      "share_domain_is_most_frequent_entity_class": 0.2764976958525346,
+      "most_frequent_entity_class_share_of_typed_entities": 0.23053435114503817,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 219,
+      "mapping_levels": {
+       "unmapped": 201,
+       "localname": 12,
+       "aligned_nondomain": 6
+      },
+      "n_mapped": 12,
+      "n_mapped_with_declared_domain_or_range": 12,
+      "declared_domain": {
+       "noncomparable": 11,
+       "official_undeclared": 1
+      },
+      "declared_range": {
+       "noncomparable": 9,
+       "official_undeclared": 2,
+       "subclass": 1
+      },
+      "usage_triples_on_mapped": 16,
+      "usage_subject": {
+       "compatible": 7,
+       "unresolved": 4,
+       "incompatible": 5
+      },
+      "usage_object": {
+       "compatible": 6,
+       "unresolved": 9,
+       "literal": 1
+      },
+      "usage_subject_compatible_share": 0.5833333333333334,
+      "usage_object_compatible_share": 1.0,
+      "usage_subject_resolvable_share": 0.75
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 217,
+      "props_with_domain": 217,
+      "props_with_range": 217,
+      "share_domain_is_most_frequent_declared_domain": 0.2764976958525346,
+      "share_range_is_most_frequent_declared_range": 0.17972350230414746,
+      "share_domain_is_most_frequent_entity_class": 0.2764976958525346,
+      "most_frequent_entity_class_share_of_typed_entities": 0.23053435114503817,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 219,
+      "mapping_levels": {
+       "unmapped": 201,
+       "localname": 12,
+       "aligned_nondomain": 6
+      },
+      "n_mapped": 12,
+      "n_mapped_with_declared_domain_or_range": 12,
+      "declared_domain": {
+       "noncomparable": 11,
+       "official_undeclared": 1
+      },
+      "declared_range": {
+       "noncomparable": 9,
+       "official_undeclared": 2,
+       "subclass": 1
+      },
+      "usage_triples_on_mapped": 16,
+      "usage_subject": {
+       "compatible": 7,
+       "unresolved": 4,
+       "incompatible": 5
+      },
+      "usage_object": {
+       "compatible": 6,
+       "unresolved": 9,
+       "literal": 1
+      },
+      "usage_subject_compatible_share": 0.5833333333333334,
+      "usage_object_compatible_share": 1.0,
+      "usage_subject_resolvable_share": 0.75
+     }
+    },
+    "E": {
+     "sha256": "0e4d3e06b84cccf5d4b7be108578ba5689645ac3e95e226bbf05c0226f253635",
+     "triples": 8719,
+     "file": "paper/access2026/harness/study5c_full_ladder/prov/variants/E/graph_E.ttl",
+     "step2": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 211,
+      "props_with_domain": 211,
+      "props_with_range": 211,
+      "share_domain_is_most_frequent_declared_domain": 0.27014218009478674,
+      "share_range_is_most_frequent_declared_range": 0.1848341232227488,
+      "share_domain_is_most_frequent_entity_class": 0.27014218009478674,
+      "most_frequent_entity_class_share_of_typed_entities": 0.23053435114503817,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 213,
+      "mapping_levels": {
+       "unmapped": 201,
+       "localname": 12
+      },
+      "n_mapped": 12,
+      "n_mapped_with_declared_domain_or_range": 12,
+      "declared_domain": {
+       "noncomparable": 11,
+       "official_undeclared": 1
+      },
+      "declared_range": {
+       "noncomparable": 9,
+       "official_undeclared": 2,
+       "subclass": 1
+      },
+      "usage_triples_on_mapped": 16,
+      "usage_subject": {
+       "compatible": 7,
+       "unresolved": 4,
+       "incompatible": 5
+      },
+      "usage_object": {
+       "compatible": 6,
+       "unresolved": 9,
+       "literal": 1
+      },
+      "usage_subject_compatible_share": 0.5833333333333334,
+      "usage_object_compatible_share": 1.0,
+      "usage_subject_resolvable_share": 0.75
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 211,
+      "props_with_domain": 211,
+      "props_with_range": 211,
+      "share_domain_is_most_frequent_declared_domain": 0.27014218009478674,
+      "share_range_is_most_frequent_declared_range": 0.1848341232227488,
+      "share_domain_is_most_frequent_entity_class": 0.27014218009478674,
+      "most_frequent_entity_class_share_of_typed_entities": 0.23053435114503817,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 213,
+      "mapping_levels": {
+       "unmapped": 201,
+       "localname": 12
+      },
+      "n_mapped": 12,
+      "n_mapped_with_declared_domain_or_range": 12,
+      "declared_domain": {
+       "noncomparable": 11,
+       "official_undeclared": 1
+      },
+      "declared_range": {
+       "noncomparable": 9,
+       "official_undeclared": 2,
+       "subclass": 1
+      },
+      "usage_triples_on_mapped": 16,
+      "usage_subject": {
+       "compatible": 7,
+       "unresolved": 4,
+       "incompatible": 5
+      },
+      "usage_object": {
+       "compatible": 6,
+       "unresolved": 9,
+       "literal": 1
+      },
+      "usage_subject_compatible_share": 0.5833333333333334,
+      "usage_object_compatible_share": 1.0,
+      "usage_subject_resolvable_share": 0.75
+     },
+     "step3": {
+      "concepts": 709,
+      "concepts_with_prov": 300,
+      "share_concepts_with_prov": 0.4231311706629055,
+      "concepts_with_source_but_no_prov": 0,
+      "chunks_total": 458,
+      "chunks_referenced": 151,
+      "share_chunks_referenced": 0.3296943231441048,
+      "links_total": 416,
+      "links_per_linked_concept_mean": 1.3866666666666667,
+      "links_per_linked_concept_median": 1,
+      "links_per_linked_concept_max": 11,
+      "triples_eligible": 7734,
+      "share_triples_subject_has_prov": 0.39979312128264805,
+      "share_concept_subject_triples_subject_has_prov": 0.5044045676998369,
+      "spot_check": {
+       "links_available": 416,
+       "sampled": 30,
+       "chunk_text_missing": 0,
+       "strict_contained": 18,
+       "strict_share": 0.6,
+       "loose_contained": 21,
+       "loose_share": 0.7,
+       "sample": [
+        {
+         "concept": "bbc-news-home-page-day",
+         "chunk": "c1-a296",
+         "strict": false,
+         "loose": true
+        },
+        {
+         "concept": "prov-wasinformedby-property",
+         "chunk": "c0-a35",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "uml-stereotype-prov-type",
+         "chunk": "c1-a300",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "core-structure",
+         "chunk": "c1-a321",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "determination-primary-source",
+         "chunk": "c1-a319",
+         "strict": false,
+         "loose": true
+        },
+        {
+         "concept": "usage",
+         "chunk": "c1-a158",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "value-associate-attribute-prov-label",
+         "chunk": "c1-a401",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "map-concept-relation",
+         "chunk": "c1-a197",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "member",
+         "chunk": "c1-a388",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "person",
+         "chunk": "c0-a13",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "identifi",
+         "chunk": "c1-a214",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "agent-act-behalf",
+         "chunk": "c1-a185",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "invalidation",
+         "chunk": "c1-a288",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "new-instance",
+         "chunk": "c0-a63",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "delegation",
+         "chunk": "c1-a397",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "prov-hadplan-property",
+         "chunk": "c0-a80",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "second-bundle",
+         "chunk": "c1-a370",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "claim-know-scientist-establish-track-record",
+         "chunk": "c1-a177",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "component-4",
+         "chunk": "c1-a221",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "second-component-prov-dm",
+         "chunk": "c1-a300",
+         "strict": false,
+         "loose": true
+        },
+        {
+         "concept": "aggregationactivity",
+         "chunk": "c0-a40",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "prov-collection-class",
+         "chunk": "c0-a47",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "prov-datum-model",
+         "chunk": "c1-a140",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "column",
+         "chunk": "c1-a228",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "ontology-specification",
+         "chunk": "c0-a10",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "prov-collection",
+         "chunk": "c1-a391",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "plan",
+         "chunk": "c1-a340",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "car",
+         "chunk": "c0-a13",
+         "strict": true,
+         "loose": true
+        },
+        {
+         "concept": "set-attribute-value-pair",
+         "chunk": "c1-a214",
+         "strict": false,
+         "loose": false
+        },
+        {
+         "concept": "entity",
+         "chunk": "c0-a81",
+         "strict": false,
+         "loose": false
+        }
+       ]
+      }
+     }
+    },
+    "F": {
+     "sha256": "b8299950189e3873368f2319badc7d1eb519ccd42d66b74ccb906e1ce8256836",
+     "triples": 8671,
+     "file": "paper/access2026/harness/study5_judge_panel/prov/variants/F/graph_F.ttl",
+     "step2": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 203,
+      "props_with_domain": 203,
+      "props_with_range": 203,
+      "share_domain_is_most_frequent_declared_domain": 0.2561576354679803,
+      "share_range_is_most_frequent_declared_range": 0.18719211822660098,
+      "share_domain_is_most_frequent_entity_class": 0.2561576354679803,
+      "most_frequent_entity_class_share_of_typed_entities": 0.23053435114503817,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 205,
+      "mapping_levels": {
+       "unmapped": 194,
+       "localname": 11
+      },
+      "n_mapped": 11,
+      "n_mapped_with_declared_domain_or_range": 11,
+      "declared_domain": {
+       "noncomparable": 10,
+       "official_undeclared": 1
+      },
+      "declared_range": {
+       "noncomparable": 8,
+       "official_undeclared": 2,
+       "subclass": 1
+      },
+      "usage_triples_on_mapped": 15,
+      "usage_subject": {
+       "compatible": 7,
+       "unresolved": 4,
+       "incompatible": 4
+      },
+      "usage_object": {
+       "compatible": 6,
+       "unresolved": 8,
+       "literal": 1
+      },
+      "usage_subject_compatible_share": 0.6363636363636364,
+      "usage_object_compatible_share": 1.0,
+      "usage_subject_resolvable_share": 0.7333333333333333
+     },
+     "step2_stem_sensitivity": {
+      "classes_declared": 10,
+      "classes_used_as_entity_type": 10,
+      "properties_typed": 203,
+      "props_with_domain": 203,
+      "props_with_range": 203,
+      "share_domain_is_most_frequent_declared_domain": 0.2561576354679803,
+      "share_range_is_most_frequent_declared_range": 0.18719211822660098,
+      "share_domain_is_most_frequent_entity_class": 0.2561576354679803,
+      "most_frequent_entity_class_share_of_typed_entities": 0.23053435114503817,
+      "distinct_declared_domains": 7,
+      "distinct_declared_ranges": 8,
+      "pipeline_properties": 205,
+      "mapping_levels": {
+       "unmapped": 194,
+       "localname": 11
+      },
+      "n_mapped": 11,
+      "n_mapped_with_declared_domain_or_range": 11,
+      "declared_domain": {
+       "noncomparable": 10,
+       "official_undeclared": 1
+      },
+      "declared_range": {
+       "noncomparable": 8,
+       "official_undeclared": 2,
+       "subclass": 1
+      },
+      "usage_triples_on_mapped": 15,
+      "usage_subject": {
+       "compatible": 7,
+       "unresolved": 4,
+       "incompatible": 4
+      },
+      "usage_object": {
+       "compatible": 6,
+       "unresolved": 8,
+       "literal": 1
+      },
+      "usage_subject_compatible_share": 0.6363636363636364,
+      "usage_object_compatible_share": 1.0,
+      "usage_subject_resolvable_share": 0.7333333333333333
+     },
+     "step3": {
+      "concepts": 709,
+      "concepts_with_prov": 300,
+      "share_concepts_with_prov": 0.4231311706629055,
+      "concepts_with_source_but_no_prov": 0,
+      "chunks_total": 458,
+      "chunks_referenced": 151,
+      "share_chunks_referenced": 0.3296943231441048,
+      "links_total": 429,
+      "links_per_linked_concept_mean": 1.43,
+      "links_per_linked_concept_median": 1,
+      "links_per_linked_concept_max": 12,
+      "triples_eligible": 7673,
+      "share_triples_subject_has_prov": 0.40127720578652415,
+      "share_concept_subject_triples_subject_has_prov": 0.5033513160045774
+     },
+     "own_shapes": {
+      "file": "paper/access2026/harness/study5_judge_panel/prov/work/shapes_F.ttl",
+      "sha256": "45efbeafcf05a950a03f5960f00724a8166accc39b5b4da5c7880ab5761764b0",
+      "triples": 1294,
+      "node_shapes": 10,
+      "property_shapes_with_path": 318,
+      "minCount_0": 318,
+      "minCount_ge1": 0,
+      "maxCount": 0,
+      "nodeKind": 266,
+      "datatype": 52,
+      "class_constraints": 0,
+      "node_constraints": 0,
+      "in_constraints": 0,
+      "pattern": 0,
+      "shapes_with_explicit_target": 10,
+      "shapes_with_implicit_class_target": 0,
+      "non_vacuous_constraints": true,
+      "F_conforms": true
+     }
+    }
+   },
+   "external_shapes": null,
+   "official_ontology_sh_terms": {
+    "paper/access2026/harness/study4_domains/prov/raw/prov.ttl": 0
+   },
+   "official_ontology": {
+    "files": [
+     {
+      "file": "paper/access2026/harness/study4_domains/prov/raw/prov.ttl",
+      "sha256": "d7ea634dbcd31347eba38157197f69d314077ef7f88fd4f90e4f24a78bfe1097"
+     }
+    ],
+    "classes": 51,
+    "properties": 89,
+    "props_with_official_domain": 61,
+    "props_with_official_range": 60
+   }
+  },
+  "second domain (counts only)": {
+   "counts_only": true,
+   "variants": {
+    "A": {
+     "sha256": "d743bbf9dda8bff50b86f8f2ad4a48d905e358315430da36420e5296a89a0217",
+     "triples": 769,
+     "step2": {
+      "classes_declared": 94,
+      "classes_used_as_entity_type": 0,
+      "properties_typed": 79,
+      "props_with_domain": 79,
+      "props_with_range": 79,
+      "share_domain_is_most_frequent_declared_domain": 0.1518987341772152,
+      "share_range_is_most_frequent_declared_range": 0.08860759493670886,
+      "share_domain_is_most_frequent_entity_class": 0.0,
+      "most_frequent_entity_class_share_of_typed_entities": null,
+      "distinct_declared_domains": 30,
+      "distinct_declared_ranges": 59
+     }
+    },
+    "B": {
+     "sha256": "9f5948b39a8923bb8fefb8ac584ca8154a3f51c12424d5474c3a9eb4bff5eada",
+     "triples": 365,
+     "step2": {
+      "classes_declared": 7,
+      "classes_used_as_entity_type": 7,
+      "properties_typed": 9,
+      "props_with_domain": 0,
+      "props_with_range": 0,
+      "share_domain_is_most_frequent_declared_domain": null,
+      "share_range_is_most_frequent_declared_range": null,
+      "share_domain_is_most_frequent_entity_class": null,
+      "most_frequent_entity_class_share_of_typed_entities": 0.3888888888888889,
+      "distinct_declared_domains": 0,
+      "distinct_declared_ranges": 0
+     }
+    },
+    "C": {
+     "sha256": "bdb16f7ff026f5e8e87c7bcef7eea738c2a411e17bcef745b1a851d900431780",
+     "triples": 364,
+     "step2": {
+      "classes_declared": 7,
+      "classes_used_as_entity_type": 7,
+      "properties_typed": 7,
+      "props_with_domain": 7,
+      "props_with_range": 7,
+      "share_domain_is_most_frequent_declared_domain": 0.7142857142857143,
+      "share_range_is_most_frequent_declared_range": 0.5714285714285714,
+      "share_domain_is_most_frequent_entity_class": 0.14285714285714285,
+      "most_frequent_entity_class_share_of_typed_entities": 0.21428571428571427,
+      "distinct_declared_domains": 3,
+      "distinct_declared_ranges": 4
+     }
+    },
+    "B'": {
+     "sha256": "f59e85227d1f8b86cf5b4bf073f8975f02373b3093389b248150ef892f9595f2",
+     "triples": 1124,
+     "step2": {
+      "classes_declared": 7,
+      "classes_used_as_entity_type": 7,
+      "properties_typed": 61,
+      "props_with_domain": 0,
+      "props_with_range": 0,
+      "share_domain_is_most_frequent_declared_domain": null,
+      "share_range_is_most_frequent_declared_range": null,
+      "share_domain_is_most_frequent_entity_class": null,
+      "most_frequent_entity_class_share_of_typed_entities": 0.556390977443609,
+      "distinct_declared_domains": 0,
+      "distinct_declared_ranges": 0
+     }
+    }
+   },
+   "external_shapes": null
+  }
+ }
+}

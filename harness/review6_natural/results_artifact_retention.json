@@ -1,0 +1,398 @@
+{
+ "note": "run_holdout._grounding_match_info on the FULL rendered view; anchor TERM presence only, not answerability; unplanned addition",
+ "all_36": {
+  "set": "all 36",
+  "n": 36,
+  "A_anchor_pass": 22,
+  "B_anchor_pass": 20,
+  "both": 16,
+  "only_A": 6,
+  "only_B": 4,
+  "neither": 10
+ },
+ "corpus_L0": {
+  "set": "anchors present in corpus (L0)",
+  "n": 28,
+  "A_anchor_pass": 22,
+  "B_anchor_pass": 20,
+  "both": 16,
+  "only_A": 6,
+  "only_B": 4,
+  "neither": 2
+ },
+ "analyst_full_or_partial": {
+  "set": "analyst full+partial",
+  "n": 24,
+  "A_anchor_pass": 20,
+  "B_anchor_pass": 16,
+  "both": 15,
+  "only_A": 5,
+  "only_B": 1,
+  "neither": 3
+ },
+ "analyst_full": {
+  "set": "analyst full",
+  "n": 15,
+  "A_anchor_pass": 12,
+  "B_anchor_pass": 10,
+  "both": 9,
+  "only_A": 3,
+  "only_B": 1,
+  "neither": 2
+ },
+ "template_corpus_reference": {
+  "note": "from run_holdout.DOCUMENTED_EXCLUSIONS (28 coordinate exclusions of the template-corpus holdout)",
+  "A_ineligible_of_36": 13,
+  "B_ineligible_of_36": 3
+ },
+ "per_question": {
+  "CQB01": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB02": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB03": {
+   "corpus_L0": true,
+   "analyst": "none",
+   "A": false,
+   "B": true,
+   "A_missing": [
+    "rec:Asset"
+   ],
+   "B_missing": []
+  },
+  "CQB04": {
+   "corpus_L0": true,
+   "analyst": "none",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB05": {
+   "corpus_L0": true,
+   "analyst": "none",
+   "A": false,
+   "B": false,
+   "A_missing": [
+    "rec:Campus"
+   ],
+   "B_missing": [
+    "rec:Campus"
+   ]
+  },
+  "CQB06": {
+   "corpus_L0": false,
+   "analyst": "none",
+   "A": false,
+   "B": false,
+   "A_missing": [
+    "rec:Georeference"
+   ],
+   "B_missing": [
+    "rec:Georeference"
+   ]
+  },
+  "CQB07": {
+   "corpus_L0": true,
+   "analyst": "partial",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB08": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB09": {
+   "corpus_L0": true,
+   "analyst": "partial",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB10": {
+   "corpus_L0": true,
+   "analyst": "partial",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB11": {
+   "corpus_L0": true,
+   "analyst": "partial",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB12": {
+   "corpus_L0": true,
+   "analyst": "partial",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB13": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB14": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB15": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB16": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB17": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": false,
+   "B": true,
+   "A_missing": [
+    "rec:locatedIn"
+   ],
+   "B_missing": []
+  },
+  "CQB18": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": true,
+   "B": false,
+   "A_missing": [],
+   "B_missing": [
+    "hasAssociatedTag"
+   ]
+  },
+  "CQB19": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": true,
+   "B": false,
+   "A_missing": [],
+   "B_missing": [
+    "hasUnit"
+   ]
+  },
+  "CQB20": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB21": {
+   "corpus_L0": false,
+   "analyst": "partial",
+   "A": false,
+   "B": false,
+   "A_missing": [
+    "brick:grossArea"
+   ],
+   "B_missing": [
+    "brick:grossArea"
+   ]
+  },
+  "CQB22": {
+   "corpus_L0": false,
+   "analyst": "none",
+   "A": false,
+   "B": false,
+   "A_missing": [
+    "buildingPrimaryFunction"
+   ],
+   "B_missing": [
+    "buildingPrimaryFunction"
+   ]
+  },
+  "CQB23": {
+   "corpus_L0": false,
+   "analyst": "none",
+   "A": false,
+   "B": false,
+   "A_missing": [
+    "brick:yearBuilt"
+   ],
+   "B_missing": [
+    "brick:yearBuilt"
+   ]
+  },
+  "CQB24": {
+   "corpus_L0": true,
+   "analyst": "partial",
+   "A": true,
+   "B": false,
+   "A_missing": [],
+   "B_missing": [
+    "hasQuantity"
+   ]
+  },
+  "CQB25": {
+   "corpus_L0": false,
+   "analyst": "none",
+   "A": false,
+   "B": false,
+   "A_missing": [
+    "rec:BuildingElement"
+   ],
+   "B_missing": [
+    "rec:BuildingElement"
+   ]
+  },
+  "CQB26": {
+   "corpus_L0": true,
+   "analyst": "none",
+   "A": true,
+   "B": false,
+   "A_missing": [],
+   "B_missing": [
+    "rec:Event"
+   ]
+  },
+  "CQB27": {
+   "corpus_L0": false,
+   "analyst": "none",
+   "A": false,
+   "B": false,
+   "A_missing": [
+    "rec:PointEvent"
+   ],
+   "B_missing": [
+    "rec:PointEvent"
+   ]
+  },
+  "CQB28": {
+   "corpus_L0": true,
+   "analyst": "none",
+   "A": false,
+   "B": true,
+   "A_missing": [
+    "rec:Organization"
+   ],
+   "B_missing": []
+  },
+  "CQB29": {
+   "corpus_L0": true,
+   "analyst": "none",
+   "A": false,
+   "B": true,
+   "A_missing": [
+    "rec:Space"
+   ],
+   "B_missing": []
+  },
+  "CQB30": {
+   "corpus_L0": true,
+   "analyst": "partial",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB31": {
+   "corpus_L0": false,
+   "analyst": "none",
+   "A": false,
+   "B": false,
+   "A_missing": [
+    "rec:ArchitectureArea"
+   ],
+   "B_missing": [
+    "rec:ArchitectureArea"
+   ]
+  },
+  "CQB32": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": false,
+   "B": false,
+   "A_missing": [
+    "deprecation"
+   ],
+   "B_missing": [
+    "deprecation"
+   ]
+  },
+  "CQB33": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": true,
+   "B": false,
+   "A_missing": [],
+   "B_missing": [
+    "hasSubMeter"
+   ]
+  },
+  "CQB34": {
+   "corpus_L0": true,
+   "analyst": "full",
+   "A": true,
+   "B": true,
+   "A_missing": [],
+   "B_missing": []
+  },
+  "CQB35": {
+   "corpus_L0": true,
+   "analyst": "partial",
+   "A": true,
+   "B": false,
+   "A_missing": [],
+   "B_missing": [
+    "hasQuantity"
+   ]
+  },
+  "CQB36": {
+   "corpus_L0": false,
+   "analyst": "full",
+   "A": false,
+   "B": false,
+   "A_missing": [
+    "brick:hasQUDTReference"
+   ],
+   "B_missing": [
+    "brick:hasQUDTReference"
+   ]
+  }
+ }
+}

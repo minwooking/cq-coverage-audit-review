@@ -1,0 +1,28 @@
+{
+  "condition": "subgraph",
+  "judge_model": "gpt-5.6-luna",
+  "endpoint_host_kind": "localhost",
+  "plan_commit": "f107732fa96d04331c5ca5a873e2779ff70c1108",
+  "manifest_sha256": "0048910bf97d3ebfdfed58852201911b168fea4481ff61ad058ef777c229ac2e",
+  "bank_sha256": "993c5e1164540dce0f2f9bf2e6ed397cf45910da7889300feeaad6543edb8507",
+  "rubric_sha256": "d0c397584bd62ca2ba62cf3833b1ad70862d6be22be52a4c3ffa111529756ebf",
+  "cells_planned": 72,
+  "calls_this_run": 3,
+  "failures_this_run": 3,
+  "tokens_counted_so_far": 0,
+  "token_budget": 6000000,
+  "abort_reason": "quota_error",
+  "context_errors": 0,
+  "started_utc": "2026-10-17T09:28:59+00:00",
+  "ended_utc": "2026-10-17T09:30:44+00:00",
+  "elapsed_s": 105.3,
+  "workers": 3,
+  "seed": 20260913,
+  "extra_top_level_fields": {
+    "response_format": {
+      "type": "text"
+    }
+  },
+  "max_tokens": 1024,
+  "token_note": "budget counts response usage.prompt_tokens when present, else ceil(chars/4)+overhead"
+}

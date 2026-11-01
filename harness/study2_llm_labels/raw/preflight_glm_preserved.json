@@ -1,0 +1,21 @@
+{
+ "model": "glm",
+ "stage": "preserved",
+ "window": 65536,
+ "prompt_tokens": {
+  "preserved_control:A:CQB11": 16319,
+  "preserved_control:B:CQB01": 27592,
+  "preserved_control:C:CQB08": 10097,
+  "preserved_control:C:CQB09": 28396,
+  "preserved_control:D:CQB03": 5974,
+  "preserved_control:D:CQB29": 25372,
+  "preserved_control:E:CQB20": 2713,
+  "preserved_control:E:CQB36": 3369,
+  "preserved_control:F:CQB03": 6871,
+  "preserved_control:F:CQB04": 15405,
+  "preserved_control:F:CQB20": 2713,
+  "preserved_control:F:CQB31": 2737
+ },
+ "max_prompt_tokens": 28396,
+ "over_context": []
+}

@@ -1,0 +1,33 @@
+{
+ "domain": "ssn",
+ "atomic_chunks": 433,
+ "corpus_chars": 103172,
+ "corpus_sha256": "05780c597fdc675aaae12d14019b941aaf06d90b12209cce6a71ee16d2d437bf",
+ "build_a_sections_skipped": 3,
+ "skip_reasons": [
+  "syntax",
+  "syntax",
+  "model returned no triples)"
+ ],
+ "triples": {
+  "A": 2057,
+  "B": 5922
+ },
+ "rendered_chars": {
+  "A": 36459,
+  "B": 285924
+ },
+ "llm_calls": {
+  "extract": 0,
+  "triples": 433,
+  "build": 56,
+  "split": 0,
+  "build-a": 20
+ },
+ "llm_failures": 0,
+ "prompt_tokens": 137786,
+ "completion_tokens": 89531,
+ "jobs": 83,
+ "eligible_but_no_subgraph": [],
+ "bank_sha256": "185f4ac675b4430901ea3cbd93a84d75a46fe4f0431f402dfd8a219e4a15bcdf"
+}

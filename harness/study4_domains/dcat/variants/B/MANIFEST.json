@@ -1,0 +1,14 @@
+{
+  "variant_id": "B",
+  "description": "Pipeline base build: triples, refinement, SKOS hierarchy, base-IRI unification, LLM typing (chunktograph triples/build/split).",
+  "domain": "dcat",
+  "graph_sha256": "bbdd2e4714b4c6ba194c45fdaebe67653b89a03a0f7a02e6d7abf139e826da97",
+  "rendered_view_sha256": "e3bafb01dc641ce3a9adb3fa59f509eb750c94df88995a3a9c44383e1955fd9f",
+  "rendered_view_chars": 201444,
+  "rendered_view_lines": 674,
+  "triples": 4271,
+  "input_corpus_sha256": "670bcf8032fa93e2201210bf693b2d046446144128e761930eccf0ec811974a1",
+  "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8",
+  "extractor_note": "same model id as the paper; serving container differs (PLAN 35.5)",
+  "generated_utc": "2026-10-20T09:10:47+00:00"
+}

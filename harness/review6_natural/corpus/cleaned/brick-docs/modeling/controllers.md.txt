@@ -1,0 +1,39 @@
+# Controllers
+
+brick:Controller, brick:controls/brick:isControlledBy, and brick:hosts/brick:isHostedBy are new in Brick v1.5.
+
+A Controller is a piece of ICT equipment that supervises and commands one or more physical equipment instances and exposes the points used to do so.
+Brick provides two relationship pairs for modeling controllers:
+
+- brick:controls / brick:isControlledBy — links a Controller to the Equipment it supervises.
+- brick:hosts / brick:isHostedBy — links a Controller (or any ICT Equipment) to the Points it exposes on the network.
+
+These relationships are distinct from brick:hasPoint, which expresses that a point describes a piece of equipment, regardless of which device exposes it.
+
+## Relationships
+
+brick:controls: the subject (a brick:Controller) commands the object (a brick:Equipment instance).
+
+brick:hosts: the subject (a brick:ICT_Equipment or brick:Controller) exposes the object (a brick:Point) on the network. This is the physical/logical hosting relationship — the device through which the point is accessed.
+
+A point may be hosted by a controller (brick:hosts) and also described as belonging to an equipment (brick:hasPoint / brick:isPointOf). These two relationships are independent.
+
+## Example: VAV Controller
+
+Here brick:controls captures the supervisory relationship and brick:hosts captures which device exposes the points on the network.
+brick:hasPoint remains on the VAV to express that those points describe the VAV — not the controller.
+
+## Combining Controllers with Point Collections
+
+brick:hosts and brick:Point_Collection serve different purposes and can be used together.
+Use brick:hosts for the physical/network hosting relationship; use a brick:Point_Collection to group points for display, export, or application logic.
+
+The controller hosts the sensor; the Point Collection organizes it for tools. See Point Collections for more on organizing points into bundles.
+
+## Query Patterns
+
+Find all equipment controlled by a given controller:
+
+Find which controller hosts a given point:
+
+Find all points hosted by controllers in the model, and the equipment those points describe:

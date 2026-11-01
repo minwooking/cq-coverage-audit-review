@@ -1,0 +1,1011 @@
+{
+ "corpus_sha256": "b4ce971fc00bab8cfb979aa8010876b872c0af554c345b1f54828e5ace97ea13",
+ "bank_sha256": "993c5e1164540dce0f2f9bf2e6ed397cf45910da7889300feeaad6543edb8507",
+ "analyst_read_not_blind": true,
+ "automated_counts": {
+  "L0": 28,
+  "L1": 28,
+  "L2": 16,
+  "n": 36
+ },
+ "analyst_counts": {
+  "full": 15,
+  "partial": 9,
+  "none": 12,
+  "n": 36
+ },
+ "analyst_counts_by_category": {
+  "concept_definition": {
+   "full": 2,
+   "none": 4
+  },
+  "taxonomy": {
+   "partial": 5,
+   "full": 1
+  },
+  "relations": {
+   "full": 6
+  },
+  "slots_facets": {
+   "full": 2,
+   "partial": 2,
+   "none": 2
+  },
+  "instances": {
+   "none": 5,
+   "partial": 1
+  },
+  "methodology": {
+   "none": 1,
+   "full": 4,
+   "partial": 1
+  }
+ },
+ "answerable_full_plus_partial": 24,
+ "answerable_share": 0.6667,
+ "stop_rule": {
+  "threshold_share": 0.2,
+  "triggered": false
+ },
+ "S_full": [
+  "CQB01",
+  "CQB02",
+  "CQB03",
+  "CQB04",
+  "CQB05",
+  "CQB06",
+  "CQB07",
+  "CQB08",
+  "CQB09",
+  "CQB10",
+  "CQB11",
+  "CQB12",
+  "CQB13",
+  "CQB14",
+  "CQB15",
+  "CQB16",
+  "CQB17",
+  "CQB18",
+  "CQB19",
+  "CQB20",
+  "CQB21",
+  "CQB22",
+  "CQB23",
+  "CQB24",
+  "CQB25",
+  "CQB26",
+  "CQB27",
+  "CQB28",
+  "CQB29",
+  "CQB30",
+  "CQB31",
+  "CQB32",
+  "CQB33",
+  "CQB34",
+  "CQB35",
+  "CQB36"
+ ],
+ "S_elig": [
+  "CQB01",
+  "CQB02",
+  "CQB07",
+  "CQB08",
+  "CQB09",
+  "CQB10",
+  "CQB11",
+  "CQB12",
+  "CQB13",
+  "CQB14",
+  "CQB15",
+  "CQB16",
+  "CQB17",
+  "CQB18",
+  "CQB19",
+  "CQB20",
+  "CQB21",
+  "CQB24",
+  "CQB30",
+  "CQB32",
+  "CQB33",
+  "CQB34",
+  "CQB35",
+  "CQB36"
+ ],
+ "S_elig_L1": [
+  "CQB01",
+  "CQB02",
+  "CQB03",
+  "CQB04",
+  "CQB05",
+  "CQB07",
+  "CQB08",
+  "CQB09",
+  "CQB10",
+  "CQB11",
+  "CQB12",
+  "CQB13",
+  "CQB14",
+  "CQB15",
+  "CQB16",
+  "CQB17",
+  "CQB18",
+  "CQB19",
+  "CQB20",
+  "CQB24",
+  "CQB26",
+  "CQB28",
+  "CQB29",
+  "CQB30",
+  "CQB32",
+  "CQB33",
+  "CQB34",
+  "CQB35"
+ ],
+ "questions": [
+  {
+   "cq_id": "CQB01",
+   "category": "concept_definition",
+   "question": "What is a brick:Sensor?",
+   "grounding": "skos:definition brick:Sensor",
+   "anchors": [
+    "Sensor"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 50,
+   "L2": true,
+   "best_section_answer_term_fraction": 0.643,
+   "best_section": "c4.s1",
+   "answer_terms_n": 14,
+   "top_passage_ids": [
+    "c1.s2#0",
+    "c13.s3#0",
+    "c15.s0#1"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "Instances of the Brick Point class represent sources or sinks of telemetry. There are several major classes of telemetry in Brick: || Sensor: represents the value of a device or instrument designed to detect and measure a variable",
+   "analyst_note": "docs/brick/timeseries.md; near-verbatim ASHRAE definition"
+  },
+  {
+   "cq_id": "CQB02",
+   "category": "concept_definition",
+   "question": "What does brick:Meter represent?",
+   "grounding": "skos:definition brick:Meter + rdfs:subClassOf",
+   "anchors": [
+    "Meter"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 18,
+   "L2": true,
+   "best_section_answer_term_fraction": 0.615,
+   "best_section": "c55.s2",
+   "answer_terms_n": 13,
+   "top_passage_ids": [
+    "c13.s0#0",
+    "c13.s3#0",
+    "c13.s3#1"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "Meters are equipment (they are subclasses of the Brick Equipment class) that measure the consumption or production of energy, steam, gas or other \"substances\" in the building.",
+   "analyst_note": ""
+  },
+  {
+   "cq_id": "CQB03",
+   "category": "concept_definition",
+   "question": "What is a rec:Asset?",
+   "grounding": "rdfs:comment rec:Asset",
+   "anchors": [
+    "Asset"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 11,
+   "L2": true,
+   "best_section_answer_term_fraction": 0.5,
+   "best_section": "c55.s2",
+   "answer_terms_n": 10,
+   "top_passage_ids": [
+    "c21.s3#1",
+    "c31.s0#1",
+    "c31.s0#2"
+   ],
+   "analyst_rating": "none",
+   "analyst_span": "",
+   "analyst_note": "no definition of rec:Asset; only incidental mentions of 'asset'"
+  },
+  {
+   "cq_id": "CQB04",
+   "category": "concept_definition",
+   "question": "What is a brick:Zone?",
+   "grounding": "skos:definition brick:Zone",
+   "anchors": [
+    "Zone"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 27,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.389,
+   "best_section": "c55.s6",
+   "answer_terms_n": 18,
+   "top_passage_ids": [
+    "c15.s2#0",
+    "c15.s3#1",
+    "c21.s3#0"
+   ],
+   "analyst_rating": "none",
+   "analyst_span": "",
+   "analyst_note": "zone used in examples only; no definition"
+  },
+  {
+   "cq_id": "CQB05",
+   "category": "concept_definition",
+   "question": "What is a rec:Campus?",
+   "grounding": "rdfs:comment rec:Campus",
+   "anchors": [
+    "Campus"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 1,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.167,
+   "best_section": "c55.s7",
+   "answer_terms_n": 12,
+   "top_passage_ids": [
+    "c55.s7#21"
+   ],
+   "analyst_rating": "none",
+   "analyst_span": "",
+   "analyst_note": "'campus' occurs only as 'UC Davis campus'"
+  },
+  {
+   "cq_id": "CQB06",
+   "category": "concept_definition",
+   "question": "What does rec:Georeference express?",
+   "grounding": "rdfs:comment rec:Georeference",
+   "anchors": [
+    "Georeference"
+   ],
+   "L0": false,
+   "L1": false,
+   "n_sections_L1": 0,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.0,
+   "best_section": null,
+   "answer_terms_n": 6,
+   "top_passage_ids": [
+    "c19.s2#0",
+    "c3.s0#2",
+    "c5.s3#0"
+   ],
+   "analyst_rating": "none",
+   "analyst_span": "",
+   "analyst_note": "term georeference absent"
+  },
+  {
+   "cq_id": "CQB07",
+   "category": "taxonomy",
+   "question": "Is brick:Sensor a subclass of brick:Point?",
+   "grounding": "subclassof:Sensor>Point",
+   "anchors": [
+    "Sensor",
+    "Point"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 34,
+   "L2": true,
+   "best_section_answer_term_fraction": 1.0,
+   "best_section": "c55.s2",
+   "answer_terms_n": 4,
+   "top_passage_ids": [
+    "c54.s1#22",
+    "c20.s0#0",
+    "c21.s0#2"
+   ],
+   "analyst_rating": "partial",
+   "analyst_span": "Instances of the Brick Point class represent sources or sinks of telemetry. There are several major classes of telemetry in Brick: || Sensor: represents the value of a device or instrument designed to detect and measure a variable",
+   "analyst_note": "Sensor is listed among the major classes of telemetry under Point; subclass relation not stated in those words"
+  },
+  {
+   "cq_id": "CQB08",
+   "category": "taxonomy",
+   "question": "Which top-level classes are direct subclasses of brick:Point?",
+   "grounding": "children:Point",
+   "anchors": [
+    "Point"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 82,
+   "L2": true,
+   "best_section_answer_term_fraction": 1.0,
+   "best_section": "c4.s1",
+   "answer_terms_n": 6,
+   "top_passage_ids": [
+    "c55.s4#4",
+    "c55.s6#24",
+    "c1.s6#1"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "Instances of the Brick Point class represent sources or sinks of telemetry. There are several major classes of telemetry in Brick: || Sensor: represents the value of a device or instrument designed to detect and measure a variable || Setpoint: represents the value at which the desired property is set || Alarm: represents signals that alert an operator to an off-normal condition which requires some form of corrective action || Command: represents settings/actions that directly determines the behavior of equipment and/or affects relevant operational points. || Parameter: represents configuration settings used to guide the operation of equipment and control systems || Status: represents the current operating mode, state, position, or condition of an item.",
+   "analyst_note": "all six listed"
+  },
+  {
+   "cq_id": "CQB09",
+   "category": "taxonomy",
+   "question": "Which direct subclasses does brick:Equipment have?",
+   "grounding": "children_count:Equipment",
+   "anchors": [
+    "Equipment"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 65,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.308,
+   "best_section": "c1.s1",
+   "answer_terms_n": 13,
+   "top_passage_ids": [
+    "c18.s2#0",
+    "c20.s0#0",
+    "c55.s6#39"
+   ],
+   "analyst_rating": "partial",
+   "analyst_span": "Meters are equipment (they are subclasses of the Brick Equipment class)",
+   "analyst_note": "one subclass (Meter) named; no enumeration of the direct subclasses"
+  },
+  {
+   "cq_id": "CQB10",
+   "category": "taxonomy",
+   "question": "Is brick:Building a direct subclass of brick:Location?",
+   "grounding": "rdfs:subClassOf brick:Building",
+   "anchors": [
+    "Building"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 75,
+   "L2": true,
+   "best_section_answer_term_fraction": 0.714,
+   "best_section": "c55.s2",
+   "answer_terms_n": 7,
+   "top_passage_ids": [
+    "c1.s6#1",
+    "c2.s1#0",
+    "c20.s4#1"
+   ],
+   "analyst_rating": "partial",
+   "analyst_span": "locations can be composed of other locations (e.g. a building is made up of floors and spaces)",
+   "analyst_note": "implies a building is a location; subclass relation / directness not stated"
+  },
+  {
+   "cq_id": "CQB11",
+   "category": "taxonomy",
+   "question": "Are Alarm and Sensor disjoint in Brick?",
+   "grounding": "disjoint:Sensor",
+   "anchors": [
+    "Sensor"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 50,
+   "L2": true,
+   "best_section_answer_term_fraction": 0.778,
+   "best_section": "c55.s6",
+   "answer_terms_n": 9,
+   "top_passage_ids": [
+    "c21.s0#2",
+    "c3.s1#3",
+    "c4.s1#0"
+   ],
+   "analyst_rating": "partial",
+   "analyst_span": "Sensor: represents the value of a device or instrument designed to detect and measure a variable || Alarm: represents signals that alert an operator to an off-normal condition which requires some form of corrective action",
+   "analyst_note": "Sensor and Alarm named as sibling major classes; disjointness stated only for other pairs (Setpoint/Parameter, Point/Equipment in the Brick+ paper)"
+  },
+  {
+   "cq_id": "CQB12",
+   "category": "taxonomy",
+   "question": "Which classes are direct subclasses of brick:Location?",
+   "grounding": "children:Location",
+   "anchors": [
+    "Location"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 32,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.364,
+   "best_section": "c3.s1",
+   "answer_terms_n": 11,
+   "top_passage_ids": [
+    "c1.s6#1",
+    "c38.s2#0",
+    "c39.s2#3"
+   ],
+   "analyst_rating": "partial",
+   "analyst_span": "All Brick Location classes have been deprecated as of 1.4 and replaced with equivalents in RealEstateCore. || locations can be composed of other locations (e.g. a building is made up of floors and spaces)",
+   "analyst_note": "no enumeration of Location subclasses"
+  },
+  {
+   "cq_id": "CQB13",
+   "category": "relations",
+   "question": "How do you express that a Point belongs to an Equipment?",
+   "grounding": "inverse:hasPoint~isPointOf",
+   "anchors": [
+    "hasPoint",
+    "isPointOf"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 11,
+   "L2": true,
+   "best_section_answer_term_fraction": 1.0,
+   "best_section": "c55.s4",
+   "answer_terms_n": 3,
+   "top_passage_ids": [
+    "c19.s1#1",
+    "c21.s1#0",
+    "c21.s3#0"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "hasPoint describes telemetry associated with the equipment: || hasPoint | isPointOf",
+   "analyst_note": ""
+  },
+  {
+   "cq_id": "CQB14",
+   "category": "relations",
+   "question": "What relates an Equipment or Point to its Location?",
+   "grounding": "prop:hasLocation",
+   "anchors": [
+    "hasLocation"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 11,
+   "L2": true,
+   "best_section_answer_term_fraction": 1.0,
+   "best_section": "c3.s8",
+   "answer_terms_n": 2,
+   "top_passage_ids": [
+    "c3.s7#0",
+    "c52.s6#0",
+    "c3.s3#0"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "hasLocation describes where the equipment is physically located || hasLocation | isLocationOf",
+   "analyst_note": ""
+  },
+  {
+   "cq_id": "CQB15",
+   "category": "relations",
+   "question": "Which property pair expresses supply/feed direction?",
+   "grounding": "prop:feeds",
+   "anchors": [
+    "feeds"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 18,
+   "L2": true,
+   "best_section_answer_term_fraction": 1.0,
+   "best_section": "c3.s8",
+   "answer_terms_n": 2,
+   "top_passage_ids": [
+    "c3.s7#0",
+    "c52.s6#0",
+    "c54.s5#2"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "brick:feeds: the subject is arranged upstream of object, implying that some media flows from subject into object. || feeds | isFedBy",
+   "analyst_note": ""
+  },
+  {
+   "cq_id": "CQB16",
+   "category": "relations",
+   "question": "What is the inverse of brick:hasPart?",
+   "grounding": "inverse:hasPart",
+   "anchors": [
+    "hasPart"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 15,
+   "L2": true,
+   "best_section_answer_term_fraction": 1.0,
+   "best_section": "c3.s3",
+   "answer_terms_n": 1,
+   "top_passage_ids": [
+    "c3.s3#0",
+    "c52.s3#0",
+    "c21.s1#0"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "hasPart | isPartOf",
+   "analyst_note": ""
+  },
+  {
+   "cq_id": "CQB17",
+   "category": "relations",
+   "question": "Which property expresses spatial containment of an entity in a location?",
+   "grounding": "rec:locatedIn (sh:path)",
+   "anchors": [
+    "locatedIn"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 6,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.286,
+   "best_section": "c3.s3",
+   "answer_terms_n": 7,
+   "top_passage_ids": [
+    "c55.s4#16",
+    "c3.s3#0",
+    "c52.s3#0"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "brick:hasLocation | rec:locatedIn",
+   "analyst_note": "Brick-to-REC mapping table; counterpart of hasLocation"
+  },
+  {
+   "cq_id": "CQB18",
+   "category": "relations",
+   "question": "What relates a brick:Equipment to the tags it carries?",
+   "grounding": "prop:hasAssociatedTag",
+   "anchors": [
+    "hasAssociatedTag"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 1,
+   "L2": true,
+   "best_section_answer_term_fraction": 0.5,
+   "best_section": "c15.s2",
+   "answer_terms_n": 2,
+   "top_passage_ids": [
+    "c15.s2#0",
+    "c55.s2#17",
+    "c30.s0#0"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "Tags are related to a Brick class via the brick:hasAssociatedTag relationship.",
+   "analyst_note": ""
+  },
+  {
+   "cq_id": "CQB19",
+   "category": "slots_facets",
+   "question": "Which property attaches a unit to a Quantity or Point?",
+   "grounding": "prop:hasUnit",
+   "anchors": [
+    "hasUnit"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 2,
+   "L2": true,
+   "best_section_answer_term_fraction": 0.6,
+   "best_section": "c4.s3",
+   "answer_terms_n": 5,
+   "top_passage_ids": [
+    "c13.s2#1",
+    "c4.s3#1",
+    "c4.s3#2"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "Units are associated with Brick Points with the brick:hasUnit relationship:",
+   "analyst_note": ""
+  },
+  {
+   "cq_id": "CQB20",
+   "category": "slots_facets",
+   "question": "Where is the most recent observed value of a Point stored?",
+   "grounding": "prop:lastKnownValue",
+   "anchors": [
+    "lastKnownValue"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 1,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.25,
+   "best_section": "c40.s0",
+   "answer_terms_n": 4,
+   "top_passage_ids": [
+    "c40.s0#1",
+    "c1.s1#1",
+    "c13.s0#0"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "ability to model the current value of Points, using brick:lastKnownValue",
+   "analyst_note": "release note, v1.3"
+  },
+  {
+   "cq_id": "CQB21",
+   "category": "slots_facets",
+   "question": "Which property records a building's gross floor area?",
+   "grounding": "skos:definition brick:grossArea",
+   "anchors": [
+    "grossArea"
+   ],
+   "L0": false,
+   "L1": false,
+   "n_sections_L1": 0,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.0,
+   "best_section": null,
+   "answer_terms_n": 6,
+   "top_passage_ids": [
+    "c39.s2#2",
+    "c1.s1#0",
+    "c13.s0#0"
+   ],
+   "analyst_rating": "partial",
+   "analyst_span": "The initial release of entity properties include floor area (net and gross), electrical metering properties, and aggregations.",
+   "analyst_note": "concept present, property name (grossArea) absent"
+  },
+  {
+   "cq_id": "CQB22",
+   "category": "slots_facets",
+   "question": "Which property states the primary function of a Building?",
+   "grounding": "prop:buildingPrimaryFunction",
+   "anchors": [
+    "buildingPrimaryFunction"
+   ],
+   "L0": false,
+   "L1": false,
+   "n_sections_L1": 0,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.0,
+   "best_section": null,
+   "answer_terms_n": 1,
+   "top_passage_ids": [
+    "c16.s0#1",
+    "c20.s3#0",
+    "c3.s0#0"
+   ],
+   "analyst_rating": "none",
+   "analyst_span": "",
+   "analyst_note": "no mention of building primary function"
+  },
+  {
+   "cq_id": "CQB23",
+   "category": "slots_facets",
+   "question": "Which property records when something was built?",
+   "grounding": "skos:definition brick:yearBuilt",
+   "anchors": [
+    "yearBuilt"
+   ],
+   "L0": false,
+   "L1": false,
+   "n_sections_L1": 0,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.0,
+   "best_section": null,
+   "answer_terms_n": 12,
+   "top_passage_ids": [
+    "c0.s1#0",
+    "c0.s1#1",
+    "c0.s4#0"
+   ],
+   "analyst_rating": "none",
+   "analyst_span": "",
+   "analyst_note": "no mention of year built"
+  },
+  {
+   "cq_id": "CQB24",
+   "category": "slots_facets",
+   "question": "How is a Point linked to the quantity it measures?",
+   "grounding": "prop:hasQuantity",
+   "anchors": [
+    "hasQuantity"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 1,
+   "L2": true,
+   "best_section_answer_term_fraction": 0.667,
+   "best_section": "c40.s0",
+   "answer_terms_n": 3,
+   "top_passage_ids": [
+    "c40.s0#2",
+    "c14.s1#0",
+    "c20.s0#0"
+   ],
+   "analyst_rating": "partial",
+   "analyst_span": "adding useful semantic annotations to all Brick Point classes with the brick:hasSubstance and brick:hasQuantity properties",
+   "analyst_note": "property named, at class level; quantity kinds not described"
+  },
+  {
+   "cq_id": "CQB25",
+   "category": "instances",
+   "question": "Which entities does the rec:BuildingElement definition list as examples?",
+   "grounding": "rdfs:comment rec:BuildingElement",
+   "anchors": [
+    "BuildingElement"
+   ],
+   "L0": false,
+   "L1": false,
+   "n_sections_L1": 0,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.0,
+   "best_section": null,
+   "answer_terms_n": 4,
+   "top_passage_ids": [
+    "c3.s0#0",
+    "c52.s0#0",
+    "c1.s1#0"
+   ],
+   "analyst_rating": "none",
+   "analyst_span": "",
+   "analyst_note": "rec:BuildingElement definition absent"
+  },
+  {
+   "cq_id": "CQB26",
+   "category": "instances",
+   "question": "Which events does the rec:Event definition give as examples?",
+   "grounding": "rdfs:comment rec:Event",
+   "anchors": [
+    "Event"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 1,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.0,
+   "best_section": null,
+   "answer_terms_n": 7,
+   "top_passage_ids": [
+    "c53.s4#0",
+    "c53.s4#1",
+    "c25.s2#1"
+   ],
+   "analyst_rating": "none",
+   "analyst_span": "",
+   "analyst_note": "rec:Event definition absent"
+  },
+  {
+   "cq_id": "CQB27",
+   "category": "instances",
+   "question": "What does rec:PointEvent exemplify?",
+   "grounding": "rdfs:comment rec:PointEvent",
+   "anchors": [
+    "PointEvent"
+   ],
+   "L0": false,
+   "L1": false,
+   "n_sections_L1": 0,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.0,
+   "best_section": null,
+   "answer_terms_n": 8,
+   "top_passage_ids": [
+    "c1.s1#1",
+    "c1.s6#1",
+    "c12.s0#3"
+   ],
+   "analyst_rating": "none",
+   "analyst_span": "",
+   "analyst_note": "rec:PointEvent absent"
+  },
+  {
+   "cq_id": "CQB28",
+   "category": "instances",
+   "question": "What organizations does the rec:Organization definition cite?",
+   "grounding": "rdfs:comment rec:Organization",
+   "anchors": [
+    "Organization"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 8,
+   "L2": true,
+   "best_section_answer_term_fraction": 0.6,
+   "best_section": "c35.s0",
+   "answer_terms_n": 5,
+   "top_passage_ids": [
+    "c55.s6#26",
+    "c20.s4#2",
+    "c21.s3#0"
+   ],
+   "analyst_rating": "none",
+   "analyst_span": "",
+   "analyst_note": "rec:Organization definition absent (consortium/organization mentions are unrelated)"
+  },
+  {
+   "cq_id": "CQB29",
+   "category": "instances",
+   "question": "What containment example does the rec:Space definition give?",
+   "grounding": "rdfs:comment rec:Space",
+   "anchors": [
+    "Space"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 16,
+   "L2": true,
+   "best_section_answer_term_fraction": 0.833,
+   "best_section": "c55.s6",
+   "answer_terms_n": 6,
+   "top_passage_ids": [
+    "c3.s0#0",
+    "c52.s0#0",
+    "c1.s1#1"
+   ],
+   "analyst_rating": "none",
+   "analyst_span": "",
+   "analyst_note": "rec:Space containment example absent"
+  },
+  {
+   "cq_id": "CQB30",
+   "category": "instances",
+   "question": "What does the rec:Portfolio definition list as groupable members?",
+   "grounding": "rdfs:comment rec:Portfolio",
+   "anchors": [
+    "Portfolio"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 3,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.357,
+   "best_section": "c35.s0",
+   "answer_terms_n": 14,
+   "top_passage_ids": [
+    "c33.s0#14",
+    "c17.s0#1",
+    "c17.s0#2"
+   ],
+   "analyst_rating": "partial",
+   "analyst_span": "Portfolio: a group of brick:Site",
+   "analyst_note": "Brick Portfolio collection; the rec:Portfolio definition's member list absent"
+  },
+  {
+   "cq_id": "CQB31",
+   "category": "methodology",
+   "question": "How does the schema advise handling rec:ArchitectureArea measurements?",
+   "grounding": "rdfs:comment rec:ArchitectureArea",
+   "anchors": [
+    "ArchitectureArea"
+   ],
+   "L0": false,
+   "L1": false,
+   "n_sections_L1": 0,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.0,
+   "best_section": null,
+   "answer_terms_n": 8,
+   "top_passage_ids": [
+    "c49.s3#0",
+    "c0.s0#0",
+    "c0.s1#1"
+   ],
+   "analyst_rating": "none",
+   "analyst_span": "",
+   "analyst_note": "rec:ArchitectureArea absent"
+  },
+  {
+   "cq_id": "CQB32",
+   "category": "methodology",
+   "question": "How should deprecated terms be handled in Brick?",
+   "grounding": "prop:deprecation",
+   "anchors": [
+    "deprecation"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 1,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.429,
+   "best_section": "c5.s1",
+   "answer_terms_n": 7,
+   "top_passage_ids": [
+    "c5.s1#0",
+    "c15.s0#0",
+    "c17.s2#0"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "The brick:isReplacedBy property indicates the REC class that should be used in place of the deprecated Brick class.",
+   "analyst_note": "deprecation handled via isReplacedBy"
+  },
+  {
+   "cq_id": "CQB33",
+   "category": "methodology",
+   "question": "How is a virtual metering hierarchy modeled?",
+   "grounding": "prop:hasSubMeter",
+   "anchors": [
+    "hasSubMeter"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 1,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.25,
+   "best_section": "c20.s2",
+   "answer_terms_n": 4,
+   "top_passage_ids": [
+    "c20.s2#0",
+    "c1.s1#0",
+    "c1.s1#1"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "Submeter hierarchies are defined through the brick:hasSubMeter and brick:isSubMeterOf relationships. || Brick supports modeling \"virtual\" meters using the brick:isVirtualMeter Entity Property.",
+   "analyst_note": ""
+  },
+  {
+   "cq_id": "CQB34",
+   "category": "methodology",
+   "question": "When should a rec:Collection be used?",
+   "grounding": "rdfs:comment rec:Collection",
+   "anchors": [
+    "Collection"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 29,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.417,
+   "best_section": "c55.s6",
+   "answer_terms_n": 12,
+   "top_passage_ids": [
+    "c1.s1#2",
+    "c1.s6#1",
+    "c17.s0#0"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "Recall that a rec:Collection is a named group of entities. || Custom collections should now be typed as rec:Collection and use rec:includes to express membership",
+   "analyst_note": "gist matches; 'administrative' wording absent"
+  },
+  {
+   "cq_id": "CQB35",
+   "category": "methodology",
+   "question": "How are measurement quantities represented on Points?",
+   "grounding": "prop:hasQuantity-meth",
+   "anchors": [
+    "hasQuantity"
+   ],
+   "L0": true,
+   "L1": true,
+   "n_sections_L1": 1,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.143,
+   "best_section": "c40.s0",
+   "answer_terms_n": 7,
+   "top_passage_ids": [
+    "c40.s0#2",
+    "c24.s0#1",
+    "c24.s0#2"
+   ],
+   "analyst_rating": "partial",
+   "analyst_span": "adding useful semantic annotations to all Brick Point classes with the brick:hasSubstance and brick:hasQuantity properties",
+   "analyst_note": "same sentence as CQB24; QUDT alignment of quantities not stated"
+  },
+  {
+   "cq_id": "CQB36",
+   "category": "methodology",
+   "question": "Which property links a Brick entity to an external vocabulary reference?",
+   "grounding": "ref:hasExternalReference / brick:hasQUDTReference",
+   "anchors": [
+    "hasExternalReference",
+    "hasQUDTReference"
+   ],
+   "L0": false,
+   "L1": false,
+   "n_sections_L1": 0,
+   "L2": false,
+   "best_section_answer_term_fraction": 0.0,
+   "best_section": null,
+   "answer_terms_n": 6,
+   "top_passage_ids": [
+    "c16.s0#0",
+    "c40.s0#1",
+    "c14.s0#1"
+   ],
+   "analyst_rating": "full",
+   "analyst_span": "The generic relationship ref:hasExternalReference can be used to find these other references. || ref:hasExternalReference is a new relationship that relates Brick entities to their representations in other digital forms",
+   "analyst_note": "hasQUDTReference half of the expected answer absent"
+  }
+ ]
+}

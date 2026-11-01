@@ -1,0 +1,114 @@
+http://example.org/chunktograph#ACMEEnergy2019Tutorial | ACM E-Energy 2019 Tutorial Slides
+http://example.org/chunktograph#AHU | AHU
+http://example.org/chunktograph#AHUVAVSystem | AHU-VAV system < owl:Thing
+http://example.org/chunktograph#AHU_Average_Exhaust_Air_Static_Pressure_Sensor | AHU Average Exhaust Air Static Pressure Sensor
+http://example.org/chunktograph#Blueprint | Blueprint
+http://example.org/chunktograph#Brick | Brick :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities.
+http://example.org/chunktograph#BrickDocumentation | Brick Documentation
+http://example.org/chunktograph#BrickEntityProperty | Brick Entity Property
+http://example.org/chunktograph#BrickProperty | Brick Property < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#Building | Building < http://example.org/chunktograph#PhysicalEntity,http://example.org/chunktograph#SpatialElement,owl:Thing
+http://example.org/chunktograph#BuildingBetterBuildingData | Building better building data, Brick by Brick
+http://example.org/chunktograph#BuildingBuzz | Building Buzz – Innovation all around
+http://example.org/chunktograph#BuildingElectricalMeter | Building Electrical Meter
+http://example.org/chunktograph#BuildingEnergyEfficiencyAndDecarbonizationStudy | Building energy efficiency and decarbonization study
+http://example.org/chunktograph#BuildingEngineer | Building Engineer
+http://example.org/chunktograph#BuildingEntity | Building Entity
+http://example.org/chunktograph#BuildingInformationModel | Building Information Model < http://example.org/chunktograph#IndustryFoundationClasses
+http://example.org/chunktograph#BuildingManagementSystem | Building management system
+http://example.org/chunktograph#BuildingManager | Building Manager
+http://example.org/chunktograph#BuildingMetadata | Building Metadata
+http://example.org/chunktograph#BuildingMetadataModel | Building metadata model
+http://example.org/chunktograph#BuildingSystem | Building System
+http://example.org/chunktograph#BuildingTopologyOntology | Building Topology Ontology < http://example.org/chunktograph#Brick
+http://example.org/chunktograph#BuildingTopologyOntologyBOTV0.3.2 | Building Topology Ontology (BOT) v0.3.2
+http://example.org/chunktograph#Chiller | Chiller
+http://example.org/chunktograph#Class | Class :: A class is a category of entities defined by a particular shared purpose and properties.
+http://example.org/chunktograph#EntityProperty | Entity Property
+http://example.org/chunktograph#Floor | Floor < http://example.org/chunktograph#PhysicalEntity,http://example.org/chunktograph#SpatialElement
+http://example.org/chunktograph#Goal | Goal
+http://example.org/chunktograph#HVAC | HVAC < owl:Thing
+http://example.org/chunktograph#IndustryFoundationClasses | Industry Foundation Classes
+http://example.org/chunktograph#Lighting | Lighting < owl:Thing
+http://example.org/chunktograph#MonitoringSystem | Monitoring system < owl:Thing
+http://example.org/chunktograph#PhysicalEntity | Physical Entity :: Anything that has a physical presence in the world.
+http://example.org/chunktograph#ProjectHaystack | Project Haystack
+http://example.org/chunktograph#RealEstateCore | RealEstateCore
+http://example.org/chunktograph#Room | Room < http://example.org/chunktograph#PhysicalEntity,http://example.org/chunktograph#SpatialElement
+http://example.org/chunktograph#SHACLShape | SHACL Shape
+http://example.org/chunktograph#SecuritySystem | Security system < owl:Thing
+http://example.org/chunktograph#SpatialElement | Spatial Element < http://example.org/chunktograph#PhysicalEntity
+http://example.org/chunktograph#air | air
+OP http://example.org/chunktograph#adheresToCompleteness dom:http://example.org/chunktograph#Brick
+OP http://example.org/chunktograph#feeds dom:http://example.org/chunktograph#Chiller,owl:Thing rng:http://example.org/chunktograph#Building,owl:Thing
+OP http://example.org/chunktograph#hasAlignmentWith rng:http://example.org/chunktograph#BuildingTopologyOntology
+OP http://example.org/chunktograph#hasBOTSupport rng:http://example.org/chunktograph#BuildingTopologyOntology
+OP http://example.org/chunktograph#hasBrickClass dom:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickCommand dom:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickDocumentation rng:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickProperty dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasCompatibilityWith dom:http://example.org/chunktograph#RealEstateCore
+OP http://example.org/chunktograph#hasComplementaryPart dom:http://example.org/chunktograph#RealEstateCore rng:http://example.org/chunktograph#RealEstateCore
+OP http://example.org/chunktograph#hasContext rng:http://example.org/chunktograph#BuildingEntity
+OP http://example.org/chunktograph#hasDataSource rng:http://example.org/chunktograph#BuildingEntity
+OP http://example.org/chunktograph#hasDeprecatedPart dom:http://example.org/chunktograph#RealEstateCore rng:http://example.org/chunktograph#RealEstateCore
+OP http://example.org/chunktograph#hasEntityProperty dom:http://example.org/chunktograph#BrickEntityProperty rng:http://example.org/chunktograph#SHACLShape
+OP http://example.org/chunktograph#hasGoal dom:http://example.org/chunktograph#Brick,http://example.org/chunktograph#ProjectHaystack rng:http://example.org/chunktograph#Goal
+OP http://example.org/chunktograph#hasHaystackSupport rng:http://example.org/chunktograph#ProjectHaystack
+OP http://example.org/chunktograph#hasInverseOf dom:http://example.org/chunktograph#BrickProperty rng:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasMeter dom:http://example.org/chunktograph#Chiller
+OP http://example.org/chunktograph#hasOWLPropertyClass dom:http://example.org/chunktograph#BrickProperty rng:owl:Class
+OP http://example.org/chunktograph#hasPart dom:http://example.org/chunktograph#Building,owl:Thing rng:http://example.org/chunktograph#Floor,owl:Thing
+OP http://example.org/chunktograph#hasPropertyDefinition rng:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasPropertyDefinitionInFile dom:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasPropertyType dom:http://example.org/chunktograph#BrickProperty rng:owl:Class
+OP http://example.org/chunktograph#hasRDFSDomain dom:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasRDFSRange dom:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasShape dom:http://example.org/chunktograph#BrickEntityProperty rng:http://example.org/chunktograph#SHACLShape
+OP http://example.org/chunktograph#hasSystem rng:http://example.org/chunktograph#BuildingSystem
+OP http://example.org/chunktograph#hasZone dom:http://example.org/chunktograph#Building
+OP http://example.org/chunktograph#isLocationOf dom:http://example.org/chunktograph#Floor,http://example.org/chunktograph#PhysicalEntity,http://example.org/chunktograph#SpatialElement rng:http://example.org/chunktograph#Room
+OP http://example.org/chunktograph#isMeteredBy dom:http://example.org/chunktograph#Building
+OP http://example.org/chunktograph#partOf dom:http://example.org/chunktograph#Building rng:http://example.org/chunktograph#HVAC,http://example.org/chunktograph#Lighting,http://example.org/chunktograph#MonitoringSystem,http://example.org/chunktograph#SecuritySystem
+OP http://example.org/chunktograph#usedIn rng:http://example.org/chunktograph#Building
+DP http://example.org/chunktograph#coolingCapacity dom:http://example.org/chunktograph#EntityProperty
+DP http://example.org/chunktograph#hasPropertyName dom:http://example.org/chunktograph#BrickProperty
+DP http://example.org/chunktograph#hasSKOSDefinitionForProperty dom:http://example.org/chunktograph#BrickProperty
+IND http://example.org/chunktograph#ACMEEnergy2019TutorialInstance | ACM E-Energy 2019 Tutorial Slides a http://example.org/chunktograph#ACMEEnergy2019Tutorial
+IND http://example.org/chunktograph#AHU | AHU a http://example.org/chunktograph#AirHandlingUnit,owl:Class
+IND http://example.org/chunktograph#AIF | AI F
+IND http://example.org/chunktograph#AccessControl | Access Control a http://example.org/chunktograph#BuildingManagementSystem,http://example.org/chunktograph#BuildingSystem
+IND http://example.org/chunktograph#AlignmentInstance | Alignment instance a http://example.org/chunktograph#Alignment {http://example.org/chunktograph#alignmentFile=http://example.org/chunktograph#BOTAlignment.ttl; http://example.org/chunktograph#hasTargetConcept=http://example.org/chunktograph#BuildingTopologyOntologyBOTV0.3.2}
+IND http://example.org/chunktograph#ApplicationDrivenCreationOfBuildingMetadataModelsWithSemanticSufficiency | Application-driven creation of building metadata models with semantic sufficiency {http://example.org/chunktograph#hasPublicationYear=2022; http://example.org/chunktograph#publishedIn=http://example.org/chunktograph#ProceedingsOfThe9thACMInternationalConferenceOnSystemsForEnergyEfficientBuildingsCitiesAndTransportation}
+IND http://example.org/chunktograph#Brick | Brick a owl:Class :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities. {http://example.org/chunktograph#hasBrickSupport=http://example.org/chunktograph#Brick; http://example.org/chunktograph#hasFile=http://example.org/chunktograph#entity_properties_py; http://example.org/chunktograph#hasGoal=http://example.org/chunktograph#CompleteAndConsistentModeling; http://example.org/chunktograph#hasTutorial=http://example.org/chunktograph#ACMEEnergy2019TutorialInstance; http://example.org/chunktograph#isCollaboratingWith=http://example.org/chunktograph#ProjectHaystack; http://example.org/chunktograph#isRelatedTo=http://example.org/chunktograph#ProjectHaystack}
+IND http://example.org/chunktograph#BrickEntityProperty | Brick Entity Property a owl:Class {http://example.org/chunktograph#hasShape=http://example.org/chunktograph#SHACLShape}
+IND http://example.org/chunktograph#Building | Building a http://example.org/chunktograph#Building,owl:Class {http://example.org/chunktograph#hasPart=http://example.org/chunktograph#Floor; http://example.org/chunktograph#partOf=http://example.org/chunktograph#HVAC; http://example.org/chunktograph#partOf=http://example.org/chunktograph#Lighting; http://example.org/chunktograph#partOf=http://example.org/chunktograph#MonitoringSystem; http://example.org/chunktograph#partOf=http://example.org/chunktograph#SecuritySystem; rdfs:subClassOf=http://example.org/chunktograph#PhysicalEntity; rdfs:subClassOf=http://example.org/chunktograph#SpatialElement; rdfs:subClassOf=owl:Thing}
+IND http://example.org/chunktograph#BuildingBetterBuildingDataInstance | Building better building data, Brick by Brick {http://example.org/chunktograph#hasSourceText=Building better building data, Brick by Brick}
+IND http://example.org/chunktograph#BuildingBuzzInstance | Building Buzz – Innovation all around {http://example.org/chunktograph#hasSourceText=Building Buzz – Innovation all around}
+IND http://example.org/chunktograph#BuildingInformationModel | Building Information Model a owl:Class {rdfs:subClassOf=http://example.org/chunktograph#IndustryFoundationClasses}
+IND http://example.org/chunktograph#BuildingInformationModeling | Building information modeling a http://example.org/chunktograph#Blueprint
+IND http://example.org/chunktograph#BuildingTopologyOntology | Building Topology Ontology a owl:Class {rdfs:subClassOf=http://example.org/chunktograph#Brick}
+IND http://example.org/chunktograph#Building_1 | Building 1 a http://example.org/chunktograph#Building {http://example.org/chunktograph#hasPart=http://example.org/chunktograph#Floor_1}
+IND http://example.org/chunktograph#Chiller | Chiller a http://example.org/chunktograph#BuildingSystem,owl:Class
+IND http://example.org/chunktograph#ElectricMeter_1 | Electric Meter 1 a http://example.org/chunktograph#ElectricMeter {http://example.org/chunktograph#hasLocation=http://example.org/chunktograph#Building_1}
+IND http://example.org/chunktograph#ElectricVehicleCharger_1 | Electric Vehicle Charger 1 a http://example.org/chunktograph#ElectricVehicleCharger {http://example.org/chunktograph#hasLocation=http://example.org/chunktograph#Building_1}
+IND http://example.org/chunktograph#Electrical | Electrical a http://example.org/chunktograph#BuildingSystem
+IND http://example.org/chunktograph#Elevator | Elevator a http://example.org/chunktograph#BuildingManagementSystem
+IND http://example.org/chunktograph#EslingerH | Eslinger H {http://example.org/chunktograph#hasSource=http://example.org/chunktograph#ApplicationDrivenCreationOfBuildingMetadataModelsWithSemanticSufficiency}
+IND http://example.org/chunktograph#FierroG | Fierro G {http://example.org/chunktograph#hasSource=http://example.org/chunktograph#ApplicationDrivenCreationOfBuildingMetadataModelsWithSemanticSufficiency}
+IND http://example.org/chunktograph#FireProtection | Fire Protection a http://example.org/chunktograph#BuildingSystem
+IND http://example.org/chunktograph#Floor | Floor a http://example.org/chunktograph#Class,http://example.org/chunktograph#Floor,owl:Class {http://example.org/chunktograph#hasPart=http://example.org/chunktograph#Room; http://example.org/chunktograph#hasTag=http://example.org/chunktograph#air; rdfs:subClassOf=http://example.org/chunktograph#PhysicalEntity; rdfs:subClassOf=http://example.org/chunktograph#SpatialElement}
+IND http://example.org/chunktograph#Floor_1 | Floor 1 a http://example.org/chunktograph#Floor
+IND http://example.org/chunktograph#HVAC | HVAC a http://example.org/chunktograph#BuildingManagementSystem,http://example.org/chunktograph#BuildingSystem,owl:Class {rdfs:subClassOf=owl:Thing}
+IND http://example.org/chunktograph#HeatPump | Heat Pump a http://example.org/chunktograph#BuildingSystem
+IND http://example.org/chunktograph#IndustryFoundationClasses | Industry Foundation Classes a owl:Class
+IND http://example.org/chunktograph#Lighting | Lighting a http://example.org/chunktograph#BuildingSystem,owl:Class {rdfs:subClassOf=owl:Thing}
+IND http://example.org/chunktograph#Occupancy | Occupancy a http://example.org/chunktograph#BuildingSystem
+IND http://example.org/chunktograph#ProceedingsOfThe9thACMInternationalConferenceOnSystemsForEnergyEfficientBuildingsCitiesAndTransportation | Proceedings of the 9th ACM international conference on systems for energy-efficient buildings, cities, and transportation
+IND http://example.org/chunktograph#ProjectHaystack | Project Haystack a http://example.org/chunktograph#Entity,http://example.org/chunktograph#ProjectHaystack,owl:Class {http://example.org/chunktograph#hasGoal=http://example.org/chunktograph#BuildingManagerIdioms; http://example.org/chunktograph#hasTagValue=Project Haystack}
+IND http://example.org/chunktograph#Room | Room a http://example.org/chunktograph#Class,http://example.org/chunktograph#Room,owl:Class {http://example.org/chunktograph#hasTag=http://example.org/chunktograph#air; rdfs:subClassOf=http://example.org/chunktograph#PhysicalEntity; rdfs:subClassOf=http://example.org/chunktograph#SpatialElement}
+IND http://example.org/chunktograph#SHACLShape | SHACL Shape a owl:Class {http://example.org/chunktograph#hasDatatype=xsd:string; http://example.org/chunktograph#hasProperty=property; http://example.org/chunktograph#hasUnits=unit; http://example.org/chunktograph#hasValues=value}
+IND http://example.org/chunktograph#SahaA | Saha A {http://example.org/chunktograph#hasSource=http://example.org/chunktograph#ApplicationDrivenCreationOfBuildingMetadataModelsWithSemanticSufficiency}
+IND http://example.org/chunktograph#ShapinskyT | Shapinsky T {http://example.org/chunktograph#hasSource=http://example.org/chunktograph#ApplicationDrivenCreationOfBuildingMetadataModelsWithSemanticSufficiency}
+IND http://example.org/chunktograph#SteenM | Steen M {http://example.org/chunktograph#hasSource=http://example.org/chunktograph#ApplicationDrivenCreationOfBuildingMetadataModelsWithSemanticSufficiency}
+IND http://example.org/chunktograph#air | air a http://example.org/chunktograph#SubstanceTag,http://example.org/chunktograph#Tag,http://example.org/chunktograph#air,owl:Class {http://example.org/chunktograph#hasTagValue=air}

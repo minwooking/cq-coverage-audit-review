@@ -1,0 +1,97 @@
+{
+ "source": {
+  "cells_jsonl_sha256": "bfd5b3c83981c8a6ec970b93f460bab7409daf047a2e048bfaa90b5adfd0d4af",
+  "llm_auxiliary_labels_jsonl_sha256": "5952874272327b85d253c7686c1faebd4b9b13f11f9ea58b1fe81b5fe9980d63",
+  "reads": "judge J (cells.jsonl) and A_aux (LLM auxiliary check, label_source LLM); no human label",
+  "writes": "aggregates only; no cell or CQ identifier"
+ },
+ "n_cells_by_kind": {
+  "primary": 188,
+  "ablated_control": 24,
+  "preserved_control": 12
+ },
+ "judge_only_J_by_control_kind": {
+  "ablated_control": {
+   "n": 24,
+   "sum_J": 11,
+   "mean_J": 0.4583333333333333
+  },
+  "preserved_control": {
+   "n": 12,
+   "sum_J": 26,
+   "mean_J": 2.1666666666666665
+  }
+ },
+ "A_aux": {
+  "all_224_cells": {
+   "n_cells": 224,
+   "n_A_aux_1": 133,
+   "n_A_aux_0": 91,
+   "J_given_A_aux_1": {
+    "n": 133,
+    "sum_J": 356,
+    "mean_J": 2.6766917293233083
+   },
+   "J_given_A_aux_0": {
+    "n": 91,
+    "sum_J": 50,
+    "mean_J": 0.5494505494505495
+   },
+   "n_empty_span": 67,
+   "n_empty_span_with_A_aux_0": 67,
+   "n_J0": 67
+  },
+  "primary_cells": {
+   "n_cells": 188,
+   "n_A_aux_1": 121,
+   "n_A_aux_0": 67,
+   "J_given_A_aux_1": {
+    "n": 121,
+    "sum_J": 328,
+    "mean_J": 2.7107438016528924
+   },
+   "J_given_A_aux_0": {
+    "n": 67,
+    "sum_J": 41,
+    "mean_J": 0.6119402985074627
+   },
+   "n_empty_span": 47,
+   "n_empty_span_with_A_aux_0": 47,
+   "n_J0": 47
+  },
+  "control_cells": {
+   "n_cells": 36,
+   "n_A_aux_1": 12,
+   "n_A_aux_0": 24,
+   "J_given_A_aux_1": {
+    "n": 12,
+    "sum_J": 28,
+    "mean_J": 2.3333333333333335
+   },
+   "J_given_A_aux_0": {
+    "n": 24,
+    "sum_J": 9,
+    "mean_J": 0.375
+   },
+   "n_empty_span": 20,
+   "n_empty_span_with_A_aux_0": 20,
+   "n_J0": 20
+  }
+ },
+ "checks": {
+  "aux_J_equals_judge_J_all_cells": true,
+  "aux_evidence_empty_flag_equals_judge_span_empty_all_cells": true,
+  "judge_span_empty_iff_J0_all_cells": true,
+  "every_empty_span_has_A_aux_0": true,
+  "J_values_seen": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "A_aux_values_seen": [
+   0,
+   1
+  ]
+ }
+}

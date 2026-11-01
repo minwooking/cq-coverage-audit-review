@@ -1,0 +1,173 @@
+{
+  "status": "EXPLORATORY, POST HOC — two AI judges on the registered 48 cells; not human evidence, not a validation, not a G6 evaluation; the registered gates' G1/G5/G7 failures stand",
+  "provenance": {
+    "model_a": {
+      "model_requested": "gpt-5.6-luna",
+      "cells": {
+        "path": "paper/access2026/harness/real_run/paired_ai_audit_48/gpt-5.6-luna/cells.jsonl",
+        "sha256": "eec479cdf6f30a3b4ebc5c189add3e48e5235659b200e790ebec3f4fb9baa534"
+      },
+      "manifest": {
+        "path": "paper/access2026/harness/real_run/paired_ai_audit_48/gpt-5.6-luna/run_manifest.json",
+        "sha256": "963088e8a5cfc266ef2e4dd335c239f53a8ad6fae531c740d4a45d5fe37fbfa9"
+      }
+    },
+    "model_b": {
+      "model_requested": "anthropic/claude-sonnet-5-5",
+      "cells": {
+        "path": "paper/access2026/harness/real_run/paired_ai_audit_48/anthropic__claude-sonnet-5-5/cells.jsonl",
+        "sha256": "b7fbe8003cad34202554e8cd3152865f1c021d4356d398182494f9fb94488e6b"
+      },
+      "manifest": {
+        "path": "paper/access2026/harness/real_run/paired_ai_audit_48/anthropic__claude-sonnet-5-5/run_manifest.json",
+        "sha256": "bb5bdebb3428aa4258dc9e5e8c0e00452e07992383f9c17c1474fdbf2b25ef88"
+      }
+    },
+    "registered_cell_list": {
+      "path": "harness/real_run/second_annotator/cell_list_48.txt",
+      "sha256": "bd2333d427971fb182add2e3735e1d81fd3fe343640d736eea2b612819854b7e"
+    },
+    "analyze_holdout_py": {
+      "path": "harness/analyze_holdout.py",
+      "sha256": "3278d71c70829889838aa8f61c4f5b0217b9ef3e921976a8ea5fc0c0fd122e10"
+    },
+    "analyzer_py": {
+      "path": "harness/analyze_paired_ai_audit.py",
+      "sha256": "36266c8ddfaff98b36c99d0fd22b31ed492db883787475cb6478ef0f890ff9af"
+    }
+  },
+  "completeness": {
+    "n_list": 48,
+    "a_scored": 48,
+    "b_scored": 48,
+    "paired": 48,
+    "missing_in_a": [],
+    "missing_in_b": [],
+    "missing_in_both": [],
+    "clusters_paired": 28
+  },
+  "agreement": {
+    "status": "computed",
+    "n_cells": 48,
+    "n_clusters": 28,
+    "exact_agreement": {
+      "n_cells": 48,
+      "n_clusters": 28,
+      "estimate": 0.375,
+      "tie_share": 0.0108,
+      "ci_lo": 0.22202084568137517,
+      "ci_hi": 0.5476190476190477,
+      "ci_method": "CQ-cluster BCa"
+    },
+    "qwk_ja_jb": {
+      "n_cells": 48,
+      "n_clusters": 28,
+      "estimate": 0.3467048710601719,
+      "tie_share": 0.0,
+      "degenerate_share": 0.0,
+      "degenerate_jackknife_n": 0,
+      "ci_lo": 0.1312387806882683,
+      "ci_hi": 0.5593917855753642,
+      "ci_method": "CQ-cluster BCa"
+    },
+    "binary_kappa_j_ge_2": {
+      "n_cells": 48,
+      "n_clusters": 28,
+      "estimate": 0.2527472527472529,
+      "tie_share": 0.0003,
+      "degenerate_share": 0.0,
+      "degenerate_jackknife_n": 0,
+      "ci_lo": 0.03781576221506388,
+      "ci_hi": 0.5119043845413889,
+      "ci_method": "CQ-cluster BCa",
+      "note": "supplementary: coverage may fall below nominal under skewed prevalence of 1[J>=2] (not simulated here)"
+    },
+    "mean_signed_diff_b_minus_a": {
+      "n_cells": 48,
+      "n_clusters": 28,
+      "estimate": -0.6458333333333334,
+      "tie_share": 0.0055,
+      "ci_lo": -0.9417366317838108,
+      "ci_hi": -0.34588709618482405,
+      "ci_method": "CQ-cluster BCa"
+    },
+    "mean_abs_diff": {
+      "n_cells": 48,
+      "n_clusters": 28,
+      "estimate": 0.8125,
+      "tie_share": 0.006,
+      "ci_lo": 0.5714285714285714,
+      "ci_hi": 1.0701754385964912,
+      "ci_method": "CQ-cluster BCa"
+    },
+    "j_marginals": {
+      "model_a": {
+        "counts_j0_to_j3": [
+          0,
+          9,
+          8,
+          31
+        ],
+        "share_j_ge_2": 0.8125
+      },
+      "model_b": {
+        "counts_j0_to_j3": [
+          1,
+          21,
+          12,
+          14
+        ],
+        "share_j_ge_2": 0.5416666666666666
+      }
+    },
+    "interpretation_note": "agreement between two AI judges is not correctness and is affected by J skew and a shared rubric",
+    "confusion_counts": {
+      "rows": "J_A (model A)",
+      "cols": "J_B (model B)",
+      "levels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "counts": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          6,
+          1,
+          1
+        ],
+        [
+          0,
+          7,
+          0,
+          1
+        ],
+        [
+          0,
+          8,
+          11,
+          12
+        ]
+      ]
+    }
+  },
+  "not_computable_sections": [],
+  "claim_guard": {
+    "exploratory_labels": true,
+    "banned_terms_absent": true
+  },
+  "settings": {
+    "B": 10000,
+    "seed": 20260913,
+    "min_clusters_for_ci": 10,
+    "registered_scheme": false,
+    "note": "B/seed reuse the registered resampling values, but this paired audit itself is not registered; min_clusters_for_ci is this script's choice, not registered and not justified by a coverage simulation"
+  }
+}

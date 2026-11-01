@@ -1,0 +1,7 @@
+{
+ "models_status": 200,
+ "luna_listed": true,
+ "http_status": 402,
+ "omit_temperature": false,
+ "err": "{\"error\":{\"message\":\"Payment Required\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+}

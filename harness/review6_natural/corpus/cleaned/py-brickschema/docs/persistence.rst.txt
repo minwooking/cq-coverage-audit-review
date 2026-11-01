@@ -1,0 +1,15 @@
+# Persistent and Versioned Graphs
+
+To use this feature, install brickschema with the "persistence" feature: pip install brickschema[persistence] or pip install brickschema[all]
+
+The default brickschema.graph.Graph and brickschema.graph.GraphCollection classes implement in-memory stores that only track the latest version of the graph. Often, it is helpful to not just keep track of the history of how the graph has changed, but also to persist that graph so that it lasts beyond the lifetime of a program.
+
+brickschema.persistent.PersistentGraph is a subclass of brickschema.graph.Graph that implements a persistent store backed by RDFlib-SQLAlchemy. The contents of the graph are stored in a SQL database given by the connection string passed to the constructor:
+
+brickschema.persistent.VersionedGraphCollection is another option which combines the persistence of PersistentGraph, the functionality of the base brickschema.graph.Graph class, and a transactional API for manipulating the graph. The versioned graph supports the following helpful features:
+
+- undo/redo functionality for "rolling back" changes to the graph
+- checkout a specific version of the graph at a point in time
+- pre-commit and post-commit hooks for performing actions on the graph before and after the graph is committed
+
+Furthermore, the brickschema.persistent.VersionedGraphCollection also acts like the brickschema.graph.GraphCollection where metadata can be managed.

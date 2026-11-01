@@ -1,0 +1,133 @@
+http://example.org/chunktograph#ASHRAE | ASHRAE
+http://example.org/chunktograph#ASHRAE223P | ASHRAE 223P
+http://example.org/chunktograph#ASHRAEHaystackBrickCollaboration | ASHRAE, Haystack, Brick Collaboration
+http://example.org/chunktograph#Brick | Brick < http://example.org/chunktograph#BrickSchema :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities.
+http://example.org/chunktograph#BrickBase | BrickBase
+http://example.org/chunktograph#BrickClass | Brick Class < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickClassDefinitionFile | Brick Class Definition File
+http://example.org/chunktograph#BrickClassDefinitionStructure | Brick Class Definition Structure
+http://example.org/chunktograph#BrickCommandClass | Brick Command Class < http://example.org/chunktograph#BrickDocumentation,http://example.org/chunktograph#BrickPointClass
+http://example.org/chunktograph#BrickConsortium | Brick Consortium
+http://example.org/chunktograph#BrickContributionGuidelines | Brick Contribution Guidelines
+http://example.org/chunktograph#BrickDocumentation | Brick Documentation < http://example.org/chunktograph#BrickContributionGuidelines
+http://example.org/chunktograph#BrickEntity | Brick Entity
+http://example.org/chunktograph#BrickEntityProperty | Brick Entity Property
+http://example.org/chunktograph#BrickEquipmentClass | Brick Equipment Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickEquipmentDefinition | Brick Equipment Definition
+http://example.org/chunktograph#BrickGitHubIssueTracker | Brick GitHub Issue Tracker
+http://example.org/chunktograph#BrickLocationClass | Brick Location Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickMigrationTool | Brick Migration Tool :: A tool for migrating Brick models from older versions of the Brick ontology to newer versions.
+http://example.org/chunktograph#BrickParameterClass | Brick Parameter Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickPlus | Brick+ < http://example.org/chunktograph#Brick :: Brick+ defines a class lattice that structures the composition of concepts.
+http://example.org/chunktograph#BrickPointClass | Brick Point Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickProperty | Brick Property < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickQuantityClass | Brick Quantity Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickRelationship | Brick Relationship
+http://example.org/chunktograph#BrickSchema | Brick Schema < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickSchemaSpecification | Brick Schema Specification
+http://example.org/chunktograph#BrickSensorClass | Brick Sensor Class < http://example.org/chunktograph#BrickPointClass
+http://example.org/chunktograph#BrickSetpointClass | Brick Setpoint Class < http://example.org/chunktograph#BrickDocumentation,http://example.org/chunktograph#BrickPointClass
+http://example.org/chunktograph#BrickStatusClass | Brick Status Class < http://example.org/chunktograph#BrickDocumentation,http://example.org/chunktograph#BrickPointClass
+http://example.org/chunktograph#BrickSubstanceClass | Brick Substance Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickSubstanceDefinition | Brick Substance Definition
+http://example.org/chunktograph#BrickTag | Brick Tag < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickTaggingSystem | Brick tagging system augmenting tags with formal semantic rules < http://example.org/chunktograph#Brick
+http://example.org/chunktograph#BrickUserForum | Brick User Forum < owl:NamedIndividual
+http://example.org/chunktograph#BrickWebsiteIssueTracker | Brick Website Issue Tracker
+http://example.org/chunktograph#Brick_v1.1 | Brick v1.1
+http://example.org/chunktograph#CanonicalUseCase | Canonical Use Case
+http://example.org/chunktograph#Carrier | Carrier
+http://example.org/chunktograph#ClockworksAnalytics | Clockworks Analytics
+http://example.org/chunktograph#Contributor | Contributor < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#DevelopmentEnvironment | Development Environment < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#EquipmentFlavoredClass | Equipment-flavored Class :: A class in Brick that incorporated the name of equipment, e.g., AHU_Zone_Air_Temperature_Sensor
+http://example.org/chunktograph#Governance | Governance
+http://example.org/chunktograph#JohnsonControls | Johnson Controls
+http://example.org/chunktograph#JupyterNotebook | Jupyter Notebook
+http://example.org/chunktograph#NonProfitMembershipCorporation | Non-profit Membership Corporation
+http://example.org/chunktograph#Platform | Platform
+http://example.org/chunktograph#RealEstateCore_v3.1 | RealEstateCore v3.1
+http://example.org/chunktograph#Repository | Repository < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#SHACLShape | SHACL Shape
+OP http://example.org/chunktograph#addresses dom:http://example.org/chunktograph#BrickConsortium
+OP http://example.org/chunktograph#develops dom:http://example.org/chunktograph#BrickConsortium rng:http://example.org/chunktograph#BrickSchemaSpecification
+OP http://example.org/chunktograph#ensuresNotEncumbered dom:http://example.org/chunktograph#BrickConsortium rng:http://example.org/chunktograph#BrickSchemaSpecification
+OP http://example.org/chunktograph#evangelizes dom:http://example.org/chunktograph#BrickConsortium rng:http://example.org/chunktograph#BrickSchemaSpecification
+OP http://example.org/chunktograph#funds dom:http://example.org/chunktograph#BrickConsortium
+OP http://example.org/chunktograph#hasBrickCommand dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickCommandClass
+OP http://example.org/chunktograph#hasBrickDocumentation dom:http://example.org/chunktograph#Contributor rng:http://example.org/chunktograph#BrickDocumentation
+OP http://example.org/chunktograph#hasBrickEquipment dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickEquipmentClass
+OP http://example.org/chunktograph#hasBrickLocation dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickLocationClass
+OP http://example.org/chunktograph#hasBrickParameter dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickParameterClass
+OP http://example.org/chunktograph#hasBrickPoint dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickPointClass
+OP http://example.org/chunktograph#hasBrickProperty dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasBrickQuantity dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickQuantityClass
+OP http://example.org/chunktograph#hasBrickSchema dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickSchema
+OP http://example.org/chunktograph#hasBrickSetpoint dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickSetpointClass
+OP http://example.org/chunktograph#hasBrickStatus dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickStatusClass
+OP http://example.org/chunktograph#hasContact dom:http://example.org/chunktograph#BrickConsortium
+OP http://example.org/chunktograph#hasEngine dom:http://example.org/chunktograph#BrickBase
+OP http://example.org/chunktograph#hasEntityProperty dom:http://example.org/chunktograph#BrickEntityProperty rng:http://example.org/chunktograph#SHACLShape
+OP http://example.org/chunktograph#hasEvent dom:http://example.org/chunktograph#BrickConsortium
+OP http://example.org/chunktograph#hasMember dom:http://example.org/chunktograph#BrickConsortium,http://example.org/chunktograph#BrickDevelopmentTeam rng:http://example.org/chunktograph#BrickConsortium,owl:NamedIndividual
+OP http://example.org/chunktograph#hasMembershipForm dom:http://example.org/chunktograph#BrickConsortium
+OP http://example.org/chunktograph#hasPurpose dom:http://example.org/chunktograph#BrickConsortium
+OP http://example.org/chunktograph#hasRule dom:http://example.org/chunktograph#BrickConsortium
+OP http://example.org/chunktograph#hasShape dom:http://example.org/chunktograph#BrickEntityProperty rng:http://example.org/chunktograph#SHACLShape
+OP http://example.org/chunktograph#isGovernedBy dom:http://example.org/chunktograph#BrickSchema rng:http://example.org/chunktograph#BrickConsortium
+IND http://example.org/chunktograph#ACMEEnergy2019TutorialInstance | ACM E-Energy 2019 Tutorial Slides a http://example.org/chunktograph#ACMEEnergy2019Tutorial
+IND http://example.org/chunktograph#ASHRAE | ASHRAE a owl:Class
+IND http://example.org/chunktograph#ASHRAE223P | ASHRAE 223P a http://example.org/chunktograph#Standard,owl:Class
+IND http://example.org/chunktograph#ASHRAEHaystackBrickCollaborationInstance | ASHRAE, Haystack, Brick Collaboration {http://example.org/chunktograph#hasSourceText=ASHRAE, Haystack, Brick Collaboration}
+IND http://example.org/chunktograph#Alignments | Alignments :: Brick 1.2.0 also includes alignments with several external ontologies and metadata representations. {rdfs:subClassOf=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#Brick | Brick a owl:Class :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities. {http://example.org/chunktograph#hasBrickMigrationTool=http://example.org/chunktograph#BrickMigrationTool; http://example.org/chunktograph#hasBrickSupport=http://example.org/chunktograph#Brick; http://example.org/chunktograph#hasIssueTracker=http://example.org/chunktograph#BrickIssueTrackerInstance; http://example.org/chunktograph#hasMOU=http://example.org/chunktograph#BrickMOU; http://example.org/chunktograph#hasTool=http://example.org/chunktograph#BrickQueryBuilderInstance; http://example.org/chunktograph#hasTool=http://example.org/chunktograph#BrickServerInstance; http://example.org/chunktograph#hasTool=http://example.org/chunktograph#BrickStudioInstance; http://example.org/chunktograph#hasTutorial=http://example.org/chunktograph#ACMEEnergy2019TutorialInstance; http://example.org/chunktograph#isCollaboratingWith=http://example.org/chunktograph#ASHRAE; http://example.org/chunktograph#isUsedIn=http://example.org/chunktograph#ASHRAE223P; http://example.org/chunktograph#questionAddressedVia=http://example.org/chunktograph#BrickGitHubIssueTracker; http://example.org/chunktograph#questionAddressedVia=http://example.org/chunktograph#BrickUserForum; http://example.org/chunktograph#reportedOn=http://example.org/chunktograph#BrickGitHubIssueTracker; http://example.org/chunktograph#trackedOn=http://example.org/chunktograph#BrickGitHubIssueTracker; rdfs:subClassOf=http://example.org/chunktograph#BrickSchema}
+IND http://example.org/chunktograph#Brick-REC-alignment.ttl | Brick-REC-alignment.ttl {http://example.org/chunktograph#isAlignmentFileOf=http://example.org/chunktograph#Brick_v1.1; http://example.org/chunktograph#isAlignmentFileOf=http://example.org/chunktograph#RealEstateCore_v3.1}
+IND http://example.org/chunktograph#Brick-REC-nodevice.rdf | Brick-REC-nodevice.rdf {http://example.org/chunktograph#isInputTo=http://example.org/chunktograph#generate.py}
+IND http://example.org/chunktograph#Brick-VBIS-alignment.ttl | Brick-VBIS-alignment.ttl
+IND http://example.org/chunktograph#BrickClass | Brick Class a owl:Class {http://example.org/chunktograph#hasParent=http://example.org/chunktograph#BrickClass; http://example.org/chunktograph#hasSubstance=http://example.org/chunktograph#BrickSubstanceDefinition; http://example.org/chunktograph#hasTag=http://example.org/chunktograph#BrickTag; rdfs:subClassOf=http://example.org/chunktograph#BrickDocumentation; owl:equivalentClass=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#BrickClassDefinitionStructure | Brick Class Definition Structure a owl:Class
+IND http://example.org/chunktograph#BrickConsortium | Brick Consortium a owl:Class
+IND http://example.org/chunktograph#BrickConsortiumInc | Brick Consortium, Inc a http://example.org/chunktograph#BrickConsortium,http://example.org/chunktograph#NonProfitMembershipCorporation {http://example.org/chunktograph#addresses=an important industry and societal need by helping to make data of the built environment interoperable; http://example.org/chunktograph#develops=http://example.org/chunktograph#BrickSchemaSpecification; http://example.org/chunktograph#ensuresNotEncumbered=http://example.org/chunktograph#BrickSchemaSpecification; http://example.org/chunktograph#evangelizes=http://example.org/chunktograph#BrickSchemaSpecification; http://example.org/chunktograph#hasContact=Erik Paulson; http://example.org/chunktograph#hasEvent=a virtual open house in 2021; http://example.org/chunktograph#hasGoal=http://example.org/chunktograph#Comfort; http://example.org/chunktograph#hasGoal=http://example.org/chunktograph#Efficiency; http://example.org/chunktograph#hasGoal=http://example.org/chunktograph#HealthyBuildings; http://example.org/chunktograph#hasGoal=http://example.org/chunktograph#Interoperability; http://example.org/chunktograph#hasGoal=http://example.org/chunktograph#OpenSourceCommunity; http://example.org/chunktograph#hasMember=http://example.org/chunktograph#CarnegieMellonUniversity; http://example.org/chunktograph#hasMember=http://example.org/chunktograph#Carrier; http://example.org/chunktograph#hasMember=http://example.org/chunktograph#ClockworksAnalytics; http://example.org/chunktograph#hasMember=http://example.org/chunktograph#ColoradoSchoolOfMines; http://example.org/chunktograph#hasMember=http://example.org/chunktograph#JohnsonControls; http://example.org/chunktograph#hasMember=http://example.org/chunktograph#Mapped; http://example.org/chunktograph#hasMembershipForm=a membership form is available; http://example.org/chunktograph#hasPurpose=to encourage the research and development of Brick Schema Specifications for the built environment and any supporting tooling, documentation, and best practices necessary to promote Brick; http://example.org/chunktograph#hasRule=rules of the consortium are available for review; http://example.org/chunktograph#isMadeUpOf=researchers, technology providers, integrators, and building operators; http://example.org/chunktograph#provides=http://example.org/chunktograph#CanonicalUseCase; http://example.org/chunktograph#provides=http://example.org/chunktograph#Governance}
+IND http://example.org/chunktograph#BrickDataRetrievalDemo | Brick Data Retrieval Demo a http://example.org/chunktograph#JupyterNotebook,http://example.org/chunktograph#Repository {http://example.org/chunktograph#implements=http://example.org/chunktograph#BrickDataRetrievalDemo}
+IND http://example.org/chunktograph#BrickDevelopmentTeam | Brick Development Team {http://example.org/chunktograph#hasMember=http://example.org/chunktograph#CarnegieMellonUniversity; http://example.org/chunktograph#hasMember=http://example.org/chunktograph#IBM; http://example.org/chunktograph#hasMember=http://example.org/chunktograph#UniversityOfCaliforniaLosAngeles; http://example.org/chunktograph#hasMember=http://example.org/chunktograph#UniversityOfSouthernDenmark; http://example.org/chunktograph#hasMember=http://example.org/chunktograph#UniversityOfVirginia; rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#BrickEntityProperty | Brick Entity Property a owl:Class {http://example.org/chunktograph#hasShape=http://example.org/chunktograph#SHACLShape}
+IND http://example.org/chunktograph#BrickEquipmentDefinition | Brick Equipment Definition a owl:Class
+IND http://example.org/chunktograph#BrickExampleServer | Brick Example Server a http://example.org/chunktograph#Platform
+IND http://example.org/chunktograph#BrickGitHubIssueTracker | Brick GitHub Issue Tracker a http://example.org/chunktograph#CommunicationChannel,owl:Class
+IND http://example.org/chunktograph#BrickInstance | Brick a http://example.org/chunktograph#Brick {http://example.org/chunktograph#isOpenSource=true}
+IND http://example.org/chunktograph#BrickIssueTrackerInstance | Brick GitHub issues page a http://example.org/chunktograph#BrickIssueTracker
+IND http://example.org/chunktograph#BrickMOU | Brick VBIS MOU a http://example.org/chunktograph#MemorandumOfUnderstanding :: Memorandum of Understanding between Brick and VBIS
+IND http://example.org/chunktograph#BrickPlus | Brick+ a http://example.org/chunktograph#BrickPlusOntology,http://example.org/chunktograph#Class,owl:Class,owl:Ontology :: Brick+ defines a class lattice that structures the composition of concepts. {http://example.org/chunktograph#isAReplacementFor=http://example.org/chunktograph#Brick; rdfs:subClassOf=http://example.org/chunktograph#Brick}
+IND http://example.org/chunktograph#BrickPointClass | Brick Point Class a owl:Class {rdfs:subClassOf=http://example.org/chunktograph#BrickClass; rdfs:subClassOf=http://example.org/chunktograph#BrickDocumentation}
+IND http://example.org/chunktograph#BrickQueryBuilderInstance | Brick QueryBuilder tool a http://example.org/chunktograph#BrickQueryBuilder
+IND http://example.org/chunktograph#BrickRelationship | Brick Relationship a owl:Class {http://example.org/chunktograph#hasDomain=http://example.org/chunktograph#BrickClass; http://example.org/chunktograph#hasInverse=http://example.org/chunktograph#BrickRelationship; http://example.org/chunktograph#hasRange=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#BrickServerInstance | Brick Server reference implementation a http://example.org/chunktograph#BrickServer
+IND http://example.org/chunktograph#BrickStudioInstance | BrickStudio a http://example.org/chunktograph#BrickStudio
+IND http://example.org/chunktograph#BrickSubstanceDefinition | Brick Substance Definition a owl:Class
+IND http://example.org/chunktograph#BrickTag | Brick Tag a owl:Class {rdfs:subClassOf=http://example.org/chunktograph#BrickDocumentation}
+IND http://example.org/chunktograph#BrickUserForum | Brick User Forum a http://example.org/chunktograph#CommunicationChannel,owl:Class {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#BrickVersion1_2_0 | Brick v1.2.0 :: Marks just over 7 months of work from a growing community of contributors. Brings a number of new features. {rdfs:subClassOf=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#BrickWebsiteIssueTracker | Brick Website Issue Tracker a http://example.org/chunktograph#CommunicationChannel,owl:Class
+IND http://example.org/chunktograph#Brick_v1.1 | Brick v1.1 a owl:Class
+IND http://example.org/chunktograph#CarnegieMellonUniversity | Carnegie Mellon University a http://example.org/chunktograph#AcademicMember {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#Carrier | Carrier a http://example.org/chunktograph#CommercialMember,owl:Class
+IND http://example.org/chunktograph#ChillerPlants | Chiller Plants :: A number of Chiller-related points and equipment have been added to Brick. Future discussions on chillers should be directed to . {rdfs:subClassOf=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#ClockworksAnalytics | Clockworks Analytics a http://example.org/chunktograph#CommercialMember,owl:Class
+IND http://example.org/chunktograph#ColoradoSchoolOfMines | Colorado School of Mines a http://example.org/chunktograph#AcademicMember
+IND http://example.org/chunktograph#Comfort | Comfort a http://example.org/chunktograph#Goal
+IND http://example.org/chunktograph#Efficiency | Efficiency a http://example.org/chunktograph#Goal
+IND http://example.org/chunktograph#EntityProperties | Entity Properties :: A new Brick feature that allow models to attach static properties to Brick entities. The initial release of entity properties include floor area (net and gross), electrical metering properties, and aggregations. {rdfs:subClassOf=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#GabeFierro | Gabe Fierro a http://example.org/chunktograph#Person {http://example.org/chunktograph#hasEmail=<email>; http://example.org/chunktograph#isMemberOf=http://example.org/chunktograph#BrickConsortium}
+IND http://example.org/chunktograph#HealthyBuildings | Healthy Buildings a http://example.org/chunktograph#Goal
+IND http://example.org/chunktograph#IBM | IBM {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#Interoperability | Interoperability a http://example.org/chunktograph#Goal
+IND http://example.org/chunktograph#JohnsonControls | Johnson Controls a http://example.org/chunktograph#CommercialMember,owl:Class {http://example.org/chunktograph#hasMission=To reimagine the performance of buildings to serve people, places and the planet.}
+IND http://example.org/chunktograph#Mapped | Mapped a http://example.org/chunktograph#CommercialMember
+IND http://example.org/chunktograph#MarioBergés | Mario Bergés a http://example.org/chunktograph#Person {http://example.org/chunktograph#hasEmail=<email>; http://example.org/chunktograph#isMemberOf=http://example.org/chunktograph#BrickConsortium}
+IND http://example.org/chunktograph#OpenSourceCommunity | Open Source Community a http://example.org/chunktograph#Goal
+IND http://example.org/chunktograph#SHACLShape | SHACL Shape a owl:Class {http://example.org/chunktograph#hasDatatype=xsd:string; http://example.org/chunktograph#hasProperty=property; http://example.org/chunktograph#hasUnits=unit; http://example.org/chunktograph#hasValues=value}
+IND http://example.org/chunktograph#UniversityOfCaliforniaLosAngeles | University of California, Los Angeles {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#UniversityOfSouthernDenmark | University of Southern Denmark {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#UniversityOfVirginia | University of Virginia {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#YuvrajAgarwal | Yuvraj Agarwal a http://example.org/chunktograph#Person {http://example.org/chunktograph#hasEmail=<email>; http://example.org/chunktograph#isMemberOf=http://example.org/chunktograph#BrickConsortium}
+IND http://example.org/chunktograph#generate.py | generate.py

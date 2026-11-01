@@ -1,0 +1,84 @@
+{
+  "input_count": 375,
+  "output_count": 365,
+  "dropped": {
+    "pronoun": 3,
+    "self_loop": 2,
+    "empty_predicate": 0,
+    "empty_label": 2,
+    "ungrounded": 3,
+    "total": 10
+  },
+  "predicates": {
+    "before": 169,
+    "after": 164,
+    "morphological_lemma_classes": 164,
+    "merges_example": [
+      {
+        "from": "is",
+        "to": "be"
+      },
+      {
+        "from": "make possible",
+        "to": "possible"
+      },
+      {
+        "from": "has",
+        "to": "have"
+      },
+      {
+        "from": "was",
+        "to": "be"
+      },
+      {
+        "from": "give possibility specify",
+        "to": "possibility specify"
+      },
+      {
+        "from": "are",
+        "to": "be"
+      },
+      {
+        "from": "make use",
+        "to": "use"
+      },
+      {
+        "from": "make dataset series class citizen datum catalog",
+        "to": "dataset series class citizen datum catalog"
+      },
+      {
+        "from": "make use property",
+        "to": "use property"
+      },
+      {
+        "from": "were",
+        "to": "be"
+      }
+    ]
+  },
+  "entities": {
+    "before": 478,
+    "after": 478,
+    "merges_example": []
+  },
+  "label_fixes": [
+    {
+      "before": "anyone can say anything anywhere",
+      "after": ""
+    },
+    {
+      "before": "resource http dereferenceable id",
+      "after": "resource http dereferenceable i d"
+    },
+    {
+      "before": "dcat dcat prev dcat",
+      "after": "dcat prev dcat"
+    },
+    {
+      "before": "he/she",
+      "after": ""
+    }
+  ],
+  "grounding": true,
+  "llm_clustering": true
+}

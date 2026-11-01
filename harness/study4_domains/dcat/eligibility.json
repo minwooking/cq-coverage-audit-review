@@ -1,0 +1,619 @@
+{
+ "domain": "dcat",
+ "bank_sha256": "cf7db0a0ee89badc80562930e3c2b1eb4448cc7ba927feee35d1a5db8e673ace",
+ "n_questions": 42,
+ "eligible_cells": {
+  "A": 28,
+  "B": 26
+ },
+ "eligible_clusters_A_or_B": 33,
+ "eligible_clusters_A_and_B": 21,
+ "eligible_in_both": [
+  "CQD01",
+  "CQD02",
+  "CQD03",
+  "CQD04",
+  "CQD06",
+  "CQD07",
+  "CQD08",
+  "CQD10",
+  "CQD11",
+  "CQD12",
+  "CQD13",
+  "CQD15",
+  "CQD26",
+  "CQD27",
+  "CQD28",
+  "CQD29",
+  "CQD32",
+  "CQD34",
+  "CQD35",
+  "CQD39",
+  "CQD41"
+ ],
+ "eligible_but_no_subgraph": [],
+ "n_jobs": 54,
+ "variants": {
+  "A": {
+   "triples": 1877,
+   "rendered_view_chars": 57053,
+   "graph_sha256": "833ad42cda809ff3c933add4ad9060a6ef878513e28d985bad4b427cefa47e97",
+   "rendered_view_sha256": "1951e89f4da71fb4b7b3a43b883cc012368855768f39627c0652cf40bfa35896"
+  },
+  "B": {
+   "triples": 4271,
+   "rendered_view_chars": 201444,
+   "graph_sha256": "bbdd2e4714b4c6ba194c45fdaebe67653b89a03a0f7a02e6d7abf139e826da97",
+   "rendered_view_sha256": "e3bafb01dc641ce3a9adb3fa59f509eb750c94df88995a3a9c44383e1955fd9f"
+  }
+ },
+ "jobs_sha256": "54d4b190893212ce4317aa8b2faa7eff5c14dcb111fd34a8da8703a969be20e0",
+ "inputs_manifest_sha256": "72a24ce70de594001b1bfe3f928435fa80577ca8a5e0dfa5fec763f48e171176",
+ "cells": {
+  "primary:A:CQD01": {
+   "variant": "A",
+   "cq_id": "CQD01",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD01": {
+   "variant": "B",
+   "cq_id": "CQD01",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD02": {
+   "variant": "A",
+   "cq_id": "CQD02",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD02": {
+   "variant": "B",
+   "cq_id": "CQD02",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD03": {
+   "variant": "A",
+   "cq_id": "CQD03",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD03": {
+   "variant": "B",
+   "cq_id": "CQD03",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD04": {
+   "variant": "A",
+   "cq_id": "CQD04",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD04": {
+   "variant": "B",
+   "cq_id": "CQD04",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD05": {
+   "variant": "A",
+   "cq_id": "CQD05",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD05": {
+   "variant": "B",
+   "cq_id": "CQD05",
+   "eligible": false,
+   "missing_required": [
+    "dcat:DatasetSeries"
+   ]
+  },
+  "primary:A:CQD06": {
+   "variant": "A",
+   "cq_id": "CQD06",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD06": {
+   "variant": "B",
+   "cq_id": "CQD06",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD07": {
+   "variant": "A",
+   "cq_id": "CQD07",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD07": {
+   "variant": "B",
+   "cq_id": "CQD07",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD08": {
+   "variant": "A",
+   "cq_id": "CQD08",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD08": {
+   "variant": "B",
+   "cq_id": "CQD08",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD09": {
+   "variant": "A",
+   "cq_id": "CQD09",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD09": {
+   "variant": "B",
+   "cq_id": "CQD09",
+   "eligible": false,
+   "missing_required": [
+    "DatasetSeries"
+   ]
+  },
+  "primary:A:CQD10": {
+   "variant": "A",
+   "cq_id": "CQD10",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD10": {
+   "variant": "B",
+   "cq_id": "CQD10",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD11": {
+   "variant": "A",
+   "cq_id": "CQD11",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD11": {
+   "variant": "B",
+   "cq_id": "CQD11",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD12": {
+   "variant": "A",
+   "cq_id": "CQD12",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD12": {
+   "variant": "B",
+   "cq_id": "CQD12",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD13": {
+   "variant": "A",
+   "cq_id": "CQD13",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD13": {
+   "variant": "B",
+   "cq_id": "CQD13",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD14": {
+   "variant": "A",
+   "cq_id": "CQD14",
+   "eligible": false,
+   "missing_required": [
+    "Concept"
+   ]
+  },
+  "primary:B:CQD14": {
+   "variant": "B",
+   "cq_id": "CQD14",
+   "eligible": false,
+   "missing_required": [
+    "Concept"
+   ]
+  },
+  "primary:A:CQD15": {
+   "variant": "A",
+   "cq_id": "CQD15",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD15": {
+   "variant": "B",
+   "cq_id": "CQD15",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD16": {
+   "variant": "A",
+   "cq_id": "CQD16",
+   "eligible": false,
+   "missing_required": [
+    "servesDataset"
+   ]
+  },
+  "primary:B:CQD16": {
+   "variant": "B",
+   "cq_id": "CQD16",
+   "eligible": false,
+   "missing_required": [
+    "servesDataset"
+   ]
+  },
+  "primary:A:CQD17": {
+   "variant": "A",
+   "cq_id": "CQD17",
+   "eligible": false,
+   "missing_required": [
+    "record"
+   ]
+  },
+  "primary:B:CQD17": {
+   "variant": "B",
+   "cq_id": "CQD17",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD18": {
+   "variant": "A",
+   "cq_id": "CQD18",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD18": {
+   "variant": "B",
+   "cq_id": "CQD18",
+   "eligible": false,
+   "missing_required": [
+    "qualifiedRelation"
+   ]
+  },
+  "primary:A:CQD19": {
+   "variant": "A",
+   "cq_id": "CQD19",
+   "eligible": false,
+   "missing_required": [
+    "isDistributionOf"
+   ]
+  },
+  "primary:B:CQD19": {
+   "variant": "B",
+   "cq_id": "CQD19",
+   "eligible": false,
+   "missing_required": [
+    "isDistributionOf"
+   ]
+  },
+  "primary:A:CQD20": {
+   "variant": "A",
+   "cq_id": "CQD20",
+   "eligible": false,
+   "missing_required": [
+    "seriesMember"
+   ]
+  },
+  "primary:B:CQD20": {
+   "variant": "B",
+   "cq_id": "CQD20",
+   "eligible": false,
+   "missing_required": [
+    "inSeries",
+    "seriesMember"
+   ]
+  },
+  "primary:A:CQD21": {
+   "variant": "A",
+   "cq_id": "CQD21",
+   "eligible": false,
+   "missing_required": [
+    "nextVersion"
+   ]
+  },
+  "primary:B:CQD21": {
+   "variant": "B",
+   "cq_id": "CQD21",
+   "eligible": false,
+   "missing_required": [
+    "nextVersion"
+   ]
+  },
+  "primary:A:CQD22": {
+   "variant": "A",
+   "cq_id": "CQD22",
+   "eligible": false,
+   "missing_required": [
+    "byteSize"
+   ]
+  },
+  "primary:B:CQD22": {
+   "variant": "B",
+   "cq_id": "CQD22",
+   "eligible": false,
+   "missing_required": [
+    "byteSize"
+   ]
+  },
+  "primary:A:CQD23": {
+   "variant": "A",
+   "cq_id": "CQD23",
+   "eligible": false,
+   "missing_required": [
+    "compressFormat"
+   ]
+  },
+  "primary:B:CQD23": {
+   "variant": "B",
+   "cq_id": "CQD23",
+   "eligible": false,
+   "missing_required": [
+    "compressFormat"
+   ]
+  },
+  "primary:A:CQD24": {
+   "variant": "A",
+   "cq_id": "CQD24",
+   "eligible": false,
+   "missing_required": [
+    "packageFormat"
+   ]
+  },
+  "primary:B:CQD24": {
+   "variant": "B",
+   "cq_id": "CQD24",
+   "eligible": false,
+   "missing_required": [
+    "packageFormat"
+   ]
+  },
+  "primary:A:CQD25": {
+   "variant": "A",
+   "cq_id": "CQD25",
+   "eligible": false,
+   "missing_required": [
+    "endpointURL"
+   ]
+  },
+  "primary:B:CQD25": {
+   "variant": "B",
+   "cq_id": "CQD25",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD26": {
+   "variant": "A",
+   "cq_id": "CQD26",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD26": {
+   "variant": "B",
+   "cq_id": "CQD26",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD27": {
+   "variant": "A",
+   "cq_id": "CQD27",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD27": {
+   "variant": "B",
+   "cq_id": "CQD27",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD28": {
+   "variant": "A",
+   "cq_id": "CQD28",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD28": {
+   "variant": "B",
+   "cq_id": "CQD28",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD29": {
+   "variant": "A",
+   "cq_id": "CQD29",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD29": {
+   "variant": "B",
+   "cq_id": "CQD29",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD30": {
+   "variant": "A",
+   "cq_id": "CQD30",
+   "eligible": false,
+   "missing_required": [
+    "dcat:downloadURL"
+   ]
+  },
+  "primary:B:CQD30": {
+   "variant": "B",
+   "cq_id": "CQD30",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD31": {
+   "variant": "A",
+   "cq_id": "CQD31",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD31": {
+   "variant": "B",
+   "cq_id": "CQD31",
+   "eligible": false,
+   "missing_required": [
+    "dcat:DatasetSeries"
+   ]
+  },
+  "primary:A:CQD32": {
+   "variant": "A",
+   "cq_id": "CQD32",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD32": {
+   "variant": "B",
+   "cq_id": "CQD32",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD33": {
+   "variant": "A",
+   "cq_id": "CQD33",
+   "eligible": false,
+   "missing_required": [
+    "dcat:packageFormat"
+   ]
+  },
+  "primary:B:CQD33": {
+   "variant": "B",
+   "cq_id": "CQD33",
+   "eligible": false,
+   "missing_required": [
+    "dcat:packageFormat"
+   ]
+  },
+  "primary:A:CQD34": {
+   "variant": "A",
+   "cq_id": "CQD34",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD34": {
+   "variant": "B",
+   "cq_id": "CQD34",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD35": {
+   "variant": "A",
+   "cq_id": "CQD35",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD35": {
+   "variant": "B",
+   "cq_id": "CQD35",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD36": {
+   "variant": "A",
+   "cq_id": "CQD36",
+   "eligible": false,
+   "missing_required": [
+    "dcat:downloadURL"
+   ]
+  },
+  "primary:B:CQD36": {
+   "variant": "B",
+   "cq_id": "CQD36",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD37": {
+   "variant": "A",
+   "cq_id": "CQD37",
+   "eligible": false,
+   "missing_required": [
+    "dcat:mediaType"
+   ]
+  },
+  "primary:B:CQD37": {
+   "variant": "B",
+   "cq_id": "CQD37",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD38": {
+   "variant": "A",
+   "cq_id": "CQD38",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD38": {
+   "variant": "B",
+   "cq_id": "CQD38",
+   "eligible": false,
+   "missing_required": [
+    "dcat:landingPage"
+   ]
+  },
+  "primary:A:CQD39": {
+   "variant": "A",
+   "cq_id": "CQD39",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD39": {
+   "variant": "B",
+   "cq_id": "CQD39",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD40": {
+   "variant": "A",
+   "cq_id": "CQD40",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD40": {
+   "variant": "B",
+   "cq_id": "CQD40",
+   "eligible": false,
+   "missing_required": [
+    "dcat:themeTaxonomy"
+   ]
+  },
+  "primary:A:CQD41": {
+   "variant": "A",
+   "cq_id": "CQD41",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD41": {
+   "variant": "B",
+   "cq_id": "CQD41",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:A:CQD42": {
+   "variant": "A",
+   "cq_id": "CQD42",
+   "eligible": true,
+   "missing_required": []
+  },
+  "primary:B:CQD42": {
+   "variant": "B",
+   "cq_id": "CQD42",
+   "eligible": false,
+   "missing_required": [
+    "dcat:prev"
+   ]
+  }
+ }
+}

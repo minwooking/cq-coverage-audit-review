@@ -1,0 +1,558 @@
+{
+ "bank_sha256": "665f5e967fe6e92c8d0dd5322dfc184338ce2c013a6a1f811ae49ea0fe5a525f",
+ "domain": "prov",
+ "variants": {
+  "C": {
+   "n_questions": 41,
+   "eligible": 37,
+   "eligible_but_no_subgraph": [
+    "CQP38"
+   ],
+   "n_jobs": 36,
+   "rendered_chars": 365427,
+   "graph_sha256": "76f669c6bebec63536919c6f117929bc876866b71aed5719cd56ada973f8aee5"
+  },
+  "D": {
+   "n_questions": 41,
+   "eligible": 37,
+   "eligible_but_no_subgraph": [
+    "CQP38"
+   ],
+   "n_jobs": 36,
+   "rendered_chars": 356752,
+   "graph_sha256": "2da0b77421b960694f2cb1d5b11130e21ad8c4467192386d4c2aa1bc29982e89"
+  },
+  "E": {
+   "n_questions": 41,
+   "eligible": 37,
+   "eligible_but_no_subgraph": [],
+   "n_jobs": 37,
+   "rendered_chars": 390950,
+   "graph_sha256": "0e4d3e06b84cccf5d4b7be108578ba5689645ac3e95e226bbf05c0226f253635"
+  }
+ },
+ "cells": {
+  "C": {
+   "CQP01": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP02": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP03": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP04": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP05": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP06": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP07": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP08": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP09": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP10": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP11": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP12": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP13": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP14": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP15": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP16": {
+    "eligible": false,
+    "missing_required": [
+     "wasAttributedTo"
+    ]
+   },
+   "CQP17": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP18": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP19": {
+    "eligible": false,
+    "missing_required": [
+     "generated"
+    ]
+   },
+   "CQP20": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP21": {
+    "eligible": false,
+    "missing_required": [
+     "hadDerivation"
+    ]
+   },
+   "CQP22": {
+    "eligible": false,
+    "missing_required": [
+     "startedAtTime"
+    ]
+   },
+   "CQP23": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP24": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP25": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP26": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP27": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP28": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP29": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP30": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP31": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP32": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP33": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP34": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP35": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP36": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP37": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP38": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP39": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP40": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP41": {
+    "eligible": true,
+    "missing_required": []
+   }
+  },
+  "D": {
+   "CQP01": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP02": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP03": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP04": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP05": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP06": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP07": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP08": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP09": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP10": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP11": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP12": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP13": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP14": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP15": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP16": {
+    "eligible": false,
+    "missing_required": [
+     "wasAttributedTo"
+    ]
+   },
+   "CQP17": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP18": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP19": {
+    "eligible": false,
+    "missing_required": [
+     "generated"
+    ]
+   },
+   "CQP20": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP21": {
+    "eligible": false,
+    "missing_required": [
+     "hadDerivation"
+    ]
+   },
+   "CQP22": {
+    "eligible": false,
+    "missing_required": [
+     "startedAtTime"
+    ]
+   },
+   "CQP23": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP24": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP25": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP26": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP27": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP28": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP29": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP30": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP31": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP32": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP33": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP34": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP35": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP36": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP37": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP38": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP39": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP40": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP41": {
+    "eligible": true,
+    "missing_required": []
+   }
+  },
+  "E": {
+   "CQP01": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP02": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP03": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP04": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP05": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP06": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP07": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP08": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP09": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP10": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP11": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP12": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP13": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP14": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP15": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP16": {
+    "eligible": false,
+    "missing_required": [
+     "wasAttributedTo"
+    ]
+   },
+   "CQP17": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP18": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP19": {
+    "eligible": false,
+    "missing_required": [
+     "generated"
+    ]
+   },
+   "CQP20": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP21": {
+    "eligible": false,
+    "missing_required": [
+     "hadDerivation"
+    ]
+   },
+   "CQP22": {
+    "eligible": false,
+    "missing_required": [
+     "startedAtTime"
+    ]
+   },
+   "CQP23": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP24": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP25": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP26": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP27": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP28": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP29": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP30": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP31": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP32": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP33": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP34": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP35": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP36": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP37": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP38": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP39": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP40": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQP41": {
+    "eligible": true,
+    "missing_required": []
+   }
+  }
+ }
+}

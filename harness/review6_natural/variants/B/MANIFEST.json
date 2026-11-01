@@ -1,0 +1,22 @@
+{
+  "variant_id": "B",
+  "description": "Full structured pipeline: triple extraction, spaCy refinement, SKOS hierarchy, base-IRI unification, LLM typing (chunktograph triples/build/split).",
+  "comparison_role": "exploratory addendum 27 (natural-document corpus)",
+  "input_corpus": "harness/review6_natural/corpus/natural_corpus.json",
+  "input_corpus_sha256": "b4ce971fc00bab8cfb979aa8010876b872c0af554c345b1f54828e5ace97ea13",
+  "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8",
+  "endpoint_host": "<internal-host> via SSH tunnel (request-only)",
+  "graph_file": "graph_B.ttl",
+  "graph_sha256": "e3dae57dcf94fc6f2b3c2e6de47b5e3761ae646620e14a4b8bc9f9a05c9916bb",
+  "rendered_view_file": "rendered_view.txt",
+  "rendered_view_sha256": "3848644a13b6d5f248107540f08691db8260ae3f223fda788177e39a44bc2736",
+  "rendered_view_lines": 3175,
+  "rendered_view_chars": 1053272,
+  "rendering_spec_sha256": "eb0399af5152ac001074f1a0c27b23652a42a2f9ceeebf95a669abf703ec0a3e",
+  "triples": 21080,
+  "owl_classes": 12,
+  "named_individuals": 2522,
+  "exploratory": true,
+  "generated_utc": "2026-10-17T09:28:41+00:00",
+  "note": "Addendum 27 exploratory artifact built from natural documentation; not a holdout result."
+}

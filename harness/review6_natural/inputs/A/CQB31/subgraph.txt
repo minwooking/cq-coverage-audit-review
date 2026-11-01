@@ -1,0 +1,116 @@
+http://example.org/chunktograph#AHU | AHU
+http://example.org/chunktograph#ASHRAE223 | ASHRAE 223
+http://example.org/chunktograph#ASHRAE223P | ASHRAE 223P
+http://example.org/chunktograph#AirHandlingUnit | Air Handling Unit < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#Air_Handler_Unit | Air_Handler_Unit
+http://example.org/chunktograph#Air_Handling_Unit | Air_Handling_Unit :: An equipment class used in Brick+ with isPointOf relationship
+http://example.org/chunktograph#Brick | Brick < http://example.org/chunktograph#BrickSchema,http://example.org/chunktograph#Entity :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities.
+http://example.org/chunktograph#BrickConsortium | Brick Consortium
+http://example.org/chunktograph#BrickDocumentation | Brick Documentation
+http://example.org/chunktograph#BrickRelease | Brick Release < http://example.org/chunktograph#BrickSchema
+http://example.org/chunktograph#BrickSchema | Brick Schema < http://example.org/chunktograph#BrickDocumentation,http://example.org/chunktograph#Software
+http://example.org/chunktograph#BrickSchemaSpecification | Brick Schema Specification
+http://example.org/chunktograph#BrickShapeNamespace | BrickShape Namespace :: The abstract RDF namespace schema/1.1/BrickShape, commonly abbreviated as bsh
+http://example.org/chunktograph#Brick_v1.1 | Brick v1.1
+http://example.org/chunktograph#CaseStudy | Case Study
+http://example.org/chunktograph#Chiller | Chiller
+http://example.org/chunktograph#Class | Class < http://example.org/chunktograph#Entity :: A class is a category of entities defined by a particular shared purpose and properties.
+http://example.org/chunktograph#EncapsulationMethod | Encapsulation Method < http://example.org/chunktograph#BrickSchema
+http://example.org/chunktograph#Entity | Entity :: An abstraction of any physical, logical or virtual item; the actual "things" in a building.
+http://example.org/chunktograph#HVAC | HVAC
+http://example.org/chunktograph#Lighting | Lighting
+http://example.org/chunktograph#MechanicalEquipment | Mechanical Equipment
+http://example.org/chunktograph#Node | Node
+http://example.org/chunktograph#OWLRL | OWL-RL
+http://example.org/chunktograph#PIP | pip
+http://example.org/chunktograph#PySHACL | pyshacl
+http://example.org/chunktograph#PythonFile | Python File
+http://example.org/chunktograph#RDFClassHierarchy | RDF Class Hierarchy < http://example.org/chunktograph#BrickSchema
+http://example.org/chunktograph#RealEstateCore | RealEstateCore
+http://example.org/chunktograph#RealEstateCore_v3.1 | RealEstateCore v3.1
+http://example.org/chunktograph#Reasonable | reasonable (OWL 2 RL reasoner)
+http://example.org/chunktograph#RelationshipSet | Relationship Set < http://example.org/chunktograph#BrickSchema
+http://example.org/chunktograph#SemanticVersioning | Semantic Versioning < http://example.org/chunktograph#BrickSchema
+http://example.org/chunktograph#Shifty | shifty
+http://example.org/chunktograph#Software | Software
+http://example.org/chunktograph#TechnicalCommittee | Technical Committee
+http://example.org/chunktograph#air | air
+http://example.org/chunktograph#discharge | discharge
+http://example.org/chunktograph#ref_schema | ref-schema
+http://example.org/chunktograph#water | water
+OP http://example.org/chunktograph#determinesForVote dom:http://example.org/chunktograph#TechnicalCommittee rng:http://example.org/chunktograph#BrickSchemaSpecification
+OP http://example.org/chunktograph#develops dom:http://example.org/chunktograph#BrickConsortium rng:http://example.org/chunktograph#BrickSchemaSpecification
+OP http://example.org/chunktograph#ensuresNotEncumbered dom:http://example.org/chunktograph#BrickConsortium rng:http://example.org/chunktograph#BrickSchemaSpecification
+OP http://example.org/chunktograph#evangelizes dom:http://example.org/chunktograph#BrickConsortium rng:http://example.org/chunktograph#BrickSchemaSpecification
+OP http://example.org/chunktograph#hasAlignment dom:http://example.org/chunktograph#BrickSchema
+OP http://example.org/chunktograph#hasAlignmentWith dom:http://example.org/chunktograph#BrickSchema
+OP http://example.org/chunktograph#hasBrickSchema dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickSchema
+OP http://example.org/chunktograph#hasCompatibilityWith dom:http://example.org/chunktograph#BrickSchema,http://example.org/chunktograph#RealEstateCore rng:http://example.org/chunktograph#ASHRAE223
+OP http://example.org/chunktograph#hasCompiledBrickTTL rng:http://example.org/chunktograph#BrickSchema
+OP http://example.org/chunktograph#hasComplementaryPart dom:http://example.org/chunktograph#BrickSchema,http://example.org/chunktograph#RealEstateCore rng:http://example.org/chunktograph#BrickSchema,http://example.org/chunktograph#RealEstateCore
+OP http://example.org/chunktograph#hasDeprecatedPart dom:http://example.org/chunktograph#BrickSchema,http://example.org/chunktograph#RealEstateCore rng:http://example.org/chunktograph#BrickSchema,http://example.org/chunktograph#RealEstateCore
+OP http://example.org/chunktograph#hasDomain dom:http://example.org/chunktograph#BrickSchema,http://example.org/chunktograph#RealEstateCore rng:owl:Class
+OP http://example.org/chunktograph#hasEquipment dom:http://example.org/chunktograph#AirHandlingUnit
+OP http://example.org/chunktograph#hasExtension dom:http://example.org/chunktograph#BrickSchema
+OP http://example.org/chunktograph#hasFeature dom:http://example.org/chunktograph#BrickSchema rng:owl:Class
+OP http://example.org/chunktograph#hasHarmonizedWith dom:http://example.org/chunktograph#BrickSchema rng:http://example.org/chunktograph#RealEstateCore
+OP http://example.org/chunktograph#hasMetadataSchema dom:http://example.org/chunktograph#Brick rng:http://example.org/chunktograph#Brick
+OP http://example.org/chunktograph#hasReasoner dom:http://example.org/chunktograph#BrickSchema
+OP http://example.org/chunktograph#hasSchemaGenerationScript dom:http://example.org/chunktograph#BrickSchema rng:http://example.org/chunktograph#PythonFile
+OP http://example.org/chunktograph#hasStandard dom:http://example.org/chunktograph#BrickSchema
+OP http://example.org/chunktograph#hasSystem dom:http://example.org/chunktograph#BrickSchema
+OP http://example.org/chunktograph#hasUnit rng:qudt:Unit
+OP http://example.org/chunktograph#isComposedOf dom:http://example.org/chunktograph#AirHandlingUnit
+OP http://example.org/chunktograph#isFedBy dom:http://example.org/chunktograph#Entity rng:http://example.org/chunktograph#AirHandlingUnit,http://example.org/chunktograph#Entity
+OP http://example.org/chunktograph#overseesDevelopment dom:http://example.org/chunktograph#TechnicalCommittee rng:http://example.org/chunktograph#BrickSchemaSpecification
+DP http://example.org/chunktograph#hasTargetReleaseDate dom:http://example.org/chunktograph#BrickSchema1_3
+DP http://example.org/chunktograph#hasUnit rng:qudt:Unit
+IND http://example.org/chunktograph#AHU | AHU a http://example.org/chunktograph#AirHandlingUnit,owl:Class {http://example.org/chunktograph#aliasOf=http://example.org/chunktograph#Air_Handling_Unit; owl:equivalentClass=http://example.org/chunktograph#Air_Handler_Unit; owl:equivalentClass=http://example.org/chunktograph#Air_Handling_Unit}
+IND http://example.org/chunktograph#ASHRAE223P | ASHRAE 223P a http://example.org/chunktograph#Standard,owl:Class
+IND http://example.org/chunktograph#AccessControl | Access Control a http://example.org/chunktograph#BuildingManagementSystem,http://example.org/chunktograph#BuildingSystem
+IND http://example.org/chunktograph#AkshayJohar | Akshay Johar {http://example.org/chunktograph#hasEmail=; http://example.org/chunktograph#hasRole=Member}
+IND http://example.org/chunktograph#Alignments | Alignments :: Brick 1.2.0 also includes alignments with several external ontologies and metadata representations.
+IND http://example.org/chunktograph#BACnet | BACnet a http://example.org/chunktograph#Standard
+IND http://example.org/chunktograph#Brick | Brick a owl:Class :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities. {http://example.org/chunktograph#hasBrickSupport=http://example.org/chunktograph#Brick; http://example.org/chunktograph#isUsedIn=http://example.org/chunktograph#ASHRAE223P; rdfs:subClassOf=http://example.org/chunktograph#BrickSchema; rdfs:subClassOf=http://example.org/chunktograph#Entity}
+IND http://example.org/chunktograph#Brick-REC-alignment.ttl | Brick-REC-alignment.ttl {http://example.org/chunktograph#isAlignmentFileOf=http://example.org/chunktograph#Brick_v1.1; http://example.org/chunktograph#isAlignmentFileOf=http://example.org/chunktograph#RealEstateCore_v3.1}
+IND http://example.org/chunktograph#Brick-REC-nodevice.rdf | Brick-REC-nodevice.rdf {http://example.org/chunktograph#isInputTo=http://example.org/chunktograph#generate.py}
+IND http://example.org/chunktograph#BrickConsortium | Brick Consortium a owl:Class
+IND http://example.org/chunktograph#BrickConsortiumInc | Brick Consortium, Inc a http://example.org/chunktograph#BrickConsortium,http://example.org/chunktograph#NonProfitMembershipCorporation {http://example.org/chunktograph#addresses=an important industry and societal need by helping to make data of the built environment interoperable; http://example.org/chunktograph#develops=http://example.org/chunktograph#BrickSchemaSpecification; http://example.org/chunktograph#ensuresNotEncumbered=http://example.org/chunktograph#BrickSchemaSpecification; http://example.org/chunktograph#evangelizes=http://example.org/chunktograph#BrickSchemaSpecification; http://example.org/chunktograph#hasContact=Erik Paulson; http://example.org/chunktograph#hasEvent=a virtual open house in 2021; http://example.org/chunktograph#hasMembershipForm=a membership form is available; http://example.org/chunktograph#hasPurpose=to encourage the research and development of Brick Schema Specifications for the built environment and any supporting tooling, documentation, and best practices necessary to promote Brick; http://example.org/chunktograph#hasRule=rules of the consortium are available for review; http://example.org/chunktograph#isMadeUpOf=researchers, technology providers, integrators, and building operators}
+IND http://example.org/chunktograph#BrickSchema1_3 | Brick Schema 1.3 a http://example.org/chunktograph#BrickSchema {http://example.org/chunktograph#hasStandard=http://example.org/chunktograph#ASHRAE223P; http://example.org/chunktograph#hasStandard=http://example.org/chunktograph#BACnet; http://example.org/chunktograph#hasSystem=http://example.org/chunktograph#AccessControl; http://example.org/chunktograph#hasSystem=http://example.org/chunktograph#Chiller; http://example.org/chunktograph#hasSystem=http://example.org/chunktograph#Electrical; http://example.org/chunktograph#hasSystem=http://example.org/chunktograph#FireProtection; http://example.org/chunktograph#hasSystem=http://example.org/chunktograph#HVAC; http://example.org/chunktograph#hasSystem=http://example.org/chunktograph#HeatPump; http://example.org/chunktograph#hasSystem=http://example.org/chunktograph#Lighting; http://example.org/chunktograph#hasSystem=http://example.org/chunktograph#Occupancy; http://example.org/chunktograph#hasTargetReleaseDate=August 30, 2022; http://example.org/chunktograph#hasVersion=1.3; http://example.org/chunktograph#releaseDate=2022-02-28}
+IND http://example.org/chunktograph#BrickSchemaInstance | Brick Schema: Building Blocks for Smart Buildings a http://example.org/chunktograph#BrickSchema {http://example.org/chunktograph#hasFeature=http://example.org/chunktograph#MergeFeatureInstance; http://example.org/chunktograph#hasSourceText=Brick Schema: Building Blocks for Smart Buildings}
+IND http://example.org/chunktograph#BrickValidation | Brick Compliance (Brick validation) a http://example.org/chunktograph#ValidationStep {http://example.org/chunktograph#hasIterationLimit=3}
+IND http://example.org/chunktograph#Brick_v1.1 | Brick v1.1 a owl:Class
+IND http://example.org/chunktograph#Brick_v1.3.0 | Brick v1.3.0 {http://example.org/chunktograph#hasUnitTests=http://example.org/chunktograph#ref_schema_support}
+IND http://example.org/chunktograph#CPlusPlusCompiler | C++ Compiler {http://example.org/chunktograph#isNotStrictlyNecessaryForBrickBuild=http://example.org/chunktograph#BrickSchema}
+IND http://example.org/chunktograph#CaseStudy3 | Case study 3: An Air Handling Unit (AHU) a http://example.org/chunktograph#CaseStudy {http://example.org/chunktograph#hasBrickEntities=25; http://example.org/chunktograph#hasRDFLength=167; http://example.org/chunktograph#hasSuccessRate=0.98; http://example.org/chunktograph#hasValidationStep=http://example.org/chunktograph#BrickValidation; http://example.org/chunktograph#hasValidationStep=http://example.org/chunktograph#RDFValidation; http://example.org/chunktograph#hasValidationStep=http://example.org/chunktograph#SHACLValidation; http://example.org/chunktograph#usesLLM=http://example.org/chunktograph#gpt4oMini}
+IND http://example.org/chunktograph#Chiller | Chiller a http://example.org/chunktograph#BuildingSystem,owl:Class
+IND http://example.org/chunktograph#Electrical | Electrical a http://example.org/chunktograph#BuildingSystem
+IND http://example.org/chunktograph#Elevator | Elevator a http://example.org/chunktograph#BuildingManagementSystem
+IND http://example.org/chunktograph#ErikPaulson | Erik Paulson a http://example.org/chunktograph#Person {http://example.org/chunktograph#hasEmail=; http://example.org/chunktograph#hasRole=Member}
+IND http://example.org/chunktograph#FireProtection | Fire Protection a http://example.org/chunktograph#BuildingSystem
+IND http://example.org/chunktograph#GabrielFierro | Gabriel Fierro {http://example.org/chunktograph#hasEmail=<email>; http://example.org/chunktograph#hasRole=Steering Committee Member}
+IND http://example.org/chunktograph#HVAC | HVAC a http://example.org/chunktograph#BuildingManagementSystem,http://example.org/chunktograph#BuildingSystem,owl:Class
+IND http://example.org/chunktograph#HeatPump | Heat Pump a http://example.org/chunktograph#BuildingSystem
+IND http://example.org/chunktograph#IndoorClimate | Indoor climate a http://example.org/chunktograph#IoTDevice
+IND http://example.org/chunktograph#JoelBender | Joel Bender {http://example.org/chunktograph#hasEmail=; http://example.org/chunktograph#hasRole=Member}
+IND http://example.org/chunktograph#LevenshteinSearch | Levenshtein-search {http://example.org/chunktograph#isNotStrictlyNecessaryForBrickBuild=http://example.org/chunktograph#BrickSchema}
+IND http://example.org/chunktograph#Lighting | Lighting a http://example.org/chunktograph#BuildingSystem,owl:Class
+IND http://example.org/chunktograph#Makefile | Makefile {http://example.org/chunktograph#isUsedFor=http://example.org/chunktograph#BrickSchema}
+IND http://example.org/chunktograph#Occupancy | Occupancy a http://example.org/chunktograph#BuildingSystem
+IND http://example.org/chunktograph#PeopleCounting | People counting a http://example.org/chunktograph#IoTDevice
+IND http://example.org/chunktograph#PySHACL | pyshacl a http://example.org/chunktograph#SHACLEngine,owl:Class {http://example.org/chunktograph#hasEngine=http://example.org/chunktograph#PySHACL}
+IND http://example.org/chunktograph#RDFValidation | Correctness of the RDF Generation (RDF validation) a http://example.org/chunktograph#ValidationStep {http://example.org/chunktograph#hasIterationLimit=3}
+IND http://example.org/chunktograph#REC | REC :: An emerging ontology for real estate management. {rdfs:subClassOf=http://example.org/chunktograph#Alignments}
+IND http://example.org/chunktograph#SHACLValidation | Coherence with Building Description (SHACL validation) a http://example.org/chunktograph#ValidationStep {http://example.org/chunktograph#hasIterationLimit=3}
+IND http://example.org/chunktograph#Shifty | shifty a http://example.org/chunktograph#SHACLEngine,owl:Class {http://example.org/chunktograph#hasEngine=http://example.org/chunktograph#Shifty}
+IND http://example.org/chunktograph#TechnicalCommittee | Technical Committee a http://example.org/chunktograph#TechnicalCommittee,owl:Class {http://example.org/chunktograph#determinesForVote=http://example.org/chunktograph#BrickSchemaSpecification; http://example.org/chunktograph#overseesDevelopment=http://example.org/chunktograph#BrickSchemaSpecification; http://example.org/chunktograph#proposes=new areas for the Consortium to work in}
+IND http://example.org/chunktograph#air | air a http://example.org/chunktograph#SubstanceTag,http://example.org/chunktograph#Tag,http://example.org/chunktograph#air,owl:Class {http://example.org/chunktograph#hasTagValue=air}
+IND http://example.org/chunktograph#brickschema | brickschema a http://example.org/chunktograph#BrickSchema
+IND http://example.org/chunktograph#discharge | discharge a http://example.org/chunktograph#Tag,http://example.org/chunktograph#discharge,owl:Class {http://example.org/chunktograph#hasTagValue=discharge}
+IND http://example.org/chunktograph#generate.py | generate.py
+IND http://example.org/chunktograph#generate_brick_py | generate_brick.py a http://example.org/chunktograph#PythonFile :: Script to compile Brick.ttl {http://example.org/chunktograph#hasSchemaGenerationScript=http://example.org/chunktograph#BrickSchema}
+IND http://example.org/chunktograph#gpt4oMini | gpt-4o-mini a http://example.org/chunktograph#LLM
+IND http://example.org/chunktograph#ref_schema_support | ref-schema support
+IND http://example.org/chunktograph#validate_model | validate_model.py a http://example.org/chunktograph#Module
+IND http://example.org/chunktograph#validate_schema | validate_schema.py node a http://example.org/chunktograph#Node {http://example.org/chunktograph#isInstanceOf=http://example.org/chunktograph#validate_model}
+IND http://example.org/chunktograph#water | water a http://example.org/chunktograph#SubstanceTag,http://example.org/chunktograph#Tag,http://example.org/chunktograph#water,owl:Class {http://example.org/chunktograph#hasTagValue=water}

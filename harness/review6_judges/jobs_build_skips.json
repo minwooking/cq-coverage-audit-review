@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "manifest_sha256": "46277713c3828da145278c6e4622c8c0a84f193c7e58c9a91489e2d918ceaa32",
+    "bank_sha256": "993c5e1164540dce0f2f9bf2e6ed397cf45910da7889300feeaad6543edb8507",
+    "holdout_rubric_string_sha256": "85e208799f10b756125c524dc43222064ac946f3c01f000ee03cf331800cee72",
+    "dev_judge_system_sha256": "288b62cad65132777849d76dfb8a724251cc1b4139f750eb2e86dcf30f561e9f",
+    "dev_layer1_rubric_sha256": "193f4f57ecf20dff1c7434db7247d7a405e1ff61f99b83feebb01f3873112315",
+    "dev_eval_json_sha256": "780a1b2e721d18998521112350f8dfec0e3f74bf611e43e3c89fd88465d92b60",
+    "dev_cq_json_sha256": "a0063d15e05ecb826bdba20218be8ab5b0de38a15b3a2144812a2ec6a7af61aa",
+    "dev_eval_ab_py_sha256": "19c5aa4d2464ec05e5348053e167088b0b0509587795d492a6c495bd739e845d",
+    "holdout_cells_jsonl_sha256": "bfd5b3c83981c8a6ec970b93f460bab7409daf047a2e048bfaa90b5adfd0d4af",
+    "n_jobs": 305,
+    "n_by_study": {
+      "holdout_subgraph": 182,
+      "holdout_control": 27,
+      "dev": 96
+    },
+    "n_controls_by_kind": {
+      "ablated_control": 15,
+      "preserved_control": 12
+    },
+    "skips": {
+      "holdout_subgraph": 6,
+      "holdout_control": 9,
+      "dev": 0
+    },
+    "jobs_jsonl_sha256": "30190f072caa33a32b77586c76b60d5debf68febae3749bd27e0a483e8be524c"
+  },
+  "skips": {
+    "holdout_subgraph": [
+      {
+        "cell_id": "primary:A:CQB27",
+        "reason": "no subgraph (not_applicable); the full-view fallback does not fit a 65,536-token window"
+      },
+      {
+        "cell_id": "primary:B:CQB32",
+        "reason": "no subgraph (not_applicable); the full-view fallback does not fit a 65,536-token window"
+      },
+      {
+        "cell_id": "primary:C:CQB32",
+        "reason": "no subgraph (not_applicable); the full-view fallback does not fit a 65,536-token window"
+      },
+      {
+        "cell_id": "primary:D:CQB32",
+        "reason": "no subgraph (not_applicable); the full-view fallback does not fit a 65,536-token window"
+      },
+      {
+        "cell_id": "primary:E:CQB32",
+        "reason": "no subgraph (not_applicable); the full-view fallback does not fit a 65,536-token window"
+      },
+      {
+        "cell_id": "primary:F:CQB32",
+        "reason": "no subgraph (not_applicable); the full-view fallback does not fit a 65,536-token window"
+      }
+    ],
+    "holdout_control": [
+      {
+        "cell_id": "ablated_control:A:CQB17",
+        "reason": "grounding span not in the subgraph: ablated control cannot remove supporting span for CQB17 (grounding='rec:locatedIn (sh:path)')"
+      },
+      {
+        "cell_id": "ablated_control:B:CQB14",
+        "reason": "grounding span not in the subgraph: ablated control cannot remove supporting span for CQB14 (grounding='prop:hasLocation')"
+      },
+      {
+        "cell_id": "ablated_control:B:CQB20",
+        "reason": "grounding span not in the subgraph: ablated control cannot remove supporting span for CQB20 (grounding='prop:lastKnownValue')"
+      },
+      {
+        "cell_id": "ablated_control:C:CQB33",
+        "reason": "grounding span not in the subgraph: ablated control cannot remove supporting span for CQB33 (grounding='prop:hasSubMeter')"
+      },
+      {
+        "cell_id": "ablated_control:D:CQB08",
+        "reason": "grounding span not in the subgraph: ablated control cannot remove supporting span for CQB08 (grounding='children:Point')"
+      },
+      {
+        "cell_id": "ablated_control:D:CQB13",
+        "reason": "grounding span not in the subgraph: ablated control cannot remove supporting span for CQB13 (grounding='inverse:hasPoint~isPointOf')"
+      },
+      {
+        "cell_id": "ablated_control:D:CQB20",
+        "reason": "grounding span not in the subgraph: ablated control cannot remove supporting span for CQB20 (grounding='prop:lastKnownValue')"
+      },
+      {
+        "cell_id": "ablated_control:D:CQB24",
+        "reason": "grounding span not in the subgraph: ablated control cannot remove supporting span for CQB24 (grounding='prop:hasQuantity')"
+      },
+      {
+        "cell_id": "ablated_control:E:CQB18",
+        "reason": "grounding span not in the subgraph: ablated control cannot remove supporting span for CQB18 (grounding='prop:hasAssociatedTag')"
+      }
+    ],
+    "dev": []
+  }
+}

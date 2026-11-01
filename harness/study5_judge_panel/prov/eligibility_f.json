@@ -1,0 +1,187 @@
+{
+ "domain": "prov",
+ "built": true,
+ "bank_sha256": "665f5e967fe6e92c8d0dd5322dfc184338ce2c013a6a1f811ae49ea0fe5a525f",
+ "n_questions": 41,
+ "eligible_F": 37,
+ "eligible_but_no_subgraph": [],
+ "n_jobs": 37,
+ "F_triples": 8671,
+ "F_rendered_chars": 389561,
+ "graph_sha256": "b8299950189e3873368f2319badc7d1eb519ccd42d66b74ccb906e1ce8256836",
+ "rendered_view_sha256": "0a31eef67a38b1dd137342c4aad42f92c2b6376ce64b36e5e13783ab81661400",
+ "cells": {
+  "CQP01": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP02": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP03": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP04": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP05": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP06": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP07": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP08": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP09": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP10": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP11": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP12": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP13": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP14": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP15": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP16": {
+   "eligible": false,
+   "missing_required": [
+    "wasAttributedTo"
+   ]
+  },
+  "CQP17": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP18": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP19": {
+   "eligible": false,
+   "missing_required": [
+    "generated"
+   ]
+  },
+  "CQP20": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP21": {
+   "eligible": false,
+   "missing_required": [
+    "hadDerivation"
+   ]
+  },
+  "CQP22": {
+   "eligible": false,
+   "missing_required": [
+    "startedAtTime"
+   ]
+  },
+  "CQP23": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP24": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP25": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP26": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP27": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP28": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP29": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP30": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP31": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP32": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP33": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP34": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP35": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP36": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP37": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP38": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP39": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP40": {
+   "eligible": true,
+   "missing_required": []
+  },
+  "CQP41": {
+   "eligible": true,
+   "missing_required": []
+  }
+ }
+}

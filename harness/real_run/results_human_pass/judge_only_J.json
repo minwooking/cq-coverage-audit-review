@@ -1,0 +1,96 @@
+{
+ "source": "cells.jsonl primary cells; J only (no labels)",
+ "coverage_J": {
+  "A": {
+   "pct": 57.97,
+   "ci_lo": 39.13,
+   "ci_hi": 75.36,
+   "n_cells": 23
+  },
+  "B": {
+   "pct": 68.69,
+   "ci_lo": 54.55,
+   "ci_hi": 79.8,
+   "n_cells": 33
+  },
+  "C": {
+   "pct": 68.69,
+   "ci_lo": 52.53,
+   "ci_hi": 80.81,
+   "n_cells": 33
+  },
+  "D": {
+   "pct": 59.6,
+   "ci_lo": 43.43,
+   "ci_hi": 73.74,
+   "n_cells": 33
+  },
+  "E": {
+   "pct": 66.67,
+   "ci_lo": 50.51,
+   "ci_hi": 79.8,
+   "n_cells": 33
+  },
+  "F": {
+   "pct": 68.69,
+   "ci_lo": 53.54,
+   "ci_hi": 80.81,
+   "n_cells": 33
+  }
+ },
+ "A_to_B_J": {
+  "n_cq": 23,
+  "delta": 0.565,
+  "ci_lo": 0.043,
+  "ci_hi": 1.13,
+  "ci90": [
+   0.13,
+   1.043
+  ],
+  "wilcoxon_p": 0.04412135564363152,
+  "n_nonzero": 16,
+  "strict_ties_ci": [
+   0.043,
+   1.087
+  ],
+  "lattice_step": 0.0435
+ },
+ "coverage_J_on_A_cq_set": {
+  "A": {
+   "pct": 57.97,
+   "ci_lo": 39.13,
+   "ci_hi": 75.36,
+   "n_cells": 23
+  },
+  "B": {
+   "pct": 76.81,
+   "ci_lo": 60.87,
+   "ci_hi": 86.96,
+   "n_cells": 23
+  },
+  "C": {
+   "pct": 75.36,
+   "ci_lo": 56.52,
+   "ci_hi": 88.41,
+   "n_cells": 23
+  },
+  "D": {
+   "pct": 69.57,
+   "ci_lo": 50.72,
+   "ci_hi": 84.06,
+   "n_cells": 23
+  },
+  "E": {
+   "pct": 73.91,
+   "ci_lo": 55.07,
+   "ci_hi": 86.96,
+   "n_cells": 23
+  },
+  "F": {
+   "pct": 75.36,
+   "ci_lo": 57.97,
+   "ci_hi": 86.96,
+   "n_cells": 23
+  }
+ }
+}

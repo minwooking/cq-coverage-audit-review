@@ -1,0 +1,13 @@
+# Extensions and Alignments
+
+The module makes it simple to list and load in extensions to the Brick schema, in addition to the alignments between Brick and other ontologies. These extensions are distributed as Turtle files on the Brick GitHub repository, but they are also pre-loaded into the brickschema module.
+
+## Listing and Loading Extensions
+
+Extensions provide additional class definitions, rules and other augmentations to the Brick ontology.
+
+## Listing and Loading Alignments
+
+Alignments define the nature of Brick's relationship to other RDF-based ontologies. For example, the Building Topology Ontology defines several location classes that are similar to Brick's; the alignment between BOT and Brick allows graphs defined in one language to be understood in the other.
+
+Several Brick alignments are packaged with the brickschema module. These can be listed and dynamically loaded into a graph

@@ -1,0 +1,108 @@
+http://example.org/chunktograph#ActuationPoint | Actuation Point < http://example.org/chunktograph#VirtualEntity
+http://example.org/chunktograph#Brick | Brick < http://example.org/chunktograph#Entity :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities.
+http://example.org/chunktograph#BrickClass | Brick Class < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickDocumentation | Brick Documentation
+http://example.org/chunktograph#BrickEntity | Brick Entity
+http://example.org/chunktograph#BrickEntityProperty | Brick Entity Property
+http://example.org/chunktograph#BrickLLM | BrickLLM
+http://example.org/chunktograph#BrickLocationClass | Brick Location Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickLocationDefinition | Brick Location Definition
+http://example.org/chunktograph#BrickMigrationTool | Brick Migration Tool < http://example.org/chunktograph#Entity :: A tool for migrating Brick models from older versions of the Brick ontology to newer versions.
+http://example.org/chunktograph#BrickModel | Brick Model < http://example.org/chunktograph#Entity :: A Brick model of a building is a labeled, directed graph in which the nodes are entities and the edges are relationships.
+http://example.org/chunktograph#BrickProperty | Brick Property < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#Brickschema | Brickschema
+http://example.org/chunktograph#Building | Building < http://example.org/chunktograph#PhysicalEntity,http://example.org/chunktograph#SpatialElement
+http://example.org/chunktograph#BuildingEntity | Building Entity
+http://example.org/chunktograph#BuildingTopologyOntology | Building Topology Ontology < http://example.org/chunktograph#Brick
+http://example.org/chunktograph#Class | Class < http://example.org/chunktograph#Entity,http://example.org/chunktograph#LogicalEntity :: A class is a category of entities defined by a particular shared purpose and properties.
+http://example.org/chunktograph#CommercialEntity | Commercial Entity
+http://example.org/chunktograph#ComputedPoint | Computed Point < http://example.org/chunktograph#VirtualEntity
+http://example.org/chunktograph#Controller | Controller < http://example.org/chunktograph#PhysicalEntity
+http://example.org/chunktograph#Entity | Entity :: An abstraction of any physical, logical or virtual item; the actual "things" in a building.
+http://example.org/chunktograph#EntityIdentificationNode | Entity identification node < http://example.org/chunktograph#Node
+http://example.org/chunktograph#EntityProperty | Entity Property
+http://example.org/chunktograph#Floor | Floor < http://example.org/chunktograph#PhysicalEntity,http://example.org/chunktograph#SpatialElement
+http://example.org/chunktograph#HVACZone | HVAC Zone < http://example.org/chunktograph#LogicalEntity
+http://example.org/chunktograph#Haystack | Haystack < http://example.org/chunktograph#Entity :: Haystack defines entities as a set of value tags (representing key-value pairs) and marker tags (singular annotations).
+http://example.org/chunktograph#HaystackModel | Haystack Model < http://example.org/chunktograph#Entity :: Haystack models have seen increasing adoption, the design of the Haystack data model has several intrinsic issues that limit its consistency and interpretability.
+http://example.org/chunktograph#HvacZone | HVAC Zone < http://example.org/chunktograph#LogicalEntity
+http://example.org/chunktograph#IctEquipment | ICT Equipment < http://example.org/chunktograph#PhysicalEntity
+http://example.org/chunktograph#IndustryFoundationClasses | Industry Foundation Classes
+http://example.org/chunktograph#LightingZone | Lighting Zone < http://example.org/chunktograph#LogicalEntity
+http://example.org/chunktograph#Location | Location :: Root class for location entities in Brick ontology.
+http://example.org/chunktograph#LogicalEntity | Logical Entity < http://example.org/chunktograph#Entity :: Entities or collections of entities that are defined by a set of rules.
+http://example.org/chunktograph#MechanicalEquipment | Mechanical Equipment < http://example.org/chunktograph#PhysicalEntity
+http://example.org/chunktograph#NetworkedDevice | Networked Device < http://example.org/chunktograph#PhysicalEntity
+http://example.org/chunktograph#Node | Node
+http://example.org/chunktograph#PhysicalEntity | Physical Entity < http://example.org/chunktograph#Entity :: Anything that has a physical presence in the world.
+http://example.org/chunktograph#ProjectHaystack | Project Haystack
+http://example.org/chunktograph#PropertyValue | Property Value
+http://example.org/chunktograph#Room | Room < http://example.org/chunktograph#PhysicalEntity,http://example.org/chunktograph#SpatialElement
+http://example.org/chunktograph#SHACLShape | SHACL Shape
+http://example.org/chunktograph#SHACLValidationTool | SHACL Validation Tool < http://example.org/chunktograph#Entity :: A tool for validating usage of the Brick ontology using SHACL.
+http://example.org/chunktograph#SensingPoint | Sensing Point < http://example.org/chunktograph#VirtualEntity
+http://example.org/chunktograph#Sensor | Sensor
+http://example.org/chunktograph#SensorEntity | Sensor entity
+http://example.org/chunktograph#SpatialElement | Spatial Element < http://example.org/chunktograph#PhysicalEntity
+http://example.org/chunktograph#StatusPoint | Status Point < http://example.org/chunktograph#VirtualEntity
+http://example.org/chunktograph#StructuredWorkflow | structured workflow
+http://example.org/chunktograph#Subsystem | Subsystem
+http://example.org/chunktograph#Tag | Tag < http://example.org/chunktograph#LogicalEntity :: An atomic fact or attribute of an entity.
+http://example.org/chunktograph#TagSet | Tag Set < http://example.org/chunktograph#Entity
+http://example.org/chunktograph#VirtualEntity | Virtual Entity < http://example.org/chunktograph#Entity :: Anything whose representation is based in software.
+OP http://example.org/chunktograph#aggregate rng:http://example.org/chunktograph#PropertyValue
+OP http://example.org/chunktograph#aggregationFunction dom:http://example.org/chunktograph#PropertyValue
+OP http://example.org/chunktograph#area rng:http://example.org/chunktograph#PropertyValue
+OP http://example.org/chunktograph#containsEntity dom:http://example.org/chunktograph#Entity rng:http://example.org/chunktograph#Entity
+OP http://example.org/chunktograph#controls dom:http://example.org/chunktograph#Controller rng:http://example.org/chunktograph#PhysicalEntity
+OP http://example.org/chunktograph#hasBrickLocation dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickLocationClass
+OP http://example.org/chunktograph#hasBrickProperty dom:http://example.org/chunktograph#BrickDocumentation rng:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasContext rng:http://example.org/chunktograph#BuildingEntity
+OP http://example.org/chunktograph#hasDataSource rng:http://example.org/chunktograph#BuildingEntity
+OP http://example.org/chunktograph#hasEntityProperty dom:http://example.org/chunktograph#BrickEntityProperty rng:http://example.org/chunktograph#SHACLShape
+OP http://example.org/chunktograph#hasFeature dom:http://example.org/chunktograph#BrickClass rng:http://example.org/chunktograph#EntityProperties,owl:Class
+OP http://example.org/chunktograph#hasInverseOf dom:http://example.org/chunktograph#BrickProperty rng:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasMigrationProperty rng:http://example.org/chunktograph#MigrationProperty
+OP http://example.org/chunktograph#hasModule dom:http://example.org/chunktograph#EntityIdentificationNode rng:http://example.org/chunktograph#get_elements_py
+OP http://example.org/chunktograph#hasORMModel dom:http://example.org/chunktograph#Brickschema rng:http://example.org/chunktograph#Location
+OP http://example.org/chunktograph#hasOWLPropertyClass dom:http://example.org/chunktograph#BrickProperty rng:owl:Class
+OP http://example.org/chunktograph#hasPropertyDefinition rng:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasPropertyDefinitionInFile dom:http://example.org/chunktograph#BrickProperty
+OP http://example.org/chunktograph#hasPropertyType dom:http://example.org/chunktograph#BrickProperty rng:owl:Class
+OP http://example.org/chunktograph#hasRDFSDomain dom:http://example.org/chunktograph#BrickProperty rng:http://example.org/chunktograph#BrickClass
+OP http://example.org/chunktograph#hasRDFSRange dom:http://example.org/chunktograph#BrickProperty rng:http://example.org/chunktograph#BrickClass
+OP http://example.org/chunktograph#hasSensorEntity dom:http://example.org/chunktograph#HVACZone rng:http://example.org/chunktograph#SensorEntity
+OP http://example.org/chunktograph#hasShape dom:http://example.org/chunktograph#BrickEntityProperty rng:http://example.org/chunktograph#SHACLShape
+OP http://example.org/chunktograph#hasTag dom:http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickEntity,http://example.org/chunktograph#Class,http://example.org/chunktograph#Entity rng:http://example.org/chunktograph#Tag
+OP http://example.org/chunktograph#hasUnit dom:http://example.org/chunktograph#PropertyValue,http://example.org/chunktograph#Sensor
+OP http://example.org/chunktograph#hosts dom:http://example.org/chunktograph#IctEquipment rng:http://example.org/chunktograph#VirtualEntity
+OP http://example.org/chunktograph#isControlledBy dom:http://example.org/chunktograph#PhysicalEntity rng:http://example.org/chunktograph#Controller inv:http://example.org/chunktograph#controls
+OP http://example.org/chunktograph#isHostedBy dom:http://example.org/chunktograph#VirtualEntity rng:http://example.org/chunktograph#IctEquipment inv:http://example.org/chunktograph#hosts
+OP http://example.org/chunktograph#powerComplexity rng:http://example.org/chunktograph#PropertyValue
+DP http://example.org/chunktograph#aggregationInterval dom:http://example.org/chunktograph#PropertyValue
+DP http://example.org/chunktograph#coolingCapacity dom:http://example.org/chunktograph#EntityProperty
+DP http://example.org/chunktograph#hasPropertyName dom:http://example.org/chunktograph#BrickProperty
+DP http://example.org/chunktograph#hasSKOSDefinitionForProperty dom:http://example.org/chunktograph#BrickProperty
+DP http://example.org/chunktograph#hasUnit dom:http://example.org/chunktograph#PropertyValue,http://example.org/chunktograph#Sensor
+DP http://example.org/chunktograph#value dom:http://example.org/chunktograph#PropertyValue
+IND http://example.org/chunktograph#Brick | Brick a owl:Class :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities. {http://example.org/chunktograph#hasBrickMigrationTool=http://example.org/chunktograph#BrickMigrationTool; http://example.org/chunktograph#hasBrickSupport=http://example.org/chunktograph#Brick; http://example.org/chunktograph#hasFile=http://example.org/chunktograph#entity_properties_py; http://example.org/chunktograph#hasFile=http://example.org/chunktograph#location_py; http://example.org/chunktograph#hasSHACLValidationTool=http://example.org/chunktograph#SHACLValidationTool; http://example.org/chunktograph#isCollaboratingWith=http://example.org/chunktograph#ProjectHaystack; http://example.org/chunktograph#isRelatedTo=http://example.org/chunktograph#ProjectHaystack; rdfs:subClassOf=http://example.org/chunktograph#Entity}
+IND http://example.org/chunktograph#BrickClass | Brick Class a owl:Class {http://example.org/chunktograph#hasParent=http://example.org/chunktograph#BrickClass; rdfs:subClassOf=http://example.org/chunktograph#BrickDocumentation; owl:equivalentClass=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#BrickEntityProperty | Brick Entity Property a owl:Class {http://example.org/chunktograph#hasShape=http://example.org/chunktograph#SHACLShape}
+IND http://example.org/chunktograph#BrickLLM | BrickLLM a owl:Class {http://example.org/chunktograph#hasNode=http://example.org/chunktograph#EntityIdentificationNode; http://example.org/chunktograph#hasURL=https://github.com/EURAC-EEBgroup/brick-llm; http://example.org/chunktograph#hasWorkflowType=http://example.org/chunktograph#StructuredWorkflow; http://example.org/chunktograph#validates=http://example.org/chunktograph#SHACLShape}
+IND http://example.org/chunktograph#BrickLocationDefinition | Brick Location Definition a owl:Class
+IND http://example.org/chunktograph#Building | Building a http://example.org/chunktograph#Building,owl:Class {http://example.org/chunktograph#hasPart=http://example.org/chunktograph#Floor; rdfs:subClassOf=http://example.org/chunktograph#PhysicalEntity; rdfs:subClassOf=http://example.org/chunktograph#SpatialElement}
+IND http://example.org/chunktograph#BuildingTopologyOntology | Building Topology Ontology a owl:Class {rdfs:subClassOf=http://example.org/chunktograph#Brick}
+IND http://example.org/chunktograph#EntityProperties | Entity Properties :: A new Brick feature that allow models to attach static properties to Brick entities. The initial release of entity properties include floor area (net and gross), electrical metering properties, and aggregations. {rdfs:subClassOf=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#Floor | Floor a http://example.org/chunktograph#Class,http://example.org/chunktograph#Floor,owl:Class {http://example.org/chunktograph#hasPart=http://example.org/chunktograph#Room; rdfs:subClassOf=http://example.org/chunktograph#PhysicalEntity; rdfs:subClassOf=http://example.org/chunktograph#SpatialElement}
+IND http://example.org/chunktograph#HVACZone | HVAC Zone a http://example.org/chunktograph#Class,http://example.org/chunktograph#HVACZone,owl:Class {http://example.org/chunktograph#hasPart=http://example.org/chunktograph#Room; rdfs:subClassOf=http://example.org/chunktograph#LogicalEntity}
+IND http://example.org/chunktograph#Haystack | Haystack a http://example.org/chunktograph#BrickPlusOntology,http://example.org/chunktograph#Class,owl:Class :: Haystack defines entities as a set of value tags (representing key-value pairs) and marker tags (singular annotations). {http://example.org/chunktograph#hasDefinition=http://example.org/chunktograph#HaystackDefinition; http://example.org/chunktograph#hasHaystackModel=http://example.org/chunktograph#HaystackModel; rdfs:subClassOf=http://example.org/chunktograph#Entity}
+IND http://example.org/chunktograph#IndustryFoundationClasses | Industry Foundation Classes a owl:Class
+IND http://example.org/chunktograph#MigrationPropertyAutomatic | Automatic :: Minimize manual input and translation effort {rdfs:subClassOf=http://example.org/chunktograph#MigrationProperty}
+IND http://example.org/chunktograph#MigrationPropertyComplete | Complete :: The migration should handle translation of all classes and relationships {rdfs:subClassOf=http://example.org/chunktograph#MigrationProperty}
+IND http://example.org/chunktograph#MigrationPropertySemanticsPreserving | Semantics-preserving :: Preserve semantics of original model when updating to new ontology {rdfs:subClassOf=http://example.org/chunktograph#MigrationProperty}
+IND http://example.org/chunktograph#ProjectHaystack | Project Haystack a http://example.org/chunktograph#Entity,http://example.org/chunktograph#ProjectHaystack,owl:Class {http://example.org/chunktograph#hasTagValue=Project Haystack}
+IND http://example.org/chunktograph#Room | Room a http://example.org/chunktograph#Class,http://example.org/chunktograph#Room,owl:Class {rdfs:subClassOf=http://example.org/chunktograph#PhysicalEntity; rdfs:subClassOf=http://example.org/chunktograph#SpatialElement}
+IND http://example.org/chunktograph#SHACLShape | SHACL Shape a owl:Class {http://example.org/chunktograph#hasDatatype=xsd:string; http://example.org/chunktograph#hasProperty=property; http://example.org/chunktograph#hasUnits=unit; http://example.org/chunktograph#hasValues=value}
+IND http://example.org/chunktograph#Sensor | Sensor a http://example.org/chunktograph#SensorEntity,owl:Class
+IND http://example.org/chunktograph#get_elements_py | get_elements.py
+IND http://example.org/chunktograph#location_py | bricksrc/location.py a http://example.org/chunktograph#BrickClassDefinitionFile,http://example.org/chunktograph#PythonFile :: File for Brick Location definitions {http://example.org/chunktograph#hasClassDefinition=http://example.org/chunktograph#BrickLocationClass; http://example.org/chunktograph#hasClassDefinition=http://example.org/chunktograph#BrickLocationDefinition}

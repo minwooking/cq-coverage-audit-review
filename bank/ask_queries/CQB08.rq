@@ -1,0 +1,21 @@
+PREFIX brick: <https://brickschema.org/schema/Brick#>
+PREFIX rec: <https://w3id.org/rec#>
+PREFIX ref: <https://brickschema.org/schema/Brick/ref#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+
+ASK {
+  FILTER NOT EXISTS {
+    ?c rdfs:subClassOf brick:Point .
+    FILTER(?c NOT IN (brick:Alarm, brick:Command, brick:Parameter, brick:Sensor, brick:Setpoint, brick:Status))
+  }
+  FILTER EXISTS { brick:Alarm rdfs:subClassOf brick:Point }
+  FILTER EXISTS { brick:Command rdfs:subClassOf brick:Point }
+  FILTER EXISTS { brick:Parameter rdfs:subClassOf brick:Point }
+  FILTER EXISTS { brick:Sensor rdfs:subClassOf brick:Point }
+  FILTER EXISTS { brick:Setpoint rdfs:subClassOf brick:Point }
+  FILTER EXISTS { brick:Status rdfs:subClassOf brick:Point }
+}

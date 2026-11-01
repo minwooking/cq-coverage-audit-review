@@ -1,0 +1,86 @@
+# Automation and Point Collections
+
+Automation and Point Collections are named groups for organizing building automation entities. They make it possible to describe application-level bundles such as frost detection, ventilation control, room control applications, startup sequences, alarm packages, and operator-facing point groups.
+
+These collections are organizational. They help tools find related entities, but they do not replace the Brick relationships that describe physical composition, point ownership, topology, or control behavior.
+
+Do not infer functional semantics from collection membership alone. If a sensor, command, alarm, and piece of equipment are in the same collection, that only says they belong to the same modeled bundle. Use explicit Brick relationships to describe what is measured, commanded, controlled, hosted, or physically part of something else.
+
+## At-a-Glance
+
+- Create a brick:Point_Collection for point-only groups.
+- Create a brick:Automation_Collection for mixed automation bundles.
+- Put member entities into the collection with rec:includes.
+- Attach every point to what it describes with brick:hasPoint or brick:isPointOf.
+- Attach every hosted point to its controller or ICT equipment with brick:hostsPoint or brick:isHostedBy.
+- Use brick:hasPart only for equipment composition, not collection membership.
+- Add rdfs:label so tools can present the collection clearly.
+
+## The Two Collection Types
+
+Use brick:Automation_Collection for a logical automation bundle. An Automation Collection can include equipment, points, point collections, and other automation collections. It is the right choice when a grouping represents a control application, sequence, alarm package, or other automation function that spans more than just points.
+
+Use brick:Point_Collection for a point-only bundle. A Point Collection can include points and nested Point Collections. It is the right choice for operator displays, trend packages, export packages, and other groupings whose members are only points.
+
+Both types use rec:includes for membership:
+
+## Relationship Roles
+
+Use collection membership for organization, and use the normal Brick relationships for the model semantics:
+
+- Use rec:includes to put an entity into an Automation Collection or Point Collection.
+- Use brick:hasPart for physical or structural composition, such as an AHU having a fan or coil.
+- Use brick:hasPoint / brick:isPointOf to attach a point to the equipment, location, or zone it describes.
+- Use brick:hostsPoint / brick:isHostedBy to describe the ICT equipment, controller, gateway, or device that hosts or exposes a point.
+- Use brick:controls / brick:isControlledBy for control relationships between controllers and the equipment they supervise.
+
+Equipment, spaces, and zones can include automation collections with rec:includes. This is useful when an asset or zone has a logical application bundle, but the bundle is not a physical part of that asset or zone.
+
+## Choosing the Right Pattern
+
+Use a Point Collection when all of these are true:
+
+- the grouping only contains points or nested point groups
+- the grouping is mainly for display, export, trending, configuration, or navigation
+- membership should not imply control logic, equipment structure, or a sequence of operation
+
+Use an Automation Collection when any of these are true:
+
+- the grouping includes equipment or other non-point entities
+- the grouping represents an automation application, control package, alarm package, or sequence
+- the grouping needs nested Point Collections for subsets of points
+- the grouping should be associated with an equipment instance, space, or zone as a named application
+
+Define a custom subclass when the grouping has stable meaning in a project or organization. For example, mpo:FrostDetectionCollection can be declared as a subclass of brick:Automation_Collection.
+
+## Example: Frost Detection
+
+This example models an AHU with a frost detection package. The AHU uses brick:hasPart for physical components and rec:includes for the logical automation bundle. The points are still attached to the entities they describe with brick:isPointOf / brick:hasPoint.
+
+The Automation Collection groups the whole frost detection application. The nested Point Collection groups only the telemetry associated with that application.
+
+## Example: Room Application
+
+Automation Collections can represent applications within a zone or space. In this example, a zone includes an HVAC application. The HVAC application includes equipment and point-only collections for specific application areas.
+
+The top-level HVAC collection identifies the room automation application. Its point-only subcollections make it easy for tools to retrieve the points for each part of the application.
+
+## Controllers and Point Collections
+
+Collections do not replace point hosting. A controller should still use brick:hosts for the points it exposes, while Point Collections can organize those points for display or configuration. See Controllers for a full treatment of brick:controls and brick:hosts.
+
+## Query Patterns
+
+The following queries assume standard RDFS subclass reasoning is either available in the graph or handled by the a/rdfs:subClassOf* property paths shown below.
+
+Retrieve all members of an Automation Collection, including nested automation and point collections:
+
+Retrieve all points in a Point Collection, including points in nested Point Collections:
+
+Find all automation bundles associated with an AHU and the entities they include:
+
+Find automation bundles associated with a zone and the points included in those bundles:
+
+Retrieve both physical parts and logical automation bundles from an AHU:
+
+Find the equipment or zone that each point in a collection describes:

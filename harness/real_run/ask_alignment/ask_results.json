@@ -1,0 +1,2531 @@
+{
+ "ask_counts": {
+  "overall": {
+   "false": 63,
+   "not_evaluable": 38,
+   "total": 108,
+   "true": 7
+  },
+  "per_cq": {
+   "CQB07": {
+    "false": 5,
+    "not_evaluable": 0,
+    "total": 6,
+    "true": 1
+   },
+   "CQB08": {
+    "false": 5,
+    "not_evaluable": 0,
+    "total": 6,
+    "true": 1
+   },
+   "CQB09": {
+    "false": 6,
+    "not_evaluable": 0,
+    "total": 6,
+    "true": 0
+   },
+   "CQB10": {
+    "false": 5,
+    "not_evaluable": 0,
+    "total": 6,
+    "true": 1
+   },
+   "CQB11": {
+    "false": 6,
+    "not_evaluable": 0,
+    "total": 6,
+    "true": 0
+   },
+   "CQB12": {
+    "false": 5,
+    "not_evaluable": 0,
+    "total": 6,
+    "true": 1
+   },
+   "CQB13": {
+    "false": 6,
+    "not_evaluable": 0,
+    "total": 6,
+    "true": 0
+   },
+   "CQB14": {
+    "false": 6,
+    "not_evaluable": 0,
+    "total": 6,
+    "true": 0
+   },
+   "CQB15": {
+    "false": 1,
+    "not_evaluable": 5,
+    "total": 6,
+    "true": 0
+   },
+   "CQB16": {
+    "false": 6,
+    "not_evaluable": 0,
+    "total": 6,
+    "true": 0
+   },
+   "CQB17": {
+    "false": 6,
+    "not_evaluable": 0,
+    "total": 6,
+    "true": 0
+   },
+   "CQB18": {
+    "false": 6,
+    "not_evaluable": 0,
+    "total": 6,
+    "true": 0
+   },
+   "CQB21": {
+    "false": 0,
+    "not_evaluable": 6,
+    "total": 6,
+    "true": 0
+   },
+   "CQB22": {
+    "false": 0,
+    "not_evaluable": 5,
+    "total": 6,
+    "true": 1
+   },
+   "CQB23": {
+    "false": 0,
+    "not_evaluable": 6,
+    "total": 6,
+    "true": 0
+   },
+   "CQB24": {
+    "false": 0,
+    "not_evaluable": 6,
+    "total": 6,
+    "true": 0
+   },
+   "CQB32": {
+    "false": 0,
+    "not_evaluable": 5,
+    "total": 6,
+    "true": 1
+   },
+   "CQB33": {
+    "false": 0,
+    "not_evaluable": 5,
+    "total": 6,
+    "true": 1
+   }
+  },
+  "per_variant": {
+   "A": {
+    "false": 8,
+    "not_evaluable": 3,
+    "total": 18,
+    "true": 7
+   },
+   "B": {
+    "false": 11,
+    "not_evaluable": 7,
+    "total": 18,
+    "true": 0
+   },
+   "C": {
+    "false": 11,
+    "not_evaluable": 7,
+    "total": 18,
+    "true": 0
+   },
+   "D": {
+    "false": 11,
+    "not_evaluable": 7,
+    "total": 18,
+    "true": 0
+   },
+   "E": {
+    "false": 11,
+    "not_evaluable": 7,
+    "total": 18,
+    "true": 0
+   },
+   "F": {
+    "false": 11,
+    "not_evaluable": 7,
+    "total": 18,
+    "true": 0
+   }
+  }
+ },
+ "ask_counts_any_candidate_per_variant": {
+  "A": {
+   "false": 4,
+   "not_evaluable": 3,
+   "total": 18,
+   "true": 11
+  },
+  "B": {
+   "cap_exceeded": 2,
+   "false": 9,
+   "not_evaluable": 7,
+   "total": 18,
+   "true": 0
+  },
+  "C": {
+   "cap_exceeded": 2,
+   "false": 9,
+   "not_evaluable": 7,
+   "total": 18,
+   "true": 0
+  },
+  "D": {
+   "cap_exceeded": 2,
+   "false": 9,
+   "not_evaluable": 7,
+   "total": 18,
+   "true": 0
+  },
+  "E": {
+   "cap_exceeded": 2,
+   "false": 9,
+   "not_evaluable": 7,
+   "total": 18,
+   "true": 0
+  },
+  "F": {
+   "cap_exceeded": 2,
+   "false": 9,
+   "not_evaluable": 7,
+   "total": 18,
+   "true": 0
+  }
+ },
+ "ask_counts_any_candidate_upper_bound": {
+  "cap_exceeded": 10,
+  "false": 49,
+  "not_evaluable": 38,
+  "total": 108,
+  "true": 11
+ },
+ "concordance": {
+  "ah_a_share_on_evaluable_cells": 0.904762,
+  "ask_true_share_bca": {
+   "ci_hi": 0.111111,
+   "ci_lo": 0.016393,
+   "computable": true,
+   "estimate": 0.063492,
+   "n_cells": 63,
+   "n_clusters": 11,
+   "tie_share": 0.0692
+  },
+  "ask_vs_ah_label_A": {
+   "bca_kappa": {
+    "ci_hi": 0.0801,
+    "ci_lo": 0.0,
+    "computable": true,
+    "estimate": 0.014172,
+    "n_cells": 63,
+    "n_clusters": 11,
+    "tie_share": 0.0298
+   },
+   "clusters_with_ask_true": 4,
+   "kappa": 0.014172,
+   "n": 63,
+   "percent_agreement": 0.15873,
+   "table": {
+    "ask_false__other_0": 6,
+    "ask_false__other_1": 53,
+    "ask_true__other_0": 0,
+    "ask_true__other_1": 4
+   }
+  },
+  "ask_vs_judge_J_ge_2": {
+   "bca_kappa": {
+    "ci_hi": 0.085062,
+    "ci_lo": 0.002872,
+    "computable": true,
+    "estimate": 0.01953,
+    "n_cells": 63,
+    "n_clusters": 11,
+    "tie_share": 0.0124
+   },
+   "clusters_with_ask_true": 4,
+   "kappa": 0.01953,
+   "n": 63,
+   "percent_agreement": 0.190476,
+   "table": {
+    "ask_false__other_0": 8,
+    "ask_false__other_1": 51,
+    "ask_true__other_0": 0,
+    "ask_true__other_1": 4
+   }
+  },
+  "by_variant_group_no_ci": {
+   "A": {
+    "ask_vs_ah_label_A": {
+     "clusters_with_ask_true": 4,
+     "kappa": 0.25,
+     "n": 8,
+     "percent_agreement": 0.625,
+     "table": {
+      "ask_false__other_0": 1,
+      "ask_false__other_1": 3,
+      "ask_true__other_0": 0,
+      "ask_true__other_1": 4
+     }
+    },
+    "ask_vs_judge_J_ge_2": {
+     "clusters_with_ask_true": 4,
+     "kappa": 0.5,
+     "n": 8,
+     "percent_agreement": 0.75,
+     "table": {
+      "ask_false__other_0": 2,
+      "ask_false__other_1": 2,
+      "ask_true__other_0": 0,
+      "ask_true__other_1": 4
+     }
+    }
+   },
+   "B-F": {
+    "ask_vs_ah_label_A": {
+     "clusters_with_ask_true": 0,
+     "kappa": 0.0,
+     "n": 55,
+     "percent_agreement": 0.090909,
+     "table": {
+      "ask_false__other_0": 5,
+      "ask_false__other_1": 50,
+      "ask_true__other_0": 0,
+      "ask_true__other_1": 0
+     }
+    },
+    "ask_vs_judge_J_ge_2": {
+     "clusters_with_ask_true": 0,
+     "kappa": 0.0,
+     "n": 55,
+     "percent_agreement": 0.109091,
+     "table": {
+      "ask_false__other_0": 6,
+      "ask_false__other_1": 49,
+      "ask_true__other_0": 0,
+      "ask_true__other_1": 0
+     }
+    }
+   }
+  },
+  "judge_j_ge_2_share_on_evaluable_cells": 0.873016,
+  "universe": {
+   "clusters_evaluable": 11,
+   "evaluable_primary_cells": 63,
+   "note": "cells = (CQ, variant) pairs with a primary cell and an evaluable ASK outcome; cells of one CQ are resampled together (cluster = CQ)",
+   "primary_cells_on_ask_cqs": 84
+  }
+ },
+ "config": {
+  "any_candidate_cap": 256,
+  "bootstrap": {
+   "B": 10000,
+   "cluster": "cluster_id (= CQ)",
+   "method": "BCa (analyze_holdout.cluster_bootstrap_stat, midrank)",
+   "seed": 20260913
+  },
+  "core_predicates_checked": {
+   "owl:disjointWith": "http://www.w3.org/2002/07/owl#disjointWith",
+   "owl:inverseOf": "http://www.w3.org/2002/07/owl#inverseOf",
+   "rdfs:subClassOf": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+   "rdfs:subPropertyOf": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+   "sh:class": "http://www.w3.org/ns/shacl#class",
+   "sh:path": "http://www.w3.org/ns/shacl#path"
+  },
+  "ct_namespace": "http://example.org/chunktograph#",
+  "rewrite_namespaces": {
+   "http://qudt.org/schema/qudt/": "qudt",
+   "https://brickschema.org/schema/Brick#": "brick",
+   "https://brickschema.org/schema/Brick/ref#": "ref",
+   "https://w3id.org/rec#": "rec"
+  },
+  "rules_in_priority_order": [
+   "local_exact",
+   "local_normalized",
+   "local_joined",
+   "label",
+   "label_to_local",
+   "ns_prefixed_local"
+  ],
+  "variants": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F"
+  ]
+ },
+ "inputs_sha256": {
+  "analyze_holdout_py": "3278d71c70829889838aa8f61c4f5b0217b9ef3e921976a8ea5fc0c0fd122e10",
+  "ask_query_CQB07": "210ea27e5cc6cc20252a39b4c72a14d9dcc3fed285befefc88e9032a5f585a31",
+  "ask_query_CQB08": "725925a248eb3e2e30eac093d8a3474788bf08c05bac1b0ec2ee833eabe44c4e",
+  "ask_query_CQB09": "d46a3feaf32a134d598470b26403370f37f88732dbc1df97ba99eb93b8e144cc",
+  "ask_query_CQB10": "4845d49fab9d0d875090bbad0e197ad75163a70413610939dbd87a402e94372c",
+  "ask_query_CQB11": "6893d87c687460eb5061e039e9ee3c7f32d09ce44f27e2eb8b452ba335f923eb",
+  "ask_query_CQB12": "b7e09274970b8ef688e4fa24c3b344b952e9459e12790c39e7c1a5931c702c6b",
+  "ask_query_CQB13": "5ab31cb56ff1c87d87394651d1c34916562d91bd534684572cbf327084364d7f",
+  "ask_query_CQB14": "6bd7e6049e0e17616170a5d1d207139fd39506787c8fc7a74ec02e3adbc5a984",
+  "ask_query_CQB15": "fc94b362118049034e2324c7619d09a6fa4ebab62c95b0fd56953a4ff2dc1b21",
+  "ask_query_CQB16": "f557163fff2faf0bed0a748a2c1093147436d427f590ce581848a30833ff8442",
+  "ask_query_CQB17": "84eea826fb8de7b579cbf93ba19520d52ea35b7466573de4ae13ffc25dcb02dd",
+  "ask_query_CQB18": "0e2beae955ef04a669010ea96f3c00172bd9b5672d5de71435b33952515a1283",
+  "ask_query_CQB21": "ded56918ac1c0498e18bf3417f515723443fb29ed01394675886593dd88ddc23",
+  "ask_query_CQB22": "6194b382c3baa09952cb6d8862f297493b0a31752b3ea7062e415b91355a8b0a",
+  "ask_query_CQB23": "7fc6f65d397e50b5d5bbf4174a9fc42d9083a7b8222833ddfdbcc1ce6310e006",
+  "ask_query_CQB24": "3941163d33b99722f865203b6e218a8545bcfa5dfd54b11897532f48e42f9bf2",
+  "ask_query_CQB32": "bac4f9c02677d4f3626a3360432a3a948bf3101ad63fca275aa98706625595c1",
+  "ask_query_CQB33": "6c3d7ed61b3175fcea4c8735653156608821a570a7196e1f8019fb375a70dd22",
+  "bank_csv": "993c5e1164540dce0f2f9bf2e6ed397cf45910da7889300feeaad6543edb8507",
+  "brick_snapshot": "b65720b7b9b64c646745c689777e6138c0d59ce0088df0aeb78fbd444d04d8e7",
+  "cells_jsonl": "bfd5b3c83981c8a6ec970b93f460bab7409daf047a2e048bfaa90b5adfd0d4af",
+  "per_cell": "5aebf70b6af9b4468f3c066ba84215699316ae5342d33b5c61d6cb4bd90a9248",
+  "variant_graph_A": "1a5cc075065ac1f493e7731ac20e638481754c1a79f586b6e82a25320cb1bc32",
+  "variant_graph_B": "20d015a83b1158fdf1bc598b75127f63eed088f0a10bc54e91d88d411b4fe490",
+  "variant_graph_C": "c057252c5c5b33750984de600ea6c2b176a8319c6f71fe6663b72f8d8f902629",
+  "variant_graph_D": "268a748b8c15d1bc96ec16b503bcada62e49d8143b57ff617da4737cce3e4585",
+  "variant_graph_E": "6283eb356de2a3f9eec3b02470c435c864b775aaaa23ec4575fc3da0ea54c8c7",
+  "variant_graph_F": "8fa73d3782bee329078808a7a7e9e10f37989eecdef63f778215b626d91bbcb1"
+ },
+ "mapping_csv_sha256": "1e23509009a891d97d0fe171a51fe03ee7ab8da122e7848a8f9e296dc460d85d",
+ "mapping_summary": {
+  "A": {
+   "ambiguous": 0,
+   "ambiguous_terms": [],
+   "mapped": 52,
+   "mapped_by_rule": {
+    "label": 13,
+    "local_exact": 38,
+    "ns_prefixed_local": 1
+   },
+   "terms": 54,
+   "unmapped": 2,
+   "unmapped_terms": [
+    "brick:EntityProperty",
+    "qudt:hasQuantityKind"
+   ],
+   "with_alternate_candidates": 9
+  },
+  "B": {
+   "ambiguous": 0,
+   "ambiguous_terms": [],
+   "mapped": 47,
+   "mapped_by_rule": {
+    "local_normalized": 29,
+    "ns_prefixed_local": 18
+   },
+   "terms": 54,
+   "unmapped": 7,
+   "unmapped_terms": [
+    "brick:EntityProperty",
+    "brick:buildingPrimaryFunction",
+    "brick:feeds",
+    "brick:isReplacedBy",
+    "brick:isVirtualMeter",
+    "brick:yearBuilt",
+    "qudt:hasQuantityKind"
+   ],
+   "with_alternate_candidates": 29
+  },
+  "C": {
+   "ambiguous": 0,
+   "ambiguous_terms": [],
+   "mapped": 47,
+   "mapped_by_rule": {
+    "local_normalized": 29,
+    "ns_prefixed_local": 18
+   },
+   "terms": 54,
+   "unmapped": 7,
+   "unmapped_terms": [
+    "brick:EntityProperty",
+    "brick:buildingPrimaryFunction",
+    "brick:feeds",
+    "brick:isReplacedBy",
+    "brick:isVirtualMeter",
+    "brick:yearBuilt",
+    "qudt:hasQuantityKind"
+   ],
+   "with_alternate_candidates": 29
+  },
+  "D": {
+   "ambiguous": 0,
+   "ambiguous_terms": [],
+   "mapped": 47,
+   "mapped_by_rule": {
+    "local_normalized": 29,
+    "ns_prefixed_local": 18
+   },
+   "terms": 54,
+   "unmapped": 7,
+   "unmapped_terms": [
+    "brick:EntityProperty",
+    "brick:buildingPrimaryFunction",
+    "brick:feeds",
+    "brick:isReplacedBy",
+    "brick:isVirtualMeter",
+    "brick:yearBuilt",
+    "qudt:hasQuantityKind"
+   ],
+   "with_alternate_candidates": 29
+  },
+  "E": {
+   "ambiguous": 0,
+   "ambiguous_terms": [],
+   "mapped": 47,
+   "mapped_by_rule": {
+    "local_normalized": 29,
+    "ns_prefixed_local": 18
+   },
+   "terms": 54,
+   "unmapped": 7,
+   "unmapped_terms": [
+    "brick:EntityProperty",
+    "brick:buildingPrimaryFunction",
+    "brick:feeds",
+    "brick:isReplacedBy",
+    "brick:isVirtualMeter",
+    "brick:yearBuilt",
+    "qudt:hasQuantityKind"
+   ],
+   "with_alternate_candidates": 29
+  },
+  "F": {
+   "ambiguous": 0,
+   "ambiguous_terms": [],
+   "mapped": 47,
+   "mapped_by_rule": {
+    "local_normalized": 29,
+    "ns_prefixed_local": 18
+   },
+   "terms": 54,
+   "unmapped": 7,
+   "unmapped_terms": [
+    "brick:EntityProperty",
+    "brick:buildingPrimaryFunction",
+    "brick:feeds",
+    "brick:isReplacedBy",
+    "brick:isVirtualMeter",
+    "brick:yearBuilt",
+    "qudt:hasQuantityKind"
+   ],
+   "with_alternate_candidates": 29
+  }
+ },
+ "per_cq_variant": [
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "true",
+   "category": "taxonomy",
+   "cluster_id": "CQB07",
+   "core_predicates_absent": [],
+   "cq_id": "CQB07",
+   "has_primary_cell": true,
+   "outcome": "true",
+   "rewritten_query_sha256": "294473f25b14693058fd005aa54600e6626637cb2097a5329078b3747015306f",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB07",
+   "core_predicates_absent": [],
+   "cq_id": "CQB07",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "53216a1f34171881cbdfb3753823fc226756065d8d330e3ea6f22a6323e74b49",
+   "unmapped_terms": [],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB07",
+   "core_predicates_absent": [],
+   "cq_id": "CQB07",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "53216a1f34171881cbdfb3753823fc226756065d8d330e3ea6f22a6323e74b49",
+   "unmapped_terms": [],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB07",
+   "core_predicates_absent": [],
+   "cq_id": "CQB07",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "53216a1f34171881cbdfb3753823fc226756065d8d330e3ea6f22a6323e74b49",
+   "unmapped_terms": [],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB07",
+   "core_predicates_absent": [],
+   "cq_id": "CQB07",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "53216a1f34171881cbdfb3753823fc226756065d8d330e3ea6f22a6323e74b49",
+   "unmapped_terms": [],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB07",
+   "core_predicates_absent": [],
+   "cq_id": "CQB07",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "53216a1f34171881cbdfb3753823fc226756065d8d330e3ea6f22a6323e74b49",
+   "unmapped_terms": [],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "true",
+   "category": "taxonomy",
+   "cluster_id": "CQB08",
+   "core_predicates_absent": [],
+   "cq_id": "CQB08",
+   "has_primary_cell": true,
+   "outcome": "true",
+   "rewritten_query_sha256": "dfc3b7b9fd7621307e4fbce4744d5e7dd9f158bcce6d6e127e1bbd3730dc225d",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB08",
+   "core_predicates_absent": [],
+   "cq_id": "CQB08",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6186ec548237af7f637376efb9c07ee3f238f324476a1023df6ce69726c64fa2",
+   "unmapped_terms": [],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB08",
+   "core_predicates_absent": [],
+   "cq_id": "CQB08",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6186ec548237af7f637376efb9c07ee3f238f324476a1023df6ce69726c64fa2",
+   "unmapped_terms": [],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB08",
+   "core_predicates_absent": [],
+   "cq_id": "CQB08",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6186ec548237af7f637376efb9c07ee3f238f324476a1023df6ce69726c64fa2",
+   "unmapped_terms": [],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB08",
+   "core_predicates_absent": [],
+   "cq_id": "CQB08",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6186ec548237af7f637376efb9c07ee3f238f324476a1023df6ce69726c64fa2",
+   "unmapped_terms": [],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB08",
+   "core_predicates_absent": [],
+   "cq_id": "CQB08",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6186ec548237af7f637376efb9c07ee3f238f324476a1023df6ce69726c64fa2",
+   "unmapped_terms": [],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB09",
+   "core_predicates_absent": [],
+   "cq_id": "CQB09",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "fe871294711d8ead4eb4ca4a2707cb77885366dd5345e2017f05f7107f8f697e",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "cap_exceeded",
+   "category": "taxonomy",
+   "cluster_id": "CQB09",
+   "core_predicates_absent": [],
+   "cq_id": "CQB09",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6b7f2f00643739d602fe7e40784f7f6f557f0e3b37b53968f259246055e925f3",
+   "unmapped_terms": [],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "cap_exceeded",
+   "category": "taxonomy",
+   "cluster_id": "CQB09",
+   "core_predicates_absent": [],
+   "cq_id": "CQB09",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6b7f2f00643739d602fe7e40784f7f6f557f0e3b37b53968f259246055e925f3",
+   "unmapped_terms": [],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "cap_exceeded",
+   "category": "taxonomy",
+   "cluster_id": "CQB09",
+   "core_predicates_absent": [],
+   "cq_id": "CQB09",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6b7f2f00643739d602fe7e40784f7f6f557f0e3b37b53968f259246055e925f3",
+   "unmapped_terms": [],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "cap_exceeded",
+   "category": "taxonomy",
+   "cluster_id": "CQB09",
+   "core_predicates_absent": [],
+   "cq_id": "CQB09",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6b7f2f00643739d602fe7e40784f7f6f557f0e3b37b53968f259246055e925f3",
+   "unmapped_terms": [],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "cap_exceeded",
+   "category": "taxonomy",
+   "cluster_id": "CQB09",
+   "core_predicates_absent": [],
+   "cq_id": "CQB09",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6b7f2f00643739d602fe7e40784f7f6f557f0e3b37b53968f259246055e925f3",
+   "unmapped_terms": [],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "true",
+   "category": "taxonomy",
+   "cluster_id": "CQB10",
+   "core_predicates_absent": [],
+   "cq_id": "CQB10",
+   "has_primary_cell": true,
+   "outcome": "true",
+   "rewritten_query_sha256": "00e870b18b41e24f063e256c56a963797e7d5a8c89002e80d63e034d9560ee27",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB10",
+   "core_predicates_absent": [],
+   "cq_id": "CQB10",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "7a88f4e506e407110b344f37b53737659a6193a164ee9aa606ee850e368eb7dc",
+   "unmapped_terms": [],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB10",
+   "core_predicates_absent": [],
+   "cq_id": "CQB10",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "7a88f4e506e407110b344f37b53737659a6193a164ee9aa606ee850e368eb7dc",
+   "unmapped_terms": [],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB10",
+   "core_predicates_absent": [],
+   "cq_id": "CQB10",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "7a88f4e506e407110b344f37b53737659a6193a164ee9aa606ee850e368eb7dc",
+   "unmapped_terms": [],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB10",
+   "core_predicates_absent": [],
+   "cq_id": "CQB10",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "7a88f4e506e407110b344f37b53737659a6193a164ee9aa606ee850e368eb7dc",
+   "unmapped_terms": [],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB10",
+   "core_predicates_absent": [],
+   "cq_id": "CQB10",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "7a88f4e506e407110b344f37b53737659a6193a164ee9aa606ee850e368eb7dc",
+   "unmapped_terms": [],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB11",
+   "core_predicates_absent": [
+    "owl:disjointWith"
+   ],
+   "cq_id": "CQB11",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "aff45ae462024882e972dc900dcc5b8a6833605dbd289552f3780e0e6218565b",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB11",
+   "core_predicates_absent": [
+    "owl:disjointWith"
+   ],
+   "cq_id": "CQB11",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "503ac11b978bed7b43405e20558ba2feb1c00f600d6bff4e7a667e3b66edb2b7",
+   "unmapped_terms": [],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB11",
+   "core_predicates_absent": [
+    "owl:disjointWith"
+   ],
+   "cq_id": "CQB11",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "503ac11b978bed7b43405e20558ba2feb1c00f600d6bff4e7a667e3b66edb2b7",
+   "unmapped_terms": [],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB11",
+   "core_predicates_absent": [
+    "owl:disjointWith"
+   ],
+   "cq_id": "CQB11",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "503ac11b978bed7b43405e20558ba2feb1c00f600d6bff4e7a667e3b66edb2b7",
+   "unmapped_terms": [],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB11",
+   "core_predicates_absent": [
+    "owl:disjointWith"
+   ],
+   "cq_id": "CQB11",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "503ac11b978bed7b43405e20558ba2feb1c00f600d6bff4e7a667e3b66edb2b7",
+   "unmapped_terms": [],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "taxonomy",
+   "cluster_id": "CQB11",
+   "core_predicates_absent": [
+    "owl:disjointWith"
+   ],
+   "cq_id": "CQB11",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "503ac11b978bed7b43405e20558ba2feb1c00f600d6bff4e7a667e3b66edb2b7",
+   "unmapped_terms": [],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "true",
+   "category": "taxonomy",
+   "cluster_id": "CQB12",
+   "core_predicates_absent": [],
+   "cq_id": "CQB12",
+   "has_primary_cell": true,
+   "outcome": "true",
+   "rewritten_query_sha256": "663a234d396be4e21c6c3cdbf3973a6a78b852f06e72f5e483f0d8f55727e88c",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "cap_exceeded",
+   "category": "taxonomy",
+   "cluster_id": "CQB12",
+   "core_predicates_absent": [],
+   "cq_id": "CQB12",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "3043052471807e7be8cf3c229eea0695059f38b66c2a1d5bf9f3896948c8ad23",
+   "unmapped_terms": [],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "cap_exceeded",
+   "category": "taxonomy",
+   "cluster_id": "CQB12",
+   "core_predicates_absent": [],
+   "cq_id": "CQB12",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "3043052471807e7be8cf3c229eea0695059f38b66c2a1d5bf9f3896948c8ad23",
+   "unmapped_terms": [],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "cap_exceeded",
+   "category": "taxonomy",
+   "cluster_id": "CQB12",
+   "core_predicates_absent": [],
+   "cq_id": "CQB12",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "3043052471807e7be8cf3c229eea0695059f38b66c2a1d5bf9f3896948c8ad23",
+   "unmapped_terms": [],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "cap_exceeded",
+   "category": "taxonomy",
+   "cluster_id": "CQB12",
+   "core_predicates_absent": [],
+   "cq_id": "CQB12",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "3043052471807e7be8cf3c229eea0695059f38b66c2a1d5bf9f3896948c8ad23",
+   "unmapped_terms": [],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "cap_exceeded",
+   "category": "taxonomy",
+   "cluster_id": "CQB12",
+   "core_predicates_absent": [],
+   "cq_id": "CQB12",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "3043052471807e7be8cf3c229eea0695059f38b66c2a1d5bf9f3896948c8ad23",
+   "unmapped_terms": [],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "true",
+   "category": "relations",
+   "cluster_id": "CQB13",
+   "core_predicates_absent": [],
+   "cq_id": "CQB13",
+   "has_primary_cell": false,
+   "outcome": "false",
+   "rewritten_query_sha256": "f9a0b3f11c8577fd4bfdd7538236ce27fb1a39a6fde8008593156b2b117d3986",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB13",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB13",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "19d09293f2ee53e3c5d8f7a4a161d2e155355dfb756eac33de19308cc44c1090",
+   "unmapped_terms": [],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB13",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB13",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "19d09293f2ee53e3c5d8f7a4a161d2e155355dfb756eac33de19308cc44c1090",
+   "unmapped_terms": [],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB13",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB13",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "19d09293f2ee53e3c5d8f7a4a161d2e155355dfb756eac33de19308cc44c1090",
+   "unmapped_terms": [],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB13",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB13",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "19d09293f2ee53e3c5d8f7a4a161d2e155355dfb756eac33de19308cc44c1090",
+   "unmapped_terms": [],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB13",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB13",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "19d09293f2ee53e3c5d8f7a4a161d2e155355dfb756eac33de19308cc44c1090",
+   "unmapped_terms": [],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "true",
+   "category": "relations",
+   "cluster_id": "CQB14",
+   "core_predicates_absent": [],
+   "cq_id": "CQB14",
+   "has_primary_cell": false,
+   "outcome": "false",
+   "rewritten_query_sha256": "b97144e271d47f730a7c4e0f8506e5bd475e3fdd113152f4805c8f4661025864",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB14",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB14",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "51898d2a56263d0f64d1fafadb06ad2259f289b53d266c72b197d870c04fc338",
+   "unmapped_terms": [],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB14",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB14",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "51898d2a56263d0f64d1fafadb06ad2259f289b53d266c72b197d870c04fc338",
+   "unmapped_terms": [],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB14",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB14",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "51898d2a56263d0f64d1fafadb06ad2259f289b53d266c72b197d870c04fc338",
+   "unmapped_terms": [],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB14",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB14",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "51898d2a56263d0f64d1fafadb06ad2259f289b53d266c72b197d870c04fc338",
+   "unmapped_terms": [],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB14",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB14",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "51898d2a56263d0f64d1fafadb06ad2259f289b53d266c72b197d870c04fc338",
+   "unmapped_terms": [],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "true",
+   "category": "relations",
+   "cluster_id": "CQB15",
+   "core_predicates_absent": [],
+   "cq_id": "CQB15",
+   "has_primary_cell": false,
+   "outcome": "false",
+   "rewritten_query_sha256": "d70f896be38ac40ab60c2b839dde15a8ecd08b04bede309fa002b05c076cad2f",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "relations",
+   "cluster_id": "CQB15",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB15",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:feeds"
+   ],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "relations",
+   "cluster_id": "CQB15",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB15",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:feeds"
+   ],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "relations",
+   "cluster_id": "CQB15",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB15",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:feeds"
+   ],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "relations",
+   "cluster_id": "CQB15",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB15",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:feeds"
+   ],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "relations",
+   "cluster_id": "CQB15",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB15",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:feeds"
+   ],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "true",
+   "category": "relations",
+   "cluster_id": "CQB16",
+   "core_predicates_absent": [],
+   "cq_id": "CQB16",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "e824db364ff407fb1baeb4cd2985d6e4cddd8e1b4f57575e09f1af8ff42f9753",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB16",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB16",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "a0f35bb5085a7cc4f1e05a2d14356c6eaafb00fb6b07eafb961c9c68c1ed11d5",
+   "unmapped_terms": [],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB16",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB16",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "a0f35bb5085a7cc4f1e05a2d14356c6eaafb00fb6b07eafb961c9c68c1ed11d5",
+   "unmapped_terms": [],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB16",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB16",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "a0f35bb5085a7cc4f1e05a2d14356c6eaafb00fb6b07eafb961c9c68c1ed11d5",
+   "unmapped_terms": [],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB16",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB16",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "a0f35bb5085a7cc4f1e05a2d14356c6eaafb00fb6b07eafb961c9c68c1ed11d5",
+   "unmapped_terms": [],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB16",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB16",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "a0f35bb5085a7cc4f1e05a2d14356c6eaafb00fb6b07eafb961c9c68c1ed11d5",
+   "unmapped_terms": [],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB17",
+   "core_predicates_absent": [
+    "sh:path"
+   ],
+   "cq_id": "CQB17",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "2dcbd26c0e7d252f57e97d195f9b1546c0ba0dfc8b501f834208aaac803912bc",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB17",
+   "core_predicates_absent": [
+    "owl:inverseOf",
+    "sh:path"
+   ],
+   "cq_id": "CQB17",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6d9f0d03573d92dde34acfc3352eae00955348d4f74585234dee940642d8ff55",
+   "unmapped_terms": [],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB17",
+   "core_predicates_absent": [
+    "owl:inverseOf",
+    "sh:path"
+   ],
+   "cq_id": "CQB17",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6d9f0d03573d92dde34acfc3352eae00955348d4f74585234dee940642d8ff55",
+   "unmapped_terms": [],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB17",
+   "core_predicates_absent": [
+    "owl:inverseOf",
+    "sh:path"
+   ],
+   "cq_id": "CQB17",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6d9f0d03573d92dde34acfc3352eae00955348d4f74585234dee940642d8ff55",
+   "unmapped_terms": [],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB17",
+   "core_predicates_absent": [
+    "owl:inverseOf",
+    "sh:path"
+   ],
+   "cq_id": "CQB17",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6d9f0d03573d92dde34acfc3352eae00955348d4f74585234dee940642d8ff55",
+   "unmapped_terms": [],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB17",
+   "core_predicates_absent": [
+    "owl:inverseOf",
+    "sh:path"
+   ],
+   "cq_id": "CQB17",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "6d9f0d03573d92dde34acfc3352eae00955348d4f74585234dee940642d8ff55",
+   "unmapped_terms": [],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB18",
+   "core_predicates_absent": [
+    "sh:class",
+    "sh:path"
+   ],
+   "cq_id": "CQB18",
+   "has_primary_cell": false,
+   "outcome": "false",
+   "rewritten_query_sha256": "23418a9c78a24ccda8f2527401ede88ed2feb7071c974f5c6174fb5f8b806a5c",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB18",
+   "core_predicates_absent": [
+    "owl:inverseOf",
+    "sh:class",
+    "sh:path"
+   ],
+   "cq_id": "CQB18",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "21721ab423760eb742bd950720acb9f88cba84059985c129f79f6f9cb8256207",
+   "unmapped_terms": [],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB18",
+   "core_predicates_absent": [
+    "owl:inverseOf",
+    "sh:class",
+    "sh:path"
+   ],
+   "cq_id": "CQB18",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "21721ab423760eb742bd950720acb9f88cba84059985c129f79f6f9cb8256207",
+   "unmapped_terms": [],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB18",
+   "core_predicates_absent": [
+    "owl:inverseOf",
+    "sh:class",
+    "sh:path"
+   ],
+   "cq_id": "CQB18",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "21721ab423760eb742bd950720acb9f88cba84059985c129f79f6f9cb8256207",
+   "unmapped_terms": [],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB18",
+   "core_predicates_absent": [
+    "owl:inverseOf",
+    "sh:class",
+    "sh:path"
+   ],
+   "cq_id": "CQB18",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "21721ab423760eb742bd950720acb9f88cba84059985c129f79f6f9cb8256207",
+   "unmapped_terms": [],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "false",
+   "category": "relations",
+   "cluster_id": "CQB18",
+   "core_predicates_absent": [
+    "owl:inverseOf",
+    "sh:class",
+    "sh:path"
+   ],
+   "cq_id": "CQB18",
+   "has_primary_cell": true,
+   "outcome": "false",
+   "rewritten_query_sha256": "21721ab423760eb742bd950720acb9f88cba84059985c129f79f6f9cb8256207",
+   "unmapped_terms": [],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB21",
+   "core_predicates_absent": [],
+   "cq_id": "CQB21",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:EntityProperty"
+   ],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB21",
+   "core_predicates_absent": [],
+   "cq_id": "CQB21",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:EntityProperty"
+   ],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB21",
+   "core_predicates_absent": [],
+   "cq_id": "CQB21",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:EntityProperty"
+   ],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB21",
+   "core_predicates_absent": [],
+   "cq_id": "CQB21",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:EntityProperty"
+   ],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB21",
+   "core_predicates_absent": [],
+   "cq_id": "CQB21",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:EntityProperty"
+   ],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB21",
+   "core_predicates_absent": [],
+   "cq_id": "CQB21",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:EntityProperty"
+   ],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "true",
+   "category": "slots_facets",
+   "cluster_id": "CQB22",
+   "core_predicates_absent": [],
+   "cq_id": "CQB22",
+   "has_primary_cell": false,
+   "outcome": "true",
+   "rewritten_query_sha256": "544d02819329bc10033e8d4e3b4bc1d42fdf78a057851b8a4355514b8b978068",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB22",
+   "core_predicates_absent": [],
+   "cq_id": "CQB22",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:buildingPrimaryFunction"
+   ],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB22",
+   "core_predicates_absent": [],
+   "cq_id": "CQB22",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:buildingPrimaryFunction"
+   ],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB22",
+   "core_predicates_absent": [],
+   "cq_id": "CQB22",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:buildingPrimaryFunction"
+   ],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB22",
+   "core_predicates_absent": [],
+   "cq_id": "CQB22",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:buildingPrimaryFunction"
+   ],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB22",
+   "core_predicates_absent": [],
+   "cq_id": "CQB22",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:buildingPrimaryFunction"
+   ],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB23",
+   "core_predicates_absent": [],
+   "cq_id": "CQB23",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:EntityProperty"
+   ],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB23",
+   "core_predicates_absent": [],
+   "cq_id": "CQB23",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:EntityProperty",
+    "brick:yearBuilt"
+   ],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB23",
+   "core_predicates_absent": [],
+   "cq_id": "CQB23",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:EntityProperty",
+    "brick:yearBuilt"
+   ],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB23",
+   "core_predicates_absent": [],
+   "cq_id": "CQB23",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:EntityProperty",
+    "brick:yearBuilt"
+   ],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB23",
+   "core_predicates_absent": [],
+   "cq_id": "CQB23",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:EntityProperty",
+    "brick:yearBuilt"
+   ],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB23",
+   "core_predicates_absent": [],
+   "cq_id": "CQB23",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:EntityProperty",
+    "brick:yearBuilt"
+   ],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB24",
+   "core_predicates_absent": [
+    "rdfs:subPropertyOf"
+   ],
+   "cq_id": "CQB24",
+   "has_primary_cell": false,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "qudt:hasQuantityKind"
+   ],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB24",
+   "core_predicates_absent": [
+    "rdfs:subPropertyOf"
+   ],
+   "cq_id": "CQB24",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "qudt:hasQuantityKind"
+   ],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB24",
+   "core_predicates_absent": [
+    "rdfs:subPropertyOf"
+   ],
+   "cq_id": "CQB24",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "qudt:hasQuantityKind"
+   ],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB24",
+   "core_predicates_absent": [
+    "rdfs:subPropertyOf"
+   ],
+   "cq_id": "CQB24",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "qudt:hasQuantityKind"
+   ],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB24",
+   "core_predicates_absent": [
+    "rdfs:subPropertyOf"
+   ],
+   "cq_id": "CQB24",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "qudt:hasQuantityKind"
+   ],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "slots_facets",
+   "cluster_id": "CQB24",
+   "core_predicates_absent": [
+    "rdfs:subPropertyOf"
+   ],
+   "cq_id": "CQB24",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "qudt:hasQuantityKind"
+   ],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "true",
+   "category": "methodology",
+   "cluster_id": "CQB32",
+   "core_predicates_absent": [],
+   "cq_id": "CQB32",
+   "has_primary_cell": false,
+   "outcome": "true",
+   "rewritten_query_sha256": "a2cc357f2738a7eeacd8dd294db1c3842784c0ac6051169eebd9a1e15aad68b2",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "methodology",
+   "cluster_id": "CQB32",
+   "core_predicates_absent": [],
+   "cq_id": "CQB32",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:isReplacedBy"
+   ],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "methodology",
+   "cluster_id": "CQB32",
+   "core_predicates_absent": [],
+   "cq_id": "CQB32",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:isReplacedBy"
+   ],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "methodology",
+   "cluster_id": "CQB32",
+   "core_predicates_absent": [],
+   "cq_id": "CQB32",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:isReplacedBy"
+   ],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "methodology",
+   "cluster_id": "CQB32",
+   "core_predicates_absent": [],
+   "cq_id": "CQB32",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:isReplacedBy"
+   ],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "methodology",
+   "cluster_id": "CQB32",
+   "core_predicates_absent": [],
+   "cq_id": "CQB32",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:isReplacedBy"
+   ],
+   "variant": "F"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "true",
+   "category": "methodology",
+   "cluster_id": "CQB33",
+   "core_predicates_absent": [],
+   "cq_id": "CQB33",
+   "has_primary_cell": false,
+   "outcome": "true",
+   "rewritten_query_sha256": "cd5dd295ea08b6523f2d770b3c8fc8e115011cb9b0268acab32b46a2139a738c",
+   "unmapped_terms": [],
+   "variant": "A"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "methodology",
+   "cluster_id": "CQB33",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB33",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:isVirtualMeter"
+   ],
+   "variant": "B"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "methodology",
+   "cluster_id": "CQB33",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB33",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:isVirtualMeter"
+   ],
+   "variant": "C"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "methodology",
+   "cluster_id": "CQB33",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB33",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:isVirtualMeter"
+   ],
+   "variant": "D"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "methodology",
+   "cluster_id": "CQB33",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB33",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:isVirtualMeter"
+   ],
+   "variant": "E"
+  },
+  {
+   "ambiguous_terms": [],
+   "any_candidate_outcome": "not_evaluable",
+   "category": "methodology",
+   "cluster_id": "CQB33",
+   "core_predicates_absent": [
+    "owl:inverseOf"
+   ],
+   "cq_id": "CQB33",
+   "has_primary_cell": true,
+   "outcome": "not_evaluable",
+   "rewritten_query_sha256": null,
+   "unmapped_terms": [
+    "brick:isVirtualMeter"
+   ],
+   "variant": "F"
+  }
+ ],
+ "per_variant": {
+  "A": {
+   "ah_a_share_on_evaluable_cells": 0.875,
+   "ask_cqs_run": 18,
+   "ask_outcomes_all_18": {
+    "false": 8,
+    "not_evaluable": 3,
+    "total": 18,
+    "true": 7
+   },
+   "ask_pass_rate_bca": {
+    "ci_hi": 0.875,
+    "ci_lo": 0.125,
+    "computable": true,
+    "estimate": 0.5,
+    "n_cells": 8,
+    "n_clusters": 8,
+    "tie_share": 0.2743
+   },
+   "ask_pass_rate_over_evaluable": 0.5,
+   "ask_true_cells": 4,
+   "evaluable_cells": 8,
+   "judge_coverage_bca_on_primary_ask_cells": {
+    "ci_hi": 96.296296,
+    "ci_lo": 44.444444,
+    "computable": true,
+    "estimate": 77.777778,
+    "n_cells": 9,
+    "n_clusters": 9,
+    "tie_share": 0.1278
+   },
+   "judge_coverage_pct_on_evaluable_cells": 79.166667,
+   "judge_coverage_pct_on_primary_ask_cells": 77.777778,
+   "judge_j_ge_2_share_on_evaluable_cells": 0.75,
+   "primary_cells_on_ask_cqs": 9
+  },
+  "B": {
+   "ah_a_share_on_evaluable_cells": 0.909091,
+   "ask_cqs_run": 18,
+   "ask_outcomes_all_18": {
+    "false": 11,
+    "not_evaluable": 7,
+    "total": 18,
+    "true": 0
+   },
+   "ask_pass_rate_bca": {
+    "ci_hi": 0.0,
+    "ci_lo": 0.0,
+    "computable": true,
+    "degenerate": "interval has zero width (statistic is constant across resamples)",
+    "estimate": 0.0,
+    "n_cells": 11,
+    "n_clusters": 11,
+    "tie_share": 1.0
+   },
+   "ask_pass_rate_over_evaluable": 0.0,
+   "ask_true_cells": 0,
+   "evaluable_cells": 11,
+   "judge_coverage_bca_on_primary_ask_cells": {
+    "ci_hi": 84.444444,
+    "ci_lo": 46.666667,
+    "computable": true,
+    "estimate": 68.888889,
+    "n_cells": 15,
+    "n_clusters": 15,
+    "tie_share": 0.0936
+   },
+   "judge_coverage_pct_on_evaluable_cells": 78.787879,
+   "judge_coverage_pct_on_primary_ask_cells": 68.888889,
+   "judge_j_ge_2_share_on_evaluable_cells": 0.909091,
+   "primary_cells_on_ask_cqs": 15
+  },
+  "C": {
+   "ah_a_share_on_evaluable_cells": 0.909091,
+   "ask_cqs_run": 18,
+   "ask_outcomes_all_18": {
+    "false": 11,
+    "not_evaluable": 7,
+    "total": 18,
+    "true": 0
+   },
+   "ask_pass_rate_bca": {
+    "ci_hi": 0.0,
+    "ci_lo": 0.0,
+    "computable": true,
+    "degenerate": "interval has zero width (statistic is constant across resamples)",
+    "estimate": 0.0,
+    "n_cells": 11,
+    "n_clusters": 11,
+    "tie_share": 1.0
+   },
+   "ask_pass_rate_over_evaluable": 0.0,
+   "ask_true_cells": 0,
+   "evaluable_cells": 11,
+   "judge_coverage_bca_on_primary_ask_cells": {
+    "ci_hi": 86.666667,
+    "ci_lo": 48.888889,
+    "computable": true,
+    "estimate": 71.111111,
+    "n_cells": 15,
+    "n_clusters": 15,
+    "tie_share": 0.0879
+   },
+   "judge_coverage_pct_on_evaluable_cells": 81.818182,
+   "judge_coverage_pct_on_primary_ask_cells": 71.111111,
+   "judge_j_ge_2_share_on_evaluable_cells": 0.909091,
+   "primary_cells_on_ask_cqs": 15
+  },
+  "D": {
+   "ah_a_share_on_evaluable_cells": 0.909091,
+   "ask_cqs_run": 18,
+   "ask_outcomes_all_18": {
+    "false": 11,
+    "not_evaluable": 7,
+    "total": 18,
+    "true": 0
+   },
+   "ask_pass_rate_bca": {
+    "ci_hi": 0.0,
+    "ci_lo": 0.0,
+    "computable": true,
+    "degenerate": "interval has zero width (statistic is constant across resamples)",
+    "estimate": 0.0,
+    "n_cells": 11,
+    "n_clusters": 11,
+    "tie_share": 1.0
+   },
+   "ask_pass_rate_over_evaluable": 0.0,
+   "ask_true_cells": 0,
+   "evaluable_cells": 11,
+   "judge_coverage_bca_on_primary_ask_cells": {
+    "ci_hi": 82.222222,
+    "ci_lo": 40.0,
+    "computable": true,
+    "estimate": 64.444444,
+    "n_cells": 15,
+    "n_clusters": 15,
+    "tie_share": 0.0865
+   },
+   "judge_coverage_pct_on_evaluable_cells": 78.787879,
+   "judge_coverage_pct_on_primary_ask_cells": 64.444444,
+   "judge_j_ge_2_share_on_evaluable_cells": 0.909091,
+   "primary_cells_on_ask_cqs": 15
+  },
+  "E": {
+   "ah_a_share_on_evaluable_cells": 0.909091,
+   "ask_cqs_run": 18,
+   "ask_outcomes_all_18": {
+    "false": 11,
+    "not_evaluable": 7,
+    "total": 18,
+    "true": 0
+   },
+   "ask_pass_rate_bca": {
+    "ci_hi": 0.0,
+    "ci_lo": 0.0,
+    "computable": true,
+    "degenerate": "interval has zero width (statistic is constant across resamples)",
+    "estimate": 0.0,
+    "n_cells": 11,
+    "n_clusters": 11,
+    "tie_share": 1.0
+   },
+   "ask_pass_rate_over_evaluable": 0.0,
+   "ask_true_cells": 0,
+   "evaluable_cells": 11,
+   "judge_coverage_bca_on_primary_ask_cells": {
+    "ci_hi": 84.444444,
+    "ci_lo": 40.0,
+    "computable": true,
+    "estimate": 64.444444,
+    "n_cells": 15,
+    "n_clusters": 15,
+    "tie_share": 0.078
+   },
+   "judge_coverage_pct_on_evaluable_cells": 75.757576,
+   "judge_coverage_pct_on_primary_ask_cells": 64.444444,
+   "judge_j_ge_2_share_on_evaluable_cells": 0.818182,
+   "primary_cells_on_ask_cqs": 15
+  },
+  "F": {
+   "ah_a_share_on_evaluable_cells": 0.909091,
+   "ask_cqs_run": 18,
+   "ask_outcomes_all_18": {
+    "false": 11,
+    "not_evaluable": 7,
+    "total": 18,
+    "true": 0
+   },
+   "ask_pass_rate_bca": {
+    "ci_hi": 0.0,
+    "ci_lo": 0.0,
+    "computable": true,
+    "degenerate": "interval has zero width (statistic is constant across resamples)",
+    "estimate": 0.0,
+    "n_cells": 11,
+    "n_clusters": 11,
+    "tie_share": 1.0
+   },
+   "ask_pass_rate_over_evaluable": 0.0,
+   "ask_true_cells": 0,
+   "evaluable_cells": 11,
+   "judge_coverage_bca_on_primary_ask_cells": {
+    "ci_hi": 88.888889,
+    "ci_lo": 46.666667,
+    "computable": true,
+    "estimate": 71.111111,
+    "n_cells": 15,
+    "n_clusters": 15,
+    "tie_share": 0.0853
+   },
+   "judge_coverage_pct_on_evaluable_cells": 84.848485,
+   "judge_coverage_pct_on_primary_ask_cells": 71.111111,
+   "judge_j_ge_2_share_on_evaluable_cells": 0.909091,
+   "primary_cells_on_ask_cqs": 15
+  }
+ },
+ "schema": "ask_alignment results v1",
+ "script_sha256": "6098c6ee6f57b4085f548bd2919f2a222e5998347c73ee7c826ba148214e91ba",
+ "sensitivity_any_candidate": {
+  "ask_vs_ah_label_A": {
+   "bca_kappa": {
+    "ci_hi": 0.17192,
+    "ci_lo": 0.0,
+    "computable": true,
+    "estimate": 0.026247,
+    "n_cells": 53,
+    "n_clusters": 11,
+    "tie_share": 0.0109
+   },
+   "clusters_with_ask_true": 5,
+   "kappa": 0.026247,
+   "n": 53,
+   "percent_agreement": 0.207547,
+   "table": {
+    "ask_false__other_0": 6,
+    "ask_false__other_1": 42,
+    "ask_true__other_0": 0,
+    "ask_true__other_1": 5
+   }
+  },
+  "ask_vs_judge_J_ge_2": {
+   "bca_kappa": {
+    "ci_hi": 0.196864,
+    "ci_lo": 0.005682,
+    "computable": true,
+    "estimate": 0.036364,
+    "n_cells": 53,
+    "n_clusters": 11,
+    "tie_share": 0.0109
+   },
+   "clusters_with_ask_true": 5,
+   "kappa": 0.036364,
+   "n": 53,
+   "percent_agreement": 0.245283,
+   "table": {
+    "ask_false__other_0": 8,
+    "ask_false__other_1": 40,
+    "ask_true__other_0": 0,
+    "ask_true__other_1": 5
+   }
+  },
+  "evaluable_primary_cells": 53,
+  "note": "SECONDARY. Upper bound: an ASK is true if ANY assignment of one candidate (from any rule) per Brick term makes it true. Cells with a term that has no candidate, or more than the cap of assignments, are excluded."
+ },
+ "status": "EXPLORATORY and POST HOC. The ct:->brick: alignment was designed and run after the holdout judge scores and the AH labels were known; it is not registered and feeds no gate.",
+ "variant_graphs": {
+  "A": {
+   "core_predicate_triples": {
+    "owl:disjointWith": 0,
+    "owl:inverseOf": 15,
+    "rdfs:subClassOf": 1946,
+    "rdfs:subPropertyOf": 0,
+    "sh:class": 0,
+    "sh:path": 0
+   },
+   "core_predicates_absent": [
+    "rdfs:subPropertyOf",
+    "owl:disjointWith",
+    "sh:path",
+    "sh:class"
+   ],
+   "ct_analogue_predicate_triples": {
+    "ct:p_inverse": 0,
+    "ct:p_subclass": 0
+   },
+   "ct_terms_candidate_vocabulary": 1916,
+   "scaffold_terms_excluded": 0,
+   "triples": 6841
+  },
+  "B": {
+   "core_predicate_triples": {
+    "owl:disjointWith": 0,
+    "owl:inverseOf": 0,
+    "rdfs:subClassOf": 14,
+    "rdfs:subPropertyOf": 0,
+    "sh:class": 0,
+    "sh:path": 0
+   },
+   "core_predicates_absent": [
+    "rdfs:subPropertyOf",
+    "owl:inverseOf",
+    "owl:disjointWith",
+    "sh:path",
+    "sh:class"
+   ],
+   "ct_analogue_predicate_triples": {
+    "ct:p_inverse": 10,
+    "ct:p_subclass": 1982
+   },
+   "ct_terms_candidate_vocabulary": 4523,
+   "scaffold_terms_excluded": 111,
+   "triples": 35668
+  },
+  "C": {
+   "core_predicate_triples": {
+    "owl:disjointWith": 0,
+    "owl:inverseOf": 0,
+    "rdfs:subClassOf": 10,
+    "rdfs:subPropertyOf": 0,
+    "sh:class": 0,
+    "sh:path": 0
+   },
+   "core_predicates_absent": [
+    "rdfs:subPropertyOf",
+    "owl:inverseOf",
+    "owl:disjointWith",
+    "sh:path",
+    "sh:class"
+   ],
+   "ct_analogue_predicate_triples": {
+    "ct:p_inverse": 10,
+    "ct:p_subclass": 1980
+   },
+   "ct_terms_candidate_vocabulary": 4498,
+   "scaffold_terms_excluded": 106,
+   "triples": 44796
+  },
+  "D": {
+   "core_predicate_triples": {
+    "owl:disjointWith": 0,
+    "owl:inverseOf": 0,
+    "rdfs:subClassOf": 12,
+    "rdfs:subPropertyOf": 0,
+    "sh:class": 0,
+    "sh:path": 0
+   },
+   "core_predicates_absent": [
+    "rdfs:subPropertyOf",
+    "owl:inverseOf",
+    "owl:disjointWith",
+    "sh:path",
+    "sh:class"
+   ],
+   "ct_analogue_predicate_triples": {
+    "ct:p_inverse": 10,
+    "ct:p_subclass": 1980
+   },
+   "ct_terms_candidate_vocabulary": 4498,
+   "scaffold_terms_excluded": 103,
+   "triples": 44659
+  },
+  "E": {
+   "core_predicate_triples": {
+    "owl:disjointWith": 0,
+    "owl:inverseOf": 0,
+    "rdfs:subClassOf": 12,
+    "rdfs:subPropertyOf": 0,
+    "sh:class": 0,
+    "sh:path": 0
+   },
+   "core_predicates_absent": [
+    "rdfs:subPropertyOf",
+    "owl:inverseOf",
+    "owl:disjointWith",
+    "sh:path",
+    "sh:class"
+   ],
+   "ct_analogue_predicate_triples": {
+    "ct:p_inverse": 10,
+    "ct:p_subclass": 0
+   },
+   "ct_terms_candidate_vocabulary": 6345,
+   "scaffold_terms_excluded": 96,
+   "triples": 52056
+  },
+  "F": {
+   "core_predicate_triples": {
+    "owl:disjointWith": 0,
+    "owl:inverseOf": 0,
+    "rdfs:subClassOf": 12,
+    "rdfs:subPropertyOf": 0,
+    "sh:class": 0,
+    "sh:path": 0
+   },
+   "core_predicates_absent": [
+    "rdfs:subPropertyOf",
+    "owl:inverseOf",
+    "owl:disjointWith",
+    "sh:path",
+    "sh:class"
+   ],
+   "ct_analogue_predicate_triples": {
+    "ct:p_inverse": 10,
+    "ct:p_subclass": 0
+   },
+   "ct_terms_candidate_vocabulary": 6345,
+   "scaffold_terms_excluded": 96,
+   "triples": 52056
+  }
+ }
+}

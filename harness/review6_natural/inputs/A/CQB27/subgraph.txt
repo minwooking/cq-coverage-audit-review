@@ -1,0 +1,161 @@
+http://example.org/chunktograph#AHU | AHU
+http://example.org/chunktograph#ASHRAE | ASHRAE
+http://example.org/chunktograph#ASHRAE223P | ASHRAE 223P
+http://example.org/chunktograph#Air | Air
+http://example.org/chunktograph#AirFlowSetpoint | Air Flow Setpoint
+http://example.org/chunktograph#AirTemperatureSensor | Air Temperature Sensor
+http://example.org/chunktograph#Anthropic | Anthropic
+http://example.org/chunktograph#ApplicationsAndAnalyticsWorkingGroup | Applications and Analytics Working Group
+http://example.org/chunktograph#BlocklyAPI | Blockly API
+http://example.org/chunktograph#BoardOfDirectors | Board of Directors
+http://example.org/chunktograph#Brick | Brick :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities.
+http://example.org/chunktograph#BrickClass | Brick Class
+http://example.org/chunktograph#BrickClassDefinitionStructure | Brick Class Definition Structure
+http://example.org/chunktograph#BrickConsortium | Brick Consortium
+http://example.org/chunktograph#BrickEntityProperty | Brick Entity Property
+http://example.org/chunktograph#BrickEquipmentDefinition | Brick Equipment Definition
+http://example.org/chunktograph#BrickGitHubIssueTracker | Brick GitHub Issue Tracker
+http://example.org/chunktograph#BrickIssueTracker | Brick Issue Tracker < owl:NamedIndividual
+http://example.org/chunktograph#BrickLLM | BrickLLM
+http://example.org/chunktograph#BrickLocationDefinition | Brick Location Definition
+http://example.org/chunktograph#BrickOnlyTTL | Brick-only.ttl :: Contains only the Brick ontology; all other dependencies, including RealEstateCore, must be imported or otherwise included
+http://example.org/chunktograph#BrickOntology | Brick Ontology
+http://example.org/chunktograph#BrickParameterDefinition | Brick Parameter Definition
+http://example.org/chunktograph#BrickPlus | Brick+ < http://example.org/chunktograph#Brick :: Brick+ defines a class lattice that structures the composition of concepts.
+http://example.org/chunktograph#BrickPlusExtensionsTTL | Brick+extensions.ttl :: Contains the Brick and RealEstateCore ontologies, as well as all extensions currently in the Brick repository. All other dependencies must be imported or otherwise included
+http://example.org/chunktograph#BrickPlusImportsTTL | Brick+imports.ttl :: Contains the Brick and RealEstateCore ontologies, as well as all imports; no other dependencies are required
+http://example.org/chunktograph#BrickPointClass | Brick Point Class < http://example.org/chunktograph#BrickClass
+http://example.org/chunktograph#BrickQuantityDefinition | Brick Quantity Definition
+http://example.org/chunktograph#BrickRelationship | Brick Relationship
+http://example.org/chunktograph#BrickRelationshipDefinition | Brick Relationship Definition
+http://example.org/chunktograph#BrickRepository | Brick Repository
+http://example.org/chunktograph#BrickSubstanceDefinition | Brick Substance Definition
+http://example.org/chunktograph#BrickTTL | Brick.ttl :: Contains the Brick and RealEstateCore ontologies; all other dependencies must be imported or otherwise included
+http://example.org/chunktograph#BrickTag | Brick Tag
+http://example.org/chunktograph#BrickUserForum | Brick User Forum < owl:NamedIndividual
+http://example.org/chunktograph#BrickWebsiteIssueTracker | Brick Website Issue Tracker
+http://example.org/chunktograph#Brick_v1.1 | Brick v1.1
+http://example.org/chunktograph#Brickly | Brickly
+http://example.org/chunktograph#BugReport | Bug Report
+http://example.org/chunktograph#Building | Building
+http://example.org/chunktograph#BuildingInformationModel | Building Information Model
+http://example.org/chunktograph#BuildingTopologyOntology | Building Topology Ontology < http://example.org/chunktograph#Brick
+http://example.org/chunktograph#RealEstateCore_v3.1 | RealEstateCore v3.1
+IND http://example.org/chunktograph#ACMEEnergy2019TutorialInstance | ACM E-Energy 2019 Tutorial Slides a http://example.org/chunktograph#ACMEEnergy2019Tutorial
+IND http://example.org/chunktograph#AHU | AHU a http://example.org/chunktograph#AirHandlingUnit,owl:Class
+IND http://example.org/chunktograph#AIF | AI F
+IND http://example.org/chunktograph#AProgrammingModelForPortableFaultDetectionAndDiagnosis | A programming model for portable fault detection and diagnosis {http://example.org/chunktograph#hasPublicationYear=2023; http://example.org/chunktograph#hasURL=https://doi.org/10.1145/3587225.3587245}
+IND http://example.org/chunktograph#ASHRAE | ASHRAE a owl:Class
+IND http://example.org/chunktograph#ASHRAE223P | ASHRAE 223P a http://example.org/chunktograph#Standard,owl:Class
+IND http://example.org/chunktograph#ASHRAEHaystackBrickCollaborationInstance | ASHRAE, Haystack, Brick Collaboration {http://example.org/chunktograph#hasSourceText=ASHRAE, Haystack, Brick Collaboration}
+IND http://example.org/chunktograph#Abound | Abound a http://example.org/chunktograph#Platform
+IND http://example.org/chunktograph#AcademicIndividualResearcherMember | Academic Individual Researcher a http://example.org/chunktograph#MembershipLevel {http://example.org/chunktograph#hasMembershipFee=0; http://example.org/chunktograph#hasRightToChairCommittee=true; http://example.org/chunktograph#hasRightToServeOnCommittee=true; http://example.org/chunktograph#hasRightToVoteForSteering=false; http://example.org/chunktograph#hasRightToVoteOnCommittee=true}
+IND http://example.org/chunktograph#AccessControl | Access Control a http://example.org/chunktograph#BuildingManagementSystem,http://example.org/chunktograph#BuildingSystem
+IND http://example.org/chunktograph#AddedClassesFile | added_classes.txt {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#Air | Air a http://example.org/chunktograph#Substance,owl:Class
+IND http://example.org/chunktograph#AirFlowSetpoint | Air Flow Setpoint a http://example.org/chunktograph#Setpoint,owl:Class
+IND http://example.org/chunktograph#AirTemperatureSensor | Air Temperature Sensor a http://example.org/chunktograph#Sensor,owl:Class
+IND http://example.org/chunktograph#AkshayJohar | Akshay Johar {http://example.org/chunktograph#hasEmail=; http://example.org/chunktograph#hasRole=Member}
+IND http://example.org/chunktograph#AlignmentInstance | Alignment instance a http://example.org/chunktograph#Alignment
+IND http://example.org/chunktograph#Alignments | Alignments :: Brick 1.2.0 also includes alignments with several external ontologies and metadata representations. {rdfs:subClassOf=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#Allegrograph | Allegrograph a http://example.org/chunktograph#Database {http://example.org/chunktograph#MultipleGraphsSupport=unknown; http://example.org/chunktograph#RDFModelStorage=The paid version of Allegograph supports horizontally scalable storage of RDF models; the base version stores RDF models on a single node; http://example.org/chunktograph#ReasoningInference=supports both OWL-RL and RDFS languages; http://example.org/chunktograph#SHACLSupport=supports SHACL validation but does not seem to support SHACL advanced features such as inference; http://example.org/chunktograph#SPARQLSupport=supports full SPARQL 1.1; http://example.org/chunktograph#ScalingAndPerformance=Allegrograph demonstrates good performance on graphs typical of Brick}
+IND http://example.org/chunktograph#Anthropic | Anthropic a owl:Class {http://example.org/chunktograph#hasAccessDate=2023-11-04; http://example.org/chunktograph#hasPublicationYear=2024; http://example.org/chunktograph#hasURL=https://anthropic.com}
+IND http://example.org/chunktograph#AntonellaFranzen | Antonella Franzen a http://example.org/chunktograph#Person {http://example.org/chunktograph#hasEmail=<email>; http://example.org/chunktograph#hasPhone=609.720.4665}
+IND http://example.org/chunktograph#ApplicationDrivenCreationOfBuildingMetadataModelsWithSemanticSufficiency | Application-driven creation of building metadata models with semantic sufficiency {http://example.org/chunktograph#hasPublicationYear=2022}
+IND http://example.org/chunktograph#ApplicationsAndAnalyticsWorkingGroup | Applications and Analytics Working Group a http://example.org/chunktograph#ApplicationsAndAnalyticsWorkingGroup,owl:Class
+IND http://example.org/chunktograph#AutoRD | AutoRD: An automatic and end-to-end system for rare disease knowledge graph construction based on ontologies-enhanced large language models {http://example.org/chunktograph#hasPublicationYear=2024}
+IND http://example.org/chunktograph#AutomatedConstructionOfThemeSpecificKnowledgeGraphs | Automated construction of theme-specific knowledge graphs {http://example.org/chunktograph#hasPublicationYear=2024}
+IND http://example.org/chunktograph#BACnet | BACnet a http://example.org/chunktograph#Standard
+IND http://example.org/chunktograph#BACnet_Device | BACnet Device a http://example.org/chunktograph#IctEquipment
+IND http://example.org/chunktograph#BACnet_networks | BACnet networks
+IND http://example.org/chunktograph#BOT | BOT :: An ontology for building topologies and locations. {rdfs:subClassOf=http://example.org/chunktograph#Alignments}
+IND http://example.org/chunktograph#Balaji2018 | Balaji et al. (2018) a http://example.org/chunktograph#Validation
+IND http://example.org/chunktograph#BeccaWirta | Becca Wirta a http://example.org/chunktograph#Person {http://example.org/chunktograph#hasEmail=<email>}
+IND http://example.org/chunktograph#BlocklyAPI | Blockly API a owl:Class
+IND http://example.org/chunktograph#BoardOfDirectors | Board of Directors a http://example.org/chunktograph#BoardOfDirectors,owl:Class {http://example.org/chunktograph#isResponsibleFor=corporate governance and government filings}
+IND http://example.org/chunktograph#Brick | Brick a owl:Class :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities. {http://example.org/chunktograph#hasBrickModel=http://example.org/chunktograph#BrickV1_1; http://example.org/chunktograph#hasBrickSupport=http://example.org/chunktograph#Brick; http://example.org/chunktograph#hasIssueTracker=http://example.org/chunktograph#BrickIssueTrackerInstance; http://example.org/chunktograph#hasMOU=http://example.org/chunktograph#BrickMOU; http://example.org/chunktograph#hasTool=http://example.org/chunktograph#BrickQueryBuilderInstance; http://example.org/chunktograph#hasTool=http://example.org/chunktograph#BrickServerInstance; http://example.org/chunktograph#hasTool=http://example.org/chunktograph#BrickStudioInstance; http://example.org/chunktograph#hasTool=http://example.org/chunktograph#BrickViewerInstance; http://example.org/chunktograph#hasTutorial=http://example.org/chunktograph#ACMEEnergy2019TutorialInstance; http://example.org/chunktograph#hasTutorial=http://example.org/chunktograph#BuildSys2017TutorialInstance; http://example.org/chunktograph#isCollaboratingWith=http://example.org/chunktograph#ASHRAE; http://example.org/chunktograph#isUsedIn=http://example.org/chunktograph#ASHRAE223P; http://example.org/chunktograph#questionAddressedVia=http://example.org/chunktograph#BrickGitHubIssueTracker; http://example.org/chunktograph#questionAddressedVia=http://example.org/chunktograph#BrickUserForum; http://example.org/chunktograph#reportedOn=http://example.org/chunktograph#BrickGitHubIssueTracker; http://example.org/chunktograph#trackedOn=http://example.org/chunktograph#BrickGitHubIssueTracker}
+IND http://example.org/chunktograph#Brick-REC-alignment.ttl | Brick-REC-alignment.ttl {http://example.org/chunktograph#isAlignmentFileOf=http://example.org/chunktograph#Brick_v1.1; http://example.org/chunktograph#isAlignmentFileOf=http://example.org/chunktograph#RealEstateCore_v3.1}
+IND http://example.org/chunktograph#Brick-REC-nodevice.rdf | Brick-REC-nodevice.rdf {http://example.org/chunktograph#isInputTo=http://example.org/chunktograph#generate.py}
+IND http://example.org/chunktograph#Brick-VBIS-alignment.ttl | Brick-VBIS-alignment.ttl
+IND http://example.org/chunktograph#BrickClass | Brick Class a owl:Class {http://example.org/chunktograph#hasParent=http://example.org/chunktograph#BrickClass; http://example.org/chunktograph#hasSubstance=http://example.org/chunktograph#BrickSubstanceDefinition; http://example.org/chunktograph#hasTag=http://example.org/chunktograph#BrickTag; owl:equivalentClass=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#BrickClassDefinitionStructure | Brick Class Definition Structure a owl:Class
+IND http://example.org/chunktograph#BrickConsortium | Brick Consortium a owl:Class
+IND http://example.org/chunktograph#BrickConsortiumInc | Brick Consortium, Inc a http://example.org/chunktograph#BrickConsortium,http://example.org/chunktograph#NonProfitMembershipCorporation {http://example.org/chunktograph#addresses=an important industry and societal need by helping to make data of the built environment interoperable; http://example.org/chunktograph#hasContact=Erik Paulson; http://example.org/chunktograph#hasEvent=a virtual open house in 2021; http://example.org/chunktograph#hasMembershipForm=a membership form is available; http://example.org/chunktograph#hasPurpose=to encourage the research and development of Brick Schema Specifications for the built environment and any supporting tooling, documentation, and best practices necessary to promote Brick; http://example.org/chunktograph#hasRule=rules of the consortium are available for review; http://example.org/chunktograph#isMadeUpOf=researchers, technology providers, integrators, and building operators}
+IND http://example.org/chunktograph#BrickDataRetrievalDemo | Brick Data Retrieval Demo a http://example.org/chunktograph#JupyterNotebook,http://example.org/chunktograph#Repository {http://example.org/chunktograph#implements=http://example.org/chunktograph#BrickDataRetrievalDemo}
+IND http://example.org/chunktograph#BrickDevelopmentTeam | Brick Development Team {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#BrickEntityProperty | Brick Entity Property a owl:Class
+IND http://example.org/chunktograph#BrickEquipmentDefinition | Brick Equipment Definition a owl:Class
+IND http://example.org/chunktograph#BrickExampleServer | Brick Example Server a http://example.org/chunktograph#Platform
+IND http://example.org/chunktograph#BrickExpandedTTL | Brick_expanded.ttl
+IND http://example.org/chunktograph#BrickGitHubIssueTracker | Brick GitHub Issue Tracker a http://example.org/chunktograph#CommunicationChannel,owl:Class
+IND http://example.org/chunktograph#BrickGitHubRepository | Brick GitHub Repository
+IND http://example.org/chunktograph#BrickInstance | Brick a http://example.org/chunktograph#Brick {http://example.org/chunktograph#isOpenSource=true}
+IND http://example.org/chunktograph#BrickIssueTracker | Brick Issue Tracker a owl:Class {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#BrickIssueTrackerInstance | Brick GitHub issues page a http://example.org/chunktograph#BrickIssueTracker
+IND http://example.org/chunktograph#BrickLLM | BrickLLM a owl:Class {http://example.org/chunktograph#hasURL=https://github.com/EURAC-EEBgroup/brick-llm; http://example.org/chunktograph#supports=http://example.org/chunktograph#Anthropic; http://example.org/chunktograph#uses=http://example.org/chunktograph#BrickOntology}
+IND http://example.org/chunktograph#BrickLLMInstance | BrickLLM a http://example.org/chunktograph#BrickLLM
+IND http://example.org/chunktograph#BrickLLM_1.2.0 | BrickLLM v1.2.0 {http://example.org/chunktograph#compliantWith=http://example.org/chunktograph#BrickOntology; http://example.org/chunktograph#uses=http://example.org/chunktograph#Anthropic}
+IND http://example.org/chunktograph#BrickLocationDefinition | Brick Location Definition a owl:Class
+IND http://example.org/chunktograph#BrickMOU | Brick VBIS MOU a http://example.org/chunktograph#MemorandumOfUnderstanding :: Memorandum of Understanding between Brick and VBIS
+IND http://example.org/chunktograph#BrickModel1 | Brick Model a http://example.org/chunktograph#BrickModel {http://example.org/chunktograph#hasOntologyImport=http://example.org/chunktograph#BrickVersion1_2}
+IND http://example.org/chunktograph#BrickModel2 | Brick model 2 a http://example.org/chunktograph#BrickModel {http://example.org/chunktograph#hasOntologyImport=http://example.org/chunktograph#BrickVersion1_3}
+IND http://example.org/chunktograph#BrickNamespace | Brick namespace a owl:Ontology {owl:ontologyIRI=https://brickschema.org/schema/1.2/Brick#}
+IND http://example.org/chunktograph#BrickOnlyTTL | Brick-only.ttl a owl:Class :: Contains only the Brick ontology; all other dependencies, including RealEstateCore, must be imported or otherwise included {http://example.org/chunktograph#containsOntology=http://example.org/chunktograph#BrickOntology}
+IND http://example.org/chunktograph#BrickOntology | Brick Ontology a http://example.org/chunktograph#Ontology,owl:Class {http://example.org/chunktograph#discussesTopic=additions, extensions and fixes to the Brick ontology definition; http://example.org/chunktograph#discussesTopic=anything else that comes up!; http://example.org/chunktograph#discussesTopic=building data sets that can inform research and illustrate idiomatic use of Brick; http://example.org/chunktograph#discussesTopic=changes to the ontology structure; http://example.org/chunktograph#discussesTopic=developing, testing and documenting open-source software that facilitates use of Brick; http://example.org/chunktograph#discussesTopic=documentation for Brick; http://example.org/chunktograph#discussesTopic=example Brick models (both for full buildings as well as individual systems); http://example.org/chunktograph#discussesTopic=modeling domains; http://example.org/chunktograph#discussesTopic=new classes; http://example.org/chunktograph#discussesTopic=software for producing Brick models from existing representations; http://example.org/chunktograph#discussesTopic=software/libraries/databases for querying, managing and storing Brick models}
+IND http://example.org/chunktograph#BrickParameterDefinition | Brick Parameter Definition a owl:Class
+IND http://example.org/chunktograph#BrickPlus | Brick+ a http://example.org/chunktograph#BrickPlusOntology,http://example.org/chunktograph#Class,owl:Class,owl:Ontology :: Brick+ defines a class lattice that structures the composition of concepts. {http://example.org/chunktograph#hasBrickModel=http://example.org/chunktograph#BrickV1_1; http://example.org/chunktograph#isAReplacementFor=http://example.org/chunktograph#Brick; rdfs:subClassOf=http://example.org/chunktograph#Brick}
+IND http://example.org/chunktograph#BrickPlusExtensionsTTL | Brick+extensions.ttl a owl:Class :: Contains the Brick and RealEstateCore ontologies, as well as all extensions currently in the Brick repository. All other dependencies must be imported or otherwise included {http://example.org/chunktograph#containsOntology=http://example.org/chunktograph#BrickOntology}
+IND http://example.org/chunktograph#BrickPlusImportsTTL | Brick+imports.ttl a owl:Class :: Contains the Brick and RealEstateCore ontologies, as well as all imports; no other dependencies are required {http://example.org/chunktograph#containsOntology=http://example.org/chunktograph#BrickOntology}
+IND http://example.org/chunktograph#BrickPlusSourceCode | Brick+ Source Code
+IND http://example.org/chunktograph#BrickPlusValidationLibrary | Brick+ Validation Library a http://example.org/chunktograph#Validation
+IND http://example.org/chunktograph#BrickPlusValidationTool | Brick+ Validation Tool a http://example.org/chunktograph#Validation
+IND http://example.org/chunktograph#BrickPointClass | Brick Point Class a owl:Class {rdfs:subClassOf=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#BrickQuantityDefinition | Brick Quantity Definition a owl:Class
+IND http://example.org/chunktograph#BrickQueryBuilderInstance | Brick QueryBuilder tool a http://example.org/chunktograph#BrickQueryBuilder
+IND http://example.org/chunktograph#BrickRelationship | Brick Relationship a owl:Class {http://example.org/chunktograph#hasDomain=http://example.org/chunktograph#BrickClass; http://example.org/chunktograph#hasInverse=http://example.org/chunktograph#BrickRelationship; http://example.org/chunktograph#hasRange=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#BrickRelationshipDefinition | Brick Relationship Definition a owl:Class
+IND http://example.org/chunktograph#BrickRepository | Brick Repository a owl:Class {http://example.org/chunktograph#hasDependency=http://example.org/chunktograph#CPlusPlusCompiler}
+IND http://example.org/chunktograph#BrickSchema1_3 | Brick Schema 1.3 a http://example.org/chunktograph#BrickSchema {http://example.org/chunktograph#hasStandard=http://example.org/chunktograph#ASHRAE223P; http://example.org/chunktograph#hasStandard=http://example.org/chunktograph#BACnet; http://example.org/chunktograph#hasSystem=http://example.org/chunktograph#AccessControl; http://example.org/chunktograph#hasTargetReleaseDate=August 30, 2022; http://example.org/chunktograph#hasVersion=1.3; http://example.org/chunktograph#releaseDate=2022-02-28}
+IND http://example.org/chunktograph#BrickSchemaInstance | Brick Schema: Building Blocks for Smart Buildings a http://example.org/chunktograph#BrickSchema {http://example.org/chunktograph#hasSourceText=Brick Schema: Building Blocks for Smart Buildings}
+IND http://example.org/chunktograph#BrickServerInstance | Brick Server reference implementation a http://example.org/chunktograph#BrickServer
+IND http://example.org/chunktograph#BrickSrcDirectory | bricksrc directory {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#BrickStudioInstance | BrickStudio a http://example.org/chunktograph#BrickStudio
+IND http://example.org/chunktograph#BrickSubstanceDefinition | Brick Substance Definition a owl:Class
+IND http://example.org/chunktograph#BrickTTL | Brick.ttl a owl:Class :: Contains the Brick and RealEstateCore ontologies; all other dependencies must be imported or otherwise included {http://example.org/chunktograph#containsOntology=http://example.org/chunktograph#BrickOntology}
+IND http://example.org/chunktograph#BrickTag | Brick Tag a owl:Class
+IND http://example.org/chunktograph#BrickTtlFile | Brick.ttl {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#BrickUserForum | Brick User Forum a http://example.org/chunktograph#CommunicationChannel,owl:Class {rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#BrickV1_1 | Brick v1.1 a http://example.org/chunktograph#Brick :: Since publication of Fierro et al. (2019), Brick+ has been adopted into the release of Brick v1.1. {http://example.org/chunktograph#hasBrickModel=http://example.org/chunktograph#BrickV1_1}
+IND http://example.org/chunktograph#BrickValidation | Brick Compliance (Brick validation) a http://example.org/chunktograph#ValidationStep {http://example.org/chunktograph#hasIterationLimit=3; http://example.org/chunktograph#isBasedOn=http://example.org/chunktograph#BrickOntology}
+IND http://example.org/chunktograph#BrickVersion1_2 | Brick ontology v1.2 a owl:Ontology {owl:ontologyIRI=https://brickschema.org/schema/1.2/Brick#}
+IND http://example.org/chunktograph#BrickVersion1_2_0 | Brick v1.2.0 :: Marks just over 7 months of work from a growing community of contributors. Brings a number of new features. {rdfs:subClassOf=http://example.org/chunktograph#BrickClass}
+IND http://example.org/chunktograph#BrickVersion1_2_1 | Brick v1.2.1 :: The latest patch release of Brick since v1.2.0 in February 2021. It incorporates a variety of quality of life changes, bug fixes, class additions and other changes to increase the consistency, usability and correctness of Brick. {rdfs:subClassOf=http://example.org/chunktograph#BrickVersion1_2_0; owl:equivalentClass=http://example.org/chunktograph#BrickVersion1_2_0}
+IND http://example.org/chunktograph#BrickVersion1_3 | Brick ontology v1.3 a owl:Ontology {owl:ontologyIRI=https://brickschema.org/schema/1.3/Brick#}
+IND http://example.org/chunktograph#BrickVersion1_4 | Brick v1.4
+IND http://example.org/chunktograph#BrickViewerInstance | BrickViewer tool a http://example.org/chunktograph#BrickViewer
+IND http://example.org/chunktograph#BrickWebsite | Brick Website {http://example.org/chunktograph#hasURL=https://brickschema.org; rdfs:subClassOf=owl:NamedIndividual}
+IND http://example.org/chunktograph#BrickWebsiteIssueTracker | Brick Website Issue Tracker a http://example.org/chunktograph#CommunicationChannel,owl:Class
+IND http://example.org/chunktograph#BrickXAlignmentFile | Brick-X-alignment.ttl a http://example.org/chunktograph#File {http://example.org/chunktograph#hasFileName=Brick-X-alignment.ttl}
+IND http://example.org/chunktograph#Brick_development_team | Brick development team
+IND http://example.org/chunktograph#Brick_ttl | Brick.ttl a http://example.org/chunktograph#Module
+IND http://example.org/chunktograph#Brick_v1.1 | Brick v1.1 a owl:Class
+IND http://example.org/chunktograph#Brick_v1.2.1 | Brick v1.2.1
+IND http://example.org/chunktograph#Brick_v1.3.0 | Brick v1.3.0 {http://example.org/chunktograph#hasUnitTests=http://example.org/chunktograph#BACnet_networks}
+IND http://example.org/chunktograph#Brickify | Brickify {http://example.org/chunktograph#usesJinja2=Jinja2; http://example.org/chunktograph#usesPythonEval=eval()}
+IND http://example.org/chunktograph#BrickifyToolInstance | Brickify tool instance a http://example.org/chunktograph#BrickifyTool {http://example.org/chunktograph#hasConfigFile=template.yml; http://example.org/chunktograph#hasInputType=sheet.tsv; http://example.org/chunktograph#hasOutputFile=bldg.ttl}
+IND http://example.org/chunktograph#Brickly | Brickly a owl:Class {http://example.org/chunktograph#uses=http://example.org/chunktograph#BlocklyAPI}
+IND http://example.org/chunktograph#BugReport | Bug Report a owl:Class
+IND http://example.org/chunktograph#BuildSys2017TutorialInstance | BuildSys 2017 Tutorial Slides a http://example.org/chunktograph#BuildSys2017Tutorial
+IND http://example.org/chunktograph#Building | Building a http://example.org/chunktograph#Building,owl:Class
+IND http://example.org/chunktograph#BuildingBetterBuildingDataInstance | Building better building data, Brick by Brick {http://example.org/chunktograph#hasSourceText=Building better building data, Brick by Brick}
+IND http://example.org/chunktograph#BuildingBuzzInstance | Building Buzz – Innovation all around {http://example.org/chunktograph#hasSourceText=Building Buzz – Innovation all around}
+IND http://example.org/chunktograph#BuildingInformationModel | Building Information Model a owl:Class
+IND http://example.org/chunktograph#BuildingInformationModeling | Building information modeling a http://example.org/chunktograph#Blueprint
+IND http://example.org/chunktograph#BuildingTopologyOntology | Building Topology Ontology a owl:Class {rdfs:subClassOf=http://example.org/chunktograph#Brick}
+IND http://example.org/chunktograph#Building_1 | Building 1 a http://example.org/chunktograph#Building
+IND http://example.org/chunktograph#CAFM | CAFM a http://example.org/chunktograph#BusinessAdministrationSystem
+IND http://example.org/chunktograph#CPlusPlusCompiler | C++ Compiler
+IND http://example.org/chunktograph#CSV | CSV a http://example.org/chunktograph#input-format
+IND http://example.org/chunktograph#CaoL | Cao L {http://example.org/chunktograph#hasSource=http://example.org/chunktograph#AutoRD}
+IND http://example.org/chunktograph#REC | REC :: An emerging ontology for real estate management. {rdfs:subClassOf=http://example.org/chunktograph#Alignments}
+IND http://example.org/chunktograph#generate.py | generate.py

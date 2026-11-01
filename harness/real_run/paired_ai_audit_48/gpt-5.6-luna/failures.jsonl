@@ -1,0 +1,1 @@
+{"cell_id": "primary:E:CQB24", "attempt": 1, "utc": "2026-10-09T12:34:28.444153+00:00", "error_class": "content", "http_status": 200, "error": "unparsed; finish_reason=stop", "usage": {"prompt_tokens": 626439, "completion_tokens": 263, "cached_tokens": 0, "reasoning_tokens": 151}, "finish_reason": "stop"}

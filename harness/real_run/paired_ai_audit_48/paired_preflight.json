@@ -1,0 +1,40 @@
+{
+  "verdict": "ready",
+  "list": {
+    "path": "paper/access2026/harness/real_run/second_annotator/cell_list_48.txt",
+    "sha256": "bd2333d427971fb182add2e3735e1d81fd3fe343640d736eea2b612819854b7e",
+    "n_cells": 48,
+    "composition": {
+      "A": 3,
+      "B": 9,
+      "C": 13,
+      "D": 7,
+      "E": 10,
+      "F": 6
+    }
+  },
+  "models": [
+    {
+      "id_requested": "gpt-5.6-luna",
+      "id_reported": "gpt-5.6-luna",
+      "family": "openai",
+      "in_v1_models": true,
+      "availability_http_status": 200
+    },
+    {
+      "id_requested": "anthropic/claude-sonnet-5-5",
+      "id_reported": "anthropic/claude-sonnet-5-5",
+      "family": "anthropic",
+      "in_v1_models": true,
+      "availability_http_status": 200
+    }
+  ],
+  "families_distinct": true,
+  "estimates": {
+    "per_model_prompt_tokens_conservative": 28261958,
+    "two_model_total_prompt_tokens_conservative": 56523916,
+    "source": "run_second_judge --estimate"
+  },
+  "quota_note": "",
+  "utc": "2026-10-09T11:00:00.375979+00:00"
+}

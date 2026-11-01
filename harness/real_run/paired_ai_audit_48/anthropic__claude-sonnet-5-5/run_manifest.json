@@ -1,0 +1,346 @@
+{
+  "status": "EXPLORATORY, POST HOC: run after the holdout results (and the human labels) were known; the second judge was not registered in PREREG.md",
+  "model_requested": "anthropic/claude-sonnet-5-5",
+  "model_id_reported_by_proxy": "anthropic/claude-sonnet-5-5",
+  "models_reported_in_cell_responses": [
+    "anthropic/claude-sonnet-5-5"
+  ],
+  "runner_py_sha256": "456726b8961e88d76e6cbfafe61093baaaf93e93526a4c116ac93f95223a90b8",
+  "provider_path": "local <internal-proxy> proxy (OpenAI-compatible /v1/chat/completions); no other provider",
+  "endpoint": "http://<local-endpoint>/v1",
+  "proxy_facts": {
+    "proxy": {
+      "service": "<internal-proxy>",
+      "version": "2.41.0"
+    },
+    "model_listing": {
+      "id": "anthropic/claude-sonnet-5-5",
+      "owned_by": "anthropic",
+      "default_reasoning_effort": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "pricing_overrides": null
+    }
+  },
+  "created_utc": "2026-10-09T11:59:23.110154+00:00",
+  "updated_utc": "2026-10-09T13:34:25.774687+00:00",
+  "settings": {
+    "temperature": "OMITTED (--omit-temperature; model default; API rejects the parameter)",
+    "temperature_omitted": true,
+    "max_tokens": 1024,
+    "response_format": "OMITTED (registered: json_object); see response_format_probe",
+    "extra_body": null,
+    "extra_top_level_fields": null,
+    "reasoning_effort": "not sent; proxy default for the model (see proxy_facts)",
+    "system_prompt": "run_holdout.RUBRIC, unchanged",
+    "user_message": "ARTIFACT:\\n{artifact}\\n\\nQUESTION: {question}, unchanged",
+    "workers": 2,
+    "max_workers_allowed": 3,
+    "determinism_note": "temperature 0.0 is sent and accepted, but this is a reasoning model behind a proxy: a repeated call of the same cell gave different completion/reasoning token counts (observed 2026-10-09), so the scores are not guaranteed bit-reproducible"
+  },
+  "response_format_probe": {
+    "utc": "2026-10-09T13:32:26.921461+00:00",
+    "availability_http_status": 200,
+    "model_id_reported_by_proxy": "anthropic/claude-sonnet-5-5",
+    "availability_usage": {
+      "prompt_tokens": 722,
+      "completion_tokens": 64,
+      "cached_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "availability_error": "",
+    "with_response_format_http_status": 200,
+    "with_response_format_error": "",
+    "response_format_omitted_reason": "NOT REPRODUCED this time: the proxy accepted response_format"
+  },
+  "digests": {
+    "frozen_input_digests": {
+      "cq_bank_brick_v1.csv": "993c5e1164540dce0f2f9bf2e6ed397cf45910da7889300feeaad6543edb8507",
+      "RUBRIC_L1.md": "d0c397584bd62ca2ba62cf3833b1ad70862d6be22be52a4c3ffa111529756ebf",
+      "RENDERING_SPEC.md": "eb0399af5152ac001074f1a0c27b23652a42a2f9ceeebf95a669abf703ec0a3e"
+    },
+    "variant_views_sha256": "16ede3938e2729c70467c51195dd0f32869c8f375d5945e12d40aa9f1fa50b8f",
+    "queue_sha256": "2ba0a20ad9d85a15a8e9fc8a806999c97ec02ee717faf96475bf5114f8159926",
+    "matches_original_manifest": {
+      "variant_views_sha256": true,
+      "queue_sha256": true,
+      "bank_sha256": true,
+      "rubric_sha256": true,
+      "rendering_spec_sha256": true
+    },
+    "artifact_digests_verified": 224,
+    "artifact_digest_mismatches": 0,
+    "original_cells_jsonl_sha256": "bfd5b3c83981c8a6ec970b93f460bab7409daf047a2e048bfaa90b5adfd0d4af",
+    "original_manifest_sha256": "5a192518429a1f2db13f1b31df67d6e9dd74045e68c001f07dc90f0b6a7eb270",
+    "original_judge_model": "gemini-3.6-flash",
+    "rubric_constant_sha256": "85e208799f10b756125c524dc43222064ac946f3c01f000ee03cf331800cee72",
+    "run_holdout_py_sha256": "ac4e777d6b00a4d62da9ba0b17eeb8dbeebfc1f19573108703d7ac9e46e76477"
+  },
+  "counts": {
+    "planned_cells": 48,
+    "cells_scored_total": 48,
+    "cells_remaining": 0,
+    "failed_attempts_total": 5,
+    "scored_by_kind": {
+      "primary": 48,
+      "ablated_control": 0,
+      "preserved_control": 0
+    },
+    "scored_by_variant_primary": {
+      "A": 3,
+      "B": 9,
+      "C": 13,
+      "D": 7,
+      "E": 10,
+      "F": 6
+    }
+  },
+  "tokens_all_invocations": {
+    "prompt_tokens": 42681121,
+    "completion_tokens": 24314,
+    "cached_tokens": 2000629,
+    "reasoning_tokens": 0
+  },
+  "token_estimate": {
+    "by_variant_kind": {
+      "primary:F": {
+        "cells": 6,
+        "artifact_chars": 14192643,
+        "est_prompt_tokens_central": 3641539,
+        "est_prompt_tokens_conservative": 3838249
+      },
+      "primary:E": {
+        "cells": 10,
+        "artifact_chars": 23654363,
+        "est_prompt_tokens_central": 6069221,
+        "est_prompt_tokens_conservative": 6397071
+      },
+      "primary:D": {
+        "cells": 7,
+        "artifact_chars": 16820488,
+        "est_prompt_tokens_central": 4315745,
+        "est_prompt_tokens_conservative": 4548877
+      },
+      "primary:C": {
+        "cells": 13,
+        "artifact_chars": 31392754,
+        "est_prompt_tokens_central": 8054624,
+        "est_prompt_tokens_conservative": 8489728
+      },
+      "primary:B": {
+        "cells": 9,
+        "artifact_chars": 17559287,
+        "est_prompt_tokens_central": 4505981,
+        "est_prompt_tokens_conservative": 4749353
+      },
+      "primary:A": {
+        "cells": 3,
+        "artifact_chars": 878677,
+        "est_prompt_tokens_central": 226501,
+        "est_prompt_tokens_conservative": 238680
+      }
+    },
+    "tiers": {
+      "tier1_primary_A_B": {
+        "cells": 12,
+        "est_prompt_tokens_central": 4732482,
+        "est_prompt_tokens_conservative": 4988033
+      },
+      "tier2_primary_C_to_F": {
+        "cells": 36,
+        "est_prompt_tokens_central": 22081129,
+        "est_prompt_tokens_conservative": 23273925
+      },
+      "tier3_controls": {
+        "cells": 0,
+        "est_prompt_tokens_central": 0,
+        "est_prompt_tokens_conservative": 0
+      },
+      "primary_all": {
+        "cells": 48,
+        "est_prompt_tokens_central": 26813611,
+        "est_prompt_tokens_conservative": 28261958
+      },
+      "all_224": {
+        "cells": 48,
+        "est_prompt_tokens_central": 26813611,
+        "est_prompt_tokens_conservative": 28261958
+      }
+    },
+    "chars_per_token": {
+      "central": 3.9,
+      "conservative": 3.7
+    },
+    "context_window_tokens": 922000,
+    "note": "cells over 272000 prompt tokens fall in the proxy's higher pricing tier (/v1/models pricing.overrides.min_prompt_tokens)"
+  },
+  "invocations": [
+    {
+      "started_utc": "2026-10-09T11:59:23.110154+00:00",
+      "token_budget": 5985647,
+      "workers": 3,
+      "variants": [
+        "A",
+        "B"
+      ],
+      "kinds": "all",
+      "order": "priority",
+      "limit": 0,
+      "pending_selected": 12,
+      "already_done_at_start": 0,
+      "probe": {
+        "utc": "2026-10-09T11:59:26.413815+00:00",
+        "availability_http_status": 200,
+        "model_id_reported_by_proxy": "anthropic/claude-sonnet-5-5",
+        "availability_usage": {
+          "prompt_tokens": 722,
+          "completion_tokens": 64,
+          "cached_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "availability_error": "",
+        "with_response_format_http_status": 200,
+        "with_response_format_error": "",
+        "response_format_omitted_reason": "NOT REPRODUCED this time: the proxy accepted response_format"
+      },
+      "finished_utc": "2026-10-09T12:00:19.403783+00:00",
+      "stop_reason": "token_budget_reached",
+      "cells_scored": 11,
+      "cells_failed": 0,
+      "tokens": {
+        "prompt_tokens": 6684165,
+        "completion_tokens": 4591,
+        "cached_tokens": 8327,
+        "reasoning_tokens": 0
+      },
+      "tokens_prompt_plus_completion": 6688756,
+      "http_status_histogram": {
+        "200": 11
+      },
+      "scored_by_variant": {
+        "A": 3,
+        "B": 8
+      },
+      "prompt_tokens_by_variant": {
+        "A": 378658,
+        "B": 6305507
+      },
+      "models_reported_in_responses": [
+        "anthropic/claude-sonnet-5-5"
+      ]
+    },
+    {
+      "started_utc": "2026-10-09T12:35:06.770631+00:00",
+      "token_budget": 46413212,
+      "workers": 3,
+      "variants": "all",
+      "kinds": "all",
+      "order": "priority",
+      "limit": 0,
+      "pending_selected": 37,
+      "already_done_at_start": 11,
+      "probe": {
+        "utc": "2026-10-09T12:35:10.043090+00:00",
+        "availability_http_status": 200,
+        "model_id_reported_by_proxy": "anthropic/claude-sonnet-5-5",
+        "availability_usage": {
+          "prompt_tokens": 722,
+          "completion_tokens": 64,
+          "cached_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "availability_error": "",
+        "with_response_format_http_status": 200,
+        "with_response_format_error": "",
+        "response_format_omitted_reason": "NOT REPRODUCED this time: the proxy accepted response_format"
+      },
+      "finished_utc": "2026-10-09T12:37:26.812473+00:00",
+      "stop_reason": "3_consecutive_failed_cells",
+      "cells_scored": 14,
+      "cells_failed": 5,
+      "tokens": {
+        "prompt_tokens": 13476800,
+        "completion_tokens": 7417,
+        "cached_tokens": 10697,
+        "reasoning_tokens": 0
+      },
+      "tokens_prompt_plus_completion": 13484217,
+      "http_status_histogram": {
+        "200": 14,
+        "429": 5
+      },
+      "scored_by_variant": {
+        "C": 13,
+        "B": 1
+      },
+      "prompt_tokens_by_variant": {
+        "C": 12688610,
+        "B": 788190,
+        "D": 0
+      },
+      "models_reported_in_responses": [
+        "anthropic/claude-sonnet-5-5"
+      ]
+    },
+    {
+      "started_utc": "2026-10-09T13:32:23.325032+00:00",
+      "token_budget": 28829206,
+      "workers": 2,
+      "variants": "all",
+      "kinds": "all",
+      "order": "priority",
+      "limit": 0,
+      "pending_selected": 23,
+      "already_done_at_start": 25,
+      "probe": {
+        "utc": "2026-10-09T13:32:26.921461+00:00",
+        "availability_http_status": 200,
+        "model_id_reported_by_proxy": "anthropic/claude-sonnet-5-5",
+        "availability_usage": {
+          "prompt_tokens": 722,
+          "completion_tokens": 64,
+          "cached_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "availability_error": "",
+        "with_response_format_http_status": 200,
+        "with_response_format_error": "",
+        "response_format_omitted_reason": "NOT REPRODUCED this time: the proxy accepted response_format"
+      },
+      "finished_utc": "2026-10-09T13:34:25.757898+00:00",
+      "stop_reason": "all_selected_cells_scored",
+      "cells_scored": 23,
+      "cells_failed": 0,
+      "tokens": {
+        "prompt_tokens": 22520156,
+        "completion_tokens": 12306,
+        "cached_tokens": 1981605,
+        "reasoning_tokens": 0
+      },
+      "tokens_prompt_plus_completion": 22532462,
+      "http_status_histogram": {
+        "200": 23
+      },
+      "scored_by_variant": {
+        "D": 7,
+        "E": 10,
+        "F": 6
+      },
+      "prompt_tokens_by_variant": {
+        "D": 6798051,
+        "E": 9826314,
+        "F": 5895791
+      },
+      "models_reported_in_responses": [
+        "anthropic/claude-sonnet-5-5"
+      ]
+    }
+  ],
+  "last_stop_reason": "all_selected_cells_scored",
+  "resume_command": null,
+  "cell_selection": {
+    "cell_list": "paper/access2026/harness/real_run/second_annotator/cell_list_48.txt",
+    "cell_list_sha256": "bd2333d427971fb182add2e3735e1d81fd3fe343640d736eea2b612819854b7e",
+    "selected_cells": 48
+  }
+}

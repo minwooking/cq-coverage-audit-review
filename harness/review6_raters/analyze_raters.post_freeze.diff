@@ -1,0 +1,63 @@
+diff --git a/paper/access2026/harness/review6_raters/analyze_raters.py b/paper/access2026/harness/review6_raters/analyze_raters.py
+index 5c7033d..c2312c4 100644
+--- a/paper/access2026/harness/review6_raters/analyze_raters.py
++++ b/paper/access2026/harness/review6_raters/analyze_raters.py
+@@ -531,7 +531,7 @@ def token_cost(raw_dir: Path) -> dict:
+ def main_run(a) -> int:
+     t0 = time.time()
+     raw = Path(a.raw_dir)
+-    out_dir = Path(a.out_dir)
++    out_dir = Path(a.out_dir).resolve()
+     out_dir.mkdir(parents=True, exist_ok=True)
+     m, cells = load_manifest()
+     ids = [c["cell_id"] for c in cells]
+@@ -591,11 +591,16 @@ def main_run(a) -> int:
+     fam3 = list(fam_runs)
+     e2 = {"claude_model_run": a.claude, "family_raters": fam_runs,
+           "descriptive_label_sources": [n for n in ("openai_luna_s21", "qwen_same_family") if n in fam_all]}
++    fam_primary = {n: fam_all[n] for n in fam3}
+     if len(fam3) >= 2:
+-        e2["primary"] = e2_block(fam_all, hum, cells, sub, a.B)
++        # families only: a cell lost by a descriptive rater (e.g. an invalid Qwen reply) must not shrink the required comparisons
++        e2["primary"] = e2_block(fam_primary, hum, cells, sub, a.B)
+         e2["status"] = e2_status(e2["primary"])
+         e2["lean_on_AH_IND_disagreements_182"] = lean_block(fam_all, hum, sub)
+-        e2["sensitivity_S_raw"] = e2_block(fam_all, hum, cells, sub, a.B, skey="S_raw", rkey="R_raw")
++        e2["sensitivity_S_raw"] = e2_block(fam_primary, hum, cells, sub, a.B, skey="S_raw", rkey="R_raw")
++        if len(fam_all) > len(fam_primary):
++            # families + descriptive raters (qwen contrast, S21 luna) on the cells every one of them labeled
++            e2["with_descriptive_raters"] = e2_block(fam_all, hum, cells, sub, a.B)
+     else:
+         e2["status"] = {"status": "unresolved", "reason": f"fewer than two independent families have labels ({fam3})", "n_families": len(fam3)}
+     for dn in sorted(DESCRIPTIVE):
+@@ -697,8 +702,19 @@ def write_report(res: dict, out_dir: Path) -> None:
+             b = e2[key]
+             L += ["", f"{dn} (descriptive; {b['n_cells']} cells it scored): kappa with AH {ci(b['stats'][f'kappa:{dn}-AH'])}, with the second rater {ci(b['stats'][f'kappa:{dn}-IND'])}; "
+                   f"AH vs second rater on the same cells {ci(b['stats']['kappa:AH-IND'])}."]
+-    if "primary" in e2 and "contrast:mean_kappa_qwen_with_humans" in e2["primary"]["stats"]:
+-        sx = e2["primary"]["stats"]
++    if "with_descriptive_raters" in e2:
++        b = e2["with_descriptive_raters"]
++        L += ["", f"### Pairs including the descriptive raters (cells labeled by every rater: {b['n_cells']})", "",
++              "| pair | kappa(S) [BCa 95%] | diff vs human-human [BCa 95%] | QWK(R) |", "|---|---|---|---|"]
++        for k, v in b["stats"].items():
++            if k.startswith("kappa:") and k != "kappa:AH-IND" and any(d in k for d in DESCRIPTIVE):
++                pair = k[len("kappa:"):]
++                d = b["stats"]["kappa_minus_HH:" + pair]
++                q = b["stats"].get("qwk:" + pair)
++                L.append(f"| {pair} | {ci(v)} | {ci(d)} | {ci(q) if q else ''} |")
++        L.append(f"AH vs second rater on these cells: {ci(b['stats']['kappa:AH-IND'])}.")
++    if "with_descriptive_raters" in e2 and "contrast:mean_kappa_qwen_with_humans" in e2["with_descriptive_raters"]["stats"]:
++        sx = e2["with_descriptive_raters"]["stats"]
+         L += ["", "### Same-family contrast (Qwen3.8-Flash-Next, the extractor's family) next to the cross-family raters", "",
+               f"Mean kappa(S) with the two humans: qwen {ci(sx['contrast:mean_kappa_qwen_with_humans'])}; cross-family raters {ci(sx['contrast:mean_kappa_families_with_humans'])}; "
+               f"difference {ci(sx['contrast:qwen_minus_families_with_humans'])}."]
+@@ -706,7 +722,7 @@ def write_report(res: dict, out_dir: Path) -> None:
+             L.append(f"Mean kappa between raters: qwen with the cross-family raters {ci(sx['contrast:mean_kappa_qwen_with_families'])}; between the cross-family raters {ci(sx['contrast:mean_kappa_between_families'])}; "
+                      f"difference {ci(sx['contrast:qwen_with_families_minus_between_families'])}.")
+         L += ["", "| cross-family rater | kappa(qwen, AH) - kappa(rater, AH) | kappa(qwen, second rater) - kappa(rater, second rater) |", "|---|---|---|"]
+-        for f in e2["primary"]["families_in_alpha"]:
++        for f in e2["with_descriptive_raters"]["families_in_alpha"]:
+             L.append(f"| {f} | {ci(sx[f'kappa_qwen_minus_family:{f}-AH'])} | {ci(sx[f'kappa_qwen_minus_family:{f}-IND'])} |")
+         L.append("Descriptive; no threshold. Qwen is not counted among the cross-family raters in any status rule.")
+     ma = e2.get("majority_vote_audit")

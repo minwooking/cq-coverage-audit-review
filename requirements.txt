@@ -1,0 +1,7 @@
+# Direct dependencies of the harness. Versions are those of the environment in which the package was
+# built and its tests were run (Python 3.12.3, Linux). Everything else is the standard library.
+# Review before installing.
+numpy==2.4.6
+scipy==1.17.1
+rdflib==7.6.0
+pytest==9.0.3

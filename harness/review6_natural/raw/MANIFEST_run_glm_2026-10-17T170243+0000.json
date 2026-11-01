@@ -1,0 +1,45 @@
+{
+  "judge": "glm",
+  "label": "primary non-Qwen",
+  "model": "zai-org/GLM-4.7-Flash",
+  "endpoint_host": "tunnel (local port)",
+  "plan_sha256": "12caf2e02a195bdaaa33920b101130bfc9ea14476f704eeae37ea136bcbdb159",
+  "plan_commit": "248129f10b83a6742f00ee88c433360c2ede09c8",
+  "scorer_sha256": "3788576cd22eb73d7568d032a4db869de3a195c76c5cbeb6e6f42f5e6239a753",
+  "repeats": 3,
+  "workers": 3,
+  "budget_prompt_tokens": 6000000,
+  "corpora": {
+    "natural": {
+      "n_cells": 72,
+      "max_prompt_tokens": 11438,
+      "sum_prompt_tokens_one_pass": 512397,
+      "over_context": [],
+      "reused_records": 0,
+      "calls": 216,
+      "invalid_records": 0,
+      "context_skip": 0,
+      "prompt_tokens": 1537191,
+      "completion_tokens": 11908,
+      "abort": null
+    },
+    "template": {
+      "n_cells": 54,
+      "max_prompt_tokens": 15020,
+      "sum_prompt_tokens_one_pass": 383025,
+      "over_context": [],
+      "reused_records": 162,
+      "calls": 0,
+      "invalid_records": 0,
+      "context_skip": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "abort": null
+    }
+  },
+  "started_utc": "2026-10-17T17:02:43+00:00",
+  "ended_utc": "2026-10-17T17:07:09+00:00",
+  "elapsed_s": 266.2,
+  "abort_reason": null,
+  "prompt_tokens_total": 1537191
+}

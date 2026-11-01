@@ -1,0 +1,19 @@
+{
+ "natural": {
+  "n": 72,
+  "sha256": "596f3c9f73365be1046bd90f865f54eee6d8cfa9438833d28c5866be015e4f8d"
+ },
+ "template_AB": {
+  "n": 54,
+  "A": 22,
+  "B": 32,
+  "sha256": "938a70fa20f7428d88ae9abe8442a0b04608053c2c8a939fcf87b90f414f25c4",
+  "prompt_sha256_all_match_addendum26": true
+ },
+ "pins": {
+  "natural_manifest": "0048910bf97d3ebfdfed58852201911b168fea4481ff61ad058ef777c229ac2e",
+  "length_manifest": "46277713c3828da145278c6e4622c8c0a84f193c7e58c9a91489e2d918ceaa32",
+  "a26_jobs": "30190f072caa33a32b77586c76b60d5debf68febae3749bd27e0a483e8be524c",
+  "rubric_sha256": "85e208799f10b756125c524dc43222064ac946f3c01f000ee03cf331800cee72"
+ }
+}

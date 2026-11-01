@@ -1,0 +1,635 @@
+{
+ "bank_sha256": "cf7db0a0ee89badc80562930e3c2b1eb4448cc7ba927feee35d1a5db8e673ace",
+ "domain": "dcat",
+ "variants": {
+  "C": {
+   "n_questions": 42,
+   "eligible": 27,
+   "eligible_but_no_subgraph": [],
+   "n_jobs": 27,
+   "rendered_chars": 267232,
+   "graph_sha256": "58da1426e860c5009a5ec67b903537435aa9101420e60a7dbf32404b4b41704e"
+  },
+  "D": {
+   "n_questions": 42,
+   "eligible": 27,
+   "eligible_but_no_subgraph": [],
+   "n_jobs": 27,
+   "rendered_chars": 261586,
+   "graph_sha256": "fc84858f95eef7dec783ba96c8d46f70208354d3378605caec11162f9a89e3f3"
+  },
+  "E": {
+   "n_questions": 42,
+   "eligible": 27,
+   "eligible_but_no_subgraph": [],
+   "n_jobs": 27,
+   "rendered_chars": 283568,
+   "graph_sha256": "bbd7bdce994338899d53ce8d6c80e6206bc87e439470321437ee9e2222d1781f"
+  }
+ },
+ "cells": {
+  "C": {
+   "CQD01": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD02": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD03": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD04": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD05": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:DatasetSeries"
+    ]
+   },
+   "CQD06": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD07": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD08": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD09": {
+    "eligible": false,
+    "missing_required": [
+     "DatasetSeries"
+    ]
+   },
+   "CQD10": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD11": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD12": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD13": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD14": {
+    "eligible": false,
+    "missing_required": [
+     "Concept"
+    ]
+   },
+   "CQD15": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD16": {
+    "eligible": false,
+    "missing_required": [
+     "servesDataset"
+    ]
+   },
+   "CQD17": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD18": {
+    "eligible": false,
+    "missing_required": [
+     "qualifiedRelation"
+    ]
+   },
+   "CQD19": {
+    "eligible": false,
+    "missing_required": [
+     "isDistributionOf"
+    ]
+   },
+   "CQD20": {
+    "eligible": false,
+    "missing_required": [
+     "inSeries",
+     "seriesMember"
+    ]
+   },
+   "CQD21": {
+    "eligible": false,
+    "missing_required": [
+     "nextVersion"
+    ]
+   },
+   "CQD22": {
+    "eligible": false,
+    "missing_required": [
+     "byteSize"
+    ]
+   },
+   "CQD23": {
+    "eligible": false,
+    "missing_required": [
+     "compressFormat"
+    ]
+   },
+   "CQD24": {
+    "eligible": false,
+    "missing_required": [
+     "packageFormat"
+    ]
+   },
+   "CQD25": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD26": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD27": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD28": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD29": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD30": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD31": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:DatasetSeries"
+    ]
+   },
+   "CQD32": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD33": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:packageFormat"
+    ]
+   },
+   "CQD34": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD35": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD36": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD37": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD38": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:landingPage"
+    ]
+   },
+   "CQD39": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD40": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:themeTaxonomy"
+    ]
+   },
+   "CQD41": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD42": {
+    "eligible": true,
+    "missing_required": []
+   }
+  },
+  "D": {
+   "CQD01": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD02": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD03": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD04": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD05": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:DatasetSeries"
+    ]
+   },
+   "CQD06": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD07": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD08": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD09": {
+    "eligible": false,
+    "missing_required": [
+     "DatasetSeries"
+    ]
+   },
+   "CQD10": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD11": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD12": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD13": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD14": {
+    "eligible": false,
+    "missing_required": [
+     "Concept"
+    ]
+   },
+   "CQD15": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD16": {
+    "eligible": false,
+    "missing_required": [
+     "servesDataset"
+    ]
+   },
+   "CQD17": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD18": {
+    "eligible": false,
+    "missing_required": [
+     "qualifiedRelation"
+    ]
+   },
+   "CQD19": {
+    "eligible": false,
+    "missing_required": [
+     "isDistributionOf"
+    ]
+   },
+   "CQD20": {
+    "eligible": false,
+    "missing_required": [
+     "inSeries",
+     "seriesMember"
+    ]
+   },
+   "CQD21": {
+    "eligible": false,
+    "missing_required": [
+     "nextVersion"
+    ]
+   },
+   "CQD22": {
+    "eligible": false,
+    "missing_required": [
+     "byteSize"
+    ]
+   },
+   "CQD23": {
+    "eligible": false,
+    "missing_required": [
+     "compressFormat"
+    ]
+   },
+   "CQD24": {
+    "eligible": false,
+    "missing_required": [
+     "packageFormat"
+    ]
+   },
+   "CQD25": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD26": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD27": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD28": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD29": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD30": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD31": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:DatasetSeries"
+    ]
+   },
+   "CQD32": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD33": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:packageFormat"
+    ]
+   },
+   "CQD34": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD35": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD36": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD37": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD38": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:landingPage"
+    ]
+   },
+   "CQD39": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD40": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:themeTaxonomy"
+    ]
+   },
+   "CQD41": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD42": {
+    "eligible": true,
+    "missing_required": []
+   }
+  },
+  "E": {
+   "CQD01": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD02": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD03": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD04": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD05": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:DatasetSeries"
+    ]
+   },
+   "CQD06": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD07": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD08": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD09": {
+    "eligible": false,
+    "missing_required": [
+     "DatasetSeries"
+    ]
+   },
+   "CQD10": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD11": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD12": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD13": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD14": {
+    "eligible": false,
+    "missing_required": [
+     "Concept"
+    ]
+   },
+   "CQD15": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD16": {
+    "eligible": false,
+    "missing_required": [
+     "servesDataset"
+    ]
+   },
+   "CQD17": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD18": {
+    "eligible": false,
+    "missing_required": [
+     "qualifiedRelation"
+    ]
+   },
+   "CQD19": {
+    "eligible": false,
+    "missing_required": [
+     "isDistributionOf"
+    ]
+   },
+   "CQD20": {
+    "eligible": false,
+    "missing_required": [
+     "inSeries",
+     "seriesMember"
+    ]
+   },
+   "CQD21": {
+    "eligible": false,
+    "missing_required": [
+     "nextVersion"
+    ]
+   },
+   "CQD22": {
+    "eligible": false,
+    "missing_required": [
+     "byteSize"
+    ]
+   },
+   "CQD23": {
+    "eligible": false,
+    "missing_required": [
+     "compressFormat"
+    ]
+   },
+   "CQD24": {
+    "eligible": false,
+    "missing_required": [
+     "packageFormat"
+    ]
+   },
+   "CQD25": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD26": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD27": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD28": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD29": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD30": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD31": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:DatasetSeries"
+    ]
+   },
+   "CQD32": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD33": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:packageFormat"
+    ]
+   },
+   "CQD34": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD35": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD36": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD37": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD38": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:landingPage"
+    ]
+   },
+   "CQD39": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD40": {
+    "eligible": false,
+    "missing_required": [
+     "dcat:themeTaxonomy"
+    ]
+   },
+   "CQD41": {
+    "eligible": true,
+    "missing_required": []
+   },
+   "CQD42": {
+    "eligible": true,
+    "missing_required": []
+   }
+  }
+ }
+}

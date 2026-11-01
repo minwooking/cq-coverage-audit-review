@@ -1,0 +1,3 @@
+{"domain": "ssn", "bank_file": "ssn/bank/bank_ssn_v1.csv", "rows": 42, "sha256": "185f4ac675b4430901ea3cbd93a84d75a46fe4f0431f402dfd8a219e4a15bcdf", "frozen_utc": "2026-10-20T09:07:44Z",
+ "tag": "access2026-study4-ssn-bank-freeze", "status": "AI draft, not reviewed by an author; written from the ontology snapshots and documentation before any graph existed",
+ "snapshot_sha256": {"sosa.ttl": "c70b0d1c843c0047e4c98e0a89392e46a05752ff6365bda7f7f55303905a0392", "ssn.ttl": "184d86189191146e314cc52b1bceb96fca11e70aacbc160d71588102a5153eb9"}}

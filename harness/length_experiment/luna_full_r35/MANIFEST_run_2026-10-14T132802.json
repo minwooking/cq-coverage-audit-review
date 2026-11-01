@@ -1,0 +1,25 @@
+{
+  "judge_model": "gpt-5.6-luna",
+  "endpoint_host_kind": "localhost",
+  "design": "luna-full-BF",
+  "calls_this_run": 46,
+  "cells_planned": 165,
+  "est_input_tokens_this_run": 94294105,
+  "token_budget": 100000000,
+  "failures_this_run": 1,
+  "aborted_over_budget": false,
+  "abort_reason": null,
+  "context_errors": 0,
+  "started_utc": "2026-10-14T13:28:02.331480+00:00",
+  "ended_utc": "2026-10-14T13:30:25.861212+00:00",
+  "elapsed_s": 143.5,
+  "workers": 3,
+  "extra_top_level_fields": {
+    "response_format": {
+      "type": "text"
+    }
+  },
+  "extra_body": null,
+  "seed": 20260913,
+  "token_note": "estimated tokens = ceil(chars/4), not tokenizer counts"
+}

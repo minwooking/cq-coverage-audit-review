@@ -1,0 +1,30 @@
+{
+  "snapshot_sha256": "b65720b7b9b64c646745c689777e6138c0d59ce0088df0aeb78fbd444d04d8e7",
+  "rows": 84,
+  "per_category": {
+    "concept_definition": 14,
+    "taxonomy": 14,
+    "relations": 14,
+    "slots_facets": 14,
+    "instances": 14,
+    "methodology": 14
+  },
+  "format_pass": 84,
+  "grounding_pass": 84,
+  "ask_pass": 84,
+  "all_three_pass": 84,
+  "anchor_rule_pass": 84,
+  "dup_review": [
+    "CQX19",
+    "CQX23",
+    "CQX28",
+    "CQX43"
+  ],
+  "fail": [],
+  "ask_expressible": {
+    "yes": 35,
+    "partial": 49,
+    "no": 0
+  },
+  "grounding_terms_checked": 273
+}

@@ -1,0 +1,67 @@
+{
+  "raters": [
+    "H1",
+    "H2",
+    "H3"
+  ],
+  "n_cells_common": 0,
+  "n_cells_complete_S": 0,
+  "S_fleiss_kappa": null,
+  "S_krippendorff_alpha_nominal": NaN,
+  "S_pairwise_cohen_kappa": {
+    "H1-H2": NaN,
+    "H1-H3": NaN,
+    "H2-H3": NaN
+  },
+  "R_levels": [],
+  "R_krippendorff_alpha_ordinal": null,
+  "n_unanimous": 0,
+  "n_disagree_cells": 0,
+  "vs_judge": [
+    {
+      "who": "H1",
+      "n_cells": 0,
+      "kappa_vs_J_ge2": NaN,
+      "raw_agreement": null,
+      "agreement_CP_lower": NaN,
+      "overcredit_cells": 0,
+      "overcredit_clusters": 0,
+      "n_clusters": 0,
+      "overcredit_cluster_CP_upper": NaN
+    },
+    {
+      "who": "H2",
+      "n_cells": 0,
+      "kappa_vs_J_ge2": NaN,
+      "raw_agreement": null,
+      "agreement_CP_lower": NaN,
+      "overcredit_cells": 0,
+      "overcredit_clusters": 0,
+      "n_clusters": 0,
+      "overcredit_cluster_CP_upper": NaN
+    },
+    {
+      "who": "H3",
+      "n_cells": 0,
+      "kappa_vs_J_ge2": NaN,
+      "raw_agreement": null,
+      "agreement_CP_lower": NaN,
+      "overcredit_cells": 0,
+      "overcredit_clusters": 0,
+      "n_clusters": 0,
+      "overcredit_cluster_CP_upper": NaN
+    },
+    {
+      "who": "majority",
+      "n_cells": 0,
+      "kappa_vs_J_ge2": NaN,
+      "raw_agreement": null,
+      "agreement_CP_lower": NaN,
+      "overcredit_cells": 0,
+      "overcredit_clusters": 0,
+      "n_clusters": 0,
+      "overcredit_cluster_CP_upper": NaN
+    }
+  ],
+  "conf": 0.975
+}

@@ -1,0 +1,100 @@
+{
+  "contains": {
+    "ai_drafts": false,
+    "judge_evidence_span": true,
+    "judge_score_J": false,
+    "labels": false,
+    "translation": false
+  },
+  "contents_statement": "This sheet holds no judge score (J), no label and no AI draft. The label columns (evidence_span_verbatim, A, rater_L1, note) are empty on every row, the sheet has no draft column, and no translation is attached. The only judge-derived text is judge_evidence_span, the span the judge quoted, shown as in the AH pass (PREREG sec.12.4); it is not a score (PREREG D16 records that an empty span coincides with J=0 in this run).",
+  "files": {
+    "../cell_list_48.txt": {
+      "bytes": 768,
+      "rows": 48,
+      "sha256": "bd2333d427971fb182add2e3735e1d81fd3fe343640d736eea2b612819854b7e"
+    },
+    "second_annotator_sheet_48.csv": {
+      "bytes": 16789,
+      "columns": [
+        "cell_id",
+        "cq_id",
+        "cluster_id",
+        "category",
+        "variant",
+        "cq_text",
+        "judge_evidence_span",
+        "rendered_view_path",
+        "evidence_span_verbatim",
+        "A",
+        "rater_L1",
+        "note"
+      ],
+      "rows": 48,
+      "sha256": "a1566a643d7f5be0778a4904eee97d6bb6405f1cc42102ad5f98934df1e94e80"
+    }
+  },
+  "inputs": {
+    "ah_sheet": {
+      "path": "paper/access2026/harness/real_run/annotation_pending/primary_pass_224_ready_to_fill.csv",
+      "sha256": "c2601549b0fc9d97c16ab04b87a61769dcc8783d3b00031c81a9ac23f61f787d"
+    },
+    "cells_jsonl": {
+      "fields_read": [
+        "cell_id",
+        "cell_kind",
+        "category"
+      ],
+      "path": "paper/access2026/harness/real_run/cells.jsonl",
+      "sha256": "bfd5b3c83981c8a6ec970b93f460bab7409daf047a2e048bfaa90b5adfd0d4af"
+    },
+    "views": {
+      "SHA256SUMS.txt": "dff457d885604befffcf40a954de3e40fbc06b7e0bcf803d119af42d6a5b3b9d",
+      "dir": "paper/access2026/harness/real_run/annotation_pending/views"
+    }
+  },
+  "kind": "second_annotator_packet",
+  "order": {
+    "achieved_min_gap": 15,
+    "applied_min_gap": 15,
+    "best_gap_by_length_bound": 15,
+    "largest_same_cq_group": 4,
+    "method": "annotation/packet/build_label_packet.py::_constrained_shuffle (greedy, most-remaining eligible group first) re-run at decreasing min_gap until the gap is met",
+    "n_rows": 48,
+    "same_cq_repeats": true,
+    "seed": 20260913,
+    "shuffle_input_order": "cell_id ascending",
+    "shuffle_module_sha256": "10965d953a04606bb3bd3e88fa399e6ada16aeccc5bca3cef45767e0741e69ea",
+    "target_feasible_by_length_bound": false,
+    "target_met": false,
+    "target_min_gap": 20
+  },
+  "rendered_view_path": "rewritten to the file name relative to --views (the AH sheet held an absolute path to a deleted worktree); no other column differs from the AH-sheet row",
+  "seed": 20260913,
+  "selection": {
+    "list_sha256": "bd2333d427971fb182add2e3735e1d81fd3fe343640d736eea2b612819854b7e",
+    "per_category": 8,
+    "picked_per_category": {
+      "concept_definition": 8,
+      "instances": 8,
+      "methodology": 8,
+      "relations": 8,
+      "slots_facets": 8,
+      "taxonomy": 8
+    },
+    "procedure": "primary cells; categories in name order; cell_id sorted inside a category; one random.Random(20260913); rng.sample(sorted_ids, 8) per category; list = picked ids re-sorted, UTF-8, one per line, trailing LF",
+    "registered_list_sha256": "bd2333d427971fb182add2e3735e1d81fd3fe343640d736eea2b612819854b7e"
+  },
+  "serve_with": "label_assist.py --packet --require-note --sheet <this sheet> --views paper/access2026/harness/real_run/annotation_pending/views --out <path outside the repository>",
+  "spec": "PREREG.md sec.12.4 (DN-8, DN-9, DN-10); built by harness/build_second_annotator_packet.py",
+  "tool": {
+    "imported_sources_sha256": {
+      "label_assist.py": "78699099e2d2ea0d05fdce19caec76c4ae39fed4e4fb442aaaf0e663ae44cb7b"
+    },
+    "numpy": "2.4.6",
+    "packet_common_sha256": "d725217b13ac3201090c2c70cda53c7a088e7909d7e74b481598e22f6e1c328c",
+    "python": "3.12.3",
+    "scipy": "1.17.1",
+    "script": "build_second_annotator_packet.py",
+    "script_sha256": "d308e737a9d508aadcbff26cf4a23a58ac206763384db47c005fd069fd356e04"
+  }
+}

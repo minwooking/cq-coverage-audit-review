@@ -1,0 +1,35 @@
+{
+ "domain": "prov",
+ "retrieved_utc": "2026-10-20T09:13:39+00:00",
+ "files": [
+  {
+   "kind": "doc",
+   "name": "prov-o",
+   "url": "https://www.w3.org/TR/prov-o/",
+   "file": "prov-o.html",
+   "bytes": 464179,
+   "sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+   "license_statement_on_page": "class=\"copyright\"> Copyright \u00a9 2011-2013 W3C \u00ae ( MIT , ERCIM , Keio , Beihang ), All Rights Reserved. W3C liability , trademark and document use rules apply. Abstract The PROV Ontology (PROV-O) expresses the PROV Data Model [ PROV-DM ] using the OWL2 Web Ontol"
+  },
+  {
+   "kind": "doc",
+   "name": "prov-dm",
+   "url": "https://www.w3.org/TR/prov-dm/",
+   "file": "prov-dm.html",
+   "bytes": 271572,
+   "sha256": "5c925c21bc96c285b25017c3b90d82cf74251d07713b71fcb81ca60f873c9e88",
+   "license_statement_on_page": "class=\"copyright\"> Copyright \u00a9 2011-2013 W3C \u00ae ( MIT , ERCIM , Keio , Beihang ), All Rights Reserved. W3C liability , trademark and document use rules apply. Abstract Provenance is information about entities, activities, and people involved in producing a piec"
+  },
+  {
+   "kind": "ontology",
+   "name": "prov.ttl",
+   "url": "https://www.w3.org/ns/prov.ttl",
+   "file": "prov.ttl",
+   "bytes": 112777,
+   "sha256": "d7ea634dbcd31347eba38157197f69d314077ef7f88fd4f90e4f24a78bfe1097"
+  }
+ ],
+ "license_docs": "W3C document use license (copying with notice; no derivative works)",
+ "license_ontology": "no license statement in the file; W3C document/software notice of the namespace",
+ "redistribute": false
+}

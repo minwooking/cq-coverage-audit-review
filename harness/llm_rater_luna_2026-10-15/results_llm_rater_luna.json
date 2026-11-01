@@ -1,0 +1,207 @@
+{
+ "label_source": "LLM-rater (luna) labels",
+ "model": "gpt-5.6-luna",
+ "prompt_sha256": "efb8a43fd89e6281777eb97047a91495c1aaba22ef96148735125c33db04f769",
+ "status": "exploratory, post hoc (addendum 24)",
+ "n_luna_valid": 12,
+ "token_usage": {
+  "calls_recorded": 12,
+  "calls_with_usage": 12,
+  "prompt_tokens": 4199424,
+  "completion_tokens": 2800,
+  "est_input_tokens_chars_div4": 4118838
+ },
+ "span_verbatim": {
+  "S1": 10,
+  "verbatim": 10
+ },
+ "pilot_cells_file": "written outside the repository (sealed; --out-cells)",
+ "pilot": {
+  "pooled_humans": {
+   "luna_vs_human": {
+    "n": 12,
+    "R_exact": 0.3333333333333333,
+    "R_within1": 0.5,
+    "R_qwk": 0.1910112359550562,
+    "S_agree": 0.5833333333333334,
+    "S_kappa": 0.2500000000000001
+   },
+   "AH_vs_human": {
+    "n": 12,
+    "R_exact": 0.16666666666666666,
+    "R_within1": 0.5833333333333334,
+    "R_qwk": 0.1250000000000001,
+    "S_agree": 0.5,
+    "S_kappa": 0.12195121951219517
+   },
+   "IND_vs_human": {
+    "n": 12,
+    "R_exact": 0.16666666666666666,
+    "R_within1": 0.4166666666666667,
+    "R_qwk": -0.010989010989011172,
+    "S_agree": 0.5,
+    "S_kappa": 0.12195121951219517
+   }
+  },
+  "H1": {
+   "luna_vs_human": {
+    "n": 10,
+    "R_exact": 0.4,
+    "R_within1": 0.5,
+    "R_qwk": 0.20512820512820507,
+    "S_agree": 0.5,
+    "S_kappa": 0.19354838709677424
+   },
+   "AH_vs_human": {
+    "n": 10,
+    "R_exact": 0.2,
+    "R_within1": 0.6,
+    "R_qwk": 0.12790697674418605,
+    "S_agree": 0.4,
+    "S_kappa": 0.09090909090909098
+   },
+   "IND_vs_human": {
+    "n": 10,
+    "R_exact": 0.2,
+    "R_within1": 0.4,
+    "R_qwk": -0.01990049751243772,
+    "S_agree": 0.4,
+    "S_kappa": 0.09090909090909098
+   }
+  },
+  "H2": {
+   "luna_vs_human": {
+    "n": 1,
+    "R_exact": 0.0,
+    "R_within1": 1.0,
+    "R_qwk": null,
+    "S_agree": 1.0,
+    "S_kappa": null
+   },
+   "AH_vs_human": {
+    "n": 1,
+    "R_exact": 0.0,
+    "R_within1": 1.0,
+    "R_qwk": null,
+    "S_agree": 1.0,
+    "S_kappa": null
+   },
+   "IND_vs_human": {
+    "n": 1,
+    "R_exact": 0.0,
+    "R_within1": 1.0,
+    "R_qwk": null,
+    "S_agree": 1.0,
+    "S_kappa": null
+   }
+  },
+  "H3": {
+   "luna_vs_human": {
+    "n": 1,
+    "R_exact": 0.0,
+    "R_within1": 0.0,
+    "R_qwk": null,
+    "S_agree": 1.0,
+    "S_kappa": null
+   },
+   "AH_vs_human": {
+    "n": 1,
+    "R_exact": 0.0,
+    "R_within1": 0.0,
+    "R_qwk": null,
+    "S_agree": 1.0,
+    "S_kappa": null
+   },
+   "IND_vs_human": {
+    "n": 1,
+    "R_exact": 0.0,
+    "R_within1": 0.0,
+    "R_qwk": null,
+    "S_agree": 1.0,
+    "S_kappa": null
+   }
+  },
+  "same_cells": {
+   "luna_vs_AH": {
+    "n": 12,
+    "R_exact": 0.6666666666666666,
+    "R_within1": 0.9166666666666666,
+    "R_qwk": 0.41666666666666663,
+    "S_agree": 0.9166666666666666,
+    "S_kappa": 0.625
+   },
+   "luna_vs_IND": {
+    "n": 12,
+    "R_exact": 0.5833333333333334,
+    "R_within1": 0.9166666666666666,
+    "R_qwk": 0.1578947368421053,
+    "S_agree": 0.75,
+    "S_kappa": -0.1249999999999995
+   },
+   "AH_vs_IND": {
+    "n": 12,
+    "R_exact": 0.75,
+    "R_within1": 1.0,
+    "R_qwk": 0.625,
+    "S_agree": 0.8333333333333334,
+    "S_kappa": -0.09090909090908979
+   }
+  }
+ },
+ "baseline_188_AH_vs_IND": {
+  "R_qwk": {
+   "estimate": 0.727874276261373,
+   "ci_lo": 0.5666667339915702,
+   "ci_hi": 0.8590794130067485,
+   "n_cells": 188,
+   "n_clusters": 33,
+   "B": 10000,
+   "seed": 20260913,
+   "method": "BCa"
+  },
+  "R_exact": {
+   "estimate": 0.7180851063829787,
+   "ci_lo": 0.5645161290322581,
+   "ci_hi": 0.8412698412698413,
+   "n_cells": 188,
+   "n_clusters": 33,
+   "B": 10000,
+   "seed": 20260913,
+   "method": "BCa"
+  },
+  "R_within1": {
+   "estimate": 0.9946808510638298,
+   "ci_lo": 0.9724987727127009,
+   "ci_hi": 1.0,
+   "n_cells": 188,
+   "n_clusters": 33,
+   "B": 10000,
+   "seed": 20260913,
+   "method": "BCa"
+  },
+  "S_agree": {
+   "estimate": 0.8297872340425532,
+   "ci_lo": 0.6898395721925134,
+   "ci_hi": 0.9247311827956989,
+   "n_cells": 188,
+   "n_clusters": 33,
+   "B": 10000,
+   "seed": 20260913,
+   "method": "BCa"
+  },
+  "S_kappa": {
+   "estimate": 0.5950457727517501,
+   "ci_lo": 0.2677281365734354,
+   "ci_hi": 0.8330517069788336,
+   "n_cells": 188,
+   "n_clusters": 33,
+   "B": 10000,
+   "seed": 20260913,
+   "method": "BCa"
+  }
+ },
+ "full_188": {
+  "status": "not run",
+  "reason": "estimated input tokens for 188 cells exceed the 6M budget (addendum 24.4)"
+ }
+}

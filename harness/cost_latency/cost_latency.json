@@ -1,0 +1,173 @@
+{
+  "holdout": {
+    "judge": "gemini-3.6-flash",
+    "cells": 224,
+    "attempt_hist": {
+      "1": 191,
+      "2": 27,
+      "3": 5,
+      "4": 1
+    },
+    "calls_logged_attempts": 264,
+    "cells_with_retry": 33,
+    "all_parsed": true,
+    "latency": {
+      "n": 224,
+      "sum_s": 8701.6,
+      "mean_s": 38.85,
+      "median_s": 47.79,
+      "max_s": 75.9
+    },
+    "start_utc": "2026-09-21T05:21:13.939658+00:00",
+    "end_utc_manifest": "2026-09-21T06:09:38.331892+00:00",
+    "wall_s": 2904.4,
+    "concurrency": "4 (code default JUDGE_CONCURRENCY; not recorded in the manifest)",
+    "est_input_chars_one_request_per_cell": 462504512,
+    "est_input_tokens_one_request_per_cell": 115626128,
+    "est_input_tokens_attempt_weighted": 138829471,
+    "view_chars": {
+      "A": 292845,
+      "B": 1950988,
+      "C": 2414780,
+      "D": 2402874,
+      "E": 2365387,
+      "F": 2365387
+    },
+    "rubric_chars": 300,
+    "note": "elapsed_s is the logged per-cell value; transport-level retries (HTTP 429 backoff) are not counted in `attempt`; view size used for ablated controls (24 cells) is the unablated view (upper bound)",
+    "usage_logged": false
+  },
+  "length": {
+    "judge": "gpt-5.6-luna",
+    "calls_manifest": 393,
+    "rows": 393,
+    "invalid_unparsed": 3,
+    "latency": {
+      "n": 393,
+      "sum_s": 1652.3,
+      "mean_s": 4.2,
+      "median_s": 3.72,
+      "max_s": 13.1
+    },
+    "wall_s": 553.1,
+    "workers": 3,
+    "start_utc": "2026-10-13T10:40:50.723867+00:00",
+    "end_utc": "2026-10-13T10:50:03.808318+00:00",
+    "est_input_tokens_manifest": 6264381,
+    "est_input_tokens_rows": 6294174,
+    "attempt_hist": {
+      "1": 393
+    },
+    "by_condition": {
+      "full": {
+        "calls": 23,
+        "latency": {
+          "n": 23,
+          "sum_s": 98.9,
+          "mean_s": 4.3,
+          "median_s": 3.49,
+          "max_s": 12.4
+        },
+        "est_input_tokens": 1685986
+      },
+      "limited": {
+        "calls": 188,
+        "latency": {
+          "n": 188,
+          "sum_s": 732.5,
+          "mean_s": 3.9,
+          "median_s": 3.58,
+          "max_s": 11.4
+        },
+        "est_input_tokens": 2827560
+      },
+      "subgraph": {
+        "calls": 182,
+        "latency": {
+          "n": 182,
+          "sum_s": 820.9,
+          "mean_s": 4.51,
+          "median_s": 3.97,
+          "max_s": 13.1
+        },
+        "est_input_tokens": 1780628
+      }
+    },
+    "usage_logged": false,
+    "est_input_tokens_valid_calls_only": 6264381,
+    "est_input_tokens_all_calls": 6294174
+  },
+  "paired48": {
+    "gpt-5.6-luna": {
+      "judge": "gpt-5.6-luna",
+      "cells_scored": 48,
+      "failed_attempts": 1,
+      "failed_by_class": {
+        "content": 1
+      },
+      "calls": 49,
+      "invocations": 3,
+      "workers_per_invocation": [
+        3,
+        3,
+        1
+      ],
+      "latency_scored": {
+        "n": 48,
+        "sum_s": 396.4,
+        "mean_s": 8.26,
+        "median_s": 8.17,
+        "max_s": 12.6
+      },
+      "wall_s_sum_of_invocations": 162.9,
+      "usage_all_invocations": {
+        "prompt_tokens": 27706097,
+        "completion_tokens": 14908,
+        "cached_tokens": 8944896,
+        "reasoning_tokens": 6719
+      },
+      "usage_scored_cells_prompt": 27079658,
+      "usage_scored_cells_completion": 14645,
+      "usage_logged": true
+    },
+    "anthropic__claude-sonnet-5-5": {
+      "judge": "anthropic/claude-sonnet-5-5",
+      "cells_scored": 48,
+      "failed_attempts": 5,
+      "failed_by_class": {
+        "rate": 5
+      },
+      "calls": 53,
+      "invocations": 3,
+      "workers_per_invocation": [
+        3,
+        3,
+        2
+      ],
+      "latency_scored": {
+        "n": 48,
+        "sum_s": 476.4,
+        "mean_s": 9.92,
+        "median_s": 6.2,
+        "max_s": 36.2
+      },
+      "wall_s_sum_of_invocations": 318.8,
+      "usage_all_invocations": {
+        "prompt_tokens": 42681121,
+        "completion_tokens": 24314,
+        "cached_tokens": 2000629,
+        "reasoning_tokens": 0
+      },
+      "usage_scored_cells_prompt": 42681121,
+      "usage_scored_cells_completion": 24314,
+      "usage_logged": true
+    }
+  },
+  "paired48_estimate_check": {
+    "est_input_tokens_48_cells_chars_over_4": 26128417,
+    "actual_prompt_tokens_luna_scored_cells": 27079658,
+    "actual_prompt_tokens_sonnet_scored_cells": 42681121,
+    "ratio_luna": 1.036,
+    "ratio_sonnet": 1.634
+  }
+}

@@ -1,0 +1,661 @@
+http://example.org/chunktograph#ACMEEnergy2019Tutorial | ACM E-Energy 2019 Tutorial Slides
+http://example.org/chunktograph#AHU | AHU < http://example.org/chunktograph#Connectable,http://example.org/chunktograph#Equipment
+http://example.org/chunktograph#AHUVAVSystem | AHU-VAV system < owl:Thing
+http://example.org/chunktograph#AHU_Average_Exhaust_Air_Static_Pressure_Sensor | AHU Average Exhaust Air Static Pressure Sensor
+http://example.org/chunktograph#ASHRAE | ASHRAE
+http://example.org/chunktograph#ASHRAE223 | ASHRAE 223
+http://example.org/chunktograph#ASHRAE223P | ASHRAE 223P
+http://example.org/chunktograph#ASHRAEHaystackBrickCollaboration | ASHRAE, Haystack, Brick Collaboration
+http://example.org/chunktograph#ASHRAE_223P | ASHRAE 223P
+http://example.org/chunktograph#AcademicIndividualResearcher | Academic Individual Researcher
+http://example.org/chunktograph#AcademicMember | Academic Member < http://example.org/chunktograph#ConsortiumMember
+http://example.org/chunktograph#ActuationPoint | Actuation Point < http://example.org/chunktograph#VirtualEntity
+http://example.org/chunktograph#Air | Air < http://example.org/chunktograph#Gas,http://example.org/chunktograph#Substance
+http://example.org/chunktograph#AirFlowSetpoint | Air Flow Setpoint < http://example.org/chunktograph#Setpoint
+http://example.org/chunktograph#AirHandlingUnit | Air Handling Unit < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#AirInlet | air inlet
+http://example.org/chunktograph#AirOutlet | air outlet
+http://example.org/chunktograph#AirTemperatureSensor | Air Temperature Sensor
+http://example.org/chunktograph#Air_Handler_Unit | Air_Handler_Unit
+http://example.org/chunktograph#Air_Handling_Unit | Air_Handling_Unit :: An equipment class used in Brick+ with isPointOf relationship
+http://example.org/chunktograph#Air_Loop | Air Loop < http://example.org/chunktograph#Loop
+http://example.org/chunktograph#Air_Temperature_Sensor | Air Temperature Sensor < http://example.org/chunktograph#Temperature_Sensor
+http://example.org/chunktograph#Alarm | Alarm < http://example.org/chunktograph#Point
+http://example.org/chunktograph#Alignment | Alignment :: Definition of the nature of Brick's relationship to other RDF-based ontologies.
+http://example.org/chunktograph#Anthropic | Anthropic < http://example.org/chunktograph#LLM
+http://example.org/chunktograph#ApplicationDeveloper | Application Developer
+http://example.org/chunktograph#ApplicationsAndAnalyticsWorkingGroup | Applications and Analytics Working Group
+http://example.org/chunktograph#Automation_Collection | Automation Collection < brick:Automation_Collection
+http://example.org/chunktograph#Average_Exhaust_Air_Static_Pressure_Sensor | Average_Exhaust_Air_Static_Pressure_Sensor
+http://example.org/chunktograph#BACnetReference | BACnetReference < owl:Thing
+http://example.org/chunktograph#BMSNetwork | BMS Network
+http://example.org/chunktograph#BMSPointLabels | BMS point labels
+http://example.org/chunktograph#BaseBrickifyHandler | Base Brickify Handler
+http://example.org/chunktograph#BaseHandler | Base Handler
+http://example.org/chunktograph#BestPractice | Best Practice
+http://example.org/chunktograph#BidirectionalConnectionPoint | BidirectionalConnectionPoint < http://example.org/chunktograph#ConnectionPoint
+http://example.org/chunktograph#BlackCodeFormatter | Black Code Formatter
+http://example.org/chunktograph#Block | Block
+http://example.org/chunktograph#BlocklyAPI | Blockly API
+http://example.org/chunktograph#Blueprint | Blueprint
+http://example.org/chunktograph#BoardOfDirectors | Board of Directors
+http://example.org/chunktograph#Boiler | Boiler < http://example.org/chunktograph#Connectable,http://example.org/chunktograph#Equipment
+http://example.org/chunktograph#Brick | Brick < http://example.org/chunktograph#BrickSchema,http://example.org/chunktograph#Entity :: The Brick ontology has two components: an extensible class hierarchy representing the physical and logical entities in buildings, and a minimal set of relationships that capture the connections between entities.
+http://example.org/chunktograph#Brick1_0_x | Brick 1.0.x :: Prior version of Brick ontology (Balaji et al., 2016, 2018)
+http://example.org/chunktograph#Brick1_3 | Brick 1.3
+http://example.org/chunktograph#BrickBase | BrickBase
+http://example.org/chunktograph#BrickClass | Brick Class < http://example.org/chunktograph#BrickDocumentation,owl:Thing
+http://example.org/chunktograph#BrickClassDefinitionFile | Brick Class Definition File
+http://example.org/chunktograph#BrickClassDefinitionStructure | Brick Class Definition Structure
+http://example.org/chunktograph#BrickCommandClass | Brick Command Class < http://example.org/chunktograph#BrickDocumentation,http://example.org/chunktograph#BrickPointClass
+http://example.org/chunktograph#BrickConsortium | Brick Consortium
+http://example.org/chunktograph#BrickContributionGuidelines | Brick Contribution Guidelines
+http://example.org/chunktograph#BrickDocumentation | Brick Documentation < http://example.org/chunktograph#BrickContributionGuidelines
+http://example.org/chunktograph#BrickEntity | Brick Entity
+http://example.org/chunktograph#BrickEntityProperty | Brick Entity Property
+http://example.org/chunktograph#BrickEquipmentClass | Brick Equipment Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickEquipmentDefinition | Brick Equipment Definition
+http://example.org/chunktograph#BrickGitHubIssueTracker | Brick GitHub Issue Tracker < http://example.org/chunktograph#CommunicationChannel
+http://example.org/chunktograph#BrickGraph | Brick Graph
+http://example.org/chunktograph#BrickIntegratedRepresentation | Brick presenting integrated, cross-vendor representation of subsystems
+http://example.org/chunktograph#BrickIssueTracker | Brick Issue Tracker < owl:NamedIndividual
+http://example.org/chunktograph#BrickLLM | BrickLLM
+http://example.org/chunktograph#BrickLocationClass | Brick Location Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickLocationDefinition | Brick Location Definition
+http://example.org/chunktograph#BrickLoweringCost | Brick lowering cost of deploying analytics, energy efficiency measures and intelligent controls
+http://example.org/chunktograph#BrickMigrationTool | Brick Migration Tool < http://example.org/chunktograph#Entity :: A tool for migrating Brick models from older versions of the Brick ontology to newer versions.
+http://example.org/chunktograph#BrickModel | Brick Model < http://example.org/chunktograph#Entity,http://example.org/chunktograph#Graph :: A Brick model of a building is a labeled, directed graph in which the nodes are entities and the edges are relationships.
+http://example.org/chunktograph#BrickOnlyTTL | Brick-only.ttl :: Contains only the Brick ontology; all other dependencies, including RealEstateCore, must be imported or otherwise included
+http://example.org/chunktograph#BrickOntology | Brick Ontology < http://example.org/chunktograph#MetadataModel,owl:Thing
+http://example.org/chunktograph#BrickOpenSource | Brick being free and open-sourced under BSD 3-Clause license
+http://example.org/chunktograph#BrickParameterClass | Brick Parameter Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickParameterDefinition | Brick Parameter Definition
+http://example.org/chunktograph#BrickPlus | Brick+ < http://example.org/chunktograph#Brick :: Brick+ defines a class lattice that structures the composition of concepts.
+http://example.org/chunktograph#BrickPlusClass | Brick+ Class
+http://example.org/chunktograph#BrickPlusExtensionsTTL | Brick+extensions.ttl :: Contains the Brick and RealEstateCore ontologies, as well as all extensions currently in the Brick repository. All other dependencies must be imported or otherwise included
+http://example.org/chunktograph#BrickPlusImportsTTL | Brick+imports.ttl :: Contains the Brick and RealEstateCore ontologies, as well as all imports; no other dependencies are required
+http://example.org/chunktograph#BrickPlusModel | Brick+ Model
+http://example.org/chunktograph#BrickPlusOntology | Brick+ Ontology
+http://example.org/chunktograph#BrickPoint | Brick Point
+http://example.org/chunktograph#BrickPointClass | Brick Point Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickProperty | Brick Property < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickQuantityClass | Brick Quantity Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickQuantityDefinition | Brick Quantity Definition
+http://example.org/chunktograph#BrickQueryBuilder | Brick QueryBuilder
+http://example.org/chunktograph#BrickReducesReliance | Brick reducing reliance on non-standard, unstructured labels
+http://example.org/chunktograph#BrickRelationship | Brick Relationship
+http://example.org/chunktograph#BrickRelationshipDefinition | Brick Relationship Definition
+http://example.org/chunktograph#BrickRelease | Brick Release < http://example.org/chunktograph#BrickSchema
+http://example.org/chunktograph#BrickRepository | Brick Repository
+http://example.org/chunktograph#BrickRoadmap | Brick Roadmap
+http://example.org/chunktograph#BrickSchema | Brick Schema < http://example.org/chunktograph#BrickDocumentation,http://example.org/chunktograph#Software
+http://example.org/chunktograph#BrickSchemaSpecification | Brick Schema Specification
+http://example.org/chunktograph#BrickSensorClass | Brick Sensor Class < http://example.org/chunktograph#BrickPointClass
+http://example.org/chunktograph#BrickServer | Brick Server reference implementation
+http://example.org/chunktograph#BrickSetpointClass | Brick Setpoint Class < http://example.org/chunktograph#BrickDocumentation,http://example.org/chunktograph#BrickPointClass
+http://example.org/chunktograph#BrickShapeNamespace | BrickShape Namespace :: The abstract RDF namespace schema/1.1/BrickShape, commonly abbreviated as bsh
+http://example.org/chunktograph#BrickSimplifiesDevelopment | Brick simplifying development of smart analytics and control applications
+http://example.org/chunktograph#BrickStatusClass | Brick Status Class < http://example.org/chunktograph#BrickDocumentation,http://example.org/chunktograph#BrickPointClass
+http://example.org/chunktograph#BrickStudio | BrickStudio
+http://example.org/chunktograph#BrickSubstanceClass | Brick Substance Class < http://example.org/chunktograph#BrickClass,http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickSubstanceDefinition | Brick Substance Definition
+http://example.org/chunktograph#BrickTTL | Brick.ttl :: Contains the Brick and RealEstateCore ontologies; all other dependencies must be imported or otherwise included
+http://example.org/chunktograph#BrickTag | Brick Tag < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#BrickTaggingSystem | Brick tagging system augmenting tags with formal semantic rules < http://example.org/chunktograph#Brick
+http://example.org/chunktograph#BrickUserForum | Brick User Forum < http://example.org/chunktograph#CommunicationChannel,owl:NamedIndividual
+http://example.org/chunktograph#BrickV1.1 | Brick v1.1
+http://example.org/chunktograph#BrickValidateCLI | brick_validate command-line tool :: Command-line tool exposing validation functionality
+http://example.org/chunktograph#BrickValidationModule | Brick+ Validation Module :: A Brick-specific software module incorporating PySHACL and adding Brick+ features
+http://example.org/chunktograph#BrickValidationNode | Brick validation node < http://example.org/chunktograph#Node
+http://example.org/chunktograph#BrickViewer | BrickViewer
+http://example.org/chunktograph#BrickWebsiteIssueTracker | Brick Website Issue Tracker < http://example.org/chunktograph#CommunicationChannel
+http://example.org/chunktograph#BrickWorkingGroup | Brick Working Group
+http://example.org/chunktograph#Brick_v1.1 | Brick v1.1
+http://example.org/chunktograph#BrickifyTool | Brickify tool
+http://example.org/chunktograph#Brickly | Brickly < http://example.org/chunktograph#SPARQLQueryTool
+http://example.org/chunktograph#Brickschema | Brickschema
+http://example.org/chunktograph#BrickschemaGraph | brickschema.graph.Graph
+http://example.org/chunktograph#BrickschemaGraphCollection | brickschema.graph.GraphCollection
+http://example.org/chunktograph#BrickschemaPackage | brickschema package
+http://example.org/chunktograph#BrickschemaPersistenceFeature | Brickschema persistence feature
+http://example.org/chunktograph#BugReport | Bug Report
+http://example.org/chunktograph#BuildSys2017Tutorial | BuildSys 2017 Tutorial Slides
+http://example.org/chunktograph#BuildSys2020Paper | BuildSys 2020 Paper
+http://example.org/chunktograph#Building | Building < http://example.org/chunktograph#PhysicalEntity,http://example.org/chunktograph#SpatialElement,owl:Thing
+http://example.org/chunktograph#BuildingBetterBuildingData | Building better building data, Brick by Brick
+http://example.org/chunktograph#BuildingBuzz | Building Buzz – Innovation all around
+http://example.org/chunktograph#BuildingElectricalMeter | Building Electrical Meter
+http://example.org/chunktograph#BuildingEnergyEfficiencyAndDecarbonizationStudy | Building energy efficiency and decarbonization study
+http://example.org/chunktograph#BuildingEngineer | Building Engineer
+http://example.org/chunktograph#BuildingEntity | Building Entity
+http://example.org/chunktograph#BuildingInformationModel | Building Information Model < http://example.org/chunktograph#IndustryFoundationClasses
+http://example.org/chunktograph#BuildingManagementSystem | Building management system
+http://example.org/chunktograph#BuildingManager | Building Manager
+http://example.org/chunktograph#BuildingMetadata | Building Metadata
+http://example.org/chunktograph#BuildingMetadataModel | Building metadata model
+http://example.org/chunktograph#BuildingSystem | Building System
+http://example.org/chunktograph#BuildingTopologyOntology | Building Topology Ontology < http://example.org/chunktograph#Brick
+http://example.org/chunktograph#BuildingTopologyOntologyBOTV0.3.2 | Building Topology Ontology (BOT) v0.3.2
+http://example.org/chunktograph#BuiltEnvironmentAsset | Built environment asset
+http://example.org/chunktograph#BusinessAdministrationSystem | Business administration system
+http://example.org/chunktograph#CO2Sensor | CO2 Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#COBie | COBie
+http://example.org/chunktograph#CanonicalUseCase | Canonical Use Case
+http://example.org/chunktograph#Carrier | Carrier
+http://example.org/chunktograph#CaseStudy | Case Study
+http://example.org/chunktograph#ChilledWaterFlowSensor | Chilled Water Flow Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#Chilled_Water_System | Chilled Water System < http://example.org/chunktograph#System
+http://example.org/chunktograph#Chiller | Chiller
+http://example.org/chunktograph#Class | Class < http://example.org/chunktograph#Entity,http://example.org/chunktograph#LogicalEntity :: A class is a category of entities defined by a particular shared purpose and properties.
+http://example.org/chunktograph#ClassShape | Class Shape
+http://example.org/chunktograph#ClassToTagSetMapping | Class to Tag Set Mapping
+http://example.org/chunktograph#ClockworksAnalytics | Clockworks Analytics
+http://example.org/chunktograph#Coil | Coil < http://example.org/chunktograph#Connectable,http://example.org/chunktograph#Equipment
+http://example.org/chunktograph#Collection | Collection
+http://example.org/chunktograph#Command | Command < http://example.org/chunktograph#Point
+http://example.org/chunktograph#CommercialEntity | Commercial Entity
+http://example.org/chunktograph#CommercialMember | Commercial Member < http://example.org/chunktograph#ConsortiumMember
+http://example.org/chunktograph#Committee | Committee
+http://example.org/chunktograph#CommunicationChannel | Communication Channel
+http://example.org/chunktograph#CommunicationsCommittee | Communications Committee
+http://example.org/chunktograph#CommunityEducation | Community Education
+http://example.org/chunktograph#Completeness | Completeness
+http://example.org/chunktograph#CompoundTag | CompoundTag < http://example.org/chunktograph#Tag
+http://example.org/chunktograph#ComputedPoint | Computed Point < http://example.org/chunktograph#VirtualEntity
+http://example.org/chunktograph#ConceptsPage | Concepts page
+http://example.org/chunktograph#ConditionalOperation | Conditional operation < http://example.org/chunktograph#Operation
+http://example.org/chunktograph#ConfigurationInformation | Configuration Information
+http://example.org/chunktograph#ConformanceTestingProtocol | Conformance Testing Protocol
+http://example.org/chunktograph#Connectable | Connectable
+http://example.org/chunktograph#Connection | Connection
+http://example.org/chunktograph#ConnectionPoint | ConnectionPoint
+http://example.org/chunktograph#Connectionstring | connection string
+http://example.org/chunktograph#Consistency | Consistency
+http://example.org/chunktograph#ConsortiumMember | Consortium Member
+http://example.org/chunktograph#ContributionGuidelines | Contribution Guidelines
+http://example.org/chunktograph#Contributor | Contributor < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#Controller | Controller < http://example.org/chunktograph#PhysicalEntity,owl:Thing
+http://example.org/chunktograph#ConversionQuery | Conversion Query :: A SPARQL 1.1 UPDATE query generated from a dictionary of migrations
+http://example.org/chunktograph#Cooling | cooling
+http://example.org/chunktograph#CorporateGovernance | Corporate Governance
+http://example.org/chunktograph#CurrentSensor | Current Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#CustomSHACLShape | Custom SHACL shape
+http://example.org/chunktograph#Damper | Damper < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#DamperPositionCommand | Damper Position Command < http://example.org/chunktograph#ActuationPoint
+http://example.org/chunktograph#DamperPositionSensor | Damper Position Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#DataInfrastructurePlatform | Data Infrastructure Platform
+http://example.org/chunktograph#DataOperation | Data operation < http://example.org/chunktograph#Operation
+http://example.org/chunktograph#DataStream | Data stream
+http://example.org/chunktograph#Database | Database
+http://example.org/chunktograph#Dependency | Dependency < owl:Thing
+http://example.org/chunktograph#DeprecatedConcept | Deprecated concept
+http://example.org/chunktograph#DescEquip | Desc. equip
+http://example.org/chunktograph#DescMechanism | Desc. mechanism
+http://example.org/chunktograph#DescPoint | Desc. point
+http://example.org/chunktograph#DesignPrinciple | Design Principle
+http://example.org/chunktograph#DeveloperForum | Developer Forum
+http://example.org/chunktograph#DevelopmentEnvironment | Development Environment < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#Dictionary | dictionary < http://www.w3.org/2001/XMLSchema#string
+http://example.org/chunktograph#DigitalRepresentation | Digital Representation
+http://example.org/chunktograph#Directory | Directory
+http://example.org/chunktograph#Documentation | Documentation
+http://example.org/chunktograph#DomainExpert | Domain Expert
+http://example.org/chunktograph#Duct | Duct < http://example.org/chunktograph#Connection
+http://example.org/chunktograph#ERVHeatExchanger | Energy recovery ventilation (ERV) heat exchanger
+http://example.org/chunktograph#ElectricMeter | Electric Meter < http://example.org/chunktograph#NetworkedDevice
+http://example.org/chunktograph#ElectricVehicleCharger | Electric Vehicle Charger < http://example.org/chunktograph#NetworkedDevice
+http://example.org/chunktograph#ElectricalAsset | Electrical asset
+http://example.org/chunktograph#ElectricalMeter | Electrical Meter
+http://example.org/chunktograph#ElectricalPowerSensor | Electrical Power Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#EncapsulationMethod | Encapsulation Method < http://example.org/chunktograph#BrickSchema
+http://example.org/chunktograph#EnergyEfficiencyApplication | Energy Efficiency Application
+http://example.org/chunktograph#EnergyManagementAndInformationSystem | Energy Management and Information System < owl:Thing
+http://example.org/chunktograph#EnergySystem | Energy system < owl:Thing
+http://example.org/chunktograph#Energy_Generation_System | Energy Generation System < http://example.org/chunktograph#System
+http://example.org/chunktograph#EnteringWater | Entering water < http://example.org/chunktograph#Water
+http://example.org/chunktograph#Entity | Entity :: An abstraction of any physical, logical or virtual item; the actual "things" in a building.
+http://example.org/chunktograph#EntityIdentificationNode | Entity identification node < http://example.org/chunktograph#Node
+http://example.org/chunktograph#EntityProperty | Entity Property
+http://example.org/chunktograph#Equipment | Equipment < http://example.org/chunktograph#Connectable :: A class representing equipment in the Brick ontology.
+http://example.org/chunktograph#EquipmentFlavoredClass | Equipment-flavored Class :: A class in Brick that incorporated the name of equipment, e.g., AHU_Zone_Air_Temperature_Sensor
+http://example.org/chunktograph#Event | Event
+http://example.org/chunktograph#Expressivity | Expressivity
+http://example.org/chunktograph#Extensibility | Extensibility
+http://example.org/chunktograph#Extension | Extension :: Additional class definitions, rules and other augmentations to the Brick ontology.
+http://example.org/chunktograph#ExtensionsZip | extensions.zip :: Contains all extensions currently in the Brick repository as individual Turtle (.ttl) files
+http://example.org/chunktograph#Fan | Fan
+http://example.org/chunktograph#FanCoilUnit | Fan Coil Unit
+http://example.org/chunktograph#Feature | Feature
+http://example.org/chunktograph#File | File
+http://example.org/chunktograph#FireworksAI | Fireworks AI < http://example.org/chunktograph#LLM
+http://example.org/chunktograph#Flake8StyleChecker | Flake8 Style Checker
+http://example.org/chunktograph#Floor | Floor < http://example.org/chunktograph#PhysicalEntity,http://example.org/chunktograph#SpatialElement
+http://example.org/chunktograph#Folder | Folder
+http://example.org/chunktograph#FormalOntology | Formal Ontology
+http://example.org/chunktograph#Function | Function
+http://example.org/chunktograph#Functionality | functionality
+http://example.org/chunktograph#Gas | Gas < http://example.org/chunktograph#Substance
+http://example.org/chunktograph#GeneralMeter | General Meter
+http://example.org/chunktograph#Goal | Goal
+http://example.org/chunktograph#Governance | Governance
+http://example.org/chunktograph#Graph | Graph < http://example.org/chunktograph#RDFlibGraph,http://rdflib.dev/Graph,owl:Thing :: An abstract organizational data structure representing a set of entities (nodes) and relationships (edges).
+http://example.org/chunktograph#GraphCollection | GraphCollection
+http://example.org/chunktograph#HVAC | HVAC < http://example.org/chunktograph#EnergySystem,owl:Thing
+http://example.org/chunktograph#HVACAsset | HVAC asset
+http://example.org/chunktograph#HVACZone | HVAC Zone < http://example.org/chunktograph#LogicalEntity
+http://example.org/chunktograph#HVAC_System | HVAC System < http://example.org/chunktograph#System
+http://example.org/chunktograph#Handler | Handler
+http://example.org/chunktograph#Haystack | Haystack < http://example.org/chunktograph#Entity :: Haystack defines entities as a set of value tags (representing key-value pairs) and marker tags (singular annotations).
+http://example.org/chunktograph#HaystackAdHocTags | Haystack-based descriptions consisting of ad-hoc collections of tags < http://example.org/chunktograph#ProjectHaystack
+http://example.org/chunktograph#HaystackHandler | Haystack handler
+http://example.org/chunktograph#HaystackModel | Haystack Model < http://example.org/chunktograph#Entity :: Haystack models have seen increasing adoption, the design of the Haystack data model has several intrinsic issues that limit its consistency and interpretability.
+http://example.org/chunktograph#HaystackRDFInferenceSession | HaystackRDFInferenceSession method
+http://example.org/chunktograph#Heating | heating
+http://example.org/chunktograph#HeatingCoil | Heating Coil < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#HierarchyConstructionNode | Hierarchy construction node < http://example.org/chunktograph#Node
+http://example.org/chunktograph#HumiditySensor | Humidity Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#HvacZone | HVAC Zone < http://example.org/chunktograph#LogicalEntity
+http://example.org/chunktograph#IBMIoTBuildingInsights | IBM IoT Building Insights
+http://example.org/chunktograph#ICT_Equipment | ICT_Equipment
+http://example.org/chunktograph#IFC | IFC
+http://example.org/chunktograph#IFCModel | IFC Model
+http://example.org/chunktograph#IOPoint | I/O point
+http://example.org/chunktograph#IceMachine | IceMachine < http://example.org/chunktograph#Equipment :: An equipment class that produces ice.
+http://example.org/chunktograph#IctEquipment | ICT Equipment < http://example.org/chunktograph#PhysicalEntity
+http://example.org/chunktograph#ImportsZip | imports.zip :: Contains all imports for the Brick and RealEstateCore ontologies as individual Turtle (.ttl) files
+http://example.org/chunktograph#IndustryFoundationClasses | Industry Foundation Classes
+http://example.org/chunktograph#IndustryNeed | Industry Need
+http://example.org/chunktograph#Inference | Inference
+http://example.org/chunktograph#InformalTaggingSystem | Informal Tagging System
+http://example.org/chunktograph#InletConnectionPoint | InletConnectionPoint < http://example.org/chunktograph#ConnectionPoint
+http://example.org/chunktograph#InnovatingBuiltEnvironmentWithDigitalTwins | Innovating the built environment with digital twins
+http://example.org/chunktograph#InstallCommand | Install command
+http://example.org/chunktograph#Installation | Installation
+http://example.org/chunktograph#Instance | Instance
+http://example.org/chunktograph#Institution | Institution
+http://example.org/chunktograph#InstructedWorkflow | instructed workflow < http://example.org/chunktograph#Workflow
+http://example.org/chunktograph#InteroperabilityStandard | Interoperability Standard
+http://example.org/chunktograph#InterviewAutomatedBuildingsCom | Interview - AutomatedBuildings.com
+http://example.org/chunktograph#IoT | IoT
+http://example.org/chunktograph#IoTDevice | IoT device
+http://example.org/chunktograph#JSONExport | JSON export
+http://example.org/chunktograph#Jinja2Template | Jinja2 template
+http://example.org/chunktograph#JohnsonControls | Johnson Controls
+http://example.org/chunktograph#JupyterNotebook | Jupyter Notebook
+http://example.org/chunktograph#KnowledgeGraphConstructionAndReasoning | Knowledge graph construction and reasoning
+http://example.org/chunktograph#LLM | LLM < http://example.org/chunktograph#LLMAgent
+http://example.org/chunktograph#LLMAgent | LLM agent
+http://example.org/chunktograph#LLaMA2 | LLaMA 2 < http://example.org/chunktograph#LLM
+http://example.org/chunktograph#LLaMA3 | LLaMA 3 < http://example.org/chunktograph#LLM
+http://example.org/chunktograph#LLaMA3HerdOfModels | Llama 3 herd of models
+http://example.org/chunktograph#LangChain | LangChain
+http://example.org/chunktograph#LangGraph | LangGraph
+http://example.org/chunktograph#LargeLanguageModel | Large Language Model < owl:Thing
+http://example.org/chunktograph#LeavingWater | Leaving water < http://example.org/chunktograph#Water
+http://example.org/chunktograph#LetBlock | Let Block < http://example.org/chunktograph#Block
+http://example.org/chunktograph#LewisPR | Lewis PR
+http://example.org/chunktograph#Lighting | Lighting < http://example.org/chunktograph#EnergySystem,owl:Thing
+http://example.org/chunktograph#LightingAsset | Lighting asset
+http://example.org/chunktograph#LightingSystem | Lighting System < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#LightingZone | Lighting Zone < http://example.org/chunktograph#LogicalEntity
+http://example.org/chunktograph#Lighting_System | Lighting System < http://example.org/chunktograph#System
+http://example.org/chunktograph#LimitBlock | Limit Block < http://example.org/chunktograph#Block
+http://example.org/chunktograph#Liquid | Liquid < http://example.org/chunktograph#Substance
+http://example.org/chunktograph#Location | Location :: Root class for location entities in Brick ontology.
+http://example.org/chunktograph#LogicalAsset | logical asset
+http://example.org/chunktograph#LogicalEntity | Logical Entity < http://example.org/chunktograph#Entity :: Entities or collections of entities that are defined by a set of rules.
+http://example.org/chunktograph#Loop | Loop < http://example.org/chunktograph#Collection
+http://example.org/chunktograph#Luminaire | Luminaire < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#MajorVersion | Major Version < http://example.org/chunktograph#BrickRelease
+http://example.org/chunktograph#MaxAirFlowSetpointLimit | Max Air Flow Setpoint Limit < http://example.org/chunktograph#Parameter
+http://example.org/chunktograph#Measurable | Measurable :: Root class for measurable entities, containing Substance and Quantity classes.
+http://example.org/chunktograph#MechanicalEquipment | Mechanical Equipment < http://example.org/chunktograph#PhysicalEntity
+http://example.org/chunktograph#Medium | Medium
+http://example.org/chunktograph#Meeting | Meeting
+http://example.org/chunktograph#MemberType | Member Type
+http://example.org/chunktograph#Membership | Membership
+http://example.org/chunktograph#MembershipFee | Membership Fee
+http://example.org/chunktograph#MembershipForm | Membership Form
+http://example.org/chunktograph#MembershipLevel | Membership Level
+http://example.org/chunktograph#MemorandumOfUnderstanding | Memorandum of Understanding (MOU)
+http://example.org/chunktograph#MergeFeature | Merge Feature
+http://example.org/chunktograph#MergeModule | Merge Module
+http://example.org/chunktograph#MetadataModel | metadata model
+http://example.org/chunktograph#Meter | Meter
+http://example.org/chunktograph#MigrationProcess | Migration Process
+http://example.org/chunktograph#MinorVersion | Minor Version < http://example.org/chunktograph#BrickRelease
+http://example.org/chunktograph#MixedAir | Mixed Air < http://example.org/chunktograph#Air
+http://example.org/chunktograph#MixedAirTemperatureSensor | Mixed Air Temperature Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#ModelingIdiom | Modeling Idiom
+http://example.org/chunktograph#Module | Module
+http://example.org/chunktograph#MonitoringSystem | Monitoring system < owl:Thing
+http://example.org/chunktograph#Mortar | Mortar
+http://example.org/chunktograph#MortarTutorial | Mortar Tutorial
+http://example.org/chunktograph#NetworkedDevice | Networked Device < http://example.org/chunktograph#PhysicalEntity
+http://example.org/chunktograph#Node | Node
+http://example.org/chunktograph#NonProfitMembershipCorporation | Non-profit Membership Corporation
+http://example.org/chunktograph#NonProfitResearchInstitution | Non-profit Research Institution
+http://example.org/chunktograph#ORMFeature | ORM feature < http://example.org/chunktograph#Brickschema
+http://example.org/chunktograph#ORMSession | ORM session
+http://example.org/chunktograph#OWL | OWL < http://example.org/chunktograph#reasoning
+http://example.org/chunktograph#OWL2RLProfile | OWL 2 RL Profile
+http://example.org/chunktograph#OWL2RLReasoner | OWL 2 RL reasoner
+http://example.org/chunktograph#OWLOntologyLanguage | OWL Ontology Language
+http://example.org/chunktograph#OWLRL | OWL-RL < http://example.org/chunktograph#OWL2RLReasoner
+http://example.org/chunktograph#OWL_based_ontology | OWL-based ontology
+http://example.org/chunktograph#OneShotGenerationNode | One-shot generation node < http://example.org/chunktograph#Node
+http://example.org/chunktograph#OntoEnv | OntoEnv < owl:Thing
+http://example.org/chunktograph#Ontology | Ontology < owl:Thing
+http://example.org/chunktograph#OntologyDeclaration | ontology declaration
+http://example.org/chunktograph#OntologyDevelopmentWorkingGroup | Ontology Development Working Group
+http://example.org/chunktograph#OntologyGuidedKnowledgeGraphConstruction | Ontology-guided knowledge graph construction
+http://example.org/chunktograph#OntologyImport | ontology import
+http://example.org/chunktograph#OpenAI | OpenAI < http://example.org/chunktograph#LLM
+http://example.org/chunktograph#OpenBlue | OpenBlue
+http://example.org/chunktograph#OpenHouse | Open House
+http://example.org/chunktograph#OpenRefine | OpenRefine < owl:Thing
+http://example.org/chunktograph#OpenSourceSoftware | Open Source Software
+http://example.org/chunktograph#OpenSourceTool | Open-Source Tool
+http://example.org/chunktograph#OperatingModeStatus | Operating Mode Status < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#Operation | Operation
+http://example.org/chunktograph#OutletConnectionPoint | OutletConnectionPoint < http://example.org/chunktograph#ConnectionPoint
+http://example.org/chunktograph#OutsideAir | Outside Air < http://example.org/chunktograph#Air
+http://example.org/chunktograph#OutsideAirFlowSensor | Outside Air Flow Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#OutsideAirTemperatureSensor | Outside Air Temperature Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#PDF | PDF
+http://example.org/chunktograph#PIP | pip < http://example.org/chunktograph#PackageManagementTool
+http://example.org/chunktograph#PIPInstallCommand | pip install command < http://example.org/chunktograph#InstallCommand
+http://example.org/chunktograph#PVArray | PV Array
+http://example.org/chunktograph#PVPanel | PV Panel
+http://example.org/chunktograph#PVSystem | PV System
+http://example.org/chunktograph#PV_Panel | PV Panel
+http://example.org/chunktograph#PackageManagementTool | Package management tool
+http://example.org/chunktograph#Parameter | Parameter < http://example.org/chunktograph#Point
+http://example.org/chunktograph#PatchVersion | Patch Version < http://example.org/chunktograph#BrickRelease
+http://example.org/chunktograph#PersistentGraph | brickschema.persistent.PersistentGraph < http://example.org/chunktograph#BrickschemaGraph
+http://example.org/chunktograph#Person | Person
+http://example.org/chunktograph#PersonalOffice | Personal office
+http://example.org/chunktograph#PhotovoltaicArray | Photovoltaic Array < http://example.org/chunktograph#Collection
+http://example.org/chunktograph#PhysicalAsset | physical asset
+http://example.org/chunktograph#PhysicalEntity | Physical Entity < http://example.org/chunktograph#Entity :: Anything that has a physical presence in the world.
+http://example.org/chunktograph#Pipe | Pipe < http://example.org/chunktograph#Connection
+http://example.org/chunktograph#Platform | Platform
+http://example.org/chunktograph#PlayingMetadataTagURit | Playing Metadata Tag "U R it."
+http://example.org/chunktograph#Point | Point < http://example.org/chunktograph#PhysicalAsset :: Root class for point entities in Brick ontology.
+http://example.org/chunktograph#PointClass | Point Class :: A class in Brick, the majority of which were Point classes
+http://example.org/chunktograph#Point_Collection | Point Collection < brick:Point_Collection
+http://example.org/chunktograph#PortableDemandFlexibilityControlApplication | Portable demand flexibility control application
+http://example.org/chunktograph#PortableFaultDetectionAndDiagnosis | Portable fault detection and diagnosis
+http://example.org/chunktograph#Portfolio | Portfolio < http://example.org/chunktograph#Collection
+http://example.org/chunktograph#PositionCommand | position command
+http://example.org/chunktograph#PreCommitHook | Pre-Commit Hook
+http://example.org/chunktograph#ProcessTag | ProcessTag < http://example.org/chunktograph#Tag
+http://example.org/chunktograph#Product | Product
+http://example.org/chunktograph#ProgrammingLanguage | Programming Language
+http://example.org/chunktograph#ProjectHaystack | Project Haystack
+http://example.org/chunktograph#PropertyValue | Property Value
+http://example.org/chunktograph#ProposedChange | Proposed Change
+http://example.org/chunktograph#PublicDatasetWorkingGroup | Public Dataset Working Group
+http://example.org/chunktograph#PublicPresence | Public Presence
+http://example.org/chunktograph#PublicRoadmap | Public Roadmap
+http://example.org/chunktograph#Publication | Publication
+http://example.org/chunktograph#PullRequest | Pull Request
+http://example.org/chunktograph#Pump | Pump
+http://example.org/chunktograph#Purpose | Purpose
+http://example.org/chunktograph#PySHACL | pyshacl < http://example.org/chunktograph#SHACLEngine
+http://example.org/chunktograph#PySHACLLibrary | PySHACL Library :: An open-source library used for SHACL validation
+http://example.org/chunktograph#Python | Python
+http://example.org/chunktograph#PythonDictionary | Python Dictionary < owl:Class
+http://example.org/chunktograph#PythonFile | Python File
+http://example.org/chunktograph#PythonLibrary | Python library < owl:Thing
+http://example.org/chunktograph#PythonVersion | Python version
+http://example.org/chunktograph#Quantity | Quantity < http://example.org/chunktograph#Measurable :: Class representing quantities that can be measured or related to equipment and points.
+http://example.org/chunktograph#RDF | Resource Description Framework < owl:Thing
+http://example.org/chunktograph#RDFClassHierarchy | RDF Class Hierarchy < http://example.org/chunktograph#BrickSchema
+http://example.org/chunktograph#RDFDataModel | RDF Data Model
+http://example.org/chunktograph#RDFFile | RDF File < owl:Thing
+http://example.org/chunktograph#RDFGraph | RDF Graph
+http://example.org/chunktograph#RDFS | RDFS < http://example.org/chunktograph#ReasoningProfile,http://example.org/chunktograph#reasoning
+http://example.org/chunktograph#RDFlib | RDFlib
+http://example.org/chunktograph#RDFlibGraph | RDFlib Graph
+http://example.org/chunktograph#RVAV | RVAV unit
+http://example.org/chunktograph#RareDiseaseKnowledgeGraphConstruction | Rare disease knowledge graph construction
+http://example.org/chunktograph#RealEstateCore | RealEstateCore
+http://example.org/chunktograph#RealEstateCoreOntology | RealEstateCore Ontology
+http://example.org/chunktograph#RealEstateCore_v3.1 | RealEstateCore v3.1
+http://example.org/chunktograph#Reasonable | reasonable (OWL 2 RL reasoner) < http://example.org/chunktograph#OWL2RLReasoner
+http://example.org/chunktograph#Reasoner | Reasoner
+http://example.org/chunktograph#ReasoningProfile | Reasoning Profile
+http://example.org/chunktograph#ReasoningSchedule | Reasoning Schedule
+http://example.org/chunktograph#ReferenceModel | Reference Model
+http://example.org/chunktograph#ReferenceType | Reference Type
+http://example.org/chunktograph#Reheating | reheating
+http://example.org/chunktograph#Relationship | Relationship :: The nature of a link between two related entities.
+http://example.org/chunktograph#RelationshipSet | Relationship Set < http://example.org/chunktograph#BrickSchema
+http://example.org/chunktograph#RelationshipShape | Relationship Shape
+http://example.org/chunktograph#RelationshipsMappingNode | Relationships mapping node < http://example.org/chunktograph#Node
+http://example.org/chunktograph#RelationshipsMemo | Relationships memo
+http://example.org/chunktograph#Repository | Repository < http://example.org/chunktograph#BrickDocumentation
+http://example.org/chunktograph#Research | Research
+http://example.org/chunktograph#RestrictionClass | Restriction Class
+http://example.org/chunktograph#ReturnAirFlowSensor | Return Air Flow Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#ReturnAirTemperatureSensor | Return Air Temperature Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#RooftopUnit | Rooftop Unit
+http://example.org/chunktograph#Room | Room < http://example.org/chunktograph#PhysicalEntity,http://example.org/chunktograph#SpatialElement
+http://example.org/chunktograph#Rule | Rule
+http://example.org/chunktograph#SAREF | Smart Appliances REFerence Ontology (SAREF) < http://example.org/chunktograph#Brick
+http://example.org/chunktograph#SHACL | SHACL < http://example.org/chunktograph#reasoning
+http://example.org/chunktograph#SHACLAFRule | SHACL-AF rule
+http://example.org/chunktograph#SHACLEngine | SHACL Engine
+http://example.org/chunktograph#SHACLInference | SHACL inference
+http://example.org/chunktograph#SHACLShape | SHACL Shape < http://example.org/chunktograph#BrickOntology
+http://example.org/chunktograph#SHACLValidationTool | SHACL Validation Tool < http://example.org/chunktograph#Entity :: A tool for validating usage of the Brick ontology using SHACL.
+http://example.org/chunktograph#SHACL_AF | SHACL-AF
+http://example.org/chunktograph#SHACL_based_ontology | SHACL-based ontology
+http://example.org/chunktograph#SPARQL1_1_UPDATEQuery | SPARQL 1.1 UPDATE Query :: Language used to phrase conversion queries for migration
+http://example.org/chunktograph#SPARQLQuery | SPARQL Query
+http://example.org/chunktograph#SPARQLQueryTool | SPARQL Query Tool
+http://example.org/chunktograph#SPARQLServer | Embedded SPARQL Server
+http://example.org/chunktograph#SQLAlchemy | SQLAlchemy
+http://example.org/chunktograph#SQLiteDatabase | SQL database
+http://example.org/chunktograph#SchneiderElectric | Schneider Electric
+http://example.org/chunktograph#SecuritySystem | Security system < owl:Thing
+http://example.org/chunktograph#SemanticConflict | SemanticConflict
+http://example.org/chunktograph#SemanticMetadataStandard | Semantic Metadata Standard
+http://example.org/chunktograph#SemanticVersioning | Semantic Versioning < http://example.org/chunktograph#BrickSchema
+http://example.org/chunktograph#SensingPoint | Sensing Point < http://example.org/chunktograph#VirtualEntity
+http://example.org/chunktograph#Sensor | Sensor < http://example.org/chunktograph#Point,owl:Thing
+http://example.org/chunktograph#SensorEntity | Sensor entity
+http://example.org/chunktograph#SensorEquipment | Sensor equipment
+http://example.org/chunktograph#SensorIdentificationNode | Sensor identification node < http://example.org/chunktograph#Node
+http://example.org/chunktograph#Session | Session
+http://example.org/chunktograph#Setpoint | Setpoint < http://example.org/chunktograph#Point
+http://example.org/chunktograph#Shape | Shape
+http://example.org/chunktograph#Shifty | shifty < http://example.org/chunktograph#SHACLEngine
+http://example.org/chunktograph#Site | Site
+http://example.org/chunktograph#SmartBuilding | Smart Building
+http://example.org/chunktograph#SnowConeMaker | SnowConeMaker < http://example.org/chunktograph#Equipment :: An equipment class that receives ice from an IceMachine and makes snow cones.
+http://example.org/chunktograph#Software | Software
+http://example.org/chunktograph#Solid | Solid < http://example.org/chunktograph#Substance
+http://example.org/chunktograph#SpatialElement | Spatial Element < http://example.org/chunktograph#PhysicalEntity
+http://example.org/chunktograph#SpeedSetpoint | Speed Setpoint < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#SpeedStatus | Speed Status < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#Standard | Standard
+http://example.org/chunktograph#Status | Status < http://example.org/chunktograph#Point
+http://example.org/chunktograph#StatusPoint | Status Point < http://example.org/chunktograph#VirtualEntity
+http://example.org/chunktograph#SteeringCommittee | Steering Committee
+http://example.org/chunktograph#StructuredWorkflow | structured workflow < http://example.org/chunktograph#Workflow
+http://example.org/chunktograph#Substance | Substance < http://example.org/chunktograph#Measurable :: Class representing substances that can be measured or related to equipment and points.
+http://example.org/chunktograph#SubstanceTag | SubstanceTag < http://example.org/chunktograph#Tag
+http://example.org/chunktograph#Subsystem | Subsystem
+http://example.org/chunktograph#SupplyAirFlowSensor | Supply Air Flow Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#SupplyAirFlowSetpoint | Supply Air Flow Setpoint < http://example.org/chunktograph#Setpoint
+http://example.org/chunktograph#SupplyAirSubstance | Supply Air Substance < http://example.org/chunktograph#Air
+http://example.org/chunktograph#SupplyAirTemperatureSensor | Supply Air Temperature Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#SupplyAirTemperatureSetpoint | Supply Air Temperature Setpoint < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#SupplyFan | Supply Fan < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#System | System < http://example.org/chunktograph#Collection
+http://example.org/chunktograph#TTlFile | TTL file
+http://example.org/chunktograph#TableHandler | Table Handler < http://example.org/chunktograph#Handler
+http://example.org/chunktograph#TableRow | table row
+http://example.org/chunktograph#Tag | Tag < http://example.org/chunktograph#LogicalEntity :: An atomic fact or attribute of an entity.
+http://example.org/chunktograph#TagBasedMetadata | Tag-Based Metadata
+http://example.org/chunktograph#TagList | Tag List
+http://example.org/chunktograph#TagSet | Tag Set < http://example.org/chunktograph#Entity
+http://example.org/chunktograph#TagSetClass | Tag Set Class < http://example.org/chunktograph#RestrictionClass
+http://example.org/chunktograph#TagSetToClassMapping | Tag Set to Class Mapping
+http://example.org/chunktograph#TechnicalArea | Technical Area
+http://example.org/chunktograph#TechnicalCommittee | Technical Committee
+http://example.org/chunktograph#TechnicalServicesCommittee | Technical Services Committee
+http://example.org/chunktograph#Technology | Technology
+http://example.org/chunktograph#Temperature | Temperature < http://example.org/chunktograph#Quantity
+http://example.org/chunktograph#TemperatureSensor | Temperature Sensor < http://example.org/chunktograph#SensingPoint,http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#TemperatureSetpoint | temperature setpoint
+http://example.org/chunktograph#Temperature_Sensor | Temperature Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#Text | text < http://www.w3.org/2001/XMLSchema#string
+http://example.org/chunktograph#TextualDefinition | Textual Definition
+http://example.org/chunktograph#ThemeSpecificKnowledgeGraph | Theme-specific knowledge graph
+http://example.org/chunktograph#Thermostat | Thermostat < http://example.org/chunktograph#NetworkedDevice
+http://example.org/chunktograph#TimeSeriesDatabase | Time Series Database
+http://example.org/chunktograph#TimeseriesReference | TimeseriesReference < owl:Thing
+http://example.org/chunktograph#Tooling | Tooling
+http://example.org/chunktograph#ToolsWorkingGroup | Tools Working Group
+http://example.org/chunktograph#TopQuadrant | TopQuadrant SHACL engine < http://example.org/chunktograph#SHACLEngine
+http://example.org/chunktograph#TripleBlock | Triple Block < http://example.org/chunktograph#Block
+http://example.org/chunktograph#University | University
+http://example.org/chunktograph#Usability | Usability
+http://example.org/chunktograph#VAV | VAV < http://example.org/chunktograph#Connectable,http://example.org/chunktograph#Equipment
+http://example.org/chunktograph#VBIS | VBIS < http://example.org/chunktograph#Alignments,http://example.org/chunktograph#ReasoningProfile :: An emerging standard for asset management tagging.
+http://example.org/chunktograph#VBISTag | VBIS Tag
+http://example.org/chunktograph#VBISearchTag | VBIS search tag
+http://example.org/chunktograph#VFD | VFD < http://example.org/chunktograph#equip
+http://example.org/chunktograph#ValidTagSet | Valid Tag Set < http://example.org/chunktograph#TagSet :: A valid tag set is a tag set with a clear, real-world definition.
+http://example.org/chunktograph#Validation | Validation
+http://example.org/chunktograph#ValidationErrorType | Validation Error Type :: Types of errors found during validation
+http://example.org/chunktograph#ValidationProcess | Validation Process
+http://example.org/chunktograph#ValidationStep | Validation Step
+http://example.org/chunktograph#Valve | Valve
+http://example.org/chunktograph#ValvePositionCommand | valve position command
+http://example.org/chunktograph#ValvePositionSensor | Valve Position Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#VariableAirVolumeBox | Variable Air Volume Box < http://example.org/chunktograph#MechanicalEquipment
+http://example.org/chunktograph#VersionedGraphCollection | brickschema.persistent.VersionedGraphCollection < http://example.org/chunktograph#BrickschemaGraph,http://example.org/chunktograph#BrickschemaGraphCollection
+http://example.org/chunktograph#VirtualAsset | virtual asset
+http://example.org/chunktograph#VirtualEntity | Virtual Entity < http://example.org/chunktograph#Entity :: Anything whose representation is based in software.
+http://example.org/chunktograph#VirtualEnvironment | Virtual Environment < http://example.org/chunktograph#DevelopmentEnvironment
+http://example.org/chunktograph#VisualizationSite | Visualization site
+http://example.org/chunktograph#VoltageSensor | Voltage Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#Water | Water
+http://example.org/chunktograph#WebServer | Web server
+http://example.org/chunktograph#WebsiteIssueTracker | Website Issue Tracker
+http://example.org/chunktograph#Wire | Wire < http://example.org/chunktograph#Connection
+http://example.org/chunktograph#Workflow | workflow
+http://example.org/chunktograph#WorkingGroup | Working Group
+http://example.org/chunktograph#Yasgui | Yasgui < http://example.org/chunktograph#webInterface
+http://example.org/chunktograph#ZoneAirTemperatureSensor | Zone Air Temperature Sensor < http://example.org/chunktograph#Sensor
+http://example.org/chunktograph#air | air
+http://example.org/chunktograph#airCooled | airCooled
+http://example.org/chunktograph#alignment_file | alignment file
+http://example.org/chunktograph#blankNode | blank node
+http://example.org/chunktograph#blowdown | blowdown
+http://example.org/chunktograph#brick:Air | brick:Air
+http://example.org/chunktograph#brick:Air_Temperature_Sensor | brick:Air_Temperature_Sensor
+http://example.org/chunktograph#brick:Collection | Collection
+http://example.org/chunktograph#brick:Temperature | brick:Temperature
+http://example.org/chunktograph#brickBuilder | brick-builder < owl:Thing
+http://example.org/chunktograph#brickReconciliationAPIServer | Brick Reconciliation API Server < owl:Thing
+http://example.org/chunktograph#brickify | brickify < http://example.org/chunktograph#Feature,owl:Thing
+http://example.org/chunktograph#brickifyCommand | brickify command
+http://example.org/chunktograph#chilled | chilled
+http://example.org/chunktograph#chilledWaterCool | chilled water cool < http://example.org/chunktograph#Cooling
+http://example.org/chunktograph#chilledWaterPlant | chilledWaterPlant
+http://example.org/chunktograph#command | command
+http://example.org/chunktograph#condensate | condensate
+http://example.org/chunktograph#condenser | condenser
+http://example.org/chunktograph#condition | condition
+http://example.org/chunktograph#coolOnly | coolOnly < http://example.org/chunktograph#Cooling
+http://example.org/chunktograph#createdFromBMSPointLabels | Created from BMS point labels < http://example.org/chunktograph#BrickModel
+http://example.org/chunktograph#createdFromScratch | Created from scratch < http://example.org/chunktograph#BrickModel
+http://example.org/chunktograph#createdFromStructuredData | Created from structured data < http://example.org/chunktograph#BrickModel
+http://example.org/chunktograph#discharge | discharge
+http://example.org/chunktograph#domestic | domestic
+http://example.org/chunktograph#dxCool | dxCool < http://example.org/chunktograph#Cooling
+http://example.org/chunktograph#elecHeat | elecHeat < http://example.org/chunktograph#Heating
+http://example.org/chunktograph#elecReheat | elecReheat < http://example.org/chunktograph#Reheating
+http://example.org/chunktograph#equip | equip
+http://example.org/chunktograph#flow | flow
+http://example.org/chunktograph#gasHeat | gasHeat < http://example.org/chunktograph#Heating
+http://example.org/chunktograph#ggufFile | .gguf file < http://example.org/chunktograph#LLM
+http://example.org/chunktograph#hot | hot
+http://example.org/chunktograph#hotWaterHeat | hot water heat < http://example.org/chunktograph#Heating
+http://example.org/chunktograph#hotWaterPlant | hotWaterPlant
+http://example.org/chunktograph#hotWaterReheat | hotWaterReheat < http://example.org/chunktograph#Reheating
+http://example.org/chunktograph#incompleteDefinition | Incomplete Definition < http://example.org/chunktograph#BugReport
+http://example.org/chunktograph#inconsistency | Inconsistency < http://example.org/chunktograph#BugReport
+http://example.org/chunktograph#incorrectDefinition | Incorrect Definition < http://example.org/chunktograph#BugReport
+http://example.org/chunktograph#inference | Inference < http://example.org/chunktograph#reasoning :: Brick+ defines inference from Haystack’s informal tags to formal Brick classes.
+http://example.org/chunktograph#keywordSearch | Keyword Search
+http://example.org/chunktograph#macroSection | macro section
+http://example.org/chunktograph#makeup | makeup
+http://example.org/chunktograph#merge_type_cluster | merge_type_cluster function
+http://example.org/chunktograph#missingDefinition | Missing Definition < http://example.org/chunktograph#BugReport
+http://example.org/chunktograph#ontologyError | Ontology Error < http://example.org/chunktograph#BugReport
+http://example.org/chunktograph#openWorldAssumption | Open World Assumption
+http://example.org/chunktograph#owlNothing | owl:Nothing
+http://example.org/chunktograph#owlThing | owl:Thing
+http://example.org/chunktograph#perimeterHeat | perimeterHeat < http://example.org/chunktograph#Heating
+http://example.org/chunktograph#point | point
+http://example.org/chunktograph#pointLabelSharing | point-label-sharing < owl:Thing
+http://example.org/chunktograph#preCommitHook | pre-commit hook
+http://example.org/chunktograph#pySHACL | pySHACL < http://example.org/chunktograph#SHACL
+http://example.org/chunktograph#reasoning | Reasoning < http://example.org/chunktograph#Graph
+http://example.org/chunktograph#rec:Collection | Collection < http://example.org/chunktograph#Collection
+http://example.org/chunktograph#ref_schema | ref-schema
+http://example.org/chunktograph#ruleBasedModelBuilder | rule-based-model-builder < owl:Thing
+http://example.org/chunktograph#sensibleTagSet | Sensible Tag Set
+http://example.org/chunktograph#sensor | sensor
+http://example.org/chunktograph#setpoint | setpoint
+http://example.org/chunktograph#steamHeat | steamHeat < http://example.org/chunktograph#Heating
+http://example.org/chunktograph#tag:Air | Air :: Tag indicating air-related context.
+http://example.org/chunktograph#tag:Point | tag:Point
+http://example.org/chunktograph#tag:Sensor | Sensor :: Tag indicating a sensor entity.
+http://example.org/chunktograph#tag:Temperature | Temperature :: Tag indicating temperature-related context.
+http://example.org/chunktograph#tempSensor | temp sensor
+http://example.org/chunktograph#templateOperation | template operation
+http://example.org/chunktograph#uniqueTagSet | Unique Tag Set
+http://example.org/chunktograph#uv | uv
+http://example.org/chunktograph#water | water
+http://example.org/chunktograph#waterCooled | waterCooled
+http://example.org/chunktograph#waterMeterLoad | waterMeterLoad
+http://example.org/chunktograph#webInterface | Web Interface < http://example.org/chunktograph#SPARQLServer
+n1fbbea1518d0461d823b408d925198d7b1
+n1fbbea1518d0461d823b408d925198d7b25
+n1fbbea1518d0461d823b408d925198d7b29
+n1fbbea1518d0461d823b408d925198d7b35
+n1fbbea1518d0461d823b408d925198d7b43
+n1fbbea1518d0461d823b408d925198d7b47
+OP http://example.org/chunktograph#Relationship dom:http://example.org/chunktograph#Node rng:http://example.org/chunktograph#Node
+OP http://example.org/chunktograph#addInverseEdges dom:http://example.org/chunktograph#Inference rng:owl:Thing
+OP http://example.org/chunktograph#addVBISTags dom:http://example.org/chunktograph#BrickOntology rng:http://example.org/chunktograph#VBISTag
+OP http://example.org/chunktograph#addresses dom:http://example.org/chunktograph#BrickConsortium rng:http://example.org/chunktograph#IndustryNeed
+OP http://example.org/chunktograph#addsInverseRelationships dom:http://example.org/chunktograph#Inference rng:http://example.org/chunktograph#BrickModel
+OP http://example.org/chunktograph#addsSuperclasses dom:http://example.org/chunktograph#Inference rng:http://example.org/chunktograph#BrickModel
+OP http://example.org/chunktograph#addsTags dom:http://example.org/chunktograph#Inference rng:http://example.org/chunktograph#BrickModel
+OP http://example.org/chunktograph#adheresToCompleteness dom:http://example.org/chunktograph#Brick rng:http://example.org/chunktograph#Completeness
+OP http://example.org/chunktograph#adheresToConsistency dom:http://example.org/chunktograph#Brick rng:http://example.org/chunktograph#Consistency
+OP http://example.org/chunktograph#adheresToExpressivity dom:http://example.org/chunktograph#Brick rng:http://example.org/chunktograph#Expressivity
+OP http://example.org/chunktograph#adheresToExtensibility dom:http://example.org/chunktograph#Brick rng:http://example.org/chunktograph#Extensibility
+OP http://example.org/chunktograph#adheresToUsability dom:http://example.org/chunktograph#Brick rng:http://example.org/chunktograph#Usability
+OP http://example.org/chunktograph#aggregate dom:owl:Thing rng:http://example.org/chunktograph#PropertyValue
+OP http://example.org/chunktograph#aggregationFunction dom:http://example.org/chunktograph#PropertyValue rng:owl:Thing
+OP http://example.org/chunktograph#aliasOf dom:owl:Class rng:owl:Class
+OP http://example.org/chunktograph#alignmentFile dom:http://example.org/chunktograph#Alignment rng:http://www.w3.org/2001/XMLSchema#string
+OP http://example.org/chunktograph#annotateWithSubstancesAndQuantities dom:http://example.org/chunktograph#Inference rng:owl:Thing
+OP http://example.org/chunktograph#annotateWithTags dom:http://example.org/chunktograph#Inference rng:owl:Thing
+OP http://example.org/chunktograph#appliesInference dom:http://example.org/chunktograph#BrickModel rng:http://example.org/chunktograph#Inference
+OP http://example.org/chunktograph#area dom:owl:Thing rng:http://example.org/chunktograph#PropertyValue
+OP http://example.org/chunktograph#assertsInstanceOfClass dom:http://example.org/chunktograph#Graph rng:owl:Class
+OP http://example.org/chunktograph#brick:feeds
+OP http://example.org/chunktograph#brick:isFedby
+OP http://example.org/chunktograph#canBeInstalledWith dom:http://example.org/chunktograph#BrickschemaPackage rng:http://example.org/chunktograph#PIP
+OP http://example.org/chunktograph#charters dom:http://example.org/chunktograph#Committee rng:http://example.org/chunktograph#WorkingGroup
+[truncated]

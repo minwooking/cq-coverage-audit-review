@@ -1,0 +1,49 @@
+{
+ "glm": {
+  "records": 315,
+  "valid": 1431,
+  "invalid": 0,
+  "context_skip": 0,
+  "prompt_tokens": 3246807,
+  "completion_tokens": 42800,
+  "model": "zai-org/GLM-4.7-Flash",
+  "note": "A/B scores of Studies 3-4 reused (not re-requested); F cells below are new calls"
+ },
+ "gptoss": {
+  "records": 315,
+  "valid": 1430,
+  "invalid": 0,
+  "context_skip": 0,
+  "prompt_tokens": 3268233,
+  "completion_tokens": 43538,
+  "model": "openai/gpt-oss-20b",
+  "note": "A/B scores of Studies 3-4 reused (not re-requested); F cells below are new calls"
+ },
+ "q38": {
+  "records": 1431,
+  "valid": 1431,
+  "invalid": 0,
+  "context_skip": 0,
+  "prompt_tokens": 10322649,
+  "completion_tokens": 188950,
+  "model": "Qwen/Qwen3.8-Flash-Next"
+ },
+ "q80": {
+  "records": 1431,
+  "valid": 1431,
+  "invalid": 0,
+  "context_skip": 0,
+  "prompt_tokens": 10237644,
+  "completion_tokens": 152561,
+  "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8"
+ },
+ "gw": {
+  "records": 1003,
+  "valid": 1000,
+  "invalid": 3,
+  "context_skip": 0,
+  "prompt_tokens": 7069090,
+  "completion_tokens": 218975,
+  "model": "gpt-5.6-luna"
+ }
+}

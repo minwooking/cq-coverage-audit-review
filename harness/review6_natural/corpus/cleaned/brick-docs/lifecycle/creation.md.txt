@@ -1,0 +1,93 @@
+# Creating a Brick Model
+
+A Brick model must be created, derived or otherwise produced in order to enable data-driven applications and deliver value.
+There are several ways of creating a Brick model for a building.
+The most appropriate choice of method or tool depends on a number of factors:
+- whether there is existing metadata or an existing digital representation of the building
+- the format or standard that defines any digital representation
+- how standardized, regular or predictable that digital representation is
+
+The rest of this section describes common ways of creating a Brick model, organized by what form of source information is available.
+
+## From Scratch
+
+A Brick model can be created from scratch by explicitly listing the contents of the graph.
+This is often helpful when creating small examples, when no existing structured information is available, or when the building is best described programatically.
+
+There is no prescribed methodology for creating a Brick model from scratch.
+A common pattern is to use data structures to represent collections of similar information (e.g. all rooms in a building, all VAVs and their points, etc) and then to traverse those data structures, creating triples in a graph along the way.
+
+### Software
+
+- brickschema (Python): Python package over RDFlib that provides Brick-specific features and APIs for working with Brick models
+- RDFlib (Python): Python package for working with RDF graphs
+
+### Example
+
+The following example uses the brickschema package to create a simple Brick model:
+
+Also see the Brick examples folder which contains a few examples of creating sample models from scratch.
+
+## From Structured Tabular Sources
+
+Structured tabular sources like CSV files, schedules and COBie sheets are often good sources of metadata.
+The Brick ecosystem contains several tools that help describe how this structured data can be transformed into a Brick model.
+Most of these tools operate by
+- use a mapping between the terms/types in the source data and their corresponding Brick classes to create entities
+- use the relationships between columns in the source to define the relationships between those entities
+
+Generally, this means that each row of the input data results in the creation of a subgraph containing some entities, their types, and the relationships between them.
+
+### Software
+- brickify: a robust tool for describing transformations to Brick from structured sources like tables (spreadsheets, CSV files)
+- brick-builder: like brickify but simpler and with fewer features. Uses templates to describe how CSV rows should be turned into a Brick model.
+- rule-based-model-builder: experimental framework for expressing complex transformations of structured data to a Brick model; includes COBie translation.
+
+### Example
+
+#### Brickify
+
+Assume a spreadsheet with the following data
+
+VAV name | temperature sensor | temperature setpoint | has_reheat
+A | A_ts | A_sp | false
+B | B_ts | B_sp | true
+
+The following brickify config file expresses how to create VAV objects in Brick from that spreadsheet, with their corresponding sensors. It optionally creates the VAV with Reheat type when prompted. Notice that the types of the entities in the rows are determined by the column name and that this is baked into the config file.
+
+This creates the following Brick model
+
+### Tutorials
+- Creating a Brick model with Brick Builder and OpenRefine
+
+## From Haystack Models
+
+Translation from Project Haystack <4.0 models is available in brickify. Translation for Haystack 4.0 models is in development.
+
+### Software
+- brickify: a robust tool for describing transformations to Brick from structured sources like tables (spreadsheets, CSV files)
+
+## From IFC Models
+
+Currently, only support for COBie spreadsheets has been developed; see the software below.
+
+Support for translation from IFC models directly is in development.
+
+### Software
+- rule-based-model-builder (COBie): implementation of a COBie translator using the rule-based-model-builder package
+
+## From BMS Point Labels
+
+One of the most common forms of existing building metadata are BMS point labels. Unfortunately, these often lack consistent structure, or follow ad-hoc naming conventions which are rarely documented.
+The primary challenge when dealing with these sources is figuring out what each entitity is.
+Each point label explicitly corresponds to a Brick Point instance, but the label itself may also contain additional information describing related equipment, other assets or even some of the building topology.
+
+The reconcilation API server linked below will attempt to infer the type of a point from common abbreviations in its label. This is a helpful tool for implementating translation software for different point naming schemes.
+
+### Software
+- Brick Reconciliation API Server: an implementation of the W3C reconciliation api for use with OpenRefine
+- OpenRefine: locally-hosted web-based tool for manipulating mess ydata
+- point-label-sharing: a Python package for extracting point labels from a BACnet network
+
+### Tutorials
+- Creating a Brick model with Brick Builder and OpenRefine

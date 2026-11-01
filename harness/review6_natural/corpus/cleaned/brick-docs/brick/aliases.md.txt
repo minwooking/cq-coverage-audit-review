@@ -1,0 +1,39 @@
+# Aliases and Equivalent Classes
+
+This feature was introduced in Brick v1.4.
+
+Over its history, Brick has accumulated several duplicate class names. For example: brick:AHU, brick:Air_Handler_Unit and brick:Air_Handling_Unit can all be found in the Brick 1.4 release.
+Brick retains all of these classes for backwards-compatibility; however, in Brick 1.4 it became necessary to denote a preferred class among a set of interchangeable classes.
+At the same time, downstream tools and consumers should remain agnostic to whichever class was chosen by a modeler.
+Brick handles both of these features through two mechanisms: equivalent classes and aliases.
+
+## Aliases
+
+Aliases identify the preferred class among a set of interchangeable (equivalent) classes.
+Non-preferred classes will have a brick:aliasOf property which indicates the preferred class.
+
+See below a snippet of Brick 1.4 containing definitions of AHU, Air_Handler_Unit and Air_Handling_Unit. Only brick:Air_Handling_Unit is missing the brick:aliasOf property, so it is the preferred class. The other classes have a brick:aliasOf property pointing to this preferred class.
+
+### Listing all Preferred Classes
+
+This SPARQL query lists all preferred classes in Brick:
+
+Here is how to run this query on the latest Brick release:
+
+### Getting the Preferred Class for an Entity
+
+This SPARQL query gets the preferred class for a specific Brick class:
+
+Here is how to run this query on the latest Brick release. Adjust the initBindings paramete to change which class you are querying the alias for.
+
+## Equivalent Classes
+
+Groups of duplicate classes (e.g., AHU, Air_Handler_Unit and Air_Handling_Unit) will also be marked as equivalent classes using the owl:equivalentClass property.
+There are two SHACL rules in Brick (bsh:OWLEquivalentClassRule1 and bsh:OWLEquivalentClassRule2) which handle the semantics of equivalent classes: when SHACL inference is run on a Brick model, these rules will add all the equivalent classes to each entity.
+
+For example, consider a simple Brick model with a single AHU instance:
+
+After SHACL inference, the model will contain:
+
+This means that after running SHACL inference, one can use the preferred Brick classes to find an entity.
+It is not necessary to know which (equivalent) class was used.

@@ -1,0 +1,863 @@
+{
+  "generated_utc": "2026-09-21T06:09:38.331892+00:00",
+  "bank_sha256": "993c5e1164540dce0f2f9bf2e6ed397cf45910da7889300feeaad6543edb8507",
+  "rubric_sha256": "d0c397584bd62ca2ba62cf3833b1ad70862d6be22be52a4c3ffa111529756ebf",
+  "rendering_spec_sha256": "eb0399af5152ac001074f1a0c27b23652a42a2f9ceeebf95a669abf703ec0a3e",
+  "bank_rows": 36,
+  "seed": 20260913,
+  "judge_model": "gemini-3.6-flash",
+  "endpoint_host": "generativelanguage.googleapis.com",
+  "temperature": 0.0,
+  "max_tokens": 1024,
+  "judge_extra_body": {
+    "google": {
+      "thinking_config": {
+        "thinking_level": "minimal"
+      }
+    }
+  },
+  "judge_extra_top_level_fields": null,
+  "SIMULATED": false,
+  "smoke": false,
+  "results_present": true,
+  "variant_manifest": "harness/variants/MANIFEST.json",
+  "variant_ids": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "planned_cells": 224,
+  "primary_cells": 188,
+  "ablated_control_cells": 24,
+  "preserved_control_cells": 12,
+  "variant_views_sha256": "16ede3938e2729c70467c51195dd0f32869c8f375d5945e12d40aa9f1fa50b8f",
+  "queue_sha256": "2ba0a20ad9d85a15a8e9fc8a806999c97ec02ee717faf96475bf5114f8159926",
+  "documented_exclusions": [
+    {
+      "cell_id": "primary:A:CQB13",
+      "variant": "A",
+      "cq_id": "CQB13",
+      "grounding": "inverse:hasPoint~isPointOf",
+      "anchors": [
+        "inverse:hasPoint~isPointOf",
+        "hasPoint",
+        "isPointOf"
+      ],
+      "matched_anchors": [
+        "hasPoint"
+      ],
+      "missing_anchors": [
+        "inverse:hasPoint~isPointOf",
+        "isPointOf"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "hasPoint",
+        "isPointOf"
+      ],
+      "required_grounding_anchors": [
+        "hasPoint",
+        "isPointOf"
+      ],
+      "missing_required_grounding_anchors": [
+        "isPointOf"
+      ],
+      "relaxed_matches": [
+        "hasPoint"
+      ],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [
+        1810
+      ],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_variant_a_naive_baseline"
+    },
+    {
+      "cell_id": "primary:A:CQB14",
+      "variant": "A",
+      "cq_id": "CQB14",
+      "grounding": "prop:hasLocation",
+      "anchors": [
+        "hasLocation"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "hasLocation"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "hasLocation"
+      ],
+      "required_grounding_anchors": [
+        "hasLocation"
+      ],
+      "missing_required_grounding_anchors": [
+        "hasLocation"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_variant_a_naive_baseline"
+    },
+    {
+      "cell_id": "primary:A:CQB15",
+      "variant": "A",
+      "cq_id": "CQB15",
+      "grounding": "prop:feeds",
+      "anchors": [
+        "feeds"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "feeds"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "feeds"
+      ],
+      "required_grounding_anchors": [
+        "feeds"
+      ],
+      "missing_required_grounding_anchors": [
+        "feeds"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:A:CQB18",
+      "variant": "A",
+      "cq_id": "CQB18",
+      "grounding": "prop:hasAssociatedTag",
+      "anchors": [
+        "hasAssociatedTag"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "hasAssociatedTag"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "hasAssociatedTag"
+      ],
+      "required_grounding_anchors": [
+        "hasAssociatedTag"
+      ],
+      "missing_required_grounding_anchors": [
+        "hasAssociatedTag"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_variant_a_naive_baseline"
+    },
+    {
+      "cell_id": "primary:A:CQB19",
+      "variant": "A",
+      "cq_id": "CQB19",
+      "grounding": "prop:hasUnit",
+      "anchors": [
+        "hasUnit"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "hasUnit"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "hasUnit"
+      ],
+      "required_grounding_anchors": [
+        "hasUnit"
+      ],
+      "missing_required_grounding_anchors": [
+        "hasUnit"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_variant_a_naive_baseline"
+    },
+    {
+      "cell_id": "primary:A:CQB20",
+      "variant": "A",
+      "cq_id": "CQB20",
+      "grounding": "prop:lastKnownValue",
+      "anchors": [
+        "lastKnownValue"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "lastKnownValue"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "lastKnownValue"
+      ],
+      "required_grounding_anchors": [
+        "lastKnownValue"
+      ],
+      "missing_required_grounding_anchors": [
+        "lastKnownValue"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_variant_a_naive_baseline"
+    },
+    {
+      "cell_id": "primary:A:CQB22",
+      "variant": "A",
+      "cq_id": "CQB22",
+      "grounding": "prop:buildingPrimaryFunction",
+      "anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "required_grounding_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "missing_required_grounding_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:A:CQB23",
+      "variant": "A",
+      "cq_id": "CQB23",
+      "grounding": "skos:definition brick:yearBuilt",
+      "anchors": [
+        "brick:yearBuilt",
+        "yearBuilt"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "brick:yearBuilt",
+        "yearBuilt"
+      ],
+      "required_qualified_anchors": [
+        "brick:yearBuilt"
+      ],
+      "required_unqualified_anchors": [],
+      "required_grounding_anchors": [
+        "brick:yearBuilt"
+      ],
+      "missing_required_grounding_anchors": [
+        "brick:yearBuilt"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:A:CQB24",
+      "variant": "A",
+      "cq_id": "CQB24",
+      "grounding": "prop:hasQuantity",
+      "anchors": [
+        "hasQuantity"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "hasQuantity"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "hasQuantity"
+      ],
+      "required_grounding_anchors": [
+        "hasQuantity"
+      ],
+      "missing_required_grounding_anchors": [
+        "hasQuantity"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_variant_a_naive_baseline"
+    },
+    {
+      "cell_id": "primary:A:CQB32",
+      "variant": "A",
+      "cq_id": "CQB32",
+      "grounding": "prop:deprecation",
+      "anchors": [
+        "deprecation"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "deprecation"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "deprecation"
+      ],
+      "required_grounding_anchors": [
+        "deprecation"
+      ],
+      "missing_required_grounding_anchors": [
+        "deprecation"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_variant_a_naive_baseline"
+    },
+    {
+      "cell_id": "primary:A:CQB33",
+      "variant": "A",
+      "cq_id": "CQB33",
+      "grounding": "prop:hasSubMeter",
+      "anchors": [
+        "hasSubMeter"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "hasSubMeter"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "hasSubMeter"
+      ],
+      "required_grounding_anchors": [
+        "hasSubMeter"
+      ],
+      "missing_required_grounding_anchors": [
+        "hasSubMeter"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_variant_a_naive_baseline"
+    },
+    {
+      "cell_id": "primary:A:CQB35",
+      "variant": "A",
+      "cq_id": "CQB35",
+      "grounding": "prop:hasQuantity-meth",
+      "anchors": [
+        "hasQuantity"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "hasQuantity"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "hasQuantity"
+      ],
+      "required_grounding_anchors": [
+        "hasQuantity"
+      ],
+      "missing_required_grounding_anchors": [
+        "hasQuantity"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_variant_a_naive_baseline"
+    },
+    {
+      "cell_id": "primary:A:CQB36",
+      "variant": "A",
+      "cq_id": "CQB36",
+      "grounding": "ref:hasExternalReference / brick:hasQUDTReference",
+      "anchors": [
+        "ref:hasExternalReference",
+        "hasExternalReference",
+        "brick:hasQUDTReference",
+        "hasQUDTReference"
+      ],
+      "matched_anchors": [
+        "ref:hasExternalReference",
+        "hasExternalReference"
+      ],
+      "missing_anchors": [
+        "brick:hasQUDTReference",
+        "hasQUDTReference"
+      ],
+      "required_qualified_anchors": [
+        "ref:hasExternalReference",
+        "brick:hasQUDTReference"
+      ],
+      "required_unqualified_anchors": [],
+      "required_grounding_anchors": [
+        "ref:hasExternalReference",
+        "brick:hasQUDTReference"
+      ],
+      "missing_required_grounding_anchors": [
+        "brick:hasQUDTReference"
+      ],
+      "relaxed_matches": [
+        "ref:hasExternalReference",
+        "hasExternalReference"
+      ],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [
+        1806
+      ],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_variant_a_naive_baseline"
+    },
+    {
+      "cell_id": "primary:B:CQB15",
+      "variant": "B",
+      "cq_id": "CQB15",
+      "grounding": "prop:feeds",
+      "anchors": [
+        "feeds"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "feeds"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "feeds"
+      ],
+      "required_grounding_anchors": [
+        "feeds"
+      ],
+      "missing_required_grounding_anchors": [
+        "feeds"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:B:CQB22",
+      "variant": "B",
+      "cq_id": "CQB22",
+      "grounding": "prop:buildingPrimaryFunction",
+      "anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "required_grounding_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "missing_required_grounding_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:B:CQB23",
+      "variant": "B",
+      "cq_id": "CQB23",
+      "grounding": "skos:definition brick:yearBuilt",
+      "anchors": [
+        "brick:yearBuilt",
+        "yearBuilt"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "brick:yearBuilt",
+        "yearBuilt"
+      ],
+      "required_qualified_anchors": [
+        "brick:yearBuilt"
+      ],
+      "required_unqualified_anchors": [],
+      "required_grounding_anchors": [
+        "brick:yearBuilt"
+      ],
+      "missing_required_grounding_anchors": [
+        "brick:yearBuilt"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:C:CQB15",
+      "variant": "C",
+      "cq_id": "CQB15",
+      "grounding": "prop:feeds",
+      "anchors": [
+        "feeds"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "feeds"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "feeds"
+      ],
+      "required_grounding_anchors": [
+        "feeds"
+      ],
+      "missing_required_grounding_anchors": [
+        "feeds"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:C:CQB22",
+      "variant": "C",
+      "cq_id": "CQB22",
+      "grounding": "prop:buildingPrimaryFunction",
+      "anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "required_grounding_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "missing_required_grounding_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:C:CQB23",
+      "variant": "C",
+      "cq_id": "CQB23",
+      "grounding": "skos:definition brick:yearBuilt",
+      "anchors": [
+        "brick:yearBuilt",
+        "yearBuilt"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "brick:yearBuilt",
+        "yearBuilt"
+      ],
+      "required_qualified_anchors": [
+        "brick:yearBuilt"
+      ],
+      "required_unqualified_anchors": [],
+      "required_grounding_anchors": [
+        "brick:yearBuilt"
+      ],
+      "missing_required_grounding_anchors": [
+        "brick:yearBuilt"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:D:CQB15",
+      "variant": "D",
+      "cq_id": "CQB15",
+      "grounding": "prop:feeds",
+      "anchors": [
+        "feeds"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "feeds"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "feeds"
+      ],
+      "required_grounding_anchors": [
+        "feeds"
+      ],
+      "missing_required_grounding_anchors": [
+        "feeds"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:D:CQB22",
+      "variant": "D",
+      "cq_id": "CQB22",
+      "grounding": "prop:buildingPrimaryFunction",
+      "anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "required_grounding_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "missing_required_grounding_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:D:CQB23",
+      "variant": "D",
+      "cq_id": "CQB23",
+      "grounding": "skos:definition brick:yearBuilt",
+      "anchors": [
+        "brick:yearBuilt",
+        "yearBuilt"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "brick:yearBuilt",
+        "yearBuilt"
+      ],
+      "required_qualified_anchors": [
+        "brick:yearBuilt"
+      ],
+      "required_unqualified_anchors": [],
+      "required_grounding_anchors": [
+        "brick:yearBuilt"
+      ],
+      "missing_required_grounding_anchors": [
+        "brick:yearBuilt"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:E:CQB15",
+      "variant": "E",
+      "cq_id": "CQB15",
+      "grounding": "prop:feeds",
+      "anchors": [
+        "feeds"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "feeds"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "feeds"
+      ],
+      "required_grounding_anchors": [
+        "feeds"
+      ],
+      "missing_required_grounding_anchors": [
+        "feeds"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:E:CQB22",
+      "variant": "E",
+      "cq_id": "CQB22",
+      "grounding": "prop:buildingPrimaryFunction",
+      "anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "required_grounding_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "missing_required_grounding_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:E:CQB23",
+      "variant": "E",
+      "cq_id": "CQB23",
+      "grounding": "skos:definition brick:yearBuilt",
+      "anchors": [
+        "brick:yearBuilt",
+        "yearBuilt"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "brick:yearBuilt",
+        "yearBuilt"
+      ],
+      "required_qualified_anchors": [
+        "brick:yearBuilt"
+      ],
+      "required_unqualified_anchors": [],
+      "required_grounding_anchors": [
+        "brick:yearBuilt"
+      ],
+      "missing_required_grounding_anchors": [
+        "brick:yearBuilt"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:F:CQB15",
+      "variant": "F",
+      "cq_id": "CQB15",
+      "grounding": "prop:feeds",
+      "anchors": [
+        "feeds"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "feeds"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "feeds"
+      ],
+      "required_grounding_anchors": [
+        "feeds"
+      ],
+      "missing_required_grounding_anchors": [
+        "feeds"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:F:CQB22",
+      "variant": "F",
+      "cq_id": "CQB22",
+      "grounding": "prop:buildingPrimaryFunction",
+      "anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "required_qualified_anchors": [],
+      "required_unqualified_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "required_grounding_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "missing_required_grounding_anchors": [
+        "buildingPrimaryFunction"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    },
+    {
+      "cell_id": "primary:F:CQB23",
+      "variant": "F",
+      "cq_id": "CQB23",
+      "grounding": "skos:definition brick:yearBuilt",
+      "anchors": [
+        "brick:yearBuilt",
+        "yearBuilt"
+      ],
+      "matched_anchors": [],
+      "missing_anchors": [
+        "brick:yearBuilt",
+        "yearBuilt"
+      ],
+      "required_qualified_anchors": [
+        "brick:yearBuilt"
+      ],
+      "required_unqualified_anchors": [],
+      "required_grounding_anchors": [
+        "brick:yearBuilt"
+      ],
+      "missing_required_grounding_anchors": [
+        "brick:yearBuilt"
+      ],
+      "relaxed_matches": [],
+      "false_positive_local_name_matches": [],
+      "matching_line_numbers": [],
+      "can_ablate": false,
+      "documented_exclusion_reason": "corpus_sparsity_all_variants"
+    }
+  ],
+  "documented_exclusion_count": 28,
+  "completed_cells": 224
+}

@@ -1,0 +1,51 @@
+# PREREG addendum 39 (exploratory, post hoc) -- schema-anchored SHACL shapes and internal-consistency shapes
+
+> AI-generated draft; the author must review it before it is relied on. Date: 2026-10-22. Post hoc: written after studies 7 and 8 and with knowledge of their results (study 8: the pipeline's own `shapes_F.ttl` has `sh:minCount 0` everywhere and no `sh:class`; the only official shapes with non-vacuous constraints are DCAT-AP 3.0.1, against which pipeline variants B-F show 1 violation and baseline A 33; Brick's release shapes select no pipeline node because pipeline nodes are not Brick-typed). **No model call and no server access are made.** Only the files already frozen in the repo or downloaded by study 8 (`harness/study8_structural_quality/external/`, hashes in its `FETCH_LOG.json`) are read; nothing is downloaded. This file is committed alone, before any measure of this addendum is computed. `main.tex`, `main_ko.tex`, `supplement.tex` and all other study folders are not touched; all code is in `study9_schema_shapes/`. All code named here is AI-generated and must be reviewed and tested by a person before reuse; none of it is to be applied to a production system. Before this file or any output is shared outside the team, check that no confidential company information, host name, address, key or personal data is in it.
+
+## 9.1 Aim
+
+A validation that (i) is anchored in a schema the pipeline did not write, (ii) is non-vacuous by construction (it contains `sh:class` / `sh:datatype` / `sh:minCount >= 1` constraints), and (iii) can be applied by one rule to every domain. Two shape sets are generated and reported separately. **No threshold and no decision is attached to any number; all results are reported whatever they show.**
+
+## 9.2 Data (read-only)
+
+Variants A-F per domain, exactly as in study 8 (`study8_structural_quality/analyze.py::domain_spec`, imported, not copied): Brick holdout, DCAT, SOSA/SSN, PROV (public), development corpus and second domain (**counts only**: no IRI, label or text of these two is written; the second domain has A, B, C and B' only). Official ontologies: Brick 1.4.4 `Brick.ttl` (study 8 `external/brick`), DCAT `dcat.ttl`, SOSA + SSN, PROV-O (study 4 `raw/`). Development corpus and second domain have no official ontology: the schema-anchored test is reported "no official ontology" for them; the internal-consistency test is run on them (counts only).
+
+## 9.3 Shape set (a): schema-anchored official shapes -- generation rule (fixed now)
+
+**Referenced official classes of a variant.** An official class C (a class in the official ontology) is *referenced* by a variant if (R1) its IRI occurs anywhere in the variant graph as a term, or (R2) a pipeline entity (any subject typed `skos:Concept`, or a pipeline `owl:Class`/`rdfs:Class`) resolves to C by label or IRI local name using study 8's resolver (`Official.resolve_keys`: normalised label/local name equals that of exactly one official class, a leading domain word dropped). (R3) The alignment file maps pipeline verbs to *properties* only (checked: values are property IRIs or null), so it adds no class references; it is used for property mapping in (L2) below. Each class records the level (R1/R2) at which it was first referenced; a variant's shape set is built only for its own referenced classes.
+
+**One `sh:NodeShape` per referenced class C**, `sh:targetClass C`, `sh:closed false`, with one `sh:property` per official property q such that
+1. C is in the official domain of q (`rdfs:domain`, `schema:domainIncludes`, `owl:unionOf` members expanded; study 8's `Official.dom_rng`), or
+2. the official ontology or official shapes declare q as *required* on C (see below).
+
+Property shape: `sh:path q`; from the official range: a class member -> `sh:class` (several members -> `sh:or` of `sh:class`, lenient), an XSD datatype -> `sh:datatype`, `rdfs:Literal` -> `sh:nodeKind sh:Literal`, `owl:Thing`/`rdfs:Resource`/no range -> no value constraint. When q is required through an official SHACL property shape, that shape's own `sh:class`/`sh:datatype`/`sh:nodeKind` are copied if the ontology gives no range. **`sh:minCount 1` only if required** by the official declarations: (i) an `owl:Restriction` superclass of C on q with `owl:minCardinality` / `owl:minQualifiedCardinality` >= 1; (ii) a property shape with `sh:minCount >= 1` in an official SHACL graph whose holder is C (holder = C itself if C is the shape node, or its `sh:targetClass`): Brick 1.4.4 `Brick.ttl` (its own shapes) and, for DCAT, DCAT-AP 3.0.1 `dcat-ap-SHACL.ttl` (dangling `sh:property` references removed as in study 8). Otherwise `sh:minCount 0` is written (nothing) and the class/datatype constraint is kept. SOSA/SSN and PROV-O carry no such declarations unless the checks in (i) find some; whatever is found is reported.
+
+**Counts reported per variant and for the full official ontology (all classes, as a non-vacuity reference):** node shapes, property shapes, `minCount >= 1`, `sh:class`, `sh:datatype`, `sh:nodeKind`.
+
+**Data presentation for validation (two levels, both reported; only L1 is the headline):**
+* **L1 strict (headline):** the variant graph as is, plus the official ontology's `rdfs:subClassOf` triples between named classes (so that `sh:targetClass` and `sh:class` honour the official hierarchy); `pyshacl` with `inference="none"`. Focus nodes are only nodes whose own `rdf:type` is an official class or a subclass of one.
+* **L2 resolved (sensitivity, labelled "punning"):** L1 plus (a) `rdf:type C` added to every pipeline `skos:Concept` entity that resolves to a unique official class C by label/local name (this treats a concept that *names* a class as if it were an instance of it -- semantically a stretch, hence a sensitivity only), and (b) for every triple (s, p, o) whose p maps to an official property q by study 8's `map_property` (alignment, exact IRI, local name), the triple (s, q, o). L2 sh:class violations on objects that cannot be resolved to a class are counted as the shapes say; they are an artefact of unresolved objects as much as of wrong typing, and the top-constraint table says which.
+
+Results whose focus node is not a node of the variant graph (official-ontology nodes) are excluded, as in study 8.
+
+## 9.4 Shape set (b): internal consistency of the pipeline's own declarations -- rule (fixed now)
+
+For every property p for which the variant graph declares `rdfs:domain D` (each declared D, a conjunction) and/or `rdfs:range R`: one `sh:NodeShape` with `sh:targetSubjectsOf p`; a node-level `sh:class D` (the subject must have `rdf:type` D or a subclass of D under the variant's own `rdfs:subClassOf`), and a property shape `sh:path p` with `sh:class R` (R a class) or `sh:datatype R` (R an XSD datatype) or `sh:nodeKind sh:Literal` (R = `rdfs:Literal`). Declarations with `owl:Thing`/`rdfs:Resource` give no constraint. `sh:minCount` is not used (0 by construction); the test is non-vacuous because every `sh:class`/`sh:datatype` is a real constraint and every triple of a declared property is a focus-node value. `pyshacl`, `inference="none"`, data = variant graph.
+
+Violations are split afterwards (reporting only, no re-validation): domain violation with *wrong typed subject* (subject has a class type that is not a meta type `skos:Concept`/`owl:NamedIndividual`/`prov:Entity`/`owl:Class`... but not D), *untyped subject* (only meta types), range violation with *wrong typed object*, *untyped object*, *literal where a class is expected*, *wrong datatype*.
+
+## 9.5 Reporting
+
+Per domain x variant x shape set (and L1/L2 for set (a)): triples; shape counts (as 9.3); focus nodes selected (study 8 `scope`, distinct, constraint-bearing shapes only); `conforms`; violation count; top 5 violated (component, path, source shape); violations per 1,000 triples; verdict. **Pre-fixed verdict:** *pass* iff focus nodes > 0 and violations = 0; *not applicable (vacuous)* if focus nodes = 0; otherwise *fail*. A validation that errors or times out (30 min) is reported as such, nothing imputed.
+
+## 9.6 Step 2 -- stage-C artefact (only where set (b) shows violations in C-F)
+
+Per variant C-F with violations: the top 10 offending properties (public domains: property local name, declared domain/range local names; development and second domain: only aggregate counts): number of triples of p, number of distinct subjects, violations on p split as in 9.4, share of subjects of p typed D, the three most frequent actual subject classes (public domains only); aggregate: number and share of declared properties with >= 1 violation, and share of all violations carried by the top 10 properties.
+
+## 9.7 Outputs, order of work, commits
+
+`analyze.py` (imports study 8's helpers; deterministic), `test_analyze.py` (synthetic graph with a known domain violation, a known range violation, a known datatype violation, a required-property (minCount) violation, a vacuous case, and a conforming case, each of which must be caught or not caught as stated), `results.json`, `REPORT_auto.md` (generated), `tables.tex` (compact: domain x variant -> focus nodes, violations (official, L1), violations (internal), pass/NA). Order: (1) this file committed alone; (2) code, tests, results, report, tables committed after; deviations in `DEVIATIONS.md` if any. Only explicit paths are staged; `index.lock` is retried. Reserved files (`site_key*`, `labeling_sheet_key*`, `human_labels_export*`, `views_for_raters.zip`, `.env`, sealed or employee files) are never opened. Commit messages end with `Co-Authored-By: Claude Fable 5.1 <<email>>`.
+
+## 9.8 Limits stated in advance
+
+Label-based class resolution is a heuristic. The official ontologies declare few required properties (SOSA/SSN, PROV-O probably none), so set (a) will contain mostly `sh:class`/`sh:datatype` constraints on optional properties; a pass on set (a) means type-compatibility of what is stated, not completeness. Under L1 the pipeline emits instances typed by its own `ct:` classes, so set (a) may select no focus node in B-F: that is then reported as "not applicable", not as valid. Set (b) tests only that stage C's declarations agree with stage C's own instance typing; it says nothing about agreement with the world.

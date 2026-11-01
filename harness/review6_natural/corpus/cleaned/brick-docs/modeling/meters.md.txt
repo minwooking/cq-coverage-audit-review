@@ -1,0 +1,52 @@
+# Meters
+
+This feature is new in Brick v1.3
+
+Brick provides a basic but flexible model for describing meters, submeter hierarchies, and their relationships to the building.
+Meters are equipment (they are subclasses of the Brick Equipment class) that measure the consumption or production of energy, steam, gas or other "substances" in the building.
+The data produced by meters can be found in instances of the Brick Point class that are associated with the Meter.
+These include power, energy, water and gas consumption sensors and the like.
+
+## Meter Data
+
+Meters can host several points which correspond to the data produced by the meter. These point instances are related to the meter via the brick:isPointOf relationship. See for some examples of how those points can be described.
+(The meter can also be related to the point via the brick:hasPoint relationship).
+
+## Meters and Submeters
+
+Meters are instances of the brick:Meter class or any of its subclasses.
+Submeter hierarchies are defined through the brick:hasSubMeter and brick:isSubMeterOf relationships.
+In fact, meters can only be related to each other via these relationships.
+
+Brick does not describe the nature of the submeter relationship -- only that it exists. If this is a problem, let us know!
+
+To ask for the immediate submeters of a particular meter, one can query the model as follows:
+
+or more generally, for all immediate parent/child submeter relationships:
+
+One can also ask for all meters that aren't submeters of any other meter. Assuming the Brick model is correct, this will avoid double counting:
+
+### Virtual Meters
+
+It is useful to be able to model "virtual" meters which do not have a physical presence in the building.
+Brick supports modeling "virtual" meters using the brick:isVirtualMeter Entity Property.
+This property can only be "true" for instances of brick:Meter or subclasses thereof.
+
+By default, virtual meters look exactly like physical meters so no queries need to be changed if you don't care about the distinction between them.
+It is also possible to query only virtual meters:
+
+or to query only meter which are not virtual meters
+
+## Associating Meters
+
+Meters can be associated with the entities that they are metering through the brick:meters / brick:isMeteredBy relationships. These entities can be instances of brick:Equipment, brick:Location or rec:Collection.
+
+Metering brick:Equipment: useful when the Meter is measuring the consumption/production of a single Equipment instance.
+
+Metering brick:Locations: useful when the Meter is measuring the consumption/production of many entities within a single location, e.g. a building or floor or room.
+
+Metering rec:Collections: useful when the Meter is measuring the consumption/production of many entities that are not necessarily grouped by location. Recall that a rec:Collection is a named group of entities. This could represent the equipment in a particular air loop, in a particular chilled water system, all of the devices owned by a particular individual, or any other organization.
+
+### Querying these patterns
+
+Brick makes it possible to identify all meters associated with any entity in the Brick model:

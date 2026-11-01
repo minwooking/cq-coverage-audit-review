@@ -1,0 +1,31 @@
+{
+  "judge": "qwenflash",
+  "label": "same-family judge (contrast)",
+  "model": "Qwen/Qwen3.8-Flash-Next",
+  "endpoint_host": "tunnel (local port)",
+  "plan_sha256": "12caf2e02a195bdaaa33920b101130bfc9ea14476f704eeae37ea136bcbdb159",
+  "plan_commit": "248129f10b83a6742f00ee88c433360c2ede09c8",
+  "scorer_sha256": "3788576cd22eb73d7568d032a4db869de3a195c76c5cbeb6e6f42f5e6239a753",
+  "repeats": 3,
+  "workers": 3,
+  "budget_prompt_tokens": 3000000,
+  "corpora": {
+    "natural": {
+      "n_cells": 72,
+      "max_prompt_tokens": 11944,
+      "sum_prompt_tokens_one_pass": 530833,
+      "over_context": []
+    },
+    "template": {
+      "n_cells": 54,
+      "max_prompt_tokens": 15318,
+      "sum_prompt_tokens_one_pass": 391126,
+      "over_context": []
+    }
+  },
+  "started_utc": "2026-10-17T09:38:38+00:00",
+  "ended_utc": "2026-10-17T09:38:45+00:00",
+  "elapsed_s": 7.7,
+  "abort_reason": null,
+  "prompt_tokens_total": 0
+}

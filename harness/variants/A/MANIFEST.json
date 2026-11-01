@@ -1,0 +1,21 @@
+{
+  "variant_id": "A",
+  "description": "Naive direct-LLM baseline: each atomic chunk is rendered to Turtle section-by-section, without triple extraction or typing.",
+  "comparison_role": "confirmatory A -> B source endpoint",
+  "generation_method": "uv run chunktograph extract ... --granularity leaf; uv run chunktograph build-a ...",
+  "input_corpus": "paper/access2026/harness/brick_corpus.json",
+  "input_corpus_sha256": "68d6093f24bdc50ba179e69537eb9919fa09a55820cba7863475ab338e4b12f0",
+  "model": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8",
+  "endpoint_host": "<internal-host> (model server (local port))",
+  "temperature": 0.0,
+  "graph_file": "graph_A.ttl",
+  "graph_sha256": "1a5cc075065ac1f493e7731ac20e638481754c1a79f586b6e82a25320cb1bc32",
+  "rendered_view_file": "rendered_view.txt",
+  "rendered_view_sha256": "f6cca070efee8d933b41ba96d2d2b9c666af5bd804926c22ae0834b099830b98",
+  "rendered_view_lines": 1913,
+  "rendered_view_chars": 292845,
+  "rendering_spec_sha256": "eb0399af5152ac001074f1a0c27b23652a42a2f9ceeebf95a669abf703ec0a3e",
+  "SIMULATED": true,
+  "simulation_warning": "Generated with the PREREG.md-registered extraction-loop model (Qwen/Qwen3-Next-80B-A3B-Instruct-FP8, served on the internal a shared server) rather than the local qwen-next-flash endpoint used for B-F. This replaces the earlier stub artifact documented in VARIANT_A_BLOCKED.md. Still marked SIMULATED because its confirmatory contrast partner (B) has not yet been regenerated with the registered model, so A and B are not on a matched model for a confirmatory A -> B result; only the eligibility preflight (not the judge holdout) should be treated as validated by this artifact.",
+  "generated_utc": "2026-09-20T13:03:22.578162+00:00"
+}
