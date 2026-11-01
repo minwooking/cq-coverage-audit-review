@@ -15,14 +15,14 @@ td,th{border:1px solid #9995;padding:2px 6px;text-align:left;vertical-align:top}
 <h2>Files</h2>
 <ul>
 <li><a href="README.md">README.md</a> (package description, layout, how to rerun)</li>
-<li><a href="harness/real_run/results_human_pass/unsealed_2026-10-09/per_cell.json">per_cell.json</a>: AH labels (A) with dwell time per primary cell</li>
+<li><a href="harness/real_run/results_human_pass/unsealed_2026-10-09/per_cell.json">per_cell.json</a>: the first author's (AH) labels (A) with dwell time per primary cell</li>
 <li><a href="annotation/second_pass_2026-10-13/v3/labels_v3.csv">labels_v3.csv</a>: second-rater labels</li>
 <li><a href="harness/real_run/cells.jsonl">cells.jsonl</a>: judge scores and quoted spans (224 judged cells)</li>
 <li><a href="bank/">bank/</a>: competency question banks (directory listing is not generated on this host; see <a href="bank/cq_bank_brick_v2.csv">cq_bank_brick_v2.csv</a> and <a href="bank/CQ_BANK_BRICK.md">CQ_BANK_BRICK.md</a>)</li>
 </ul>
 <p>The blind labeling site in <code>annotation/</code> is a later instrument for outside raters and needs a backend, so it is not functional on this static host.</p>
 <h2>Primary cells (188)</h2>
-<p>J = judge score. AH = author-held label A (0/1) with dwell seconds. 2nd = second-rater label S. Span = judge quoted span, truncated. The highlighted row is CQB04 variant A (Table 1 in the paper).</p>
+<p>J = judge score. AH = the first author's labels (the paper's AH labels): label A (0/1) with dwell seconds. Dwell is the server's save time minus the page-load time; a few long values (for example 3,482 s) mean the labeling page stayed open before the save, and they are kept as recorded (median 9.3 s; Supplementary Section on dwell). 2nd = second-rater label S. Span = judge quoted span, truncated. The highlighted row is CQB04 variant A (Table 1 in the paper).</p>
 <div class="w"><table>
 <thead><tr><th>cell id</th><th>question</th><th>variant</th><th>J</th><th>AH label (dwell)</th><th>2nd rater</th><th>span</th></tr></thead>
 <tbody>
